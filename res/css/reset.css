@@ -11,7 +11,7 @@
 *,*::before,*::after {box-sizing:border-box;}
 html {-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body,h1,h2,h3,h4,p,figure,blockquote,dl,dd {margin:0;}
-body {min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5;}
+body {scroll-behavior:smooth;text-rendering:optimizeSpeed;}
 ul,ol {margin:0;padding:0;list-style:none}
 a {text-decoration:none;color:inherit;cursor:pointer}
 button {background-color:transparent;color:inherit;border-width:0;padding:0;cursor:pointer}
@@ -90,4 +90,4 @@ html {font-size:14px;}
 @media screen and (min-width: 640px) and (orientation : portrait){
 	html {font-size:32px;}
 }
-dsfdsfdsfdsfdsf
+
