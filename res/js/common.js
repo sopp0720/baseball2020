@@ -1,4 +1,3 @@
-includeHTML();
 var webUI = (function() {
     var timeout;
     return {
