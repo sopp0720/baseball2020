@@ -1,6 +1,91 @@
-includeHTML();
+var webUI = (function() {
+    var timeout;
+    return {
+        "getChildIndex": function(child) {
+            var parent = child.parentNode;
+            var children = parent.children;
+            var i = children.length - 1;
+            for (; i >= 0; i--) {
+                if (child == children[i]) {
+                    break;
+                }
+            }
+            return i;
+        },
+        "debounce": function(func, wait, immediate) {
+            var context = this,
+                args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            }, wait);
+            if (immediate && !timeout) func.apply(context, args);
+        },
+        "addListener": function(node, event, listener, useCapture) {
+            if (!node || !event || !listener) return;
 
-/* 공통 스크립트 작성 */
+            if (node instanceof Node) {
+                node.addEventListener(event, listener, (typeof useCapture === "undefined") ? false : useCapture);
+            } else if (node instanceof NodeList) {
+                if (node.length > 0) {
+                    for (var i = 0, l = node.length; i < l; i++) {
+                        node[i].addEventListener(event, listener, (typeof useCapture === "undefined") ? false : useCapture);
+                    }
+                }
+            }
+        },
+        "addDelegate": function(node, event, selector, listener, useCapture) {
+            if (!node || !event || !listener) return;
+
+            webUI.addListener(node, event, function(e) {
+                var target = e.target;
+                if (typeof selector === "string") {
+                    while (target.matches(selector) == false && target !== this) {
+                        target = target.parentElement;
+                    }
+                    if (target.matches(selector)) {
+                        listener.call(target, e);
+                    }
+                } else {
+                    selector.call(this, e);
+                }
+            }, useCapture);
+        }
+    }
+})();
+
+document.addEventListener("DOMContentLoaded", function() {
+    var hasTouchEvent = "ontouchstart" in document.documentElement,
+        START_EV = hasTouchEvent ? "touchstart" : "mousedown",
+        END_EV = hasTouchEvent ? "touchend" : "mouseup";
+    var dragPoint = false;
+    webUI.addDelegate(document.body, START_EV, ".usetap", function(e) {
+        dragPoint = true;
+        this.classList.add("active");
+    });
+    webUI.addDelegate(document.body, END_EV, ".usetap", function(e) {
+        dragPoint = false;
+        this.classList.remove("active");
+    });
+    webUI.addDelegate(document.body, "touchcancel", ".usetap", function(e) {
+        dragPoint = false;
+        this.classList.remove("active");
+    });
+    webUI.addDelegate(document.body, "mousemove", ".usetap", function(e) {
+        if (dragPoint == true) {
+            e.target.onmouseout = function() {
+                this.classList.remove("active");
+            }
+        }
+    });
+});
+
+
+/* 장과장님은 아래로 작성 부탁드립니다. */
+
+
+
 
 
 
