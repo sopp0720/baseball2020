@@ -25,6 +25,26 @@
 .theme_HT .logo_theme {background-position:0 0;}
 .theme_LT .logo_theme {background-position:0 0;}
 
+/* logo KBO */
+.team-logo-EA, .team-logo-HH, .team-logo-HT, .team-logo-KT, .team-logo-LG, 
+.team-logo-LT, .team-logo-NC, .team-logo-OB, .team-logo-SK, .team-logo-SS, 
+.team-logo-WE, .team-logo-WO {max-width:100%;background-size:100%;background-image:url(../images/logo/logo_kbo.png);}
+.team-logo-ea {background-position:0 0%;background-size:100%;}
+.team-logo-hh {background-position:0 9.090909%;background-size:100%;}
+.team-logo-ht {background-position:0 18.181818%;background-size:100%;}
+.team-logo-kt {background-position:0 27.272727%;background-size:100%;}
+.team-logo-lg {background-position:0 36.363636%;background-size:100%;}
+.team-logo-lt {background-position:0 45.454545%;background-size:100%;}
+.team-logo-nc {background-position:0 54.545455%;background-size:100%;}
+.team-logo-ob {background-position:0 63.636364%;background-size:100%;}
+.team-logo-sk {background-position:0 72.727273%;background-size:100%;}
+.team-logo-ss {background-position:0 81.818182%;background-size:100%;}
+.team-logo-we {background-position:0 90.909091%;background-size:100%;}
+.team-logo-wo {background-position:0 100%;background-size:100%;}
+
+
+
+
 
 
 
