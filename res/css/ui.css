@@ -3,7 +3,7 @@
 
 #wrap {position:absolute;width:100%;min-height:100%;overflow:hidden;}
 #wrap.main {background-color:#ffffff;}
-#wrap.sub {background-color:##F7F7F7;}
+#wrap.sub {background-color:#F7F7F7;}
 #container {position:relative;width:100%;}
 
 /* 여기서 부터 작업 부탁드려요 */
