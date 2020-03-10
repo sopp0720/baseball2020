@@ -42,24 +42,81 @@
 .team_logo_WE {background-position:0 90.909091%;background-size:100%;}
 .team_logo_WO {background-position:0 100%;background-size:100%;}
 
+/* logo MLB */
+.team_logo_AL, .team_logo_AN, .team_logo_AT, .team_logo_AZ, .team_logo_BA, 
+.team_logo_BO, .team_logo_CC, .team_logo_CI, .team_logo_CL, .team_logo_CO, 
+.team_logo_CW, .team_logo_DE, .team_logo_FL, .team_logo_HO, .team_logo_KC, 
+.team_logo_LA, .team_logo_MI, .team_logo_MLB, .team_logo_MN, .team_logo_MO, 
+.team_logo_NL, .team_logo_NM, .team_logo_NY, .team_logo_OA, .team_logo_PH, 
+.team_logo_PI, .team_logo_SD, .team_logo_SE, .team_logo_SF, .team_logo_SL, 
+.team_logo_TB, .team_logo_TE, .team_logo_TO
+{max-width:100%;background-size:100%;background-image:url(../images/logo/logo_mlb.png);}
+.team_logo_AL {background-position:0 0%;background-size:100%;}
+.team_logo_AN {background-position:0 3.125%;background-size:100%;}
+.team_logo_AT {background-position:0 6.25%;background-size:100%;}
+.team_logo_AZ {background-position:0 9.375%;background-size:100%;}
+.team_logo_BA {background-position:0 12.5%;background-size:100%;}
+.team_logo_BO {background-position:0 15.625%;background-size:100%;}
+.team_logo_CC {background-position:0 18.75%;background-size:100%;}
+.team_logo_CI {background-position:0 21.875%;background-size:100%;}
+.team_logo_CL {background-position:0 25%;background-size:100%;}
+.team_logo_CO {background-position:0 28.125%;background-size:100%;}
+.team_logo_CW {background-position:0 31.25%;background-size:100%;}
+.team_logo_DE {background-position:0 34.375%;background-size:100%;}
+.team_logo_FL {background-position:0 37.5%;background-size:100%;}
+.team_logo_HO {background-position:0 40.625%;background-size:100%;}
+.team_logo_KC {background-position:0 43.75%;background-size:100%;}
+.team_logo_LA {background-position:0 46.875%;background-size:100%;}
+.team_logo_MI {background-position:0 50%;background-size:100%;}
+.team_logo_MLB {background-position:0 53.125%;background-size:100%;}
+.team_logo_MN {background-position:0 56.25%;background-size:100%;}
+.team_logo_MO {background-position:0 59.375%;background-size:100%;}
+.team_logo_NL {background-position:0 62.5%;background-size:100%;}
+.team_logo_NM {background-position:0 65.625%;background-size:100%;}
+.team_logo_NY {background-position:0 68.75%;background-size:100%;}
+.team_logo_OA {background-position:0 71.875%;background-size:100%;}
+.team_logo_PH {background-position:0 75%;background-size:100%;}
+.team_logo_PI {background-position:0 78.125%;background-size:100%;}
+.team_logo_SD {background-position:0 81.25%;background-size:100%;}
+.team_logo_SE {background-position:0 84.375%;background-size:100%;}
+.team_logo_SF {background-position:0 87.5%;background-size:100%;}
+.team_logo_SL {background-position:0 90.625%;background-size:100%;}
+.team_logo_TB {background-position:0 93.75%;background-size:100%;}
+.team_logo_TE {background-position:0 96.875%;background-size:100%;}
+.team_logo_TO {background-position:0 100%;background-size:100%;}
+
+/* logo ABL */
+.team_logo_abl, .team_logo_ade, .team_logo_auc, .team_logo_bri, .team_logo_can, 
+.team_logo_gee, .team_logo_mel, .team_logo_per, .team_logo_syd
+{max-width:100%;background-size:100%;background-image:url(../images/logo/logo_abl.png);}
+.team_logo_abl {background-position:0 0%;background-size:100%;}
+.team_logo_ade {background-position:0 12.5%;background-size:100%;}
+.team_logo_auc {background-position:0 25%;background-size:100%;}
+.team_logo_bri {background-position:0 37.5%;background-size:100%;}
+.team_logo_can {background-position:0 50%;background-size:100%;}
+.team_logo_gee {background-position:0 62.5%;background-size:100%;}
+.team_logo_mel {background-position:0 75%;background-size:100%;}
+.team_logo_per {background-position:0 87.5%;background-size:100%;}
+.team_logo_syd {background-position:0 100%;background-size:100%;}
+
+/* symbol KBO */
 .team_symbol_HH, .team_symbol_HH_black, .team_symbol_HT, .team_symbol_KT, .team_symbol_LG, 
 .team_symbol_LG_black, .team_symbol_LT, .team_symbol_NC, .team_symbol_OB, .team_symbol_SK, 
 .team_symbol_SK_black, .team_symbol_SS, .team_symbol_WO
-{max-width:100%; background-size:100%; background-image:url('../images/logo/symbol_kbo.png');}
- 
-.team_symbol_HH {background-position:0 0%; background-size:100%;}
-.team_symbol_HH_black {background-position:0 8.333333%; background-size:100%;}
-.team_symbol_HT {background-position:0 16.666667%; background-size:100%;}
-.team_symbol_KT {background-position:0 25%; background-size:100%;}
-.team_symbol_LG {background-position:0 33.333333%; background-size:100%;}
-.team_symbol_LG_black {background-position:0 41.666667%; background-size:100%;}
-.team_symbol_LT {background-position:0 50%; background-size:100%;}
-.team_symbol_NC {background-position:0 58.333333%; background-size:100%;}
-.team_symbol_OB {background-position:0 66.666667%; background-size:100%;}
-.team_symbol_SK {background-position:0 75%; background-size:100%;}
-.team_symbol_SK_black {background-position:0 83.333333%; background-size:100%;}
-.team_symbol_SS {background-position:0 91.666667%; background-size:100%;}
-.team_symbol_WO {background-position:0 100%; background-size:100%;}
+{max-width:100%;background-size:100%;background-image:url('../images/logo/symbol_kbo.png');}
+.team_symbol_HH {background-position:0 0%;background-size:100%;}
+.team_symbol_HH_black {background-position:0 8.333333%;background-size:100%;}
+.team_symbol_HT {background-position:0 16.666667%;background-size:100%;}
+.team_symbol_KT {background-position:0 25%;background-size:100%;}
+.team_symbol_LG {background-position:0 33.333333%;background-size:100%;}
+.team_symbol_LG_black {background-position:0 41.666667%;background-size:100%;}
+.team_symbol_LT {background-position:0 50%;background-size:100%;}
+.team_symbol_NC {background-position:0 58.333333%;background-size:100%;}
+.team_symbol_OB {background-position:0 66.666667%;background-size:100%;}
+.team_symbol_SK {background-position:0 75%;background-size:100%;}
+.team_symbol_SK_black {background-position:0 83.333333%;background-size:100%;}
+.team_symbol_SS {background-position:0 91.666667%;background-size:100%;}
+.team_symbol_WO {background-position:0 100%;background-size:100%;}
 
 
 
