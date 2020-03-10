@@ -26,21 +26,40 @@
 .theme_LT .logo_theme {background-position:0 0;}
 
 /* logo KBO */
-.team-logo-EA, .team-logo-HH, .team-logo-HT, .team-logo-KT, .team-logo-LG, 
-.team-logo-LT, .team-logo-NC, .team-logo-OB, .team-logo-SK, .team-logo-SS, 
-.team-logo-WE, .team-logo-WO {max-width:100%;background-size:100%;background-image:url(../images/logo/logo_kbo.png);}
-.team-logo-ea {background-position:0 0%;background-size:100%;}
-.team-logo-hh {background-position:0 9.090909%;background-size:100%;}
-.team-logo-ht {background-position:0 18.181818%;background-size:100%;}
-.team-logo-kt {background-position:0 27.272727%;background-size:100%;}
-.team-logo-lg {background-position:0 36.363636%;background-size:100%;}
-.team-logo-lt {background-position:0 45.454545%;background-size:100%;}
-.team-logo-nc {background-position:0 54.545455%;background-size:100%;}
-.team-logo-ob {background-position:0 63.636364%;background-size:100%;}
-.team-logo-sk {background-position:0 72.727273%;background-size:100%;}
-.team-logo-ss {background-position:0 81.818182%;background-size:100%;}
-.team-logo-we {background-position:0 90.909091%;background-size:100%;}
-.team-logo-wo {background-position:0 100%;background-size:100%;}
+.team_logo_EA, .team_logo_HH, .team_logo_HT, .team_logo_KT, .team_logo_LG, 
+.team_logo_LT, .team_logo_NC, .team_logo_OB, .team_logo_SK, .team_logo_SS, 
+.team_logo_WE, .team_logo_WO {max-width:100%;background-size:100%;background-image:url(../images/logo/logo_kbo.png);}
+.team_logo_EA {background-position:0 0%;background-size:100%;}
+.team_logo_HH {background-position:0 9.090909%;background-size:100%;}
+.team_logo_HT {background-position:0 18.181818%;background-size:100%;}
+.team_logo_KT {background-position:0 27.272727%;background-size:100%;}
+.team_logo_LG {background-position:0 36.363636%;background-size:100%;}
+.team_logo_LT {background-position:0 45.454545%;background-size:100%;}
+.team_logo_NC {background-position:0 54.545455%;background-size:100%;}
+.team_logo_OB {background-position:0 63.636364%;background-size:100%;}
+.team_logo_SK {background-position:0 72.727273%;background-size:100%;}
+.team_logo_SS {background-position:0 81.818182%;background-size:100%;}
+.team_logo_WE {background-position:0 90.909091%;background-size:100%;}
+.team_logo_WO {background-position:0 100%;background-size:100%;}
+
+.team_symbol_HH, .team_symbol_HH_black, .team_symbol_HT, .team_symbol_KT, .team_symbol_LG, 
+.team_symbol_LG_black, .team_symbol_LT, .team_symbol_NC, .team_symbol_OB, .team_symbol_SK, 
+.team_symbol_SK_black, .team_symbol_SS, .team_symbol_WO
+{max-width:100%; background-size:100%; background-image:url('../images/logo/symbol_kbo.png');}
+ 
+.team_symbol_HH {background-position:0 0%; background-size:100%;}
+.team_symbol_HH_black {background-position:0 8.333333%; background-size:100%;}
+.team_symbol_HT {background-position:0 16.666667%; background-size:100%;}
+.team_symbol_KT {background-position:0 25%; background-size:100%;}
+.team_symbol_LG {background-position:0 33.333333%; background-size:100%;}
+.team_symbol_LG_black {background-position:0 41.666667%; background-size:100%;}
+.team_symbol_LT {background-position:0 50%; background-size:100%;}
+.team_symbol_NC {background-position:0 58.333333%; background-size:100%;}
+.team_symbol_OB {background-position:0 66.666667%; background-size:100%;}
+.team_symbol_SK {background-position:0 75%; background-size:100%;}
+.team_symbol_SK_black {background-position:0 83.333333%; background-size:100%;}
+.team_symbol_SS {background-position:0 91.666667%; background-size:100%;}
+.team_symbol_WO {background-position:0 100%; background-size:100%;}
 
 
 
