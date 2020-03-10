@@ -48,10 +48,7 @@
     font-style: normal;
 }
 *{font-display:swap;}
-*:lang(en), *:lang(en) * {font-family: 'bebas_neueregular', sans-serif !important;}
-*:lang(ko) {font-family:"Noto Sans KR" !important;}
 *:not(input){font-family:"Noto Sans KR";}
-
 
 /* base rules */
 *,*::before,*::after {box-sizing:border-box;}
