@@ -1,12 +1,58 @@
 @charset "utf-8";
 /* webfont rules */
-@import url('notosanskr.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap");
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("../fonts/noto_sans_kr/NotoSansKR-Black.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Black.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("../fonts/noto_sans_kr/NotoSansKR-Bold.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Bold.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("../fonts/noto_sans_kr/NotoSansKR-Medium.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("../fonts/noto_sans_kr/NotoSansKR-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("../fonts/noto_sans_kr/NotoSansKR-Light.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Light.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Light.woff") format("woff");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("../fonts/noto_sans_kr/NotoSansKR-Thin.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Thin.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Thin.woff") format("woff");
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebas_neue/bebasneue-regular-webfont.eot');
+    src: url('../fonts/bebas_neue/bebasneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebas_neue/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebas_neue/bebasneue-regular-webfont.woff') format('woff'),
+         url('../fonts/bebas_neue/bebasneue-regular-webfont.ttf') format('truetype'),
+         url('../fonts/bebas_neue/bebasneue-regular-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 *{font-display:swap;}
-*:lang(en), *:lang(en) * {font-family: 'Montserrat', sans-serif !important;}
+*:lang(en), *:lang(en) * {font-family: 'bebas_neueregular', sans-serif !important;}
 *:lang(ko) {font-family:"Noto Sans KR" !important;}
 *:not(input){font-family:"Noto Sans KR";}
+
+
 /* base rules */
 *,*::before,*::after {box-sizing:border-box;}
 html {-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
