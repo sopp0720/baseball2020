@@ -103,7 +103,7 @@
 .team_symbol_HH, .team_symbol_HH_black, .team_symbol_HT, .team_symbol_KT, .team_symbol_LG, 
 .team_symbol_LG_black, .team_symbol_LT, .team_symbol_NC, .team_symbol_OB, .team_symbol_SK, 
 .team_symbol_SK_black, .team_symbol_SS, .team_symbol_WO
-{max-width:100%;background-size:100%;background-image:url('../images/logo/symbol_kbo.png');}
+{max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo.png);}
 .team_symbol_HH {background-position:0 0%;background-size:100%;}
 .team_symbol_HH_black {background-position:0 8.333333%;background-size:100%;}
 .team_symbol_HT {background-position:0 16.666667%;background-size:100%;}
