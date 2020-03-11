@@ -2,28 +2,42 @@
 
 /* 1.LG[LG], 2.삼성[SS], 3.한화[HH], 4.두산[OB], 5.키움[WO],
 6.SK[SK], 7.NC[NC], 8.KT[KT], 9.기아[HT], 10.롯데[LT] */
-.theme_LG .bg_theme {background-color:#C10A3A;}
-.theme_SS .bg_theme {background-color:#0063AB;}
-.theme_HH .bg_theme {background-color:#DA5A17;}
-.theme_OB .bg_theme {background-color:#131230;}
-.theme_WO .bg_theme {background-color:#5B0016;}
-.theme_SK .bg_theme {background-color:#C8132F;}
-.theme_NC .bg_theme {background-color:#1F477B;}
-.theme_KT .bg_theme {background-color:#000000;}
-.theme_HT .bg_theme {background-color:#AC1020;}
-.theme_LT .bg_theme {background-color:#C30025;}
+/* theme bg(응원팀) */
+[data-theme="theme_LG"] .bg_theme {background-color:#C10A3A;}
+[data-theme="theme_SS"] .bg_theme {background-color:#0063AB;}
+[data-theme="theme_HH"] .bg_theme {background-color:#DA5A17;}
+[data-theme="theme_OB"] .bg_theme {background-color:#131230;}
+[data-theme="theme_WO"] .bg_theme {background-color:#5B0016;}
+[data-theme="theme_SK"] .bg_theme {background-color:#C8132F;}
+[data-theme="theme_NC"] .bg_theme {background-color:#1F477B;}
+[data-theme="theme_KT"] .bg_theme {background-color:#000000;}
+[data-theme="theme_HT"] .bg_theme {background-color:#AC1020;}
+[data-theme="theme_LT"] .bg_theme {background-color:#C30025;}
 
+/* Team Color bg*/
+.team_color_LG {background-color:#C10A3A;}
+.team_color_SS {background-color:#0063AB;}
+.team_color_HH {background-color:#DA5A17;}
+.team_color_OB {background-color:#131230;}
+.team_color_WO {background-color:#5B0016;}
+.team_color_SK {background-color:#C8132F;}
+.team_color_NC {background-color:#1F477B;}
+.team_color_KT {background-color:#000000;}
+.team_color_HT {background-color:#AC1020;}
+.team_color_LT {background-color:#C30025;}
+
+/* theme logo(응원팀) */
 [class*="theme_"] .logo_theme {background-image:url(../images/logo_theme.png);}
-.theme_LG .logo_theme {background-position:0 0;}
-.theme_SS .logo_theme {background-position:0 0;}
-.theme_HH .logo_theme {background-position:0 0;}
-.theme_OB .logo_theme {background-position:0 0;}
-.theme_WO .logo_theme {background-position:0 0;}
-.theme_SK .logo_theme {background-position:0 0;}
-.theme_NC .logo_theme {background-position:0 0;}
-.theme_KT .logo_theme {background-position:0 0;}
-.theme_HT .logo_theme {background-position:0 0;}
-.theme_LT .logo_theme {background-position:0 0;}
+#wrap.theme_LG .logo_theme {background-position:0 0;}
+#wrap.theme_SS .logo_theme {background-position:0 0;}
+#wrap.theme_HH .logo_theme {background-position:0 0;}
+#wrap.theme_OB .logo_theme {background-position:0 0;}
+#wrap.theme_WO .logo_theme {background-position:0 0;}
+#wrap.theme_SK .logo_theme {background-position:0 0;}
+#wrap.theme_NC .logo_theme {background-position:0 0;}
+#wrap.theme_KT .logo_theme {background-position:0 0;}
+#wrap.theme_HT .logo_theme {background-position:0 0;}
+#wrap.theme_LT .logo_theme {background-position:0 0;}
 
 /* logo KBO */
 .team_logo_EA, .team_logo_HH, .team_logo_HT, .team_logo_KT, .team_logo_LG, 

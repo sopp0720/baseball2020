@@ -8,7 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap" class="theme_LG">
+<select id="teamSelect" style="z-index:99999; position:fixed; top:15px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG">
 	<!-- <div id="header"></div> -->
 	<div id="container">
 		<div class="content">
@@ -20,8 +33,6 @@
 		<div class="tab-container">
 			<!-- Active Tab Container -->
 			<div class="active-tab-container">
-				<div class="caption">
-				</div>
 				<div class="tab tab-home">
 					<div class="circle">
 						<div class="img-box" id="circle1">
@@ -52,14 +63,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="caption">
-				</div>
 			</div>
 			<!-- Active Button Container -->
 			<!-- Active Label -->
 			<div class="active-label-container">
-				<div class="caption">
-				</div>
 				<div class="label label-home active">
 					 홈
 				</div>
@@ -75,8 +82,6 @@
 				<div class="label label-team-info">
 					 MY
 				</div>
-				<div class="caption">
-				</div>
 			</div>
 			<!-- Tab Bar -->
 			<div class="tab-bar">
@@ -84,22 +89,16 @@
 				<div class="left-side">
 				</div>
 				<div class="middle">
-					<div class="left-middle">
-					</div>
 					<div class="center-middle">
 					</div>
-					<div class="right-middle">
-					</div>
 				</div>
-				<div class="right-side">
+				<div class="right-side" style="flex-grow:4;">
 				</div>
 				<!-- <div class="caption"></div> -->
 			</div>
 			<!-- Tab Bar -->
 			<!-- Button Container -->
 			<div class="tab-button">
-				<div class="caption">
-				</div>
 				<div class="tab tab-home hide">
 					 홈
 				</div>
@@ -115,8 +114,6 @@
 				<div class="tab tab-my">
 					 MY
 				</div>
-				<div class="caption">
-				</div>
 			</div>
 			<!-- Button Container -->
 		</div>
@@ -124,14 +121,12 @@
 	<!-- Footer -->
 </div>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
-<script src="res/js/libs/smart_resize.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
-<script src="res/js/icon_source.js"></script>
-<script src="res/js/team_source.js"></script>
-<script src="res/js/animation.js"></script>
-<script src="res/js/tabbar.js"></script>
-
+<script src="res/js/gnb.js"></script>
+<script>
+bnbUi.init();
+</script>
 
 
 </body>
