@@ -28,16 +28,6 @@
 .tab-container .tab-button .tab, .tab-container .active-tab-container .tab {flex-grow:1;width:20%;height:5.6rem;padding-top:4rem;font-size:1.2rem;text-align:center;line-height:1rem;opacity:1;-webkit-tap-highlight-color:transparent;transition:opacity ease-out 0.24s, transform ease-out 0.24s;transform:scale(1) translateY(0);transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
 .tab-container .tab-button .tab.active, .tab-container .active-tab-container .tab.active {background:none !important;color:#C10A3A;font-weight:700;}
 
-body.lg .tab-container .tab-button .tab.active, body.lg .tab-container .active-tab-container .tab.active {color:#C10A3A;}
-body.hanhwa .tab-container .tab-button .tab.active, body.hanhwa .tab-container .active-tab-container .tab.active {color:#DA5A17;}
-body.samsung .tab-container .tab-button .tab.active, body.samsung .tab-container .active-tab-container .tab.active {color:#0063AB;}
-body.kt .tab-container .tab-button .tab.active, body.kt .tab-container .active-tab-container .tab.active {color:#000;}
-body.sk .tab-container .tab-button .tab.active, body.sk .tab-container .active-tab-container .tab.active {color:#C8132F;}
-body.kiwoom .tab-container .tab-button .tab.active, body.kiwoom .tab-container .active-tab-container .tab.active {color:#5B0016;}
-body.nc .tab-container .tab-button .tab.active, body.nc .tab-container .active-tab-container .tab.active {color:#1F477B;}
-body.lotte .tab-container .tab-button .tab.active, body.lotte .tab-container .active-tab-container .tab.active {color:#C30025;}
-body.dusan .tab-container .tab-button .tab.active, body.dusan .tab-container .active-tab-container .tab.active {color:#131230;}
-body.kia .tab-container .tab-button .tab.active, body.kia .tab-container .active-tab-container .tab.active {color:#AC1020;}
 .tab-container .tab-button .tab.hide, .tab-container .active-tab-container .tab.hide {opacity:0;transform:scale(0.4) translateY(30px);}
 .tab-container .tab-button .tab.tab-home, .tab-container .active-tab-container .tab.tab-home {background:url("../images/gnb/tab_home.png") center -4.6rem no-repeat;background-size:4.6rem;}
 .tab-container .tab-button .tab.tab-team-info, .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/default.png") center -4.6rem no-repeat;background-size:4.6rem;}

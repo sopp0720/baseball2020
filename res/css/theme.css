@@ -14,6 +14,41 @@
 [data-theme="theme_HT"] .bg_theme {background-color:#AC1020;}
 [data-theme="theme_LT"] .bg_theme {background-color:#C30025;}
 
+/* theme bnb(응원팀) */
+[data-theme="theme_LG"] .tab-container .active-label-container .label {color:#C10A3A;}
+[data-theme="theme_HH"] .tab-container .active-label-container .label {color:#DA5A17;}
+[data-theme="theme_SS"] .tab-container .active-label-container .label {color:#0063AB;}
+[data-theme="theme_KT"] .tab-container .active-label-container .label {color:#000;}
+[data-theme="theme_SK"] .tab-container .active-label-container .label {color:#C8132F;}
+[data-theme="theme_WO"] .tab-container .active-label-container .label {color:#5B0016;}
+[data-theme="theme_NC"] .tab-container .active-label-container .label {color:#1F477B;}
+[data-theme="theme_LT"] .tab-container .active-label-container .label {color:#C30025;}
+[data-theme="theme_OB"] .tab-container .active-label-container .label {color:#131230;}
+[data-theme="theme_HT"] .tab-container .active-label-container .label {color:#AC1020;}
+
+[data-theme="theme_default"] svg > g path[fill-opacity="0"] {stroke:#C10A3A;}
+[data-theme="theme_default"] svg > g path[fill-opacity="1"] {fill:#C10A3A;}
+[data-theme="theme_OB"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#131230;}
+[data-theme="theme_OB"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#131230;}
+[data-theme="theme_HH"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#DA5A17;}
+[data-theme="theme_HH"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#DA5A17;}
+[data-theme="theme_HT"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#AC1020;}
+[data-theme="theme_HT"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#AC1020;}
+[data-theme="theme_WO"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#5B0016;}
+[data-theme="theme_WO"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#5B0016;}
+[data-theme="theme_KT"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#000000;}
+[data-theme="theme_KT"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#000000;}
+[data-theme="theme_LG"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#C10A3A;}
+[data-theme="theme_LG"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#C10A3A;}
+[data-theme="theme_LT"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#C30025;}
+[data-theme="theme_LT"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#C30025;}
+[data-theme="theme_NC"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#1F477B;}
+[data-theme="theme_NC"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#1F477B;}
+[data-theme="theme_SS"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#0063AB;}
+[data-theme="theme_SS"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#0063AB;}
+[data-theme="theme_SK"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#C8132F;}
+[data-theme="theme_SK"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#C8132F;}
+
 /* Team Color bg*/
 .team_color_LG {background-color:#C10A3A;}
 .team_color_SS {background-color:#0063AB;}
