@@ -15,16 +15,16 @@
 [data-theme="theme_LT"] .bg_theme {background-color:#C30025;}
 
 /* theme bnb(응원팀) */
-[data-theme="theme_LG"] .tab-container .active-label-container .label {color:#C10A3A;}
-[data-theme="theme_HH"] .tab-container .active-label-container .label {color:#DA5A17;}
-[data-theme="theme_SS"] .tab-container .active-label-container .label {color:#0063AB;}
-[data-theme="theme_KT"] .tab-container .active-label-container .label {color:#000;}
-[data-theme="theme_SK"] .tab-container .active-label-container .label {color:#C8132F;}
-[data-theme="theme_WO"] .tab-container .active-label-container .label {color:#5B0016;}
-[data-theme="theme_NC"] .tab-container .active-label-container .label {color:#1F477B;}
-[data-theme="theme_LT"] .tab-container .active-label-container .label {color:#C30025;}
-[data-theme="theme_OB"] .tab-container .active-label-container .label {color:#131230;}
-[data-theme="theme_HT"] .tab-container .active-label-container .label {color:#AC1020;}
+[data-theme="theme_LG"] .tab_container .active_label_container .label {color:#C10A3A;}
+[data-theme="theme_HH"] .tab_container .active_label_container .label {color:#DA5A17;}
+[data-theme="theme_SS"] .tab_container .active_label_container .label {color:#0063AB;}
+[data-theme="theme_KT"] .tab_container .active_label_container .label {color:#000;}
+[data-theme="theme_SK"] .tab_container .active_label_container .label {color:#C8132F;}
+[data-theme="theme_WO"] .tab_container .active_label_container .label {color:#5B0016;}
+[data-theme="theme_NC"] .tab_container .active_label_container .label {color:#1F477B;}
+[data-theme="theme_LT"] .tab_container .active_label_container .label {color:#C30025;}
+[data-theme="theme_OB"] .tab_container .active_label_container .label {color:#131230;}
+[data-theme="theme_HT"] .tab_container .active_label_container .label {color:#AC1020;}
 
 [data-theme="theme_default"] svg > g path[fill-opacity="0"] {stroke:#C10A3A;}
 [data-theme="theme_default"] svg > g path[fill-opacity="1"] {fill:#C10A3A;}

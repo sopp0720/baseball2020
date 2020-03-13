@@ -13,53 +13,53 @@
 
 
 #footer {position:fixed;bottom:0;left:0;z-index:1;width:100vw;}
-.tab-container {position:relative;width:100vw;height:5.6rem;bottom:-7rem;}
-.tab-container .tab-bar {display:flex;position:relative;z-index:2;width:100%;margin:0;height:5.6rem;filter:drop-shadow(0 0 0.2rem #ccc);overflow:hidden;padding:0 1.5rem;}
-.tab-container .tab-bar .caption {flex-basis:1.5rem;background-color:#fff;}
-.tab-container .tab-bar .left-side {flex-grow:0;-webkit-box-flex:0;background-color:#fff;transition:all ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.89);transform:translate(-1.5rem, 0);}
-.tab-container .tab-bar .middle .left-middle, .tab-container .tab-bar .middle .right-middle {flex-grow:1;-webkit-box-flex:1;height:5.6rem;background-color:#fff;}
-.tab-container .tab-bar .middle {flex-grow:1;-webkit-box-flex:1;position:relative;}
-.tab-container .tab-bar .middle .center-middle {position:absolute;left:50%;width:calc(100% + 4rem);height:5.6rem;background:url("../images/gnb/tabbar_middle_2.png") center bottom no-repeat;background-size:auto 5.6rem;transform:translate(-50%, 0);}
+.tab_container {position:relative;width:100vw;height:5.6rem;transform: translate(0, 7rem) translateZ(0px);transition:transform ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.89);}
+#footer.on .tab_container {transform: translate(0, 0) translateZ(0px);}
+.tab_container .tab_bar {display:flex;position:relative;z-index:2;width:100%;margin:0;height:5.6rem;filter:drop-shadow(0 0 0.2rem #ccc);overflow:hidden;padding:0 1.5rem;}
+.tab_container .tab_bar .caption {flex-basis:1.5rem;background-color:#fff;}
+.tab_container .tab_bar .left_side {flex-grow:0;-webkit-box-flex:0;background-color:#fff;transition:all ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.89);transform:translate(-1.5rem, 0);}
+.tab_container .tab_bar .middle .left_middle, .tab_container .tab_bar .middle .right_middle {flex-grow:1;-webkit-box-flex:1;height:5.6rem;background-color:#fff;}
+.tab_container .tab_bar .middle {flex-grow:1;-webkit-box-flex:1;position:relative;}
+.tab_container .tab_bar .middle .center_middle {position:absolute;left:50%;width:calc(100% + 4rem);height:5.6rem;background:url("../images/gnb/tabbar_middle_2.png") center bottom no-repeat;background-size:auto 5.6rem;transform:translate(-50%, 0);}
 
-.tab-container .tab-bar .right-side {flex-grow:1;-webkit-box-flex:1;background-color:#fff;transition:all ease-out .7s;transition-timing-function:cubic-bezier(0, 0, 0, 0.89);transform:translate(1.5rem, 0);}
-.tab-container .active-tab-container {display:flex;position:absolute;top:0;left:1.5rem;right:1.5rem;z-index:3;}
-.tab-container .tab-button {display:flex;position:absolute;top:0;left:1.5rem;right:1.5rem;z-index:3;}
-.tab-container .tab-button .caption, .tab-container .active-tab-container .caption {flex-basis:1.5rem;flex-grow:0;}
-.tab-container .tab-button .tab, .tab-container .active-tab-container .tab {flex-grow:1;width:20%;height:5.6rem;padding-top:4rem;font-size:1.2rem;text-align:center;line-height:1rem;opacity:1;-webkit-tap-highlight-color:transparent;transition:opacity ease-out 0.24s, transform ease-out 0.24s;transform:scale(1) translateY(0);transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
-.tab-container .tab-button .tab.active, .tab-container .active-tab-container .tab.active {background:none !important;color:#C10A3A;font-weight:700;}
+.tab_container .tab_bar .right_side {flex-grow:1;-webkit-box-flex:1;background-color:#fff;transition:all ease-out .7s;transition-timing-function:cubic-bezier(0, 0, 0, 0.89);transform:translate(1.5rem, 0);}
+.tab_container .active_tab_container {display:flex;position:absolute;top:0;left:1.5rem;right:1.5rem;z-index:3;}
+.tab_container .tab_button {display:flex;position:absolute;top:0;left:1.5rem;right:1.5rem;z-index:3;}
+.tab_container .tab_button .caption, .tab_container .active_tab_container .caption {flex-basis:1.5rem;flex-grow:0;}
+.tab_container .tab_button .tab, .tab_container .active_tab_container .tab {flex-grow:1;width:20%;height:5.6rem;padding-top:4rem;font-size:1.2rem;text-align:center;line-height:1rem;opacity:1;-webkit-tap-highlight-color:transparent;transition:opacity ease-out 0.24s, transform ease-out 0.24s;transform:scale(1) translateY(0);transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
+.tab_container .tab_button .tab.active, .tab_container .active_tab_container .tab.active {background:none !important;color:#C10A3A;font-weight:700;}
 
-.tab-container .tab-button .tab.hide, .tab-container .active-tab-container .tab.hide {opacity:0;transform:scale(0.4) translateY(30px);}
-.tab-container .tab-button .tab.tab-home, .tab-container .active-tab-container .tab.tab-home {background:url("../images/gnb/tab_home.png") center -4.6rem no-repeat;background-size:4.6rem;}
-.tab-container .tab-button .tab.tab-team-info, .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/default.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.default .tab-container .tab-button .tab.tab-team-info, body.default .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/default.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.lg .tab-container .tab-button .tab.tab-team-info, body.lg .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/lg.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.doosan .tab-container .tab-button .tab.tab-team-info, body.doosan .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/doosan.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.hanhwa .tab-container .tab-button .tab.tab-team-info, body.hanhwa .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/hanhwa.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.kia .tab-container .tab-button .tab.tab-team-info, body.kia .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/kia.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.kiwoom .tab-container .tab-button .tab.tab-team-info, body.kiwoom .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/kiwoom.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.kt .tab-container .tab-button .tab.tab-team-info, body.kt .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/kt.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.lotte .tab-container .tab-button .tab.tab-team-info, body.lotte .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/lotte.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.nc .tab-container .tab-button .tab.tab-team-info, body.nc .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/nc.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.samsung .tab-container .tab-button .tab.tab-team-info, body.samsung .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/samsung.png") center -4.6rem no-repeat;background-size:4.6rem;}
-body.sk .tab-container .tab-button .tab.tab-team-info, body.sk .tab-container .active-tab-container .tab.tab-team-info {background:url("../images/gnb/sk.png") center -4.6rem no-repeat;background-size:4.6rem;}
-.tab-container .tab-button .tab.tab-relay, .tab-container .active-tab-container .tab.tab-relay {background:url("../images/gnb/tab_relay.png") center -4.6rem no-repeat;background-size:4.6rem;}
-.tab-container .tab-button .tab.tab-game, .tab-container .active-tab-container .tab.tab-game {background:url("../images/gnb/tab_game.png") center -4.6rem no-repeat;background-size:4.6rem;}
-.tab-container .tab-button .tab.tab-my, .tab-container .active-tab-container .tab.tab-my {background:url("../images/gnb/tab_my.png") center -4.6rem no-repeat;background-size:4.6rem;}
-.tab-container .active-tab-container .tab.tab-game {transition:none !important;}
-.tab-container .active-tab-container {z-index:1;filter:drop-shadow(0 0 0.3rem #bbb);}
-.tab-container .active-tab-container.from-left .tab {transform: translate(0, 0) translateZ(0px);}
-.tab-container .active-tab-container.from-right .tab {transform: translate(0, 0) translateZ(0px);}
-.tab-container .active-tab-container .caption {flex-basis:0;flex-grow:0;}
-.tab-container .active-tab-container .tab {display:flex;position:relative;top:3.4rem;justify-content:center;padding:0;background:none !important;transition:transform .2s, top .2s, left .2s, right .2s, opacity .2s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
-.tab-container .active-tab-container .tab.active {transform: translate(0, -5.7rem) translateZ(0px);flex-grow:0;/*width:20vw;min-width:12.2rem;*/}
-.tab-container .active-tab-container .tab.active .circle {opacity:1;}
-.tab-container .active-tab-container .tab .circle {width:5rem;height:5rem;border-radius:50%;background:none;background-color:#fff;line-height:5rem;}
-.tab-container .active-tab-container .tab .circle .img-box {padding:5px;}
-.tab-container .active-tab-container .tab .circle .img-box img {width:3.8rem !important;}
-.tab-container .active-label-container {display:flex;position:absolute;bottom:0;left:1.5rem;right:1.5rem;z-index:3;}
-.tab-container .active-label-container .caption {flex-basis:1.5rem;flex-grow:0;}
-.tab-container .active-label-container .label {flex-grow:1;width:20%;height:1.6rem;font-size:1.2rem;font-weight:bold;color:#C10A3A;text-align:center;line-height:1rem;opacity:0;transition:opacity ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
-.tab-container .active-label-container .label.active {flex-grow:0;opacity:1;}
+.tab_container .tab_button .tab.hide, .tab_container .active_tab_container .tab.hide {opacity:0;transform:scale(0.4) translateY(30px);}
+.tab_container .tab_button .tab.tab_home, .tab_container .active_tab_container .tab.tab_home {background:url("../images/gnb/tab_home.png") center -4.6rem no-repeat;background-size:4.6rem;}
+.tab_container .tab_button .tab.tab_team_info, .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/default.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.default .tab_container .tab_button .tab.tab_team_info, body.default .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/default.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.lg .tab_container .tab_button .tab.tab_team_info, body.lg .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/lg.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.doosan .tab_container .tab_button .tab.tab_team_info, body.doosan .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/doosan.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.hanhwa .tab_container .tab_button .tab.tab_team_info, body.hanhwa .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/hanhwa.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.kia .tab_container .tab_button .tab.tab_team_info, body.kia .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/kia.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.kiwoom .tab_container .tab_button .tab.tab_team_info, body.kiwoom .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/kiwoom.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.kt .tab_container .tab_button .tab.tab_team_info, body.kt .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/kt.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.lotte .tab_container .tab_button .tab.tab_team_info, body.lotte .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/lotte.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.nc .tab_container .tab_button .tab.tab_team_info, body.nc .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/nc.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.samsung .tab_container .tab_button .tab.tab_team_info, body.samsung .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/samsung.png") center -4.6rem no-repeat;background-size:4.6rem;}
+body.sk .tab_container .tab_button .tab.tab_team_info, body.sk .tab_container .active_tab_container .tab.tab_team_info {background:url("../images/gnb/sk.png") center -4.6rem no-repeat;background-size:4.6rem;}
+.tab_container .tab_button .tab.tab_relay, .tab_container .active_tab_container .tab.tab_relay {background:url("../images/gnb/tab_relay.png") center -4.6rem no-repeat;background-size:4.6rem;}
+.tab_container .tab_button .tab.tab_game, .tab_container .active_tab_container .tab.tab_game {background:url("../images/gnb/tab_game.png") center -4.6rem no-repeat;background-size:4.6rem;}
+.tab_container .tab_button .tab.tab_my, .tab_container .active_tab_container .tab.tab_my {background:url("../images/gnb/tab_my.png") center -4.6rem no-repeat;background-size:4.6rem;}
+.tab_container .active_tab_container {z-index:1;filter:drop-shadow(0 0 0.3rem #bbb);}
+.tab_container .active_tab_container.from-left .tab {transform: translate(0, 0) translateZ(0px);}
+.tab_container .active_tab_container.from-right .tab {transform: translate(0, 0) translateZ(0px);}
+.tab_container .active_tab_container .caption {flex-basis:0;flex-grow:0;}
+.tab_container .active_tab_container .tab {display:flex;position:relative;top:3.4rem;justify-content:center;padding:0;background:none !important;transition:transform .2s, top .2s, left .2s, right .2s, opacity .2s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
+.tab_container .active_tab_container .tab.active {transform: translate(0, -5.7rem) translateZ(0px);flex-grow:0;/*width:20vw;min-width:12.2rem;*/}
+.tab_container .active_tab_container .tab.active .circle {opacity:1;}
+.tab_container .active_tab_container .tab .circle {width:5rem;height:5rem;border-radius:50%;background:none;background-color:#fff;line-height:5rem;}
+.tab_container .active_tab_container .tab .circle .img-box {padding:5px;}
+.tab_container .active_tab_container .tab .circle .img-box img {width:3.8rem !important;}
+.tab_container .active_label_container {display:flex;position:absolute;bottom:0;left:1.5rem;right:1.5rem;z-index:3;}
+.tab_container .active_label_container .caption {flex-basis:1.5rem;flex-grow:0;}
+.tab_container .active_label_container .label {flex-grow:1;width:20%;height:1.6rem;font-size:1.2rem;font-weight:bold;color:#C10A3A;text-align:center;line-height:1rem;opacity:0;transition:opacity ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
+.tab_container .active_label_container .label.active {flex-grow:0;opacity:1;}
 
 
 /*******************************************************************************************/

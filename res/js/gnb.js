@@ -1,185 +1,143 @@
-/* Lottie Animation을 위한 js */
-var team = document.getElementById('wrap').getAttribute('data-theme');
-var teamPath = 'res/json/team/team_' + team + '.json';
-document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('wrap').setAttribute('data-theme','');
-	document.getElementById('wrap').setAttribute('data-theme',this.value);
-	document.querySelector('.tab-team-info svg').remove();
-	teamPath = 'res/json/team/team_' + this.value + '.json';
-	animation2 = bodymovin.loadAnimation({
-		container: document.getElementById('circle2'),
-		renderer: 'svg',
-		loop: false,
-		autoplay: true,
-		path: teamPath
-	});
-});
-var animation1 = bodymovin.loadAnimation({
-	container: document.getElementById('circle1'),
-	renderer: 'svg',
-	loop: false,
-	autoplay: true,
-	path: 'res/json/home.json'
-});
-var animation2 = bodymovin.loadAnimation({
-	container: document.getElementById('circle2'),
-	renderer: 'svg',
-	loop: false,
-	autoplay: true,
-	path: teamPath
-});
-var animation3 = bodymovin.loadAnimation({
-	container: document.getElementById('circle3'),
-	renderer: 'svg',
-	loop: false,
-	autoplay: true,
-	path: 'res/json/broadcast.json'
-});
-var animation4 = bodymovin.loadAnimation({
-	container: document.getElementById('circle4'),
-	renderer: 'svg',
-	loop: false,
-	autoplay: true,
-	path: 'res/json/game.json'
-});
-var animation5 = bodymovin.loadAnimation({
-	container: document.getElementById('circle5'),
-	renderer: 'svg',
-	loop: false,
-	autoplay: true,
-	path: 'res/json/my.json'
-});
-function getElementIndex(element, range) {
-  if (!!range) return [].indexOf.call(element, range);
-  return [].indexOf.call(element.parentNode.children, element);
-}
-
-[].forEach.call(document.querySelectorAll('.tab-button .tab'), function(el) {
-	el.addEventListener('click', function(e) {
-		var idx = webUI.getChildIndex(e.target) + 1;
-		eval('var $animation = animation' + idx);
-		console.log(idx);
-		$animation.stop();
-		setTimeout(function() {
-			$animation.play();
-		}, 100);
-	});
-});
-
 var bnbUi = (function() {
-
-	var $window = $(window);
-	var $tab_container = $('.tab-container');
-	var $tabbar = $('.tab-bar');
-	var $tab_button = $('.tab-button');
-	var $active_tab = $('.active-tab-container');
-	var $active_label = $('.active-label-container');
-	var active_tab = 0; // Active된 슬라이드 index
-	var tab_length = $tab_button.find('.tab').length; // Tab 버튼의 개수
-	var tab_width = $tab_button.find('.tab').outerWidth(); // 1개 tab 버튼의 width
-	var middle_width = $tabbar.find('.middle').outerWidth(); // Active 탭바(탭바에 움푹 파진 영역)의 width 값
-	var oversize = middle_width - tab_width - 30;
-	var activeIndex = 0;
+	var team;
+	var teamPath;
+	var animation1
+	var animation2
+	var animation3
+	var animation4
+	var animation5
+	var tabbar;
+	var tab_button;
+	var active_tab_container;
+	var active_label_container;
+	var active_tab;
+	var tab_length;
+	var activeIndex;
     return {
         "init" : function() {
-			window.addEventListener('resize', function(){
-
-			}, true);
-			$tab_button.find('.tab').on('click', function(e) {
-				var $this = $(this);
-
-				// 탭 버튼의 index를 구합니다. //
-				var index = $tab_button.find('.tab').index(this);
-
-				// 이미 활성화 된 버튼을 다시 클릭한 경우 콜백함수를 종료합니다. //
-				if (active_tab == index) {
-					return false;
+			tabbar = document.getElementById('tab_bar');
+			tab_button = document.getElementById('tab_button');
+			active_tab_container = document.getElementById('active_tab_container');
+			active_label_container = document.getElementById('active_label_container');
+			active_tab = 0;
+			tab_length = tab_button.querySelectorAll('.tab').length
+			activeIndex = 0;
+			tab_button.addEventListener("click",function(e) {
+				e.preventDefault();
+				if (e.target.classList.contains('tab')) {
+					var index = webUI.getChildIndex(e.target);
+					if (active_tab == index) {
+						return false;
+					}
+					bnbUi.gotoPosition(index);
 				}
+				var idx = index + 1;
+				eval('var $animation = animation' + idx);
+				$animation.stop();
+				setTimeout(function() {
+					$animation.play();
+				}, 100);
+			}, true);
 
-				// goto_position(index);
-				// 해당 index의 슬라이드를 이동시킵니다. //
-
-				bnbUi.gotoPosition(index);
-			});
 			setTimeout(function() {
-				$('.tab-container').animate({
-					bottom: 0
-				}, 300, function() {
-					$('.tab-container').find('.active-tab-container').find('.tab').eq(0).addClass('active');
-				});
+				document.getElementById('footer').classList.add('on');
+				active_tab_container.querySelectorAll('.tab')[0].classList.add('active');
 			}, 0);
         },
+        "initLottie": function() {
+			team = document.getElementById('wrap').getAttribute('data-theme');
+			teamPath = 'res/json/team/team_' + team + '.json';
+			animation1 = bodymovin.loadAnimation({
+				container: document.getElementById('circle1'),
+				renderer: 'svg',
+				loop: false,
+				autoplay: true,
+				path: 'res/json/home.json'
+			});
+			animation2 = bodymovin.loadAnimation({
+				container: document.getElementById('circle2'),
+				renderer: 'svg',
+				loop: false,
+				autoplay: true,
+				path: teamPath
+			});
+			animation3 = bodymovin.loadAnimation({
+				container: document.getElementById('circle3'),
+				renderer: 'svg',
+				loop: false,
+				autoplay: true,
+				path: 'res/json/broadcast.json'
+			});
+			animation4 = bodymovin.loadAnimation({
+				container: document.getElementById('circle4'),
+				renderer: 'svg',
+				loop: false,
+				autoplay: true,
+				path: 'res/json/game.json'
+			});
+			animation5 = bodymovin.loadAnimation({
+				container: document.getElementById('circle5'),
+				renderer: 'svg',
+				loop: false,
+				autoplay: true,
+				path: 'res/json/my.json'
+			});
+		},
+        "teamLottie": function() { //팀 변경시 실행
+			document.querySelector('.tab_team-info svg').remove();
+			team = document.getElementById('wrap').getAttribute('data-theme');
+			teamPath = 'res/json/team/team_' + team + '.json';
+			animation2 = bodymovin.loadAnimation({
+				container: document.getElementById('circle2'),
+				renderer: 'svg',
+				loop: false,
+				autoplay: true,
+				path: teamPath
+			});
+		},
         "fadeInOut": function(begin, end, delay) {
 			setTimeout(function() {
-				$active_tab.find('.tab').eq(begin).removeClass('active right left');
-				$active_label.find('.label').eq(begin).removeClass('active');
-				// 시작탭이 종료탭 보다 앞에 있을 경우 -> //
+				active_tab_container.querySelectorAll('.tab')[begin].classList.remove('active');
+				active_label_container.querySelectorAll('.label')[begin].classList.remove('active');
 				if (begin < end) {
-					$active_tab.removeClass('from-right');
-					$active_tab.addClass('from-left');
-					// 시작 지점부터 끝 지점까지 해당하는 tab 버튼에 hide 클래스를 추가합니다. //
 					for (var i = begin; i <= end; i++) {
-						$tab_button.find('.tab').eq(i).addClass('hide');
+						tab_button.querySelectorAll('.tab')[i].classList.add('hide');
 					}
 				}
-
-				// 시작탭이 종료탭 보다 뒤에 있을 경우 <- //
 				else {
-					$active_tab.removeClass('from-left');
-					$active_tab.addClass('from-right');
 					for (var i = begin; i >= end; i--) {
-						// 시작 지점부터 끝 지점의 바로 전 탭 까지 해당하는 tab 버튼에 hide 클래스를 추가합니다. //
-						$tab_button.find('.tab').eq(i).addClass('hide');
+						tab_button.querySelectorAll('.tab')[i].classList.add('hide');
 					}
 				}
 			}, 0);
-
-			// Fade In //
 			setTimeout(function() {
-				$tab_button.find('.tab').removeClass('active');
-				// 시작탭이 종료탭 보다 앞에 있을 경우 -> //
+				tab_button.querySelectorAll('.tab').forEach(function(item) {
+					item.classList.remove('active');
+				});
 				if (begin < end) {
-					// 시작 지점부터 끝 지점까지 해당하는 tab 버튼에 hide 클래스를 삭제합니다. //
 					for (var i = begin; i < end; i++) {
-						$tab_button.find('.tab').eq(i).removeClass('hide');
+						tab_button.querySelectorAll('.tab')[i].classList.remove('hide');
 					}
-					$active_label.find('.label').eq(end).addClass('active');
+					active_label_container.querySelectorAll('.label')[end].classList.add('active');
 				}
-
-				// 시작탭이 종료탭 보다 뒤에 있을 경우 <- //
 				else {
 					for (var i = begin; i > end; i--) {
-						// 시작 지점부터 끝 지점의 바로 전 탭 까지 해당하는 tab 버튼에 hide 클래스를 추가합니다. //
-						$tab_button.find('.tab').eq(i).removeClass('hide');
+						tab_button.querySelectorAll('.tab')[i].classList.remove('hide');
 					}
-					$active_label.find('.label').eq(end).addClass('active');
+					active_label_container.querySelectorAll('.label')[end].classList.add('active');
 				}
 			}, delay);
 
-			// Active //
 			setTimeout(function() {
-				var date = new Date();
-				$active_tab.find('.tab').eq(end).addClass('active');
-				// $active_tab.find('.tab').eq(end).find('.circle').empty();
-				// $active_tab.find('.tab').eq(end).find('.circle').append('<div class="img-box"><img src="../assets/images/' + active_list[end] +'?' + date.getTime() + '"></div>');
-
+				active_tab_container.querySelectorAll('.tab')[end].classList.add('active');
 			}, delay - 0);
         },
         "gotoPosition": function(index) {
-			var left_flex_grow = index;
-			var right_flex_grow = (tab_length - 1) - index;
-
+			const left_flex_grow = index;
+			const right_flex_grow = (tab_length - 1) - index;
 			bnbUi.fadeInOut(active_tab, index, 250);
-
-			$tabbar.find('.left-side').css({
-				'flex-grow': left_flex_grow,
-				'-webkit-box-flex': left_flex_grow
-			});
-			$tabbar.find('.right-side').css({
-				'flex-grow': right_flex_grow,
-				'-webkit-box-flex': right_flex_grow
-			});
-
+			tabbar.querySelector('.left_side').style.cssText = '-webkit-box-flex:'+left_flex_grow+';flex-grow:'+left_flex_grow+';';
+			tabbar.querySelector('.right_side').style.cssText = '-webkit-box-flex:'+right_flex_grow+';flex-grow:'+right_flex_grow+';';
 			active_tab = index;
         }
     }

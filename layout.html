@@ -30,88 +30,88 @@
 		</div>
 	</div>
 	<div id="footer">
-		<div class="tab-container">
+		<div class="tab_container">
 			<!-- Active Tab Container -->
-			<div class="active-tab-container">
-				<div class="tab tab-home">
+			<div class="active_tab_container" id="active_tab_container">
+				<div class="tab tab_home">
 					<div class="circle">
-						<div class="img-box" id="circle1">
+						<div class="img_box" id="circle1">
 						</div>
 					</div>
 				</div>
-				<div class="tab tab-team-info">
+				<div class="tab tab_team_info">
 					<div class="circle">
-						<div class="img-box" id="circle2">
+						<div class="img_box" id="circle2">
 						</div>
 					</div>
 				</div>
-				<div class="tab tab-relay">
+				<div class="tab tab_relay">
 					<div class="circle">
-						<div class="img-box" id="circle3">
+						<div class="img_box" id="circle3">
 						</div>
 					</div>
 				</div>
-				<div class="tab tab-game">
+				<div class="tab tab_game">
 					<div class="circle">
-						<div class="img-box" id="circle4">
+						<div class="img_box" id="circle4">
 						</div>
 					</div>
 				</div>
-				<div class="tab tab-my">
+				<div class="tab tab_my">
 					<div class="circle">
-						<div class="img-box" id="circle5">
+						<div class="img_box" id="circle5">
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Active Button Container -->
 			<!-- Active Label -->
-			<div class="active-label-container">
-				<div class="label label-home active">
+			<div class="active_label_container" id="active_label_container">
+				<div class="label label_home active">
 					 홈
 				</div>
-				<div class="label label-team-info">
+				<div class="label label_team_info">
 					 팀정보
 				</div>
-				<div class="label label-team-info">
+				<div class="label label_team_info">
 					 중계
 				</div>
-				<div class="label label-team-info">
+				<div class="label label_team_info">
 					 게임
 				</div>
-				<div class="label label-team-info">
+				<div class="label label_team_info">
 					 MY
 				</div>
 			</div>
 			<!-- Tab Bar -->
-			<div class="tab-bar">
+			<div class="tab_bar" id="tab_bar">
 				<!-- <div class="caption"></div> -->
-				<div class="left-side">
+				<div class="left_side">
 				</div>
 				<div class="middle">
-					<div class="center-middle">
+					<div class="center_middle">
 					</div>
 				</div>
-				<div class="right-side" style="flex-grow:4;">
+				<div class="right_side" style="flex-grow:4;">
 				</div>
 				<!-- <div class="caption"></div> -->
 			</div>
 			<!-- Tab Bar -->
 			<!-- Button Container -->
-			<div class="tab-button">
-				<div class="tab tab-home hide">
+			<div class="tab_button" id="tab_button">
+				<div class="tab tab_home hide">
 					 홈
 				</div>
-				<div class="tab tab-team-info">
+				<div class="tab tab_team_info">
 					 팀정보
 				</div>
-				<div class="tab tab-relay">
+				<div class="tab tab_relay">
 					 중계
 				</div>
-				<div class="tab tab-game">
+				<div class="tab tab_game">
 					 게임
 				</div>
-				<div class="tab tab-my">
+				<div class="tab tab_my">
 					 MY
 				</div>
 			</div>
@@ -120,12 +120,17 @@
 	</div>
 	<!-- Footer -->
 </div>
-<script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
 <script src="res/js/gnb.js"></script>
 <script>
 bnbUi.init();
+bnbUi.initLottie();
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+	bnbUi.teamLottie()
+});
 </script>
 
 
