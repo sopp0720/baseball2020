@@ -84,7 +84,7 @@ var bnbUi = (function() {
             });
         },
         "teamLottie": function() { //팀 변경시 실행
-            document.querySelector('.tab_team-info svg').remove();
+            document.querySelector('.tab_team_info svg').remove();
             team = document.getElementById('wrap').getAttribute('data-theme');
             teamPath = 'res/json/team/team_' + team + '.json';
             animation2 = bodymovin.loadAnimation({

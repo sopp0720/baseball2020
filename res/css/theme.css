@@ -49,6 +49,23 @@
 [data-theme="theme_SK"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#C8132F;}
 [data-theme="theme_SK"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#C8132F;}
 
+[data-theme="theme_default"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-none.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_LG"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-lg.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_OB"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-doosan.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_HH"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-hanwha.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_HT"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-kia.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_WO"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-kiwoom.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_KT"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-kt.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_LT"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-lotte.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_NC"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-nc.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_SS"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-samsung.png) center 1rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_SK"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-sk.png) center 1rem no-repeat;background-size:2.7333rem;}
+.tab_button .tab.tab_home {background:url(../images/gnb/ic-gnb-nor-home.png) center 1rem no-repeat;background-size:2.7333rem;}
+.tab_button .tab.tab_relay {background:url(../images/gnb/ic-gnb-nor-live.png) center 1rem no-repeat;background-size:2.7333rem;}
+.tab_button .tab.tab_game {background:url(../images/gnb/ic-gnb-nor-game.png) center 1rem no-repeat;background-size:2.7333rem;}
+.tab_button .tab.tab_my {background:url(../images/gnb/ic-gnb-nor-my.png) center 1rem no-repeat;background-size:2.7333rem;}
+
+
 /* Team Color bg*/
 .team_color_LG {background-color:#C10A3A;}
 .team_color_SS {background-color:#0063AB;}
