@@ -39,7 +39,7 @@
 .home.content .score_today > div.team_img_wrap {position:absolute;top:0.7667rem;width:10.1333rem;}
 .home.content .score_today > div.team_img_wrap.left {left:1.5333rem;}
 .home.content .score_today > div.team_img_wrap.right {right:1.5333rem;}
-.home.content .score_today > div.team_img_wrap .team_img {position:relative;margin:0 auto;width:7.0667rem;height:7.0667rem;border:1px solid #e8e8e8;border-radius:2.2667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.home.content .score_today > div.team_img_wrap .team_img {position:relative;margin:0 auto;width:7.0667rem;height:7.0667rem;border:1px solid #e8e8e8;border-radius:2.2667rem;background-repeat:no-repeat;background-size:100% auto;}
 .home.content .score_today > div.team_img_wrap .team_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
 .home.content .score_today > div.team_img_wrap .team_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
 .home.content .score_today > div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
@@ -123,12 +123,12 @@
 .home.content .highlight_box {float:left;margin:2rem 1.377952% 0;width:47.244094%;}
 .home.content .highlight_box:nth-child(1),
 .home.content .highlight_box:nth-child(2) {margin-top:0;}
-.home.content .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-position:50% 50%;background-size:100%;border-radius:15px;overflow:hidden;}
+.home.content .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:15px;overflow:hidden;}
 .home.content .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;padding:0 0.6rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
 .home.content .highlight_box p {margin-top:0.3333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .home.content .highlight_box .view {position:relative;display:block;margin-top:0.4333rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
 .home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
-.home.content .news_wrap .news_main {padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;background-color:#d8d8d8;border-radius:0.7333em;}
+.home.content .news_wrap .news_main {padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;}
 .home.content .news_wrap .news_main .txt_inner {padding:32.388663% 1.6667em 1.6667em;}
 .home.content .news_wrap .news_main .agency {height:1.8rem;font-size:1.2rem;font-weight:500;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_wrap .news_main p {height:4.5333rem;font-size:1.5333em;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
@@ -136,13 +136,13 @@
 .home.content .news_wrap .news_list li {padding:1rem 0.5rem 1rem 0;border-top:1px solid #dee1e6;overflow:hidden;}
 .home.content .news_wrap .news_list li:first-child {padding-top:0;border-top:0;}
 .home.content .news_wrap .news_list li:last-child {padding-bottom:0;}
-.home.content .news_wrap .news_list .thumb {float:left;padding-bottom:20.850202%;width:29.757085%;height:0;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;background-color:#d8d8d8;border-radius:0.7333rem}
+.home.content .news_wrap .news_list .thumb {float:left;padding-bottom:20.850202%;width:29.757085%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333rem}
 .home.content .news_wrap .news_list .desc {float:left;margin-left:3.846153%;padding-top:0.5rem;width:66.396761%;}
 .home.content .news_wrap .news_list .desc .agency {height:1.8rem;font-size:1.2rem;color:#858585;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_wrap .news_list .desc .subject {margin-top:0.1rem;height:2.1667rem;line-height:2.1667rem;font-size:1.4667rem;font-weight:bold;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_wrap .news_list .desc .content {height:1.8rem;line-height:1.8rem;font-size:1.2rem;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_comments .news_scroll ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
-.home.content .news_comments .news_scroll li {position:relative;display:inline-block;margin-left:0.7667rem;padding:0 0.8333rem;width:15.2rem;height:15.2rem;border-radius:0.7333rem;box-shadow: 0 15px 51px 0 rgba(0, 0, 0, 0.09);background-repeat:no-repeat;background-position:50% 50%;background-size:cover;border-radius:0.7333rem;}
+.home.content .news_comments .news_scroll li {position:relative;display:inline-block;margin-left:0.7667rem;padding:0 0.8333rem;width:15.2rem;height:15.2rem;border-radius:0.7333rem;box-shadow: 0 15px 51px 0 rgba(0, 0, 0, 0.09);background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;}
 .home.content .news_comments .news_scroll li:first-child {margin-left:0;}
 .home.content .news_comments .news_scroll li .overlay {position:absolute;display:block;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.65);overflow:hidden;border-radius:0.7333rem;}
 .home.content .news_comments .news_scroll li .ico_comm {position:relative;z-index:1;display:block;margin:3.2rem auto 0.5rem;width:8.4667rem;height:3.0667rem;background:#fff;}
