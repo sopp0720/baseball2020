@@ -22,6 +22,31 @@ var webUI = (function() {
             }, wait);
             if (immediate && !timeout) func.apply(context, args);
         },
+		"easeInOutQuad" : function (t, b, c, d) {
+			t /= d/2;
+			if (t < 1) return c/2*t*t + b;
+			t--;
+			return -c/2 * (t*(t-2) - 1) + b;
+		},
+		"animatedScrollTo": function(element, to, duration) {
+			var start = element.scrollLeft;
+			var change = to - start;
+			var currentTime = 0;
+			var increment = 20;
+			var animateScroll = function(callback) {
+				currentTime += increment;
+				var val = Math.floor(webUI.easeInOutQuad(currentTime, start, change, duration));
+				element.scrollLeft = val;
+				if (currentTime < duration) {
+					window.requestAnimationFrame(animateScroll);
+				} else {
+					if (callback && typeof(callback) === 'function') {
+						callback();
+					}
+				}
+			}
+			animateScroll();
+		},
         "addListener": function(node, event, listener, useCapture) {
             if (!node || !event || !listener) return;
 
