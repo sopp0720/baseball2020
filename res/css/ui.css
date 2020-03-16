@@ -149,6 +149,34 @@
 .home.content .news_comments .news_scroll li .subject {position:relative;z-index:1;height:4.1333rem;font-size:1.4rem;font-weight:500;text-align:center;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
 
 
+/* TEAM */
+
+/* tab_teamlist */
+.tab_teamlist {margin-top:1.6667rem;background-color:#fff;overflow-x:auto;overflow-y:hidden;padding:0 2.6667rem;}
+.tab_teamlist::-webkit-scrollbar {display:none;}
+.tab_teamlist ul {overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
+.tab_teamlist li {position:relative;margin-left:0.6667rem;}
+.tab_teamlist li:first-child {margin-left:0;}
+.tab_teamlist .team-icon-box {position:relative;width:5.4667rem;height:6.8667rem;}
+.tab_teamlist .logo {position:relative;padding:0.7333rem;width:4.8rem;height:4.8rem;}
+.tab_teamlist .logo:before {content:'';position:absolute;left:0;top:0;width:100%;height:100%;border-radius:50%;border:solid 1px #e5e5e5;}
+.tab_teamlist .logo .circle {z-index:2;position:absolute;top:0;left:0;width:4.8rem;height:4.8rem;}
+.tab_teamlist .logo [class*="team_symbol_"]  {z-index:1;position:relative;display:block;width:3.3333rem;height:3.3333rem;}
+.tab_teamlist .my_team {position:absolute;top:3.2333rem;right:0;z-index:2;width:2rem;height:2rem;background:url("../images/icon_my.png") center center no-repeat;background-size:2rem;border-radius:100%;border:1px solid #fff;}
+.tab_teamlist .name {display:block;margin-top:0.4rem;height:1.6667rem;font-size:1.1333rem;text-align:center;}
+.tab_teamlist li.active .name {font-weight:bold;}
+
+/* tab_sub */
+.innner_page_tab {margin-top:1.6667rem;position:relative;}
+.tab_link {display:flex;padding:1rem 10% 0;background:#fff;border-bottom:1px solid #e9e9e9;}
+.tab_link .tab_item {width:33%;font-size:16px;text-align:center;}
+.tab_link .tab_item span {display:inline-block;padding:0 15px 12px;text-decoration:none;color:#b4b4b4;font-weight:400;transition:color .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
+.tab_link .tab_item.active span {color:#c10a3a;font-weight:700;position:relative;}
+.active_bar {position:absolute;bottom:0;width:6rem;height:0.2rem;background-color:#c10a3a;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
+
+
+
+/* footer */
 #footer {position:fixed;bottom:0;left:0;z-index:1;width:100vw;}
 .tab_container {position:relative;width:100vw;height:5.6rem;transform: translate(0, 7rem) translateZ(0px);transition:transform ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.89);}
 #footer.on .tab_container {transform: translate(0, 0) translateZ(0px);}
