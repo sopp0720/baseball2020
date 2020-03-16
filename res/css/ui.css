@@ -8,7 +8,123 @@
 #container {position:relative;width:100%;}
 
 /* 여기서 부터 작업 부탁드려요 */
+/* Common */
+.inner {padding:0 1.5333rem;}
+.blind {font-size:0;line-height:0;direction:ltr;text-indent:-999em;}
+.text_left {text-align:left !important;}
+.text_center {text-align:center !important;}
+.text_right {text-align:right !important;}
+.i_gray {color:#c2c3c7 !important;}
 
+/* HOME */
+.home.content .top_phrase {padding:1rem 0 0 2.4rem;height:13.3333rem;background-repeat:no-repeat;background-position:100% 1.3333rem;background-size:auto 10.6667rem;background-color:#ffffff;}
+.home.content .sec_wrapper {padding:1.5333rem 0;border-bottom:0.9333rem solid #f0f1f6;}
+.home.content .top_phrase.case01 {background-image:url("../images/img-home-illust-01.png");}
+.home.content .top_phrase.case02 {background-image:url("../images/img-home-illust-02.png");}
+.home.content .top_phrase.case03 {background-image:url("../images/img-home-illust-03.png");}
+.home.content .top_phrase.case04 {background-image:url("../images/img-home-illust-04.png");}
+.home.content .top_phrase.case05 {background-image:url("../images/img-home-illust-05.png");}
+.home.content .top_phrase.case06 {background-image:url("../images/img-home-illust-06.png");}
+.home.content .top_phrase.case07 {background-image:url("../images/img-home-illust-07.png");}
+.home.content .top_phrase.case08 {background-image:url("../images/img-home-illust-08.png");}
+.home.content .top_phrase.case09 {background-image:url("../images/img-home-illust-09.png");}
+.home.content .top_phrase.case10 {background-image:url("../images/img-home-illust-10.png");}
+.home.content .top_phrase h1.ic_logo_lgu {width:7.2rem;height:1.6333rem;background:url("../images/ic-logo-lgu.png") no-repeat;background-size:cover;}
+.home.content .top_phrase h1.ic_logo_lgu > a {display:block;width:100%;height:100%;}
+.home.content .top_phrase .quo_marks {display:block;margin-bottom:0.5667rem;width:1.8333rem;height:1.8333rem;background:url("../images/ic-home-top-text-b.png") no-repeat;background-size:cover;}
+.home.content .top_phrase > p {margin-top:2.7333rem;width:22rem;height:4.5333rem;font-size:1.6667rem;font-weight:300;line-height:1.36;color:#000000;}
+.home.content .score_board_wrap {margin-top:2.5333rem;padding-top:0;}
+.home.content .score_today {position:relative;margin:0 -1.5333rem;padding:0 1.5333rem;height:10.8333rem;text-align:center;}
+.home.content .score_today > div {font-size:24px;height:100%;}
+.home.content .score_today > div.team_img_wrap {position:absolute;top:0.7667rem;width:10.1333rem;}
+.home.content .score_today > div.team_img_wrap.left {left:1.5333rem;}
+.home.content .score_today > div.team_img_wrap.right {right:1.5333rem;}
+.home.content .score_today > div.team_img_wrap .team_img {position:relative;margin:0 auto;width:7.0667rem;height:7.0667rem;border:1px solid #e8e8e8;border-radius:2.2667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.home.content .score_today > div.team_img_wrap .team_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
+.home.content .score_today > div.team_img_wrap .team_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
+.home.content .score_today > div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .score_today > div.middle_box {position:relative;z-index:1;margin:0 auto;width:12.6667rem;}
+.home.content .score_today > div.middle_box .logo_na {display:block;margin:0 auto;width:3.8333rem;height:1.6667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.home.content .score_today > div.middle_box .logo_na.kbo {background-image:url("../images/ic-logo-kbo-lg.png");} /* KBO logo */
+.home.content .score_today > div.middle_box .logo_na.mlb {background-image:url("../images/ic-logo-mlb-navy.png");} /* KBO logo */
+.home.content .score_today > div.middle_box .title {display:block;height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#2b2b2b;text-align:center;}
+.home.content .score_today > div.middle_box .play_score {overflow:hidden;}
+.home.content .score_today > div.middle_box .play_score em {display:block;float:left;width:3.5rem;height:4.0667rem;font-family:'bebas_neueregular';font-weight:bold;font-size:4rem;line-height:4.8rem;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .result_val {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#c2c3c7;}
+.home.content .score_board_wrap .middle_box .play_score .ic_vs_main {display:block;float:left;width:5.6667rem;height:4.0667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:1.4333rem 2.2rem;}
+.home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_red {background-image:url("../images/ic-vs-main-red.png");}
+.home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_gray {background-image:url("../images/ic-vs-main-gray.png");}
+.home.content .score_board_wrap .middle_box .info_today {display:inline-block;margin:1rem 0 1.2333rem;padding:0 0.9rem;height:1.9rem;font-size:1.1667rem;font-weight:500;color:#ffffff;border-radius:0.86665rem;vertical-align:top;}
+.home.content .score_board_wrap .middle_box .info_today.i_schedule {background-color:#c10a3a;}
+.home.content .score_board_wrap .middle_box .info_today.i_cancel {background-color:#c2c3c7;}
+.home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#525252;}
+.home.content .score_board_wrap .play_list {margin-top:1rem;padding:0 2.3333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);}
+.home.content .score_board_wrap .play_list li {position:relative;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;border-top:1px solid #dee1e6;text-align:center;}
+.home.content .score_board_wrap .play_list li:first-child {border-top:0;}
+.home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:7.1333rem;}
+.home.content .score_board_wrap .play_list li > div.team_player.left {left:0;}
+.home.content .score_board_wrap .play_list li > div.team_player.right {right:0;}
+.home.content .score_board_wrap .play_list li > div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
+.home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:14rem;}
+.home.content .score_board_wrap .play_list li > div.middle_box .play_score {padding-top:0.2667rem;overflow:hidden;}
+.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:3.1333rem;height:3.1rem;font-family:'bebas_neueregular';font-weight:bold;font-size:3.3333rem;line-height:3.6667rem;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .play_list li > div.middle_box .ic_vs_main {width:7.7333rem;height:3.1rem;}
+.home.content .score_board_wrap .play_list li > div.middle_box .info_today {margin:0.7rem 0 0.7667rem;}
+.home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:1.6667rem;line-height:1.8667rem;font-size:1.2667rem;color:#2b2b2b;}
+.home.content .score_scroll {margin-top:1.5333rem;}
+.home.content .title_hd {position:relative;padding:0.5333rem 0 0.5rem;height:3.5rem;font-size:0;}
+.home.content .title_hd > span {display:inline-block;vertical-align:top;}
+.home.content .title_hd > span.sec_title {height:2.4667rem;line-height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
+.home.content .title_hd > .more {display:inline-block;position:absolute;top:0.1667rem;right:-0.8rem;width:3.2rem;height:3.2rem;vertical-align:top;background:url("../images/ic-arrow-title.png") no-repeat 50% 50%;background-size:cover;}
+.home.content .score_scroll .title_hd > span.vs {margin:0.2333rem 0.6667rem 0;width:1.6667rem;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#ca0039;text-align:center;}
+.home.content .none_score {padding:1.4667em 0;height:4.8em;font-size:1.2667em;font-weight:500;color:#b4b4b4;text-align:center;background:url("../images/banner-score-empty.png") no-repeat 50% 50%;background-size:cover;}
+.home.content .score_moment {margin:0.3333rem -1.5333rem 0;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.home.content .score_moment li {display:inline-block;margin-left:0.7667rem;padding:1.1rem 0.4833rem;width:12.1rem;height:4.7333rem;border-radius:0.7333rem;background-color:#f2f3f5;overflow:hidden;font-size:0;}
+.home.content .score_moment li:first-child {margin-left:0;}
+.home.content .score_moment li span,.score_moment li em {display:inline-block;vertical-align:top;}
+.home.content .score_moment li .logo_kbo {float:left;width:2.8667rem;height:100%}
+.home.content .score_moment li .logo_kbo.left {margin-right:0.2333rem;}
+.home.content .score_moment li .logo_kbo.right {margin-left:0.2333rem;}
+.home.content .score_moment li .logo_kbo > span {margin:0.2667rem 0.1667rem;width:2.5333rem;height:2rem;}
+.home.content .score_moment li > em {float:left;margin:0;width:1.6667rem;height:100%;line-height:2.5333rem;font-family:'bebas_neueregular';font-size:2.1rem;font-weight:bold;font-style:normal;color:#000000;}
+.home.content .score_moment li > .i_colon {float:left;margin:0 0.6rem;width:0.4rem;height:100%;font-family:'bebas_neueregular';font-size:2.1rem;font-weight:bold;color:#000000;text-align:center;}
+
+/* home mlb */
+.home.content .mlb .score_today > div.team_img_wrap .team_img {padding:1.4167rem 1.25rem;border:0;border-radius:0;}
+.home.content .mlb .score_today > div.team_img_wrap .mlb_team_logo {display:block;width:4.5667rem;height:4.2333rem;}
+
+.home.content .sec_wrapper .bn_rel  {position:relative;display:block;width:100%;}
+.home.content .sec_wrapper .bn_rel.bn700 {padding-bottom:70.850202%;}
+.home.content .sec_wrapper .bn_rel.bn560 {padding-bottom:56.680161%;}
+.home.content .sec_wrapper .bn_rel.bn300 {padding-bottom:30.364372%;}
+.home.content .sec_wrapper .bn_rel.bn180 {padding-bottom:18.218623%;}
+.home.content .sec_wrapper .bn_rel.bn156 {padding-bottom:15.789473%;}
+.home.content .sec_wrapper .bn_rel.bn120 {padding-bottom:12.145748%;}
+.home.content .sec_wrapper .bn_rel > img {position:absolute;top:0;left:0;}
+.home.content .bn_game,
+.home.content .bn_ranking {padding-top:1rem;}
+.home.content .bn_game .bg_box {margin-top:1rem;padding-bottom:30.364372%;width:100%;height:0;background-image:url("../images/banner-img-game.png");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.home.content .bn_game .bg_box > span {display:block;padding-top:1.6667rem;padding-left:2rem;height:4.1334rem;font-size:1.6667rem;font-weight:bold;color:#ffffff;}
+.home.content .bn_game .bg_box > p  {margin-top:0.4667rem;padding-left:2rem;font-size:1.2667rem;font-weight:500d;color:#ffffff;}
+.home.content .bn_ranking {width:100%;min-height:16.8667rem /* box height + border-width */;background-image:url("../images/bg-rangking.png");background-repeat:no-repeat;background-size:cover;}
+.home.content .bn_ranking .my_nick {margin:0.3333rem 0 0.3333rem 0.6667rem;height:1.8rem;font-size:1.2rem;font-weight:bold;color:#ca0039;}
+.home.content .bn_ranking .bg_box {margin-top:0.2rem;padding:0 0 29.554655% 4.3333rem;width:100%;height:0;background-image:url("../images/banner-img-rangking.png");background-repeat:no-repeat;background-size:cover;overflow:hidden;}
+.home.content .bn_ranking .bg_box .rank_num {float:left;margin-left:0.6667rem;padding-top:12.7%;width:7rem;text-align:center;}
+.home.content .bn_ranking .bg_box .rank_num:first-child {margin-left:0;}
+.home.content .bn_ranking .bg_box .rank_num span {display:block;height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#ffffff;}
+.home.content .bn_ranking .bg_box .rank_num em {display:block;height:2.8667rem;font-size:1.9333rem;font-weight:bold;font-style:normal;color:#ffffff;}
+.home.content .bn_txt_wrap .bg_box {position:relative;padding-bottom:15.789473%;height:0;background-image:url("../images/banner-img-text.png");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.home.content .bn_txt_wrap .bg_box .bn_txt {position:absolute;display:block;padding-right:4.6rem;padding-left:1.6667rem;width:100%;height:100%;line-height:5.2rem;font-size:1.6667rem;font-weight:bold;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;background:url("../images/ic-arrow-white.png") no-repeat 94.8% 50%;background-size:auto 1.4rem;}
+.home.content .highlight_wrap {margin:1rem -1.417004% 0;overflow:hidden;}
+.home.content .highlight_box {float:left;margin:2rem 1.377952% 0;width:47.244094%;}
+.home.content .highlight_box:nth-child(1),
+.home.content .highlight_box:nth-child(2) {margin-top:0;}
+.home.content .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-position:50% 50%;background-size:100%;border-radius:15px;overflow:hidden;}
+.home.content .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;padding:0 0.6rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
+.home.content .highlight_box p {margin-top:0.3333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.home.content .highlight_box .view {position:relative;display:block;margin-top:0.4333rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
+.home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
 
 
 
