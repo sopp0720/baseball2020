@@ -73,6 +73,33 @@ var teamUi = (function() {
 			let initPos = container.querySelectorAll('li')[index].lastElementChild;
 			bar.style.left = initPos.offsetLeft + 'px';
 			bar.style.width = initPos.offsetWidth + 'px';
+		},
+		"initDepthTab": function(container) {
+			let subtab = container;
+			let tabItem = container.querySelectorAll('.tab_item');
+			teamUi.activeFill(0,subtab);
+			tabItem.forEach(function(item) {
+				item.addEventListener('click', function(e){
+					e.preventDefault();
+					if (!e.target.classList.contains('active')) {
+						let indexNum = webUI.getChildIndex(e.target);
+						subtab.querySelector('.active').classList.remove('active');
+						e.target.classList.add('active');
+						teamUi.activeFill(indexNum,subtab);
+					}
+				});
+			});
+			window.addEventListener('resize', function(e) {
+				let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
+				teamUi.activeFill(indexNum,subtab);					
+			});
+        },
+		"activeFill" : function(index, container) {
+			let subtab = container;
+			let fill = subtab.querySelector('.active_fill');
+			let initPos = container.querySelectorAll('li')[index];
+			fill.style.left = initPos.offsetLeft + 'px';
+			fill.style.width = initPos.offsetWidth + 'px';
 		}
     }
 })();
