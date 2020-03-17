@@ -103,19 +103,6 @@
 .team_color_HT {background-color:#AC1020;}
 .team_color_LT {background-color:#C30025;}
 
-/* theme logo(응원팀) */
-[class*="theme_"] .logo_theme {background-image:url(../images/logo_theme.png);}
-#wrap.theme_LG .logo_theme {background-position:0 0;}
-#wrap.theme_SS .logo_theme {background-position:0 0;}
-#wrap.theme_HH .logo_theme {background-position:0 0;}
-#wrap.theme_OB .logo_theme {background-position:0 0;}
-#wrap.theme_WO .logo_theme {background-position:0 0;}
-#wrap.theme_SK .logo_theme {background-position:0 0;}
-#wrap.theme_NC .logo_theme {background-position:0 0;}
-#wrap.theme_KT .logo_theme {background-position:0 0;}
-#wrap.theme_HT .logo_theme {background-position:0 0;}
-#wrap.theme_LT .logo_theme {background-position:0 0;}
-
 /* logo KBO */
 .team_logo_EA, .team_logo_HH, .team_logo_HT, .team_logo_KT, .team_logo_LG, 
 .team_logo_LT, .team_logo_NC, .team_logo_OB, .team_logo_SK, .team_logo_SS, 
