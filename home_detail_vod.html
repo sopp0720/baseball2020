@@ -192,7 +192,15 @@
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
 <script src="res/js/gnb.js"></script>
-
+<script>
+bnbUi.init();
+bnbUi.initLottie();
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+	bnbUi.teamLottie()
+});
+</script>
 <script type="text/javascript">
 $(document).ready(function() {
     var imgPlayerDefault = $(".img_player_default"); // img영역
