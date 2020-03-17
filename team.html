@@ -167,7 +167,7 @@
 					<div class="active_fill"></div>
 				</div>
 			</div>
-			<div class="tab_2depth" id="tab_3depth">
+			<div class="tab_2depth" id="tab_2depth_2">
 				<div class="tab_inner">
 					<ul>
 						<li class="tab_item active">투수</li>
@@ -177,6 +177,17 @@
 					</ul>
 					<div class="active_fill"></div>
 				</div>
+			</div>
+
+			<div class="tab_3depth" id="tab_3depth">
+				<ul>
+					<li class="tab_item active">타율</li>
+					<li class="tab_item">출루율</li>
+					<li class="tab_item">장타율</li>
+					<li class="tab_item">홈런</li>
+					<li class="tab_item">타점</li>
+					<li class="tab_item">득점</li>
+				</ul>
 			</div>
 
 		</div>
@@ -281,7 +292,8 @@ bnbUi.initLottie();
 teamUi.init();
 teamUi.initSubTab(document.getElementById('tab_1depth'));
 teamUi.initDepthTab(document.getElementById('tab_2depth'));
-teamUi.initDepthTab(document.getElementById('tab_3depth'));
+teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
+teamUi.init3DepthTab(document.getElementById('tab_3depth'));
 
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');

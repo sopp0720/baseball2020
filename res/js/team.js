@@ -100,6 +100,20 @@ var teamUi = (function() {
 			let initPos = container.querySelectorAll('li')[index];
 			fill.style.left = initPos.offsetLeft + 'px';
 			fill.style.width = initPos.offsetWidth + 'px';
-		}
+		},
+		"init3DepthTab": function(container) {
+			let subtab = container;
+			let tabItem = container.querySelectorAll('.tab_item');
+			tabItem.forEach(function(item) {
+				item.addEventListener('click', function(e){
+					e.preventDefault();
+					if (!e.target.classList.contains('active')) {
+						let indexNum = webUI.getChildIndex(e.target);
+						subtab.querySelector('.active').classList.remove('active');
+						e.target.classList.add('active');
+					}
+				});
+			});
+        }
     }
 })();

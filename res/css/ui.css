@@ -182,6 +182,13 @@
 .home.content .news_heo .news_box .subject {z-index:2;display:block;position:absolute;bottom:6.25%;left:6.25%;width:87.5%;height:auto;font-size:1.5333rem;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 /* TEAM */
 
+
+
+
+
+
+
+
 /* tab_teamlist */
 .tab_teamlist {margin-top:1.6667rem;background-color:#fff;overflow-x:auto;overflow-y:hidden;padding:0 2.6667rem;}
 .tab_teamlist::-webkit-scrollbar {display:none;}
@@ -212,7 +219,13 @@
 .tab_2depth ul:after {clear:both;content:'';display:block;}
 .tab_2depth .tab_item {position:relative;z-index:1;float:left;font-size:1.2rem;font-weight:500;min-width:8.3333rem;height:3rem;padding:0.6rem 0.8333rem;color:#858585;}
 .tab_2depth .tab_item.active {font-weight:700;}
-.tab_2depth .active_fill {position:absolute;border-width:1px;border-style:solid;bottom:0;left:0;width:8.3333rem;height:3rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);border-radius:1.5rem;}
+.tab_2depth .active_fill {position:absolute;border-width:1px;border-style:solid;bottom:0;left:0;width:8.3333rem;height:3rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);border-radius:1.5rem;z-index:2;}
+
+/* tab_3depth */
+.tab_3depth {margin-top:2.3333rem;position:relative;text-align:center;font-size:0;}
+.tab_3depth ul {display:flex;padding:0 1.5rem;background:#f7f8f9;border-top:1px solid #efeff0;border-bottom:0;justify-content:space-around;}
+.tab_3depth .tab_item {flex-grow:1;width:auto;padding:1.4rem 0;color:#cfd2d9;font-size:1.4rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
+.tab_3depth .tab_item.active {font-weight:700;}
 
 /* footer */
 #footer {position:fixed;bottom:0;left:0;z-index:1;width:100vw;}
