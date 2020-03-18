@@ -287,6 +287,16 @@
 .team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;line-height:1.5rem;font-size:1rem;font-weight:normal;color:#858585;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.3rem 0.4rem 0.2rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#dee1e6;}
 
+/* Input Style */
+.input_box {margin:0 auto;padding:0.8333rem 8.444444% 0.8rem 4.888888%;width:83.333333%;height:4rem;border-radius:2rem;background-color:#f7f8f9;}
+.input_box .ic_srh {display:block;float:left;width:7.692307%;height:2.3667rem;background:url('../images/ic-search.png') no-repeat 50% 50%;background-size:auto 2rem;}
+.input_box input {margin:0;padding:0;float:left;padding-left:3.846153%;width:92.307692%;height:2.3667rem;font-size:1.2667rem;color:#b4b4b4;border:0;background-color:#f7f8f9;}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent !important;}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent !important;}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent !important;}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent !important;}
+input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
+
 /* tab_teamlist */
 .tab_teamlist {margin-top:1.6667rem;background-color:#fff;overflow-x:auto;overflow-y:hidden;padding:0 2.6667rem;}
 .tab_teamlist::-webkit-scrollbar {display:none;}
