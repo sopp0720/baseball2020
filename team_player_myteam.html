@@ -189,28 +189,6 @@
 					<li class="tab_item">득점</li>
 				</ul>
 			</div>
-<style>
-.team.content .rate_wrapper {padding-bottom:3.3333rem;border-bottom:0.9333rem solid #f0f1f6;}
-.team.content .sec_rate {margin-top:2.2rem;}
-.team.content .sec_rate .title_rate {height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
-.team.content .sec_rate ol {margin-top:2.5rem;}
-.team.content .sec_rate li {position:relative;margin-top:0.6rem;}
-.team.content .sec_rate li:first-child {margin-top:0;}
-.team.content .sec_rate .player_img {position:absolute;left:0;top:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
-.team.content .sec_rate .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
-.team.content .sec_rate .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
-.team.content .sec_rate .desc {margin-left:5.6rem;padding-left:0.1333rem;height:5rem;font-size:0;border-bottom:0.0667rem solid #dee1e6;}
-.team.content .sec_rate .desc > span {display:inline-block;line-height:4.3333rem;vertical-align:top;}
-.team.content .sec_rate .desc > strong {float:right;display:inline-block;line-height:4.3333rem;vertical-align:top;}
-.team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:bold;color:#000000;opacity:0.8;text-align:center;}
-.team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.3333rem;font-weight:500;color:#000000;}
-.team.content .sec_rate .desc .position {margin-left:0.6rem;font-size:1.0667rem;font-weight:normal;color:#525252;}
-.team.content .sec_rate .desc .my {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;font-family:Sriracha;font-size:0.7667rem;font-weight:normal;color:#ffffff;text-align:center;border-radius:50%;background-color:#c10a3a;}
-.team.content .sec_rate .desc .rate_num {font-family:'bebas_neueregular';font-size:1.5333rem;font-weight:bold;text-align:right;color:#000000;}
-
-.input_box {padding:0.8333rem 2.5333rem 0.8rem 1.4667rem;width:83.333333%;height:4rem;border-radius:2rem;background-color:#f7f8f9;}
-.input_box input {width:23rem;height:2.3667rem;}
-</style>
             <div class="rate_wrapper">
                 <div class="sec_rate">
                     <div class="inner">
@@ -313,10 +291,259 @@
             </div>
             <div class="sec_team_position">
                 <div class="input_box">
+                    <button class="ic_srh blind">검색</button>
                     <input type="text" placeholder="선수 검색">
                 </div>
+                <!--
+                투수 : team_pitcher
+                포수 : team_catcher
+                내야수 : team_infielder
+                외야수 : team_outfielder
+                -->
+                <div class="img_team_position team_pitcher">
+                    <span class="team_name">LG TWINS</span>
+                </div>
+<style>
+/* Input Style */
+.input_box {margin:0 auto;padding:0.8333rem 8.444444% 0.8rem 4.888888%;width:83.333333%;height:4rem;border-radius:2rem;background-color:#f7f8f9;}
+.input_box .ic_srh {display:block;float:left;width:7.692307%;height:2.3667rem;background:url('res/images/ic-search.png') no-repeat 50% 50%;background-size:auto 2rem;}
+.input_box input {margin:0;padding:0;float:left;padding-left:3.846153%;width:92.307692%;height:2.3667rem;font-size:1.2667rem;color:#b4b4b4;border:0;background-color:#f7f8f9;}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent !important;}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent !important;}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent !important;}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent !important;}
+input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
+
+/* TEAM - my team */
+.team.content .rate_wrapper {padding-bottom:3.3333rem;border-bottom:0.9333rem solid #f0f1f6;}
+.team.content .sec_rate {margin-top:2.2rem;}
+.team.content .sec_rate .title_rate {height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
+.team.content .sec_rate ol {margin-top:2.5rem;}
+.team.content .sec_rate li {position:relative;margin-top:0.6rem;}
+.team.content .sec_rate li:first-child {margin-top:0;}
+.team.content .sec_rate .player_img {position:absolute;left:0;top:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .sec_rate .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
+.team.content .sec_rate .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
+.team.content .sec_rate .desc {margin-left:5.6rem;padding-left:0.1333rem;height:5rem;font-size:0;border-bottom:0.0667rem solid #dee1e6;}
+.team.content .sec_rate .desc > span {display:inline-block;line-height:4.3333rem;vertical-align:top;}
+.team.content .sec_rate .desc > strong {float:right;display:inline-block;line-height:4.3333rem;vertical-align:top;}
+.team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:bold;color:#000000;opacity:0.8;text-align:center;}
+.team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.3333rem;font-weight:500;color:#000000;}
+.team.content .sec_rate .desc .position {margin-left:0.6rem;font-size:1.0667rem;font-weight:normal;color:#525252;}
+.team.content .sec_rate .desc .my {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;font-family:Sriracha;font-size:0.7667rem;font-weight:normal;color:#ffffff;text-align:center;border-radius:50%;background-color:#c10a3a;}
+.team.content .sec_rate .desc .rate_num {font-family:'bebas_neueregular';font-size:1.5333rem;font-weight:bold;text-align:right;color:#000000;}
+
+.team.content .sec_team_position {padding:2.6667rem 0 1.6667rem;}
+.team.content .sec_team_position .img_team_position {position:relative;margin-top:2.6667rem;width:100%;padding-bottom:59.537037%;height:0;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .sec_team_position .img_team_position.team_pitcher {background-image:url('res/images/position_pitcher.png');}
+.team.content .sec_team_position .img_team_position.team_catcher {background-image:url('res/images/position_catcher.png');}
+.team.content .sec_team_position .img_team_position.team_infielder {background-image:url('res/images/position_infielder.png');}
+.team.content .sec_team_position .img_team_position.team_outfielder {background-image:url('res/images/position_outfielder.png');}
+.team.content .sec_team_position .img_team_position .team_name {display:block;position:absolute;bottom:7.153965%;right:4.259259%;height:2.0333rem;font-size:1.6667rem;font-weight:bold;text-align:right;color:#b8b8c0;}
+
+.team.content .sec_team_position .team_position_all ul {overflow:hidden;}
+.team.content .sec_team_position .team_position_all li {float:left;margin-top:6.578947%;margin-left:5.263157%;width:21.052631%;}
+.team.content .sec_team_position .team_position_all li:nth-child(4n+1) {margin-left:0;}
+.team.content .sec_team_position .team_position_all li:first-child {margin-left:0;}
+.team.content .sec_team_position .team_position_all li:nth-child(1),
+.team.content .sec_team_position .team_position_all li:nth-child(2),
+.team.content .sec_team_position .team_position_all li:nth-child(3),
+.team.content .sec_team_position .team_position_all li:nth-child(4) {margin-top:0;}
+.team.content .sec_team_position .team_position_all li .player_img {position:relative;margin:0 auto;width:5.7333rem;height:5.7333rem;border-radius:1.29rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .sec_team_position .team_position_all li .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4667rem;width:2rem;height:2rem;border-radius:50%;}
+.team.content .sec_team_position .team_position_all li .player_img .team_logo_xs > span {display:block;margin:0.3333rem auto;width:1.3333rem;height:1.3333rem;background-repeat:no-repeat;}
+
+.team.content .sec_team_position .team_position_all li .i_name {margin-top:0.8333rem;height:1.8rem;text-align:center;font-size:0;}
+.team.content .sec_team_position .team_position_all li .i_name > b {display:inline-block;line-height:1.8rem;font-size:1.2rem;font-weight:bold;color:#000000;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;margin-left:0.2rem;line-height:1.8rem;font-size:1rem;font-weight:normal;color:#2b2b2b;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_position {margin-top:0.1333rem;height:1.5rem;text-align:center;font-size:0;}
+.team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;line-height:1.5rem;font-size:1rem;font-weight:normal;color:#858585;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.3rem 0.4rem 0.2rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#dee1e6;}
+
+</style>
+                <div class="team_position_all">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="i_name">
+                                    <b>29</b>
+                                    <span>오지환</span>
+                                </div>
+                                <div class="i_position">
+                                    <span>투수</span>
+                                    <i></i>
+                                    <span>자완자타</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div style="height:300px"></div>
 		</div>
 	</div>
 	<div id="footer">
