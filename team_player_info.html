@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<select id="teamSelect" style="z-index:99999; position:fixed; bottom:50px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content team">
+		    <!-- page title, btn back -->
+            <div class="page_title_wrap">
+                <div class="inner">
+                    <button type="button" class="btn_back blind">뒤로가기</button>
+                    <h2>LG 박용택 (타자)</h2>
+                </div>
+            </div>
+            <!-- // page title, btn back -->
+            <div class="sec_wrapper player_info_wrap">
+                <div class="inner">
+                    <div class="player_info player_info_bg_LG"> <!-- theme.css : Team player info bg -->
+                        <div class="info_inner">
+                            <div class="info_rel">
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_LG"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="player_desc">
+                                    <span class="team_name">LG Twins</span>
+                                    <strong class="i_name">박용택</strong>
+                                    <span class="i_position">
+                                        <span>33번</span>
+                                        <span>좌익수(좌타)</span>
+                                    </span>
+                                </div>
+                                <dl>
+                                    <dt>생년월일</dt>
+                                    <dd>1979년 4월 21일</dd>
+                                    <dt>체격</dt>
+                                    <dd>185cm / 90kg</dd>
+                                    <dt>종신교</dt>
+                                    <dd>고명초-휘문중-휘문고-고려대</dd>
+                                    <dt>지명순위</dt>
+                                    <dd>98 LG 2차 우선</dd>
+                                    <dt>입단계약금</dt>
+                                    <dd>3억</dd>
+                                    <dt>연봉</dt>
+                                    <dd>8억</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<style>
+.team.content .player_info_wrap {padding-top:1rem;}
+.team.content .player_info {padding-bottom:87.044534%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;}
+.team.content .info_inner {padding:6.477732% 8.704453% 5.566801% 7.692307%;}
+.team.content .info_rel {position:relative;}
+.team.content .player_info .player_img {position:absolute;top:0.5667rem;left:0;width:7.0667rem;height:7.0667rem;border-radius:50%;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .player_info .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
+.team.content .player_info .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
+.team.content .player_info .player_desc {margin-left:8.8667rem;}
+.team.content .player_info .player_desc .team_name {display:block;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:rgba(255,255,255,.5);}
+.team.content .player_info .player_desc .i_name {display:block;height:3.2667rem;font-size:2.2rem;font-style:normal;font-weight:bold;color:#ffffff}
+.team.content .player_info .player_desc .i_position {display:block;margin-top:0.5667rem;font-size:0;}
+.team.content .player_info .player_desc .i_position > span:first-child {margin-left:0;}
+.team.content .player_info .player_desc .i_position > span {display:inline-block;margin-left:0.6667rem;padding:0.2333rem 1rem;height:2.1333rem;font-size:1.1333rem;font-weight:500;color:#fff4af;text-align:center;background-color:rgba(0,0,0,.3);border-radius:1.0667rem;vertical-align:top;}
+.team.content .player_info dl {clear:both;margin-top:1.9333rem;padding-left:0.3333rem;}
+.team.content .player_info dl dt {clear:both;float:left;margin-top:0.6667rem;width:24.509803%;max-width:6.6667rem;font-size:1.3333rem;color:#ffffff;}
+.team.content .player_info dl dd {float:left;margin-top:0.6667rem;margin-left:8.088235%;width:67.40196%;font-size:1.3333rem;font-weight:500;color:#ffffff;}
+.team.content .player_info dl dt:first-child {margin-top:0;}
+.team.content .player_info dl dd:nth-child(2) {margin-top:0;}
+.team.content .video_scroll {margin-top:1rem;}
+.team.content .video_scroll ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.team.content .video_scroll ul li {display:inline-block;margin-left:2.834008%;width:37.044534%;white-space:normal;vertical-align:top;}
+.team.content .video_scroll ul li:first-child {margin-left:0;}
+.team.content .video_scroll .thumb {position:relative;padding-bottom:56.284153%;height:0;border-radius:0.7333rem;background-repeat:no-repeat;background-size:100% auto;background-color:#e9edf0;}
+.team.content .video_scroll .thumb.i_default {background-image:url('res/images/ic-play-defualt-s.png');background-position:50% 50%;background-size:22.023809% auto;}
+.team.content .video_scroll .thumb .play_time {position:absolute;bottom:0.7rem;right:0.6667rem;padding:0 0.6rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
+.team.content .video_scroll p {margin-top:0.3333rem;font-size:1.2667rem;font-weight:bold;color:#000000;line-height:1.26;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.team.content .video_scroll .date {margin-top:0.2rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
+</style>
+            <div class="sec_wrapper">
+                <div class="inner">
+                    <div class="title_hd">
+                        <span class="sec_title">동영상</span>
+                    </div>
+                    <div class="video_scroll">
+                        <ul>
+                            <li>
+                                <div class="thumb i_default"> <!-- default img일 때 클래스 -->
+                                    <i class="play_time">08:11</i>
+                                </div> <!-- video img -->                               
+                            </li>
+                            <li>
+                                <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+                                    <i class="play_time">08:11</i>
+                                </div> <!-- video img -->
+                                <p>범신의 탄식을 부른 아들 장훈의 타격 이제 이제 이제 이제</p>
+                               <span class="date">2019년 10월 2일</span>
+                            </li>
+                            <li>
+                                <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+                                    <i class="play_time">10:41</i>
+                                </div> <!-- video img -->
+                                <p>야구는 10회말 투아웃부터! 끝내기 안타안타안타안타</p>
+                               <span class="date">2019년 9월 30일</span>
+                            </li>
+                            <li>
+                                <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+                                    <i class="play_time">08:11</i>
+                                </div> <!-- video img -->
+                                <p>바람을 따라 훨훨 날아 담장 밖으로</p>
+                               <span class="date">2019년 9월 26일</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="tab_container">
+			<!-- Active Tab Container -->
+			<div class="active_tab_container" id="active_tab_container">
+				<div class="tab tab_home">
+					<div class="circle">
+						<div class="img_box" id="circle1">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_team_info">
+					<div class="circle">
+						<div class="img_box" id="circle2">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_relay">
+					<div class="circle">
+						<div class="img_box" id="circle3">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_game">
+					<div class="circle">
+						<div class="img_box" id="circle4">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_my">
+					<div class="circle">
+						<div class="img_box" id="circle5">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Active Button Container -->
+			<!-- Active Label -->
+			<div class="active_label_container" id="active_label_container">
+				<div class="label label_home active">
+					 홈
+				</div>
+				<div class="label label_team_info">
+					 팀정보
+				</div>
+				<div class="label label_team_info">
+					 중계
+				</div>
+				<div class="label label_team_info">
+					 게임
+				</div>
+				<div class="label label_team_info">
+					 MY
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<div class="tab_bar" id="tab_bar">
+				<div class="left_side">
+				</div>
+				<div class="middle">
+					<div class="center_middle">
+					</div>
+				</div>
+				<div class="right_side" style="flex-grow:4;">
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<!-- Button Container -->
+			<div class="tab_button" id="tab_button">
+				<div class="tab tab_home hide">
+					 홈
+				</div>
+				<div class="tab tab_team_info">
+					 팀정보
+				</div>
+				<div class="tab tab_relay">
+					 중계
+				</div>
+				<div class="tab tab_game">
+					 게임
+				</div>
+				<div class="tab tab_my">
+					 MY
+				</div>
+			</div>
+			<!-- Button Container -->
+		</div>
+	</div>
+	<!-- Footer -->
+</div>
+
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+<script src="res/js/team.js"></script>
+<script>
+bnbUi.init();
+bnbUi.initLottie();
+teamUi.init();
+teamUi.initSubTab(document.getElementById('tab_1depth'));
+teamUi.initDepthTab(document.getElementById('tab_2depth'));
+teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
+teamUi.init3DepthTab(document.getElementById('tab_3depth'));
+
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+	bnbUi.teamLottie()
+});
+</script>
+</body>
+</html>

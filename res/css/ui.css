@@ -113,7 +113,7 @@
 .home.content .sec_wrapper .bn_rel.bn180 {padding-bottom:18.218623%;}
 .home.content .sec_wrapper .bn_rel.bn156 {padding-bottom:15.789473%;}
 .home.content .sec_wrapper .bn_rel.bn120 {padding-bottom:12.145748%;}
-.home.content .sec_wrapper .bn_rel > img {position:absolute;top:0;left:0;}
+.home.content .sec_wrapper .bn_rel > img {position:absolute;top:0;left:0;width:100%;}
 .home.content .bn_game,
 .home.content .bn_ranking {padding-top:1rem;}
 .home.content .bn_game .bg_box {margin-top:1rem;padding-bottom:30.364372%;width:100%;height:0;background-image:url("../images/banner-img-game.png");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}

@@ -258,8 +258,20 @@
 .tab_teamlist .team_HT svg path[fill-opacity="1"] {fill:#AC1020;}
 .tab_teamlist .team_HT .my_team {background-color:#AC1020;}
 
+/* 1.LG[LG], 2.삼성[SS], 3.한화[HH], 4.두산[OB], 5.키움[WO],
+6.SK[SK], 7.NC[NC], 8.KT[KT], 9.기아[HT], 10.롯데[LT] */
 
-
+/* Team player info bg*/
+.player_info_bg_LG {background-image:url('../images/bg/bg-team-player-lg.png');}
+.player_info_bg_SS {background-image:url('../images/bg/bg-team-player-samsung.png');}
+.player_info_bg_HH {background-image:url('../images/bg/bg-team-player-hanwha.png');}
+.player_info_bg_OB {background-image:url('../images/bg/bg-team-player-doosan.png');}
+.player_info_bg_WO {background-image:url('../images/bg/bg-team-player-kiwoom.png');}
+.player_info_bg_SK {background-image:url('../images/bg/bg-team-player-sk.png');}
+.player_info_bg_NC {background-image:url('../images/bg/bg-team-player-nc.png');}
+.player_info_bg_KT {background-image:url('../images/bg/bg-team-player-kt.png');}
+.player_info_bg_HT {background-image:url('../images/bg/bg-team-player-kia.png');}
+.player_info_bg_LT {background-image:url('../images/bg/bg-team-player-lotte.png');}
 
 
 /*******************************************************************************************/
