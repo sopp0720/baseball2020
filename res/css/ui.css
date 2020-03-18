@@ -287,6 +287,27 @@
 .team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;line-height:1.5rem;font-size:1rem;font-weight:normal;color:#858585;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.3rem 0.4rem 0.2rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#dee1e6;}
 
+/* TEAM - player srh result */
+.team.content .srh_result {margin-top:2.3333rem}
+.team.content .srh_result li {position:relative;padding:1.9333rem 0 1.9rem;border-bottom:0.0667rem solid rgba(222,225,230,.4);background:url('../images/ic-arrow-gray.png') no-repeat 100% 50%;background-size:auto 1.4rem;}
+.team.content .srh_result li .player_img {position:absolute;left:0;top:2.2rem;width:5.7333rem;height:5.7333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .srh_result li .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4667rem;width:2rem;height:2rem;border-radius:50%;}
+.team.content .srh_result li .player_img .team_logo_xs > span {display:block;margin:0.3333rem auto;width:1.3333rem;height:1.3333rem;background-repeat:no-repeat;}
+.team.content .srh_result li .player_info {margin-left:8.0667rem;}
+.team.content .srh_result li .player_info .player_name {height:2.0667rem;font-size:0;}
+.team.content .srh_result li .player_info .player_name span {display:inline-block;height:100%;font-size:1.4rem;vertical-align:top;}
+.team.content .srh_result li .player_info .player_name span.i_name {font-weight:bold;color:#000000;}
+.team.content .srh_result li .player_info .player_name span.i_num {margin-left:0.6rem;font-weight:500;color:#525252;}
+.team.content .srh_result li .player_info dl {margin-top:0.4667rem;overflow:hidden;}
+.team.content .srh_result li .player_info dt {clear:both;float:left;margin-top:0.1667rem;width:4.6667rem;height:1.8rem;font-size:1.2rem;color:#525252;}
+.team.content .srh_result li .player_info dt:first-child,
+.team.content .srh_result li .player_info dd:nth-child(2) {margin-top:0;}
+.team.content .srh_result li .player_info dd {float:left;margin-top:0.1667rem;margin-left:0.7667rem;width:16.6667rem;height:1.8rem;font-size:1.2rem;color:#000000;}
+@media (max-width:319px) {
+    .team.content .srh_result li .player_img {position:relative;top:0;}
+    .team.content .srh_result li .player_info {margin-left:0;margin-top:1rem;}
+}
+
 /* List none */
 .list_none {margin:2.6667rem 0 4rem;}
 .list_none .img_box {height:7.6667rem;background-image:url('../images/img-player-empty-b.png');background-repeat:no-repeat;background-size:auto 7.6667rem;background-position:50% 50%;}
