@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<select id="teamSelect" style="z-index:99999; position:fixed; bottom:50px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content team">
+			<div class="tab_teamlist" id="teamlistnav">
+				<ul>
+					<li class="team_LG active">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_LG"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">LG</span>
+						</div>
+					</li>
+					<!-- 롯데 -->
+					<li class="team_LT">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_LT"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">롯데</span>
+						</div>
+					</li>
+					<!-- KIA -->
+					<li class="team_HT">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_HT"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">KIA</span>
+						</div>
+					</li>
+					<!-- 두산 -->
+					<li class="team_OB">
+					<div class="team_icon_box">
+						<div class="logo">
+							<div class="circle">
+							</div>
+							<div class="team_symbol_OB"></div>
+						</div>
+						<span class="my_team"></span>
+						<span class="name">두산</span>
+					</div>
+					</li>
+					<!-- 삼성 -->
+					<li class="team_SS">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_SS"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">삼성</span>
+						</div>
+					</li>
+					<!-- 한화 -->
+					<li class="team_HH">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_HH"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">한화</span>
+						</div>
+					</li>
+					<!-- SK -->
+					<li class="team_SK">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_SK"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">SK</span>
+						</div>
+					</li>
+					<!-- 키움 -->
+					<li class="team_WO">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_WO"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">키움</span>
+						</div>
+					</li>
+					<!-- NC -->
+					<li class="team_NC">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_NC"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">NC</span>
+						</div>
+					</li>
+					<!-- KT -->
+					<li class="team_KT">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_KT"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">KT</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tab_1depth" id="tab_1depth">
+				<ul class="tab_link">
+					<li class="tab_item active"><span>요즘</span></li>
+					<li class="tab_item"><span>기록</span></li>
+					<li class="tab_item"><span>선수</span></li>
+				</ul>
+				<div class="active_bar"></div>
+			</div>
+
+			<div class="tab_2depth" id="tab_2depth">
+				<div class="tab_inner">
+					<ul>
+						<li class="tab_item active">LG</li>
+						<li class="tab_item">KBO 전체</li>
+					</ul>
+					<div class="active_fill"></div>
+				</div>
+			</div>
+			<!-- YEAR -->
+			<div class="year_wrap">
+			    <span class="year_arrow i_prev blind">이전</span>
+			    <span class="i_year">2020</span>
+			    <span class="year_arrow i_next blind i_disabled">다음</span> <!-- 다음년도가 없을 경우 i_disabled 클래스 추가 -->
+			</div>
+			<!-- // YEAR -->
+			<div class="tab_3depth" id="tab_3depth">
+				<ul>
+					<li class="tab_item active">타율</li>
+					<li class="tab_item">출루율</li>
+					<li class="tab_item">장타율</li>
+					<li class="tab_item">홈런</li>
+					<li class="tab_item">타점</li>
+					<li class="tab_item">득점</li>
+					<li class="tab_item">도루</li>
+                    <li class="tab_item">안타</li>
+				</ul>
+			</div>
+            <div class="rate_wrapper">
+                <div class="sec_rate">
+                    <div class="inner">
+                        <span class="title_rate">타자 타율 TOP 3</span>
+                        <!-- list none -->
+                        <div class="list_none">
+                            <div class="img_box"></div>
+                            <p>아직 선수 기록이 없습니다.</p>
+                        </div>
+                        <!-- // list none -->
+                        <ol> <!-- 선수 기록이 없을 때 여기부터 히든 -->
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="desc">
+                                    <span class="num">1</span>
+                                    <span class="name">양의지</span>
+                                    <span class="position">우완좌타</span>
+                                    <span class="my_team"></span>
+                                    <strong class="rate_num">0.344</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="desc">
+                                    <span class="num">2</span>
+                                    <span class="name">김광현</span>
+                                    <span class="position">좌완좌타</span>
+                                    <!--<span class="my_team"></span>-->
+                                    <strong class="rate_num">0.327</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="desc">
+                                    <span class="num">3</span>
+                                    <span class="name">베이글스</span>
+                                    <span class="position">우완좌타</span>
+                                    <!--<span class="my_team"></span>-->
+                                    <strong class="rate_num">0.308</strong>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="tab_3depth" id="tab_3depth">
+                    <ul>
+                        <li class="tab_item active">평자책</li>
+                        <li class="tab_item">승률</li>
+                        <li class="tab_item">승리</li>
+                        <li class="tab_item">탈삼진</li>
+                        <li class="tab_item">홀드</li>
+                        <li class="tab_item">세이브</li>                        
+                    </ul>
+                </div>
+                <div class="sec_rate">
+                    <div class="inner">
+                        <span class="title_rate">투수 평자책 TOP 3</span>
+                        <!-- list none -->
+                        <div class="list_none">
+                            <div class="img_box"></div>
+                            <p>아직 선수 기록이 없습니다.</p>
+                        </div>
+                        <!-- // list none -->
+                        <ol> <!-- 선수 기록이 없을 때 여기부터 히든 -->
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="desc">
+                                    <span class="num">1</span>
+                                    <span class="name">양의지</span>
+                                    <span class="position">우완좌타</span>
+                                    <span class="my_team"></span>
+                                    <strong class="rate_num">0.344</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="desc">
+                                    <span class="num">2</span>
+                                    <span class="name">함덕주</span>
+                                    <span class="position">좌완좌타</span>
+                                    <!--<span class="my_team"></span>-->
+                                    <strong class="rate_num">2.47</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                    <span class="team_logo_xs team_color_HT"> <!-- theme.css : Team Color bg -->
+                                        <span class="team_symbol_HT"></span> <!-- theme.css : symbol KBO -->
+                                    </span>                                
+                                </div>
+                                <div class="desc">
+                                    <span class="num">3</span>
+                                    <span class="name">베이글스</span>
+                                    <span class="position">우완우투</span>
+                                    <!--<span class="my_team"></span>-->
+                                    <strong class="rate_num">0.308</strong>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_team_position tbl_player_wrap">
+                <div class="input_box">
+                    <button class="ic_srh blind">검색</button>
+                    <input type="text" placeholder="선수 검색">
+                </div>
+                <div class="inner">
+                    <div class="tab_2depth" id="tab_2depth">
+                        <div class="tab_inner">
+                            <ul>
+                                <li class="tab_item active">타자 순위</li>
+                                <li class="tab_item">투수 순위</li>
+                            </ul>
+                            <div class="active_fill"></div>
+                        </div>
+                    </div>
+                    <div class="table_responsive table_player">
+                        <div class="table_left">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="cell sorting">순위</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="cell">
+                                                <div class="num">1</div>
+                                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+                                                <div class="player_wrap">
+                                                    <div class="player_name">이천웅</div>
+                                                    <div class="player_team">키움</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row_my">
+                                        <td>
+                                            <div class="cell">
+                                                <div class="num">2</div>
+                                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+                                                <div class="player_wrap">
+                                                    <div class="player_name">이천웅</div>
+                                                    <div class="player_team">LG<span class="my_team"></span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="cell">
+                                                <div class="num">3</div>
+                                                <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+                                                <div class="player_wrap">
+                                                    <div class="player_name">이천웅</div>
+                                                    <div class="player_team">LG<span class="my_team"></span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table_right">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="cell sorting">타율</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">홈런</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">타점</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting selected">득점</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">안타</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">출루율</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">장타율</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">도루</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">볼넷</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">삼진</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">OPS</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">2루타</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">3루타</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">병살타</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">실책</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">사구</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">도루실패</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">멀티히트</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">득점권타율</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">wRC+</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">WAR</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">IsoP</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">BABIP</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">wOBA</div>
+                                        </th>
+                                        <th>
+                                            <div class="cell sorting">WPA</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="cell">144</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">93</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">1</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell selected">50</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.0</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row_my">
+                                        <td>
+                                            <div class="cell">144</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">93</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">1</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell selected">50</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.0</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="cell">144</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">93</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">1</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell selected">50</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.0</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell">0.650</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="tab_container">
+			<!-- Active Tab Container -->
+			<div class="active_tab_container" id="active_tab_container">
+				<div class="tab tab_home">
+					<div class="circle">
+						<div class="img_box" id="circle1">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_team_info">
+					<div class="circle">
+						<div class="img_box" id="circle2">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_relay">
+					<div class="circle">
+						<div class="img_box" id="circle3">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_game">
+					<div class="circle">
+						<div class="img_box" id="circle4">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_my">
+					<div class="circle">
+						<div class="img_box" id="circle5">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Active Button Container -->
+			<!-- Active Label -->
+			<div class="active_label_container" id="active_label_container">
+				<div class="label label_home active">
+					 홈
+				</div>
+				<div class="label label_team_info">
+					 팀정보
+				</div>
+				<div class="label label_team_info">
+					 중계
+				</div>
+				<div class="label label_team_info">
+					 게임
+				</div>
+				<div class="label label_team_info">
+					 MY
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<div class="tab_bar" id="tab_bar">
+				<div class="left_side">
+				</div>
+				<div class="middle">
+					<div class="center_middle">
+					</div>
+				</div>
+				<div class="right_side" style="flex-grow:4;">
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<!-- Button Container -->
+			<div class="tab_button" id="tab_button">
+				<div class="tab tab_home hide">
+					 홈
+				</div>
+				<div class="tab tab_team_info">
+					 팀정보
+				</div>
+				<div class="tab tab_relay">
+					 중계
+				</div>
+				<div class="tab tab_game">
+					 게임
+				</div>
+				<div class="tab tab_my">
+					 MY
+				</div>
+			</div>
+			<!-- Button Container -->
+		</div>
+	</div>
+	<!-- Footer -->
+</div>
+
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+<script src="res/js/team.js"></script>
+<script>
+bnbUi.init();
+bnbUi.initLottie();
+teamUi.init();
+teamUi.initSubTab(document.getElementById('tab_1depth'));
+teamUi.initDepthTab(document.getElementById('tab_2depth'));
+teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
+teamUi.init3DepthTab(document.getElementById('tab_3depth'));
+
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+	bnbUi.teamLottie()
+});
+</script>
+</body>
+</html>

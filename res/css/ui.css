@@ -299,6 +299,7 @@
 .team.content .sec_team_position .team_position_all .all_position_desc p {display:inline-block;font-size:1.2333rem;font-weight:300;color:#858585;line-height:4.6667rem;text-align:center;}
 .team.content .sec_team_position .team_position_all .all_position_desc span {display:inline-block;position:relative;width:0.9333rem;height:0.9333rem;}
 .team.content .sec_team_position .team_position_all .all_position_desc span i {display:inline-block;position:absolute;top:-0.4667rem;left:0;width:100%;height:100%;background:url('../images/ic-team-text-s.png') no-repeat 50% 50%;background-size:cover;}
+.team.content .sec_team_position.tbl_player_wrap .input_box {margin-bottom:3.3333rem;}
 
 /* TEAM - player srh result */
 .team.content .srh_result {margin-top:2.3333rem}
@@ -464,7 +465,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_3depth .tab_item.active {font-weight:700;}
 
 /* table common*/
-.table_responsive {margin-top:1.1667rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
+.table_responsive {margin-top:2rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
 .table_responsive:after {content:'';display:block;clear:both;}
 .table_responsive .table_left {float:left;border-right:1px solid #dee1e6;}
 .table_responsive thead .cell {background-color:#f2f3f4;}
