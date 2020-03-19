@@ -389,11 +389,13 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_responsive .table_left {float:left;border-right:1px solid #dee1e6;}
 .table_responsive thead .cell {background-color:#f2f3f4;}
 .table_responsive .table_left tbody .cell {background-color:rgba(242, 243, 244, 0.4);}
-.table_responsive .table_right {position:relative;float:none;overflow-x:auto;}
+.table_responsive .table_right {position:relative;float:none;overflow-y:hidden;overflow-x:auto;}
+.table_responsive .table_right .cell {min-width:4.6667rem;}
 .table {width:100%;}
 .table thead tr {border-bottom:1px solid #dde1e7;}
 .table tbody tr {border-bottom:1px solid #dee1e6;}
-.table thead .cell {position:relative;height:2.7rem;padding:0.5333rem 0 0.5333rem;font-size:1.1333rem;text-align:center;white-space:nowrap;}
+.table tbody tr:last-of-type {border-bottom:0 none;}
+.table thead .cell {position:relative;height:2.7rem;padding:0.5333rem 0 0.5333rem;font-size:1.1333rem;font-weight:500;text-align:center;white-space:nowrap;}
 .table tbody .cell {position:relative;height:4.3rem;padding:1.3333rem 0.3333rem 1.3rem;font-size:1.1333rem;text-align:center;white-space:nowrap;}
 .table thead .cell.selected {color:#2b2b2b;background-color:#ebebeb;}
 .table tbody .cell.selected {color:#c10a3a;background-color:#FBF2F2;}/* 수정 예정 */
@@ -406,19 +408,25 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* team table */
 .table_team .table_left {width:7.3333rem;}
-.table_team .table_right .cell {min-width:4.6667rem;}
-.table_team .cell.table_team_wrap {padding:0;background-color:rgba(242, 243, 244, 0.4);}
-.table_team .cell.table_team_wrap .num {width:1.1333rem;height:4.3rem;margin-left:1.2rem;padding:1.3rem 0 1.2667rem;font-family:BebasNeue;font-size:1.4rem;font-weight:bold;color:#2b2b2b;float:left;}
-.table_team .cell.table_team_wrap .vs {float:left;width:1.0667rem;height:1.6rem;margin:1.3667rem 0 0 1.0667rem;background-image:url(../images/table-vs.png);background-size:100%;}
-.table_team .cell.table_team_wrap .team_wrap {width:2.8333rem;height:4.3rem;text-align:center;float:right;margin-right:1rem;}
-.table_team .cell.table_team_wrap [class*="team_logo_"] {display:block;margin:0.3333rem auto 0;width:2.2667rem;height:2rem;}
-.table_team .cell.table_team_wrap .team_name {font-size:1.4rem;font-weight:500;}
+.table_team .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
+.table_team .table_left .cell .num {width:1.1333rem;height:4.3rem;margin-left:1.2rem;padding:1.3rem 0 1.2667rem;font-family:BebasNeue;font-size:1.4rem;font-weight:bold;color:#2b2b2b;float:left;}
+.table_team .table_left .cell .vs {float:left;width:1.0667rem;height:1.6rem;margin:1.3667rem 0 0 1.0667rem;background-image:url(../images/table-vs.png);background-size:100%;}
+.table_team .table_left .cell .team_wrap {width:2.8333rem;height:4.3rem;text-align:center;float:right;margin-right:1rem;}
+.table_team .table_left .cell [class*="team_logo_"] {display:block;margin:0.3333rem auto 0;width:2.2667rem;height:2rem;}
+.table_team .table_left .cell .team_name {margin-top:0.0333rem;}
 .table_team .row_my .cell .num {color:#c10a3a;}
 
-.table_player {}
+.table_player .table_left {width:11.6rem;}
+.table_player .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
+.table_player .table_left .cell .num {float:left;width:1.1333rem;height:1.7333rem;font-family:BebasNeue;font-size:1.4rem;font-weight:bold;text-align:center;color:#2b2b2b;margin:1.3rem 0 0 0.4667rem;}
+.table_player .table_left .cell .player_img {float:left;position:relative;width:3.5rem;height:3.5rem;margin:0.4rem 0 0 0.4rem;border-radius:0.9333rem;border:solid 0.0333rem #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
+.table_player .table_left .cell .player_wrap {float:left;width:5rem;margin:0.4rem 0 0 0.5rem;text-align:left;font-size:0;}
+.table_player .table_left .cell .player_name {font-size:1.2667rem;font-weight:500;line-height:normal;color:#2b2b2b;}
+.table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
+.table_player .table_left .cell .player_team .my_team {position:absolute;top:0.1333rem;right:0;width:1.3333rem;height:1.3333rem;background-image:url("../images/icon_my.png");background-size:1.3333rem;border-radius:100%;}
+
 
 .table_5day .table_left {width:17.5rem;}
-.table_5day .table_right .cell {min-width:4.6667rem;}
 .table_5day tbody tr:first-of-type {background:rgba(242, 243, 244, 0.4);}
 
 
