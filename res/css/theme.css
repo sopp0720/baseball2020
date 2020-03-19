@@ -126,6 +126,18 @@
 [data-theme="theme_HT"] .active_fill {color:#AC1020;border-color:#AC1020;background-color:rgba(171,16,32,0.07);}
 [data-theme="theme_LT"] .active_fill {color:#C30025;border-color:#C30025;background-color:rgba(195,0,37,0.07);}
 
+/* My Team Bg */
+[data-theme="theme_default"] .my_team {background-color:#C10A3A;}
+[data-theme="theme_LG"] .my_team {background-color:#C10A3A;}
+[data-theme="theme_HH"] .my_team {background-color:#DA5A17;}
+[data-theme="theme_SS"] .my_team {background-color:#0063AB;}
+[data-theme="theme_KT"] .my_team {background-color:#000000;}
+[data-theme="theme_SK"] .my_team {background-color:#C8132F;}
+[data-theme="theme_WO"] .my_team {background-color:#5B0016;}
+[data-theme="theme_NC"] .my_team {background-color:#1F477B;}
+[data-theme="theme_OB"] .my_team {background-color:#C30025;}
+[data-theme="theme_HT"] .my_team {background-color:#131230;}
+[data-theme="theme_LT"] .my_team {background-color:#AC1020;}
 
 
 

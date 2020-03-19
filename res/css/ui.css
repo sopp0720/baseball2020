@@ -260,7 +260,7 @@
 .team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:bold;color:#000000;opacity:0.8;text-align:center;}
 .team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.3333rem;font-weight:500;color:#000000;}
 .team.content .sec_rate .desc .position {margin-left:0.6rem;font-size:1.0667rem;font-weight:normal;color:#525252;}
-.team.content .sec_rate .desc .my {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;font-family:Sriracha;font-size:0.7667rem;font-weight:normal;color:#ffffff;text-align:center;border-radius:50%;background-color:#c10a3a;}
+.team.content .sec_rate .desc .my_team {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:1.333rem;}
 .team.content .sec_rate .desc .rate_num {font-family:'bebas_neueregular';font-size:1.5333rem;font-weight:bold;text-align:right;color:#000000;}
 .team.content .sec_team_position {padding:2.6667rem 0 1.6667rem;}
 .team.content .sec_team_position .img_team_position {position:relative;margin-top:2.6667rem;width:100%;padding-bottom:59.537037%;height:0;background-repeat:no-repeat;background-size:100% auto;}
