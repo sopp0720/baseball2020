@@ -303,10 +303,6 @@
 .team.content .srh_result li .player_info dt:first-child,
 .team.content .srh_result li .player_info dd:nth-child(2) {margin-top:0;}
 .team.content .srh_result li .player_info dd {float:left;margin-top:0.1667rem;margin-left:0.7667rem;width:16.6667rem;height:1.8rem;font-size:1.2rem;color:#000000;}
-@media (max-width:319px) {
-    .team.content .srh_result li .player_img {position:relative;top:0;}
-    .team.content .srh_result li .player_info {margin-left:0;margin-top:1rem;}
-}
 
 /* List none */
 .list_none {margin:2.6667rem 0 4rem;}
