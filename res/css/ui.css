@@ -320,23 +320,23 @@
 
 /* TEAM - player info */
 .team.content .player_info_wrap {padding-top:1rem;}
-.team.content .player_info {padding-bottom:87.044534%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;}
-.team.content .info_inner {padding:6.477732% 8.704453% 5.566801% 7.692307%;}
-.team.content .info_rel {position:relative;}
-.team.content .player_info .player_img {position:absolute;top:0.5667rem;left:0;width:7.0667rem;height:7.0667rem;border-radius:50%;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
-.team.content .player_info .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
-.team.content .player_info .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
-.team.content .player_info .player_desc {margin-left:8.8667rem;}
-.team.content .player_info .player_desc .team_name {display:block;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:rgba(255,255,255,.5);}
-.team.content .player_info .player_desc .i_name {display:block;height:3.2667rem;font-size:2.2rem;font-style:normal;font-weight:bold;color:#ffffff}
-.team.content .player_info .player_desc .i_position {display:block;margin-top:0.5667rem;font-size:0;}
-.team.content .player_info .player_desc .i_position > span:first-child {margin-left:0;}
-.team.content .player_info .player_desc .i_position > span {display:inline-block;margin-left:0.6667rem;padding:0.2333rem 1rem;height:2.1333rem;font-size:1.1333rem;font-weight:500;color:#fff4af;text-align:center;background-color:rgba(0,0,0,.3);border-radius:1.0667rem;vertical-align:top;}
-.team.content .player_info dl {clear:both;margin-top:1.9333rem;padding-left:0.3333rem;overflow:hidden;}
-.team.content .player_info dl dt {clear:both;float:left;margin-top:0.6667rem;width:24.509803%;max-width:6.6667rem;font-size:1.3333rem;color:#ffffff;}
-.team.content .player_info dl dd {float:left;margin-top:0.6667rem;margin-left:8.088235%;width:67.40196%;font-size:1.3333rem;font-weight:500;color:#ffffff;}
-.team.content .player_info dl dt:first-child {margin-top:0;}
-.team.content .player_info dl dd:nth-child(2) {margin-top:0;}
+.team.content .player_info_wrap .player_info {padding-bottom:87.044534%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;}
+.team.content .player_info_wrap .info_inner {padding:6.477732% 8.704453% 5.566801% 7.692307%;}
+.team.content .player_info_wrap .info_rel {position:relative;}
+.team.content .player_info_wrap .player_info .player_img {position:absolute;top:0.5667rem;left:0;width:7.0667rem;height:7.0667rem;border-radius:50%;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .player_info_wrap .player_info .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
+.team.content .player_info_wrap .player_info .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
+.team.content .player_info_wrap .player_info .player_desc {margin-left:8.8667rem;}
+.team.content .player_info_wrap .player_info .player_desc .team_name {display:block;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:rgba(255,255,255,.5);}
+.team.content .player_info_wrap .player_info .player_desc .i_name {display:block;height:3.2667rem;font-size:2.2rem;font-style:normal;font-weight:bold;color:#ffffff}
+.team.content .player_info_wrap .player_info .player_desc .i_position {display:block;margin-top:0.5667rem;font-size:0;}
+.team.content .player_info_wrap .player_info .player_desc .i_position > span:first-child {margin-left:0;}
+.team.content .player_info_wrap .player_info .player_desc .i_position > span {display:inline-block;margin-left:0.6667rem;padding:0.2333rem 1rem;height:2.1333rem;font-size:1.1333rem;font-weight:500;color:#fff4af;text-align:center;background-color:rgba(0,0,0,.3);border-radius:1.0667rem;vertical-align:top;}
+.team.content .player_info_wrap .player_info dl {clear:both;margin-top:1.9333rem;padding-left:0.3333rem;overflow:hidden;}
+.team.content .player_info_wrap .player_info dl dt {clear:both;float:left;margin-top:0.6667rem;width:24.509803%;max-width:6.6667rem;font-size:1.3333rem;color:#ffffff;}
+.team.content .player_info_wrap .player_info dl dd {float:left;margin-top:0.6667rem;margin-left:8.088235%;width:67.40196%;font-size:1.3333rem;font-weight:500;color:#ffffff;}
+.team.content .player_info_wrap .player_info dl dt:first-child {margin-top:0;}
+.team.content .player_info_wrap .player_info dl dd:nth-child(2) {margin-top:0;}
 .team.content .video_scroll {margin-top:1rem;}
 .team.content .video_scroll ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .team.content .video_scroll ul li {display:inline-block;margin-left:2.834008%;width:37.044534%;white-space:normal;vertical-align:top;}
