@@ -1,12 +1,13 @@
-var chart = bb.generate({
-    bindto: "#chart",
+/* area_chart */
+var chart1 = bb.generate({
+    bindto: "#area_chart",
     legend: {
         show: false
     },
     data: {
-        color: function(color, d) {
-            return "#72a0ef";
-        },
+		colors: {
+			data1: "#72a0ef"
+		},
         type: "area",
         columns: [
             ["data1", 3, 1, 2, 3, 10, 4, 9, 6]
@@ -102,30 +103,94 @@ var chart = bb.generate({
         y: {
             lines: [{
                     value: 0,
-                    class: "grid801"
+                    class: "grid_bottom"
                 },
                 {
                     value: 2,
-                    class: "grid800"
+                    class: "grid_solid"
                 },
                 {
                     value: 4,
-                    class: "grid800"
+                    class: "grid_solid"
                 },
                 {
                     value: 6,
-                    class: "grid800"
+                    class: "grid_solid"
                 },
                 {
                     value: 8,
-                    class: "grid800"
+                    class: "grid_solid"
                 },
                 {
                     value: 10,
-                    class: "grid800"
+                    class: "grid_solid"
                 }
             ]
         }
     }
 });
-d3.select('.bb-grid-lines').lower();
+d3.select('.bb-grid-lines').lower(); // 그리드 레이어 위치 수정
+
+/* area_chart */
+var chart2 = bb.generate({
+    bindto: "#bar_chart",
+    legend: {
+        show: false
+    },
+    data: {
+        colors: {
+            data1: "rgba(114,160,239,0.24)",
+            data2: "rgba(242,161,141,0.24)",
+            data3: "rgba(212,213,217,0.24)"
+        },
+        type: "bar",
+        columns: [
+            ["data1", 5, 3, 2, 5, 1, 8, 3, 2],
+            ["data2", 9, 10, 5, 4, 16, 18, 10, 5],
+            ["data3", 15, 15, 5, 2, 15, 2, 21, 5]
+        ]
+    },
+    axis: {
+        y: {
+            show: false
+        },
+        x: {
+            tick: {
+                centered: true,
+                culling: false
+            },
+            type: "category",
+            categories: [
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월"
+            ]
+        }
+    },
+    grid: {
+        y: {
+            lines: [{ // bar 그래프는 라인 4줄
+                    value: 0,
+                    class: "grid_bottom"
+                },
+                {
+                    value: 7,
+                    class: "grid_dotted"
+                },
+                {
+                    value: 14,
+                    class: "grid_dotted"
+                },
+                {
+                    value: 21,
+                    class: "grid_dotted"
+                }
+            ]
+        }
+    }
+});

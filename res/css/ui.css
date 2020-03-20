@@ -612,14 +612,26 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .bb-button {position:absolute;top:10px;right:10px;}
 .bb-button .bb-zoom-reset {font-size:11px;border:solid 1px #ccc;background-color:#fff;padding:5px;border-radius:5px;cursor:pointer;}
 /* chart custom */
-.bb-ygrid-line.grid800 line {stroke: #f7f7f7;}
-.bb-ygrid-line.grid801 line {stroke: #c9ced6;}
+.bb-ygrid-line.grid_solid line {stroke: #f7f7f7;}
+.bb-ygrid-line.grid_bottom line {stroke: #c9ced6;}
+.bb-ygrid-line.grid_dotted line {stroke: #eaeaea;stroke-dasharray:4;}
 .bb-axis-x .tick line {display:none;}
 .domain {display:none;}
 .bb-line {stroke-width:2px;}
-.chart_wrap {position:relative;}
-.chart_legend {position:absolute;top:0;right:0;height:1.3667rem;padding-left:2.1667rem;font-size:1rem;font-weight:normal;line-height:normal;text-align:right;color:#444444;z-index:1;}
-.chart_legend:before {content:'';position:absolute;left:0;top:0;width:1.6667rem;height:1.3667rem;background-image:url(../images/ic-team-top-legend.png);background-size:100%;}
+.area_chart_wrap {position:relative;}
+.area_chart_legend {position:absolute;top:0;right:0;height:1.5rem;padding-left:2.1667rem;font-size:1rem;font-weight:normal;line-height:normal;text-align:right;color:#444444;z-index:1;}
+.area_chart_legend:before {content:'';position:absolute;left:0;top:0.0667rem;;width:1.6667rem;height:1.3667rem;background-image:url(../images/ic-team-top-legend.png);background-size:100%;}
+
+.bar_chart_wrap {position:relative;}
+.bar_chart_legend {position:absolute;top:0;right:0;z-index:1;}
+.bar_chart_legend:after {clear:both;content:'';display:block;}
+.chart_legend_win {float:left;position:relative;height:1.5rem;font-size:1rem;font-weight:normal;line-height:normal;color:#444444;padding-left:1.3333rem;}
+.chart_legend_win:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#72a0ef;}
+.chart_legend_lose {float:left;position:relative;height:1.5rem;font-size:1rem;font-weight:normal;line-height:normal;color:#444444;padding-left:1.3333rem;margin-left:1.0667rem;}
+.chart_legend_lose:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#f2a18d;}
+.chart_legend_draw {float:left;position:relative;height:1.5rem;font-size:1rem;font-weight:normal;line-height:normal;color:#444444;padding-left:1.3333rem;margin-left:1.0667rem;}
+.chart_legend_draw:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#d4d5d9;}
+.bb-tooltip {min-width:11.1333rem;height:2.1333rem;padding:0.2667rem 0.7rem 0.3667rem;border-radius:1.0667rem;border:solid 1px #525252;background-color:rgba(255,255,255,0.7);text-align:center;font-size:1rem;font-weight:500;line-height:normal;color:#525252;}
 
 
 

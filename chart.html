@@ -27,9 +27,19 @@
 	<div id="container">
 		<div class="content team">
 			<div class="inner">
-				<div class="chart_wrap">
-					<div class="chart_legend">누적 순위</div>
-					<div id="chart"></div>
+				<div class="area_chart_wrap">
+					<div class="area_chart_legend">누적 순위</div>
+					<div id="area_chart"></div>
+				</div>
+			</div>
+			<div class="inner">
+				<div class="bar_chart_wrap">
+					<div class="bar_chart_legend">
+						<span class="chart_legend_win">승</span>
+						<span class="chart_legend_lose">패</span>
+						<span class="chart_legend_draw">무</span>
+					</div>
+					<div id="bar_chart"></div>
 				</div>
 			</div>
 			<div style="height:200px;"></div>
@@ -135,7 +145,6 @@
 <script>
 bnbUi.init();
 bnbUi.initLottie();
-teamUi.init();
 
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');
