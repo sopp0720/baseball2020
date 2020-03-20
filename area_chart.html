@@ -31,18 +31,142 @@
 					<div class="area_chart_legend">누적 순위</div>
 					<div id="area_chart"></div>
 				</div>
+<script src="res/js/libs/d3.v5.min.js"></script>
+<script src="res/js/libs/billboard.min.js"></script>
+<script>
+var chart1 = bb.generate({
+    bindto: "#area_chart",
+    legend: {
+        show: false
+    },
+    data: {
+		colors: {
+			data1: "#72a0ef"
+		},
+        type: "area",
+        columns: [
+            ["data1", 3, 1, 2, 3, 10, 4, 9, 6]
+        ],
+        labels: {
+            format: function(v, id, i, j) {
+                if (v == 1) {
+                    v = "10위";
+                } else if (v == 2) {
+                    v = "9위";
+                } else if (v == 3) {
+                    v = "8위";
+                } else if (v == 4) {
+                    v = "7위";
+                } else if (v == 5) {
+                    v = "6위";
+                } else if (v == 6) {
+                    v = "5위";
+                } else if (v == 7) {
+                    v = "4위";
+                } else if (v == 8) {
+                    v = "3위";
+                } else if (v == 9) {
+                    v = "2위";
+                } else if (v == 10) {
+                    v = "1위";
+                }
+                return v;
+            },
+            colors: "#4673c4",
+            position: {
+                x: 0,
+                y: -10
+            }
+        }
+    },
+    tooltip: {
+        show: false
+    },
+    axis: {
+        y: {
+            show: false
+        },
+        x: {
+            tick: {
+                centered: true,
+                culling: false
+            },
+            type: "category",
+            categories: [
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월"
+            ]
+        }
+    },
+    area: {
+        linearGradient: {
+            y: [
+                0,
+                1
+            ],
+            stops: [
+                [
+                    0,
+                    "#77a1ed",
+                    0.5
+                ],
+                [
+                    1,
+                    "#ffffff",
+                    1
+                ]
+            ]
+        }
+    },
+    point: {
+        focus: {
+            expand: {
+                enabled: false
+            }
+        },
+        pattern: [
+            "<g><circle cx='4' cy='4' r='4' stroke='#72a0ef' stroke-width='2' fill='#ffffff'></circle></g>"
+        ]
+    },
+    grid: {
+        y: {
+            lines: [{
+                    value: 0,
+                    class: "grid_bottom"
+                },
+                {
+                    value: 2,
+                    class: "grid_solid"
+                },
+                {
+                    value: 4,
+                    class: "grid_solid"
+                },
+                {
+                    value: 6,
+                    class: "grid_solid"
+                },
+                {
+                    value: 8,
+                    class: "grid_solid"
+                },
+                {
+                    value: 10,
+                    class: "grid_solid"
+                }
+            ]
+        }
+    }
+});
+d3.select('.bb-grid-lines').lower(); // 그리드 레이어 위치 수정
+</script>
 			</div>
-			<div class="inner">
-				<div class="bar_chart_wrap">
-					<div class="bar_chart_legend">
-						<span class="chart_legend_win">승</span>
-						<span class="chart_legend_lose">패</span>
-						<span class="chart_legend_draw">무</span>
-					</div>
-					<div id="bar_chart"></div>
-				</div>
-			</div>
-			<div style="height:200px;"></div>
 		</div>
 	</div>
 	<div id="footer">
@@ -139,9 +263,6 @@
 <script src="res/js/common.js"></script>
 <script src="res/js/gnb.js"></script>
 <script src="res/js/team.js"></script>
-<script src="res/js/libs/d3.v5.min.js"></script>
-<script src="res/js/libs/billboard.min.js"></script>
-<script src="res/js/chart.js"></script>
 <script>
 bnbUi.init();
 bnbUi.initLottie();
