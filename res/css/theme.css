@@ -298,4 +298,39 @@
 .team_schedule_bg_LT {background-image:url('../images/bg/team_schedule_bg_LT.png');}
 .team_schedule_bg_GY {background-image:url('../images/bg/team_schedule_bg_GY.png');}
 
+/* 1순위 piching type color */
+.pitching_color_DEFAULT .i_ratio {background-color:#c10a3a;}
+.pitching_color_DEFAULT .i_name,
+.pitching_color_DEFAULT .i_speed {color:#c10a3a;}
+.pitching_color_LG .i_ratio {background-color:#c10a3a;}
+.pitching_color_LG .i_name,
+.pitching_color_LG .i_speed {color:#c10a3a;}
+.pitching_color_SS .i_ratio {background-color:#0063ab;}
+.pitching_color_SS .i_name,
+.pitching_color_SS .i_speed {color:#0063ab;}
+.pitching_color_HH .i_ratio {background-color:#da5a17;}
+.pitching_color_HH .i_name,
+.pitching_color_HH .i_speed {color:#da5a17;}
+.pitching_color_OB .i_ratio {background-color:#131230;}
+.pitching_color_OB .i_name,
+.pitching_color_OB .i_speed {color:#131230;}
+.pitching_color_WO .i_ratio {background-color:#5b0016;}
+.pitching_color_WO .i_name,
+.pitching_color_WO .i_speed {color:#5b0016;}
+.pitching_color_SK .i_ratio {background-color:#c8132f;}
+.pitching_color_SK .i_name,
+.pitching_color_SK .i_speed {color:#c8132f;}
+.pitching_color_NC .i_ratio {background-color:#1f477b;}
+.pitching_color_NC .i_name,
+.pitching_color_NC .i_speed {color:#1f477b;}
+.pitching_color_KT .i_ratio {background-color:#000000;}
+.pitching_color_KT  .i_name,
+.pitching_color_KT .i_speed {color:#000000;}
+.pitching_color_HT .i_ratio {background-color:#ac1020;}
+.pitching_color_HT .i_name,
+.pitching_color_HT .i_speed {color:#ac1020;}
+.pitching_color_LT .i_ratio {background-color:#c30025;}
+.pitching_color_LT .i_name,
+.pitching_color_LT .i_speed {color:#c30025;}
+
 /*******************************************************************************************/

@@ -1597,22 +1597,6 @@
                             </table>
                         </div>
                     </div>
-<style>
-.term_desc {margin-top:1.5333rem;border:solid 0.1rem #e4e6eb;border-radius:0.7333rem;overflow:hidden;}
-.term_desc .btn_desc {display:block;padding:0.8333rem 0 0.9rem;width:100%;height:3.7rem;background-color:#ffffff;font-size:0;text-align:center;}
-.term_desc .btn_desc .label {font-size:1.3333rem;font-weight:500;color:#7a7a7a;}
-.term_desc .btn_desc .i_arrow {margin:0.4333rem 0 0.2rem 0.5rem;width:1.3333rem;height:1.3333rem;background:url('res/images/ic-arrow-down-g.png') no-repeat 50% 50%;background-size:cover;transform:rotate(0deg);}
-.term_desc .btn_desc .laebel,.btn_desc .i_arrow {display:inline-block;vertical-align:top;}
-.term_desc .term_content {background-color:#fafafb;}
-.term_desc.on .term_content {}
-.term_desc.on .btn_desc .i_arrow {transform:rotate(180deg);}
-.term_desc .term_content ul {padding:1.2333rem 1.8667rem;overflow:hidden;border-top:solid 0.1rem #e4e6eb;}
-.term_desc .term_content li {margin-top:0.6rem;float:left;width:50%;font-size:1rem;color:#858585;}
-.term_desc .term_content li:nth-child(1),
-.term_desc .term_content li:nth-child(2) {margin-top:0;}
-.term_desc .term_content li:nth-child(odd) {padding-right:1rem;}
-.term_desc .term_content li:nth-child(even) {padding-left:1rem;}
-</style>
                     <div class="term_desc">
                         <button type="button" class="btn_desc">
                             <span class="label">용어 설명 보기</span>
@@ -1727,6 +1711,33 @@
                     <div class="title_hd">
                         <span class="sec_title">투구 정보</span>
                     </div>
+                    <!-- 주요 구종 -->
+                    <div class="pitching_type">
+                        <span class="cont_title">주요 구종</span>
+                        <div class="type_wrap">
+                            <div class="type1 pitching_color_DEFAULT" style="width:49%;"> <!-- theme.css : 1순위 piching type color -->
+                                <span class="i_ratio">49</span>
+                                <span class="i_name">직구</span>
+                                <span class="i_speed">123km/h</span>
+                            </div>
+                            <div class="type2" style="width:28%;">
+                                <span class="i_ratio">28</span>
+                                <span class="i_name">슬라이더</span>
+                                <span class="i_speed">123km/h</span>
+                            </div>
+                            <div class="type3" style="width:18%;">
+                                <span class="i_ratio">18</span>
+                                <span class="i_name">포크</span>
+                                <span class="i_speed">123km/h</span>
+                            </div>
+                            <div class="type4" style="width:5%;">
+                                <span class="i_ratio">5</span>
+                                <span class="i_name">그외</span>                                
+                            </div>
+                        </div>
+                        <p class="desc">각 투수의 주요 구종 분석은 올해 시즌 기록을 기준으로 합니다.</p>
+                    </div>
+                    <!-- // 주요 구종 -->
                     <div class="block_graph_wrap">
                         <div class="devide_box">
                             <span class="title">투구 분포도 VS 좌투수</span>
@@ -1802,7 +1813,7 @@
                                 <div class="none_graph">
                                     <div class="ab_box">
                                         <div class="img_box"></div>
-                                        <p>타격정보가 없습니다.</p>
+                                        <p>투구정보가 없습니다.</p>
                                     </div>
                                 </div>
                                 <!-- // 정보가 없습니다. -->
