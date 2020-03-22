@@ -285,5 +285,17 @@
 .player_info_bg_HT {background-image:url('../images/bg/bg-team-player-kia.png');}
 .player_info_bg_LT {background-image:url('../images/bg/bg-team-player-lotte.png');}
 
+/* Team schedule bg */
+.team_schedule_bg_LG {background-image:url('../images/bg/team_schedule_bg_LG.png');}
+.team_schedule_bg_SS {background-image:url('../images/bg/team_schedule_bg_SS.png');}
+.team_schedule_bg_HH {background-image:url('../images/bg/team_schedule_bg_HH.png');}
+.team_schedule_bg_OB {background-image:url('../images/bg/team_schedule_bg_OB.png');}
+.team_schedule_bg_WO {background-image:url('../images/bg/team_schedule_bg_WO.png');}
+.team_schedule_bg_SK {background-image:url('../images/bg/team_schedule_bg_SK.png');}
+.team_schedule_bg_NC {background-image:url('../images/bg/team_schedule_bg_NC.png');}
+.team_schedule_bg_KT {background-image:url('../images/bg/team_schedule_bg_KT.png');}
+.team_schedule_bg_HT {background-image:url('../images/bg/team_schedule_bg_HT.png');}
+.team_schedule_bg_LT {background-image:url('../images/bg/team_schedule_bg_LT.png');}
+.team_schedule_bg_GY {background-image:url('../images/bg/team_schedule_bg_GY.png');}
 
 /*******************************************************************************************/
