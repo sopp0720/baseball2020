@@ -139,7 +139,18 @@
 [data-theme="theme_HT"] .my_team {background-color:#131230;}
 [data-theme="theme_LT"] .my_team {background-color:#AC1020;}
 
-
+/* theme 달력 */
+[data-theme="theme_default"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #c30137 -39%, #a7003b 122%);}
+[data-theme="theme_LG"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #c30137 -39%, #a7003b 122%);}
+[data-theme="theme_HH"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #d4682e -74%, #d4682e -22%, #c2541a 125%);}
+[data-theme="theme_SS"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #0066b3 -14%, #005ca3);}
+[data-theme="theme_KT"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #242223 -25%, #1f1d1d);}
+[data-theme="theme_SK"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #f45b25 -249%, #dd4936 -74%, #97001c 340%);}
+[data-theme="theme_WO"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #93001c -13%, #86001a 108%);}
+[data-theme="theme_NC"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #224e8c -16%, #1d467f 120%);}
+[data-theme="theme_OB"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #1b335c -15%, #192a57 116%);}
+[data-theme="theme_HT"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #b22030 -44%, #921925 122%);}
+[data-theme="theme_LT"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #092e63 -866%, #b70522 172%, #a30a29 172%);}
 
 
 /* Team Color bg*/
