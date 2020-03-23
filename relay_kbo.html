@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<div id="wrap" class="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content relay">
+			<div class="inner">
+				<div class="div_rel">
+					<div class="year_month_wrap month_wrap">
+                        <span class="month_arrow i_prev blind">이전</span>
+                        <span class="i_month"><b class="year_num">2020</b><span>년</span><b class="month_num">5</b><span>월</span></span>
+                        <span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->                        
+                    </div>
+                    <button type="button" class="btn_gocalendar2 blind">달력</button>
+				</div>
+				<div class="scroll_date">
+					<span class="gra"></span>
+					<ul>
+						<li>
+							<b class="date_num">06</b>
+							<span class="date_day">금</span>
+						</li>
+						<li class="i_sat i_disabled">
+							<b class="date_num">07</b>
+							<span class="date_day">토</span>
+						</li>
+						<li class="i_sun i_disabled">
+							<b class="date_num">08</b>
+							<span class="date_day">일</span>
+						</li>
+						<li class="i_disabled">
+							<b class="date_num">09</b>
+							<span class="date_day">월</span>
+						</li>
+						<li class="i_disabled">
+							<b class="date_num">10</b>
+							<span class="date_day">화</span>
+						</li>
+						<li class="i_disabled">
+							<b class="date_num">11</b>
+							<span class="date_day">수</span>
+						</li>
+						<li class="i_disabled">
+							<b class="date_num">12</b>
+							<span class="date_day">목</span>
+						</li>
+						<li class="i_disabled">
+							<b class="date_num">13</b>
+							<span class="date_day">금</span>
+						</li>
+					</ul>
+				</div>
+<style>
+.relay.content .scroll_date {position:relative;margin-top:1rem;}
+.relay.content .scroll_date .gra {z-index:1;display:block;position:absolute;top:0;right:-1.5333rem;width:2.9333rem;height:6rem;background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.04));}
+.relay.content .scroll_date ul {margin-right:-1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.relay.content .scroll_date ul li {display:inline-block;margin-left:1.1rem;padding:0.9rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
+.relay.content .scroll_date ul li:first-child {margin-left:0;}
+.relay.content .scroll_date ul li .date_num {display:block;height:2.3rem;font-family:'bebas_neueregular';font-size:1.9333rem;color:#000000;}
+.relay.content .scroll_date ul li .date_day {display:block;height:1.8rem;font-size:1.2rem;font-weight:bold;color:#000000;}
+.relay.content .scroll_date ul li.i_sat .date_num,
+.relay.content .scroll_date ul li.i_sat .date_day {color:#3563c0}
+.relay.content .scroll_date ul li.i_sun .date_num,
+.relay.content .scroll_date ul li.i_sun .date_day {color:#ec5f59}
+.relay.content .scroll_date ul li.i_disabled .date_num,
+.relay.content .scroll_date ul li.i_disabled .date_day {opacity:0.35;}
+
+.relay.content .score_board_wrap {margin-top:0.8333rem;padding:0 2.3333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
+.relay.content .play_list li {height:10.6667rem;}
+</style>
+				<div class="score_board_wrap kbo">
+					<ul class="play_list">
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_WO"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->안우진</span>
+                            </div>
+                            <div class="middle_box">
+                                <span class="info_today i_schedule">중계예정</span>
+                                <!--
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <!--
+                                <div class="play_score">
+                                    <em class="text_right i_gray">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 --> <!--
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) --> <!--
+                                    <em class="text_left">3</em>
+                                </div>
+                                -->
+                                <span class="info_round">19:00 마산</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_LT"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->고효준</span>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_HH"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->김이환</span>
+                            </div>
+                            <div class="middle_box">
+                                <!--
+                                <span class="info_today i_schedule">중계예정</span>
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <div class="play_score">
+                                    <em class="text_right">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) -->
+                                    <em class="text_left">1</em>
+                                </div>
+                                <span class="info_round">3회말</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_SK"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->문승원</span>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_OB"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->김민성</span>
+                            </div>
+                            <div class="middle_box">
+                                <!--
+                                <span class="info_today i_schedule">중계예정</span>
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <div class="play_score">
+                                    <em class="text_right">7</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) -->
+                                    <em class="text_left">4</em>
+                                </div>
+                                <span class="info_round">4회초</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_KT"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->함덕주</span>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_SS"></i> <!-- theme.css :  logo KBO -->
+                                <span><i class="result_val">패</i>정인욱</span>
+                            </div>
+                            <div class="middle_box">
+                                <!--
+                                <span class="info_today i_schedule">중계예정</span>
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <div class="play_score">
+                                    <em class="text_right i_gray">0</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                    <!-- <span class="ic_vs_main vs_red blind">VS</span> 진행중(vs레드) -->
+                                    <span class="ic_vs_main vs_gray blind">VS</span>
+                                    <em class="text_left">2</em>
+                                </div>
+                                <span class="info_round">종료</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_HT"></i> <!-- theme.css :  logo KBO -->
+                                <span><i class="result_val">패</i>윌랜드</span>
+                            </div>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
