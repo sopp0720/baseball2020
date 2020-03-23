@@ -298,7 +298,22 @@
 .team_schedule_bg_LT {background-image:url('../images/bg/team_schedule_bg_LT.png');}
 .team_schedule_bg_GY {background-image:url('../images/bg/team_schedule_bg_GY.png');}
 
-/* 1순위 piching type color */
+/* Team record ranking bg */
+.team_ranking_bg_LG {background-image:url('../images/bg/bg-team-rangking-lg.png');}
+.team_ranking_bg_SS {background-image:url('../images/bg/bg-team-rangking-samsung.png');}
+.team_ranking_bg_HH {background-image:url('../images/bg/bg-team-rangking-hanwha.png');}
+.team_ranking_bg_OB {background-image:url('../images/bg/bg-team-rangking-doosan.png');}
+.team_ranking_bg_WO {background-image:url('../images/bg/bg-team-rangking-kiwoom.png');}
+.team_ranking_bg_SK {background-image:url('../images/bg/bg-team-rangking-sk.png');}
+.team_ranking_bg_NC {background-image:url('../images/bg/bg-team-rangking-nc.png');}
+.team_ranking_bg_KT {background-image:url('../images/bg/bg-team-rangking-kt.png');}
+.team_ranking_bg_HT {background-image:url('../images/bg/bg-team-rangking-kia.png');}
+.team_ranking_bg_LT {background-image:url('../images/bg/bg-team-rangking-lotte.png');}
+.team_ranking_bg_GY {background-image:url('../images/bg/bg-team-rangking-goyang.png');}
+
+
+
+/* Team 1순위 piching type color */
 .pitching_color_DEFAULT .i_ratio {background-color:#c10a3a;}
 .pitching_color_DEFAULT .i_name,
 .pitching_color_DEFAULT .i_speed {color:#c10a3a;}

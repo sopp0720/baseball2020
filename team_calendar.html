@@ -21,11 +21,11 @@
 	<option value="theme_OB">두산</option>
 	<option value="theme_HT">KIA</option>
 </select>
-<div id="wrap" data-theme="theme_LG">
+<div id="wrap" data-theme="theme_SS">
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content team">
-		    <!-- page title, btn back -->
+			<!-- page title, btn back -->
             <div class="page_title_wrap">
                 <div class="inner">
                     <button type="button" class="btn_back blind">뒤로가기</button>
@@ -168,8 +168,8 @@
                     </ul>
                 </div>
             </div>
-           
-            <div class="inner">
+            
+			<div class="inner">
                 <div class="div_rel">
                     <div class="month_wrap">
                         <span class="month_arrow i_prev blind">이전</span>
@@ -178,8 +178,8 @@
                     </div>
                     <button type="button" class="btn_gotoday">오늘</button>
                     <div class="schedule_opt">
-                        <button type="button" class="btn_gocalendar blind">달력보기</button>
-                        <!-- <button type="button" class="btn_golist blind">리스트보기</button> -->
+                        <!-- <button type="button" class="btn_gocalendar blind">달력보기</button> -->
+                        <button type="button" class="btn_golist blind">리스트보기</button>
                         <button type="button" class="btn_select">
                             <span class="label">구장전체</span>
                             <b class="i_arrow"></b>
@@ -187,12 +187,284 @@
                     </div>
                 </div>                
             </div>
-            <!-- list none -->
-            <div class="schedule_game_none list_none">
-                <div class="img_box"></div>
-                <p>해당 날짜에는 경기가 없습니다.</p>
-            </div>
-            <!-- // list none -->
+            
+			<!-- 달력 페이지용 -->
+			<div class="calendar_wrap">
+				<div class="calendar_header">
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="day">일</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">월</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">화</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">수</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">목</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">금</div>
+						</div>
+
+						<div class="calendar_cell">
+							<div class="day">토</div>
+						</div>
+					</div>
+				</div>
+				<div class="calendar_body">
+					<div class="calendar_row">
+						<div class="calendar_cell dim">
+							<div class="num">26</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">27</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">28</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">29</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">30</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">1</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">2</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">3</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">4</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">5</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">7</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">8</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">9</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">10</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">11</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">12</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">13</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">14</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">15</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">16</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">17</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">18</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">19</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">20</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">21</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">22</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">23</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">24</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">25</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">26</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">27</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">28</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">29</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">30</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">31</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">1</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">2</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">3</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">4</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">5</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="footer">

@@ -116,7 +116,7 @@
 .home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:1.6667rem;line-height:1.8667rem;font-size:1.2667rem;color:#2b2b2b;}
 .home.content .score_scroll {margin-top:1.5333rem;}
 .home.content .score_scroll .title_hd > span.vs {margin:0.2333rem 0.6667rem 0;width:1.6667rem;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#ca0039;text-align:center;}
-.home.content .none_score {padding:1.4667rem 0;height:4.8rem;font-size:1.2667rem;font-weight:500;color:#b4b4b4;text-align:center;background:#f2f3f5 url("../images/banner-score-empty.png") no-repeat 50% 50%;background-size:cover;border-radius:0.7667rem;}
+.content .none_score {padding:1.4667rem 0;height:4.8rem;font-size:1.2667rem;font-weight:500;color:#b4b4b4;text-align:center;background:#f2f3f5 url("../images/banner-score-empty.png") no-repeat 50% 50%;background-size:cover;border-radius:0.7667rem;}
 .home.content .score_moment {margin:0.3333rem -1.5333rem 0;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .home.content .score_moment li {display:inline-block;margin-left:0.7667rem;padding:1.1rem 0.4833rem;width:12.1rem;height:4.7333rem;border-radius:0.7333rem;background-color:#f2f3f5;overflow:hidden;font-size:0;}
 .home.content .score_moment li:first-child {margin-left:0;}
@@ -289,7 +289,7 @@
 .team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:bold;color:#000000;opacity:0.8;text-align:center;}
 .team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.3333rem;font-weight:500;color:#000000;}
 .team.content .sec_rate .desc .position {margin-left:0.6rem;font-size:1.0667rem;font-weight:normal;color:#525252;}
-.team.content .sec_rate .desc .my_team {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:1.333rem;}
+.team.content .sec_rate .desc .my_team {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
 .team.content .sec_rate .desc .rate_num {font-family:'bebas_neueregular';font-size:1.5333rem;font-weight:bold;text-align:right;color:#000000;}
 .team.content .sec_team_position {padding:2.6667rem 0 1.6667rem;}
 .team.content .sec_team_position .img_team_position {position:relative;margin-top:2.6667rem;width:100%;padding-bottom:59.537037%;height:0;background-repeat:no-repeat;background-size:100% auto;}
@@ -470,6 +470,40 @@
 .team.content .schedule_all_list .schedule_box {margin-top:0;border-top:1px solid #dee1e6;}
 .team.content .schedule_all_list .schedule_box:nth-child(2) {border-top:0;}
 
+/* TEAM - record */
+.team.content .top_ranking_info {padding:0.6333rem 0 1.0667rem 0;height:4.7333rem;font-size:0;text-align:center;border-radius:0.7333rem;background-color:#f2f3f5;}
+.team.content .top_ranking_info > div {display:inline-block;vertical-align:top;font-size:0;text-align:center;}
+.team.content .top_ranking_info span {display:inline-block;vertical-align:top;}
+.team.content .top_ranking_info b {display:inline-block;vertical-align:top;}
+.team.content .top_ranking_info .rank_num span {margin:0.8333rem 0 0;height:1.9667rem;font-size:1.3333rem;color:#000000;}
+.team.content .top_ranking_info .rank_num b {margin-left:0.3333rem;margin-right:0.1rem;height:3.1333rem;font-size:2.1333rem;font-weight:bold;color:#000000;}
+.team.content .top_ranking_info .game_record {margin-left:1.4667rem;padding-top:0.5667rem;}
+.team.content .top_ranking_info .game_record .ic_title {margin:0.2rem 0 0.2333rem 0.6rem;width:2.1333rem;height:2.1333rem;line-height:2.1333rem;font-size:1.2rem;font-weight:bold;color:#ffffff;border-radius:50%;text-align:center;}
+.team.content .top_ranking_info .game_record .ic_title.i_win {margin-left:0;background-color:#3563c0;}
+.team.content .top_ranking_info .game_record .ic_title.i_lose {background-color:#ec5f59;}
+.team.content .top_ranking_info .game_record .ic_title.i_draw {background-color:#919191;}
+.team.content .top_ranking_info .game_record .record_num {margin-left:0.3333rem;height:2.5667rem;font-size:1.7333rem;font-weight:bold;color:#000000;}
+.team.content .top_ranking_info .win_rate {margin-left:1.0333rem;padding-top:0.8rem;}
+.team.content .top_ranking_info .win_rate span {margin-top:0.1rem;height:1.8667rem;font-size:1.2667rem;color:#666666;}
+.team.content .top_ranking_info .win_rate b {margin-left:0.3333rem;height:2.0667rem;font-size:1.4rem;font-weight:bold;color:#666666;}
+.team.content .scroll_ranking {margin-top:1rem;}
+.team.content .scroll_ranking ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.team.content .scroll_ranking li {display:inline-block;margin-left:0.6667rem;width:12.6rem;/*width:38.259109%;*/border-radius:0.7333rem 0.7333rem 0 0;overflow:hidden;vertical-align:top;}
+.team.content .scroll_ranking li:first-child {margin-left:0;}
+.team.content .scroll_ranking li .team_bg {position:relative;padding-bottom:121.164021%;height:0;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .scroll_ranking li .team_bg .rank_num {display:block;position:absolute;top:6.986899%;left:7.936507%;height:2.4rem;font-family:'bebas_neueregular';font-size:2rem;color:#ffffff;}
+.team.content .scroll_ranking li .team_bg .title {display:block;padding-top:9.259259%;height:2.2rem;font-size:1.5rem;font-weight:bold;color:#ffffff;letter-spacing:-0.075rem;text-align:center;}
+.team.content .scroll_ranking li .team_bg .my_team {display:block;position:absolute;top:6.613756%;right:6.613756%;width:1.6667rem;height:1.6667rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.4667rem;}
+.team.content .scroll_ranking li .team_bg .rank_rate {display:block;position:absolute;bottom:15.608465%;left:0;right:0;height:1.8667rem;font-size:1.2667rem;font-weight:bold;text-align:center;color:#ffffff;}
+.team.content .scroll_ranking li .rest_rank {padding:0.6667rem 1rem 0.7rem;border:solid 0.0667rem #dee1e6;border-top:0;}
+.team.content .scroll_ranking li .rest_rank .rest_inner {position:relative;font-size:0;}
+.team.content .scroll_ranking li .rest_rank .rest_inner:last-child {margin-top:0.6667rem;padding-top:0.6333rem;border-top: solid 0.0667rem #dee1e6;}
+.team.content .scroll_ranking li .rest_rank .rank_num {display:inline-block;width:1rem;height:1.8667rem;font-size:1.2667rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
+.team.content .scroll_ranking li .rest_rank .team_name {display:inline-block;margin-left:0.2667rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;color:#2b2b2b;vertical-align:top;}
+.team.content .scroll_ranking li .rest_rank .my_team {display:inline-block;margin-top:0.3333rem;margin-left:0.5rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
+.team.content .scroll_ranking li .rest_rank .rank_rate {display:inline-block;float:right;width:44.303797%;height:1.8667rem;font-size:1.2667rem;text-align:right;color:#2b2b2b;vertical-align:top;}
+.team.content .sec_off_def .table_responsive {margin-top:2.0667rem;}
+
 /* Schedule option */
 .team.content .schedule_opt {position:relative;margin-top:1.6667rem;margin-bottom:1rem;height:3rem;}
 .team.content .schedule_opt button {display:block;position:absolute;top:0;left:0;width:3rem;height:3rem;background-color:#eeeeee;border-radius:50%;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
@@ -485,6 +519,10 @@
 .list_none .img_box {height:7.6667rem;background-image:url('../images/img-player-empty-b.png');background-repeat:no-repeat;background-size:auto 7.6667rem;background-position:50% 50%;}
 .list_none > p {margin-top:1rem;font-size:1.2667rem;font-weight:500;text-align:center;color:#b4b4b4;}
 .schedule_game_none {margin-top:9rem;}
+
+/* List none only text */
+.list_none_txt {padding:4.3333rem 0 4.4667rem;}
+.list_none_txt p {font-size:1.2667rem;font-weight:500;text-align:center;color:#b4b4b4;}
 
 /* Srh none */
 .srh_none {position:static !important;}
