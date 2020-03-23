@@ -289,7 +289,7 @@
 .team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:bold;color:#000000;opacity:0.8;text-align:center;}
 .team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.3333rem;font-weight:500;color:#000000;}
 .team.content .sec_rate .desc .position {margin-left:0.6rem;font-size:1.0667rem;font-weight:normal;color:#525252;}
-.team.content .sec_rate .desc .my_team {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:1.333rem;}
+.team.content .sec_rate .desc .my_team {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
 .team.content .sec_rate .desc .rate_num {font-family:'bebas_neueregular';font-size:1.5333rem;font-weight:bold;text-align:right;color:#000000;}
 .team.content .sec_team_position {padding:2.6667rem 0 1.6667rem;}
 .team.content .sec_team_position .img_team_position {position:relative;margin-top:2.6667rem;width:100%;padding-bottom:59.537037%;height:0;background-repeat:no-repeat;background-size:100% auto;}
@@ -469,6 +469,25 @@
 /* TEAM - schedule all (list type) */
 .team.content .schedule_all_list .schedule_box {margin-top:0;border-top:1px solid #dee1e6;}
 .team.content .schedule_all_list .schedule_box:nth-child(2) {border-top:0;}
+
+/* TEAM - record */
+.team.content .scroll_ranking {margin-top:1rem;}
+.team.content .scroll_ranking ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.team.content .scroll_ranking li {display:inline-block;margin-left:0.6667rem;width:12.6rem;/*width:38.259109%;*/border-radius:0.7333rem 0.7333rem 0 0;overflow:hidden;vertical-align:top;}
+.team.content .scroll_ranking li:first-child {margin-left:0;}
+.team.content .scroll_ranking li .team_bg {position:relative;padding-bottom:121.164021%;height:0;background-repeat:no-repeat;background-size:100% auto;}
+.team.content .scroll_ranking li .team_bg .rank_num {display:block;position:absolute;top:6.986899%;left:7.936507%;height:2.4rem;font-family:'bebas_neueregular';font-size:2rem;color:#ffffff;}
+.team.content .scroll_ranking li .team_bg .title {display:block;padding-top:9.259259%;height:2.2rem;font-size:1.5rem;font-weight:bold;color:#ffffff;letter-spacing:-0.075rem;text-align:center;}
+.team.content .scroll_ranking li .team_bg .my_team {display:block;position:absolute;top:6.613756%;right:6.613756%;width:1.6667rem;height:1.6667rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.4667rem;}
+.team.content .scroll_ranking li .team_bg .rank_rate {display:block;position:absolute;bottom:15.608465%;left:0;right:0;height:1.8667rem;font-size:1.2667rem;font-weight:bold;text-align:center;color:#ffffff;}
+.team.content .scroll_ranking li .rest_rank {padding:0.6667rem 1rem 0.7rem;border:solid 0.0667rem #dee1e6;border-top:0;}
+.team.content .scroll_ranking li .rest_rank .rest_inner {position:relative;font-size:0;}
+.team.content .scroll_ranking li .rest_rank .rest_inner:last-child {margin-top:0.6667rem;padding-top:0.6333rem;border-top: solid 0.0667rem #dee1e6;}
+.team.content .scroll_ranking li .rest_rank .rank_num {display:inline-block;width:1rem;height:1.8667rem;font-size:1.2667rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
+.team.content .scroll_ranking li .rest_rank .team_name {display:inline-block;margin-left:0.2667rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;color:#2b2b2b;vertical-align:top;}
+.team.content .scroll_ranking li .rest_rank .my_team {display:inline-block;margin-top:0.3333rem;margin-left:0.5rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
+.team.content .scroll_ranking li .rest_rank .rank_rate {display:inline-block;float:right;width:44.303797%;height:1.8667rem;font-size:1.2667rem;text-align:right;color:#2b2b2b;vertical-align:top;}
+.team.content .sec_off_def .table_responsive {margin-top:2.0667rem;}
 
 /* Schedule option */
 .team.content .schedule_opt {position:relative;margin-top:1.6667rem;margin-bottom:1rem;height:3rem;}
