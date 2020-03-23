@@ -736,16 +736,15 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .bb-tooltip {min-width:11.1333rem;height:2.1333rem;padding:0.2667rem 0.7rem 0.3667rem;border-radius:1.0667rem;border:solid 1px #525252;background-color:rgba(255,255,255,0.7);text-align:center;font-size:1rem;font-weight:500;line-height:normal;color:#525252;}
 
 /* calendar */
-/*.calendar_body.type1 {height:calc(100% - 15.4rem);height:-webkit-calc(100% - 15.4rem);}
-.calendar_row {position:relative;border-bottom:1px solid #dbdbdb;height:calc(100% / 6);height:-webkit-calc(100% / 6);}*/
 .calendar_wrap {}
 .calendar_header .calendar_row {position:relative;border-bottom:1px solid #dee1e6;height:3.6333rem;}
 .calendar_header .calendar_cell {position:relative;float:left;width:calc(100% / 7);width:-webkit-calc(100% / 7);height:100%;}
 .calendar_header .calendar_cell .day {margin:0.9333rem auto 0;width:2.6667rem;height:1.8rem;opacity:0.7;font-size:1.2rem;font-weight:500;line-height:normal;text-align:center;color:#858585;}
-.calendar_body {position:relative;}
+.calendar_body {position:relative;background-color:#fff;}
 .calendar_body .calendar_row {position:relative;border-bottom:1px solid #dee1e6;height:7.3333rem;}
 .calendar_body .calendar_row:after {clear:both;content:'';display:block;}
 .calendar_body .calendar_cell {position:relative;border-right:1px solid #dee1e6;float:left;width:calc(100% / 7);width:-webkit-calc(100% / 7);height:100%;}
+.calendar_body .calendar_cell.current:before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;border:solid 1px #e42f37;background-color:rgba(228, 47, 55, 0.15);}
 .calendar_body .calendar_cell:last-of-type {border-right:0 none;}
 .calendar_body .calendar_row_cell .row_cell_top {}
 .calendar_body .calendar_cell .num {position:absolute;top:0.2667rem;left:0.4667rem;width:1.6667rem;height:1.8rem;font-size:1.2rem;font-weight:500;line-height:normal;color:#000000;}
@@ -792,17 +791,27 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 /* layerPopup */
 .noscroll {position:fixed;}
 .modal {display:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:200;}
-.modal > .dim {background-color:rgba(0,0,0,0.7);display:block;position:fixed;top:0;left:0;bottom:0;right:0;opacity:0;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;}
+.modal > .dim {background-color:rgba(0,0,0,0.29);display:block;position:fixed;top:0;left:0;bottom:0;right:0;opacity:0;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;}
 .modal.visible > .dim {opacity:1;}
-.fadeInUp .modal_inner {position:absolute;background-color:#fff;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:100%;-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
+.fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:100%;-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
 .fadeInUp.visible .modal_inner {-webkit-transform:translate(0, 0);transform:translate(0, 0);}
 .fadeIn .modal_inner {-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0}
 .fadeIn.visible .modal_inner {opacity:1;}
 
-
-
-
-
+/* layerPopup 달력 */
+.modal .calendar_header {position:relative;background-color:#fff;height:12.6667rem;border-top-left-radius:0.7333rem;border-top-right-radius:0.7333rem;overflow:hidden;}
+.modal .calendar_header .team_logo {position:absolute;width:4.1rem;height:3.6333rem;top:1.1333rem;left:1.5333rem;}
+.modal .calendar_header .year_wrap {margin:1.6667rem auto 0;width:18rem;height:1.8rem;opacity:0.5;font-family:'bebas_neueregular';font-size:1.5rem;font-weight:normal;line-height:normal;text-align:center;color:#000000;}
+.modal .calendar_header .month_wrap {margin-top:0.4667rem;}
+.modal .calendar_header .btn_gotoday {position:absolute;top:0.8333rem; right:1.5333rem;}
+.modal .calendar_header.bg_gradient .year_wrap {color:#fff;}
+.modal .calendar_header.bg_gradient .month_wrap .month_arrow.i_prev {background-image:url(../images/ic-previous-w.png);}
+.modal .calendar_header.bg_gradient .month_wrap .month_arrow.i_next {background-image:url(../images/ic-next-w.png);}
+.modal .calendar_header.bg_gradient .month_wrap .i_month b {color:#fff;}
+.modal .calendar_header.bg_gradient .month_wrap .i_month span {color:#fff;}
+.modal .calendar_header.bg_gradient .btn_gotoday {color:#fff;background-color: rgba(0, 0, 0, 0.2);}
+.modal .calendar_header.bg_gradient .calendar_cell .day {color:#fff;opacity:0.5;}
+.modal .calendar_header.bg_gradient .calendar_row {position:absolute;bottom:0;left:0;right:0;border-bottom:0 none;}
 
 
 
