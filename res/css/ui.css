@@ -100,7 +100,7 @@
 .middle_box .info_today.i_before {background-color:#c10a3a;}
 .middle_box .info_today.i_cancel {background-color:#c2c3c7;}
 .home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#525252;}
-.home.content .score_board_wrap .play_list {margin-top:1rem;padding:0 2.3333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);}
+.home.content .score_board_wrap .play_list {margin-top:1rem;padding:0 2.3333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .home.content .score_board_wrap .play_list li {position:relative;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;border-top:1px solid #dee1e6;text-align:center;}
 .home.content .score_board_wrap .play_list li:first-child {border-top:0;}
 .home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:7.1333rem;}
@@ -110,7 +110,7 @@
 .home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:14rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .play_score {padding-top:0.2667rem;overflow:hidden;}
-.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:3.1333rem;height:3.1rem;font-family:'bebas_neueregular';font-weight:bold;font-size:3.3333rem;line-height:3.6667rem;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:3.1333rem;height:3.1rem;font-family:'bebas_neueregular';font-size:3.3333rem;line-height:3.6667rem;font-style:normal;color:#000000;}
 .home.content .score_board_wrap .play_list li > div.middle_box .ic_vs_main {width:7.7333rem;height:3.1rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .info_today {margin:0.7rem 0 0.7667rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:1.6667rem;line-height:1.8667rem;font-size:1.2667rem;color:#2b2b2b;}
@@ -125,7 +125,7 @@
 .home.content .score_moment li .logo_kbo.left {margin-right:0.2333rem;}
 .home.content .score_moment li .logo_kbo.right {margin-left:0.2333rem;}
 .home.content .score_moment li .logo_kbo > span {margin:0.2667rem 0.1667rem;width:2.5333rem;height:2rem;}
-.home.content .score_moment li > em {float:left;margin:0;width:1.6667rem;height:100%;line-height:2.5333rem;font-family:'bebas_neueregular';font-size:2.1rem;font-weight:bold;font-style:normal;color:#000000;}
+.home.content .score_moment li > em {float:left;margin:0;width:1.6667rem;height:100%;line-height:2.5333rem;font-family:'bebas_neueregular';font-size:2.1rem;font-style:normal;color:#000000;}
 .home.content .score_moment li > .i_colon {float:left;margin:0 0.6rem;width:0.4rem;height:100%;font-family:'bebas_neueregular';font-size:2.1rem;font-weight:bold;color:#000000;text-align:center;}
 
 /* home mlb */
@@ -162,11 +162,12 @@
 .home.content .highlight_box:nth-child(1),
 .home.content .highlight_box:nth-child(2) {margin-top:0;}
 .home.content .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;overflow:hidden;}
-.home.content .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;padding:0 0.6rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
+.home.content .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
 .home.content .highlight_box p {margin-top:0.3333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .home.content .highlight_box .view {position:relative;display:block;margin-top:0.4333rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
 .home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
-.home.content .news_wrap .news_main {position:relative;padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;}
+.home.content .news_wrap .news_main {position:relative;margin-top:1rem;padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;overflow:hidden;}
+.home.content .news_wrap .news_main .txt_inner_wrap {position:absolute;bottom:0;width:100%;height:11.6667rem;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
 .home.content .news_wrap .news_main .txt_inner {position:absolute;left:0;bottom:0;padding:0 1.6667em 1.6667rem;}
 .home.content .news_wrap .news_main .agency {height:1.8rem;font-size:1.2rem;font-weight:500;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_wrap .news_main p {font-size:1.5333em;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
@@ -185,7 +186,7 @@
 .home.content .news_comments .news_scroll li:first-child {margin-left:0;}
 .home.content .news_comments .news_scroll li:after {content:'';position:absolute;display:block;width:100%;height:100%;top:0;left:0;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));overflow:hidden;border-radius:0.7333rem;}
 .home.content .news_comments .news_scroll li .ico_comm {z-index:1;position:relative;display:block;margin:3.2rem auto 0.5rem;width:8.4667rem;height:3.0667rem;background:#fff;}
-.home.content .news_comments .news_scroll li .subject {z-index:1;position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:500;text-align:center;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
+.home.content .news_comments .news_scroll li .subject {z-index:1;position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:500;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
 
 /* Home Details */
 .home.content .img_player_wrap {padding:0;}
