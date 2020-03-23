@@ -79,6 +79,43 @@ var webUI = (function() {
         }
     }
 })();
+/* 팝업 노출시 스크롤 고정 스크립트 */
+var layerPopup = (function() {
+	var html = undefined;
+	var elem;
+	var sctop;
+    return {
+		"show" : function(elem, container) {
+			elem = document.querySelector(elem);
+			if (container == null){
+				html = (document.body.scrollTop == '0') ? document.documentElement : document.body;
+			} else {
+				html = container;
+			}
+			sctop = html.scrollTop;
+			html.style.top = (0 - sctop) + "px";
+			html.classList.add('noscroll');
+			elem.style.display = 'block';
+			setTimeout(function() {
+				elem.classList.add('visible');
+			}, 50);
+		},
+		"hide" : function(elem) {
+			if (html == undefined){
+				return;
+			}
+			elem = document.querySelector(elem);
+			html.classList.remove("noscroll");
+			html.scrollTop = sctop;
+			html.style.top = "";
+			elem.classList.remove('visible');
+			setTimeout(function() {
+				elem.style.display = 'none';
+			}, 500);
+		}
+    };
+}());
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var hasTouchEvent = "ontouchstart" in document.documentElement,
