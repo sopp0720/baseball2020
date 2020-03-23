@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+
+	<title>2020 프로야구</title>
+	
+	<style type="text/css">
+	* {margin:0;padding:0;font-family:dotum,sans-serif;font-size:12px;color:#666;}
+	body {padding:20px;}
+	a {}
+	a:hover {color:#0000ee;}
+	a:link {}
+	a:visited {}
+	a:active {color:#ff0000;}
+	button {cursor:pointer;}
+	ul,ol,li {list-style:none;}
+	table {width:100%;border-collapse:collapse;margin:0 0 20px 0;border:2px solid #333;}
+	table th {height:30px;border:1px solid #1f1f1f;font-size:13px;background:#333;color:#999;font-weight:normal;text-align:center;}
+	table td {padding:5px;padding-left:10px;border:1px solid #dfdede;font-size:12px;line-height:1.6;}
+	table td strong {font-size:13px;}
+	table td.indent {padding-left:30px;}
+	table td.center {padding-left:5px;text-align:center;}
+	table tr.root_menu {border-top:2px solid #333;}
+	table tr th:first-child {border-left:0;}
+	table tr td:first-child {border-left:0;}
+	.guide {margin-bottom:20px;}
+	.guide p {position:relative;padding-left:20px;}
+	.guide p i {position:absolute;left:0;top:0;display:block;width:20px;height:20px;text-align:center;}
+	.guide p,
+	.guide p * {font-size:13px;line-height:20px;color:#3c75dd;}
+	.guide p strong {color:#1428a0;font-weight:normal;}
+	.highlight {background:#ffef00;}
+	.new_label {display:block;background:#1428a0;color:#fff !important;text-align:center;}
+	.old_label {display:block;background:#1f1f1f;color:#fff !important;text-align:center;}
+	
+	.tab_wrap {}
+	.tab_wrap ul.tit_box {display:block;width:180px;overflow:hidden;margin:0 auto 20px;}
+	.tab_wrap ul.tit_box li {float:left;width:50%;}
+	.tab_wrap ul.tit_box li a {float:right;box-sizing:border-box;width:84px;height:34px;line-height:30px;text-align:center;background:#ddd;color:#666;
+	border:2px solid #898989;border-top:2px solid #ddd;border-left:2px solid #ddd;border-radius:0;-webkit-appearance:none;text-decoration:none;}
+	.tab_wrap ul.tit_box li:first-child a {float:left;}
+	.tab_wrap ul.tit_box li.active a {background:#1428a0;color:#fff;}
+	
+	.tab_wrap ul.con_box li:first-child table {background:#fff;}
+	.tab_wrap ul.con_box li:first-child table tbody * {color:#444;}
+	.tab_wrap ul.con_box li:first-child table tbody th,
+	.tab_wrap ul.con_box li:first-child table tbody td {border:1px solid #999;}
+	.tab_wrap ul.con_box li:first-child table tbody tr:hover {background-color:#ddd;}
+    
+    .publishing_status {margin-bottom:20px;}
+    .publishing_status ul {font-size:0;text-align:center;}
+    .publishing_status li {display:inline-block;margin:0 15px;font-size:14px;color:#1f1f1f;}
+    .publishing_status li i {display:inline-block;margin-right:5px;width:7px;height:7px;border-radius:50%;background:#bbb;vertical-align:2px;}
+    .publishing_status li.ing i {background:#0a70d9;}
+    .publishing_status li.compl i {background:#4fb526;}
+        
+    .status	{text-align:center;}
+    .status i {display:block;margin:0 auto;width:7px;height:7px;border-radius:50%;background:#bbb;}
+    .status i.ing {background:#0a70d9;}
+    .status i.compl {background:#4fb526;}
+    
+	@media all and (max-width:1023px){
+		.tab_wrap ul.tit_box {width:auto;}
+		.tab_wrap ul.tit_box li a {width:95%;height:50px;line-height:50px;font-size:18px;}
+	}
+	@media all and (max-width:767px){
+		.tab_wrap ul.tit_box li a {height:10vw;line-height:10vw;font-size:6vw;}
+	}
+	</style>
+</head>
+<body>
+	<div class="tab_wrap">		
+		<ul class="con_box">
+			<li>
+				<div class="publishing_status">
+				    <ul>
+                        <li><i></i>진행전</li>
+                        <li class="ing"><i></i>진행중</li>
+                        <li class="compl"><i></i>완료</li>
+				    </ul>
+				</div>
+				<table>
+					<colgroup>
+						<col width="7%">
+						<col width="9%">
+						<col width="9%">
+						<col width="14%">
+						<col width="10%">
+						<col width="8%">
+						<col width="15%">
+						<col width="6%">
+						<col width="*">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">1Depth</th>
+							<th scope="col">2Depth</th>
+							<th scope="col">3Depth</th>
+							<th scope="col">페이지명</th>
+							<th scope="col">유형</th>
+							<th scope="col">진행상황</th>
+							<th scope="col">File</th>
+							<th scope="col">Date</th>
+							<th scope="col">비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="root_menu">
+							<td><strong>홈</strong></td>
+							<td></td>
+							<td></td>
+							<td>요즘</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_days.html" target="_blank">team_days.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr class="root_menu">
+							<td rowspan="14"><strong>팀</strong></td>
+							<td>요즘</td>
+							<td></td>
+							<td>요즘</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_days.html" target="_blank">team_days.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>요즘</td>
+							<td></td>
+							<td>앞으로의 일정_팀별_달력 형태</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_days.html" target="_blank">team_calendar.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>요즘</td>
+							<td></td>
+							<td>앞으로의 일정_달력 팝업</td>
+							<td>팝업</td>
+							<td class="status"><i class="ing"></i></td>
+							<td><a href="./team_days.html" target="_blank"></a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>요즘</td>
+							<td></td>
+							<td>앞으로의 일정_팀별_리스트 형태</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_schdule_by_team.html" target="_blank">team_schdule_by_team.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>요즘</td>
+							<td></td>
+							<td>앞으로의 일정_팀별_경기 없음</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_schedule_by_team_gamenone.html" target="_blank">team_schedule_by_team_gamenone.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>요즘</td>
+							<td></td>
+							<td>앞으로의 일정_전체</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_schedule_all.html" target="_blank">team_schedule_all.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>요즘</td>
+							<td></td>
+							<td>앞으로의 일정 전체_경기 없음</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_schedule_all_gamenone.html" target="_blank">team_schedule_all_gamenone.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>기록</td>
+							<td></td>
+							<td>팀_기록</td>
+							<td>페이지</td>
+							<td class="status"><i class="ing"></i></td>
+							<td><a href="./team_record.html" target="_blank">team_record.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>						
+						<tr>
+							<td>선수</td>
+							<td></td>
+							<td>팀_선수_우리 팀</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_player_myteam.html" target="_blank">team_player_myteam.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>선수</td>
+							<td></td>
+							<td>팀_선수_KBO 전체</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_player_myteam_KBOALL.html" target="_blank">team_player_myteam_KBOALL.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>선수</td>
+							<td></td>
+							<td>팀_선수_선수 검색_결과 없음</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_player_srh_none.html" target="_blank">team_player_srh_none.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>선수</td>
+							<td></td>
+							<td>팀_선수_선수 검색</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_player_srh.html" target="_blank">team_player_srh.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>선수</td>
+							<td></td>
+							<td>팀_선수_선수 검색_결과</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_player_srh_result.html" target="_blank">team_player_srh_result.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>선수정보</td>
+							<td></td>
+							<td>팀_선수_선수 검색_결과</td>
+							<td>페이지</td>
+							<td class="status"><i class="compl"></i></td>
+							<td><a href="./team_player_info.html" target="_blank">team_player_info.html</a></td>
+							<td class="center"></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
