@@ -42,17 +42,27 @@
 .month_wrap {position:relative;margin:3.3333rem auto 0;width:54.65587%;height:4.2667rem;text-align:center;font-size:0;}
 .month_wrap .i_month {display:block;text-align:center;font-size:0;}
 .month_wrap .i_month b {display:inline-block;margin:0.2333rem 0;height:3.8rem;font-family:'bebas_neueregular';font-size:3.1667rem;letter-spacing:0.095rem;color:#000000;vertical-align:top;}
-.month_wrap .i_month span {display:inline-block;margin:0.9rem 0 0.5333rem 0.1667rem;height:2.3667rem;font-size:1.6rem;font-weight:normal;letter-spacing:-0.048rem;color:#000000;vertical-align:top;}
+.month_wrap .i_month span {display:inline-block;margin:0.9rem 0 0.5333rem 0.1667rem;height:2.3667rem;font-size:1.6rem;font-weight:normal;letter-spacing:0.048rem;color:#000000;vertical-align:top;}
 .month_wrap .i_month b + span + b {margin-left:0.6667rem;}
 .month_wrap .month_arrow {display:block;position:absolute;top:1.1333rem;width:2rem;height:2rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .month_wrap .month_arrow.i_prev {left:1rem;background-image:url('../images/ic-previous-b.png');}
 .month_wrap .month_arrow.i_next {right:1rem;background-image:url('../images/ic-next-b.png');}
 .month_wrap .month_arrow.i_next.i_disabled {right:0;background-image:url('../images/ic-next-b-dim.png');}
-.btn_gocalendar2 {display:block;position:absolute;top:0.3333rem;right:0;width:3.4667rem;height:3.4667rem;line-height:3.4667rem;font-size:1.2rem;font-weight:500;color:#494949;text-align:center;border-radius:50%;background-color:#eeeeee;background-image:url('../images/ic-calendar.png');background-size:cover;}
+.btn_gocalendar2 {display:block;position:absolute;top:0.3333rem;right:0;width:3.4667rem;height:3.4667rem;line-height:3.4667rem;font-size:1.2rem;font-weight:500;color:#494949;text-align:center;border-radius:50%;background-color:#eeeeee;background-image:url('../images/ic-calendar.png');background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;}
 
 /* Month + week */
 .month_wrap.plus_week .month_arrow.i_prev {left:0;}
 .month_wrap.plus_week .month_arrow.i_next {right:0;}
+
+/* Year + Month */
+.year_month_wrap .i_month {padding:0.6667rem 0 0.4rem;}
+.year_month_wrap .i_month b {margin:0;height:3.2rem;font-size:2.6667rem;letter-spacing:0;text-align:right;}
+.year_month_wrap .i_month span {margin:0.3667rem 0 0.4667rem 0.1667rem;font-weight:500;}
+.year_month_wrap .i_month .year_num {width:5.2rem;}
+.year_month_wrap .i_month .month_num {margin-left:0;width:2.3333rem;}
+.year_month_wrap .month_arrow.i_prev {left:0;}
+.year_month_wrap .month_arrow.i_next {right:0;}
+.year_month_wrap + .btn_gocalendar2 {right:1.0667rem;}
 
 /* Month slider  + gotoday */
 .div_rel .btn_gotoday {position:absolute;top:0.3333rem;right:0;}
