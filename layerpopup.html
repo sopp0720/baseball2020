@@ -28,7 +28,7 @@
 			<div style="position:fixed;top:50px;">
 				<button type="button" onclick="layerPopup.show('#pop_calendar');">달력</button><br>
 				<button type="button" onclick="layerPopup.show('#pop_calendar2');">달력 테마</button><br>
-				<button type="button" onclick="layerPopup.show('#pop_default');">레이어1</button>
+				<button type="button" onclick="layerPopup.show('#pop_popup_1');">팝업1줄</button>
 			</div>
 			<div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div>
 			<div class="modal fadeInUp" id="pop_calendar">
@@ -216,6 +216,7 @@
 				<div class="modal_inner">
 					<div class="calendar_wrap">
 						<div class="calendar_header bg_gradient">
+						<!-- <div class="calendar_header bg_gradient mlb abl"> --><!-- MLB와 ABL 는 클레스 넣어주세요. -->
 							<div class="team_logo team_logo_WO"></div>
 							<div class="year_wrap">2019</div>
 							<div class="month_wrap">
@@ -497,6 +498,64 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<div class="modal fadeInUp visible" id="popup_morei" style="display:block;">
+				<div class="dim" onclick="layerPopup.hide('#popup_morei');"></div>
+				<div class="modal_inner">
+					<div class="morei_wrap">
+						<div class="morei_hd">
+							<div class="morei_hd_inner">
+								<div class="morei_in_game">
+									<div class="team_logo team_logo_WO"></div><div class="ic_vs_score"></div><div class="team_logo team_logo_WO"></div>
+								</div>
+							</div>
+						</div>
+						<div class="morei_bd">
+							<div class="morei_list">
+								<div class="morei_list_dt">안타</div>
+								<div class="morei_list_dd">
+									<p class="hits_a">1루타 : 나성범 1 (3회), 김용의 2 (1, 9회), 박용택 (3회), 오지환 2 (2, 3회), 정상훈 (6회),오지환 3 (1, 4, 6회), 스크럭스 2 (2, 5회), 김용의 (3회), 나성범 (9회), 오지환 2 (2, 3회), 정상훈 (6회)</p>
+									<p class="hits_a">2루타 : 나성범 (2회), 김용의 (1회), 나성범 1 (3회), 모창민 (7회), 오지환 2 (3, 6회), 스크럭스 (6회), 김용의 2 (1, 9회), 박용택 (3회)</p>
+									<p class="hits_a">3루타 : 스크럭스 (9회), 박용택 2 (4, 7회), 김용의 (9회), 정주현 2 (3, 7회), 오지환 3 (4, 5, 7회), 나성범 (4회), 모창민 2 (1, 6회)</p>
+								</div>
+							</div>							
+							<div class="morei_list">
+								<div class="morei_list_dt_b">홈런</div>
+								<div class="morei_list_dd">
+									<p>나성범 12호 (1회)</p>
+								</div>
+							</div>
+							<div class="morei_list">
+								<div class="morei_list_dt_b">도루</div>
+								<div class="morei_list_dd">
+									<p>오지환3 (1, 4, 6회)</p>
+								</div>
+							</div>
+							<div class="morei_list">
+								<div class="morei_list_dt_b">삼진</div>
+								<div class="morei_list_dd">
+									<p>오지환3 (1, 4, 6회)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fadeIn" id="popup_1">
+				<div class="dim" onclick="layerPopup.hide('#popup_1');"></div>
+				<div class="modal_inner">
+					<div class="popup_content">
+						<div class="popup_bd">
+						</div>
+						<div class="popup_ft">
+							<div class="popup_btn_half" onclick="FG_layerPopup.hide('.popup_layer');return false;">취소</div><div class="popup_btn_half disabled">확인</div>
+						</div>
+					</div>
+
+
 				</div>
 			</div>
 
