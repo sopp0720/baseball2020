@@ -109,7 +109,7 @@
 					<div class="title_hd">
 						<span class="sec_title">전력분석</span>
 					</div>
-					<div>
+					<div class="analysis_wrap">
 						<div class="vs_rank_wrap">
 							<div class="team_rank left">
 								<span class="team_logo team_logo_LG"></span>
@@ -123,6 +123,95 @@
 								<span>40승 1무 31패</span>
 							</div>
 						</div>
+                        <div class="latest_game">
+                            <div class="ic_outcome left">
+                                <span class="i_win">승</span>
+                                <span class="i_lose">패</span>
+                                <span class="i_win">승</span>
+                                <span class="i_win">승</span>
+                            </div>
+                            <div class="vs_title">최근경기</div>
+                            <div class="ic_outcome right">
+                                <span class="i_lose">패</span>
+                                <span class="i_lose">패</span>
+                                <span class="i_win">승</span>
+                                <span class="i_lose">패</span>
+                            </div>
+                        </div>
+                        <ul class="vs_graph_info">
+                            <li>
+                                <div class="graph_info left">
+                                    <span class="i_ratio">0.510</span>
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:80%;"></span>
+                                    </span>
+                                </div>
+                                <div class="vs_title">팀 승률</div>
+                                <div class="graph_info right">                                    
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:50%;"></span>
+                                    </span>
+                                    <span class="i_ratio">0.231</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="graph_info left">
+                                    <span class="i_ratio">0.510</span>
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:80%;"></span>
+                                    </span>
+                                </div>
+                                <div class="vs_title">팀 타율</div>
+                                <div class="graph_info right">                                    
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:50%;"></span>
+                                    </span>
+                                    <span class="i_ratio">0.231</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="graph_info left">
+                                    <span class="i_ratio">0.510</span>
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:80%;"></span>
+                                    </span>
+                                </div>
+                                <div class="vs_title">평균자책</div>
+                                <div class="graph_info right">                                    
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:50%;"></span>
+                                    </span>
+                                    <span class="i_ratio">0.231</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="graph_info left">
+                                    <span class="i_ratio">0.510</span>
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:80%;"></span>
+                                    </span>
+                                </div>
+                                <div class="vs_title">상대전적</div>
+                                <div class="graph_info right">                                    
+                                    <span class="graph_bg">
+                                        <span class="i_graph" style="width:50%;"></span>
+                                    </span>
+                                    <span class="i_ratio">0.231</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="graph_info left">
+                                    <span class="total_record">4승 0무 1패</span>
+                                </div>
+                                <div class="vs_title">[2020]</div>
+                                <div class="graph_info right">
+                                    <span class="total_record">1승 0무 4패</span>
+                                </div>
+                            </li>
+                        </ul>                       
+					</div>
+				</div>
+			</div>
 <style>
 .relay.content .relay_video_wrap {padding:0;}
 .relay.content .relay_video_thumb {height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;transition:padding .3s ease-in-out;-webkit-transition:padding .3s ease-in-out;}
@@ -150,7 +239,7 @@
 .relay.content .relay_card_wrap ul li .card_box .team_box .i_score {display:block;float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'bebas_neueregular';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;}
 .relay.content .relay_card_wrap ul li .card_box .team_box .team_name {display:block;float:left;width:3.6667rem;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-align:center;}
 
-
+.relay.content .analysis_wrap {margin-top:1rem;}
 .relay.content .vs_rank_wrap {position:relative;padding:1.8667rem 2.1333rem 0.8333rem;height:12.1333rem;}
 .relay.content .vs_rank_wrap .team_rank {position:absolute;top:1.3667rem;width:10.6667rem;}
 .relay.content .vs_rank_wrap .team_rank.left {left:2.1333rem;}
@@ -159,42 +248,85 @@
 .relay.content .vs_rank_wrap .team_rank strong {display:block;margin-top:0.8667rem;height:2.2rem;font-size:1.5rem;font-weight:bold;font-style:normal;text-align:center;color:#000000;}
 .relay.content .vs_rank_wrap .team_rank span {display:block;height:1.8667rem;font-size:1.2667rem;text-align:center;color:#525252;}
 .relay.content .vs_rank_wrap .vs_box {margin:0 auto;width:7rem;height:4rem;background:url('res/images/ic-vs-score-b.png') no-repeat;background-size:100% auto;}
-.relay.content .vs_detail_info {height:14.1667rem;}
-.relay.content .vs_detail_info li {position:relative;}
-.relay.content .vs_detail_info .info_box {position:absolute;top:0;width:12.6667rem;}
-.relay.content .vs_detail_info .info_box.left {left:0;}
-.relay.content .vs_detail_info .info_box.right {right:0;}
-.relay.content .vs_detail_info .middle {margin:0 auto;width:6.6667rem;}
+.relay.content .latest_game {margin-top:1.2rem;height:1.8667rem;}
+.relay.content .latest_game  .ic_outcome {float:left;width:37.854251%;height:1.8667rem;font-size:0}
+.relay.content .latest_game  .ic_outcome span {font-size:1.1333rem;font-weight:500;color:#ffffff;text-align:center;opacity:0.25;}
+.relay.content .latest_game  .ic_outcome span.i_win {background-color:#3563c0;}
+.relay.content .latest_game  .ic_outcome span.i_lose {background-color:#ec5f59;}
+.relay.content .latest_game  .ic_outcome.left {text-align:right;}
+.relay.content .latest_game  .ic_outcome.left > span {margin-left:0.5333rem;}
+.relay.content .latest_game  .ic_outcome.left > span:first-child {margin-left:0;}
+.relay.content .latest_game  .ic_outcome.left > span:last-child {opacity:1;}
+.relay.content .latest_game  .ic_outcome.right {text-align:left;}
+.relay.content .latest_game  .ic_outcome.right > span {margin-right:0.5333rem;}
+.relay.content .latest_game  .ic_outcome.right > span:last-child {margin-right:0;}
+.relay.content .latest_game  .ic_outcome.right > span:first-child {opacity:1;}
+.relay.content .latest_game  .ic_outcome.right {text-align:left;}
+.relay.content .latest_game  .ic_outcome > span {display:inline-block;width:1.8667rem;height:1.8667rem;vertical-align:top;border-radius:50%;}
+.relay.content .latest_game  .vs_title {float:left;margin:0 2.024291%;width:20.242914%;height:1.8667rem;font-size:1.2rem;font-weight:500;text-align:center;color:#525252;}
+.relay.content .vs_graph_info {margin-top:1.3rem;}
+.relay.content .vs_graph_info li {margin-top:0.8333rem;overflow:hidden;}
+.relay.content .vs_graph_info li:first-child {margin-top:0;}
+.relay.content .vs_graph_info li:last-child {margin-top:0.3333rem;}
+.relay.content .vs_graph_info li .graph_info {float:left;margin:0.0667rem 0;width:38.461538%;height:1.6667rem;overflow:hidden;}
+.relay.content .vs_graph_info li .graph_info .i_ratio {float:left;width:30.263157%;font-size:1.1333rem;font-weight:500;}
+.relay.content .vs_graph_info li .graph_info .graph_bg {position:relative;float:left;margin-top:0.7333rem;margin-bottom:0.7333rem;width:65.789473%;height:0.2rem;background-color:#eeeff0;}
+.relay.content .vs_graph_info li .graph_info .graph_bg .i_graph {position:absolute;top:0;height:0.2rem;}
+
+.relay.content .vs_graph_info li .graph_info.left .i_ratio {padding-left:1.315789%;color:#c10a3a;text-align:left;}
+.relay.content .vs_graph_info li .graph_info.left .graph_bg {margin-left:3.947368%;}
+.relay.content .vs_graph_info li .graph_info.left .graph_bg .i_graph {right:0;background-color:#c10a3a;}
+
+.relay.content .vs_graph_info li .graph_info.right .i_ratio {padding-right:1.315789%;color:#131230;text-align:right;}
+.relay.content .vs_graph_info li .graph_info.right .graph_bg {margin-right:3.947368%;}
+.relay.content .vs_graph_info li .graph_info.right .graph_bg .i_graph {left:0;background-color:#131230;}
+
+.relay.content .vs_graph_info li .vs_title {float:left;margin:0 1.417004%;width:20.242914%;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:center;color:#525252;}
+.relay.content .vs_graph_info li .graph_info .total_record {display:block;height:1.6667rem;font-size:1.1333rem;font-weight:500;}
+.relay.content .vs_graph_info li .graph_info.left .total_record {text-align:right;color:#c10a3a;}
+.relay.content .vs_graph_info li .graph_info.right .total_record {text-align:left;color:#131230;}
+.relay.content .start_player {position:relative;margin-top:1rem;padding-top:2.3rem;padding-bottom:0.9rem;height:13.7rem;}
+.relay.content .start_player .player_img_wrap {position:absolute;top:0.7667rem;width:8.1333rem;}
+.relay.content .start_player .player_img_wrap.left {left:3.3333rem;}
+.relay.content .start_player .player_img_wrap.right {right:3.3333rem;}
+.relay.content .start_player .player_img_wrap .player_img {position:relative;display:block;margin:0 auto;width:7.0667rem;height:7.0667rem;background-repeat:no-repeat;background-size:100% auto;border-radius:2.2667rem;}
+.relay.content .start_player .player_img_wrap .player_img:after {z-index:-1;content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url('res/images/img-profile-mask-bg-212.png') no-repeat;background-size:100% auto;}
+.relay.content .start_player .player_img_wrap .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
+.relay.content .start_player .player_img_wrap .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
+.relay.content .start_player .player_img_wrap .i_name {display:block;margin-top:0.9rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;color:#000000;}
+.relay.content .start_player .player_img_wrap .i_position {display:block;height:1.8667rem;font-size:1.2667rem;text-align:center;color:#525252;}
+.relay.content .start_player .vs_box {margin:0 auto;width:7rem;height:4rem;background:url('res/images/ic-vs-score-b.png') no-repeat;background-size:100% auto;}
 </style>
-						<ul class="vs_detail_info">
-							<!--
-							<li>
-								<div class="info_box left"></div>
-								<div class="middle_box"></div>
-								<div class="info_box left"></div>
-							</li>
-							-->
-							<li class="">
-								<div class="info_box left">
-									<span class="ic_win">승</span>
-									<span class="ic_lose">패</span>
-									<span class="ic_win">승</span>
-									<span class="ic_lose">패</span>
-								</div>
-								<div class="middle_box">
-									<span>최근경기</span>
-								</div>
-								<div class="info_box left">
-									<span class="ic_lose">패</span>
-									<span class="ic_lose">패</span>
-									<span class="ic_win">승</span>
-									<span class="ic_lose">패</span>
-								</div>
-							</li>
-						</ul>
+            <div class="sec_wrapper">
+				<div class="inner">
+					<div class="title_hd">
+						<span class="sec_title">선발투수</span>
 					</div>
-				</div>
-			</div>
+                   <div class="start_player">
+                        <div class="player_img_wrap left">
+                           <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
+                                <span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+                                    <span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+                                </span>
+                           </span>
+                           <span class="i_name">이영하</span>
+                           <span class="i_position">좌완투수</span>
+                        </div>
+                        <div class="vs_box">                          
+                        </div>
+                        <div class="player_img_wrap right">
+                           <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
+                                <span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
+                                    <span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+                                </span>
+                           </span>
+                           <span class="i_name">채은성</span>
+                           <span class="i_position">우완투수</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div style="height:200px;"></div>
 		</div>
 	</div>
 </div>
