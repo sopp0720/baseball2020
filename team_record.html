@@ -151,8 +151,8 @@
 
 			<div class="tab_1depth" id="tab_1depth">
 				<ul class="tab_link">
-					<li class="tab_item active"><span>요즘</span></li>
-					<li class="tab_item"><span>기록</span></li>
+					<li class="tab_item"><span>요즘</span></li>
+					<li class="tab_item active"><span>기록</span></li>
 					<li class="tab_item"><span>선수</span></li>
 				</ul>
 				<div class="active_bar"></div>
@@ -199,11 +199,41 @@
 			<div class="sec_wrapper">
                 <div class="inner">
                     <div class="title_hd">
-                        <span class="sec_title">팀 순위</span>
+                        <span class="sec_title">순위표</span>
                     </div>
+					<!-- area_chart -->
+					<div class="area_chart_wrap">
+						<div class="area_chart_legend">누적 순위</div>
+						<div id="area_chart"></div>
+					</div>
+
 					<!-- list none -->
                     <div class="list_none_txt">
                     	<p>아직 순위가 없습니다.</p>
+                    </div>
+				</div>
+				<div class="inner">
+                    <div class="title_hd">
+                        <span class="sec_title">승패표</span>
+                    </div>
+					<!-- bar_chart -->
+					<div class="bar_chart_wrap">
+						<div class="bar_chart_legend">
+							<span class="chart_legend_win">승</span>
+							<span class="chart_legend_lose">패</span>
+							<span class="chart_legend_draw">무</span>
+						</div>
+						<div id="bar_chart"></div>
+					</div>
+
+					<!-- list none -->
+                    <div class="list_none_txt">
+                    	<p>아직 승패가 없습니다.</p>
+                    </div>
+				</div>
+				<div class="inner">
+                    <div class="title_hd">
+                        <span class="sec_title">팀 순위</span>
                     </div>
                     <!-- // list none -->
                     <div class="table_responsive table_team">
@@ -647,7 +677,7 @@
 				</div>
 			</div>
 			<div class="sec_off_def">
-				<div class="tab_2depth" id="tab_2depth">
+				<div class="tab_2depth" id="tab_2depth2">
 					<div class="tab_inner">
 						<ul>
 							<li class="tab_item active">팀 공격</li>
@@ -1631,14 +1661,215 @@
 <script src="res/js/common.js"></script>
 <script src="res/js/gnb.js"></script>
 <script src="res/js/team.js"></script>
+<script src="res/js/libs/d3.v5.min.js"></script>
+<script src="res/js/libs/billboard.min.js"></script>
+<script>
+var chart1 = bb.generate({
+    bindto: "#area_chart",
+    legend: {
+        show: false
+    },
+    data: {
+		colors: {
+			data1: "#72a0ef"
+		},
+        type: "area",
+        columns: [
+            ["data1", 3, 1, 2, 3, 10, 4, 9, 6]
+        ],
+        labels: {
+            format: function(v, id, i, j) {
+                if (v == 1) {
+                    v = "10위";
+                } else if (v == 2) {
+                    v = "9위";
+                } else if (v == 3) {
+                    v = "8위";
+                } else if (v == 4) {
+                    v = "7위";
+                } else if (v == 5) {
+                    v = "6위";
+                } else if (v == 6) {
+                    v = "5위";
+                } else if (v == 7) {
+                    v = "4위";
+                } else if (v == 8) {
+                    v = "3위";
+                } else if (v == 9) {
+                    v = "2위";
+                } else if (v == 10) {
+                    v = "1위";
+                }
+                return v;
+            },
+            colors: "#4673c4",
+            position: {
+                x: 0,
+                y: -10
+            }
+        }
+    },
+    tooltip: {
+        show: false
+    },
+    axis: {
+        y: {
+            show: false
+        },
+        x: {
+            tick: {
+                centered: true,
+                culling: false
+            },
+            type: "category",
+            categories: [
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월"
+            ]
+        }
+    },
+    area: {
+        linearGradient: {
+            y: [
+                0,
+                1
+            ],
+            stops: [
+                [
+                    0,
+                    "#77a1ed",
+                    0.5
+                ],
+                [
+                    1,
+                    "#ffffff",
+                    1
+                ]
+            ]
+        }
+    },
+    point: {
+        focus: {
+            expand: {
+                enabled: false
+            }
+        },
+        pattern: [
+            "<g><circle cx='4' cy='4' r='4' stroke='#72a0ef' stroke-width='2' fill='#ffffff'></circle></g>"
+        ]
+    },
+    grid: {
+        y: {
+            lines: [{
+                    value: 0,
+                    class: "grid_bottom"
+                },
+                {
+                    value: 2,
+                    class: "grid_solid"
+                },
+                {
+                    value: 4,
+                    class: "grid_solid"
+                },
+                {
+                    value: 6,
+                    class: "grid_solid"
+                },
+                {
+                    value: 8,
+                    class: "grid_solid"
+                },
+                {
+                    value: 10,
+                    class: "grid_solid"
+                }
+            ]
+        }
+    }
+});
+d3.select('.bb-grid-lines').lower(); // 그리드 레이어 위치 수정
+</script>
+<script>
+var chart2 = bb.generate({
+    bindto: "#bar_chart",
+    legend: {
+        show: false
+    },
+    data: {
+        colors: {
+            data1: "rgba(114,160,239,0.24)",
+            data2: "rgba(242,161,141,0.24)",
+            data3: "rgba(212,213,217,0.24)"
+        },
+        type: "bar",
+        columns: [
+            ["data1", 5, 3, 2, 5, 1, 8, 3, 2],
+            ["data2", 9, 10, 5, 4, 16, 18, 10, 5],
+            ["data3", 15, 15, 5, 2, 15, 2, 21, 5]
+        ]
+    },
+    axis: {
+        y: {
+            show: false
+        },
+        x: {
+            tick: {
+                centered: true,
+                culling: false
+            },
+            type: "category",
+            categories: [
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월"
+            ]
+        }
+    },
+    grid: {
+        y: {
+            lines: [{ // bar 그래프는 라인 4줄
+                    value: 0,
+                    class: "grid_bottom"
+                },
+                {
+                    value: 7,
+                    class: "grid_dotted"
+                },
+                {
+                    value: 14,
+                    class: "grid_dotted"
+                },
+                {
+                    value: 21,
+                    class: "grid_dotted"
+                }
+            ]
+        }
+    }
+});
+</script>
+
 <script>
 bnbUi.init();
 bnbUi.initLottie();
 teamUi.init();
 teamUi.initSubTab(document.getElementById('tab_1depth'));
+teamUi.activeBar(1,document.getElementById('tab_1depth'));
 teamUi.initDepthTab(document.getElementById('tab_2depth'));
-teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
-teamUi.init3DepthTab(document.getElementById('tab_3depth'));
+teamUi.initDepthTab(document.getElementById('tab_2depth2'));
+
 
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');

@@ -133,14 +133,6 @@
 <script src="res/js/gnb.js"></script>
 <script src="res/js/team.js"></script>
 <script>
-bnbUi.init();
-bnbUi.initLottie();
-teamUi.init();
-teamUi.initSubTab(document.getElementById('tab_1depth'));
-teamUi.initDepthTab(document.getElementById('tab_2depth'));
-teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
-teamUi.init3DepthTab(document.getElementById('tab_3depth'));
-
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');
 	document.getElementById('wrap').setAttribute('data-theme',this.value);

@@ -111,6 +111,7 @@ var teamUi = (function() {
 						let indexNum = webUI.getChildIndex(e.target);
 						subtab.querySelector('.active').classList.remove('active');
 						e.target.classList.add('active');
+						webUI.animatedScrollTo(subtab, subtab.querySelectorAll('li')[indexNum].offsetLeft - (subtab.clientWidth * 0.5), 300);
 					}
 				});
 			});
