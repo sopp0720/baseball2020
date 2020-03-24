@@ -62,10 +62,8 @@ var teamUi = (function() {
 				});
 			});
 			window.addEventListener('resize', function(e) {
-				webUI.debounce(function() {
-					let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
-					teamUi.activeBar(indexNum,subtab);					
-				}, 100);
+				let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
+				teamUi.activeBar(indexNum,subtab);					
 			});
         },
 		"activeBar" : function(index, container) {

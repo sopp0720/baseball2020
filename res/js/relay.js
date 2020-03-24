@@ -17,10 +17,8 @@ var relayUi = (function() {
 				});
 			});
 			window.addEventListener('resize', function(e) {
-				webUI.debounce(function() {
-					let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
-					relayUi.activeBar(indexNum,subtab);					
-				}, 100);
+				let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
+				relayUi.activeBar(indexNum,subtab);					
 			});
         },
 		"activeBar" : function(index, container) {
