@@ -57,6 +57,7 @@ var teamUi = (function() {
 						subtab.querySelector('.active').classList.remove('active');
 						e.target.closest('li').classList.add('active');
 						teamUi.activeBar(indexNum,subtab);
+						webUI.animatedScrollTo(subtab, subtab.querySelectorAll('li')[indexNum].offsetLeft - (subtab.clientWidth * 0.5), 300);
 					}
 				});
 			});

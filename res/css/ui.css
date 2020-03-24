@@ -602,11 +602,12 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_teamlist li.active .name {font-weight:bold;}
 
 /* tab_1depth */
-.tab_1depth {margin-top:1.6667rem;position:relative;}
-.tab_1depth ul {display:flex;padding:1rem 10% 0;background:#fff;border-bottom:1px solid #e9e9e9;}
-.tab_1depth .tab_item {width:33%;font-size:16px;text-align:center;}
-.tab_1depth .tab_item span {display:inline-block;padding:0 15px 12px;text-decoration:none;color:#b4b4b4;font-weight:400;transition:color .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
-.tab_1depth .tab_item.active span {color:#c10a3a;font-weight:700;position:relative;}
+.tab_1depth {padding:0 0.6167rem;margin-top:1.6667rem;height:4.6rem;position:relative;overflow-x:auto;overflow-y:hidden;background:#fff;border-bottom:1px solid #dee1e6;}
+.tab_1depth::-webkit-scrollbar {display:none;}
+.tab_1depth ul {min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
+.tab_1depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;margin:0 0.9167rem;text-align:center;}
+.tab_1depth .tab_item span {color:#b4b4b4;min-width:5.8333rem;display:inline-block;height:100%;padding:1.1rem 0 1.1667rem;font-size:1.5333rem;font-weight:500;transition:color .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
+.tab_1depth .tab_item.active span {}
 .tab_1depth .active_bar {position:absolute;bottom:0;width:6rem;height:0.2rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
 
 /* tab_2depth */
@@ -620,6 +621,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* tab_3depth */
 .tab_3depth {margin-top:2.3333rem;position:relative;width:100%;font-size:0;overflow-x:auto;overflow-y:hidden;background:#f7f8f9;border-top:1px solid #efeff0;border-bottom:0;}
+.tab_3depth::-webkit-scrollbar {display:none;}
 .tab_3depth ul {min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
 .tab_3depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;width:auto;margin:0 1rem;padding:1.4rem 0;color:#cfd2d9;font-size:1.4rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
 .tab_3depth .tab_item.active {font-weight:700;}
