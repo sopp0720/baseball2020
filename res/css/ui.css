@@ -822,7 +822,8 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .modal .calendar_header.bg_gradient .month_wrap .i_month span {color:#fff;}
 .modal .calendar_header.bg_gradient .btn_gotoday {color:#fff;background-color: rgba(0, 0, 0, 0.2);}
 .modal .calendar_header.bg_gradient .calendar_cell .day {color:#fff;opacity:0.5;}
-.modal .calendar_header.bg_gradient .calendar_row {position:absolute;bottom:0;left:0;right:0;border-bottom:0 none;}
+.modal .calendar_header .calendar_row {position:absolute;bottom:0;left:0;right:0;}
+.modal .calendar_header.bg_gradient .calendar_row {border-bottom:0 none;}
 
 /* layerPopup 자세히보기 */
 .morei_wrap {}
