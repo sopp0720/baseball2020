@@ -1598,8 +1598,9 @@
                         </div>
                     </div>
                     <div class="term_desc">
-                        <button type="button" class="btn_desc">
+                        <button type="button" class="btn_desc" onclick="this.parentNode.classList.toggle('on');">
                             <span class="label">용어 설명 보기</span>
+							<span class="label">용어 설명 닫기</span>
                             <b class="i_arrow"></b>
                         </button>
                         <div class="term_content">
@@ -1839,26 +1840,6 @@ document.getElementById('teamSelect').addEventListener('change', function(event)
 	bnbUi.teamLottie()
 });
 </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    /* 용어 설명 닫기 */
-    var termDesc = $(".term_desc")
-    var btnDesc = $(".term_desc .btn_desc")
-    var btnDescLabel = $(".term_desc .btn_desc .label")
-    var termContent = $(".term_desc .term_content");
-    
-    $(termContent).hide();
-    $(btnDesc).on("click", function() {        
-        $(termContent).slideToggle(200);        
-        $(termDesc).toggleClass("on");
-        if( $(btnDescLabel).html() == '용어 설명 보기' ) {
-            $(btnDescLabel).html('용어 설명 닫기');
-        }
-        else {
-            $(btnDescLabel).html('용어 설명 보기');
-        }
-    });
-});    
-</script>
+
 </body>
 </html>
