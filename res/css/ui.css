@@ -110,12 +110,16 @@
 .middle_box .info_today.i_before {background-color:#c10a3a;}
 .middle_box .info_today.i_cancel {background-color:#c2c3c7;}
 .home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#525252;}
-.home.content .score_board_wrap .play_list {margin-top:1rem;padding:0 2.3333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
-.home.content .score_board_wrap .play_list li {position:relative;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;border-top:1px solid #dee1e6;text-align:center;}
-.home.content .score_board_wrap .play_list li:first-child {border-top:0;}
+.home.content .score_board_wrap .play_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
+.home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;text-align:center;}
+.home.content .score_board_wrap .play_list li:first-child {margin-top:0;}
+.home.content .score_board_wrap .play_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#dee1e6;}
+.home.content .score_board_wrap .play_list li:first-child:after {display:none;}
+.home.content .score_board_wrap .play_list li.active {background-color:#dee1e6;}
+
 .home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:7.1333rem;}
-.home.content .score_board_wrap .play_list li > div.team_player.left {left:0;}
-.home.content .score_board_wrap .play_list li > div.team_player.right {right:0;}
+.home.content .score_board_wrap .play_list li > div.team_player.left {left:2.3333rem;}
+.home.content .score_board_wrap .play_list li > div.team_player.right {right:2.3333rem;}
 .home.content .score_board_wrap .play_list li > div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
 .home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:14rem;}
