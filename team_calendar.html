@@ -321,7 +321,7 @@
 							<div class="stadi">홈</div>
 							<div class="res_lose">패</div>
 						</div>
-						<div class="calendar_cell">
+						<div class="calendar_cell current">
 							<div class="num">14</div>
 							<div class="team_logo team_logo_WO"></div>
 							<div class="stadi">홈</div>
@@ -562,13 +562,8 @@
 <script src="res/js/gnb.js"></script>
 <script src="res/js/team.js"></script>
 <script>
-bnbUi.init();
-bnbUi.initLottie();
 teamUi.init();
-teamUi.initSubTab(document.getElementById('tab_1depth'));
 teamUi.initDepthTab(document.getElementById('tab_2depth'));
-teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
-teamUi.init3DepthTab(document.getElementById('tab_3depth'));
 
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');
