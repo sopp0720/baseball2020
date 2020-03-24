@@ -21,7 +21,7 @@
 	<option value="theme_OB">두산</option>
 	<option value="theme_HT">KIA</option>
 </select>
-<div id="wrap" data-theme="theme_LG">
+<div id="wrap" data-theme="theme_LG" class="main">
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content team">
@@ -151,9 +151,9 @@
 
 			<div class="tab_1depth" id="tab_1depth">
 				<ul class="tab_link">
-					<li class="tab_item active"><span>요즘</span></li>
+					<li class="tab_item"><span>요즘</span></li>
 					<li class="tab_item"><span>기록</span></li>
-					<li class="tab_item"><span>선수</span></li>
+					<li class="tab_item active"><span>선수</span></li>
 				</ul>
 				<div class="active_bar"></div>
 			</div>
@@ -242,7 +242,7 @@
                         </ol>
                     </div>
                 </div>
-                <div class="tab_3depth" id="tab_3depth">
+                <div class="tab_3depth" id="tab_3depth2">
                     <ul>
                         <li class="tab_item active">평자책</li>
                         <li class="tab_item">승률</li>
@@ -611,9 +611,10 @@ bnbUi.init();
 bnbUi.initLottie();
 teamUi.init();
 teamUi.initSubTab(document.getElementById('tab_1depth'));
+teamUi.activeBar(2,document.getElementById('tab_1depth'));
 teamUi.initDepthTab(document.getElementById('tab_2depth'));
-teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
 teamUi.init3DepthTab(document.getElementById('tab_3depth'));
+teamUi.init3DepthTab(document.getElementById('tab_3depth2'));
 
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');

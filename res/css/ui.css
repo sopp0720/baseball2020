@@ -514,6 +514,8 @@
 .team.content .scroll_ranking li .rest_rank .my_team {display:inline-block;margin-top:0.3333rem;margin-left:0.5rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
 .team.content .scroll_ranking li .rest_rank .rank_rate {display:inline-block;float:right;width:44.303797%;height:1.8667rem;font-size:1.2667rem;text-align:right;color:#2b2b2b;vertical-align:top;}
 .team.content .sec_off_def .table_responsive {margin-top:2.0667rem;}
+.tab_2depth + .table_responsive {margin-top:2.0667rem;}
+
 
 /* Schedule option */
 .team.content .schedule_opt {position:relative;margin-top:1.6667rem;margin-bottom:1rem;height:3rem;}
@@ -607,10 +609,17 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_2depth .active_fill {position:absolute;border-width:1px;border-style:solid;bottom:0;left:0;width:8.3333rem;height:3rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);border-radius:1.5rem;z-index:2;}
 
 /* tab_3depth */
-.tab_3depth {margin-top:2.3333rem;position:relative;text-align:center;font-size:0;}
-.tab_3depth ul {display:flex;padding:0 1.5rem;background:#f7f8f9;border-top:1px solid #efeff0;border-bottom:0;justify-content:space-around;}
-.tab_3depth .tab_item {flex-grow:1;width:auto;padding:1.4rem 0;color:#cfd2d9;font-size:1.4rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
+.tab_3depth {margin-top:2.3333rem;position:relative;width:100%;font-size:0;overflow-x:auto;overflow-y:hidden;background:#f7f8f9;border-top:1px solid #efeff0;border-bottom:0;}
+.tab_3depth ul {min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
+.tab_3depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;width:auto;margin:0 1rem;padding:1.4rem 0;color:#cfd2d9;font-size:1.4rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
 .tab_3depth .tab_item.active {font-weight:700;}
+
+.fix-wrapper{position:fixed;top:2.778rem;left:0;right:0;height:2.250rem;overflow-x:auto;overflow-y:hidden;border-bottom:1px solid rgba(255,255,255,0.3);z-index:10;background-color:#000;}
+.tabs {overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
+.tabs li {font-size:0.852rem;line-height:2.250rem;margin:0 1.000rem;cursor:pointer;color:rgba(255,255,255,0.3);}
+
+
+
 
 /* table common*/
 .table_responsive {/*margin-top:2rem;*/margin-top:0.6667rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
@@ -641,7 +650,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* team table */
 .table_team .table_left {width:7.3333rem;}
-.table_team .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
+.table_team .table_left tbody .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
 .table_team .table_left .cell .num {width:1.1333rem;height:4.3rem;margin-left:1.2rem;padding:1.3rem 0 1.2667rem;font-family:'bebas_neueregular';font-size:1.4rem;font-weight:bold;color:#2b2b2b;float:left;}
 .table_team .table_left .cell .vs {float:left;width:1.0667rem;height:1.6rem;margin:1.3667rem 0 0 1.0667rem;background-image:url(../images/table-vs.png);background-size:100%;}
 .table_team .table_left .cell .team_wrap {width:2.8333rem;height:4.3rem;text-align:center;float:right;margin-right:1rem;}
