@@ -603,11 +603,17 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* tab_1depth */
 .tab_1depth {padding:0 0.6167rem;margin-top:1.6667rem;height:4.6rem;position:relative;overflow-x:auto;overflow-y:hidden;background:#fff;border-bottom:1px solid #dee1e6;}
+.tab_1depth.tab_logo {height:6.4rem;}
 .tab_1depth::-webkit-scrollbar {display:none;}
-.tab_1depth ul {min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
+.tab_1depth ul {min-width:100%;height:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
 .tab_1depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;margin:0 0.9167rem;text-align:center;}
-.tab_1depth .tab_item span {color:#b4b4b4;min-width:5.8333rem;display:inline-block;height:100%;padding:1.1rem 0 1.1667rem;font-size:1.5333rem;font-weight:500;transition:color .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
-.tab_1depth .tab_item.active span {}
+.tab_1depth .tab_item span {position:relative;color:#b4b4b4;min-width:5.8333rem;display:inline-block;height:100%;padding:1.1rem 0 1.1667rem;font-size:1.5333rem;font-weight:500;transition:color .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
+.tab_1depth .tab_item .tab_logo_ABL,
+.tab_1depth .tab_item .tab_logo_MLB,
+.tab_1depth .tab_item .tab_logo_KBO {padding:2.7rem 0 1.2333rem;}
+.tab_1depth .tab_item .tab_logo_KBO:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_kbo.png);}
+.tab_1depth .tab_item .tab_logo_MLB:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_mlb.png);}
+.tab_1depth .tab_item .tab_logo_ABL:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_abl.png);}
 .tab_1depth .active_bar {position:absolute;bottom:0;width:6rem;height:0.2rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
 
 /* tab_2depth */

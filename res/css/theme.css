@@ -126,6 +126,48 @@
 [data-theme="theme_HT"] .active_fill {color:#AC1020;border-color:#AC1020;background-color:rgba(171,16,32,0.07);}
 [data-theme="theme_LT"] .active_fill {color:#C30025;border-color:#C30025;background-color:rgba(195,0,37,0.07);}
 
+/* tab_logo_KBO */
+.tab_item .tab_logo_KBO:before {background-position: 0 10%;background-size: 100%;}
+[data-theme="theme_default"] .tab_item.active .tab_logo_KBO:before {background-position: 0 60%;background-size: 100%;}
+[data-theme="theme_LG"] .tab_item.active .tab_logo_KBO:before {background-position: 0 60%;background-size: 100%;}
+[data-theme="theme_HH"] .tab_item.active .tab_logo_KBO:before {background-position: 0 20%;background-size: 100%;}
+[data-theme="theme_SS"] .tab_item.active .tab_logo_KBO:before {background-position: 0 90%;background-size: 100%;}
+[data-theme="theme_KT"] .tab_item.active .tab_logo_KBO:before {background-position: 0 50%;background-size: 100%;}
+[data-theme="theme_SK"] .tab_item.active .tab_logo_KBO:before {background-position: 0 100%;background-size: 100%;}
+[data-theme="theme_WO"] .tab_item.active .tab_logo_KBO:before {background-position: 0 40%;background-size: 100%;}
+[data-theme="theme_NC"] .tab_item.active .tab_logo_KBO:before {background-position: 0 80%;background-size: 100%;}
+[data-theme="theme_OB"] .tab_item.active .tab_logo_KBO:before {background-position: 0 0%;background-size: 100%;}
+[data-theme="theme_HT"] .tab_item.active .tab_logo_KBO:before {background-position: 0 30%;background-size: 100%;}
+[data-theme="theme_LT"] .tab_item.active .tab_logo_KBO:before {background-position: 0 70%;background-size: 100%;}
+
+/* tab_logo_MLB */
+.tab_item .tab_logo_MLB:before {background-position: 0 10%;background-size: 100%;}
+[data-theme="theme_default"] .tab_item.active .tab_logo_MLB:before {background-position: 0 60%;background-size: 100%;}
+[data-theme="theme_LG"] .tab_item.active .tab_logo_MLB:before {background-position: 0 60%;background-size: 100%;}
+[data-theme="theme_HH"] .tab_item.active .tab_logo_MLB:before {background-position: 0 20%;background-size: 100%;}
+[data-theme="theme_SS"] .tab_item.active .tab_logo_MLB:before {background-position: 0 90%;background-size: 100%;}
+[data-theme="theme_KT"] .tab_item.active .tab_logo_MLB:before {background-position: 0 50%;background-size: 100%;}
+[data-theme="theme_SK"] .tab_item.active .tab_logo_MLB:before {background-position: 0 100%;background-size: 100%;}
+[data-theme="theme_WO"] .tab_item.active .tab_logo_MLB:before {background-position: 0 40%;background-size: 100%;}
+[data-theme="theme_NC"] .tab_item.active .tab_logo_MLB:before {background-position: 0 80%;background-size: 100%;}
+[data-theme="theme_OB"] .tab_item.active .tab_logo_MLB:before {background-position: 0 0%;background-size: 100%;}
+[data-theme="theme_HT"] .tab_item.active .tab_logo_MLB:before {background-position: 0 30%;background-size: 100%;}
+[data-theme="theme_LT"] .tab_item.active .tab_logo_MLB:before {background-position: 0 70%;background-size: 100%;}
+
+/* tab_logo_ABL */
+.tab_item .tab_logo_ABL:before {background-position: 0 10%;background-size: 100%;}
+[data-theme="theme_default"] .tab_item.active .tab_logo_ABL:before {background-position: 0 60%;background-size: 100%;}
+[data-theme="theme_LG"] .tab_item.active .tab_logo_ABL:before {background-position: 0 60%;background-size: 100%;}
+[data-theme="theme_HH"] .tab_item.active .tab_logo_ABL:before {background-position: 0 20%;background-size: 100%;}
+[data-theme="theme_SS"] .tab_item.active .tab_logo_ABL:before {background-position: 0 90%;background-size: 100%;}
+[data-theme="theme_KT"] .tab_item.active .tab_logo_ABL:before {background-position: 0 50%;background-size: 100%;}
+[data-theme="theme_SK"] .tab_item.active .tab_logo_ABL:before {background-position: 0 100%;background-size: 100%;}
+[data-theme="theme_WO"] .tab_item.active .tab_logo_ABL:before {background-position: 0 40%;background-size: 100%;}
+[data-theme="theme_NC"] .tab_item.active .tab_logo_ABL:before {background-position: 0 80%;background-size: 100%;}
+[data-theme="theme_OB"] .tab_item.active .tab_logo_ABL:before {background-position: 0 0%;background-size: 100%;}
+[data-theme="theme_HT"] .tab_item.active .tab_logo_ABL:before {background-position: 0 30%;background-size: 100%;}
+[data-theme="theme_LT"] .tab_item.active .tab_logo_ABL:before {background-position: 0 70%;background-size: 100%;}
+
 /* My Team Bg */
 [data-theme="theme_default"] .my_team {background-color:#C10A3A;}
 [data-theme="theme_LG"] .my_team {background-color:#C10A3A;}
@@ -153,7 +195,6 @@
 [data-theme="theme_LT"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #092e63 -866%, #b70522 172%, #a30a29 172%);}
 .modal .bg_gradient.mlb {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 .modal .bg_gradient.abl {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
-
 
 /* Team Color bg*/
 .team_color_LG {background-color:#C10A3A;}
