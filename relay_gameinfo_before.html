@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<div id="wrap" class="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content relay">
+			<div class="sec_wrapper relay_video_wrap">
+				<div class="relay_video_thumb" style="background-image:url('res/images/ground.jpg')">
+				</div>
+				<button type="button" class="btn_player_view">
+					<span>화면 숨기기</span>
+					<i></i>
+				</button>
+			</div>
+<style>
+.relay.content .relay_video_wrap {padding:0;}
+.relay.content .relay_video_thumb {height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;transition:padding .3s ease-in-out;-webkit-transition:padding .3s ease-in-out;}
+.relay.content .relay_video_thumb.active {padding-bottom:0;}
+.relay.content .btn_player_view {z-index:1;position:relative;display:block;width:100%;padding:0.7667rem 0;font-size:0;text-align:center;}
+.relay.content .btn_player_view > span {display:inline-block;width:7rem;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:right;color:#7a7a7a;vertical-align:top;}
+.relay.content .btn_player_view > i {display:inline-block;margin-top:0.2333rem;margin-left:0.3333rem;width:1.3333rem;height:1.3333rem;background:url("res/images/ic-arrow-up-g.png") no-repeat 50% 50%;background-size:cover;vertical-align:top;transform:rotate(0deg);}
+.relay.content .btn_player_view.active > i {transform:rotate(180deg);}
+.relay.content .relay_card_wrap ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.relay.content .relay_card_wrap ul li {display:inline-block;position:relative;margin-left:0.7667rem;padding-top:0.4rem;width:8.6667rem;height:10.1333rem;vertical-align:top;}
+.relay.content .relay_card_wrap ul li:first-child {margin-left:0;}
+.relay.content .relay_card_wrap ul li .ic_5g {display:block;position:absolute;top:0;right:1.1rem;width:2.2667rem;height:1.3333rem;background:url('res/images/ic-tag-5-g.png') no-repeat 50% 50%;background-size:100% auto;}
+.relay.content .relay_card_wrap ul li .ic_info {display:inline-block;position:absolute;top:4.5333rem;right:0.6333rem;padding:0 0.5333rem;height:1.4667rem;line-height:1.4667rem;font-size:0.8333rem;text-align:center;color:#ffffff;border-radius:0.7333rem;background-color:#c2c3c7;}
+.relay.content .relay_card_wrap ul li .card_box {padding:0 0.6333rem 0 0.7333rem;width:100%;height:9.7333rem;border:0.0667rem solid #e5e5e5;border-radius:0.7333rem;}
+.relay.content .relay_card_wrap ul li .card_box .team_box {height:4.8rem;}
+.relay.content .relay_card_wrap ul li .card_box .team_box:after {display:block;visibility:hidden;clear:both;content:""}
+.relay.content .relay_card_wrap ul li .card_box .team_box.top_box {padding-top:0.5rem;padding-bottom:1.0333rem;}
+.relay.content .relay_card_wrap ul li .card_box .team_box.top_box .team_logo {margin-top:0.2333rem;}
+.relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box {padding-top:1rem;border-top:1px solid #dee1e6;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {display:block;float:left;width:3.4333rem;height:3.0333rem;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {display:block;float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'bebas_neueregular';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_name {display:block;float:left;width:3.6667rem;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-align:center;}
+
+</style>
+			<div class="sec_wrapper relay_card_wrap">
+				<div class="inner">
+					<ul>
+						<li>
+							<span class="ic_5g blind">5G</span>
+							<span class="ic_info">9회말</span>
+							<div class="card_box">
+								<div class="team_box top_box">
+									<span class="team_logo team_logo_LG"></span>
+									<em class="i_score">5</em>
+								</div>
+								<div class="team_box bottom_box">
+									<span class="team_logo team_logo_OB"></span>
+									<em class="i_score">2</em>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="ic_5g blind">5G</span>
+							<span class="ic_info">경기전</span>
+							<div class="card_box">
+								<div class="team_box top_box">
+									<span class="team_logo team_logo_LT"></span>
+									<!--<em class="i_score">5</em>-->
+									<span class="team_name">롯데</span>
+								</div>
+								<div class="team_box bottom_box">
+									<span class="team_logo team_logo_SK"></span>
+									<!--<em class="i_score">2</em>-->
+									<span class="team_name">SK</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="ic_5g blind">5G</span>
+							<span class="ic_info">경기취소</span>
+							<div class="card_box">
+								<div class="team_box top_box">
+									<span class="team_logo team_logo_WO"></span>
+									<em class="i_score">5</em>
+								</div>
+								<div class="team_box bottom_box">
+									<span class="team_logo team_logo_SS"></span>
+									<em class="i_score">2</em>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="ic_5g blind">5G</span>
+							<span class="ic_info">경기취소</span>
+							<div class="card_box">
+								<div class="team_box top_box">
+									<span class="team_logo team_logo_LG"></span>
+									<em class="i_score">5</em>
+								</div>
+								<div class="team_box bottom_box">
+									<span class="team_logo team_logo_OB"></span>
+									<em class="i_score">2</em>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="ic_5g blind">5G</span>
+							<span class="ic_info">9회말</span>
+							<div class="card_box">
+								<div class="team_box top_box">
+									<span class="team_logo team_logo_LG"></span>
+									<em class="i_score">5</em>
+								</div>
+								<div class="team_box bottom_box">
+									<span class="team_logo team_logo_OB"></span>
+									<em class="i_score">2</em>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var imgPlayerDefault = $(".relay_video_thumb"); // img영역    
+    var btnPlayerView = $(".btn_player_view") // 화면 숨기기 버튼
+    var btnPlayerViewText = $(".btn_player_view span") // 화면 숨기기 텍스트
+    
+    $(btnPlayerView).on("click", function() {
+        $(this).toggleClass("active");
+        $(imgPlayerDefault).toggleClass("active");
+        if ($(imgPlayerDefault).hasClass("active")) {
+            $(btnPlayerViewText).text("화면 보이기");            
+        } else {
+            $(btnPlayerViewText).text("화면 숨기기");            
+        }
+    });
+});    
+</script>
+</body>
+</html>

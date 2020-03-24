@@ -191,7 +191,7 @@
 .home.content .news_wrap .news_list .desc .subject {margin-top:0.1rem;height:2.1667rem;line-height:2.1667rem;font-size:1.4667rem;font-weight:bold;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_wrap .news_list .desc .content {height:1.8rem;line-height:1.8rem;font-size:1.2rem;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_comments .news_scroll {margin-top:1rem;}
-.home.content .news_comments .news_scroll ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.home.content .news_comments .news_scroll ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .home.content .news_comments .news_scroll li {position:relative;display:inline-block;margin-left:0.7667rem;padding:0 0.8333rem;width:15.2rem;height:15.2rem;border-radius:0.7333rem;box-shadow: 0 15px 51px 0 rgba(0, 0, 0, 0.09);background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;}
 .home.content .news_comments .news_scroll li:first-child {margin-left:0;}
 .home.content .news_comments .news_scroll li:before {content:'';position:absolute;display:block;width:100%;height:68%;bottom:0;left:0;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));overflow:hidden;border-radius:0.7333rem;}
@@ -370,7 +370,7 @@
 .team.content .player_info_wrap .player_info dl dt:first-child {margin-top:0;}
 .team.content .player_info_wrap .player_info dl dd:nth-child(2) {margin-top:0;}
 .team.content .video_scroll {margin-top:1rem;}
-.team.content .video_scroll ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.team.content .video_scroll ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .team.content .video_scroll ul li {display:inline-block;margin-left:2.834008%;width:37.044534%;white-space:normal;vertical-align:top;}
 .team.content .video_scroll ul li:first-child {margin-left:0;}
 .team.content .video_scroll .thumb {position:relative;padding-bottom:56.284153%;height:0;border-radius:0.7333rem;background-repeat:no-repeat;background-size:100% auto;background-color:#e9edf0;}
@@ -504,7 +504,7 @@
 .team.content .top_ranking_info .win_rate span {margin-top:0.1rem;height:1.8667rem;font-size:1.2667rem;color:#666666;}
 .team.content .top_ranking_info .win_rate b {margin-left:0.3333rem;height:2.0667rem;font-size:1.4rem;font-weight:bold;color:#666666;}
 .team.content .scroll_ranking {margin-top:1rem;}
-.team.content .scroll_ranking ul {white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
+.team.content .scroll_ranking ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .team.content .scroll_ranking li {display:inline-block;margin-left:0.6667rem;width:12.6rem;/*width:38.259109%;*/border-radius:0.7333rem 0.7333rem 0 0;overflow:hidden;vertical-align:top;}
 .team.content .scroll_ranking li:first-child {margin-left:0;}
 .team.content .scroll_ranking li .team_bg {position:relative;padding-bottom:121.164021%;height:0;background-repeat:no-repeat;background-size:100% auto;}
