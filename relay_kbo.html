@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap" class="theme_LG">
+<div id="wrap" data-theme="theme_LG" class="main">
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content relay">
@@ -58,81 +58,22 @@
 						</li>
 					</ul>
 				</div>
-<style>
-.relay.content .scroll_date {position:relative;margin-top:1rem;}
-.relay.content .scroll_date .gra {z-index:1;display:block;position:absolute;top:0;right:-1.5333rem;width:2.9333rem;height:6rem;background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.04));}
-.relay.content .scroll_date ul {margin-right:-1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
-.relay.content .scroll_date ul li {display:inline-block;margin-left:1.1rem;padding:0.9rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
-.relay.content .scroll_date ul li:first-child {margin-left:0;}
-.relay.content .scroll_date ul li .date_num {display:block;height:2.3rem;font-family:'bebas_neueregular';font-size:1.9333rem;color:#000000;}
-.relay.content .scroll_date ul li .date_day {display:block;height:1.8rem;font-size:1.2rem;font-weight:bold;color:#000000;}
-.relay.content .scroll_date ul li.i_sat .date_num,
-.relay.content .scroll_date ul li.i_sat .date_day {color:#3563c0}
-.relay.content .scroll_date ul li.i_sun .date_num,
-.relay.content .scroll_date ul li.i_sun .date_day {color:#ec5f59}
-.relay.content .scroll_date ul li.i_disabled .date_num,
-.relay.content .scroll_date ul li.i_disabled .date_day {opacity:0.35;}
-
-.relay.content .score_board_wrap {margin-top:0.8333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
-.relay.content .play_list li {position:relative;height:10.6667rem;margin-top:1px;}
-.relay.content .play_list li:first-child {margin-top:0;}
-.relay.content .play_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#dee1e6;}
-.relay.content .play_list li:first-child:after {display:none;}
-.relay.content .play_list li.active {background-color:#dee1e6;}
-
-.relay.content .play_list li .team_player {position:absolute;top:0;bottom:0;width:7.2333rem;white-space:nowrap;overflow:hidden;text-align:center;font-size:0;}
-.relay.content .play_list li .team_player:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
-.relay.content .play_list li .team_player .middle_inner {display:inline-block;vertical-align:middle;white-space:normal;}
-.relay.content .play_list li .team_player.left {left:2.3333rem;}
-.relay.content .play_list li .team_player.right {right:2.3333rem;}
-.relay.content .play_list li .team_player .middle_inner > i {display:block;margin:0 auto;width:5rem;height:4.4333rem;}
-.relay.content .play_list li .team_player .player_name {display:block;margin-top:0.5rem;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;text-align:center;}
-.relay.content .play_list li .middle_box {position:relative;height:100%;margin:0 auto;width:13.8rem;white-space:nowrap;overflow:hidden;text-align:center;font-size:0;}
-.relay.content .play_list li .middle_box .middle_inner {display:inline-block;vertical-align:middle;white-space:normal;}
-.relay.content .play_list li .middle_box:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
-.relay.content .play_list li .middle_box em {position:absolute;top:2.4333rem;width:3.3333rem;height:3.3333rem;font-family:'bebas_neueregular';font-size:3.6667rem;font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;color:#000000;}
-.relay.content .play_list li .middle_box em.left_score {left:0;text-align:right;}
-.relay.content .play_list li .middle_box em.right_score {right:0;text-align:left;}
-.relay.content .play_list li .middle_box .ic_base {display:block;margin:1.2333rem auto 0;width:3.2667rem;height:2.3333rem;background-repeat:no-repeat;background-size:100% auto;}
-.relay.content .play_list li .middle_box .info_round {display:block;margin-top:0.5rem;height:1.6667rem;line-height:1.6667rem;font-size:1.2667rem;font-weight:bold;text-align:center;color:#2b2b2b;}
-.relay.content .play_list li .middle_box .info_bso {display:block;height:1.6667rem;font-size:0;text-align:center;}
-.relay.content .play_list li .middle_box .info_bso > span {display:inline-block;margin-left:0.6rem;font-size:0.8rem;font-weight:500;color:#2b2b2b;vertical-align:top;}
-.relay.content .play_list li .middle_box .info_bso > span:first-child {margin-left:0;}
-.base_0 {background-image:url('res/images/ic-base-00.png');}
-.base_1 {background-image:url('res/images/ic-base-03.png');}
-.base_2 {background-image:url('res/images/ic-base-02.png');}
-.base_3 {background-image:url('res/images/ic-base-01.png');}
-.base_12 {background-image:url('res/images/ic-base-02-03png');}
-.base_23 {background-image:url('res/images/ic-base-01-02.png');}
-.base_13 {background-image:url('res/images/ic-base-01-03.png');}
-.base_full {background-image:url('res/images/ic-base-full.png');}
-.relay.content .play_list .info_today_warp {display:block;height:1.3333rem;text-align:center;}
-.relay.content .play_list .info_today_warp .info_today {display:inline-block;padding:0 0.9rem;height:1.3333rem;font-size:1.1667rem;font-weight:500;color:#ffffff;border-radius:0.86665rem;vertical-align:top;}
-</style>
 				<div class="score_board_wrap kbo">
 					<ul class="play_list">
+						<!-- game_ing : 경기중, game_end : 경기종료, game_bfg : 선발투수확정전, game_afg 선발투수확정후, game_cancel 경기취소 -->
                         <!-- 경기중 Basic -->
-<li class="usetap">
+						<li class="usetap game_ing">
                             <div class="team_player left">
 								<div class="middle_inner">
-									<i class="team_logo_WO"></i> <!-- theme.css :  logo KBO -->
+									<i class="team_logo_WO"></i>
 									<span class="player_name"><!--<i class="result_val">승or패</i>-->우민규</span>
 								</div>
                             </div>
                             <div class="middle_box">
-                                <em class="left_score">14</em>
-                                <em class="right_score">23</em>
-                                <!--
-                                base_0 : 0
-                                base_1 : 1루
-                                base_2 : 2루
-                                base_3 : 3루
-                                base_12 : 1루, 2루
-                                base_23 : 2루, 3루
-                                base_13 : 1루, 3루
-                                base_full : 만루
-                                -->
+                                <div class="left_score">14</div>
+                                <div class="right_score">23</div>
 								<div class="middle_inner">
+									<!-- base_0 : 0 , base_1 : 1루, base_2 : 2루, base_3 : 3루, base_12 : 1루, 2루, base_23 : 2루, 3루, base_13 : 1루, 3루, base_full : 만루 -->
 									<span class="ic_base base_13 blind">베이스 상황</span>
 									<span class="info_round">8회말</span>
 									<span class="info_bso">
@@ -140,10 +81,9 @@
 										<span>S:1</span>
 										<span>O:2</span>
 									</span>
-									<!--
-									<span class="info_today i_schedule">중계예정</span>
-									<span class="info_today i_cancel">취소</span>                                
-									-->
+									<!-- <div class="info_tag_warp">
+										<span class="info_tag">중계예정</span>
+									</div> -->
 									<!--
 									<div class="play_score">
 										<em class="text_right i_gray">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 --> <!--
@@ -159,30 +99,20 @@
 								<div class="middle_inner">
 									<i class="team_logo_LT"></i> <!-- theme.css :  logo KBO -->
 									<span class="player_name"><!--<i class="result_val">승or패</i>-->고효준</span>
-									<span class="player_name"><!--<i class="result_val">승or패</i>-->고효준</span>
 								</div>
                             </div>
                         </li>
-						<li class="usetap">
+						<!-- 경기중 태그 1개일 경우 -->
+						<li class="usetap game_ing">
                             <div class="team_player left">
 								<div class="middle_inner">
-									<i class="team_logo_WO"></i> <!-- theme.css :  logo KBO -->
-									<span class="player_name"><!--<i class="result_val">승or패</i>-->우민규</span>
+									<i class="team_logo_WO"></i>
+									<span class="player_name">우민규</span>
 								</div>
                             </div>
                             <div class="middle_box">
-                                <em class="left_score">14</em>
-                                <em class="right_score">23</em>
-                                <!--
-                                base_0 : 0
-                                base_1 : 1루
-                                base_2 : 2루
-                                base_3 : 3루
-                                base_12 : 1루, 2루
-                                base_23 : 2루, 3루
-                                base_13 : 1루, 3루
-                                base_full : 만루
-                                -->
+                                <div class="left_score">14</div>
+                                <div class="right_score">23</div>
 								<div class="middle_inner">
 									<span class="ic_base base_13 blind">베이스 상황</span>
 									<span class="info_round">8회말</span>
@@ -191,51 +121,29 @@
 										<span>S:1</span>
 										<span>O:2</span>
 									</span>
-									<div class="info_today_warp">
-										<span class="info_today i_schedule">중계예정</span>
-										<span class="info_today i_cancel">취소</span>
+									<div class="info_tag_warp">
+										<span class="info_tag">AR중계</span>
 									</div>
-									
-									<!--
-									<div class="play_score">
-										<em class="text_right i_gray">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 --> <!--
-										<span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
-										<!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) --> <!--
-										<em class="text_left">3</em>
-									</div>
-									<span class="info_round">19:00 마산</span>
-									-->
 								</div>
                             </div>
                             <div class="team_player right">
 								<div class="middle_inner">
-									<i class="team_logo_LT"></i> <!-- theme.css :  logo KBO -->
-									<span class="player_name"><!--<i class="result_val">승or패</i>-->고효준</span>
-									<span class="player_name"><!--<i class="result_val">승or패</i>-->고효준</span>
+									<i class="team_logo_LT"></i>
+									<span class="player_name">고효준</span>
 								</div>
                             </div>
                         </li>
-                        <!-- // 경기중 Basic -->
-						<li class="usetap">
+						<!-- 경기중 태그 2개일 경우 -->
+						<li class="usetap game_ing">
                             <div class="team_player left">
 								<div class="middle_inner">
-									<i class="team_logo_WO"></i> <!-- theme.css :  logo KBO -->
-									<span class="player_name"><!--<i class="result_val">승or패</i>-->우민규</span>
+									<i class="team_logo_WO"></i>
+									<span class="player_name">우민규</span>
 								</div>
                             </div>
                             <div class="middle_box">
-                                <em class="left_score">14</em>
-                                <em class="right_score">23</em>
-                                <!--
-                                base_0 : 0
-                                base_1 : 1루
-                                base_2 : 2루
-                                base_3 : 3루
-                                base_12 : 1루, 2루
-                                base_23 : 2루, 3루
-                                base_13 : 1루, 3루
-                                base_full : 만루
-                                -->
+                                <div class="left_score">14</div>
+                                <div class="right_score">23</div>
 								<div class="middle_inner">
 									<span class="ic_base base_13 blind">베이스 상황</span>
 									<span class="info_round">8회말</span>
@@ -244,31 +152,281 @@
 										<span>S:1</span>
 										<span>O:2</span>
 									</span>
-									<div class="info_today_warp">
-										<span class="info_today i_schedule">중계예정</span>
-										<span class="info_today i_cancel">취소</span>
+									<div class="info_tag_warp">
+										<span class="info_tag">AR중계</span>
+										<span class="info_tag">5G중계</span>
 									</div>
-									
-									<!--
-									<div class="play_score">
-										<em class="text_right i_gray">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 --> <!--
-										<span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
-										<!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) --> <!--
-										<em class="text_left">3</em>
-									</div>
-									<span class="info_round">19:00 마산</span>
-									-->
 								</div>
                             </div>
                             <div class="team_player right">
 								<div class="middle_inner">
-									<i class="team_logo_LT"></i> <!-- theme.css :  logo KBO -->
-									<span class="player_name"><!--<i class="result_val">승or패</i>-->고효준</span>
-									<span class="player_name"><!--<i class="result_val">승or패</i>-->고효준</span>
+									<i class="team_logo_LT"></i>
+									<span class="player_name">고효준</span>
 								</div>
                             </div>
                         </li>
-                        <!-- // 경기중 Basic -->
+
+						<!-- 경기예정 Basic (선발투수 확정 전) -->
+						<li class="usetap game_before">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_SS"></i>
+									<span class="player_name">삼성</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+								<div class="middle_inner">
+									<span class="info_time">18:30</span>
+									<span class="info_round">마산</span>
+									<span class="info_channel">MBC SPORTS+</span>
+								</div>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_OB"></i>
+									<span class="player_name">두산</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기예정 Basic (선발투수 확정 후) -->
+						<li class="usetap game_before">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name">고효준</span>
+									<span class="player_info">7승 3패 3.66</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+								<div class="middle_inner">
+									<span class="info_time">18:30</span>
+									<span class="info_round">마산</span>
+								</div>
+								<span class="info_channel">MBC SPORTS+</span>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name">고효준</span>
+									<span class="player_info">5승 2패 2.70</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기예정 Basic (태그 1개일 경우) -->
+						<li class="usetap game_before">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name">고효준</span>
+									<span class="player_info">7승 3패 3.66</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+								<div class="middle_inner">
+									<div class="info_tag_warp">
+										<span class="info_tag">AR중계</span>
+									</div>
+									<span class="info_time">18:30</span>
+									<span class="info_round">마산</span>
+								</div>
+								<span class="info_channel">MBC SPORTS+</span>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name">고효준</span>
+									<span class="player_info">5승 2패 2.70</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기예정 Basic (태그 2개일 경우) -->
+						<li class="usetap game_before">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name">고효준</span>
+									<span class="player_info">7승 3패 3.66</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+								<div class="middle_inner">
+									<div class="info_tag_warp">
+										<span class="info_tag">AR중계</span>
+										<span class="info_tag">5G중계</span>
+									</div>
+									<span class="info_time">18:30</span>
+									<span class="info_round">마산</span>
+								</div>
+								<span class="info_channel">MBC SPORTS+</span>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name">고효준</span>
+									<span class="player_info">5승 2패 2.70</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기종료 Basic (세이브 없는 경우) -->
+						<li class="usetap game_end">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name"><span class="result">패 </span>우민규</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+                                <div class="left_score res_lose">14</div>
+                                <div class="right_score">10</div>
+								<div class="middle_inner">
+									<span class="info_result">종료</span>
+									<span class="info_round">잠실</span>
+								</div>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name"><span class="result">패 </span>우민규</span>
+									<span class="player_name"><span class="result">세 </span>베이글스</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기종료 Basic (세이브 있는 경우) -->
+						<li class="usetap game_end">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name"><span class="result">패 </span>우민규</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+                                <div class="left_score res_lose">2</div>
+                                <div class="right_score">5</div>
+								<div class="middle_inner">
+									<span class="info_result">종료</span>
+									<span class="info_round">잠실</span>
+								</div>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name"><span class="result">승 </span>우민규</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기종료 Basic (동점일 경우) -->
+						<li class="usetap game_end">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name"><span class="result">패 </span>우민규</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+                                <div class="left_score">5</div>
+                                <div class="right_score">5</div>
+								<div class="middle_inner">
+									<span class="info_result">종료</span>
+									<span class="info_round">잠실</span>
+								</div>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name"><span class="result">승 </span>우민규</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기종료 Basic (태그 1개의경우) -->
+						<li class="usetap game_end">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name"><span class="result">패 </span>우민규</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+								<div class="info_tag_warp">
+									<span class="info_tag">AR중계</span>
+								</div>
+                                <div class="left_score res_lose">2</div>
+                                <div class="right_score">5</div>
+								<div class="middle_inner">
+									<span class="info_result">종료</span>
+									<span class="info_round">잠실</span>
+								</div>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name"><span class="result">승 </span>우민규</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기종료 Basic (태그 2개의경우) -->
+						<li class="usetap game_end">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name"><span class="result">패 </span>우민규</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+								<div class="info_tag_warp">
+									<span class="info_tag">AR중계</span>
+									<span class="info_tag">5G중계</span>
+								</div>
+                                <div class="left_score">5</div>
+                                <div class="right_score">5</div>
+								<div class="middle_inner">
+									<span class="info_result">종료</span>
+									<span class="info_round">잠실</span>
+								</div>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name"><span class="result">승 </span>우민규</span>
+								</div>
+                            </div>
+                        </li>
+						<!-- 경기취소 -->
+						<li class="usetap game_cancel">
+                            <div class="team_player left">
+								<div class="middle_inner">
+									<i class="team_logo_WO"></i>
+									<span class="player_name">우민규</span>
+								</div>
+                            </div>
+                            <div class="middle_box">
+								<div class="middle_inner">
+									<span class="info_result">취소</span>
+									<span class="info_time">18:30</span>
+								</div>
+                            </div>
+                            <div class="team_player right">
+								<div class="middle_inner">
+									<i class="team_logo_LT"></i>
+									<span class="player_name">우민규</span>
+								</div>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </ul>
 				</div>
 			</div>
