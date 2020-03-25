@@ -402,4 +402,28 @@
 .pitching_color_LT .i_name,
 .pitching_color_LT .i_speed {color:#c30025;}
 
+/* Relay analysis color&bg */
+.analysis_color_LG.graph_info .i_graph {background-color:#c10a3a;}
+.analysis_color_LG.graph_info .i_ratio,.analysis_color_LG.graph_info .total_record {color:#c10a3a;}
+.analysis_color_SS.graph_info .i_graph {background-color:#0063ab;}
+.analysis_color_SS.graph_info .i_ratio,.analysis_color_SS.graph_info .total_record {color:#0063ab;}
+.analysis_color_HH.graph_info .i_graph {background-color:#da5a17;}
+.analysis_color_HH.graph_info .i_ratio,.analysis_color_HH.graph_info .total_record {color:#da5a17;}
+.analysis_color_OB.graph_info .i_graph {background-color:#131230;}
+.analysis_color_OB.graph_info .i_ratio,.analysis_color_OB.graph_info .total_record {color:#131230;}
+.analysis_color_WO.graph_info .i_graph {background-color:#5b0016;}
+.analysis_color_WO.graph_info .i_ratio,.analysis_color_WO.graph_info .total_record {color:#5b0016;}
+.analysis_color_SK.graph_info .i_graph {background-color:#c8132f;}
+.analysis_color_SK.graph_info .i_ratio,.analysis_color_SK.graph_info .total_record {color:#c8132f;}
+.analysis_color_NC.graph_info .i_graph {background-color:#1f477b;}
+.analysis_color_NC.graph_info .i_ratio,.analysis_color_NC.graph_info .total_record {color:#1f477b;}
+.analysis_color_KT.graph_info .i_graph {background-color:#000000;}
+.analysis_color_KT.graph_info .i_ratio,.analysis_color_KT.graph_info .total_record {color:#000000;}
+.analysis_color_HT.graph_info .i_graph {background-color:#ac1020;}
+.analysis_color_HT.graph_info .i_ratio,.analysis_color_HT.graph_info .total_record {color:#ac1020;}
+.analysis_color_LT.graph_info .i_graph {background-color:#c30025;}
+.analysis_color_LT.graph_info .i_ratio,.analysis_color_LT.graph_info .total_record {color:#c30025;}
+
+
+
 /*******************************************************************************************/
