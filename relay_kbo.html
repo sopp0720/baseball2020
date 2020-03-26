@@ -12,51 +12,99 @@
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content relay">
+			<div class="tab_1depth tab_logo" id="tab_1depth5">
+				<ul class="tab_link">
+					<li class="tab_item active">
+						<span class="tab_logo_KBO">국내야구</span>
+					</li>
+					<li class="tab_item">
+						<span class="tab_logo_MLB">해외야구</span>
+					</li>
+				</ul>
+				<div class="active_bar"></div>
+			</div>
 			<div class="inner">
 				<div class="div_rel">
 					<div class="year_month_wrap month_wrap">
                         <span class="month_arrow i_prev blind">이전</span>
                         <span class="i_month"><b class="year_num">2020</b><span>년</span><b class="month_num">5</b><span>월</span></span>
-                        <span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->                        
+                        <span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 클래스 추가 -->                        
                     </div>
                     <button type="button" class="btn_gocalendar2 blind">달력</button>
 				</div>
 				<div class="scroll_date">
-					<span class="gra"></span>
-					<ul>
-						<li>
-							<b class="date_num">06</b>
-							<span class="date_day">금</span>
-						</li>
-						<li class="i_sat i_disabled">
-							<b class="date_num">07</b>
-							<span class="date_day">토</span>
-						</li>
-						<li class="i_sun i_disabled">
-							<b class="date_num">08</b>
-							<span class="date_day">일</span>
-						</li>
-						<li class="i_disabled">
-							<b class="date_num">09</b>
-							<span class="date_day">월</span>
-						</li>
-						<li class="i_disabled">
-							<b class="date_num">10</b>
-							<span class="date_day">화</span>
-						</li>
-						<li class="i_disabled">
-							<b class="date_num">11</b>
-							<span class="date_day">수</span>
-						</li>
-						<li class="i_disabled">
-							<b class="date_num">12</b>
-							<span class="date_day">목</span>
-						</li>
-						<li class="i_disabled">
-							<b class="date_num">13</b>
-							<span class="date_day">금</span>
-						</li>
-					</ul>
+					<div class="scroll_inner" id="scroll_date">
+						<ul>
+							<li class="i_sun">
+								<b class="date_num">01</b>
+								<span class="date_day">일</span>
+							</li>
+							<li>
+								<b class="date_num">02</b>
+								<span class="date_day">월</span>
+							</li>
+							<li>
+								<b class="date_num">03</b>
+								<span class="date_day">화</span>
+							</li>
+							<li>
+								<b class="date_num">04</b>
+								<span class="date_day">수</span>
+							</li>
+							<li>
+								<b class="date_num">05</b>
+								<span class="date_day">목</span>
+							</li>
+							<li class="current">
+								<b class="date_num">06</b>
+								<span class="date_day">금</span>
+							</li>
+							<li class="i_sat">
+								<b class="date_num">07</b>
+								<span class="date_day">토</span>
+							</li>
+							<li class="i_sun">
+								<b class="date_num">08</b>
+								<span class="date_day">일</span>
+							</li>
+							<li>
+								<b class="date_num">09</b>
+								<span class="date_day">월</span>
+							</li>
+							<li>
+								<b class="date_num">10</b>
+								<span class="date_day">화</span>
+							</li>
+							<li>
+								<b class="date_num">11</b>
+								<span class="date_day">수</span>
+							</li>
+							<li>
+								<b class="date_num">12</b>
+								<span class="date_day">목</span>
+							</li>
+							<li>
+								<b class="date_num">13</b>
+								<span class="date_day">금</span>
+							</li>
+							<li>
+								<b class="date_num">13</b>
+								<span class="date_day">금</span>
+							</li>
+							<li>
+								<b class="date_num">13</b>
+								<span class="date_day">금</span>
+							</li>
+							<li>
+								<b class="date_num">13</b>
+								<span class="date_day">금</span>
+							</li>
+							<li>
+								<b class="date_num">13</b>
+								<span class="date_day">금</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="score_board_wrap kbo">
 					<ul class="play_list">
@@ -525,15 +573,12 @@
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
 <script src="res/js/gnb.js"></script>
-<script src="res/js/team.js"></script>
+<script src="res/js/relay.js"></script>
 <script>
 bnbUi.init();
 bnbUi.initLottie();
-teamUi.init();
-teamUi.initSubTab(document.getElementById('tab_1depth'));
-teamUi.initDepthTab(document.getElementById('tab_2depth'));
-teamUi.initDepthTab(document.getElementById('tab_2depth_2'));
-teamUi.init3DepthTab(document.getElementById('tab_3depth'));
+relayUi.initSubTab(document.getElementById('tab_1depth5'));
+relayUi.initscrollTab(document.getElementById('scroll_date'));
 
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');

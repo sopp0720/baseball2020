@@ -30,7 +30,7 @@ var teamUi = (function() {
 							item.classList.remove('active');
 						});
 						item.classList.add('active');
-						webUI.animatedScrollTo(teamlistnav, teamlistnav.querySelectorAll('li')[indexNum].offsetLeft - (teamlistnav.clientWidth * 0.5), 300);
+						webUI.animatedScrollTo(teamlistnav, (teamlistnav.querySelectorAll('li')[indexNum].offsetLeft + teamlistnav.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (teamlistnav.clientWidth * 0.5), 300);
 						teamlistnav.querySelector('svg').remove();
 						myTeam = teamlistnav.querySelectorAll('li')[indexNum].querySelector('.circle');
 						circleAnimation = bodymovin.loadAnimation({
@@ -57,7 +57,7 @@ var teamUi = (function() {
 						subtab.querySelector('.active').classList.remove('active');
 						e.target.closest('li').classList.add('active');
 						teamUi.activeBar(indexNum,subtab);
-						webUI.animatedScrollTo(subtab, subtab.querySelectorAll('li')[indexNum].offsetLeft - (subtab.clientWidth * 0.5), 300);
+						webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
 					}
 				});
 			});
@@ -110,7 +110,7 @@ var teamUi = (function() {
 						let indexNum = webUI.getChildIndex(e.target);
 						subtab.querySelector('.active').classList.remove('active');
 						e.target.classList.add('active');
-						webUI.animatedScrollTo(subtab, subtab.querySelectorAll('li')[indexNum].offsetLeft - (subtab.clientWidth * 0.5), 300);
+						webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
 					}
 				});
 			});
