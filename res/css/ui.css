@@ -647,6 +647,9 @@
 
 
 /* Relay - game info */
+.relay.content .relay_video_wrap + .tab_1depth {margin-top:0;}
+.relay.content .relay_card_wrap + .tab_1depth {margin-top:0;}
+
 .relay.content .relay_video_wrap {padding:0;}
 .relay.content .relay_video_thumb {position:relative;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .relay_video_thumb.active {padding-bottom:0;}
@@ -686,7 +689,6 @@
 .relay.content .btn_player_view > span.txt_on.active {display:inline-block;}
 .relay.content .btn_player_view > i {display:inline-block;margin-top:0.2333rem;margin-left:0.3333rem;width:1.3333rem;height:1.3333rem;background:url("../images/ic-arrow-up-g.png") no-repeat 50% 50%;background-size:cover;vertical-align:top;transform:rotate(0deg);}
 .relay.content .btn_player_view.active > i {transform:rotate(180deg);}
-.relay.content .relay_card_wrap + .tab_1depth {margin-top:0;}
 .relay.content .relay_card_wrap ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .relay.content .relay_card_wrap ul li {display:inline-block;position:relative;margin-left:0.7667rem;padding-top:0.4rem;width:8.6667rem;height:10.1333rem;vertical-align:top;opacity:0.5;}
 .relay.content .relay_card_wrap ul li.on {opacity:1;}
