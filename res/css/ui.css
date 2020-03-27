@@ -617,12 +617,12 @@
 .base_13 {background-image:url('../images/ic-base-01-03.png');}
 .base_full {background-image:url('../images/ic-base-full.png');}
 .relay.content .play_list .info_tag_warp {position:absolute;bottom:0.7667rem;left:0;right:0;margin:0 auto;}
-.relay.content .play_list .info_tag_warp .info_tag {display:inline-block;margin:0 0.2rem;height:1.3333rem;font-size:0.8rem;font-weight:bold;padding:0.0333rem 0.6rem 0.1rem;background-color:#c10a3a;color:#fff;border-radius:0.6667rem;}
+.relay.content .play_list .info_tag_warp .info_tag {display:inline-block;margin:0 0.2rem;height:1.3333rem;line-height:1.3333rem;font-size:0.8rem;font-weight:bold;padding:0 0.6rem;background-color:#c10a3a;color:#fff;border-radius:0.6667rem;}
 .relay.content .play_list li .info_time {margin-top:2.2667rem;display:block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;text-align:center;color:#ca0039;}
 .relay.content .play_list li .info_tag_warp ~ .info_time {margin-top:1.5667rem;}
 .relay.content .play_list li .info_channel {display:block;margin:1.5667rem auto 0;height:1.8rem;font-size:1.2rem;text-align:center;color:#c2c3c7;}
 .relay.content .play_list li .info_tag_warp ~ .info_channel {margin-top:0.9333rem;}
-.relay.content .play_list li .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;border-radius:0.9167rem;font-size:1.1rem;font-weight:500;background-color:#c2c3c7;color:#ffffff;text-align:center;padding:0.1rem 0.8rem;}
+.relay.content .play_list li .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;line-height:1.8333rem;border-radius:0.9167rem;font-size:1.1rem;font-weight:500;background-color:#c2c3c7;color:#ffffff;text-align:center;padding:0 0.8rem;}
 .relay.content .play_list .game_end .info_round {margin-top:0.5333rem;}
 .relay.content .play_list .game_end .left_score,
 .relay.content .play_list .game_end .right_score {top:3.6667rem;}
