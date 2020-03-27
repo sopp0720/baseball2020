@@ -566,7 +566,8 @@
 .relay.content .scroll_date ul li.i_sun .date_day {color:#ec5f59}
 .relay.content .scroll_date ul li.current .date_num,
 .relay.content .scroll_date ul li.current .date_day {opacity:1;}
-.relay.content .score_board_wrap {margin-top:0.8333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
+.relay.content .score_board_wrap {margin-top:0.8333rem;}
+.relay.content .play_list {box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .relay.content .play_list li {position:relative;height:10.6667rem;margin-top:1px;}
 .relay.content .play_list li:first-child {margin-top:0;}
 .relay.content .play_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#dee1e6;}
@@ -617,12 +618,12 @@
 .base_13 {background-image:url('../images/ic-base-01-03.png');}
 .base_full {background-image:url('../images/ic-base-full.png');}
 .relay.content .play_list .info_tag_warp {position:absolute;bottom:0.7667rem;left:0;right:0;margin:0 auto;}
-.relay.content .play_list .info_tag_warp .info_tag {display:inline-block;margin:0 0.2rem;height:1.3333rem;font-size:0.8rem;font-weight:bold;padding:0.0333rem 0.6rem 0.1rem;background-color:#c10a3a;color:#fff;border-radius:0.6667rem;}
+.relay.content .play_list .info_tag_warp .info_tag {display:inline-block;margin:0 0.2rem;height:1.3333rem;line-height:1.3333rem;font-size:0.8rem;font-weight:bold;padding:0 0.6rem;background-color:#c10a3a;color:#fff;border-radius:0.6667rem;}
 .relay.content .play_list li .info_time {margin-top:2.2667rem;display:block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;text-align:center;color:#ca0039;}
 .relay.content .play_list li .info_tag_warp ~ .info_time {margin-top:1.5667rem;}
 .relay.content .play_list li .info_channel {display:block;margin:1.5667rem auto 0;height:1.8rem;font-size:1.2rem;text-align:center;color:#c2c3c7;}
 .relay.content .play_list li .info_tag_warp ~ .info_channel {margin-top:0.9333rem;}
-.relay.content .play_list li .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;border-radius:0.9167rem;font-size:1.1rem;font-weight:500;background-color:#c2c3c7;color:#ffffff;text-align:center;padding:0.1rem 0.8rem;}
+.relay.content .play_list li .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;line-height:1.8333rem;border-radius:0.9167rem;font-size:1.1rem;font-weight:500;background-color:#c2c3c7;color:#ffffff;text-align:center;padding:0 0.8rem;}
 .relay.content .play_list .game_end .info_round {margin-top:0.5333rem;}
 .relay.content .play_list .game_end .left_score,
 .relay.content .play_list .game_end .right_score {top:3.6667rem;}
@@ -638,6 +639,11 @@
 .relay.content .abl .play_list li .info_tag_red {margin-top:3.3333rem;}
 .relay.content .abl .play_list li .info_round {margin-top:0.4667rem;}
 .relay.content .abl .play_list .game_before .info_time {margin-top:0.4667rem;color:#2b2b2b;}
+.relay.content .play_list_none {position:relative;overflow:hidden;height:22.8333rem;font-size:0;text-align:center;}
+.relay.content .play_list_none:before {content:'';display:block;margin:5.5rem auto 0;width:13.5667rem;height:10.7rem;background-image:url(../images/img-illust-none-game.png);background-size:100%;}
+.relay.content .play_list_none p {position:relative;height:1.9667rem;font-size:1.3333rem;font-weight:300;line-height:1.9667rem;color:#000000;}
+.relay.content .play_list_none .quo_marks {display:inline-block;margin-top:1.8667rem;}
+.relay.content .play_list_none .quo_marks:before {content:'';position:absolute;left:-1.2rem;top:-0.3667rem;width:1.0667rem;height:1.0667rem;background-image:url(../images/ic-home-top-text-s.png);background-size:100%;}
 
 
 /* Relay - game info */
@@ -1226,7 +1232,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .modal {display:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:200;}
 .modal > .dim {background-color:rgba(0,0,0,0.29);display:block;position:fixed;top:0;left:0;bottom:0;right:0;opacity:0;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;}
 .modal.visible > .dim {opacity:1;}
-.fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:100%;-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
+.fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:calc(100% - 4.6333rem);-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
 .fadeInUp.visible .modal_inner {-webkit-transform:translate(0, 0);transform:translate(0, 0);}
 .fadeIn .modal_inner {-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0}
 .fadeIn.visible .modal_inner {opacity:1;}
