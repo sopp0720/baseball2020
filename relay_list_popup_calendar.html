@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<button type="button" onclick="layerPopup.show('#pop_calendar1');" style="border:1px solid #000">달력 팝업_KBO</button>
+<button type="button" onclick="layerPopup.show('#pop_calendar2');" style="border:1px solid #000">달력 팝업_MLB</button>
+<button type="button" onclick="layerPopup.show('#pop_calendar3');" style="border:1px solid #000">달력 팝업_ABL</button>
+<select id="teamSelect" style="z-index:99999; position:fixed; bottom:50px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG">
+	<!-- layerpopup -->
+	<div class="modal fadeInUp" id="pop_calendar1">
+		<div class="dim" onclick="layerPopup.hide('#pop_calendar1');"></div>
+		<div class="modal_inner">
+			<div class="calendar_wrap">
+				<div class="calendar_header bg_gradient">
+				<!-- <div class="calendar_header bg_gradient mlb abl"> --><!-- MLB와 ABL 는 클레스 넣어주세요. -->
+					<div class="team_logo team_logo_WO"></div>
+					<div class="year_wrap">2019</div>
+					<div class="month_wrap">
+						<span class="month_arrow i_prev blind">이전</span>
+						<span class="i_month"><b>5</b><span>월</span></span>
+						<span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->    
+					</div>
+					<button type="button" class="btn_gotoday">오늘</button>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="day">일</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">월</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">화</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">수</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">목</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">금</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">토</div>
+						</div>
+					</div>
+				</div>
+				<div class="calendar_body">
+					<div class="calendar_row">
+						<div class="calendar_cell dim">
+							<div class="num">26</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">27</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">28</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">29</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">30</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">1</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">2</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">원정</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">3</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">4</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">5</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">7</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">8</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">9</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">10</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">11</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">12</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell current">
+							<div class="num">13</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">14</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">15</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">16</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">17</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">18</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">19</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">20</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">21</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">22</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">23</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">24</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">25</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">26</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">27</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">28</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">29</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">30</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">31</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">1</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">2</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_draw">무</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">3</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_lose">패</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">4</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">5</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+							<div class="team_logo team_logo_WO"></div>
+							<div class="stadi">홈</div>
+							<div class="res_win">승</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- layerpopup -->
+
+	<!-- layerpopup -->
+	<div class="modal fadeInUp" id="pop_calendar2">
+		<div class="dim" onclick="layerPopup.hide();"></div>
+		<div class="modal_inner">
+			<div class="calendar_wrap">
+				<div class="calendar_header bg_gradient mlb">
+				<!-- <div class="calendar_header bg_gradient mlb abl"> --><!-- MLB와 ABL 는 클레스 넣어주세요. -->
+					<div class="team_logo team_logo_MLB"></div>
+					<div class="year_wrap">2019</div>
+					<div class="month_wrap">
+						<span class="month_arrow i_prev blind">이전</span>
+						<span class="i_month"><b>5</b><span>월</span></span>
+						<span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->    
+					</div>
+					<button type="button" class="btn_gotoday">오늘</button>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="day">일</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">월</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">화</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">수</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">목</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">금</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">토</div>
+						</div>
+					</div>
+				</div>
+				<div class="calendar_body">
+					<div class="calendar_row">
+						<div class="calendar_cell dim">
+							<div class="num">26</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">27</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">28</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">29</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">30</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">1</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">2</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">3</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">4</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">5</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">7</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">8</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">9</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">10</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">11</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">12</div>
+						</div>
+						<div class="calendar_cell current">
+							<div class="num">13</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">14</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">15</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">16</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">17</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">18</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">19</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">20</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">21</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">22</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">23</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">24</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">25</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">26</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">27</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">28</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">29</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">30</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">31</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">1</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">2</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">3</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">4</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">5</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- layerpopup -->
+		<!-- layerpopup -->
+	<div class="modal fadeInUp" id="pop_calendar3">
+		<div class="dim" onclick="layerPopup.hide();"></div>
+		<div class="modal_inner">
+			<div class="calendar_wrap">
+				<div class="calendar_header bg_gradient abl">
+				<!-- <div class="calendar_header bg_gradient mlb abl"> --><!-- MLB와 ABL 는 클레스 넣어주세요. -->
+					<div class="team_logo team_logo_abl"></div>
+					<div class="year_wrap">2019</div>
+					<div class="month_wrap">
+						<span class="month_arrow i_prev blind">이전</span>
+						<span class="i_month"><b>5</b><span>월</span></span>
+						<span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->    
+					</div>
+					<button type="button" class="btn_gotoday">오늘</button>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="day">일</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">월</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">화</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">수</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">목</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">금</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="day">토</div>
+						</div>
+					</div>
+				</div>
+				<div class="calendar_body">
+					<div class="calendar_row">
+						<div class="calendar_cell dim">
+							<div class="num">26</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">27</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">28</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">29</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">30</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">1</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">2</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">3</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">4</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">5</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">7</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">8</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">9</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">10</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">11</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">12</div>
+						</div>
+						<div class="calendar_cell current">
+							<div class="num">13</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">14</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">15</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">16</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">17</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">18</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">19</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">20</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">21</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">22</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">23</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">24</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">25</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">26</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">27</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">28</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">29</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">30</div>
+						</div>
+					</div>
+					<div class="calendar_row">
+						<div class="calendar_cell">
+							<div class="num">31</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">1</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">2</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">3</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">4</div>
+						</div>
+						<div class="calendar_cell dim">
+							<div class="num">5</div>
+						</div>
+						<div class="calendar_cell">
+							<div class="num">6</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- layerpopup -->
+</div>
+<script src="res/js/common.js"></script>
+<script>
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+	bnbUi.teamLottie()
+});
+</script>
+</body>
+</html>

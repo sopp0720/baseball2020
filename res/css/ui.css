@@ -1201,7 +1201,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .modal {display:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:200;}
 .modal > .dim {background-color:rgba(0,0,0,0.29);display:block;position:fixed;top:0;left:0;bottom:0;right:0;opacity:0;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;}
 .modal.visible > .dim {opacity:1;}
-.fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:100%;-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
+.fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:calc(100% - 4.6333rem);-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
 .fadeInUp.visible .modal_inner {-webkit-transform:translate(0, 0);transform:translate(0, 0);}
 .fadeIn .modal_inner {-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0}
 .fadeIn.visible .modal_inner {opacity:1;}
