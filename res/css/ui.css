@@ -566,7 +566,8 @@
 .relay.content .scroll_date ul li.i_sun .date_day {color:#ec5f59}
 .relay.content .scroll_date ul li.current .date_num,
 .relay.content .scroll_date ul li.current .date_day {opacity:1;}
-.relay.content .score_board_wrap {margin-top:0.8333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
+.relay.content .score_board_wrap {margin-top:0.8333rem;}
+.relay.content .play_list {box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .relay.content .play_list li {position:relative;height:10.6667rem;margin-top:1px;}
 .relay.content .play_list li:first-child {margin-top:0;}
 .relay.content .play_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#dee1e6;}
@@ -638,6 +639,11 @@
 .relay.content .abl .play_list li .info_tag_red {margin-top:3.3333rem;}
 .relay.content .abl .play_list li .info_round {margin-top:0.4667rem;}
 .relay.content .abl .play_list .game_before .info_time {margin-top:0.4667rem;color:#2b2b2b;}
+.relay.content .play_list_none {position:relative;overflow:hidden;height:22.8333rem;font-size:0;text-align:center;}
+.relay.content .play_list_none:before {content:'';display:block;margin:5.5rem auto 0;width:13.5667rem;height:10.7rem;background-image:url(../images/img-illust-none-game.png);background-size:100%;}
+.relay.content .play_list_none p {position:relative;height:1.9667rem;font-size:1.3333rem;font-weight:300;line-height:1.9667rem;color:#000000;}
+.relay.content .play_list_none .quo_marks {display:inline-block;margin-top:1.8667rem;}
+.relay.content .play_list_none .quo_marks:before {content:'';position:absolute;left:-1.2rem;top:-0.3667rem;width:1.0667rem;height:1.0667rem;background-image:url(../images/ic-home-top-text-s.png);background-size:100%;}
 
 
 /* Relay - game info */
