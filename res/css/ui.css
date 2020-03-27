@@ -1275,6 +1275,11 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .modal .morei_list_dd .hits_a {text-indent:-3.367rem;padding-left:3.367rem;}
 
 
+.content.close {padding-top:8.8667rem;}
+.content.open {padding-top:calc(56.25% + 8.8667rem);}
+.content .onair_fixed {position:fixed;left:0;right:0;top:0;background-color:#fff;}
+
+
 
 
 /*******************************************************************************************/
