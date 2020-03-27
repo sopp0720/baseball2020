@@ -102,7 +102,7 @@ var layerPopup = (function() {
 		},
 		"hide" : function(elem) {
 			if (html == undefined){
-				return;
+				html = (document.body.scrollTop == '0') ? document.documentElement : document.body;
 			}
 			if (elem !== undefined){
 				layer = document.querySelector(elem);

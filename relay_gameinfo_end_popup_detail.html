@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+
+<button type="button" onclick="layerPopup.show('#popup_morei');" style="border:1px solid #000;position:fixed;z-index:10;">종료경기 분석 자세히보기</button>
+<div id="wrap" data-theme="theme_LG">
+	<div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div><div style="height:200px;border:1px solid #000;"></div>
+
+	<div class="modal fadeInUp " id="popup_morei">
+		<div class="dim" onclick="layerPopup.hide();"></div>
+		<div class="modal_inner">
+			<div class="morei_wrap">
+				<div class="morei_hd">
+					<div class="vs_rank_wrap">
+						<span class="team_logo team_logo_LG left"></span>
+						<div class="vs_box"></div>
+						<span class="team_logo team_logo_OB right"></span>
+					</div>
+					<div class="final_ball">결승타</div>
+					<div class="final_player">스크럭스 (9회 1사 1루서 중견수 3루타)</div>
+				</div>
+				<div class="morei_bd">
+					<div class="morei_list">
+						<div class="morei_list_dt">안타</div>
+						<div class="morei_list_dd">
+							<p class="hits_a">1루타 : 나성범 1 (3회), 김용의 2 (1, 9회), 박용택 (3회), 오지환 2 (2, 3회), 정상훈 (6회),오지환 3 (1, 4, 6회), 스크럭스 2 (2, 5회), 김용의 (3회), 나성범 (9회), 오지환 2 (2, 3회), 정상훈 (6회)</p>
+							<p class="hits_a">2루타 : 나성범 (2회), 김용의 (1회), 나성범 1 (3회), 모창민 (7회), 오지환 2 (3, 6회), 스크럭스 (6회), 김용의 2 (1, 9회), 박용택 (3회)</p>
+							<p class="hits_a">3루타 : 스크럭스 (9회), 박용택 2 (4, 7회), 김용의 (9회), 정주현 2 (3, 7회), 오지환 3 (4, 5, 7회), 나성범 (4회), 모창민 2 (1, 6회)</p>
+						</div>
+					</div>							
+					<div class="morei_list">
+						<div class="morei_list_dt">홈런</div>
+						<div class="morei_list_dd">
+							<p>나성범 12호 (1회)</p>
+						</div>
+					</div>
+					<div class="morei_list">
+						<div class="morei_list_dt">도루</div>
+						<div class="morei_list_dd">
+							<p>오지환3 (1, 4, 6회)</p>
+						</div>
+					</div>
+					<div class="morei_list defence">
+						<div class="morei_list_dt">삼진</div>
+						<div class="morei_list_dd">
+							<p>오지환3 (1, 4, 6회)</p>
+						</div>
+					</div>
+					<div class="morei_list defence">
+						<div class="morei_list_dt">병살</div>
+						<div class="morei_list_dd">
+							<p>김용의 2 (1, 9회), 박용택 (3회), 오지환 2 (2, 3회), 정상훈 (6회), 나성범 1 (3회), 김용의 2 (1, 9회), 모창민 (7회), 오지환 2 (3, 6회)</p>
+						</div>
+					</div>
+					<div class="morei_list defence">
+						<div class="morei_list_dt">실책실책</div>
+						<div class="morei_list_dd">
+							<p>김용의 2 (1, 9회), 박용택 (3회), 오지환 2 (2, 3회), 정상훈 (6회), 나성범 1 (3회), 김용의 2 (1, 9회), 모창민 (7회), 오지환 2 (3, 6회), 스크럭스 3 (2, 5, 7회), 모창민 (4회), 정주현 2 (3, 7회)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="res/js/common.js"></script>
+
+</body>
+</html>
