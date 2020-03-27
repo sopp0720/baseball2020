@@ -846,6 +846,28 @@
 .scroll_top_sec {position:relative;height:9.1667rem;background-color:#f8f8f8;}
 .scroll_top_sec .totop {display:block;position:absolute;top:50%;left:50%;margin-left:-2rem;margin-top:-2rem;width:4rem;height:4rem;background:url('../images/btn-bottom-top.png') no-repeat;background-size:100% auto;}
 
+.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap {width:47.57085%;}
+.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap.left {left:0;}
+.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap.right {right:0;}
+.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap .i_position {display:inline-block;margin-left:0.3333rem;margin-top:0.1667rem;height:1.8667rem;font-size:1.2667rem;color:#858585;vertical-align:top;}
+.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap .i_ratio {display:block;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;text-align:center;color:#525252;}
+
+.relay.content .table_data_wrap {position:relative;margin-top:0.3333rem;overflow:hidden;}
+.relay.content .table_data_wrap .table_data_box {width:47.57085%;}
+.relay.content .table_data_wrap .table_data_box.left {float:left;}
+.relay.content .table_data_wrap .table_data_box.right {float:right;}
+.relay.content .table_data_wrap .table_data_box p {margin-top:0.5rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;text-align:center;color:#525252;}
+.relay.content .table_pitch_hit .col1,
+.relay.content .table_pitch_hit .col2,
+.relay.content .table_pitch_hit .col3 {width:33.3%;}
+.relay.content .rel_record_wrap {margin-top:3rem;;padding-bottom:1.4667rem;}
+.relay.content .rel_record_wrap .table_rel_record {margin-top:0.8333rem;}
+.relay.content .rel_record_wrap .block_graph_wrap {margin-top:4rem;}
+.relay.content .pitch_hit_record_wrap {padding-top:0;}
+.relay.content .pitch_hit_record_wrap .tab_2depth {margin-top:2rem;margin-bottom:2rem;}
+.relay.content .pitch_hit_record_wrap .title_hd {height:auto;}
+.relay.content .pitch_hit_record_wrap .table_hit_sec {margin-top:2rem;}
+
 /* List none */
 .list_none {margin:2.6667rem 0 4rem;}
 .list_none .img_box {height:7.6667rem;background-image:url('../images/img-player-empty-b.png');background-repeat:no-repeat;background-size:auto 7.6667rem;background-position:50% 50%;}
@@ -988,7 +1010,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_player .table_left {width:11.6rem;}
 .table_player .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
 .table_player .table_left .cell .num {float:left;width:1.1333rem;height:1.7333rem;font-family:'bebas_neueregular';font-size:1.4rem;font-weight:bold;text-align:center;color:#2b2b2b;margin:1.3rem 0 0 0.4667rem;}
-.table_player .table_left .cell .player_img {float:left;position:relative;width:3.5rem;height:3.5rem;margin:0.4rem 0 0 0.4rem;border-radius:0.9333rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;}
+.table_player .table_left .cell .player_img {float:left;position:relative;width:3.5rem;height:3.5rem;margin:0.4rem 0 0 0.4rem;border-radius:0.9333rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
 .table_player .table_left .cell .player_wrap {float:left;width:5rem;margin:0.4rem 0 0 0.5rem;text-align:left;font-size:0;}
 .table_player .table_left .cell .player_name {font-size:1.2667rem;font-weight:500;line-height:normal;color:#2b2b2b;}
 .table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
@@ -1006,8 +1028,13 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 .table_hit300 .table thead .cell {padding-bottom:0.5rem;}
 .table_hit300 .table tbody .cell {height:4.7rem;}
+.table_hit300 .table tfoot .cell {padding:0.7333rem 0.3333rem 0.7667rem;}
+.table_hit300 .table_right .table tbody .cell
 .table_hit300 .table_right .cell {min-width:3.7333rem;}
 .table_hit300 .table_right .table tbody .cell {padding-top:1.5333rem;padding-bottom:1.5rem;}
+
+.table_hit300.no_num .table_left {width:10.9333rem;}
+.table_hit300.no_num .table_left .cell .player_img {margin-left:0.6667rem;}
 
 /* 3할 이상타자 */
 .table_hit300 .hit300 .num,
@@ -1030,6 +1057,14 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_style1 .table_left th,
 .table_style1 .table_left td {border-right:1px solid #dee1e6;}
 
+.table_data_style {width:100%;}
+.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:0.0667rem solid #7f7f7f;border-bottom:0.0667rem solid #dee1e6;}
+.table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;color:#2b2b2b;text-align:center;}
+.table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:0.0667rem solid #dee1e6;}
+.table_data_style tbody td .cell {height:2.2rem;font-family:'bebas_neueregular';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
+.title_tbl {padding:0.2rem 0 0.1667rem;font-size:0;}
+.title_tbl span {display:inline-block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;vertical-align:top;}
+.title_tbl span + span {display:inline-block;margin:0.2rem 0 0.2rem 0.5rem;height:1.5667rem;font-size:1.0667rem;font-weight:bold;color:#858585;vertical-align:top;}
 
 /* chart common */
 .bb svg {font:10px sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0);}

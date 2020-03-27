@@ -264,34 +264,6 @@
                     		<p>4안타 1타수</p>
                     	</div>
                     </div>
-<style>
-.relay.content .vs_player_info.vs_pitch_hit {}
-.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap {width:47.57085%;}
-.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap.left {left:0;}
-.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap.right {right:0;}
-.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap .i_position {display:inline-block;margin-left:0.3333rem;margin-top:0.1667rem;height:1.8667rem;font-size:1.2667rem;color:#858585;vertical-align:top;}
-.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap .i_ratio {display:block;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;text-align:center;color:#525252;}
-
-.relay.content .table_data_wrap {position:relative;margin-top:0.3333rem;overflow:hidden;}
-.relay.content .table_data_wrap .table_data_box {width:47.57085%;}
-.relay.content .table_data_wrap .table_data_box.left {float:left;}
-.relay.content .table_data_wrap .table_data_box.right {float:right;}
-.relay.content .table_data_wrap .table_data_box p {margin-top:0.5rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;text-align:center;color:#525252;}
-.relay.content .table_pitch_hit .col1,
-.relay.content .table_pitch_hit .col2,
-.relay.content .table_pitch_hit .col3 {width:33.3%;}
-.relay.content .rel_record_wrap {margin-top:3rem;;padding-bottom:1.4667rem;}
-.relay.content .rel_record_wrap .table_rel_record {margin-top:0.8333rem;}
-.relay.content .rel_record_wrap .block_graph_wrap {margin-top:4rem;}
-.title_tbl {padding:0.2rem 0 0.1667rem;font-size:0;}
-.title_tbl span {display:inline-block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;vertical-align:top;}
-.title_tbl span + span {display:inline-block;margin:0.2rem 0 0.2rem 0.5rem;height:1.5667rem;font-size:1.0667rem;font-weight:bold;color:#858585;vertical-align:top;}
-.table_data_style {width:100%;}
-.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:0.0667rem solid #7f7f7f;border-bottom:0.0667rem solid #dee1e6;}
-.table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;color:#2b2b2b;text-align:center;}
-.table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:0.0667rem solid #dee1e6;}
-.table_data_style tbody td .cell {height:2.2rem;font-family:'bebas_neueregular';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
-</style>             
                     <div class="rel_record_wrap">
                     	<div class="title_tbl">
                     		<span>상대 전적</span>
@@ -499,7 +471,7 @@
                     </div>
 				</div>
 			</div>
-			<div class="sec_wapper">
+			<div class="sec_wrapper pitch_hit_record_wrap">
 				<div class="tab_2depth" id="tab_2depth">
 					<div class="tab_inner">
 						<ul>
@@ -510,182 +482,371 @@
 					</div>
 				</div>
 				<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">투수 기록</span>
-					</div>
-					<div class="table_responsive table_player table_hit300">
-						<div class="table_left">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<div class="cell">타자</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
-												<div class="player_wrap">
-													<div class="player_name">함덕주</div>
-													<div class="player_position">우완우투</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
-												<div class="player_wrap">
-													<div class="player_name">남궁우찬</div>
-													<div class="player_position">좌투</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td>
-											<div class="cell">
-												합계
-											</div>
-										</td>
-									</tr>
-								</tfoot>
-							</table>
+					<!-- 투수 기록 -->
+					<div>
+						<div class="title_hd">
+							<span class="sec_title">투수 기록</span>
 						</div>
-						<div class="table_right">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<div class="cell">이닝</div>
-										</th>
-										<th>
-											<div class="cell">투구수</div>
-										</th>
-										<th>
-											<div class="cell">피안타</div>
-										</th>
-										<th>
-											<div class="cell">피홈런</div>
-										</th>
-										<th>
-											<div class="cell">볼넷</div>
-										</th>
-										<th>
-											<div class="cell">탈삼진</div>
-										</th>
-										<th>
-											<div class="cell">실점</div>
-										</th>
-										<th>
-											<div class="cell">자책점</div>
-										</th>
-										<th>
-											<div class="cell">평자책</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="cell">3.0</div>
-										</td>
-										<td>
-											<div class="cell">34</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>										
-										<td>
-											<div class="cell">0</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>
-										<td>
-											<div class="cell">2</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>
-										<td>
-											<div class="cell">0</div>
-										</td>
-										<td>
-											<div class="cell">4.72</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">3.0</div>
-										</td>
-										<td>
-											<div class="cell">34</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>										
-										<td>
-											<div class="cell">0</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>
-										<td>
-											<div class="cell">2</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>
-										<td>
-											<div class="cell">0</div>
-										</td>
-										<td>
-											<div class="cell">4.72</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">3.0</div>
-										</td>
-										<td>
-											<div class="cell">34</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>										
-										<td>
-											<div class="cell">0</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>
-										<td>
-											<div class="cell">2</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>
-										<td>
-											<div class="cell">0</div>
-										</td>
-										<td>
-											<div class="cell">4.72</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="table_responsive table_player table_hit300 no_num">
+							<div class="table_left">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell">투수</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">함덕주</div>
+														<div class="player_position">우완우투</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">남궁우찬</div>
+														<div class="player_position">좌투</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td>
+												<div class="cell">
+													합계
+												</div>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<div class="table_right">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell">이닝</div>
+											</th>
+											<th>
+												<div class="cell">투구수</div>
+											</th>
+											<th>
+												<div class="cell">피안타</div>
+											</th>
+											<th>
+												<div class="cell">피홈런</div>
+											</th>
+											<th>
+												<div class="cell">볼넷</div>
+											</th>
+											<th>
+												<div class="cell">탈삼진</div>
+											</th>
+											<th>
+												<div class="cell">실점</div>
+											</th>
+											<th>
+												<div class="cell">자책점</div>
+											</th>
+											<th>
+												<div class="cell">평자책</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">3.0</div>
+											</td>
+											<td>
+												<div class="cell">34</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">2</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">4.72</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">6.0</div>
+											</td>
+											<td>
+												<div class="cell">71</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">2</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">4.72</div>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td>
+												<div class="cell">6.0</div>
+											</td>
+											<td>
+												<div class="cell">71</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">2</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">4.72</div>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
 						</div>
 					</div>
-					
+					<!-- // 투수 기록 -->
+					<!-- 타자 기록 -->
+					<div class="table_hit_sec">
+						<div class="title_hd">
+							<span class="sec_title">차우찬 vs 두산<span class="brackets">(최근 3년)</span>
+								<span class="oval_desc"><i class="oval"></i>3할 이상타자</span>
+							</span>
+						</div>
+						<div class="table_responsive table_player table_hit300 no_num">
+							<div class="table_left">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell">타자</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">  <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">이천웅<span class="oval"></span></div>
+														<div class="player_position">지명타자</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">  <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">정주현<span class="oval"></span></div>
+														<div class="player_position">지명타자</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell hit300">  <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">독고용진<span class="oval"></span></div>
+														<div class="player_position">지명타자</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table_right">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell">타수</div>
+											</th>
+											<th>
+												<div class="cell">득점</div>
+											</th>
+											<th>
+												<div class="cell">안타</div>
+											</th>
+											<th>
+												<div class="cell">홈런</div>
+											</th>
+											<th>
+												<div class="cell">타점</div>
+											</th>
+											<th>
+												<div class="cell">볼넷</div>
+											</th>
+											<th>
+												<div class="cell">사구</div>
+											</th>
+											<th>
+												<div class="cell">삼진</div>
+											</th>
+											<th>
+												<div class="cell">타율</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">2</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>										
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0.32</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">3</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0.32</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">3</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>
+											<td>
+												<div class="cell">0.32</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // 타자 기록 -->
 				</div>
 			</div>
+			<div class="scroll_top_sec">
+		    	<a href="#none" class="totop blind">TOP</a>
+		    </div>
 		</div>
 	</div>
 </div>
@@ -725,7 +886,7 @@ $(document).ready(function() {
         $(imgPlayerDefault).toggleClass("active");
         if ($(imgPlayerDefault).hasClass("active")) {
 			$(btnPlayerViewTextOn).addClass("active");
-            $(btnPlayerViewTextOff).removeClass("active");            
+            $(btnPlayerViewTextOff).removeClass("active");
             $(btnPlayerViewTextOff).removeClass("default");
 			$(icShow).hide();
         } else {
