@@ -73,6 +73,20 @@
 /* Month slider  + gotoday */
 .div_rel .btn_gotoday {position:absolute;top:0.3333rem;right:0;}
 
+/* video_wrap */
+
+.video_wrap {display:none;position:relative;width:100%;padding-top:56.25%;}
+.live_video .video_wrap {display:block;}
+.btn_player_view_wrap {position:relative;width:100%;height:4.2667rem;font-size:0;}
+.btn_player_view_wrap .btn_player_view {z-index:2;position:fixed;width:100%;height:4.2667rem;border-bottom:0.9333rem solid #f0f1f6;padding:0;text-align:center;background-color:#fff;}
+.btn_player_view_wrap .btn_player_view > span {display:none;width:7rem;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:right;color:#7a7a7a;vertical-align:top;}
+.btn_player_view_wrap .btn_player_view > span.txt_on {display:inline-block;}
+.live_video .btn_player_view_wrap .btn_player_view > span.txt_off {display:inline-block;}
+.live_video .btn_player_view_wrap .btn_player_view > span.txt_on {display:none;}
+.btn_player_view_wrap .btn_player_view > i {display:inline-block;margin-top:0.2333rem;margin-left:0.3333rem;width:1.3333rem;height:1.3333rem;background:url("../images/ic-arrow-up-g.png") no-repeat 50% 50%;background-size:cover;vertical-align:top;transform:rotate(180deg);}
+.live_video .btn_player_view_wrap .btn_player_view > i {transform:rotate(0deg);}
+
+
 /* HOME */
 .home.content .top_phrase {padding:1rem 0 0 2.4rem;height:13.3333rem;background-repeat:no-repeat;background-position:100% 1.3333rem;background-size:auto 10.6667rem;background-color:#ffffff;}
 .content .sec_wrapper {padding:1.5333rem 0;border-bottom:0.9333rem solid #f0f1f6;}
@@ -650,11 +664,10 @@
 
 
 /* Relay - game info */
-.relay.content .relay_video_wrap + .tab_1depth {margin-top:0;}
+.relay.content .video_wrap + .tab_1depth {margin-top:0;}
 .relay.content .relay_card_wrap + .tab_1depth {margin-top:0;}
 
-.relay.content .relay_video_wrap {padding:0;}
-.relay.content .relay_video_thumb {position:relative;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .relay_video_thumb {position:fixed;top:0;left:0;right:0;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;z-index:10;}
 .relay.content .relay_video_thumb.active {padding-bottom:0;}
 .relay.content .relay_video_thumb .abs_wrap {z-index:1;}
 .relay.content .relay_video_thumb .ic_show {display:block;position:absolute;top:0.4rem;left:0.4rem;width:4rem;height:4rem;background:url('../images/ic-show.png') no-repeat;background-size:100% auto;}
@@ -685,13 +698,6 @@
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .vs_img {margin:0 auto;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .time_spot {margin-top:1.2rem;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .tag_info {margin-top:2rem;}
-.relay.content .btn_player_view {z-index:1;position:relative;display:block;width:100%;padding:0.7667rem 0;font-size:0;text-align:center;}
-.relay.content .btn_player_view > span {display:none;width:7rem;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:right;color:#7a7a7a;vertical-align:top;}
-.relay.content .btn_player_view > span.txt_off.default {display:inline-block;}
-.relay.content .btn_player_view > span.txt_off.active {display:inline-block;}
-.relay.content .btn_player_view > span.txt_on.active {display:inline-block;}
-.relay.content .btn_player_view > i {display:inline-block;margin-top:0.2333rem;margin-left:0.3333rem;width:1.3333rem;height:1.3333rem;background:url("../images/ic-arrow-up-g.png") no-repeat 50% 50%;background-size:cover;vertical-align:top;transform:rotate(0deg);}
-.relay.content .btn_player_view.active > i {transform:rotate(180deg);}
 .relay.content .relay_card_wrap ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .relay.content .relay_card_wrap ul li {display:inline-block;position:relative;margin-left:0.7667rem;padding-top:0.4rem;width:8.6667rem;height:10.1333rem;vertical-align:top;opacity:0.5;}
 .relay.content .relay_card_wrap ul li.on {opacity:1;}
@@ -699,7 +705,7 @@
 .relay.content .relay_card_wrap ul li:first-child {margin-left:0;}
 .relay.content .relay_card_wrap ul li .ic_5g {display:block;position:absolute;top:0;right:1.1rem;width:2.2667rem;height:1.3333rem;background:url('../images/ic-tag-5-g.png') no-repeat 50% 50%;background-size:100% auto;}
 .relay.content .relay_card_wrap ul li .ic_info {display:inline-block;position:absolute;top:4.5333rem;right:0.6333rem;padding:0 0.5333rem;height:1.4667rem;line-height:1.4667rem;font-size:0.8333rem;text-align:center;color:#ffffff;border-radius:0.7333rem;background-color:#c2c3c7;}
-.relay.content .relay_card_wrap ul li .card_box {padding:0 0.6333rem 0 0.7333rem;width:100%;height:9.7333rem;border:0.0667rem solid #e5e5e5;border-radius:0.7333rem;}
+.relay.content .relay_card_wrap ul li .card_box {padding:0 0.6333rem 0 0.7333rem;width:100%;height:9.7333rem;border:1px solid #e5e5e5;border-radius:0.7333rem;}
 .relay.content .relay_card_wrap ul li .card_box .team_box {height:4.8rem;}
 .relay.content .relay_card_wrap ul li .card_box .team_box:after {display:block;visibility:hidden;clear:both;content:""}
 .relay.content .relay_card_wrap ul li .card_box .team_box.top_box {padding-top:0.5rem;padding-bottom:1.0333rem;}
@@ -1018,6 +1024,11 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_1depth .tab_item .tab_logo_MLB:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_mlb.png);}
 .tab_1depth .tab_item .tab_logo_ABL:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_abl.png);}
 .tab_1depth .active_bar {position:absolute;bottom:0;width:6rem;height:0.2rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
+.tab_1depth_wrap {position:relative;height:4.6rem;width:100%;}
+.tab_1depth_wrap .tab_1depth {margin-top:0;position:absolute;left:0;right:0;}
+.cheering .tab_1depth_wrap .tab_1depth {position:fixed;z-index:2;}
+.cheering .relay_card_wrap {display:none;}
+
 
 /* tab_2depth */
 .tab_2depth {margin-top:2.5rem;position:relative;text-align:center;font-size:0;}
@@ -1319,9 +1330,11 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .popup_cheer .btn_cheerteam_setting {position:absolute;bottom:1.7333rem;left:2.5333rem;border-radius:1.0333rem;width:8.1667rem;height:2.0333rem;font-size:0.9333rem;font-weight:bold;line-height:2.0333rem;text-align:center;color:#484848;padding:0 0.3333rem;background-color:#ededed;}
 .popup_cheer .btn_close {position:absolute;right:1rem;top:1rem;width:2rem;height:2rem;background:url(../images/ic-banner-close.png);background-size:100%;}
 /*.popup_cheer .modal_inner {position:absolute;bottom:8.7rem;left:0;right:0;}*/
-
+/*
+:not(.main) .relay.content.visible {padding-top:calc(56.25% + 8.8667rem);}
+:not(.main) .relay.content {padding-top:8.8667rem;}*/
 .content.close {padding-top:8.8667rem;}
-.content.open {padding-top:calc(56.25% + 8.8667rem);}
+.content.open {}
 .content .onair_fixed {position:fixed;left:0;right:0;top:0;background-color:#fff;}
 
 
