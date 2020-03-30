@@ -1231,9 +1231,11 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* layerPopup */
 .noscroll {position:fixed;}
-.modal {display:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:200;}
+.modal {display:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:200;font-size:0;white-space:nowrap;overflow:hidden;text-align:center;}
 .modal > .dim {background-color:rgba(0,0,0,0.29);display:block;position:fixed;top:0;left:0;bottom:0;right:0;opacity:0;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;}
 .modal.visible > .dim {opacity:1;}
+.modal:after {content:"";position:relative;display:inline-block;height:100%;vertical-align:middle;}
+.modal .modal_inner {position:relative;text-align:left;display:inline-block;vertical-align:middle;white-space:normal;}
 .fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:calc(100% - 4.6333rem);-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
 .fadeInUp.visible .modal_inner {-webkit-transform:translate(0, 0);transform:translate(0, 0);}
 .fadeIn .modal_inner {-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0}
@@ -1274,6 +1276,16 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .modal .morei_list_dd {word-break:keep-all;display:table-cell;vertical-align:middle;font-size:1.0667rem;font-weight:500;line-height:1.5667rem;color:#2b2b2b;}
 .modal .morei_list_dd .hits_a {text-indent:-3.367rem;padding-left:3.367rem;}
 
+/* 응원팀 없는 경우 팝업 */
+.popup_cheer {z-index:9;}
+.popup_cheer .dim {background-color:rgba(0,0,0,0.04);}
+.popup_cheer .bg_cheer {position:relative;overflow:hidden;margin:0 auto 8.7rem;width:34rem;height:13.3333rem;background-image:url(../images/bg-team-banner-none.png);background-size:100%;}
+.popup_cheer .quo_marks {position:relative;margin:2.1rem 0 0 2.9333rem;width:18.6667rem;height:2.4667rem;font-size:1.6667rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
+.popup_cheer .quo_marks:before {content:'';position:absolute;left:-1.6rem;top:0;width:1.3333rem;height:1.3667rem;background-image:url(../images/ic-home-top-text-m.png);background-size:100%;}
+.popup_cheer .quo_marks + p {margin:0.6rem 0 0 2.9333rem;height:1.6667rem;font-size:1.1333rem;line-height:1.6667rem;color:#000000;}
+.popup_cheer .btn_cheerteam_setting {position:absolute;bottom:1.7333rem;left:2.5333rem;border-radius:1.0333rem;width:8.1667rem;height:2.0333rem;font-size:0.9333rem;font-weight:bold;line-height:2.0333rem;text-align:center;color:#484848;padding:0 0.3333rem;background-color:#ededed;}
+.popup_cheer .btn_close {position:absolute;right:1rem;top:1rem;width:2rem;height:2rem;background:url(../images/ic-banner-close.png);background-size:100%;}
+/*.popup_cheer .modal_inner {position:absolute;bottom:8.7rem;left:0;right:0;}*/
 
 .content.close {padding-top:8.8667rem;}
 .content.open {padding-top:calc(56.25% + 8.8667rem);}
