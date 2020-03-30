@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap" data-theme="theme_LG" class="theme_LG">
+<div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content relay live_video">
@@ -261,10 +261,11 @@
 <script src="res/js/relay.js"></script>
 <script>
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
+relayUi.activeBar(3,document.getElementById('tab_1depth4'));
 
 function content_scroll(){
 	var scrollH = 
-    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view_wrap').clientHeight - 1) + 'px';
+    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view_wrap').offsetHeight - 1) + 'px';
 	document.querySelector('.content_scroll').style.height = scrollH;
 }
 content_scroll();
