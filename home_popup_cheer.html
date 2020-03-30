@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<div id="wrap" data-theme="theme_LG" class="main">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content home">
+            <!-- 01_응원팀 경기 시작 전 : case마다 클래스 상이(case0n) -->
+		    <div class="top_phrase case01">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            오늘의 주인공은 LG트윈스! <br>
+		            힘차게 응원할 준비 되셨나요?
+		        </p>
+		    </div>
+		    <!-- // 01_응원팀 경기 시작 전 -->
+		    <!-- 02_응원팀 경기중_이기고 있을 경우
+		    <div class="top_phrase case02">  
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            무적의 LG트윈스! <br>
+                    승리를 향해 달려갑니다
+		        </p>
+		    </div>
+		    // -->
+		    <!--03_응원팀 경기중_동점일 경우 
+		    <div class="top_phrase case03">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            잘한다, LG트윈스! <br>
+                    조금 더 힘내면 이길 수 있어요!
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 04_응원팀 경기중_지고 있을 경우 
+		    <div class="top_phrase case04">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            반전의 LG트윈스! <br>
+                    끝날 때까지 끝난게 아니에요
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 05_응원팀 승리 시 
+		    <div class="top_phrase case05">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            승리의 LG트윈스! <br>
+                    값진 승리를 거뒀습니다!
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 06_무승부 시
+		    <div class="top_phrase case06">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            잘했어요, LG트윈스! <br>
+                    다음엔 꼭 이기고 말거에요
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 07_응원팀 패 시
+		    <div class="top_phrase case07">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            괜찮아요, LG트윈스! <br>
+                    다음엔 꼭 승리할거에요!
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 08_응원팀 경기 취소 시
+		    <div class="top_phrase case08">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            오늘 경기가 취소되었어요. <br>
+                    다른 팀 경기를 볼까요?
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 09_경기 없는 날_응원팀 시즌 중
+		    <div class="top_phrase case09">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            오늘은 경기가 없어요. <br>
+                    지난 하이라이트를 볼까요?
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 10_경기 없는 날_응원팀 비시즌 중
+		    <div class="top_phrase case10">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            봄을 준비 중인 LG트윈스, <br>
+                    영광의 순간을 다시 볼까요?
+		        </p>
+		    </div>
+		    // -->
+		    <!-- 11_응원팀 미설정 시
+		    <div class="top_phrase case11">
+		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
+		        <p>
+                    <i class="quo_marks"></i>
+		            지금 바로 응원팀 설정하고 <br>
+                    우리팀 소식을 모아보세요!
+		        </p>
+		    </div>
+		    // -->
+            <!-- KBO -->
+		    <div class="sec_wrapper score_board_wrap kbo">
+                <div class="inner">
+                    <div class="score_today usetap">
+                        <div class="team_img_wrap left">
+                            <div class="team_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+                                <span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+                                    <span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+                                </span>                                
+                            </div>
+                            <span class="player_name"><!--<i class="result_val">패</i>-->하재훈</span>
+                        </div>
+                        <div class="middle_box">
+                            <span class="kbo logo_na blind">KBO</span>
+                            <span class="title">오늘의 경기</span>
+                            <div class="play_score">
+                                <em class="text_right i_gray">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) -->
+                                <em class="text_left">3</em>
+                            </div>
+                            <!--
+                            <span class="info_today i_schedule">중계예정</span>
+                            <span class="info_today i_cancel">취소</span>
+                            -->
+                            <span class="info_round">2회초</span>
+                        </div>
+                        <div class="team_img_wrap right">
+                            <div class="team_img" style="background-image:url('res/images/player_img2.jpg')"> <!-- 선수 이미지 -->
+                                <span class="team_logo_xs team_color_NC"> <!-- theme.css : Team Color bg -->
+                                    <span class="team_symbol_NC"></span> <!-- theme.css : symbol KBO -->
+                                </span>                                
+                            </div>
+                            <span class="player_name"><!--<i class="result_val">승</i>-->김대륙</span>
+                        </div>
+                    </div>
+                    <ul class="play_list">
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_WO"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->안우진</span>
+                            </div>
+                            <div class="middle_box">
+                                <span class="info_today i_schedule">중계예정</span>
+                                <!--
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <!--
+                                <div class="play_score">
+                                    <em class="text_right i_gray">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 --> <!--
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) --> <!--
+                                    <em class="text_left">3</em>
+                                </div>
+                                -->
+                                <span class="info_round">19:00 마산</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_LT"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->고효준</span>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_HH"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->김이환</span>
+                            </div>
+                            <div class="middle_box">
+                                <!--
+                                <span class="info_today i_schedule">중계예정</span>
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <div class="play_score">
+                                    <em class="text_right">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) -->
+                                    <em class="text_left">1</em>
+                                </div>
+                                <span class="info_round">3회말</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_SK"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->문승원</span>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_OB"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->김민성</span>
+                            </div>
+                            <div class="middle_box">
+                                <!--
+                                <span class="info_today i_schedule">중계예정</span>
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <div class="play_score">
+                                    <em class="text_right">7</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) -->
+                                    <em class="text_left">4</em>
+                                </div>
+                                <span class="info_round">4회초</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_KT"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->함덕주</span>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_SS"></i> <!-- theme.css :  logo KBO -->
+                                <span><i class="result_val">패</i>정인욱</span>
+                            </div>
+                            <div class="middle_box">
+                                <!--
+                                <span class="info_today i_schedule">중계예정</span>
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <div class="play_score">
+                                    <em class="text_right i_gray">0</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                    <!-- <span class="ic_vs_main vs_red blind">VS</span> 진행중(vs레드) -->
+                                    <span class="ic_vs_main vs_gray blind">VS</span>
+                                    <em class="text_left">2</em>
+                                </div>
+                                <span class="info_round">종료</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_HT"></i> <!-- theme.css :  logo KBO -->
+                                <span><i class="result_val">패</i>윌랜드</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="score_scroll">
+                        <div class="title_hd">
+                            <span class="sec_title">LG</span>
+                            <span class="vs">VS</span>
+                            <span class="sec_title">NC</span>
+                            <a href="#none" class="more blind usetap">자세히보기</a>
+                        </div>                        
+                        <div class="none_score">아직 득점이 발생하지 않았습니다.</div> <!-- 아직 득점이 발생하지 않았습니다. 아래 ul부터 hide 해주세요-->
+                        <ul class="score_moment">
+                            <li class="usetap">
+                                <span class="logo_kbo left">
+                                    <span class="team_logo_LG"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                                <em class="text_right">1</em>
+                                <span class="i_colon">:</span>
+                                <em class="text_left">0</em>
+                                <span class="logo_kbo right">
+                                    <span class="team_logo_OB"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                            </li>
+                            <li class="usetap">
+                                <span class="logo_kbo left">
+                                    <span class="team_logo_LG"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                                <em class="text_right">3</em>
+                                <span class="i_colon">:</span>
+                                <em class="text_left">5</em>
+                                <span class="logo_kbo right">
+                                    <span class="team_logo_OB"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                            </li>
+                            <li class="usetap">
+                                <span class="logo_kbo left">
+                                    <span class="team_logo_LG"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                                <em class="text_right">2</em>
+                                <span class="i_colon">:</span>
+                                <em class="text_left">2</em>
+                                <span class="logo_kbo right">
+                                    <span class="team_logo_OB"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                            </li>
+                            <li class="usetap">
+                                <span class="logo_kbo left">
+                                    <span class="team_logo_LG"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                                <em class="text_right">12</em>
+                                <span class="i_colon">:</span>
+                                <em class="text_left">2</em>
+                                <span class="logo_kbo right">
+                                    <span class="team_logo_OB"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                            </li>
+                            <li class="usetap">
+                                <span class="logo_kbo left">
+                                    <span class="team_logo_LG"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                                <em class="text_right">4</em>
+                                <span class="i_colon">:</span>
+                                <em class="text_left">0</em>
+                                <span class="logo_kbo right">
+                                    <span class="team_logo_OB"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                            </li>
+                            <li class="usetap">
+                                <span class="logo_kbo left">
+                                    <span class="team_logo_LG"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                                <em class="text_right">1</em>
+                                <span class="i_colon">:</span>
+                                <em class="text_left">0</em>
+                                <span class="logo_kbo right">
+                                    <span class="team_logo_OB"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                            </li>
+                            <li class="usetap">
+                                <span class="logo_kbo left">
+                                    <span class="team_logo_LG"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                                <em class="text_right">1</em>
+                                <span class="i_colon">:</span>
+                                <em class="text_left">0</em>
+                                <span class="logo_kbo right">
+                                    <span class="team_logo_OB"></span> <!-- theme.css : logo KBO -->
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+		        </div>
+		    </div>
+		    <!-- // KBO -->
+		    <!-- MLB -->
+		    <div class="sec_wrapper score_board_wrap mlb">
+                <div class="inner">
+                    <div class="score_today usetap">
+                        <div class="team_img_wrap left">
+                            <div class="team_img">
+                                <span class="mlb_team_logo team_logo_BA"></span> <!-- theme.css :  logo MLB -->
+                            </div>
+                            <span class="player_name"><!--<i class="result_val">패</i>-->탬파베이</span>
+                        </div>
+                        <div class="middle_box">
+                            <span class="mlb logo_na blind">MLB</span>
+                            <span class="title">오늘의 경기</span>
+                            <div class="play_score">
+                                <em class="text_right">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) -->
+                                <em class="text_left">6</em>
+                            </div>
+                            <!--
+                            <span class="info_today i_schedule">중계예정</span>
+                            <span class="info_today i_cancel">취소</span>
+                            -->
+                            <span class="info_round">8회말</span>
+                        </div>
+                        <div class="team_img_wrap right">
+                            <div class="team_img">
+                                <span class="mlb_team_logo team_logo_HO"></span> <!-- theme.css :  logo MLB -->                          
+                            </div>
+                            <span class="player_name"><!--<i class="result_val">승</i>-->알렉산더스</span>
+                        </div>
+                    </div>
+                    <ul class="play_list">
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_MI"></i> <!-- theme.css :  logo MLB -->
+                                <span><!--<i class="result_val">승or패</i>-->스튜어스</span>
+                            </div>
+                            <div class="middle_box">
+                                <span class="info_today i_schedule">중계예정</span>
+                                <!--
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <!--
+                                <div class="play_score">
+                                    <em class="text_right i_gray">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 --> <!--
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) --> <!--
+                                    <em class="text_left">3</em>
+                                </div>
+                                -->
+                                <span class="info_round">19:00</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_MN"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->아담스</span>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="team_player left">
+                                <i class="team_logo_SE"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->휴츠</span>
+                            </div>
+                            <div class="middle_box">
+                                <!--
+                                <span class="info_today i_schedule">중계예정</span>
+                                <span class="info_today i_cancel">취소</span>                                
+                                -->
+                                <div class="play_score">
+                                    <em class="text_right">3</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+                                    <span class="ic_vs_main vs_red blind">VS</span> <!-- 진행중(vs레드) -->
+                                    <!--<span class="ic_vs_main vs_gray blind">VS</span> 종료(vs그레이) -->
+                                    <em class="text_left">1</em>
+                                </div>
+                                <span class="info_round">3회말</span>
+                            </div>
+                            <div class="team_player right">
+                                <i class="team_logo_KC"></i> <!-- theme.css :  logo KBO -->
+                                <span><!--<i class="result_val">승or패</i>-->체임벌린</span>
+                            </div>
+                        </li>
+                    </ul>         
+		        </div>
+		    </div>
+		    <!-- // MLB -->
+		    <!-- Banner -->   
+            <!-- 클래스별 배너 사이즈
+            bn700 - 988*700
+            bn560 - 988*560
+            bn300 - 988*300
+            bn180 - 988*180
+            bn156 - 988*156
+            bn120 - 988*120
+            -->
+		    <div class="sec_wrapper">
+                <div class="inner">
+                    <div class="bn_rel bn700">
+                        <img src="res/images/banner-img-01-02.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sec_wrapper">
+                <div class="inner">
+                    <div class="bn_rel bn560 usetap">
+                        <img src="res/images/banner-img-02-01.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sec_wrapper">
+                <div class="inner">
+                    <div class="bn_rel bn300">
+                        <img src="res/images/banner-img-03-02.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sec_wrapper">
+                <div class="inner">
+                    <div class="bn_rel bn180">
+                        <img src="res/images/banner-img-04-03.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sec_wrapper">
+                <div class="inner">
+                    <a href="#none" class="usetap">
+                        <div class="bn_rel bn156">
+                            <img src="res/images/banner-img-05-04.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="sec_wrapper">
+                <div class="inner">
+                    <a href="#none" class="usetap">
+                        <div class="bn_rel bn120">
+                            <img src="res/images/banner-img-06-01.png" alt="">                        
+                        </div>
+                    </a>
+                </div>
+            </div>
+		    <!-- // Banner -->
+		    <div class="sec_wrapper bn_game">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">프로야구 도전 999</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <a href="#none" class="usetap">
+                        <div class="bg_box">
+                            <span>환영합니다!</span>
+                            <p>
+                                오늘의 득점을 예측하고 <br>
+                                가장 높은 점수를 조합하세요!
+                            </p>
+                        </div>
+                    </a>
+		        </div>
+		    </div>
+		    <div class="sec_wrapper bn_ranking">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">나의 랭킹</span>
+                        <span class="my_nick">KIA양현종짱</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <div class="bg_box usetap">
+                        <div class="rank_num">
+                            <span>순위</span>
+                            <em>231위</em>
+                        </div>
+                        <div class="rank_num">
+                            <span>점수</span>
+                            <em>849점</em>
+                        </div>
+                    </div>
+		        </div>
+		    </div>
+		    <!-- TEXT Banner Size 05 -->
+		    <div class="sec_wrapper bn_txt_wrap">
+		        <div class="inner">
+                    <a href="#none" class="usetap">
+                        <div class="bg_box">
+                            <span class="bn_txt">오늘 드디어! 한국시리즈 7차전!</span>                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="sec_wrapper">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">인기 하이라이트</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <div class="highlight_wrap">
+                        <div class="highlight_box usetap">
+                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+                                <i class="play_time">08:11</i>
+                            </div> <!-- video img -->
+                            <p>부상은 안돼 무릎 위쪽을 맞아 털썩 주저 앉은 박용택</p>
+                            <span class="view"><i class="ico_play"></i>2,454</span>
+                        </div>
+                        <div class="highlight_box usetap">
+                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+                                <i class="play_time">08:11</i>
+                            </div> <!-- video img -->
+                            <p>'야구는 10회말 투아웃부터!' 이재원, 연장 끝내기</p>
+                            <span class="view"><i class="ico_play"></i>2,454</span>
+                        </div>
+                        <div class="highlight_box usetap">
+                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+                                <i class="play_time">08:11</i>
+                            </div> <!-- video img -->
+                            <p>'무사 만루 무득점' 최고의 기회를 살리지 못하는 롯데</p>
+                            <span class="view"><i class="ico_play"></i>2,454</span>
+                        </div>
+                        <div class="highlight_box usetap">
+                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+                                <i class="play_time">08:11</i>
+                            </div> <!-- video img -->
+                            <p>'바람을 따라 훨훨 날아 담장밖으로' 김재환의 선제 공격 선제 공격</p>
+                            <span class="view"><i class="ico_play"></i>2,454</span>
+                        </div>
+                    </div>
+		        </div>
+		    </div>
+		    <div class="sec_wrapper news_wrap">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">뉴스</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <div class="news_main" style="background-image:url('res/images/news_main.jpg')">
+                    	<div class="txt_inner_wrap"> <!-- 20200323 추가 -->
+							<div class="txt_inner">
+								<span class="agency">연합뉴스</span>
+								<p>추신수, 클리블랜드전 무안타 1사구 1안타 2홈런 텍사스 5연승</p>
+							</div>
+                        </div>
+                    </div>
+                    <ul class="news_list">
+                        <li class="usetap">
+                            <div class="thumb" style="background-image:url('res/images/news_list.jpg')"></div>
+                            <div class="desc">
+                                <span class="agency">뉴스스탠드</span>
+                                <p class="subject">추신수 안타없이 무안타 침묵</p>
+                                <p class="content">코리안리거 타자들이 시범경기에서 1루에서 아웃</p>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="thumb" style="background-image:url('res/images/news_list.jpg')"></div>
+                            <div class="desc">
+                                <span class="agency">데일리뉴스</span>
+                                <p class="subject">엔트리 1명 확대, 21일 10개 구단에서 에서에서</p>
+                                <p class="content">KBO 리그 엔트리가 한 명 더 늘어날 가능성이</p>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="thumb" style="background-image:url('res/images/news_list.jpg')"></div>
+                            <div class="desc">
+                                <span class="agency">뉴스스탠드</span>
+                                <p class="subject">두산 김재환 잽싸게 3루까지</p>
+                                <p class="content">2회 말 무사 1루에서 두산 1루 주자 김재환 잽사게 도루</p>
+                            </div>
+                        </li>
+                        <li class="usetap">
+                            <div class="thumb" style="background-image:url('res/images/news_list.jpg')"></div>
+                            <div class="desc">
+                                <span class="agency">뉴스스탠드</span>
+                                <p class="subject">박용택 마지막 꿈, 한국시리즈 7차전에서</p>
+                                <p class="content">박용택이 19년 프로야구 커리어를 통틀어 한국시리즈</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec_wrapper news_comments">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">허구연의 야구뉴스</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <div class="news_scroll">
+                        <ul>
+                            <li class="usetap" style="background-image:url('res/images/news_comment.jpg')">
+                                <p class="subject">2019프로야구 팀결산 삼성 라이온즈</p>
+                            </li>
+                            <li class="usetap" style="background-image:url('res/images/news_comment.jpg')">
+                                <p class="subject">LG 트윈스의 활약</p>
+                            </li>
+                            <li class="usetap" style="background-image:url('res/images/news_comment.jpg')">
+                                <p class="subject">2019프로야구 팀결산 삼성 라이온즈</p>
+                            </li>
+                            <li class="usetap" style="background-image:url('res/images/news_comment.jpg')">
+                                <p class="subject">LG 트윈스의 활약</p>
+                            </li>
+                            <li class="usetap" style="background-image:url('res/images/news_comment.jpg')">
+                                <p class="subject">2019프로야구 팀결산 삼성 라이온즈</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- TEXT Banner Size 05 -->
+		    <div class="sec_wrapper bn_txt_wrap bn_event">
+		        <div class="inner">
+                    <a href="#none" class="usetap">
+                        <div class="bg_box">
+                            <span class="bn_txt">이벤트 보기</span>                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="tab_container">
+			<!-- Active Tab Container -->
+			<div class="active_tab_container" id="active_tab_container">
+				<div class="tab tab_home">
+					<div class="circle">
+						<div class="img_box" id="circle1">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_team_info">
+					<div class="circle">
+						<div class="img_box" id="circle2">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_relay">
+					<div class="circle">
+						<div class="img_box" id="circle3">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_game">
+					<div class="circle">
+						<div class="img_box" id="circle4">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_my">
+					<div class="circle">
+						<div class="img_box" id="circle5">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Active Button Container -->
+			<!-- Active Label -->
+			<div class="active_label_container" id="active_label_container">
+				<div class="label label_home active">
+					 홈
+				</div>
+				<div class="label label_team_info">
+					 팀정보
+				</div>
+				<div class="label label_team_info">
+					 중계
+				</div>
+				<div class="label label_team_info">
+					 게임
+				</div>
+				<div class="label label_team_info">
+					 MY
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<div class="tab_bar" id="tab_bar">
+				<div class="left_side">
+				</div>
+				<div class="middle">
+					<div class="center_middle">
+					</div>
+				</div>
+				<div class="right_side" style="flex-grow:4;">
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<!-- Button Container -->
+			<div class="tab_button" id="tab_button">
+				<div class="tab tab_home hide">
+					 홈
+				</div>
+				<div class="tab tab_team_info">
+					 팀정보
+				</div>
+				<div class="tab tab_relay">
+					 중계
+				</div>
+				<div class="tab tab_game">
+					 게임
+				</div>
+				<div class="tab tab_my">
+					 MY
+				</div>
+			</div>
+			<!-- Button Container -->
+		</div>
+	</div>
+	<!-- Footer -->
+	
+	<div class="modal fadeInUp popup_cheer " id="popup_cheer">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="bg_cheer">
+				<p class="quo_marks">응원팀이 없습니다!</p>
+				<p>우리 팀을 설정하고<br>
+				팀의 최근 소식을 바로 확인하세요.</p>
+				<a href="#" class="btn_cheerteam_setting">응원팀 설정하기</a>
+				<button type="button" class="btn_close" onclick="layerPopup.hide();"></button>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+<script>
+bnbUi.init();
+bnbUi.initLottie();
+layerPopup.show('#popup_cheer');
+</script>
+</body>
+</html>
