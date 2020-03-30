@@ -179,13 +179,15 @@
 .home.content .bn_txt_wrap .bg_box {position:relative;padding-bottom:15.789473%;height:0;background-image:url("../images/banner-img-text.png");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;} /* TXT bn */
 .home.content .bn_txt_wrap .bg_box .bn_txt {display:block;position:absolute;top:50%;margin-top:-1.2333rem;padding-right:4.6rem;padding-left:1.6667rem;width:100%;height:2.4667rem;line-height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;background:url("../images/ic-arrow-white.png") no-repeat 94.8% 50%;background-size:auto 1.4rem;}
 .home.content .bn_txt_wrap.bn_event .bg_box {padding-bottom:18.218623%;background-image:url("../images/banner-img-event.png");} /* Event bn */
-.home.content .highlight_wrap {margin:1rem -1.417004% 0;overflow:hidden;}
-.home.content .highlight_box {float:left;margin:2rem 1.377952% 0;width:47.244094%;}
-.home.content .highlight_box:nth-child(1),
-.home.content .highlight_box:nth-child(2) {margin-top:0;}
-.home.content .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;overflow:hidden;}
-.home.content .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
-.home.content .highlight_box p {margin-top:0.3333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.highlight_wrap {margin:1rem -1.417004% 0;overflow:hidden;}
+.highlight_box {float:left;margin:2rem 1.377952% 0;width:47.244094%;}
+.highlight_box:nth-child(1),
+.highlight_box:nth-child(2) {margin-top:0;}
+.highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;overflow:hidden;}
+.highlight_box .thumb.i_default {background-image:url('../images/ic-play-defualt-b-02.png');background-position:50% 50%;background-size:3rem;background-color:#e9edf0;background-repeat:no-repeat;}
+.highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
+.highlight_box p {margin-top:0.3333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.highlight_wrap.line1 .highlight_box p {height:1.9667rem;line-height: normal;-webkit-line-clamp: 1;}
 .home.content .highlight_box .view {position:relative;display:block;margin-top:0.4333rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
 .home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
 .home.content .news_wrap .news_main {position:relative;margin-top:1rem;padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;overflow:hidden;}
@@ -220,12 +222,12 @@
 .home.content .btn_player_view > i {display:inline-block;margin-top:0.2333rem;margin-left:0.3333rem;width:1.3333rem;height:1.3333rem;background:url("../images/ic-arrow-up-g.png") no-repeat 50% 50%;background-size:cover;vertical-align:top;transform:rotate(0deg);}
 .home.content .btn_player_view.active > i {transform:rotate(180deg);}
 
-.home.content .highlight_detail .highlight_box .thumb .overlay {z-index:1;display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(36,9,16,.6);background-image:url("../images/ic-play-foc-b.png");background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;border-radius:0.7333rem;}
-.home.content .highlight_detail .highlight_box > b {display:block;margin-top:0.6667rem;padding:0 3.125%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;}
-.home.content .highlight_detail .video_info {position:relative;margin-top:0.4333rem;height:1.8rem;}
-.home.content .highlight_detail .video_info .view {margin-top:0;}
-.home.content .highlight_detail .video_info .ico_share {display:block;position:absolute;top:0;right:0.6667rem;width:1.8rem;height:1.8rem;background:url("../images/ic-share-nor.png") no-repeat 50% 50%;background-size:cover;}
-.home.content .highlight_detail.sp_vod .video_info .ico_share {right:auto;left:0.5rem;}
+.highlight_detail .highlight_box .thumb .overlay {z-index:1;display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(36,9,16,.6);background-image:url("../images/ic-play-foc-b.png");background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;border-radius:0.7333rem;}
+.highlight_detail .highlight_box > b {display:block;margin-top:0.6667rem;padding:0 3.125%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;}
+.highlight_detail .video_info {position:relative;margin-top:0.4333rem;height:1.8rem;}
+.highlight_detail .video_info .view {margin-top:0;}
+.highlight_detail .video_info .ico_share {display:block;position:absolute;top:0;right:0.6667rem;width:1.8rem;height:1.8rem;background:url("../images/ic-share-nor.png") no-repeat 50% 50%;background-size:cover;}
+.highlight_detail.sp_vod .video_info .ico_share {right:auto;left:0.5rem;}
 
 .home.content .news_heo {margin:0 -1.417004%;overflow:hidden;}
 .home.content .news_heo .news_box {position:relative;float:left;margin:2rem 1.377952% 0;padding-bottom:47.244094%;width:47.244094%;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;}
@@ -388,8 +390,8 @@
 .team.content .video_scroll .thumb {position:relative;padding-bottom:56.284153%;height:0;border-radius:0.7333rem;background-repeat:no-repeat;background-size:100% auto;background-color:#e9edf0;}
 .team.content .video_scroll .thumb.i_default {background-image:url('../images/ic-play-defualt-s.png');background-position:50% 50%;background-size:22.023809% auto;}
 .team.content .video_scroll .thumb .play_time {position:absolute;bottom:0.7rem;right:0.6667rem;padding:0 0.6rem;height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
-.team.content .video_scroll p {margin-top:0.3333rem;font-size:1.2667rem;font-weight:bold;color:#000000;line-height:1.26;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
-.team.content .video_scroll .date {margin-top:0.2rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
+.team.content .video_scroll p {margin-top:0.3333rem;font-size:1.2667rem;font-weight:normal;color:#000000;line-height:1.26;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.team.content .video_scroll .date {display:block;margin-top:0.2rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
 .team.content .term_desc {margin-top:1.5333rem;border:solid 0.1rem #e4e6eb;border-radius:0.7333rem;overflow:hidden;}
 .team.content .term_desc .btn_desc {display:block;padding:0.8333rem 0 0.9rem;width:100%;height:3.7rem;background-color:#ffffff;font-size:0;text-align:center;}
 .team.content .term_desc .btn_desc .label {font-size:1.3333rem;font-weight:500;color:#7a7a7a;}
@@ -931,6 +933,10 @@
 .relay.content .score_scene_sec li .player_desc b {font-size:1.0667rem;font-weight:bold;}
 .relay.content .score_scene_sec .list_none {margin:9.3333rem 0 10.6667rem;}
 
+/* Relay - major scene */
+.relay.content .major_scene_sec .highlight_wrap {margin-top:1.5333rem;padding-bottom:2rem;}
+.relay.content .major_scene_sec .list_none {margin:9.3333rem 0 10.6667rem;}
+.relay.content .major_scene_sec .tab_2depth {margin-bottom:2.5rem;}
 .btn_detail_wrap {margin-top:2.1333rem;height:5.5333rem;border-top:1px solid #e6e6e6;}
 .btn_detail_wrap > button {display:block;width:100%;padding:1.7667rem 0 1.8rem;height:100%;font-size:1.3333rem;font-weight:500;text-align:center;color:#7a7a7a;}
 
