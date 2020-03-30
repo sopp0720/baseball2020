@@ -13,7 +13,7 @@
 	<div id="container">
 		<div class="content relay">
 			<div class="sec_wrapper relay_video_wrap">
-				<div class="relay_video_thumb" style="background-image:url('res/images/bg-half-player-img-stadium.png')">
+				<div class="relay_video_thumb" style="background-image:url('res/images/bg-half-player-img-pts.png')">
 					<!--
 					<span class="ic_show"></span>
 					<div class="inner">
@@ -54,16 +54,6 @@
 					<span class="txt_on">화면 보이기</span>
 					<i></i>
 				</button>
-			</div>
-			<div class="tab_1depth" id="tab_1depth4">
-				<ul class="tab_link">
-					<li class="tab_item"><span>경기정보</span></li>
-					<li class="tab_item"><span>응원하기</span></li>
-					<li class="tab_item active"><span>득점장면</span></li>
-					<li class="tab_item"><span>주요장면</span></li>
-					<li class="tab_item"><span>문자중계</span></li>
-				</ul>
-				<div class="active_bar"></div>
 			</div>
 			<div class="sec_wrapper relay_card_wrap">
 				<div class="inner">
@@ -163,33 +153,89 @@
 					</ul>
 				</div>
 			</div>
-<style>
-.relay.content .score_scene_sec {}
-.relay.content .score_scene_sec li {height:12.8667rem;}
-</style>
+			<div class="tab_1depth" id="tab_1depth4">
+				<ul class="tab_link">
+					<li class="tab_item"><span>경기정보</span></li>
+					<li class="tab_item"><span>응원하기</span></li>
+					<li class="tab_item active"><span>득점장면</span></li>
+					<li class="tab_item"><span>주요장면</span></li>
+					<li class="tab_item"><span>문자중계</span></li>
+				</ul>
+				<div class="active_bar"></div>
+			</div>
 			<div class="score_scene_sec">
-				<ul>
-					<li>
-						<div class="vs_rank_wrap">
-							<div class="team_info left">
-								<span class="team_name">LG</span>
-								<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-							</div>
-							<div class="vs_middle_box">
-								<span class=""></span>
-							</div>
-							<div class="team_info right">
-								<span class="team_name">두산</span>
-								<span class="team_logo team_logo_OB"></span>
-							</div>
+				<!-- 득점한 팀 X -->
+				<div class="list_none">
+					<div class="img_box"></div>
+					<p>득점한 팀이 없습니다.</p>
+				</div>
+                <!-- // 득점한 팀 X -->
+				<ul> <!-- 득점한 팀이 없을 때 ul부터 히든 -->
+					<li class="usetap"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
+						<span class="ic_play"></span>
+						<span class="info_round">4회초</span>
+						<div class="team_info left">
+							<span class="team_name">LG</span>
+							<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
 						</div>
+						<div class="vs_middle_box">
+							<em class="i_score left">3</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+							<span class="vs_img"></span>
+							<em class="i_score right i_gray2">1</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+						</div>
+						<div class="team_info right">							
+							<span class="team_logo team_logo_OB"></span>
+							<span class="team_name">두산</span>
+						</div>
+						<span class="score_desc">중견수 희생플라이 아웃</span>
+						<span class="player_desc"><b>허경민</b> (투수 : 차우찬)</span>
+					</li>
+					<li class="usetap in_play"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
+						<span class="ic_play"></span>
+						<span class="info_round">3회말</span>
+						<div class="team_info left">
+							<span class="team_name">LG</span>
+							<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+						</div>
+						<div class="vs_middle_box">
+							<em class="i_score left">2</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+							<span class="vs_img"></span>
+							<em class="i_score right i_gray2">1</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+						</div>
+						<div class="team_info right">							
+							<span class="team_logo team_logo_OB"></span>
+							<span class="team_name">두산</span>
+						</div>
+						<span class="score_desc">좌익수 오른쪽 1루타</span>
+						<span class="player_desc"><b>최주환</b> (투수 : 차우찬)</span>
+					</li>
+					<li class="usetap"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
+						<span class="ic_play"></span>
+						<span class="info_round">1회초</span>
+						<div class="team_info left">
+							<span class="team_name">LG</span>
+							<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+						</div>
+						<div class="vs_middle_box">
+							<em class="i_score left">17</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+							<span class="vs_img"></span>
+							<em class="i_score right i_gray2">12</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+						</div>
+						<div class="team_info right">							
+							<span class="team_logo team_logo_OB"></span>
+							<span class="team_name">두산</span>
+						</div>
+						<span class="score_desc">폭투로 홈인</span>
+						<span class="player_desc"><b>김재호</b> (투수 : 차우찬)</span>
 					</li>
 				</ul>
 			</div>
+			<div class="scroll_top_sec">
+		    	<a href="#none" class="totop blind">TOP</a>
+		    </div>
 		</div>
 	</div>
 </div>
-
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
