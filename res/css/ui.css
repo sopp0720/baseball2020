@@ -694,7 +694,8 @@
 .relay.content .chat_wrap .time {position:absolute;width:6.0667rem;height:1.4667rem;font-size:1.2rem;line-height:1.4667rem;color: #b4b4b4;bottom:0;}
 .relay.content .msg_wrap.left .time {right:-6.4667rem;text-align:left;}
 .relay.content .msg_wrap.right .time {left:-6.4667rem;text-align:right;}
-.relay.content .chreer_selection {position:absolute;bottom:6.2333rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;}
+.relay.content .chreer_selection {display:none;position:absolute;bottom:6.2333rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;}
+.relay.content [data-chreer="theme_default"] .chreer_selection {display:block;}
 .relay.content .chreer_selection .chreer_team.left {display:inline-block;width:50%;height:100%;padding-left:2.9333rem;padding-top:0.7rem;text-align:left;}
 .relay.content .chreer_selection .chreer_team.right {display:inline-block;width:50%;height:100%;padding-right:2.9333rem;padding-top:0.7rem;text-align:right;}
 .relay.content .chreer_selection .team_name {display:inline-block;width:8.3333rem;height:2.4667rem;font-size:1.6rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
