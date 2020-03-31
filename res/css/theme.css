@@ -196,32 +196,70 @@
 .modal .bg_gradient.mlb {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 .modal .bg_gradient.abl {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 
-.ic_chat_input {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
-[data-chat="theme_default"] .ic_chat_input {background-position:0 0%;}
-[data-chat="theme_LG"] .ic_chat_input {background-position:0 40%;}
-[data-chat="theme_HH"] .ic_chat_input {background-position:0 10%;}
-[data-chat="theme_SS"] .ic_chat_input {background-position:0 90%;}
-[data-chat="theme_KT"] .ic_chat_input {background-position:0 30%;}
-[data-chat="theme_SK"] .ic_chat_input {background-position:0 80%;}
-[data-chat="theme_WO"] .ic_chat_input {background-position:0 100%;}
-.futures [data-chat="theme_WO"] .ic_chat_input {background-image:url(../images/logo/team_symbol_sq_WO_f.png);background-position:0 0;}
-[data-chat="theme_NC"] .ic_chat_input {background-position:0 60%;}
-[data-chat="theme_OB"] .ic_chat_input {background-position:0 70%;}
-[data-chat="theme_HT"] .ic_chat_input {background-position:0 20%;}
-[data-chat="theme_LT"] .ic_chat_input {background-position:0 50%;}
+.ic_chat_input,
+.ic_chreer,
+.ic_enemy {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
+[data-chreer="theme_default"] .ic_chat_input,
+[data-chreer="theme_default"] .ic_chreer,
+[data-enemy="theme_default"] .ic_enemy {background-position:0 0%;}
+[data-chreer="theme_LG"] .ic_chat_input,
+[data-chreer="theme_LG"] .ic_chreer,
+[data-enemy="theme_LG"] .ic_enemy {background-position:0 40%;}
+[data-chreer="theme_HH"] .ic_chat_input,
+[data-chreer="theme_HH"] .ic_chreer,
+[data-enemy="theme_HH"] .ic_enemy {background-position:0 10%;}
+[data-chreer="theme_SS"] .ic_chat_input,
+[data-chreer="theme_SS"] .ic_chreer,
+[data-enemy="theme_SS"] .ic_enemy {background-position:0 90%;}
+[data-chreer="theme_KT"] .ic_chat_input,
+[data-chreer="theme_KT"] .ic_chreer,
+[data-enemy="theme_KT"] .ic_enemy {background-position:0 30%;}
+[data-chreer="theme_SK"] .ic_chat_input,
+[data-chreer="theme_SK"] .ic_chreer,
+[data-enemy="theme_SK"] .ic_enemy {background-position:0 80%;}
+[data-chreer="theme_WO"] .ic_chat_input,
+[data-chreer="theme_WO"] .ic_chreer,
+[data-enemy="theme_WO"] .ic_enemy {background-position:0 100%;}
+.futures [data-chreer="theme_WO"] .ic_chat_input,
+.futures [data-chreer="theme_WO"] .ic_chreer,
+.futures [data-enemy="theme_WO"] .ic_enemy {background-image:url(../images/logo/team_symbol_sq_WO_f.png);background-position:0 0;}
+[data-chreer="theme_NC"] .ic_chat_input,
+[data-chreer="theme_NC"] .ic_chreer,
+[data-enemy="theme_NC"] .ic_enemy {background-position:0 60%;}
+[data-chreer="theme_OB"] .ic_chat_input,
+[data-chreer="theme_OB"] .ic_chreer,
+[data-enemy="theme_OB"] .ic_enemy {background-position:0 70%;}
+[data-chreer="theme_HT"] .ic_chat_input,
+[data-chreer="theme_HT"] .ic_chreer,
+[data-enemy="theme_HT"] .ic_enemy {background-position:0 20%;}
+[data-chreer="theme_LT"] .ic_chat_input,
+[data-chreer="theme_LT"] .ic_chreer,
+[data-enemy="theme_LT"] .ic_enemy {background-position:0 50%;}
 
 .ic_chat_send {max-width:100%;background-size:100%;background-image:url(../images/logo/ic_send.png);}
-[data-chat="theme_default"] .ic_chat_send {background-position:0 0%;}
-[data-chat="theme_LG"] .ic_chat_send {background-position:0 60%;}
-[data-chat="theme_HH"] .ic_chat_send {background-position:0 20%;}
-[data-chat="theme_SS"] .ic_chat_send {background-position:0 90%;}
-[data-chat="theme_KT"] .ic_chat_send {background-position:0 50%;}
-[data-chat="theme_SK"] .ic_chat_send {background-position:0 100%;}
-[data-chat="theme_WO"] .ic_chat_send {background-position:0 40%;}
-[data-chat="theme_NC"] .ic_chat_send {background-position:0 80%;}
-[data-chat="theme_OB"] .ic_chat_send {background-position:0 10%;}
-[data-chat="theme_HT"] .ic_chat_send {background-position:0 30%;}
-[data-chat="theme_LT"] .ic_chat_send {background-position:0 70%;}
+[data-chreer="theme_default"] .ic_chat_send {background-position:0 0%;}
+[data-chreer="theme_LG"] .ic_chat_send {background-position:0 60%;}
+[data-chreer="theme_HH"] .ic_chat_send {background-position:0 20%;}
+[data-chreer="theme_SS"] .ic_chat_send {background-position:0 90%;}
+[data-chreer="theme_KT"] .ic_chat_send {background-position:0 50%;}
+[data-chreer="theme_SK"] .ic_chat_send {background-position:0 100%;}
+[data-chreer="theme_WO"] .ic_chat_send {background-position:0 40%;}
+[data-chreer="theme_NC"] .ic_chat_send {background-position:0 80%;}
+[data-chreer="theme_OB"] .ic_chat_send {background-position:0 10%;}
+[data-chreer="theme_HT"] .ic_chat_send {background-position:0 30%;}
+[data-chreer="theme_LT"] .ic_chat_send {background-position:0 70%;}
+
+[data-chreer="theme_default"] .chreer_color {background-color:#C10A3A !important;color:#ffffff !important;}
+[data-chreer="theme_LG"] .chreer_color {background-color:#C10A3A !important;color:#ffffff !important;}
+[data-chreer="theme_HH"] .chreer_color {background-color:#DA5A17 !important;color:#ffffff !important;}
+[data-chreer="theme_SS"] .chreer_color {background-color:#0063AB !important;color:#ffffff !important;}
+[data-chreer="theme_KT"] .chreer_color {background-color:#000000 !important;color:#ffffff !important;}
+[data-chreer="theme_SK"] .chreer_color {background-color:#C8132F !important;color:#ffffff !important;}
+[data-chreer="theme_WO"] .chreer_color {background-color:#5B0016 !important;color:#ffffff !important;}
+[data-chreer="theme_NC"] .chreer_color {background-color:#1F477B !important;color:#ffffff !important;}
+[data-chreer="theme_OB"] .chreer_color {background-color:#C30025 !important;color:#ffffff !important;}
+[data-chreer="theme_HT"] .chreer_color {background-color:#131230 !important;color:#ffffff !important;}
+[data-chreer="theme_LT"] .chreer_color {background-color:#AC1020 !important;color:#ffffff !important;}
 
 /* Team Color bg*/
 .team_color_LG {background-color:#C10A3A;}
