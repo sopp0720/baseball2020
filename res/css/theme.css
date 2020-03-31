@@ -235,7 +235,6 @@
 .team_color_HT {background-color:#AC1020;}
 .team_color_LT {background-color:#C30025;}
 
-
 /* logo KBO */
 .team_logo_EA, .team_logo_HH, .team_logo_HT, .team_logo_KT, .team_logo_LG, 
 .team_logo_LT, .team_logo_NC, .team_logo_OB, .team_logo_SK, .team_logo_SS, 
@@ -392,8 +391,6 @@
 .team_ranking_bg_LT {background-image:url('../images/bg/bg-team-rangking-lotte.png');}
 .team_ranking_bg_GY {background-image:url('../images/bg/bg-team-rangking-goyang.png');}
 
-
-
 /* Team 1순위 piching type color */
 .pitching_color_DEFAULT .i_ratio {background-color:#c10a3a;}
 .pitching_color_DEFAULT .i_name,
@@ -451,6 +448,27 @@
 .analysis_color_LT.graph_info .i_graph {background-color:#c30025;}
 .analysis_color_LT.graph_info .i_ratio,.analysis_color_LT.graph_info .total_record {color:#c30025;}
 
+/* Current team color&bg */
+.current_team_LG .i_ratio span {background-color:#c10a3a;}
+.current_team_LG .info_tbl > div b {color:#c10a3a;}
+.current_team_SS .i_ratio span {background-color:#0063ab;}
+.current_team_SS .info_tbl > div b {color:#0063ab;}
+.current_team_HH .i_ratio span {background-color:#da5a17;}
+.current_team_HH .info_tbl > div b {color:#da5a17;}
+.current_team_OB .i_ratio span {background-color:#131230;}
+.current_team_OB .info_tbl > div b {color:#131230;}
+.current_team_WO .i_ratio span {background-color:#5b0016;}
+.current_team_WO .info_tbl > div b {color:#5b0016;}
+.current_team_SK .i_ratio span {background-color:#c8132f;}
+.current_team_SK .info_tbl > div b {color:#c8132f;}
+.current_team_NC .i_ratio span {background-color:#1f477b;}
+.current_team_NC .info_tbl > div b {color:#1f477b;}
+.current_team_KT .i_ratio span {background-color:#000000;}
+.current_team_KT .info_tbl > div b {color:#000000;}
+.current_team_HT .i_ratio span {background-color:#ac1020;}
+.current_team_HT .info_tbl > div b {color:#ac1020;}
+.current_team_LT .i_ratio span {background-color:#c30025;}
+.current_team_LT .info_tbl > div b {color:#c30025;}
 
 
 /*******************************************************************************************/
