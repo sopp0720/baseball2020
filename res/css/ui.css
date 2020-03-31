@@ -1037,15 +1037,15 @@
 .relay.content .current_sec .current_player .info_tbl > div b {display:block;position:absolute;top:0;right:0.8667rem;width:3rem;height:auto;font-size:1.2667rem;font-weight:bold;text-align:right;}
 .relay.content .current_sec .current_player .count_desc {margin-top:1.3333rem;}
 .relay.content .count_desc {margin:1.6667rem 0 0;}
-.relay.content .count_desc li {position:relative;margin-top:0.3333rem;height:2.3333rem;font-size:0;}
+.relay.content .count_desc li {position:relative;margin-top:0.3333rem;height:2.3333rem;overflow:hidden;}
 .relay.content .count_desc li:first-child {margin-top:0;}
-.relay.content .count_desc li span,.count_desc li b {display:inline-block;vertical-align:top;}
-.relay.content .count_desc li .num {margin-top:0.3rem;width:1.8rem;height:1.8rem;line-height:1.7333rem;font-size:1.2rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:50%;}
+.relay.content .count_desc li span,.count_desc li b {float:left;}
+.relay.content .count_desc li .num {margin-top:0.2667rem;width:1.8rem;height:1.8rem;line-height:1.7333rem;font-size:1.2rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:50%;}
 .relay.content .count_desc li .num.strike {background-color:#fea000;}
 .relay.content .count_desc li .num.ball {background-color:#159b14;}
 .relay.content .count_desc li .num.hit {background-color:#2759b1;}
-.relay.content .count_desc li .name {margin-left:0.5rem;height:2.2667rem;font-size:1.5333rem;font-weight:500;color:#2b2b2b;}
-.relay.content .count_desc li .desc {margin:0.2667rem 0 0.2667rem 0.6667rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;}
+.relay.content .count_desc li .name {margin-top:0.1333rem;margin-left:0.5rem;height:2.2667rem;font-size:1.5333rem;font-weight:500;color:#2b2b2b;}
+.relay.content .count_desc li .desc {margin:0.3333rem 0 0.2667rem 0.6667rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;}
 .relay.content .count_desc li .count {position:absolute;top:0.2rem;right:0;font-size:1.3333rem;font-weight:500;text-align:right;color:#2b2b2b;}
 .relay.content .hitter_info {position:relative;}
 .relay.content .hitter_info .player_img {position:absolute;top:0;left:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
