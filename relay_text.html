@@ -12,7 +12,7 @@
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content relay">
-			<div class="sec_wrapper relay_video_wrap">
+			<div class="sec_wrapper relay_video_wrap" style="display:none;">
 				<div class="relay_video_thumb" style="background-image:url('res/images/bg-half-player-img-pts.png')">
 					<!--
 					<span class="ic_show"></span>
@@ -164,23 +164,323 @@
 				<div class="active_bar"></div>
 			</div>
 			<div class="sec_wrapper">
-				<div class="inner">
+				<div class="view_base">
+					<!-- 투수 -->
+					<div class="tag_box base_pitcher">
+						<span class="i_name">배재환</span>
+						<span class="bar"></span>
+						<span class="pitch_num">투구수 <b>11</b></span>
+					</div>
+					<!-- // 투수 -->
+					<!-- 투수팀 로고 -->
+					<div class="pitcher_team_logo">
+						<span class="team_logo team_logo_OB"></span>
+					</div>
+					<!-- // 투수팀 로고 -->
+					<!-- 타자팀 로고 -->
+					<div class="hitter_team_logo">
+						<span class="team_logo team_logo_LG"></span>
+					</div>
+					<!-- // 타자팀 로고 -->
+					<!-- 타자 -->
+					<div class="tag_box base_hitter">
+						<span class="player_num">17</span>
+						<span class="i_name">오지환</span>
+					</div>
+					<!-- // 타자 -->
+					<!-- 1루 -->
+					<div class="tag_box_sm base_first">
+						<span class="i_name">손주인</span>
+					</div>
+					<!-- // 1루 -->
+					<!-- 3루 -->
+					<div class="tag_box_sm base_third">
+						<span class="i_name">오지환</span>
+					</div>
+					<!-- // 3루 -->
+					<!-- 볼 카운트 -->
+					<div class="ball_count">
+						<span class="info_round">7회말</span>
+						<div class="info_count">
+							<div class="circle_wrap ball_wrap">
+								<span class="i_name">B</span>
+								<span class="circle on"></span> <!-- on 클래스 추가 -->
+								<span class="circle"></span>
+								<span class="circle"></span>
+							</div>
+							<div class="circle_wrap strike_wrap">
+								<span class="i_name">S</span>
+								<span class="circle on"></span> <!-- on 클래스 추가 -->
+								<span class="circle"></span>									
+							</div>
+							<div class="circle_wrap foul_wrap">
+								<span class="i_name">O</span>
+								<span class="circle on"></span> <!-- on 클래스 추가 -->
+								<span class="circle on"></span>									
+							</div>
+						</div>
+					</div>
+					<!-- // 볼 카운트 -->
+					<!-- 대기 타선 -->
+					<div class="stand_hitter">
+						<span class="title">대기 타선</span>
+						<ul>
+							<li><b>8</b>스크럭스</li>
+							<li><b>9</b>김용의</li>
+							<li><b>1</b>문선재</li>
+						</ul>
+					</div>
+					<!-- // 대기 타선 -->
+					<!-- 교체가능 선수보기 or 문자중계 보기 -->
+					<div  class="btn_base_view">
+						<span>교체가능 선수보기</span>
+						<i></i>
+					</div>
+					<!-- // 교체가능 선수보기 or 문자중계 보기 -->
+				</div>
+				<div class="tab_3depth" id="">
+					<ul class="tab_link">
+						<li class="tab_item active"><span>1회</span></li>
+						<li class="tab_item"><span>2회</span></li>
+						<li class="tab_item"><span>3회</span></li>
+						<li class="tab_item"><span>4회</span></li>
+						<li class="tab_item"><span>5회</span></li>
+						<li class="tab_item"><span>6회</span></li>
+						<li class="tab_item"><span>7회</span></li>
+						<li class="tab_item"><span>8회</span></li>
+						<li class="tab_item"><span>9회</span></li>
+						<li class="tab_item"><span>10회</span></li>
+						<li class="tab_item"><span>11회</span></li>
+						<li class="tab_item"><span>12회</span></li>
+					</ul>
+				</div>
+				<div class="current_sec">
+					<div class="inner">
+						<!-- 현재 투수 -->
+						<div class="current_player current_team_OB"> <!-- theme.css : current team -->
+							<div class="title_hd">
+								<span class="sec_title">두산 현재 투수</span>
+							</div>
+							<div class="player_info">
+								<div class="info_top">
+									<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+										<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+										</span>                                
+									</div>
+									<div class="player_name">
+										<div class="i_ratio">
+											<span>평균자책 <b>5.01</b></span>
+										</div>
+										<span class="i_name"><b>함덕주</b> 우투</span>								
+									</div>
+									<span class="team_logo team_logo_OB"></span> <!-- theme.css : logo KBO -->
+								</div>
+								<div class="info_tbl">
+									<div>
+										<span>투구</span>
+										<b>22</b>
+									</div>
+									<div>
+										<span>이닝</span>
+										<b>0.2</b>
+									</div>
+									<div>
+										<span>삼진</span>
+										<b>2</b>
+									</div>
+									<div>
+										<span>볼넷</span>
+										<b>1</b>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 현재 투수 -->
+						<!-- 현재 타자 -->
+						<div class="current_player current_team_LG"> <!-- theme.css : current team -->
+							<div class="title_hd">
+								<span class="sec_title">LG 현재 타자</span>
+							</div>
+							<div class="player_info">
+								<div class="info_top">
+									<div class="player_img" style="background-image:url('res/images/player_img2.jpg')"> <!-- 선수 이미지 -->
+										<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_LG"></span> <!-- theme.css : symbol KBO -->
+										</span>                                
+									</div>
+									<div class="player_name">
+										<div class="i_ratio">
+											<span>타율 <b>0.306</b></span>
+										</div>
+										<span class="i_name"><b>이천웅</b> 우투</span>								
+									</div>
+									<span class="team_logo team_logo_LG"></span> <!-- theme.css : logo KBO -->
+								</div>
+								<div class="info_tbl">
+									<div>
+										<span>투구</span>
+										<b>22</b>
+									</div>
+									<div>
+										<span>이닝</span>
+										<b>0.2</b>
+									</div>
+									<div>
+										<span>삼진</span>
+										<b>2</b>
+									</div>
+									<div>
+										<span>볼넷</span>
+										<b>1</b>
+									</div>
+								</div>
+							</div>
+							<!-- 스트라이크, 볼, 타격 -->
+							<ul class="count_desc">
+								<li>
+									<span class="num hit">3</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
+									<b class="name">타격</b>
+									<span class="desc">134km 직구</span>
+									<!--<span class="count">2 - 2</span>-->
+								</li>
+								<li>
+									<span class="num strike">2</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
+									<b class="name">스트라이크</b>
+									<span class="desc">134km 직구</span>
+									<!--<span class="count">2 - 2</span>-->
+								</li>
+								<li>
+									<span class="num ball">1</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
+									<b class="name">볼</b>
+									<span class="desc">129km 슬라이더</span>
+									<!--<span class="count">2 - 2</span>-->
+								</li>
+							</ul>
+							<!-- 스트라이크, 볼, 타격 -->
+						</div>
+						<!-- // 현재 타자 -->
+					</div>
+				</div>
+			</div>
 <style>
-.view_base {height:0;padding-bottom:56.203703%;background:url('res/images/img-broadcast-base.png') no-repeat;background-size:100% auto;}
-.view_base .base_rel {position:relative;}
-.view_base .base_rel .base_pitcher {display:inline-block;padding:0 0.9333rem;height:2.3333rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;}
-.view_base .base_rel .base_pitcher span {display:inline-block;vertical-align:top;color:#fff;font-size:14px;}
+.base_center {transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.view_base {position:relative;height:0;padding-bottom:56.203703%;background:url('res/images/img-broadcast-base.png') no-repeat;background-size:100% auto;}
+.view_base {position:relative;text-align:center;}
+
+.view_base .tag_box {display:inline-block;padding:0.4rem 0.9333rem;height:2.3333rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
+.view_base .tag_box_sm {display:inline-block;padding:0.1333rem 0.7667rem;height:1.8rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
+.view_base .tag_box span,.view_base .tag_box_sm span {display:inline-block;vertical-align:top;color:#ffffff;}
+
+.view_base .base_pitcher {position:absolute;top:28.500823%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.view_base .base_pitcher .i_name {height:1.5333rem;font-size:1.2667rem;font-weight:500;line-height:1.21;}
+.view_base .base_pitcher .bar {margin:0.3rem 0.6667rem 0.1667rem;width:1px;height:1.0667rem;background-color:#ffffff;}
+.view_base .base_pitcher .pitch_num {height:1.5333rem;font-size:1.1333rem;font-weight:500;line-height:1.35;}
+
+.view_base .team_logo {display:inline-block;width:2.6rem;height:2.3333rem;vertical-align:top;}
+.view_base .pitcher_team_logo {position:absolute;top:43.657331%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.view_base .hitter_team_logo {position:absolute;bottom:16.803953%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+
+.view_base .base_hitter {position:absolute;bottom:1.812191%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.view_base .base_hitter .player_num {height:1.53333rem;font-size:1.1333rem;line-height:1.35;}
+.view_base .base_hitter .i_name {margin-left:0.2rem;height:1.53333rem;font-size:1.2667rem;line-height:1.21;}
+.view_base .tag_box_sm .i_name {height:1.5333rem;font-size:1.0667rem;font-weight:bold;line-height:1.44;}
+.view_base .base_first {position:absolute;top:47.116968%;right:17.87037%;}
+.view_base .base_third {position:absolute;top:47.116968%;left:17.87037%;}
+.view_base .ball_count {position:absolute;bottom:3.294892%;left:1.851851%;width:5.3333rem;height:7.3333rem;background-color:rgba(89,110,100,.85);}
+.view_base .ball_count .info_round {display:block;height:1.9333rem;line-height:1.9333rem;font-size:1rem;font-weight:500;text-align:center;color:#ffffff;background-color:rgba(60,82,73,.5);}
+.view_base .ball_count .info_count {padding-top:0.2667rem;padding-left:0.8667rem;height:5.4rem;text-align:left;font-size:0;}
+.view_base .ball_count .info_count .circle_wrap > span {display:inline-block;vertical-align:top;}
+.view_base .ball_count .info_count .circle_wrap .i_name {margin-right:0.1333rem;width:0.7667rem;height:1.5rem;font-size:1rem;text-align:center;color:#ffffff;}
+.view_base .ball_count .info_count .circle_wrap .circle {margin:0.4333rem 0 0.3333rem 0.1667rem;width:0.7333rem;height:0.7333rem;border-radius:50%;border:1px solid #000000;background-color:rgba(0,0,0,.7);}
+.view_base .ball_count .info_count .ball_wrap {margin-top:0;}
+.view_base .ball_count .info_count .ball_wrap .circle.on {background-color:#00c0ff;}
+.view_base .ball_count .info_count .strike_wrap {margin-top:0.0667rem;}
+.view_base .ball_count .info_count .strike_wrap .circle.on {background-color:#fea000;}
+.view_base .ball_count .info_count .foul_wrap {margin-top:0.0333rem;}
+.view_base .ball_count .info_count .foul_wrap .circle.on {background-color:#e7484f;}
+.view_base .stand_hitter {position:absolute;bottom:3.294892%;right:1.851851%;width:6rem;height:7.3333rem;background-color:rgba(89,110,100,.85);}
+.view_base .stand_hitter .title {display:block;height:1.9333rem;line-height:1.9333rem;font-size:1rem;font-weight:500;text-align:center;color:rgba(255,255,255,.78);background-color:rgba(60,82,73,.6);}
+.view_base .stand_hitter ul {padding:0.2667rem 0.6667rem 0.5rem;height:5.4rem;text-align:left;}
+.view_base .stand_hitter ul li {min-height:1.5rem;font-size:1rem;font-weight:normal;color:#ffffff;}
+.view_base .stand_hitter ul li b {margin-right:0.4rem;}
+.view_base .btn_base_view {display:block;position:absolute;top:3.294892%;right:1.851851%;width:6.8rem;height:5.2667rem;border:0.1333rem solid #738c78;background-color:rgba(60, 82, 73, 0.8);border-radius:6px;}
+.view_base .btn_base_view span {display:inline-block;margin:0.5rem auto 0;width:4.4333rem;height:3.0667rem;font-size:1.2rem;font-weight:bold;line-height:1.28;text-align:center;color:#ffffff;vertical-align:top;}
+.view_base + .tab_3depth {margin-top:0;}
+.current_sec {margin-top:1.5333rem;}
+.current_sec .current_player:first-child {margin-top:1.5333rem;}
+.current_sec .current_player:last-child {margin-top:2.1667rem;}
+.current_sec .current_player .title_hd {padding-top:0.5333rem;}
+.current_sec .current_player .player_info {margin-top:0.6667rem;padding-top:0.5333rem;height:10.1rem;}
+.current_sec .current_player .info_top {position:relative;}
+.current_sec .current_player .info_top .player_img {position:absolute;top:0.1333rem;left:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
+.current_sec .current_player .info_top .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
+.current_sec .current_player .info_top .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
+.current_sec .current_player .info_top .player_name {margin-left:6rem;}
+.current_sec .current_player .info_top .player_name .i_ratio span {display:inline-block;padding:0 1rem;vertical-align:top;height:1.8rem;line-height:1.8rem;font-size:1.1333rem;font-weight:normal;color:#ffffff;border-radius:0.9rem;text-align:center;}
+.current_sec .current_player .info_top .player_name .i_ratio span b {font-weight:bold;}
+.current_sec .current_player .info_top .player_name .i_name {display:block;margin-top:0.3333rem;height:2.4667rem;font-size:1.6667rem;font-weight:normal;color:#2b2b2b;}
+.current_sec .current_player .info_top .player_name .i_name b {font-weight:bold;}
+.current_sec .current_player .info_top .team_logo {display:block;position:absolute;top:0;right:0;width:5.2rem;height:4.6rem;}
+.current_sec .current_player .info_tbl {margin-top:1.9rem;height:3.0667rem;border:1px solid #e8e9ef;border-radius:0.7333rem;}
+.current_sec .current_player .info_tbl > div {position:relative;float:left;padding:0 0.8667rem 0 0.9rem;height:100%;line-height:3rem;width:25%;border-right:1px solid #e8e9ef;}
+.current_sec .current_player .info_tbl > div:nth-child(odd) {background-color:#f5f6f9;}
+.current_sec .current_player .info_tbl > div:last-child {border-right:0;}
+.current_sec .current_player .info_tbl > div span {display:block;width:2.3333rem;height:auto;font-size:1.2667rem;color:#2b2b2b;}
+.current_sec .current_player .info_tbl > div b {display:block;position:absolute;top:0;right:0.8667rem;width:3rem;height:auto;font-size:1.2667rem;font-weight:bold;text-align:right;}
+.current_sec .current_player .count_desc {margin-top:1.3333rem;}
+.count_desc li {position:relative;margin-top:0.3333rem;height:2.2667rem;font-size:0;}
+.count_desc li:first-child {margin-top:0;}
+.count_desc li span,.count_desc li b {display:inline-block;vertical-align:top;}
+.count_desc li .num {margin:0.2667rem 0;width:1.8rem;height:1.8rem;line-height:1.7333rem;font-size:1.2rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:50%;}
+.count_desc li .num.strike {background-color:#fea000;}
+.count_desc li .num.ball {background-color:#159b14;}
+.count_desc li .num.hit {background-color:#2759b1;}
+.count_desc li .name {margin-left:0.5rem;height:100%;font-size:1.5333rem;font-weight:500;color:#2b2b2b;}
+.count_desc li .desc {margin:0.2667rem 0 0.2667rem 0.6667rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;}
+.count_desc li .count {position:absolute;top:0.2rem;right:0;font-size:1.3333rem;font-weight:500;text-align:right;color:#2b2b2b;}
+.hitter_info {position:relative;}
+.hitter_info .player_img {position:absolute;top:0;left:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
+.hitter_info .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
+.hitter_info .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
+.hitter_info .hitter_desc {margin-left:6rem;height:4.4667rem;}
+.hitter_info .info_top > span {display:inline-block;vertical-align:top;}
+.hitter_info .info_top {font-size:0;}
+.hitter_info .info_top .i_name {height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#2b2b2b;}
+.hitter_info .info_top .i_num {margin-left:0.3667rem;height:2.4667rem;font-size:1.6667rem;font-weight:500;color:#2b2b2b;}
+.hitter_info .info_top .i_average {margin:0.1rem 0 0.1rem 0.8333rem;height:2.2667rem;font-size:1.5333rem;color:#8d8d8d;}
+.hitter_info .info_bottom {margin-top:9px;font-size:0;}
+.hitter_info .info_bottom span {display:inline-block;margin-left:1rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;vertical-align:top;}
+.hitter_info .info_bottom span:first-child {margin-left:0;}
 </style>
-					<div class="view_base">
-						<div class="base_rel">
-							<div class="base_pitcher">
-								<span class="i_name">배재환</span>
-								<span class="">투구수 11</span>
-							</div><!-- 투수 -->
+			<div class="sec_wrapper">
+				<div class="inner">
+					<!--  02-1. 타자 정보 -->
+					<div class="hitter_info">
+						<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+							<span class="team_logo_xs team_color_LG"> <!-- theme.css : team_color_LG -->
+								<span class="team_symbol_LG"></span> <!-- theme.css : symbol KBO -->
+							</span>
+						</div>
+						<div class="hitter_desc">
+							<div class="info_top">
+								<span class="i_name">윤진호</span>
+								<span class="i_num">5번타자</span>
+								<span class="i_average">타율 0.231</span>
+							</div>
+							<div class="info_bottom">
+								<span>타수 1</span>
+								<span>안타 1</span>
+								<span>볼넷 1</span>
+								<span>홈런 1</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			
+			
 			<div class="scroll_top_sec">
 		    	<a href="#none" class="totop blind">TOP</a>
 		    </div>

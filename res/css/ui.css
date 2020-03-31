@@ -327,7 +327,7 @@
 .team.content .sec_rate .player_img {position:absolute;left:0;top:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
 .team.content .sec_rate .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
 .team.content .sec_rate .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
-.team.content .sec_rate .desc {margin-left:5.6rem;padding-left:0.1333rem;height:5rem;font-size:0;border-bottom:0.0667rem solid #dee1e6;}
+.team.content .sec_rate .desc {margin-left:5.6rem;padding-left:0.1333rem;height:5rem;font-size:0;border-bottom:1px solid #dee1e6;}
 .team.content .sec_rate .desc > span {display:inline-block;line-height:4.3333rem;vertical-align:top;}
 .team.content .sec_rate .desc > strong {float:right;display:inline-block;line-height:4.3333rem;vertical-align:top;}
 .team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:bold;color:#000000;opacity:0.8;text-align:center;}
@@ -368,7 +368,7 @@
 
 /* TEAM - player srh result */
 .team.content .srh_result {margin-top:2.3333rem}
-.team.content .srh_result li {position:relative;padding:1.9333rem 0 1.9rem;border-bottom:0.0667rem solid rgba(222,225,230,.4);background:url('../images/ic-arrow-gray.png') no-repeat 100% 50%;background-size:auto 1.4rem;}
+.team.content .srh_result li {position:relative;padding:1.9333rem 0 1.9rem;border-bottom:1px solid rgba(222,225,230,.4);background:url('../images/ic-arrow-gray.png') no-repeat 100% 50%;background-size:auto 1.4rem;}
 .team.content .srh_result li .player_img {position:absolute;left:0;top:2.2rem;width:5.7333rem;height:5.7333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
 .team.content .srh_result li .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4667rem;width:2rem;height:2rem;border-radius:50%;}
 .team.content .srh_result li .player_img .team_logo_xs > span {display:block;margin:0.3333rem auto;width:1.3333rem;height:1.3333rem;background-repeat:no-repeat;}
@@ -546,9 +546,9 @@
 .team.content .scroll_ranking li .team_bg .title {display:block;padding-top:9.259259%;height:2.2rem;font-size:1.5rem;font-weight:bold;color:#ffffff;letter-spacing:-0.075rem;text-align:center;}
 .team.content .scroll_ranking li .team_bg .my_team {display:block;position:absolute;top:6.613756%;right:6.613756%;width:1.6667rem;height:1.6667rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.4667rem;}
 .team.content .scroll_ranking li .team_bg .rank_rate {display:block;position:absolute;bottom:15.608465%;left:0;right:0;height:1.8667rem;font-size:1.2667rem;font-weight:bold;text-align:center;color:#ffffff;}
-.team.content .scroll_ranking li .rest_rank {padding:0.6667rem 1rem 0.7rem;border:solid 0.0667rem #dee1e6;border-top:0;}
+.team.content .scroll_ranking li .rest_rank {padding:0.6667rem 1rem 0.7rem;border:solid 1px #dee1e6;border-top:0;}
 .team.content .scroll_ranking li .rest_rank .rest_inner {position:relative;font-size:0;}
-.team.content .scroll_ranking li .rest_rank .rest_inner:last-child {margin-top:0.6667rem;padding-top:0.6333rem;border-top: solid 0.0667rem #dee1e6;}
+.team.content .scroll_ranking li .rest_rank .rest_inner:last-child {margin-top:0.6667rem;padding-top:0.6333rem;border-top: solid 1px #dee1e6;}
 .team.content .scroll_ranking li .rest_rank .rank_num {display:inline-block;width:1rem;height:1.8667rem;font-size:1.2667rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
 .team.content .scroll_ranking li .rest_rank .team_name {display:inline-block;margin-left:0.2667rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;color:#2b2b2b;vertical-align:top;}
 .team.content .scroll_ranking li .rest_rank .my_team {display:inline-block;margin-top:0.3333rem;margin-left:0.5rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
@@ -818,7 +818,7 @@
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .team_logo {display:inline-block;width:2.8rem;height:2.5rem;vertical-align:top;}
 .relay.content .key_player_wrap .key_desc {font-size:1.0667rem;letter-spacing:-0.0167rem;text-align:center;color:#b4b4b4;}
 .relay.content .starting_lineup .start_player {position:relative;width:46.25506%;height:4.7667rem;}
-.relay.content .starting_lineup .start_player .start_player_box {padding:0.6333rem 0;height:4.7667rem;border-bottom:0.0667rem solid #dee1e6;}
+.relay.content .starting_lineup .start_player .start_player_box {padding:0.6333rem 0;height:4.7667rem;border-bottom:1px solid #dee1e6;}
 .relay.content .starting_lineup .start_player .player_desc {float:left;width:65.207877%;height:3.5rem;}
 .relay.content .starting_lineup .start_player .player_desc > span {display:block;}
 .relay.content .starting_lineup .start_player .player_desc .desc1 {height:1.8667rem;font-size:0;}
@@ -843,8 +843,8 @@
 .relay.content .starting_lineup .start_player.left .player_img_wrap .oval {right:0.9rem;}
 .relay.content .starting_lineup .start_player.right .player_img_wrap .oval {left:0.9rem;}
 .relay.content .starting_lineup .start_num {position:relative;float:none;width:7.489878%;overflow:hidden;}
-.relay.content .starting_lineup .start_num span {display:block;float:none;height:4.7667rem;line-height:4.7667rem;font-family:'bebas_neueregular';font-size:1.5333rem;color:rgba(43,43,43,.7);text-align:center;background-color:rgba(242, 243, 244, 0.4);border-bottom:0.0667rem solid #dee1e6;}
-.relay.content .starting_lineup .i_team_wrap {margin-top:0.6667rem;padding:0.4rem 0 0.4333rem;height:3.8667rem;border-top:2px solid #7f7f7f;border-bottom:0.0667rem solid #dee1e6;}
+.relay.content .starting_lineup .start_num span {display:block;float:none;height:4.7667rem;line-height:4.7667rem;font-family:'bebas_neueregular';font-size:1.5333rem;color:rgba(43,43,43,.7);text-align:center;background-color:rgba(242, 243, 244, 0.4);border-bottom:1px solid #dee1e6;}
+.relay.content .starting_lineup .i_team_wrap {margin-top:0.6667rem;padding:0.4rem 0 0.4333rem;height:3.8667rem;border-top:2px solid #7f7f7f;border-bottom:1px solid #dee1e6;}
 .relay.content .starting_lineup .i_team_wrap .i_team {position:relative;width:46.25506%;}
 .relay.content .starting_lineup .i_team_wrap .i_team .i_name {display:block;float:left;margin-top:0.5333rem;width:65.207877%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#474747;}
 .relay.content .starting_lineup .i_team_wrap .i_team .team_logo_wrap {display:block;position:relative;float:left;width:34.792122%;}
@@ -1146,9 +1146,9 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_style1 .table_left td {border-right:1px solid #dee1e6;}
 
 .table_data_style {width:100%;}
-.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:0.0667rem solid #7f7f7f;border-bottom:0.0667rem solid #dee1e6;}
+.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:1px solid #7f7f7f;border-bottom:1px solid #dee1e6;}
 .table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;color:#2b2b2b;text-align:center;}
-.table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:0.0667rem solid #dee1e6;}
+.table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:1px solid #dee1e6;}
 .table_data_style tbody td .cell {height:2.2rem;font-family:'bebas_neueregular';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
 .title_tbl {padding:0.2rem 0 0.1667rem;font-size:0;}
 .title_tbl span {display:inline-block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;vertical-align:top;}
@@ -1212,7 +1212,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .bb-line {stroke-width:2px;}
 .area_chart_wrap {position:relative;}
 .area_chart_legend {position:absolute;top:0;right:0;height:1.5rem;padding-left:2.1667rem;font-size:1rem;font-weight:normal;line-height:normal;text-align:right;color:#444444;z-index:1;}
-.area_chart_legend:before {content:'';position:absolute;left:0;top:0.0667rem;;width:1.6667rem;height:1.3667rem;background-image:url(../images/ic-team-top-legend.png);background-size:100%;}
+.area_chart_legend:before {content:'';position:absolute;left:0;top:0.0667rem;width:1.6667rem;height:1.3667rem;background-image:url(../images/ic-team-top-legend.png);background-size:100%;}
 
 .bar_chart_wrap {position:relative;}
 .bar_chart_legend {position:absolute;top:0;right:0;z-index:1;}
