@@ -630,7 +630,7 @@
 .base_1 {background-image:url('../images/ic-base-03.png');}
 .base_2 {background-image:url('../images/ic-base-02.png');}
 .base_3 {background-image:url('../images/ic-base-01.png');}
-.base_12 {background-image:url('../images/ic-base-02-03png');}
+.base_12 {background-image:url('../images/ic-base-02-03.png');}
 .base_23 {background-image:url('../images/ic-base-01-02.png');}
 .base_13 {background-image:url('../images/ic-base-01-03.png');}
 .base_full {background-image:url('../images/ic-base-full.png');}
@@ -663,10 +663,11 @@
 .relay.content .play_list_none .quo_marks:before {content:'';position:absolute;left:-1.2rem;top:-0.3667rem;width:1.0667rem;height:1.0667rem;background-image:url(../images/ic-home-top-text-s.png);background-size:100%;}
 
 /* Relay - chreer */
-
 .relay.content .chat_wrap {display:none;position:absolute;left:0;right:0;top:5.5333rem;bottom:0;}
 .cheering.content .chat_wrap {display:block;}
-.relay.content .chat_inner {position:absolute;left:0;right:0;top:0;bottom:5.0667rem;overflow-x:hidden;overflow-y:auto;background-color:#f2f3f4;}
+.relay.content .chat_inner {position:absolute;left:0;right:0;top:0;bottom:5.0667rem;overflow-x:hidden;overflow-y:auto;background-color:#f2f3f4;white-space:nowrap;}
+.relay.content .chat_inner:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
+.relay.content .scroll_bottom {width:100%;display:inline-block;vertical-align:bottom;white-space:normal;}
 .relay.content .chat_btm {position:absolute;bottom:0;left:0;right:0;background-color:#fff;border-top:1px solid #dee1e6;padding:0 7.1333rem 0 4.2rem;}
 .relay.content .chat_input {display:table;width:100%;max-height:10.4rem;height:5.0667rem;padding:1rem 0;}
 .relay.content .textarea_wrap {width:100%;vertical-align:middle;display:table-cell;font-size:0;}
@@ -674,9 +675,21 @@
 .relay.content .textarea::-webkit-input-placeholder {color:#858585 !important;font-size:1.4667rem;line-height:2.1667rem;}
 .relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.6rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
 .relay.content .chat_wrap .ic_chat_send {position:absolute;bottom:1.0333rem;right:1.5333rem;width:3rem;height:3rem;}
+.relay.content .msg_wrap {position:relative;}
+.relay.content .msg_wrap.left {text-align:left;border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
+.relay.content .msg_wrap.right {text-align:right;border-top-left-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
+.relay.content .msg_wrap .msg {background-color:#fff;max-width:25.4rem;display:inline-block;}
+.relay.content .msg_wrap.left .msg {border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;padding:0.7333rem 1.1333rem 1.1333rem;}
+.relay.content .msg_wrap.right .msg {border-top-left-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;padding:0.7333rem 1.1333rem 1.1333rem;}
+.relay.content .chat_wrap .user {position:relative;display:inline-block;height:2.1667rem;font-size:1.4667rem;font-weight:bold;line-height:2.1667rem;color:#000000;}
+.relay.content .left .user {padding-right:1.9333rem;}
+.relay.content .right .user {padding-left:1.9333rem;}
+.relay.content .user .team_logo_xs {position:absolute;width:1.6667rem;height:1.6667rem;top:0.2333rem;border-radius:50%;}
+.relay.content .left .team_logo_xs {right:0;}
+.relay.content .right .team_logo_xs {left:0;}
+.relay.content .user .team_logo_xs span {position:absolute;width:1.2667rem;height:1.2667rem;margin:auto;left:0;right:0;bottom:0;top:0;}
+.relay.content .chat_wrap .comment {font-size:1.4667rem;font-weight:normal;line-height:2.1667rem;color:#000000;}
 
-
-.relay.content .relay_card_wrap + .tab_1depth {margin-top:0;}
 
 /* Relay - game info */
 .relay.content .video_wrap + .tab_1depth {margin-top:0;}

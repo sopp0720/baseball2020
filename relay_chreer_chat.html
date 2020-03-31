@@ -8,6 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
+<select id="chatSelect" style="z-index:99999; position:fixed; top:150px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">응원하기 팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+
 <div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
@@ -168,9 +182,34 @@
 						<div class="active_bar"></div>
 					</div>
 				</div>
-				<div class="chat_wrap">
+				<div class="chat_wrap" data-chat="theme_LG" id="chat_wrap">
 					<div class="chat_inner">
-						<p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p>
+						<div class="scroll_bottom">
+							<div class="msg_wrap left">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+								</div>
+							</div>
+							<div class="msg_wrap right">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+								</div>
+							</div>
+							<div class="msg_wrap left">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="chat_btm">
 						<span class="ic_chat_input"></span>
@@ -181,8 +220,6 @@
 						</div>
 						<span class="ic_chat_send"></span>
 					</div>
-
-
 				</div>
 			</div>
 		</div>
@@ -210,6 +247,12 @@ function content_scroll(){
 content_scroll();
 window.addEventListener('resize', function(e) {
 	content_scroll();
+});
+</script>
+<script>
+document.getElementById('chatSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('chat_wrap').setAttribute('data-chat','');
+	document.getElementById('chat_wrap').setAttribute('data-chat',this.value);
 });
 </script>
 
