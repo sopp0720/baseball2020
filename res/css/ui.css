@@ -974,6 +974,110 @@
 .btn_detail_wrap {margin-top:2.1333rem;height:5.5333rem;border-top:1px solid #e6e6e6;}
 .btn_detail_wrap > button {display:block;width:100%;padding:1.7667rem 0 1.8rem;height:100%;font-size:1.3333rem;font-weight:500;text-align:center;color:#7a7a7a;}
 
+/* Relay - relay text */
+.relay.content .view_base {position:relative;height:0;padding-bottom:56.203703%;background:url('../images/img-broadcast-base.png') no-repeat;background-size:100% auto;text-align:center;}
+.relay.content .view_base .tag_box {display:inline-block;padding:0.4rem 0.9333rem;height:2.3333rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
+.relay.content .view_base .tag_box_sm {display:inline-block;padding:0.1333rem 0.7667rem;height:1.8rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
+.relay.content .view_base .tag_box span,.view_base .tag_box_sm span {display:inline-block;vertical-align:top;color:#ffffff;}
+.relay.content .view_base .base_pitcher {position:absolute;top:28.500823%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.relay.content .view_base .base_pitcher .i_name {height:1.5333rem;font-size:1.2667rem;font-weight:500;line-height:1.21;}
+.relay.content .view_base .base_pitcher .bar {margin:0.3rem 0.6667rem 0.1667rem;width:1px;height:1.0667rem;background-color:#ffffff;}
+.relay.content .view_base .base_pitcher .pitch_num {height:1.5333rem;font-size:1.1333rem;font-weight:500;line-height:1.35;}
+.relay.content .view_base .team_logo {display:inline-block;width:2.6rem;height:2.3333rem;vertical-align:top;}
+.relay.content .view_base .pitcher_team_logo {position:absolute;top:43.657331%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.relay.content .view_base .hitter_team_logo {position:absolute;bottom:16.803953%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.relay.content .view_base .base_hitter {position:absolute;bottom:1.812191%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.relay.content .view_base .base_hitter .player_num {height:1.53333rem;font-size:1.1333rem;line-height:1.35;}
+.relay.content .view_base .base_hitter .i_name {margin-left:0.2rem;height:1.53333rem;font-size:1.2667rem;line-height:1.21;}
+.relay.content .view_base .tag_box_sm .i_name {height:1.5333rem;font-size:1.0667rem;font-weight:bold;line-height:1.44;}
+.relay.content .view_base .base_first {position:absolute;top:47.116968%;right:17.87037%;}
+.relay.content .view_base .base_third {position:absolute;top:47.116968%;left:17.87037%;}
+.relay.content .view_base .ball_count {position:absolute;bottom:3.294892%;left:1.851851%;width:5.3333rem;height:7.3333rem;background-color:rgba(89,110,100,.85);}
+.relay.content .view_base .ball_count .info_round {display:block;height:1.9333rem;line-height:1.9333rem;font-size:1rem;font-weight:500;text-align:center;color:#ffffff;background-color:rgba(60,82,73,.5);}
+.relay.content .view_base .ball_count .info_count {padding-top:0.2667rem;padding-left:0.8667rem;height:5.4rem;text-align:left;font-size:0;}
+.relay.content .view_base .ball_count .info_count .circle_wrap > span {display:inline-block;vertical-align:top;}
+.relay.content .view_base .ball_count .info_count .circle_wrap .i_name {margin-right:0.1333rem;width:0.7667rem;height:1.5rem;font-size:1rem;text-align:center;color:#ffffff;}
+.relay.content .view_base .ball_count .info_count .circle_wrap .circle {margin:0.4333rem 0 0.3333rem 0.1667rem;width:0.7333rem;height:0.7333rem;border-radius:50%;border:1px solid #000000;background-color:rgba(0,0,0,.7);}
+.relay.content .view_base .ball_count .info_count .ball_wrap {margin-top:0;}
+.relay.content .view_base .ball_count .info_count .ball_wrap .circle.on {background-color:#00c0ff;}
+.relay.content .view_base .ball_count .info_count .strike_wrap {margin-top:0.0667rem;}
+.relay.content .view_base .ball_count .info_count .strike_wrap .circle.on {background-color:#fea000;}
+.relay.content .view_base .ball_count .info_count .foul_wrap {margin-top:0.0333rem;}
+.relay.content .view_base .ball_count .info_count .foul_wrap .circle.on {background-color:#e7484f;}
+.relay.content .view_base .stand_hitter {position:absolute;bottom:3.294892%;right:1.851851%;width:6rem;height:7.3333rem;background-color:rgba(89,110,100,.85);}
+.relay.content .view_base .stand_hitter .title {display:block;height:1.9333rem;line-height:1.9333rem;font-size:1rem;font-weight:500;text-align:center;color:rgba(255,255,255,.78);background-color:rgba(60,82,73,.6);}
+.relay.content .view_base .stand_hitter ul {padding:0.2667rem 0.6667rem 0.5rem;height:5.4rem;text-align:left;}
+.relay.content .view_base .stand_hitter ul li {min-height:1.5rem;font-size:1rem;font-weight:normal;color:#ffffff;}
+.relay.content .view_base .stand_hitter ul li b {margin-right:0.4rem;}
+.relay.content .view_base .btn_base_view {display:block;position:absolute;top:3.294892%;right:1.851851%;width:6.8rem;height:5.2667rem;border:0.1333rem solid #738c78;background-color:rgba(60, 82, 73, 0.8);border-radius:6px;}
+.relay.content .view_base .btn_base_view span {display:inline-block;margin:0.5rem auto 0;width:4.4333rem;height:3.0667rem;font-size:1.2rem;font-weight:bold;line-height:1.28;text-align:center;color:#ffffff;vertical-align:top;}
+.relay.content .view_base .btn_base_view i {display:block;position:absolute;bottom:11.392405%;left:50%;margin-left:-0.5333rem;width:1.0667rem;height:0.6rem;background:url('../images/btn-broadcast-01.png') no-repeat;background-size:100% auto;}
+.relay.content .view_base + .tab_3depth {margin-top:0;}
+.relay.content .sub_sec {padding:1.5333rem 0;}
+.relay.content .current_sec {margin-top:1.5333rem;}
+.relay.content .current_sec .current_player:first-child {margin-top:1.5333rem;}
+.relay.content .current_sec .current_player:last-child {margin-top:2.1667rem;}
+.relay.content .current_sec .current_player .title_hd {padding-top:0.5333rem;}
+.relay.content .current_sec .current_player .player_info {margin-top:0.6667rem;padding-top:0.5333rem;height:10.1rem;}
+.relay.content .current_sec .current_player .info_top {position:relative;}
+.relay.content .current_sec .current_player .info_top .player_img {position:absolute;top:0.1333rem;left:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
+.relay.content .current_sec .current_player .info_top .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
+.relay.content .current_sec .current_player .info_top .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
+.relay.content .current_sec .current_player .info_top .player_name {margin-left:6rem;}
+.relay.content .current_sec .current_player .info_top .player_name .i_ratio span {display:inline-block;padding:0 1rem;vertical-align:top;height:1.8rem;line-height:1.8rem;font-size:1.1333rem;font-weight:normal;color:#ffffff;border-radius:0.9rem;text-align:center;}
+.relay.content .current_sec .current_player .info_top .player_name .i_ratio span b {font-weight:bold;}
+.relay.content .current_sec .current_player .info_top .player_name .i_name {display:block;margin-top:0.3333rem;height:2.4667rem;font-size:1.6667rem;font-weight:normal;color:#2b2b2b;}
+.relay.content .current_sec .current_player .info_top .player_name .i_name b {font-weight:bold;}
+.relay.content .current_sec .current_player .info_top .team_logo {display:block;position:absolute;top:0;right:0;width:5.2rem;height:4.6rem;}
+.relay.content .current_sec .current_player .info_tbl {margin-top:1.9rem;height:3.0667rem;border:1px solid #e8e9ef;border-radius:0.7333rem;}
+.relay.content .current_sec .current_player .info_tbl > div {position:relative;float:left;padding:0 0.8667rem 0 0.9rem;height:100%;line-height:3rem;width:25%;border-right:1px solid #e8e9ef;}
+.relay.content .current_sec .current_player .info_tbl > div:nth-child(odd) {background-color:#f5f6f9;}
+.relay.content .current_sec .current_player .info_tbl > div:last-child {border-right:0;}
+.relay.content .current_sec .current_player .info_tbl > div span {display:block;width:2.3333rem;height:auto;font-size:1.2667rem;color:#2b2b2b;}
+.relay.content .current_sec .current_player .info_tbl > div b {display:block;position:absolute;top:0;right:0.8667rem;width:3rem;height:auto;font-size:1.2667rem;font-weight:bold;text-align:right;}
+.relay.content .current_sec .current_player .count_desc {margin-top:1.3333rem;}
+.relay.content .count_desc {margin:1.6667rem 0 0;}
+.relay.content .count_desc li {position:relative;margin-top:0.3333rem;height:2.3333rem;font-size:0;}
+.relay.content .count_desc li:first-child {margin-top:0;}
+.relay.content .count_desc li span,.count_desc li b {display:inline-block;vertical-align:top;}
+.relay.content .count_desc li .num {margin-top:0.3rem;width:1.8rem;height:1.8rem;line-height:1.7333rem;font-size:1.2rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:50%;}
+.relay.content .count_desc li .num.strike {background-color:#fea000;}
+.relay.content .count_desc li .num.ball {background-color:#159b14;}
+.relay.content .count_desc li .num.hit {background-color:#2759b1;}
+.relay.content .count_desc li .name {margin-left:0.5rem;height:2.2667rem;font-size:1.5333rem;font-weight:500;color:#2b2b2b;}
+.relay.content .count_desc li .desc {margin:0.2667rem 0 0.2667rem 0.6667rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;}
+.relay.content .count_desc li .count {position:absolute;top:0.2rem;right:0;font-size:1.3333rem;font-weight:500;text-align:right;color:#2b2b2b;}
+.relay.content .hitter_info {position:relative;}
+.relay.content .hitter_info .player_img {position:absolute;top:0;left:0;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;border:solid 1px #e8e8e8;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;}
+.relay.content .hitter_info .player_img .team_logo_xs {display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
+.relay.content .hitter_info .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
+.relay.content .hitter_info .hitter_desc {margin-left:6rem;height:4.4667rem;}
+.relay.content .hitter_info .info_top > span {display:inline-block;vertical-align:top;}
+.relay.content .hitter_info .info_top {font-size:0;}
+.relay.content .hitter_info .info_top .i_name {height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#2b2b2b;}
+.relay.content .hitter_info .info_top .i_num {margin-left:0.3667rem;height:2.4667rem;font-size:1.6667rem;font-weight:500;color:#2b2b2b;}
+.relay.content .hitter_info .info_top .i_average {margin:0.1rem 0 0.1rem 0.8333rem;height:2.2667rem;font-size:1.5333rem;color:#8d8d8d;}
+.relay.content .hitter_info .info_bottom {margin-top:0.2rem;font-size:0;}
+.relay.content .hitter_info .info_bottom span {display:inline-block;margin-left:1rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;vertical-align:top;}
+.relay.content .hitter_info .info_bottom span:first-child {margin-left:0;}
+.relay.content .hit_result {margin-top:1.3333rem;}
+.relay.content .hit_result li {margin-top:0.3333rem;height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#858585;}
+.relay.content .hit_result li:first-child {margin-top:0;}
+.relay.content .hit_result_base {margin-top:0.6667rem;}
+.relay.content .hit_result_base li {margin-top:0.3333rem;height:1.9667rem;font-size:1.3rem;color:#000000;}
+.relay.content .hit_result_base li:first-child {margin-top:0;}
+.relay.content .hit_result_base li span {font-size:1.3333rem;color:#c10a3a;}
+.relay.content .change_locate {margin-top:1.3333rem;}
+.relay.content .change_locate li {margin-top:0.1333rem;height:1.8667rem;font-size:1.2667rem;color:#2759b1;}
+.relay.content .change_locate li:first-child {margin-top:0;}
+.relay.content .emergency_desc {padding:1.5333rem 0;font-size:1.3333rem;color:#858585;border-top:1px solid #f8f8f9;border-bottom:1px solid #f8f8f9;}
+.relay.content .replace_list {padding:1.5333rem 0;font-size:1.4667rem;color:#000000;border-top:1px solid #f8f8f9;border-bottom:1px solid #f8f8f9;}
+.relay.content .replace_list .i_out {font-weight:bold;color:#e42f37;}
+.relay.content .replace_list .i_in {font-weight:bold;color:#159b14;}
+.relay.content .change_position {padding:1.5333rem 0;border-top:1px solid #f8f8f9;border-bottom:1px solid #f8f8f9;overflow:hidden;}
+.relay.content .change_position .team_logo {display:block;float:left;width:4rem;height:3.5333rem;}
+.relay.content .change_position p {float:left;margin-left:1rem;margin-top:0.7rem;font-size:1.4667rem;font-weight:bold;color:3000000;}
+
 /* List none */
 .list_none {margin:2.6667rem 0 4rem;}
 .list_none .img_box {height:7.6667rem;background-image:url('../images/img-player-empty-b.png');background-repeat:no-repeat;background-size:auto 7.6667rem;background-position:50% 50%;}
