@@ -21,6 +21,19 @@
 	<option value="theme_OB">두산</option>
 	<option value="theme_HT">KIA</option>
 </select>
+<select id="chatSelect2" style="z-index:99999; position:fixed; top:120px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">구장팀 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
 
 <div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
@@ -182,15 +195,19 @@
 						<div class="active_bar"></div>
 					</div>
 				</div>
-				<div class="chat_wrap" data-chat="theme_LG" id="chat_wrap">
+				<div class="chat_wrap" data-chreer="theme_default" data-enemy="theme_OB" id="chat_wrap">
 					<div class="chat_inner">
 						<div class="scroll_bottom">
+							<div class="msg_wrap">
+								<div class="welcome">채팅에 참여하셨습니다</div>
+							</div>
 							<div class="msg_wrap left">
 								<div class="msg">
 									<div class="user">
 										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
 									</div>
-									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+									<div class="comment">응</div>
+									<div class="time">오후 9:26</div>
 								</div>
 							</div>
 							<div class="msg_wrap right">
@@ -198,7 +215,8 @@
 									<div class="user">
 										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
 									</div>
-									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+									<div class="comment">응</div>
+									<div class="time">오후 9:26</div>
 								</div>
 							</div>
 							<div class="msg_wrap left">
@@ -207,8 +225,42 @@
 										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
 									</div>
 									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+									<div class="time">오후 9:26</div>
 								</div>
 							</div>
+							<div class="msg_wrap left">
+								<div class="msg chreer_color">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<!-- 같은 시간/ 같은 사람 -->
+							<div class="msg_wrap right">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_OB"><span class="team_symbol_OB"></span></span>
+									</div>
+									<div class="comment">정규시즌우승이다!!!!!</div>
+								</div>
+							</div>
+							<div class="msg_wrap right">
+								<div class="msg">
+									<div class="comment">거참 우승하기 딱 좋은 날씨네</div>
+									<div class="time">오후 9:29</div>
+								</div>
+							</div>
+							<!-- 같은 시간/ 같은 사람 -->
+						</div>
+					</div>
+					<div class="chreer_selection">
+						<div class="chreer_team current left">
+							<span class="team_name">LG<span class="ic_chreer"></span></span>
+						</div>
+						<div class="chreer_team right">
+							<span class="team_name">두산<span class="ic_enemy"></span></span>
 						</div>
 					</div>
 					<div class="chat_btm">
@@ -251,9 +303,14 @@ window.addEventListener('resize', function(e) {
 </script>
 <script>
 document.getElementById('chatSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('chat_wrap').setAttribute('data-chat','');
-	document.getElementById('chat_wrap').setAttribute('data-chat',this.value);
+	document.getElementById('chat_wrap').setAttribute('data-chreer','');
+	document.getElementById('chat_wrap').setAttribute('data-chreer',this.value);
 });
+document.getElementById('chatSelect2').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('chat_wrap').setAttribute('data-enemy','');
+	document.getElementById('chat_wrap').setAttribute('data-enemy',this.value);
+});
+
 </script>
 
 </body>
