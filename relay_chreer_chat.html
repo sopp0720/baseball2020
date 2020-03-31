@@ -8,11 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap" data-theme="theme_LG" class="theme_LG">
+<div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
-		<div class="content relay">
-			<div class="sec_wrapper relay_video_wrap">
+		<div class="content relay live_video cheering">
+			<div class="video_wrap">
 				<div class="relay_video_thumb" style="background-image:url('res/images/bg-half-player-img-stadium.png')">
 					<!--
 					<span class="ic_show"></span>
@@ -49,99 +49,57 @@
 					</div>
 					-->
 				</div>
-				<button type="button" class="btn_player_view">
+			</div>
+			<div class="btn_player_view_wrap">
+				<button type="button" class="btn_player_view" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보이기</span>
 					<i></i>
 				</button>
 			</div>
-			<div class="tab_1depth" id="tab_1depth4">
-				<ul class="tab_link">
-					<li class="tab_item"><span>경기정보</span></li>
-					<li class="tab_item active"><span>응원하기</span></li>
-					<li class="tab_item"><span>득점장면</span></li>
-					<li class="tab_item"><span>주요장면</span></li>
-					<li class="tab_item"><span>문자중계</span></li>
-				</ul>
-				<div class="active_bar"></div>
-			</div>
-<script>
-
-</script>
-<style>
-.relay.content .chat_wrap {position:relative;width:100%;height:100%;background-color:#f2f3f4;}
-.relay.content .chat_wrap .chat_inner {position:absolute;bottom:0;width:100%;height:100%;overflow-x:hidden;overflow-y:auto;}
-</style>
-			<div class="chat_wrap">
-				<div class="chat_inner">
-					<p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p>
+			<div class="content_scroll">
+				<div class="tab_1depth_wrap">
+					<div class="tab_1depth" id="tab_1depth4">
+						<ul class="tab_link">
+							<li class="tab_item"><span>경기정보</span></li>
+							<li class="tab_item active" onclick="this.closest('.content').classList.add('cheering');content_scroll();"><span>응원하기</span></li>
+							<li class="tab_item"><span>득점장면</span></li>
+							<li class="tab_item"><span>주요장면</span></li>
+							<li class="tab_item"><span>문자중계</span></li>
+						</ul>
+						<div class="active_bar"></div>
+					</div>
 				</div>
-			</div>
-			<div>
-				<input type="text">
+				<div class="chat_wrap">
+					<div class="chat_inner">
+						<p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p><p>엘지</p>
+					</div>
+				</div>
+				<div>
+					<input type="text">
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
-<script src="res/js/gnb.js"></script>
 <script src="res/js/relay.js"></script>
 <script>
-bnbUi.init();
-bnbUi.initLottie();
-relayUi.initSubTab(document.getElementById('tab_1depth1'));
-relayUi.initSubTab(document.getElementById('tab_1depth2'));
-relayUi.initSubTab(document.getElementById('tab_1depth3'));
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
-relayUi.initSubTab(document.getElementById('tab_1depth5'));
-relayUi.initSubTab(document.getElementById('tab_1depth6'));
+relayUi.activeBar(1,document.getElementById('tab_1depth4'));
 
-
-document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('wrap').setAttribute('data-theme','');
-	document.getElementById('wrap').setAttribute('data-theme',this.value);
-	bnbUi.teamLottie()
+function content_scroll(){
+	var scrollH = 
+    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - 1) + 'px';
+	document.querySelector('.content_scroll').style.height = scrollH;
+}
+content_scroll();
+window.addEventListener('resize', function(e) {
+	content_scroll();
 });
 </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    var imgPlayerDefault = $(".relay_video_thumb"); // img영역    
-    var icShow = $(".relay_video_thumb .ic_show"); // img영역    
-    var btnPlayerView = $(".btn_player_view") // 화면 숨기기 버튼
-    var btnPlayerViewTextOff = $(".btn_player_view .txt_off") // 화면 숨기기 텍스트
-    var btnPlayerViewTextOn = $(".btn_player_view .txt_on") // 화면 보이기 텍스트
-    
-    $(btnPlayerView).on("click", function() {
-        $(this).toggleClass("active");
-        $(imgPlayerDefault).toggleClass("active");
-        if ($(imgPlayerDefault).hasClass("active")) {
-			$(btnPlayerViewTextOn).addClass("active");
-            $(btnPlayerViewTextOff).removeClass("active");
-            $(btnPlayerViewTextOff).removeClass("default");
-			$(icShow).hide();
-        } else {
-            $(btnPlayerViewTextOff).addClass("active");
-            $(btnPlayerViewTextOn).removeClass("active");
-			$(icShow).show();
-        }
-    });
-	
-	var test1 = $(".relay_video_wrap").outerHeight();
-	var test2 = $(".tab_1depth").outerHeight();
-	var test3 = $(window).height() - test1 - test2;
-	$(".chat_wrap").css({'height':test3+'px'});
-	
-	$(window).on('resize',function(){
-		var test1 = $(".relay_video_wrap").outerHeight();
-		var test2 = $(".tab_1depth").outerHeight();
-		var test3 = $(window).height() - test1 - test2;
-		$(".chat_wrap").css({'height':test3+'px'});
-	});
-});    
 
-</script>
 </body>
 </html>

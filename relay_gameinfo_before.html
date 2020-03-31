@@ -8,11 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap" data-theme="theme_LG" class="theme_LG">
+<div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
-		<div class="content relay">
-			<div class="sec_wrapper relay_video_wrap">
+		<div class="content relay live_video">
+			<div class="video_wrap">
 				<div class="relay_video_thumb" style="background-image:url('res/images/bg-half-player-img-stadium.png')">
 					<span class="ic_show"></span>
 					<div class="inner">
@@ -47,1211 +47,1192 @@
 						</div>
 					</div>
 				</div>
-				<button type="button" class="btn_player_view">
+			</div>
+			<div class="btn_player_view_wrap">
+				<button type="button" class="btn_player_view" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보이기</span>
 					<i></i>
 				</button>
 			</div>
-			<div class="sec_wrapper relay_card_wrap">
-				<div class="inner">
-					<ul>
-						<li class="on"> <!-- 해당페이지 카드에서 on 클래스 추가 -->
-							<span class="ic_5g blind">5G</span>
-							<span class="ic_info">9회말</span>
-							<div class="card_box">
-								<div class="team_box top_box">
+			<div class="content_scroll">
+				<div class="sec_wrapper relay_card_wrap">
+					<div class="inner">
+						<ul>
+							<li class="on"> <!-- 해당페이지 카드에서 on 클래스 추가 -->
+								<span class="ic_5g blind">5G</span>
+								<span class="ic_info">9회말</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+										<em class="i_score">5</em>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_OB"></span>
+										<em class="i_score">2</em>
+									</div>
+								</div>
+							</li>
+							<li> <!-- 해당페이지 카드에서 on 클래스 추가 -->
+								<span class="ic_5g blind">5G</span>
+								<span class="ic_info">경기종료</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LG"></span>
+										<em class="i_score">5</em>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_OB"></span>
+										<em class="i_score i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+									</div>
+								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기전</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LT"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">롯데</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_SK"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">SK</span>
+									</div>
+								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기취소</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_WO"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">키움</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_SK"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">삼성</span>
+									</div>
+								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기종료</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LT"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">롯데</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_KT"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">KT</span>
+									</div>
+								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기종료</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LT"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">롯데</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_KT"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">KT</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab_1depth_wrap">
+					<div class="tab_1depth" id="tab_1depth1">
+						<ul class="tab_link">
+							<li class="tab_item active" onclick="this.closest('.content').classList.remove('cheering');content_scroll();"><span>경기정보</span></li>
+							<li class="tab_item" onclick="this.closest('.content').classList.add('cheering');content_scroll();"><span>응원하기</span></li>
+						</ul>
+						<div class="active_bar"></div>
+					</div>
+				</div>
+				<div class="sec_wrapper">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">전력분석</span>
+						</div>
+						<div class="analysis_wrap">
+							<div class="vs_rank_wrap">
+								<div class="team_rank left">
 									<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-									<em class="i_score">5</em>
+									<strong>5위</strong>
+									<span>35승 2무 35패</span>
 								</div>
-								<div class="team_box bottom_box">
+								<div class="vs_box"></div>
+								<div class="team_rank right">
 									<span class="team_logo team_logo_OB"></span>
-									<em class="i_score">2</em>
+									<strong>4위</strong>
+									<span>40승 1무 31패</span>
 								</div>
 							</div>
-						</li>
-						<li> <!-- 해당페이지 카드에서 on 클래스 추가 -->
-							<span class="ic_5g blind">5G</span>
-							<span class="ic_info">경기종료</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LG"></span>
-									<em class="i_score">5</em>
+							<div class="latest_game">
+								<div class="ic_outcome left">
+									<span class="i_win">승</span>
+									<span class="i_lose">패</span>
+									<span class="i_win">승</span>
+									<span class="i_draw">무</span>
 								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_OB"></span>
-									<em class="i_score i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-								</div>
-							</div>
-						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기전</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LT"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">롯데</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_SK"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">SK</span>
+								<div class="vs_title">최근경기</div>
+								<div class="ic_outcome right">
+									<span class="i_lose">패</span>
+									<span class="i_lose">패</span>
+									<span class="i_win">승</span>
+									<span class="i_draw">무</span>
 								</div>
 							</div>
-						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기취소</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_WO"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">키움</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_SK"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">삼성</span>
-								</div>
-							</div>
-						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기종료</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LT"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">롯데</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_KT"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">KT</span>
-								</div>
-							</div>
-						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기종료</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LT"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">롯데</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_KT"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">KT</span>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="tab_1depth" id="tab_1depth1">
-				<ul class="tab_link">
-					<li class="tab_item active"><span>경기정보</span></li>
-					<li class="tab_item"><span>응원하기</span></li>
-				</ul>
-				<div class="active_bar"></div>
-			</div>
-			<div class="sec_wrapper">
-				<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">전력분석</span>
-					</div>
-					<div class="analysis_wrap">
-						<div class="vs_rank_wrap">
-							<div class="team_rank left">
-								<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-								<strong>5위</strong>
-								<span>35승 2무 35패</span>
-							</div>
-							<div class="vs_box"></div>
-							<div class="team_rank right">
-								<span class="team_logo team_logo_OB"></span>
-								<strong>4위</strong>
-								<span>40승 1무 31패</span>
-							</div>
-						</div>
-                        <div class="latest_game">
-                            <div class="ic_outcome left">
-                                <span class="i_win">승</span>
-                                <span class="i_lose">패</span>
-                                <span class="i_win">승</span>
-                                <span class="i_draw">무</span>
-                            </div>
-                            <div class="vs_title">최근경기</div>
-                            <div class="ic_outcome right">
-                                <span class="i_lose">패</span>
-                                <span class="i_lose">패</span>
-                                <span class="i_win">승</span>
-                                <span class="i_draw">무</span>
-                            </div>
-                        </div>
-                        <ul class="vs_graph_info"> 
-                            <li>
-								<!-- HOME -->
-                                <div class="graph_info home analysis_color_LG"> <!-- theme.css : /* Relay analysis color&bg */-->
-                                    <span class="i_ratio">0.510</span>
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:80%;"></span>
-                                    </span>
-                                </div>
-                                <!-- // HOME -->
-                                <div class="vs_title">팀 승률</div>
-                                <!-- AWAY -->
-                                <div class="graph_info away analysis_color_OB"> <!-- theme.css : /* Relay analysis color&bg */-->
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:50%;"></span>
-                                    </span>
-                                    <span class="i_ratio">0.231</span>
-                                </div>
-                                <!-- // AWAY -->
-                            </li>
-                            <li>
-                                <div class="graph_info home analysis_color_LG">
-                                    <span class="i_ratio">0.510</span>
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:80%;"></span>
-                                    </span>
-                                </div>
-                                <div class="vs_title">팀 타율</div>
-                                <div class="graph_info away analysis_color_OB">                                    
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:50%;"></span>
-                                    </span>
-                                    <span class="i_ratio">0.231</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="graph_info home analysis_color_LG">
-                                    <span class="i_ratio">0.510</span>
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:80%;"></span>
-                                    </span>
-                                </div>
-                                <div class="vs_title">평균자책</div>
-                                <div class="graph_info away analysis_color_OB">                                    
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:50%;"></span>
-                                    </span>
-                                    <span class="i_ratio">0.231</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="graph_info home analysis_color_LG">
-                                    <span class="i_ratio">0.510</span>
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:80%;"></span>
-                                    </span>
-                                </div>
-                                <div class="vs_title">상대전적</div>
-                                <div class="graph_info away analysis_color_OB">                                    
-                                    <span class="graph_bg">
-                                        <span class="i_graph" style="width:50%;"></span>
-                                    </span>
-                                    <span class="i_ratio">0.231</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="graph_info home analysis_color_LG">
-                                    <span class="total_record">4승 0무 1패</span>
-                                </div>
-                                <div class="vs_title">[2020]</div>
-                                <div class="graph_info away analysis_color_OB">
-                                    <span class="total_record">1승 0무 4패</span>
-                                </div>
-                            </li>
-                        </ul>                       
-					</div>
-				</div>
-			</div>
-            <div class="sec_wrapper starting_pitcher_wrap">
-				<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">선발투수</span>
-					</div>
-                    <!-- 선발투수 미정 -->
-                    <div class="list_none">
-                    	<div class="img_box"></div>
-                    	<p>미정입니다.</p>
-                    </div>
-                    <!-- // 선발투수 미정 -->
-                    <div class="vs_player_info">
-                        <div class="player_img_wrap left">
-                           <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
-                                <span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
-                                    <span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
-                                </span>
-                           </span>
-                           <span class="i_name">이영하</span>
-                           <span class="i_position">좌완투수</span>
-                        </div>
-                        <div class="vs_box">                          
-                        </div>
-                        <div class="player_img_wrap right">
-                           <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
-                                <span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
-                                    <span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
-                                </span>
-                           </span>
-                           <span class="i_name">채은성</span>
-                           <span class="i_position">우완투수</span>
-                        </div>
-                    </div>                   
-					<table class="vs_tbl">
-						<colgroup>
-							<col class="col1">
-							<col class="col2">
-							<col class="col3">
-						</colgroup>
-						<caption class="blind">선발투수</caption>
-						<tbody>
-							<tr>
-								<td class="cell_left">10승 6패</td>
-								<td class="cell_center">승패</td>
-								<td class="cell_right">5승 1패</td>
-							</tr>
-							<tr>
-								<td class="cell_left">3.43</td>
-								<td class="cell_center">평균자책</td>
-								<td class="cell_right">4.06</td>
-							</tr>
-							<tr>
-								<td class="cell_left">1.19</td>
-								<td class="cell_center">WHIP</td>
-								<td class="cell_right">1.33</td>
-							</tr>
-							<tr>
-								<td class="cell_left">
-									3승 1패<br>
-									평균자책 4.06
-								</td>
-								<td class="cell_center">상대전적</td>
-								<td class="cell_right">
-									1승 3패<br>
-									평균자책 5.68
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="vertical_pitcher_graph">
-						<div class="pitcher_type_wrap left">
-							<div class="pitcher_type type1 pitching_color_LG" style="height:44%;"> <!-- theme.css : /* Team 1순위 piching type color */ -->
-								<span class="i_name">
-									슬라이더<br>
-									<span class="i_speed">139km/h</span>
-								</span>
-								<span class="i_ratio">44</span>
-							</div>
-							<div class="pitcher_type type2" style="height:25%;">
-								<span class="i_name">
-									슬라이더<br>
-									<span class="i_speed">129km/h</span>
-								</span>
-								<span class="i_ratio">25</span>
-							</div>
-							<div class="pitcher_type type3" style="height:19%;">
-								<span class="i_name">
-									포크<br>
-									<span class="i_speed">129km/h</span>
-								</span>
-								<span class="i_ratio">19</span>
-							</div>
-							<div class="pitcher_type type4" style="height:12%;">
-								<span class="i_name">그 외</span>
-								<span class="i_ratio">12</span>
-							</div>
-						</div>
-						<div class="graph_title">
-							<span>주요구질</span>
-						</div>
-						<div class="pitcher_type_wrap right">
-							<div class="pitcher_type type1 pitching_color_OB" style="height:48%;"> <!-- theme.css : /* Team 1순위 piching type color */ -->
-								<span class="i_ratio">48</span>
-								<span class="i_name">
-									슬라이더<br>
-									<span class="i_speed">139km/h</span>
-								</span>
-							</div>
-							<div class="pitcher_type type2" style="height:27%;">
-								<span class="i_ratio">27</span>
-								<span class="i_name">
-									직구<br>
-									<span class="i_speed">129km/h</span>
-								</span>
-							</div>
-							<div class="pitcher_type type3" style="height:15%;">
-								<span class="i_ratio">15</span>
-								<span class="i_name">
-									투심<br>
-									<span class="i_speed">134km/h</span>
-								</span>
-							</div>
-							<div class="pitcher_type type4" style="height:10%;">
-								<span class="i_ratio">10</span>
-								<span class="i_name">그 외</span>
-							</div>
-						</div>
-					</div>
-                </div>
-            </div>
-            <div class="sec_wrapper key_player_wrap">
-            	<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">오늘의 키 플레이어</span>
-					</div>
-					<div class="vs_player_info">
-                        <div class="player_img_wrap left">
-                           <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
-                                <span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
-                                    <span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
-                                </span>
-                           </span>
-                           <span class="i_name">이영하</span>
-                           <span class="i_position">좌타</span>
-                        </div>
-                        <div class="vs_box">                          
-                        </div>
-                        <div class="player_img_wrap right">
-                           <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
-                                <span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
-                                    <span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
-                                </span>
-                           </span>
-                           <span class="i_name">채은성</span>
-                           <span class="i_position">우타</span>
-                        </div>
-                    </div>
-                    <table class="vs_tbl">
-						<colgroup>
-							<col class="col1">
-							<col class="col2">
-							<col class="col3">
-						</colgroup>
-						<caption class="blind">개인기록</caption>
-						<tbody>
-							<tr class="tr_title">
-								<td colspan="3">개인기록</td>
-							</tr>							
-							<tr>
-								<td class="cell_left">0.301</td>
-								<td class="cell_center">타율</td>
-								<td class="cell_right">0.289</td>
-							</tr>
-							<tr>
-								<td class="cell_left">97</td>
-								<td class="cell_center">안타</td>
-								<td class="cell_right">102</td>
-							</tr>
-							<tr>
-								<td class="cell_left">12</td>
-								<td class="cell_center">홈런</td>
-								<td class="cell_right">9</td>
-							</tr>
-							<tr>
-								<td class="cell_left">85</td>
-								<td class="cell_center">타점</td>
-								<td class="cell_right">67</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="vs_tbl vs_record_tbl">
-						<colgroup>
-							<col class="col1">
-							<col class="col2">
-							<col class="col3">
-						</colgroup>
-						<caption class="blind">상대전적</caption>
-						<tbody>
-							<tr class="tr_title">
-								<td class="cell_left">
-									<span class="player_name text_right">이영하</span>
-									<span class="ic_vs"></span>
-									<span class="team_logo team_logo_LG"></span>
-								</td>
-								<td class="cell_center">상대전적</td>
-								<td class="cell_right">
-									<span class="team_logo team_logo_OB"></span>
-									<span class="ic_vs blind">VS</span>
-									<span class="player_name text_left">채은성</span>
-								</td>
-							</tr>							
-							<tr>
-								<td class="cell_left">0.301</td>
-								<td class="cell_center">타율</td>
-								<td class="cell_right">0.289</td>
-							</tr>
-							<tr>
-								<td class="cell_left">1</td>
-								<td class="cell_center">안타</td>
-								<td class="cell_right">12</td>
-							</tr>
-							<tr>
-								<td class="cell_left">0</td>
-								<td class="cell_center">홈런</td>
-								<td class="cell_right">4</td>
-							</tr>
-						</tbody>
-					</table>
-					<p class="key_desc">* 키 플레이어는 선수 데이터를 바탕으로 LGU+ 자체 기준에 따라 선정됩니다.</p>
-				</div>
-            </div>
-            <div class="sec_wrapper starting_lineup">
-            	<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">선발 라인업<span class="oval_desc"><i class="oval"></i>3할 이상타자</span></span>
-					</div>
-					<div class="i_team_wrap">
-						<div class="i_team left">
-							<span class="i_name">LG</span>
-							<span class="team_logo_wrap">
-								<span class="team_logo team_logo_LG"></span>
-							</span>
-						</div>
-						<div class="i_team right">
-							<span class="team_logo_wrap">
-								<span class="team_logo team_logo_OB"></span>
-							</span>
-							<span class="i_name">두산</span>
-						</div>
-						<div class="vs_box">
-							<span></span>
-						</div>
-					</div>
-					<div>
-						<!-- HOME LINEUP -->
-						<div class="start_player left">
-							<!-- 반복 -->
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></span>
-									<!-- 3할 이상타자 일 경우 활성화 -->
-									<i class="oval"></i>
-									<!-- // 3할 이상타자 일 경우 활성화 -->
-								</div>
-							</div>
-							<!-- //반복 -->
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<i class="oval"></i>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<i class="oval"></i>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_desc">
-									<span class="desc1">
-										<b>우익수</b>
-										<span>이천웅쓰</span>
-									</span>
-									<span class="desc2">
-										<b>타율</b>
-										<span>0.272</span>
-									</span>
-								</div>
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-							</div>
-						</div>
-						<!-- //HOME LINEUP -->
-						
-						<!-- AWAY LINEUP -->
-						<div class="start_player right">
-							<!-- 반복 -->
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></span>
-									<!-- 3할 이상타자 일 경우 활성화 
-									<i class="oval"></i>
-									 // 3할 이상타자 일 경우 활성화 -->
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<i class="oval"></i>
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<i class="oval"></i>
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<div class="start_player_box">
-								<div class="player_img_wrap">
-									<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
-									<!--<i class="oval"></i>-->
-								</div>
-								<div class="player_desc">
-									<span class="desc1">
-										<span>이천웅</span>
-										<b>우익수</b>										
-									</span>
-									<span class="desc2">
-										<span>0.272</span>
-										<b>타율</b>
-									</span>
-								</div>
-							</div>
-							<!-- // 반복 -->
-						</div>
-						<!-- AWAY LINEUP -->
-						
-						<div class="start_num">
-							<!-- 반복 -->
-							<span>1</span>
-							<!-- // 반복 -->
-							<span>2</span>
-							<span>3</span>
-							<span>4</span>
-							<span>5</span>
-							<span>6</span>
-							<span>7</span>
-							<span>8</span>
-							<span>9</span>
+							<ul class="vs_graph_info"> 
+								<li>
+									<!-- HOME -->
+									<div class="graph_info home analysis_color_LG"> <!-- theme.css : /* Relay analysis color&bg */-->
+										<span class="i_ratio">0.510</span>
+										<span class="graph_bg">
+											<span class="i_graph" style="width:80%;"></span>
+										</span>
+									</div>
+									<!-- // HOME -->
+									<div class="vs_title">팀 승률</div>
+									<!-- AWAY -->
+									<div class="graph_info away analysis_color_OB"> <!-- theme.css : /* Relay analysis color&bg */-->
+										<span class="graph_bg">
+											<span class="i_graph" style="width:50%;"></span>
+										</span>
+										<span class="i_ratio">0.231</span>
+									</div>
+									<!-- // AWAY -->
+								</li>
+								<li>
+									<div class="graph_info home analysis_color_LG">
+										<span class="i_ratio">0.510</span>
+										<span class="graph_bg">
+											<span class="i_graph" style="width:80%;"></span>
+										</span>
+									</div>
+									<div class="vs_title">팀 타율</div>
+									<div class="graph_info away analysis_color_OB">                                    
+										<span class="graph_bg">
+											<span class="i_graph" style="width:50%;"></span>
+										</span>
+										<span class="i_ratio">0.231</span>
+									</div>
+								</li>
+								<li>
+									<div class="graph_info home analysis_color_LG">
+										<span class="i_ratio">0.510</span>
+										<span class="graph_bg">
+											<span class="i_graph" style="width:80%;"></span>
+										</span>
+									</div>
+									<div class="vs_title">평균자책</div>
+									<div class="graph_info away analysis_color_OB">                                    
+										<span class="graph_bg">
+											<span class="i_graph" style="width:50%;"></span>
+										</span>
+										<span class="i_ratio">0.231</span>
+									</div>
+								</li>
+								<li>
+									<div class="graph_info home analysis_color_LG">
+										<span class="i_ratio">0.510</span>
+										<span class="graph_bg">
+											<span class="i_graph" style="width:80%;"></span>
+										</span>
+									</div>
+									<div class="vs_title">상대전적</div>
+									<div class="graph_info away analysis_color_OB">                                    
+										<span class="graph_bg">
+											<span class="i_graph" style="width:50%;"></span>
+										</span>
+										<span class="i_ratio">0.231</span>
+									</div>
+								</li>
+								<li>
+									<div class="graph_info home analysis_color_LG">
+										<span class="total_record">4승 0무 1패</span>
+									</div>
+									<div class="vs_title">[2020]</div>
+									<div class="graph_info away analysis_color_OB">
+										<span class="total_record">1승 0무 4패</span>
+									</div>
+								</li>
+							</ul>                       
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="sec_wrapper">
-            	<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">LG 라인업 변동</span>
-					</div>
-					<div class="change_tbl_wrap">
-						<table class="change_tbl">
-							<caption class="blind">LG 라인업 변동</caption>
+				<div class="sec_wrapper starting_pitcher_wrap">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">선발투수</span>
+						</div>
+						<!-- 선발투수 미정 -->
+						<div class="list_none">
+							<div class="img_box"></div>
+							<p>미정입니다.</p>
+						</div>
+						<!-- // 선발투수 미정 -->
+						<div class="vs_player_info">
+							<div class="player_img_wrap left">
+							   <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
+									<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+										<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+									</span>
+							   </span>
+							   <span class="i_name">이영하</span>
+							   <span class="i_position">좌완투수</span>
+							</div>
+							<div class="vs_box">                          
+							</div>
+							<div class="player_img_wrap right">
+							   <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
+									<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
+										<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+									</span>
+							   </span>
+							   <span class="i_name">채은성</span>
+							   <span class="i_position">우완투수</span>
+							</div>
+						</div>                   
+						<table class="vs_tbl">
 							<colgroup>
 								<col class="col1">
 								<col class="col2">
 								<col class="col3">
-								<col class="col4">
-								<col class="col5">
 							</colgroup>
-							<thead>
-								<tr>
-									<th>
-										<div class="cell">변동</div>
-									</th>
-									<th>
-										<div class="cell">이름</div>
-									</th>
-									<th>
-										<div class="cell">포지션</div>
-									</th>
-									<th>
-										<div class="cell">경기수</div>
-									</th>
-									<th>
-										<div class="cell">기록<br><span>(평자책/타율)</span></div>
-									</th>
-								</tr>
-							</thead>
+							<caption class="blind">선발투수</caption>
 							<tbody>
 								<tr>
-									<td>
-										<div class="cell">등록</div>
-									</td>
-									<td>
-										<div class="cell">이형종</div>
-									</td>
-									<td>
-										<div class="cell">투수</div>
-									</td>
-									<td>
-										<div class="cell">0</div>
-									</td>
-									<td>
-										<div class="cell">4.5</div>
-									</td>
+									<td class="cell_left">10승 6패</td>
+									<td class="cell_center">승패</td>
+									<td class="cell_right">5승 1패</td>
 								</tr>
 								<tr>
-									<td>
-										<div class="cell">말소</div>
+									<td class="cell_left">3.43</td>
+									<td class="cell_center">평균자책</td>
+									<td class="cell_right">4.06</td>
+								</tr>
+								<tr>
+									<td class="cell_left">1.19</td>
+									<td class="cell_center">WHIP</td>
+									<td class="cell_right">1.33</td>
+								</tr>
+								<tr>
+									<td class="cell_left">
+										3승 1패<br>
+										평균자책 4.06
 									</td>
-									<td>
-										<div class="cell">데인드한</div>
-									</td>
-									<td>
-										<div class="cell">유격수</div>
-									</td>
-									<td>
-										<div class="cell">12</div>
-									</td>
-									<td>
-										<div class="cell">1.121</div>
+									<td class="cell_center">상대전적</td>
+									<td class="cell_right">
+										1승 3패<br>
+										평균자책 5.68
 									</td>
 								</tr>
 							</tbody>
 						</table>
+						<div class="vertical_pitcher_graph">
+							<div class="pitcher_type_wrap left">
+								<div class="pitcher_type type1 pitching_color_LG" style="height:44%;"> <!-- theme.css : /* Team 1순위 piching type color */ -->
+									<span class="i_name">
+										슬라이더<br>
+										<span class="i_speed">139km/h</span>
+									</span>
+									<span class="i_ratio">44</span>
+								</div>
+								<div class="pitcher_type type2" style="height:25%;">
+									<span class="i_name">
+										슬라이더<br>
+										<span class="i_speed">129km/h</span>
+									</span>
+									<span class="i_ratio">25</span>
+								</div>
+								<div class="pitcher_type type3" style="height:19%;">
+									<span class="i_name">
+										포크<br>
+										<span class="i_speed">129km/h</span>
+									</span>
+									<span class="i_ratio">19</span>
+								</div>
+								<div class="pitcher_type type4" style="height:12%;">
+									<span class="i_name">그 외</span>
+									<span class="i_ratio">12</span>
+								</div>
+							</div>
+							<div class="graph_title">
+								<span>주요구질</span>
+							</div>
+							<div class="pitcher_type_wrap right">
+								<div class="pitcher_type type1 pitching_color_OB" style="height:48%;"> <!-- theme.css : /* Team 1순위 piching type color */ -->
+									<span class="i_ratio">48</span>
+									<span class="i_name">
+										슬라이더<br>
+										<span class="i_speed">139km/h</span>
+									</span>
+								</div>
+								<div class="pitcher_type type2" style="height:27%;">
+									<span class="i_ratio">27</span>
+									<span class="i_name">
+										직구<br>
+										<span class="i_speed">129km/h</span>
+									</span>
+								</div>
+								<div class="pitcher_type type3" style="height:15%;">
+									<span class="i_ratio">15</span>
+									<span class="i_name">
+										투심<br>
+										<span class="i_speed">134km/h</span>
+									</span>
+								</div>
+								<div class="pitcher_type type4" style="height:10%;">
+									<span class="i_ratio">10</span>
+									<span class="i_name">그 외</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-		    </div>
-            <div class="sec_wrapper">
-            	<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">두산 라인업 변동</span>
-					</div>
-					<div class="change_tbl_wrap">
-						<table class="change_tbl">
-							<caption class="blind">두산 라인업 변동</caption>
+				<div class="sec_wrapper key_player_wrap">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">오늘의 키 플레이어</span>
+						</div>
+						<div class="vs_player_info">
+							<div class="player_img_wrap left">
+							   <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
+									<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+										<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+									</span>
+							   </span>
+							   <span class="i_name">이영하</span>
+							   <span class="i_position">좌타</span>
+							</div>
+							<div class="vs_box">                          
+							</div>
+							<div class="player_img_wrap right">
+							   <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
+									<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
+										<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+									</span>
+							   </span>
+							   <span class="i_name">채은성</span>
+							   <span class="i_position">우타</span>
+							</div>
+						</div>
+						<table class="vs_tbl">
 							<colgroup>
 								<col class="col1">
 								<col class="col2">
 								<col class="col3">
-								<col class="col4">
-								<col class="col5">
 							</colgroup>
-							<thead>
-								<tr>
-									<th>
-										<div class="cell">변동</div>
-									</th>
-									<th>
-										<div class="cell">이름</div>
-									</th>
-									<th>
-										<div class="cell">포지션</div>
-									</th>
-									<th>
-										<div class="cell">경기수</div>
-									</th>
-									<th>
-										<div class="cell">기록<br><span>(평자책/타율)</span></div>
-									</th>
-								</tr>
-							</thead>
+							<caption class="blind">개인기록</caption>
 							<tbody>
+								<tr class="tr_title">
+									<td colspan="3">개인기록</td>
+								</tr>							
 								<tr>
-									<td>
-										<div class="cell">등록</div>
-									</td>
-									<td>
-										<div class="cell">김민성</div>
-									</td>
-									<td>
-										<div class="cell">지명타자</div>
-									</td>
-									<td>
-										<div class="cell">11</div>
-									</td>
-									<td>
-										<div class="cell">5.6</div>
-									</td>
+									<td class="cell_left">0.301</td>
+									<td class="cell_center">타율</td>
+									<td class="cell_right">0.289</td>
 								</tr>
 								<tr>
-									<td>
-										<div class="cell">말소</div>
-									</td>
-									<td>
-										<div class="cell">페르난도</div>
-									</td>
-									<td>
-										<div class="cell">투수</div>
-									</td>
-									<td>
-										<div class="cell">3</div>
-									</td>
-									<td>
-										<div class="cell">4.5</div>
-									</td>
+									<td class="cell_left">97</td>
+									<td class="cell_center">안타</td>
+									<td class="cell_right">102</td>
 								</tr>
 								<tr>
-									<td>
-										<div class="cell">말소</div>
-									</td>
-									<td>
-										<div class="cell">홍창기</div>
-									</td>
-									<td>
-										<div class="cell">유격수</div>
-									</td>
-									<td>
-										<div class="cell">7</div>
-									</td>
-									<td>
-										<div class="cell">0.144</div>
-									</td>
+									<td class="cell_left">12</td>
+									<td class="cell_center">홈런</td>
+									<td class="cell_right">9</td>
+								</tr>
+								<tr>
+									<td class="cell_left">85</td>
+									<td class="cell_center">타점</td>
+									<td class="cell_right">67</td>
 								</tr>
 							</tbody>
 						</table>
+						<table class="vs_tbl vs_record_tbl">
+							<colgroup>
+								<col class="col1">
+								<col class="col2">
+								<col class="col3">
+							</colgroup>
+							<caption class="blind">상대전적</caption>
+							<tbody>
+								<tr class="tr_title">
+									<td class="cell_left">
+										<span class="player_name text_right">이영하</span>
+										<span class="ic_vs"></span>
+										<span class="team_logo team_logo_LG"></span>
+									</td>
+									<td class="cell_center">상대전적</td>
+									<td class="cell_right">
+										<span class="team_logo team_logo_OB"></span>
+										<span class="ic_vs blind">VS</span>
+										<span class="player_name text_left">채은성</span>
+									</td>
+								</tr>							
+								<tr>
+									<td class="cell_left">0.301</td>
+									<td class="cell_center">타율</td>
+									<td class="cell_right">0.289</td>
+								</tr>
+								<tr>
+									<td class="cell_left">1</td>
+									<td class="cell_center">안타</td>
+									<td class="cell_right">12</td>
+								</tr>
+								<tr>
+									<td class="cell_left">0</td>
+									<td class="cell_center">홈런</td>
+									<td class="cell_right">4</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="key_desc">* 키 플레이어는 선수 데이터를 바탕으로 LGU+ 자체 기준에 따라 선정됩니다.</p>
 					</div>
 				</div>
-		    </div>
-		    <div class="sec_wrapper">
-		    	<div class="inner">
-					<div class="title_hd">
-						<span class="sec_title">차우찬 vs 두산<span class="brackets">(최근 3년)</span><span class="oval_desc"><i class="oval"></i>3할 이상타자</span></span>
+				<div class="sec_wrapper starting_lineup">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">선발 라인업<span class="oval_desc"><i class="oval"></i>3할 이상타자</span></span>
+						</div>
+						<div class="i_team_wrap">
+							<div class="i_team left">
+								<span class="i_name">LG</span>
+								<span class="team_logo_wrap">
+									<span class="team_logo team_logo_LG"></span>
+								</span>
+							</div>
+							<div class="i_team right">
+								<span class="team_logo_wrap">
+									<span class="team_logo team_logo_OB"></span>
+								</span>
+								<span class="i_name">두산</span>
+							</div>
+							<div class="vs_box">
+								<span></span>
+							</div>
+						</div>
+						<div>
+							<!-- HOME LINEUP -->
+							<div class="start_player left">
+								<!-- 반복 -->
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></span>
+										<!-- 3할 이상타자 일 경우 활성화 -->
+										<i class="oval"></i>
+										<!-- // 3할 이상타자 일 경우 활성화 -->
+									</div>
+								</div>
+								<!-- //반복 -->
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<i class="oval"></i>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<i class="oval"></i>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_desc">
+										<span class="desc1">
+											<b>우익수</b>
+											<span>이천웅쓰</span>
+										</span>
+										<span class="desc2">
+											<b>타율</b>
+											<span>0.272</span>
+										</span>
+									</div>
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img1.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+								</div>
+							</div>
+							<!-- //HOME LINEUP -->
+							
+							<!-- AWAY LINEUP -->
+							<div class="start_player right">
+								<!-- 반복 -->
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></span>
+										<!-- 3할 이상타자 일 경우 활성화 
+										<i class="oval"></i>
+										 // 3할 이상타자 일 경우 활성화 -->
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<i class="oval"></i>
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<i class="oval"></i>
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<div class="start_player_box">
+									<div class="player_img_wrap">
+										<span class="player_img" style="background-image:url('res/images/player_img2.jpg')"></span>
+										<!--<i class="oval"></i>-->
+									</div>
+									<div class="player_desc">
+										<span class="desc1">
+											<span>이천웅</span>
+											<b>우익수</b>										
+										</span>
+										<span class="desc2">
+											<span>0.272</span>
+											<b>타율</b>
+										</span>
+									</div>
+								</div>
+								<!-- // 반복 -->
+							</div>
+							<!-- AWAY LINEUP -->
+							
+							<div class="start_num">
+								<!-- 반복 -->
+								<span>1</span>
+								<!-- // 반복 -->
+								<span>2</span>
+								<span>3</span>
+								<span>4</span>
+								<span>5</span>
+								<span>6</span>
+								<span>7</span>
+								<span>8</span>
+								<span>9</span>
+							</div>
+						</div>
 					</div>
-    				<div class="table_responsive table_player table_hit300">
-						<div class="table_left">
-							<table class="table">
+				</div>
+				<div class="sec_wrapper">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">LG 라인업 변동</span>
+						</div>
+						<div class="change_tbl_wrap">
+							<table class="change_tbl">
+								<caption class="blind">LG 라인업 변동</caption>
+								<colgroup>
+									<col class="col1">
+									<col class="col2">
+									<col class="col3">
+									<col class="col4">
+									<col class="col5">
+								</colgroup>
 								<thead>
 									<tr>
 										<th>
-											<div class="cell">타자</div>
+											<div class="cell">변동</div>
+										</th>
+										<th>
+											<div class="cell">이름</div>
+										</th>
+										<th>
+											<div class="cell">포지션</div>
+										</th>
+										<th>
+											<div class="cell">경기수</div>
+										</th>
+										<th>
+											<div class="cell">기록<br><span>(평자책/타율)</span></div>
 										</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>
-											<div class="cell"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
-												<div class="num">1</div>
-												<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
-												<div class="player_wrap">
-													<div class="player_name">김준완<span class="oval"></span></div>
-													<div class="player_position">중견수</div>
-												</div>
-											</div>
+											<div class="cell">등록</div>
+										</td>
+										<td>
+											<div class="cell">이형종</div>
+										</td>
+										<td>
+											<div class="cell">투수</div>
+										</td>
+										<td>
+											<div class="cell">0</div>
+										</td>
+										<td>
+											<div class="cell">4.5</div>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<div class="cell"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
-												<div class="num">2</div>
-												<div class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></div> <!-- default img -->
-												<div class="player_wrap">
-													<div class="player_name">박민우<span class="oval"></span></div>
-													<div class="player_position">우익수</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell hit300"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
-												<div class="num">3</div>
-												<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
-												<div class="player_wrap">
-													<div class="player_name">남궁민재<span class="oval"></span></div>
-													<div class="player_position">우익수</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell hit300"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
-												<div class="num">4</div>
-												<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
-												<div class="player_wrap">
-													<div class="player_name">이형종<span class="oval"></span></div>
-													<div class="player_position">1루</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="table_right">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<div class="cell">타율</div>
-										</th>
-										<th>
-											<div class="cell">타수</div>
-										</th>
-										<th>
-											<div class="cell">안타</div>
-										</th>
-										<th>
-											<div class="cell">홈런</div>
-										</th>
-										<th>
-											<div class="cell">타점</div>
-										</th>
-										<th>
-											<div class="cell">4사구</div>
-										</th>
-										<th>
-											<div class="cell">삼진</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="cell">144</div>
+											<div class="cell">말소</div>
 										</td>
 										<td>
-											<div class="cell">93</div>
+											<div class="cell">데인드한</div>
 										</td>
 										<td>
-											<div class="cell">1</div>
-										</td>										
-										<td>
-											<div class="cell">0.0</div>
+											<div class="cell">유격수</div>
 										</td>
 										<td>
-											<div class="cell">0.650</div>
+											<div class="cell">12</div>
 										</td>
 										<td>
-											<div class="cell">0.650</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">144</div>
-										</td>
-										<td>
-											<div class="cell">93</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>										
-										<td>
-											<div class="cell">0.0</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">144</div>
-										</td>
-										<td>
-											<div class="cell">93</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>										
-										<td>
-											<div class="cell">0.0</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">144</div>
-										</td>
-										<td>
-											<div class="cell">93</div>
-										</td>
-										<td>
-											<div class="cell">1</div>
-										</td>										
-										<td>
-											<div class="cell">0.0</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
-										</td>
-										<td>
-											<div class="cell">0.650</div>
+											<div class="cell">1.121</div>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
-	    		</div>
-		    </div>
-		    <div class="scroll_top_sec">
-		    	<a href="#none" class="totop blind">TOP</a>
-		    </div>
+				</div>
+				<div class="sec_wrapper">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">두산 라인업 변동</span>
+						</div>
+						<div class="change_tbl_wrap">
+							<table class="change_tbl">
+								<caption class="blind">두산 라인업 변동</caption>
+								<colgroup>
+									<col class="col1">
+									<col class="col2">
+									<col class="col3">
+									<col class="col4">
+									<col class="col5">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>
+											<div class="cell">변동</div>
+										</th>
+										<th>
+											<div class="cell">이름</div>
+										</th>
+										<th>
+											<div class="cell">포지션</div>
+										</th>
+										<th>
+											<div class="cell">경기수</div>
+										</th>
+										<th>
+											<div class="cell">기록<br><span>(평자책/타율)</span></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="cell">등록</div>
+										</td>
+										<td>
+											<div class="cell">김민성</div>
+										</td>
+										<td>
+											<div class="cell">지명타자</div>
+										</td>
+										<td>
+											<div class="cell">11</div>
+										</td>
+										<td>
+											<div class="cell">5.6</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="cell">말소</div>
+										</td>
+										<td>
+											<div class="cell">페르난도</div>
+										</td>
+										<td>
+											<div class="cell">투수</div>
+										</td>
+										<td>
+											<div class="cell">3</div>
+										</td>
+										<td>
+											<div class="cell">4.5</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="cell">말소</div>
+										</td>
+										<td>
+											<div class="cell">홍창기</div>
+										</td>
+										<td>
+											<div class="cell">유격수</div>
+										</td>
+										<td>
+											<div class="cell">7</div>
+										</td>
+										<td>
+											<div class="cell">0.144</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="sec_wrapper">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">차우찬 vs 두산<span class="brackets">(최근 3년)</span><span class="oval_desc"><i class="oval"></i>3할 이상타자</span></span>
+						</div>
+						<div class="table_responsive table_player table_hit300">
+							<div class="table_left">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell">타자</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
+													<div class="num">1</div>
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">김준완<span class="oval"></span></div>
+														<div class="player_position">중견수</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
+													<div class="num">2</div>
+													<div class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></div> <!-- default img -->
+													<div class="player_wrap">
+														<div class="player_name">박민우<span class="oval"></span></div>
+														<div class="player_position">우익수</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell hit300"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
+													<div class="num">3</div>
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">남궁민재<span class="oval"></span></div>
+														<div class="player_position">우익수</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell hit300"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
+													<div class="num">4</div>
+													<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+													<div class="player_wrap">
+														<div class="player_name">이형종<span class="oval"></span></div>
+														<div class="player_position">1루</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table_right">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell">타율</div>
+											</th>
+											<th>
+												<div class="cell">타수</div>
+											</th>
+											<th>
+												<div class="cell">안타</div>
+											</th>
+											<th>
+												<div class="cell">홈런</div>
+											</th>
+											<th>
+												<div class="cell">타점</div>
+											</th>
+											<th>
+												<div class="cell">4사구</div>
+											</th>
+											<th>
+												<div class="cell">삼진</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">144</div>
+											</td>
+											<td>
+												<div class="cell">93</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">0.0</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">144</div>
+											</td>
+											<td>
+												<div class="cell">93</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">0.0</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">144</div>
+											</td>
+											<td>
+												<div class="cell">93</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">0.0</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">144</div>
+											</td>
+											<td>
+												<div class="cell">93</div>
+											</td>
+											<td>
+												<div class="cell">1</div>
+											</td>										
+											<td>
+												<div class="cell">0.0</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+											<td>
+												<div class="cell">0.650</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="scroll_top_sec">
+					<a href="#none" class="totop blind">TOP</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
-<script src="res/js/gnb.js"></script>
 <script src="res/js/relay.js"></script>
 <script>
-bnbUi.init();
-bnbUi.initLottie();
 relayUi.initSubTab(document.getElementById('tab_1depth1'));
-relayUi.initSubTab(document.getElementById('tab_1depth2'));
-relayUi.initSubTab(document.getElementById('tab_1depth3'));
-relayUi.initSubTab(document.getElementById('tab_1depth4'));
-relayUi.initSubTab(document.getElementById('tab_1depth5'));
-relayUi.initSubTab(document.getElementById('tab_1depth6'));
 
-
-document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('wrap').setAttribute('data-theme','');
-	document.getElementById('wrap').setAttribute('data-theme',this.value);
-	bnbUi.teamLottie()
+function content_scroll(){
+	var scrollH = 
+    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - 1) + 'px';
+	document.querySelector('.content_scroll').style.height = scrollH;
+}
+content_scroll();
+window.addEventListener('resize', function(e) {
+	content_scroll();
 });
 </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    var imgPlayerDefault = $(".relay_video_thumb"); // img영역    
-    var btnPlayerView = $(".btn_player_view") // 화면 숨기기 버튼
-    var btnPlayerViewTextOff = $(".btn_player_view .txt_off") // 화면 숨기기 텍스트
-    var btnPlayerViewTextOn = $(".btn_player_view .txt_on") // 화면 보이기 텍스트
-    
-    $(btnPlayerView).on("click", function() {
-        $(this).toggleClass("active");
-        $(imgPlayerDefault).toggleClass("active");
-        if ($(imgPlayerDefault).hasClass("active")) {
-			$(btnPlayerViewTextOn).addClass("active");
-            $(btnPlayerViewTextOff).removeClass("active");            
-            $(btnPlayerViewTextOff).removeClass("default");            
-        } else {
-            $(btnPlayerViewTextOff).addClass("active");
-            $(btnPlayerViewTextOn).removeClass("active");
-        }
-    });
-});    
-</script>
+
 </body>
 </html>

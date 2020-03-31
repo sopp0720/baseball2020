@@ -8,11 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap" data-theme="theme_LG" class="theme_LG">
+<div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
-		<div class="content relay">
-			<div class="sec_wrapper relay_video_wrap">
+		<div class="content relay live_video">
+			<div class="video_wrap">
 				<div class="relay_video_thumb" style="background-image:url('res/images/bg-half-player-img-pts.png')">
 					<!--
 					<span class="ic_show"></span>
@@ -49,239 +49,217 @@
 					</div>
 					-->
 				</div>
-				<button type="button" class="btn_player_view">
+			</div>
+			<div class="btn_player_view_wrap">
+				<button type="button" class="btn_player_view" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보이기</span>
 					<i></i>
 				</button>
 			</div>
-			<div class="sec_wrapper relay_card_wrap">
-				<div class="inner">
-					<ul>
-						<li class="on"> <!-- 해당페이지 카드에서 on 클래스 추가 -->
-							<span class="ic_5g blind">5G</span>
-							<span class="ic_info">9회말</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-									<em class="i_score">5</em>
+			<div class="content_scroll">
+				<div class="sec_wrapper relay_card_wrap">
+					<div class="inner">
+						<ul>
+							<li class="on"> <!-- 해당페이지 카드에서 on 클래스 추가 -->
+								<span class="ic_5g blind">5G</span>
+								<span class="ic_info">9회말</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+										<em class="i_score">5</em>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_OB"></span>
+										<em class="i_score">2</em>
+									</div>
 								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_OB"></span>
-									<em class="i_score">2</em>
+							</li>
+							<li> <!-- 해당페이지 카드에서 on 클래스 추가 -->
+								<span class="ic_5g blind">5G</span>
+								<span class="ic_info">경기종료</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LG"></span>
+										<em class="i_score">5</em>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_OB"></span>
+										<em class="i_score i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+									</div>
 								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기전</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LT"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">롯데</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_SK"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">SK</span>
+									</div>
+								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기취소</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_WO"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">키움</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_SK"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">삼성</span>
+									</div>
+								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기종료</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LT"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">롯데</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_KT"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">KT</span>
+									</div>
+								</div>
+							</li>
+							<li> <!-- on클래스 없으면 불투명 -->
+								<!--<span class="ic_5g blind">5G</span>-->
+								<span class="ic_info">경기종료</span>
+								<div class="card_box">
+									<div class="team_box top_box">
+										<span class="team_logo team_logo_LT"></span>
+										<!--<em class="i_score">5</em>-->
+										<span class="team_name">롯데</span>
+									</div>
+									<div class="team_box bottom_box">
+										<span class="team_logo team_logo_KT"></span>
+										<!--<em class="i_score">2</em>-->
+										<span class="team_name">KT</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab_1depth_wrap">
+					<div class="tab_1depth" id="tab_1depth4">
+						<ul class="tab_link">
+							<li class="tab_item"><span>경기정보</span></li>
+							<li class="tab_item"><span>응원하기</span></li>
+							<li class="tab_item active"><span>득점장면</span></li>
+							<li class="tab_item"><span>주요장면</span></li>
+							<li class="tab_item"><span>문자중계</span></li>
+						</ul>
+						<div class="active_bar"></div>
+					</div>
+				</div>
+				<div class="score_scene_sec">
+					<!-- 득점한 팀 X -->
+					<div class="list_none">
+						<div class="img_box"></div>
+						<p>득점한 팀이 없습니다.</p>
+					</div>
+					<!-- // 득점한 팀 X -->
+					<ul> <!-- 득점한 팀이 없을 때 ul부터 히든 -->
+						<li class="usetap"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
+							<span class="ic_play"></span>
+							<span class="info_round">4회초</span>
+							<div class="team_info left">
+								<span class="team_name">LG</span>
+								<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
 							</div>
+							<div class="vs_middle_box">
+								<em class="i_score left">3</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+								<span class="vs_img"></span>
+								<em class="i_score right i_gray2">1</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+							</div>
+							<div class="team_info right">							
+								<span class="team_logo team_logo_OB"></span>
+								<span class="team_name">두산</span>
+							</div>
+							<span class="score_desc">중견수 희생플라이 아웃</span>
+							<span class="player_desc"><b>허경민</b> (투수 : 차우찬)</span>
 						</li>
-						<li> <!-- 해당페이지 카드에서 on 클래스 추가 -->
-							<span class="ic_5g blind">5G</span>
-							<span class="ic_info">경기종료</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LG"></span>
-									<em class="i_score">5</em>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_OB"></span>
-									<em class="i_score i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-								</div>
+						<li class="usetap in_play"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
+							<span class="ic_play"></span>
+							<span class="info_round">3회말</span>
+							<div class="team_info left">
+								<span class="team_name">LG</span>
+								<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
 							</div>
+							<div class="vs_middle_box">
+								<em class="i_score left">2</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+								<span class="vs_img"></span>
+								<em class="i_score right i_gray2">1</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+							</div>
+							<div class="team_info right">							
+								<span class="team_logo team_logo_OB"></span>
+								<span class="team_name">두산</span>
+							</div>
+							<span class="score_desc">좌익수 오른쪽 1루타</span>
+							<span class="player_desc"><b>최주환</b> (투수 : 차우찬)</span>
 						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기전</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LT"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">롯데</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_SK"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">SK</span>
-								</div>
+						<li class="usetap"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
+							<span class="ic_play"></span>
+							<span class="info_round">1회초</span>
+							<div class="team_info left">
+								<span class="team_name">LG</span>
+								<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
 							</div>
-						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기취소</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_WO"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">키움</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_SK"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">삼성</span>
-								</div>
+							<div class="vs_middle_box">
+								<em class="i_score left">17</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
+								<span class="vs_img"></span>
+								<em class="i_score right i_gray2">12</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
 							</div>
-						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기종료</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LT"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">롯데</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_KT"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">KT</span>
-								</div>
+							<div class="team_info right">							
+								<span class="team_logo team_logo_OB"></span>
+								<span class="team_name">두산</span>
 							</div>
-						</li>
-						<li> <!-- on클래스 없으면 불투명 -->
-							<!--<span class="ic_5g blind">5G</span>-->
-							<span class="ic_info">경기종료</span>
-							<div class="card_box">
-								<div class="team_box top_box">
-									<span class="team_logo team_logo_LT"></span>
-									<!--<em class="i_score">5</em>-->
-									<span class="team_name">롯데</span>
-								</div>
-								<div class="team_box bottom_box">
-									<span class="team_logo team_logo_KT"></span>
-									<!--<em class="i_score">2</em>-->
-									<span class="team_name">KT</span>
-								</div>
-							</div>
+							<span class="score_desc">폭투로 홈인</span>
+							<span class="player_desc"><b>김재호</b> (투수 : 차우찬)</span>
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div class="tab_1depth" id="tab_1depth4">
-				<ul class="tab_link">
-					<li class="tab_item"><span>경기정보</span></li>
-					<li class="tab_item"><span>응원하기</span></li>
-					<li class="tab_item active"><span>득점장면</span></li>
-					<li class="tab_item"><span>주요장면</span></li>
-					<li class="tab_item"><span>문자중계</span></li>
-				</ul>
-				<div class="active_bar"></div>
-			</div>
-			<div class="score_scene_sec">
-				<!-- 득점한 팀 X -->
-				<div class="list_none">
-					<div class="img_box"></div>
-					<p>득점한 팀이 없습니다.</p>
+				<div class="scroll_top_sec">
+					<a href="#none" class="totop blind">TOP</a>
 				</div>
-                <!-- // 득점한 팀 X -->
-				<ul> <!-- 득점한 팀이 없을 때 ul부터 히든 -->
-					<li class="usetap"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
-						<span class="ic_play"></span>
-						<span class="info_round">4회초</span>
-						<div class="team_info left">
-							<span class="team_name">LG</span>
-							<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-						</div>
-						<div class="vs_middle_box">
-							<em class="i_score left">3</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
-							<span class="vs_img"></span>
-							<em class="i_score right i_gray2">1</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
-						</div>
-						<div class="team_info right">							
-							<span class="team_logo team_logo_OB"></span>
-							<span class="team_name">두산</span>
-						</div>
-						<span class="score_desc">중견수 희생플라이 아웃</span>
-						<span class="player_desc"><b>허경민</b> (투수 : 차우찬)</span>
-					</li>
-					<li class="usetap in_play"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
-						<span class="ic_play"></span>
-						<span class="info_round">3회말</span>
-						<div class="team_info left">
-							<span class="team_name">LG</span>
-							<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-						</div>
-						<div class="vs_middle_box">
-							<em class="i_score left">2</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
-							<span class="vs_img"></span>
-							<em class="i_score right i_gray2">1</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
-						</div>
-						<div class="team_info right">							
-							<span class="team_logo team_logo_OB"></span>
-							<span class="team_name">두산</span>
-						</div>
-						<span class="score_desc">좌익수 오른쪽 1루타</span>
-						<span class="player_desc"><b>최주환</b> (투수 : 차우찬)</span>
-					</li>
-					<li class="usetap"> <!-- Focus(현재 재생 중인 득점 장면) in_play 클래스 추가 -->
-						<span class="ic_play"></span>
-						<span class="info_round">1회초</span>
-						<div class="team_info left">
-							<span class="team_name">LG</span>
-							<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-						</div>
-						<div class="vs_middle_box">
-							<em class="i_score left">17</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
-							<span class="vs_img"></span>
-							<em class="i_score right i_gray2">12</em> <!-- 점수 내지 않은 팀 i_gray2 클래스 추가 -->
-						</div>
-						<div class="team_info right">							
-							<span class="team_logo team_logo_OB"></span>
-							<span class="team_name">두산</span>
-						</div>
-						<span class="score_desc">폭투로 홈인</span>
-						<span class="player_desc"><b>김재호</b> (투수 : 차우찬)</span>
-					</li>
-				</ul>
 			</div>
-			<div class="scroll_top_sec">
-		    	<a href="#none" class="totop blind">TOP</a>
-		    </div>
 		</div>
 	</div>
 </div>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
-<script src="res/js/gnb.js"></script>
 <script src="res/js/relay.js"></script>
 <script>
-bnbUi.init();
-bnbUi.initLottie();
-relayUi.initSubTab(document.getElementById('tab_1depth1'));
-relayUi.initSubTab(document.getElementById('tab_1depth2'));
-relayUi.initSubTab(document.getElementById('tab_1depth3'));
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
-relayUi.initSubTab(document.getElementById('tab_1depth5'));
-relayUi.initSubTab(document.getElementById('tab_1depth6'));
+relayUi.activeBar(2,document.getElementById('tab_1depth4'));
 
-
-document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('wrap').setAttribute('data-theme','');
-	document.getElementById('wrap').setAttribute('data-theme',this.value);
-	bnbUi.teamLottie()
+function content_scroll(){
+	var scrollH = 
+    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - 1) + 'px';
+	document.querySelector('.content_scroll').style.height = scrollH;
+}
+content_scroll();
+window.addEventListener('resize', function(e) {
+	content_scroll();
 });
 </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    var imgPlayerDefault = $(".relay_video_thumb"); // img영역    
-    var icShow = $(".relay_video_thumb .ic_show"); // img영역    
-    var btnPlayerView = $(".btn_player_view") // 화면 숨기기 버튼
-    var btnPlayerViewTextOff = $(".btn_player_view .txt_off") // 화면 숨기기 텍스트
-    var btnPlayerViewTextOn = $(".btn_player_view .txt_on") // 화면 보이기 텍스트
-    
-    $(btnPlayerView).on("click", function() {
-        $(this).toggleClass("active");
-        $(imgPlayerDefault).toggleClass("active");
-        if ($(imgPlayerDefault).hasClass("active")) {
-			$(btnPlayerViewTextOn).addClass("active");
-            $(btnPlayerViewTextOff).removeClass("active");
-            $(btnPlayerViewTextOff).removeClass("default");
-			$(icShow).hide();
-        } else {
-            $(btnPlayerViewTextOff).addClass("active");
-            $(btnPlayerViewTextOn).removeClass("active");
-			$(icShow).show();
-        }
-    });	
-});    
 
-</script>
 </body>
 </html>
