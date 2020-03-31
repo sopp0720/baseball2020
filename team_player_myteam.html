@@ -322,6 +322,17 @@
                 <div class="img_team_position team_pitcher">
                     <span class="team_name">LG TWINS</span>
                 </div>
+				<div class="tab_2depth four" id="tab_2depth2">
+					<div class="tab_inner">
+						<ul>
+							<li class="tab_item active">투수</li>
+							<li class="tab_item">포수</li>
+							<li class="tab_item">내야수</li>
+							<li class="tab_item">외야수</li>
+						</ul>
+						<div class="active_fill" style="left: 0px; width: 70px;"></div>
+					</div>
+				</div>
                 <div class="team_position_all">
                     <div class="inner">
                         <ul>
@@ -613,6 +624,7 @@ teamUi.init();
 teamUi.initSubTab(document.getElementById('tab_1depth'));
 teamUi.activeBar(2,document.getElementById('tab_1depth'));
 teamUi.initDepthTab(document.getElementById('tab_2depth'));
+teamUi.initDepthTab(document.getElementById('tab_2depth2'));
 teamUi.init3DepthTab(document.getElementById('tab_3depth'));
 teamUi.init3DepthTab(document.getElementById('tab_3depth2'));
 

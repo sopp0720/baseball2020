@@ -196,6 +196,33 @@
 .modal .bg_gradient.mlb {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 .modal .bg_gradient.abl {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 
+.ic_chat_input {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
+[data-theme="theme_default"] .ic_chat_input {background-position:0 0%;}
+[data-theme="theme_LG"] .ic_chat_input {background-position:0 40%;}
+[data-theme="theme_HH"] .ic_chat_input {background-position:0 10%;}
+[data-theme="theme_SS"] .ic_chat_input {background-position:0 90%;}
+[data-theme="theme_KT"] .ic_chat_input {background-position:0 30%;}
+[data-theme="theme_SK"] .ic_chat_input {background-position:0 80%;}
+[data-theme="theme_WO"] .ic_chat_input {background-position:0 100%;}
+[data-theme="theme_WO"] .futures .ic_chat_input {background-image:url(../images/logo/team_symbol_sq_WO_f.png);background-position:0 0;}
+[data-theme="theme_NC"] .ic_chat_input {background-position:0 60%;}
+[data-theme="theme_OB"] .ic_chat_input {background-position:0 70%;}
+[data-theme="theme_HT"] .ic_chat_input {background-position:0 20%;}
+[data-theme="theme_LT"] .ic_chat_input {background-position:0 50%;}
+
+.ic_chat_send {max-width:100%;background-size:100%;background-image:url(../images/logo/ic_send.png);}
+[data-theme="theme_default"] .ic_chat_send {background-position:0 0%;}
+[data-theme="theme_LG"] .ic_chat_send {background-position:0 60%;}
+[data-theme="theme_HH"] .ic_chat_send {background-position:0 20%;}
+[data-theme="theme_SS"] .ic_chat_send {background-position:0 90%;}
+[data-theme="theme_KT"] .ic_chat_send {background-position:0 50%;}
+[data-theme="theme_SK"] .ic_chat_send {background-position:0 100%;}
+[data-theme="theme_WO"] .ic_chat_send {background-position:0 40%;}
+[data-theme="theme_NC"] .ic_chat_send {background-position:0 80%;}
+[data-theme="theme_OB"] .ic_chat_send {background-position:0 10%;}
+[data-theme="theme_HT"] .ic_chat_send {background-position:0 30%;}
+[data-theme="theme_LT"] .ic_chat_send {background-position:0 70%;}
+
 /* Team Color bg*/
 .team_color_LG {background-color:#C10A3A;}
 .team_color_SS {background-color:#0063AB;}
