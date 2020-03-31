@@ -8,130 +8,117 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap" class="theme_LG">
+<div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
-		<div class="content home">           
-            <div class="sec_wrapper img_player_wrap">
+		<div class="content home live_video">
+            <div class="video_wrap">
                 <div class="img_player_default" style="background-image:url('res/images/img-player-default.jpg')">
                     <span class="ico_play"></span>
                 </div>
-                <button type="button" class="btn_player_view">
-                    <span>화면 숨기기</span>
-                    <i></i>
-                </button>
             </div>
-            <div class="sec_wrapper">
-		        <div class="inner">
-		            <div class="title_hd">
-                        <span class="sec_title">특별 VOD</span>
-                    </div>
-                    <div class="highlight_wrap highlight_detail sp_vod">
-                        <div class="highlight_box usetap">
-                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
-                                <span class="overlay"></span> <!-- 재생중인 컨텐츠 -->
-                                <i class="play_time">08:11</i>
-                            </div> <!-- video img -->
-                            <b>하이라이트</b>
-                            <p>부상은 안돼 무릎 위쪽을 맞아 털썩 주저 앉은 박용택</p>
-                            <div class="video_info">
-                                <span class="ico_share blind">공유하기</span>
-                            </div>
-                        </div>
-                        <div class="highlight_box usetap">
-                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
-                                <!--<span class="overlay"></span>-->
-                                <i class="play_time">08:11</i>
-                            </div> <!-- video img -->
-                            <b>주요장면</b>
-                            <p>'야구는 10회말 투아웃부터!' 이재원, 연장 끝내기</p>
-                            <div class="video_info">
-                                <span class="ico_share blind">공유하기</span>
-                            </div>
-                        </div>
-                        <div class="highlight_box usetap">
-                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
-                                <!--<span class="overlay"></span>-->
-                                <i class="play_time">08:11</i>
-                            </div> <!-- video img -->
-                            <b>승부처</b>
-                            <p>'무사 만루 무득점' 최고의 기회를 살리지 못하는 롯데</p>
-                            <div class="video_info">
-                                <span class="ico_share blind">공유하기</span>
-                            </div>
-                        </div>
-                        <div class="highlight_box usetap">
-                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
-                                <!--<span class="overlay"></span>-->
-                                <i class="play_time">08:11</i>
-                            </div> <!-- video img -->
-                            <b>시구</b>
-                            <p>'바람을 따라 훨훨 날아 담장밖으로' 김재환의 선제 공격 선제 공격</p>
-                            <div class="video_info">
-                                <span class="ico_share blind">공유하기</span>
-                            </div>
-                        </div>
-                        <div class="highlight_box usetap">
-                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
-                                <!--<span class="overlay"></span>-->
-                                <i class="play_time">08:11</i>
-                            </div> <!-- video img -->
-                            <b>하이라이트</b>
-                            <p>'무사 만루 무득점' 최고의 기회를 살리지 못하는 롯데</p>
-                            <div class="video_info">
-                                <span class="ico_share blind">공유하기</span>
-                            </div>
-                        </div>
-                        <div class="highlight_box usetap">
-                            <div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
-                                <!--<span class="overlay"></span>-->
-                                <i class="play_time">08:11</i>
-                            </div> <!-- video img -->
-                            <b>주요장면</b>
-                            <p>'바람을 따라 훨훨 날아 담장밖으로' 김재환의 선제 공격 선제 공격</p>
-                            <div class="video_info">
-                                <span class="ico_share blind">공유하기</span>
-                            </div>
-                        </div>
-                    </div>
-		        </div>
-		    </div>
+			<div class="btn_player_view_wrap">
+				<button type="button" class="btn_player_view" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
+					<span class="txt_off default">화면 숨기기</span>
+					<span class="txt_on">화면 보이기</span>
+					<i></i>
+				</button>
+			</div>
+			<div class="content_scroll">
+				<div class="sec_wrapper">
+					<div class="inner">
+						<div class="title_hd">
+							<span class="sec_title">특별 VOD</span>
+						</div>
+						<div class="highlight_wrap highlight_detail sp_vod">
+							<div class="highlight_box usetap">
+								<div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+									<span class="overlay"></span> <!-- 재생중인 컨텐츠 -->
+									<i class="play_time">08:11</i>
+								</div> <!-- video img -->
+								<b>하이라이트</b>
+								<p>부상은 안돼 무릎 위쪽을 맞아 털썩 주저 앉은 박용택</p>
+								<div class="video_info">
+									<span class="ico_share blind">공유하기</span>
+								</div>
+							</div>
+							<div class="highlight_box usetap">
+								<div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+									<!--<span class="overlay"></span>-->
+									<i class="play_time">08:11</i>
+								</div> <!-- video img -->
+								<b>주요장면</b>
+								<p>'야구는 10회말 투아웃부터!' 이재원, 연장 끝내기</p>
+								<div class="video_info">
+									<span class="ico_share blind">공유하기</span>
+								</div>
+							</div>
+							<div class="highlight_box usetap">
+								<div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+									<!--<span class="overlay"></span>-->
+									<i class="play_time">08:11</i>
+								</div> <!-- video img -->
+								<b>승부처</b>
+								<p>'무사 만루 무득점' 최고의 기회를 살리지 못하는 롯데</p>
+								<div class="video_info">
+									<span class="ico_share blind">공유하기</span>
+								</div>
+							</div>
+							<div class="highlight_box usetap">
+								<div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+									<!--<span class="overlay"></span>-->
+									<i class="play_time">08:11</i>
+								</div> <!-- video img -->
+								<b>시구</b>
+								<p>'바람을 따라 훨훨 날아 담장밖으로' 김재환의 선제 공격 선제 공격</p>
+								<div class="video_info">
+									<span class="ico_share blind">공유하기</span>
+								</div>
+							</div>
+							<div class="highlight_box usetap">
+								<div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+									<!--<span class="overlay"></span>-->
+									<i class="play_time">08:11</i>
+								</div> <!-- video img -->
+								<b>하이라이트</b>
+								<p>'무사 만루 무득점' 최고의 기회를 살리지 못하는 롯데</p>
+								<div class="video_info">
+									<span class="ico_share blind">공유하기</span>
+								</div>
+							</div>
+							<div class="highlight_box usetap">
+								<div class="thumb" style="background-image:url('res/images/highlight_thumb.jpg');">
+									<!--<span class="overlay"></span>-->
+									<i class="play_time">08:11</i>
+								</div> <!-- video img -->
+								<b>주요장면</b>
+								<p>'바람을 따라 훨훨 날아 담장밖으로' 김재환의 선제 공격 선제 공격</p>
+								<div class="video_info">
+									<span class="ico_share blind">공유하기</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
     </div>
 </div>
-
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
-<script src="res/js/gnb.js"></script>
+<script src="res/js/relay.js"></script>
 <script>
-bnbUi.init();
-bnbUi.initLottie();
-document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('wrap').setAttribute('data-theme','');
-	document.getElementById('wrap').setAttribute('data-theme',this.value);
-	bnbUi.teamLottie()
+function content_scroll(){
+	var scrollH = 
+    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - 1) + 'px';
+	document.querySelector('.content_scroll').style.height = scrollH;
+}
+content_scroll();
+window.addEventListener('resize', function(e) {
+	content_scroll();
 });
 </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    var imgPlayerDefault = $(".img_player_default"); // img영역
-    var icoPlay = $(".img_player_default .ico_play") // play icon
-    var btnPlayerView = $(".btn_player_view") // 화면 숨기기 버튼
-    var btnPlayerViewText = $(".btn_player_view span") // 화면 숨기기 텍스트
-    
-    $(btnPlayerView).on("click", function() {
-        $(this).toggleClass("active");
-        $(imgPlayerDefault).toggleClass("active");
-        if ($(imgPlayerDefault).hasClass("active")) {
-            $(btnPlayerViewText).text("화면 보이기");
-            $(icoPlay).fadeOut();
-        } else {
-            $(btnPlayerViewText).text("화면 숨기기");
-            $(icoPlay).fadeIn();
-        }
-    });
-});    
-</script>
+
 </body>
 </html>
