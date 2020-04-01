@@ -668,15 +668,19 @@
 .relay.content .chat_inner {position:absolute;left:0;right:0;top:0;bottom:5.0667rem;overflow-x:hidden;overflow-y:auto;background-color:#f2f3f4;white-space:nowrap;}
 .relay.content .chat_inner:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .relay.content .scroll_bottom {width:100%;padding:0 1.5333rem;display:inline-block;vertical-align:bottom;white-space:normal;}
+.relay.content .desc_middle {width:100%;padding:0 1.5333rem 5rem;display:inline-block;vertical-align:middle;white-space:normal;text-align:center;}
+.relay.content .desc_middle .img_box {margin:0 auto;width:24.8333rem;height:10rem;background-image:url(../images/img-player-empty-chat.png);background-size:100%;}
+.relay.content .desc_middle p {margin-top:1.3333rem;font-size:1.3333rem;font-weight:500;line-height:1.9667rem;color:#c8c8c8;}
 .relay.content .chat_btm {position:absolute;bottom:0;left:0;right:0;background-color:#fff;border-top:1px solid #dee1e6;padding:0 7.1333rem 0 4.2rem;}
 .relay.content .chat_input {display:table;width:100%;max-height:10.4rem;height:5.0667rem;padding:1rem 0;}
-.relay.content .textarea_wrap {width:100%;vertical-align:middle;display:table-cell;font-size:0;}
-.relay.content .textarea {width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;color:#000;}
+.relay.content .textarea_wrap {position:relative;width:100%;vertical-align:middle;display:table-cell;font-size:0;}
+.relay.content .textarea {position:relative;z-index:1;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;}
 .relay.content .textarea::-webkit-input-placeholder {color:#858585 !important;font-size:1.4667rem;line-height:2.1667rem;}
+.relay.content .dummy {position:absolute;left:0;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;-webkit-user-select:none;user-select:none;opacity:0;}
 .relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.6rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
 .relay.content .chat_wrap .ic_chat_send {position:absolute;bottom:1.0333rem;right:1.5333rem;width:3rem;height:3rem;}
 .relay.content .msg_wrap {position:relative;padding-bottom:1.4rem;text-align:center;font-size:0;}
-.relay.content [data-chreer="theme_default"] .msg_wrap:last-of-type {padding-bottom:6.4rem;}
+.relay.content .msg_wrap:last-of-type {padding-bottom:6.4rem;}
 .relay.content .msg_wrap.left {text-align:left;border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
 .relay.content .msg_wrap.right {text-align:right;border-top-left-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
 .relay.content .msg_wrap .welcome {display:inline-block;width:14.1667rem;height:3.1333rem;border-radius:1.5667rem;background-color:rgba(43,43,43,0.07);font-size:1.2rem;font-weight:bold;line-height:3.1333rem;text-align:center;color:#484848;}
@@ -694,15 +698,24 @@
 .relay.content .chat_wrap .time {position:absolute;width:6.0667rem;height:1.4667rem;font-size:1.2rem;line-height:1.4667rem;color: #b4b4b4;bottom:0;}
 .relay.content .msg_wrap.left .time {right:-6.4667rem;text-align:left;}
 .relay.content .msg_wrap.right .time {left:-6.4667rem;text-align:right;}
-.relay.content .chreer_selection {display:none;position:absolute;bottom:6.2333rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;}
-.relay.content [data-chreer="theme_default"] .chreer_selection {display:block;}
+.relay.content .chreer_selection {margin-bottom:1.1667rem;position:absolute;bottom:5.0667rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;transition:all 0.3s ease-in-out;}
+.relay.content .chreer_selection:after {content:'';position:absolute;left:50%;width:1px;top:1.0333rem;bottom:1rem;background-color:#dee1e6;}
+.relay.content .chreer_selection .chreer_team.active {opacity:0.8;}
 .relay.content .chreer_selection .chreer_team.left {display:inline-block;width:50%;height:100%;padding-left:2.9333rem;padding-top:0.7rem;text-align:left;}
 .relay.content .chreer_selection .chreer_team.right {display:inline-block;width:50%;height:100%;padding-right:2.9333rem;padding-top:0.7rem;text-align:right;}
-.relay.content .chreer_selection .team_name {display:inline-block;width:8.3333rem;height:2.4667rem;font-size:1.6rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
+.relay.content .chreer_selection .team_name {display:inline-block;width:8.3333rem;height:2.4667rem;font-size:1.6rem;line-height:2.4667rem;color:#c2c3c7;font-weight:normal;}
+.relay.content .chreer_selection .current .team_name {color:#000000;font-weight:bold;}
 .relay.content .chreer_selection .left .team_name {position:relative;text-align:right;padding-right:2.3333rem;}
-.relay.content .chreer_selection .left .ic_chreer {position:absolute;right:0;top:0.4rem;width:1.6667rem;height:1.6667rem;}
+.relay.content .chreer_selection .left .ic_away {position:absolute;right:0;top:0.4rem;width:1.6667rem;height:1.6667rem;}
 .relay.content .chreer_selection .right .team_name {position:relative;text-align:left;padding-left:2.3333rem;}
-.relay.content .chreer_selection .right .ic_enemy {position:absolute;left:0;top:0.4rem;width:1.6667rem;height:1.6667rem;}
+.relay.content .chreer_selection .right .ic_home {position:absolute;left:0;top:0.4rem;width:1.6667rem;height:1.6667rem;}
+.relay.content .chreer_selection .ic_away,
+.relay.content .chreer_selection .ic_home {opacity:0.5;}
+.relay.content .chreer_selection .current .ic_away,
+.relay.content .chreer_selection .current .ic_home {opacity:1;}
+.relay.content .down .chreer_selection {transform:translateY(5rem) translateZ(0);-webkit-transform:translateY(5rem) translateZ(0);opacity:0;}
+.relay.content .ic_chat_down {margin-bottom:0.7rem;position:absolute;bottom:5.0667rem;right:1rem;width:4.4rem;height:4.4rem;background-image:url(../images/ic-chat-down.png);background-size:100%;transform:scale(0) translateZ(0);-webkit-transform:scale(0) translateZ(0);opacity:0;transition:all 0.3s ease-in-out;}
+.relay.content .down .ic_chat_down {transform:scale(1) translateZ(0);-webkit-transform:scale(1) translateZ(0);opacity:1;}
 
 
 /* Relay - game info */
