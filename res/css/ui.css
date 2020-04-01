@@ -991,6 +991,7 @@
 .btn_detail_wrap > button {display:block;width:100%;padding:1.7667rem 0 1.8rem;height:100%;font-size:1.3333rem;font-weight:500;text-align:center;color:#7a7a7a;}
 
 /* Relay - relay text */
+.relay.content .current_sec_wrap {border-bottom:0.9333rem solid #f0f1f6;}
 .relay.content .view_base {position:relative;height:0;padding-bottom:56.203703%;background:url('../images/img-broadcast-base.png') no-repeat;background-size:100% auto;text-align:center;}
 .relay.content .view_base .tag_box {display:inline-block;padding:0.4rem 0.9333rem;height:2.3333rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
 .relay.content .view_base .tag_box_sm {display:inline-block;padding:0.1333rem 0.7667rem;height:1.8rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
@@ -1094,6 +1095,30 @@
 .relay.content .change_position .team_logo {display:block;float:left;width:4rem;height:3.5333rem;}
 .relay.content .change_position p {float:left;margin-left:1rem;margin-top:0.7rem;font-size:1.4667rem;font-weight:bold;color:3000000;}
 
+/* Relay - change player */
+.relay.content .change_player_wrap {padding:0;}
+.relay.content .change_player_wrap .tab_2depth {margin-bottom:2.3333rem;}
+.relay.content .change_sec {margin-left:-1.5333rem;margin-right:-1.5333rem;padding-left:1.5333rem;padding-right:1.5333rem;}
+.relay.content .change_sec:last-child {margin-top:0.6667rem;padding-top:1rem;border-top:0.9333rem solid #f0f1f6;}
+.relay.content .change_sec .title_hd {margin-bottom:1rem;padding-top:0.5333rem;}
+.relay.content .change_sec .sec_title {position:relative;padding-left:3.3rem;}
+.relay.content .change_sec .team_logo {position:absolute;top:0.0667rem;left:0;width:2.6333rem;height:2.3333rem;}
+.relay.content .change_sec ul {position:relative;overflow:hidden;}
+.relay.content .change_sec ul li {position:relative;float:left;padding:1.6rem 0;width:25%;height:7.1333rem;text-align:center;}
+.relay.content .change_sec ul li .i_name {display:block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;}
+.relay.content .change_sec ul li .i_position {display:block;height:1.9667rem;font-size:1.3333rem;font-weight:normal;color:#5d6971;}
+.relay.content .change_sec ul li:after {content:'';position:absolute;top:2.9rem;left:0;width:1px;height:1.3333rem;background-color:#f8f8f9;}
+.relay.content .change_sec ul li:first-child:after {display:none;}
+.relay.content .change_sec ul li:first-child:before {display:none;}
+.relay.content .change_sec ul li:nth-child(4n+1) {position:static;}
+.relay.content .change_sec ul li:nth-child(4n+1):after {display:none;}
+.relay.content .change_sec ul li:nth-child(4n+1):before {content:'';position:absolute;left:0;width:100%;height:1px;background-color:#f8f8f9;}
+.relay.content .change_sec ul li:nth-child(5):before {top:7.1333rem;}
+.relay.content .change_sec ul li:nth-child(9):before {top:14.2667rem;}
+.relay.content .change_sec ul li:nth-child(13):before {top:21.4rem;}
+.relay.content .change_sec ul li:nth-child(17):before {top:28.5333rem;}
+.relay.content .change_sec ul li:nth-child(21):before {top:35.6667rem;}
+
 /* List none */
 .list_none {margin:2.6667rem 0 4rem;}
 .list_none .img_box {height:7.6667rem;background-image:url('../images/img-player-empty-b.png');background-repeat:no-repeat;background-size:auto 7.6667rem;background-position:50% 50%;}
@@ -1176,7 +1201,8 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_1depth_wrap .tab_1depth {margin-top:0;position:absolute;left:0;right:0;}
 .cheering .tab_1depth_wrap .tab_1depth {position:fixed;z-index:2;}
 .cheering .relay_card_wrap {display:none;}
-
+.content .content_scroll .tab_1depth_wrap + .sec_wrapper {border-top:0;}
+.content .content_scroll .tab_3depth + .sec_wrapper {border-top:0;}
 
 /* tab_2depth */
 .tab_2depth {margin-top:2.5rem;position:relative;text-align:center;font-size:0;}
