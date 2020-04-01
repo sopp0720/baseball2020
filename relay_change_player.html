@@ -167,8 +167,8 @@
 						</ul>
 						<div class="active_bar"></div>
 					</div>
-                </div>
-                <div class="sec_wrapper current_sec_wrap">
+				</div>
+                <div class="sec_wrapper">
                     <div class="table_responsive table_player">
                         <div class="table_left" style="width:5.6667rem;">
                             <table class="table">
@@ -383,271 +383,81 @@
                             <li class="tab_item"><span>12회</span></li>
                         </ul>
                     </div>
-                    <div class="current_sec">
-                        <div class="inner">
-                            <!-- 현재 투수 -->
-                            <div class="current_player current_team_OB"> <!-- theme.css : current team -->
-                                <div class="title_hd">
-                                    <span class="sec_title">두산 현재 투수</span>
-                                </div>
-                                <div class="player_info">
-                                    <div class="info_top">
-                                        <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
-                                            <span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
-                                                <span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
-                                            </span>                                
-                                        </div>
-                                        <div class="player_name">
-                                            <div class="i_ratio">
-                                                <span>평균자책 <b>5.01</b></span>
-                                            </div>
-                                            <span class="i_name"><b>함덕주</b> 우투</span>								
-                                        </div>
-                                        <span class="team_logo team_logo_OB"></span> <!-- theme.css : logo KBO -->
-                                    </div>
-                                    <div class="info_tbl">
-                                        <div>
-                                            <span>투구</span>
-                                            <b>22</b>
-                                        </div>
-                                        <div>
-                                            <span>이닝</span>
-                                            <b>0.2</b>
-                                        </div>
-                                        <div>
-                                            <span>삼진</span>
-                                            <b>2</b>
-                                        </div>
-                                        <div>
-                                            <span>볼넷</span>
-                                            <b>1</b>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 현재 투수 -->
-                            <!-- 현재 타자 -->
-                            <div class="current_player current_team_LG"> <!-- theme.css : current team -->
-                                <div class="title_hd">
-                                    <span class="sec_title">LG 현재 타자</span>
-                                </div>
-                                <div class="player_info">
-                                    <div class="info_top">
-                                        <div class="player_img" style="background-image:url('res/images/player_img2.jpg')"> <!-- 선수 이미지 -->
-                                            <span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
-                                                <span class="team_symbol_LG"></span> <!-- theme.css : symbol KBO -->
-                                            </span>                                
-                                        </div>
-                                        <div class="player_name">
-                                            <div class="i_ratio">
-                                                <span>타율 <b>0.306</b></span>
-                                            </div>
-                                            <span class="i_name"><b>이천웅</b> 우투</span>								
-                                        </div>
-                                        <span class="team_logo team_logo_LG"></span> <!-- theme.css : logo KBO -->
-                                    </div>
-                                    <div class="info_tbl">
-                                        <div>
-                                            <span>투구</span>
-                                            <b>22</b>
-                                        </div>
-                                        <div>
-                                            <span>이닝</span>
-                                            <b>0.2</b>
-                                        </div>
-                                        <div>
-                                            <span>삼진</span>
-                                            <b>2</b>
-                                        </div>
-                                        <div>
-                                            <span>볼넷</span>
-                                            <b>1</b>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 스트라이크, 볼, 타격 -->
-                                <ul class="count_desc">
-                                    <li>
-                                        <span class="num hit">3</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                        <b class="name">타격</b>
-                                        <span class="desc">134km 직구</span>
-                                        <!--<span class="count">2 - 2</span>-->
-                                    </li>
-                                    <li>
-                                        <span class="num strike">2</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                        <b class="name">스트라이크</b>
-                                        <span class="desc">134km 직구</span>
-                                        <!--<span class="count">2 - 2</span>-->
-                                    </li>
-                                    <li>
-                                        <span class="num ball">1</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                        <b class="name">볼</b>
-                                        <span class="desc">129km 슬라이더</span>
-                                        <!--<span class="count">2 - 2</span>-->
-                                    </li>
-                                </ul>
-                                <!-- // 스트라이크, 볼, 타격 -->
-                            </div>
-                            <!-- // 현재 타자 -->
-                        </div>
+                    <div class="sec_wrapper change_player_wrap">
+                    	<div class="inner">
+							<div class="tab_2depth" id="tab_2depth">
+								<div class="tab_inner">
+									<ul>
+										<li class="tab_item active">LG</li>
+										<li class="tab_item">두산</li>
+									</ul>
+									<div class="active_fill"></div>
+								</div>
+							</div>
+							<div class="change_sec">
+								<div class="title_hd">
+									<span class="sec_title">
+										<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+										교체 가능 타자
+									</span>
+								</div>
+								<!-- 교체 가능 리스트 -->
+								<ul>
+									<li>
+										<span class="i_name">베이글스</span>
+										<span class="i_position">외야수</span>
+									</li>
+									<li>
+										<span class="i_name">이성우</span>
+										<span class="i_position">포수</span>
+									</li>
+									<li>
+										<span class="i_name">윤진호</span>
+										<span class="i_position">좌익수</span>
+									</li>
+									<li>
+										<span class="i_name">김용의</span>
+										<span class="i_position">내야수</span>
+									</li>
+									<li>
+										<span class="i_name">윤진호</span>
+										<span class="i_position">좌익수</span>
+									</li>
+									<li>
+										<span class="i_name">김용의</span>
+										<span class="i_position">내야수</span>
+									</li>
+								</ul>
+								<!-- // 교체 가능 리스트 -->
+							</div>
+							<div class="change_sec">
+								<div class="title_hd">
+									<span class="sec_title">
+										<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+										교체 가능 투수
+									</span>
+								</div>
+								<!-- 교체 가능 리스트 -->
+								<ul>
+									<li>
+										<span class="i_name">류제국</span>
+										<span class="i_position">우투</span>
+									</li>
+									<li>
+										<span class="i_name">베이글스</span>
+										<span class="i_position">좌투</span>
+									</li>
+									<li>
+										<span class="i_name">차우찬</span>
+										<span class="i_position">좌투</span>
+									</li>
+								</ul>
+								<!-- // 교체 가능 리스트 -->
+							</div>
+                    	</div>
                     </div>
                 </div>
-                <!-- 타자 섹션 -->
-                <div class="sub_sec">
-                    <div class="inner">
-                        <!--  02-1. 타자 정보 -->
-                        <div class="hitter_info">
-                            <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
-                                <span class="team_logo_xs team_color_LG"> <!-- theme.css : team_color_LG -->
-                                    <span class="team_symbol_LG"></span> <!-- theme.css : symbol KBO -->
-                                </span>
-                            </div>
-                            <div class="hitter_desc">
-                                <div class="info_top">
-                                    <span class="i_name">윤진호</span>
-                                    <span class="i_num">5번타자</span>
-                                    <span class="i_average">타율 0.231</span>
-                                </div>
-                                <div class="info_bottom">
-                                    <span>타수 1</span>
-                                    <span>안타 1</span>
-                                    <span>볼넷 1</span>
-                                    <span>홈런 1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  // 02-1. 타자 정보 -->
-                        <!-- 02-6. 현재 타석 선수 타격 결과 -->
-                        <ul class="hit_result">
-                            <li>투수 실책으로 2루까지 진루 (투수 -> 1루수)</li>
-                            <li>볼넷</li>
-                            <li>삼진 아웃</li>
-                        </ul>
-                        <!-- // 02-6. 현재 타석 선수 타격 결과 -->
-                        <!-- 02-7. 현재 타석 선수 결과에 의한 베이스 상황 -->
-                        <ul class="hit_result_base">
-                            <li>2루주자 오윤석 : <span>3루까지 진루</span></li>
-                            <li>3루주자 윤진호 : <span>홈인</span></li>
-                        </ul>
-                        <!-- // 02-7. 현재 타석 선수 결과에 의한 베이스 상황 -->
-                        <!-- 스트라이크, 볼, 타격 -->
-                        <ul class="count_desc">
-                            <li>
-                                <span class="num hit">4</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                <b class="name">타격</b>
-                                <span class="desc">129km 슬라이더</span>
-                                <span class="count">2 - 2</span>
-                            </li>
-                            <li>
-                                <span class="num ball">3</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                <b class="name">볼</b>
-                                <span class="desc">129km 슬라이더</span>
-                                <span class="count">1 - 2</span>
-                            </li>
-                            <li>
-                                <span class="num strike">2</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                <b class="name">스트라이크</b>
-                                <span class="desc">140km 직구</span>
-                                <span class="count">1 - 1</span>
-                            </li>
-                            <li>
-                                <span class="num strike">1</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                <b class="name">스트라이크</b>
-                                <span class="desc">134km 직구</span>
-                                <span class="count">0 - 1</span>
-                            </li>
-                        </ul>
-                        <!-- // 스트라이크, 볼, 타격 -->
-                    </div>
-                </div>
-                <!-- // 타자 섹션 -->
-
-                <!-- 02-10. 비디오판독, 부상 등 갑작스러운 상황 -->
-                <div class="inner">
-                    <div class="emergency_desc">
-                        16:08 ~ 16:06 LG요청으로 비디오 판독 : 정수빈 도루 관련 세이브 -> 세이브
-                    </div>
-                </div>
-                <!-- // 02-10. 비디오판독, 부상 등 갑작스러운 상황 -->
-
-                <!-- 타자 섹션 -->
-                <div class="sub_sec">
-                    <div class="inner">
-                        <!--  02-1. 타자 정보 -->
-                        <div class="hitter_info">
-                            <div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
-                                <span class="team_logo_xs team_color_LG"> <!-- theme.css : team_color_LG -->
-                                    <span class="team_symbol_LG"></span> <!-- theme.css : symbol KBO -->
-                                </span>
-                            </div>
-                            <div class="hitter_desc">
-                                <div class="info_top">
-                                    <span class="i_name">윤진호</span>
-                                    <span class="i_num">5번타자</span>
-                                    <span class="i_average">타율 0.231</span>
-                                </div>
-                                <div class="info_bottom">
-                                    <span>타수 1</span>
-                                    <span>안타 1</span>
-                                    <span>볼넷 1</span>
-                                    <span>홈런 1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  // 02-1. 타자 정보 -->
-                        <!-- 02-6. 현재 타석 선수 타격 결과 -->
-                        <ul class="hit_result">
-                            <li>투수 실책으로 2루까지 진루 (투수 -> 1루수)</li>
-                        </ul>
-                        <!-- // 02-6. 현재 타석 선수 타격 결과 -->
-                        <!-- 02-7. 현재 타석 선수 결과에 의한 베이스 상황 -->
-                        <ul class="hit_result_base">
-                            <li>1루주자 오윤석 : <span>도루로 2루까지 진루</span></li>
-                        </ul>
-                        <!-- // 02-7. 현재 타석 선수 결과에 의한 베이스 상황 -->
-                        <!-- 스트라이크, 볼, 타격 -->
-                        <ul class="count_desc">
-                            <li>
-                                <span class="num strike">2</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                <b class="name">스트라이크</b>
-                                <span class="desc">129km 슬라이더</span>
-                                <span class="count">1 - 1</span>
-                            </li>
-                            <li>
-                                <span class="num ball">1</span> <!-- 클래스 : strike(스트라이크), ball(볼), hit(타격) -->
-                                <b class="name">볼</b>
-                                <span class="desc">129km 슬라이더</span>
-                                <span class="count">1 - 0</span>
-                            </li>
-                        </ul>
-                        <!-- // 스트라이크, 볼, 타격 -->                    
-                        <!-- 02-8. 위치 변경 -->
-                        <ul class="change_locate">
-                            <li>대타 모창민 : 좌익수(으)로 수비위치 변경</li>
-                            <li>대주자 이상호 : 유격수(으)로 수비위치 변경</li>
-                        </ul>
-                        <!-- // 02-8. 위치 변경 -->
-                    </div>
-                </div>
-                <!-- // 타자 섹션 -->
-
-                <!-- 02-9. 교체 명단 -->
-                <div class="inner">
-                    <div class="replace_list">
-                        <span class="i_out">OUT</span> : 2번타자 정주현, <span class="i_in">IN</span> : 대타 전민수
-                    </div>
-                </div>
-                <!-- // 02-9. 교체 명단 -->
-
-                <!-- 02-5. 공수 전환 시 -->
-                <div class="inner">
-                    <div class="change_position">
-                        <span class="team_logo team_logo_LG"></span> <!-- theme.css : logo KBO -->
-                        <p>9회말 LG공격</p>
-                    </div>
-                </div>
-                <!-- // 02-5. 공수 전환 시 -->
-
+                
                 <div class="scroll_top_sec">
                     <a href="#none" class="totop blind">TOP</a>
                 </div>
