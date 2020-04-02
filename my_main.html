@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<select id="teamSelect" style="z-index:99999; position:fixed; top:150px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG" class="main">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content my">
+			<div class="sec_my">
+				<div class="my_info basic">
+					<div class="btn_info usetap">LG화이팅</div>
+					<div class="txt_cheer">LG트윈스 팀을 응원 중 입니다!</div>
+					<div class="btn_cheer usetap">응원팀 변경</div>
+					<div class="team_logo_LG"></div>
+				</div>
+			</div>
+			<div class="sec_my">
+				<div class="my_info ios">
+					<div class="btn_info usetap">LG화이팅</div>
+					<div class="txt_email">baseball0901@gmail.com</div>
+					<div class="txt_cheer">LG트윈스 팀을 응원 중 입니다!</div>
+					<div class="btn_cheer usetap">응원팀 변경</div>
+					<div class="team_logo_LG"></div>
+				</div>
+			</div>
+			<div class="sec_my">
+				<div class="my_info guest">
+					<div class="btn_login usetap">로그인하기</div>
+					<div class="txt_login">지금 로그인하면 게임, 이벤트 등<br>
+					더욱 다양한 서비스를 즐길 수 있습니다.</div>
+					<div class="btn_cheer usetap">응원팀 변경</div>
+					<div class="team_logo_LG"></div>
+				</div>
+            </div>
+			<div class="sec_my">
+				<div class="my_player">
+					<div class="sec_title">나의 응원 선수</div>
+					<div class="edit_wrap" onclick="this.classList.toggle('on');">
+						<span class="edit">편집</span>
+						<span class="complete">완료</span>
+					</div>
+					<div class="btn_group">
+						<div class="dropdown" onclick="this.classList.toggle('on');">
+							<div class="label">LG</div>
+						</div>
+						<div class="dropdown" onclick="this.classList.toggle('on');">
+							<div class="label">포지션</div>
+						</div>
+						<div class="dropdown" onclick="this.classList.toggle('on');">
+							<div class="label">유강남</div>
+						</div>
+						<div class="button" onclick="this.classList.toggle('on');">확인</div>
+					</div>
+					<div class="player_group">
+						<div class="player">
+							<div class="player_no">NO.27</div>
+							<div class="player_xl">
+								<div class="player_img" style="background-image:url('res/images/player_img1.jpg')">
+									<span class="team_logo_xs team_color_HT">
+										<span class="team_symbol_HT"></span>
+									</span>                                
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="tab_container">
+			<!-- Active Tab Container -->
+			<div class="active_tab_container" id="active_tab_container">
+				<div class="tab tab_home">
+					<div class="circle">
+						<div class="img_box" id="circle1">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_team_info">
+					<div class="circle">
+						<div class="img_box" id="circle2">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_relay">
+					<div class="circle">
+						<div class="img_box" id="circle3">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_game">
+					<div class="circle">
+						<div class="img_box" id="circle4">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_my">
+					<div class="circle">
+						<div class="img_box" id="circle5">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Active Button Container -->
+			<!-- Active Label -->
+			<div class="active_label_container" id="active_label_container">
+				<div class="label label_home active">
+					 홈
+				</div>
+				<div class="label label_team_info">
+					 팀정보
+				</div>
+				<div class="label label_team_info">
+					 중계
+				</div>
+				<div class="label label_team_info">
+					 게임
+				</div>
+				<div class="label label_team_info">
+					 MY
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<div class="tab_bar" id="tab_bar">
+				<div class="left_side">
+				</div>
+				<div class="middle">
+					<div class="center_middle">
+					</div>
+				</div>
+				<div class="right_side" style="flex-grow:4;">
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<!-- Button Container -->
+			<div class="tab_button" id="tab_button">
+				<div class="tab tab_home hide">
+					 홈
+				</div>
+				<div class="tab tab_team_info">
+					 팀정보
+				</div>
+				<div class="tab tab_relay">
+					 중계
+				</div>
+				<div class="tab tab_game">
+					 게임
+				</div>
+				<div class="tab tab_my">
+					 MY
+				</div>
+			</div>
+			<!-- Button Container -->
+		</div>
+	</div>
+	<!-- Footer -->
+</div>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+<script>
+bnbUi.init();
+bnbUi.initLottie();
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+	bnbUi.teamLottie()
+});
+</script>
+</body>
+</html>
