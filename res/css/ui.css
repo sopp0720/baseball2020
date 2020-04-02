@@ -1168,7 +1168,7 @@
 .my.content .faq_box .faq_q .subject_wrap {display:table-cell;padding-left:2.8667rem;vertical-align:middle;width:88.663967%;}
 .my.content .faq_box .faq_q .subject {position:relative;font-size:1.4667rem;font-weight:500;color:#2b2b2b;line-height:2.1667rem;vertical-align:middle;}
 .my.content .faq_box .faq_q .ic_q {display:block;position:absolute;top:0.1667rem;left:-2.8667rem;width:1.8667rem;height:1.8667rem;background:url('../images/ic-my-tag-q.png') no-repeat;background-size:100% auto;}
-.my.content .faq_box .faq_q .i_arr {display:block;position:absolute;right:0;top:50%;margin-top:-0.6667rem;width:1.3333rem;height:1.3333rem;background:url('../images/ic-arrow-down-g.png') no-repeat;background-size:100% auto;}
+.my.content .faq_box .faq_q .i_arr {display:block;position:absolute;right:0;top:50%;margin-top:-0.6667rem;width:1.3333rem;height:1.3333rem;background-image:url('../images/ic-arrow-down-g.png');background-repeat:no-repeat;background-size:100% auto;}
 .my.content .faq_box .faq_a {margin:0 -1.5333rem;padding:0 1.5333rem;background-color:#f7f7f7;height:0;overflow:hidden;}
 .my.content .faq_box .faq_a .content {padding:1.5333rem 0;}
 .my.content .faq_box .faq_a .content p {position:relative;padding:0 1.7333rem 0 2.8667rem;font-size:1.2333rem;color:#2b2b2b;}
@@ -1176,6 +1176,7 @@
 
 .my.content .faq_box.current:after {display:none;}
 .my.content .faq_box.current .faq_a {height:auto;}
+.my.content .faq_box.current .faq_q .i_arr {background-image:url('../images/ic-arrow-up-g.png');}
 
 /* List none */
 .list_none {margin:2.6667rem 0 4rem;}
