@@ -661,7 +661,9 @@
 .relay.content .play_list_none p {position:relative;height:1.9667rem;font-size:1.3333rem;font-weight:300;line-height:1.9667rem;color:#000000;}
 .relay.content .play_list_none .quo_marks {display:inline-block;margin-top:1.8667rem;}
 .relay.content .play_list_none .quo_marks:before {content:'';position:absolute;left:-1.2rem;top:-0.3667rem;width:1.0667rem;height:1.0667rem;background-image:url(../images/ic-home-top-text-s.png);background-size:100%;}
-.relay.content .score_board_bottom {margin-top:1.5333rem;border-top:0.9333rem solid #f0f1f6;}
+.relay.content .score_board_bottom {margin-top:1.5333rem;padding-top:1.5333rem;border-top:0.9333rem solid #f0f1f6;}
+.relay.content .score_board_bottom .title_hd {padding-top:0.5333rem;}
+.relay.content .score_board_bottom .table_abl_league + .title_hd {margin-top:2rem;}
 
 /* Relay - chreer */
 .relay.content .chat_wrap {display:none;position:absolute;left:0;right:0;top:5.5333rem;bottom:0;}
@@ -1414,6 +1416,12 @@ background-color:#e9eaeb;}
 .relay.content .table_score_scroll .table_right {overflow-y:hidden;overflow-x:auto;}
 .relay.content .table_score_scroll .table_right .cell {min-width:2.1167rem;}
 .relay.content .table_score_board tbody .cell {padding:0;height:2.9rem;}
+
+/* table - abl league */
+.table_responsive.table_abl_league .table_left {width:12.9333rem;}
+.table_responsive.table_abl_league .table_left .cell .num {float:left;margin-left:0.9rem;padding-top:1.4rem;padding-bottom:1.2rem;}
+.table_responsive.table_abl_league .table_left .cell [class*="team_logo_"] {float:left;margin:0;margin-top:0.3667rem;margin-left:0.2rem;width:4.0333rem;height:3.5667rem;}
+.table_responsive.table_abl_league .table_left .cell .team_name {float:left;margin-top:1.3667rem;margin-left:0.5rem;width:5.5rem;height:1.6667rem;}
 
 /* chart common */
 .bb svg {font:10px sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0);}
