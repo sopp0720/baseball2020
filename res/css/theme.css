@@ -391,6 +391,19 @@
 .player_info_bg_KT {background-image:url('../images/bg/bg-team-player-kt.png');}
 .player_info_bg_HT {background-image:url('../images/bg/bg-team-player-kia.png');}
 .player_info_bg_LT {background-image:url('../images/bg/bg-team-player-lotte.png');}
+/*
+[data-theme="theme_default"] .player_info_bg {background-image:url('../images/bg/bg-team-player-lg.png');}
+[data-theme="theme_LG"] .player_info_bg {background-image:url('../images/bg/bg-team-player-lg.png');}
+[data-theme="theme_SS"] .player_info_bg {background-image:url('../images/bg/bg-team-player-samsung.png');}
+[data-theme="theme_HH"] .player_info_bg {background-image:url('../images/bg/bg-team-player-hanwha.png');}
+[data-theme="theme_OB"] .player_info_bg {background-image:url('../images/bg/bg-team-player-doosan.png');}
+[data-theme="theme_WO"] .player_info_bg {background-image:url('../images/bg/bg-team-player-kiwoom.png');}
+[data-theme="theme_SK"] .player_info_bg {background-image:url('../images/bg/bg-team-player-sk.png');}
+[data-theme="theme_NC"] .player_info_bg {background-image:url('../images/bg/bg-team-player-nc.png');}
+[data-theme="theme_KT"] .player_info_bg {background-image:url('../images/bg/bg-team-player-kt.png');}
+[data-theme="theme_HT"] .player_info_bg {background-image:url('../images/bg/bg-team-player-kia.png');}
+[data-theme="theme_LT"] .player_info_bg {background-image:url('../images/bg/bg-team-player-lotte.png');}
+*/
 
 /* Team schedule bg */
 .team_schedule_bg_LG {background-image:url('../images/bg/team_schedule_bg_LG.png');}

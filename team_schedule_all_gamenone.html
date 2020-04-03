@@ -28,40 +28,40 @@
 		    <!-- page title, btn back -->
             <div class="page_title_wrap">
                 <div class="inner">
-                    <button type="button" class="btn_back blind">뒤로가기</button>
+                    <button type="button" class="btn_back usetap blind">뒤로가기</button>
                     <h2>일정</h2>
                 </div>
             </div>
             <!-- // page title, btn back -->
-            
-            <div class="sec_wrapper schedule_tab_wrap">
-                <div class="tab_2depth" id="tab_2depth">
-                    <div class="tab_inner">
-                        <ul>
-                            <li class="tab_item active">팀별일정</li>
-                            <li class="tab_item">전체일정</li>
-                        </ul>
-                        <div class="active_fill"></div>
-                    </div>
-                </div>
-                <div class="inner">
-                    <div class="div_rel">
-                        <div class="month_wrap plus_week">
-                            <span class="month_arrow i_prev blind">이전</span>
-                            <span class="i_month"><b>5</b><span>월</span><b>4</b><span>주</span></span>
-                            <span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->                        
-                        </div>
-                        <button type="button" class="btn_gocalendar2 blind">달력</button>
-                        <div class="schedule_opt">
-                            <button type="button" class="btn_select">
-                                <span class="label">구장전체</span>
-                                <b class="i_arrow"></b>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="team_schedule_all">
+				<div class="sec_wrapper schedule_tab_wrap">
+					<div class="tab_2depth" id="tab_2depth">
+						<div class="tab_inner">
+							<ul>
+								<li class="tab_item active">팀별일정</li>
+								<li class="tab_item">전체일정</li>
+							</ul>
+							<div class="active_fill"></div>
+						</div>
+					</div>
+					<div class="inner">
+						<div class="div_rel">
+							<div class="month_wrap plus_week">
+								<span class="month_arrow i_prev usetap blind">이전</span>
+								<span class="i_month"><b>5</b><span>월</span><b>4</b><span>주</span></span>
+								<span class="month_arrow i_next usetap blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->                        
+							</div>
+							<button type="button" class="btn_gocalendar2 usetap blind">달력</button>
+							<div class="schedule_opt">
+								<button type="button" class="btn_select usetap">
+									<span class="label">구장전체</span>
+									<b class="i_arrow"></b>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-            
             <!-- list none -->
             <div class="schedule_game_none list_none">
                 <div class="img_box"></div>

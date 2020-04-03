@@ -169,9 +169,9 @@
 			</div>
 			<!-- YEAR -->
 			<div class="year_wrap">
-			    <span class="year_arrow i_prev blind">이전</span>
+			    <span class="year_arrow i_prev usetap blind">이전</span>
 			    <span class="i_year">2020</span>
-			    <span class="year_arrow i_next blind i_disabled">다음</span> <!-- 다음년도가 없을 경우 i_disabled 클래스 추가 -->
+			    <span class="year_arrow i_next usetap blind i_disabled">다음</span> <!-- 다음년도가 없을 경우 i_disabled 클래스 추가 -->
 			</div>
 			<!-- // YEAR -->
 			<div class="inner">
@@ -196,7 +196,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="sec_wrapper">
+			<div class="sec_wrapper rank_chart_sec">
                 <div class="inner">
                     <div class="title_hd">
                         <span class="sec_title">순위표</span>
@@ -212,6 +212,8 @@
                     	<p>아직 순위가 없습니다.</p>
                     </div>
 				</div>
+			</div>
+			<div class="sec_wrapper winlose_chart_sec">
 				<div class="inner">
                     <div class="title_hd">
                         <span class="sec_title">승패표</span>
@@ -231,18 +233,20 @@
                     	<p>아직 승패가 없습니다.</p>
                     </div>
 				</div>
+			</div>
+			<div class="sec_wrapper">
 				<div class="inner">
                     <div class="title_hd">
                         <span class="sec_title">팀 순위</span>
                     </div>
                     <!-- // list none -->
-                    <div class="table_responsive table_team">
+                    <div class="table_responsive table_team width_reset">
 						<div class="table_left ">
 							<table class="table">
 								<thead>
 									<tr>
 										<th>
-											<div class="cell sorting">순위</div>
+											<div class="cell">순위</div>
 										</th>
 									</tr>
 								</thead>
@@ -288,25 +292,25 @@
 								<thead>
 									<tr>
 										<th>
-											<div class="cell sorting">경기</div>
+											<div class="cell">경기</div>
 										</th>
 										<th>
-											<div class="cell sorting">승</div>
+											<div class="cell">승</div>
 										</th>
 										<th>
-											<div class="cell sorting">무</div>
+											<div class="cell">무</div>
 										</th>
 										<th>
-											<div class="cell sorting selected">패</div>
+											<div class="cell">패</div>
 										</th>
 										<th>
-											<div class="cell sorting">승차</div>
+											<div class="cell">승차</div>
 										</th>
 										<th>
-											<div class="cell sorting">승률</div>
+											<div class="cell">승률</div>
 										</th>
 										<th>
-											<div class="cell sorting">최근10경기</div>
+											<div class="cell">최근10경기</div>
 										</th>
 									</tr>
 								</thead>
@@ -322,7 +326,7 @@
 											<div class="cell">2</div>
 										</td>
 										<td>
-											<div class="cell selected">50</div>
+											<div class="cell">50</div>
 										</td>
 										<td>
 											<div class="cell">5.5</div>
@@ -345,7 +349,7 @@
 											<div class="cell">2</div>
 										</td>
 										<td>
-											<div class="cell selected">50</div>
+											<div class="cell">50</div>
 										</td>
 										<td>
 											<div class="cell">5.5</div>
@@ -368,7 +372,7 @@
 											<div class="cell">2</div>
 										</td>
 										<td>
-											<div class="cell selected">50</div>
+											<div class="cell">50</div>
 										</td>
 										<td>
 											<div class="cell">5.5</div>
@@ -402,7 +406,7 @@
 								<thead>
 									<tr>
 										<th>
-											<div class="cell">순위</div>
+											<div class="cell">상대팀</div>
 										</th>
 									</tr>
 								</thead>
@@ -533,7 +537,7 @@
                     			<div class="team_bg team_ranking_bg_LG"> <!-- theme.css : Team record ranking bg -->
                     				<span class="rank_num">1</span>
                     				<span class="title">타율</span>
-                    				<!--<span class="my_team"></span>-->
+                    				<span class="my_team"></span>
                     				<span class="rank_rate">0.344</span>
                     			</div>
                     			<div class="rest_rank">
@@ -676,891 +680,893 @@
                     </div>
 				</div>
 			</div>
-			<div class="sec_off_def">
-				<div class="tab_2depth" id="tab_2depth2">
-					<div class="tab_inner">
-						<ul>
-							<li class="tab_item active">팀 공격</li>
-							<li class="tab_item">팀 수비</li>
-						</ul>
-						<div class="active_fill"></div>
-					</div>
-				</div>
-				<div class="team_offense">
-					<div class="table_responsive table_team">
-						<div class="table_left ">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<div class="cell sorting">순위</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="num">1</div>
-												<div class="team_wrap">
-													<div class="team_logo_OB"></div>
-													<div class="team_name">두산</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr class="row_my">
-										<td>
-											<div class="cell">
-												<div class="num">2</div>
-												<div class="team_wrap">
-													<div class="team_logo_NC"></div>
-													<div class="team_name">NC</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="num">3</div>
-												<div class="team_wrap">
-													<div class="team_logo_WO"></div>
-													<div class="team_name">한화</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="num">4</div>
-												<div class="team_wrap">
-													<div class="team_logo_LG"></div>
-													<div class="team_name">LG</div>
-												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="table_right">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<div class="cell sorting">타율</div>
-										</th>
-										<th>
-											<div class="cell sorting">홈런</div>
-										</th>
-										<th>
-											<div class="cell sorting">타점</div>
-										</th>
-										<th>
-											<div class="cell sorting selected">득점</div>
-										</th>
-										<th>
-											<div class="cell sorting">안타</div>
-										</th>
-										<th>
-											<div class="cell sorting">출루율</div>
-										</th>
-										<th>
-											<div class="cell sorting">장타율</div>
-										</th>
-										<th>
-											<div class="cell sorting">도루</div>
-										</th>
-										<th>
-											<div class="cell sorting">볼넷</div>
-										</th>
-										<th>
-											<div class="cell sorting">삼진</div>
-										</th>
-										<th>
-											<div class="cell sorting">OPS</div>
-										</th>
-										<th>
-											<div class="cell sorting">2루타</div>
-										</th>
-										<th>
-											<div class="cell sorting">3루타</div>
-										</th>
-										<th>
-											<div class="cell sorting">병살타</div>
-										</th>
-										<th>
-											<div class="cell sorting">실책</div>
-										</th>
-										<th>
-											<div class="cell sorting">사구</div>
-										</th>
-										<th>
-											<div class="cell sorting">도루실패</div>
-										</th>
-										<th>
-											<div class="cell sorting">멀티히트</div>
-										</th>
-										<th>
-											<div class="cell sorting">득점권타율</div>
-										</th>
-										<th>
-											<div class="cell sorting">wRC</div>
-										</th>
-										<th>
-											<div class="cell sorting">WAR</div>
-										</th>
-										<th>
-											<div class="cell sorting">IsoP</div>
-										</th>
-										<th>
-											<div class="cell sorting">BABIP</div>
-										</th>
-										<th>
-											<div class="cell sorting">wOBA</div>
-										</th>
-										<th>
-											<div class="cell sorting">WPA</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-									</tr>
-									<tr class="row_my">
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+			<div class="sec_wrapper sec_off_def">
+				<div class="inner">
+					<div class="tab_2depth" id="tab_2depth2">
+						<div class="tab_inner">
+							<ul>
+								<li class="tab_item active">팀 공격</li>
+								<li class="tab_item">팀 수비</li>
+							</ul>
+							<div class="active_fill"></div>
 						</div>
 					</div>
-				</div>
-				<div class="team_defense">
-					<div class="table_responsive table_team">
-						<div class="table_left ">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<div class="cell sorting">순위</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="num">1</div>
-												<div class="team_wrap">
-													<div class="team_logo_OB"></div>
-													<div class="team_name">두산</div>
+					<div class="team_offense">
+						<div class="table_responsive table_team">
+							<div class="table_left ">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell sorting">순위</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="num">1</div>
+													<div class="team_wrap">
+														<div class="team_logo_OB"></div>
+														<div class="team_name">두산</div>
+													</div>
 												</div>
-											</div>
-										</td>
-									</tr>
-									<tr class="row_my">
-										<td>
-											<div class="cell">
-												<div class="num">2</div>
-												<div class="team_wrap">
-													<div class="team_logo_NC"></div>
-													<div class="team_name">NC</div>
+											</td>
+										</tr>
+										<tr class="row_my">
+											<td>
+												<div class="cell">
+													<div class="num">2</div>
+													<div class="team_wrap">
+														<div class="team_logo_NC"></div>
+														<div class="team_name">NC</div>
+													</div>
 												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="num">3</div>
-												<div class="team_wrap">
-													<div class="team_logo_WO"></div>
-													<div class="team_name">한화</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="num">3</div>
+													<div class="team_wrap">
+														<div class="team_logo_WO"></div>
+														<div class="team_name">한화</div>
+													</div>
 												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">
-												<div class="num">4</div>
-												<div class="team_wrap">
-													<div class="team_logo_LG"></div>
-													<div class="team_name">LG</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="num">4</div>
+													<div class="team_wrap">
+														<div class="team_logo_LG"></div>
+														<div class="team_name">LG</div>
+													</div>
 												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table_right">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell sorting">타율</div>
+											</th>
+											<th>
+												<div class="cell sorting">홈런</div>
+											</th>
+											<th>
+												<div class="cell sorting">타점</div>
+											</th>
+											<th>
+												<div class="cell sorting selected">득점</div>
+											</th>
+											<th>
+												<div class="cell sorting">안타</div>
+											</th>
+											<th>
+												<div class="cell sorting">출루율</div>
+											</th>
+											<th>
+												<div class="cell sorting">장타율</div>
+											</th>
+											<th>
+												<div class="cell sorting">도루</div>
+											</th>
+											<th>
+												<div class="cell sorting">볼넷</div>
+											</th>
+											<th>
+												<div class="cell sorting">삼진</div>
+											</th>
+											<th>
+												<div class="cell sorting">OPS</div>
+											</th>
+											<th>
+												<div class="cell sorting">2루타</div>
+											</th>
+											<th>
+												<div class="cell sorting">3루타</div>
+											</th>
+											<th>
+												<div class="cell sorting">병살타</div>
+											</th>
+											<th>
+												<div class="cell sorting">실책</div>
+											</th>
+											<th>
+												<div class="cell sorting">사구</div>
+											</th>
+											<th>
+												<div class="cell sorting">도루실패</div>
+											</th>
+											<th>
+												<div class="cell sorting">멀티히트</div>
+											</th>
+											<th>
+												<div class="cell sorting">득점권타율</div>
+											</th>
+											<th>
+												<div class="cell sorting">wRC</div>
+											</th>
+											<th>
+												<div class="cell sorting">WAR</div>
+											</th>
+											<th>
+												<div class="cell sorting">IsoP</div>
+											</th>
+											<th>
+												<div class="cell sorting">BABIP</div>
+											</th>
+											<th>
+												<div class="cell sorting">wOBA</div>
+											</th>
+											<th>
+												<div class="cell sorting">WPA</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+										</tr>
+										<tr class="row_my">
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
-						<div class="table_right">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<div class="cell sorting">평자책</div>
-										</th>
-										<th>
-											<div class="cell sorting">승리</div>
-										</th>
-										<th>
-											<div class="cell sorting">세이브</div>
-										</th>
-										<th>
-											<div class="cell sorting selected">홀드</div>
-										</th>
-										<th>
-											<div class="cell sorting">탈삼진</div>
-										</th>
-										<th>
-											<div class="cell sorting">승률</div>
-										</th>
-										<th>
-											<div class="cell sorting">경기</div>
-										</th>
-										<th>
-											<div class="cell sorting">이닝</div>
-										</th>
-										<th>
-											<div class="cell sorting">완투</div>
-										</th>
-										<th>
-											<div class="cell sorting">완봉</div>
-										</th>
-										<th>
-											<div class="cell sorting">WHIP</div>
-										</th>
-										<th>
-											<div class="cell sorting">자책점</div>
-										</th>
-										<th>
-											<div class="cell sorting">피홈런</div>
-										</th>
-										<th>
-											<div class="cell sorting">실점</div>
-										</th>
-										<th>
-											<div class="cell sorting">볼넷</div>
-										</th>
-										<th>
-											<div class="cell sorting">블론세이브</div>
-										</th>
-										<th>
-											<div class="cell sorting">피안타율</div>
-										</th>
-										<th>
-											<div class="cell sorting">QS</div>
-										</th>
-										<th>
-											<div class="cell sorting">사구</div>
-										</th>
-										<th>
-											<div class="cell sorting">패전</div>
-										</th>
-										<th>
-											<div class="cell sorting">K%</div>
-										</th>
-										<th>
-											<div class="cell sorting">BB%</div>
-										</th>
-										<th>
-											<div class="cell sorting">WAR</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>										
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>										
-									</tr>
-									<tr>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>										
-									</tr>
-									<tr class="row_my">
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell selected">160</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">0.475</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">125</div>
-										</td>
-										<td>
-											<div class="cell">160</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>
-										<td>
-											<div class="cell">22</div>
-										</td>										
-									</tr>
-								</tbody>
-							</table>
+					</div>
+					<div class="team_defense">
+						<div class="table_responsive table_team">
+							<div class="table_left ">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell sorting">순위</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="num">1</div>
+													<div class="team_wrap">
+														<div class="team_logo_OB"></div>
+														<div class="team_name">두산</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="row_my">
+											<td>
+												<div class="cell">
+													<div class="num">2</div>
+													<div class="team_wrap">
+														<div class="team_logo_NC"></div>
+														<div class="team_name">NC</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="num">3</div>
+													<div class="team_wrap">
+														<div class="team_logo_WO"></div>
+														<div class="team_name">한화</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">
+													<div class="num">4</div>
+													<div class="team_wrap">
+														<div class="team_logo_LG"></div>
+														<div class="team_name">LG</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table_right">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="cell sorting">평자책</div>
+											</th>
+											<th>
+												<div class="cell sorting">승리</div>
+											</th>
+											<th>
+												<div class="cell sorting">세이브</div>
+											</th>
+											<th>
+												<div class="cell sorting selected">홀드</div>
+											</th>
+											<th>
+												<div class="cell sorting">탈삼진</div>
+											</th>
+											<th>
+												<div class="cell sorting">승률</div>
+											</th>
+											<th>
+												<div class="cell sorting">경기</div>
+											</th>
+											<th>
+												<div class="cell sorting">이닝</div>
+											</th>
+											<th>
+												<div class="cell sorting">완투</div>
+											</th>
+											<th>
+												<div class="cell sorting">완봉</div>
+											</th>
+											<th>
+												<div class="cell sorting">WHIP</div>
+											</th>
+											<th>
+												<div class="cell sorting">자책점</div>
+											</th>
+											<th>
+												<div class="cell sorting">피홈런</div>
+											</th>
+											<th>
+												<div class="cell sorting">실점</div>
+											</th>
+											<th>
+												<div class="cell sorting">볼넷</div>
+											</th>
+											<th>
+												<div class="cell sorting">블론세이브</div>
+											</th>
+											<th>
+												<div class="cell sorting">피안타율</div>
+											</th>
+											<th>
+												<div class="cell sorting">QS</div>
+											</th>
+											<th>
+												<div class="cell sorting">사구</div>
+											</th>
+											<th>
+												<div class="cell sorting">패전</div>
+											</th>
+											<th>
+												<div class="cell sorting">K%</div>
+											</th>
+											<th>
+												<div class="cell sorting">BB%</div>
+											</th>
+											<th>
+												<div class="cell sorting">WAR</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>										
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>										
+										</tr>
+										<tr>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>										
+										</tr>
+										<tr class="row_my">
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell selected">160</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">0.475</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">125</div>
+											</td>
+											<td>
+												<div class="cell">160</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>
+											<td>
+												<div class="cell">22</div>
+											</td>										
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1656,7 +1662,6 @@
 	</div>
 	<!-- Footer -->
 </div>
-
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
 <script src="res/js/gnb.js"></script>
@@ -1680,25 +1685,25 @@ var chart1 = bb.generate({
         labels: {
             format: function(v, id, i, j) {
                 if (v == 1) {
-                    v = "10위";
+                    v = "10";
                 } else if (v == 2) {
-                    v = "9위";
+                    v = "9";
                 } else if (v == 3) {
-                    v = "8위";
+                    v = "8";
                 } else if (v == 4) {
-                    v = "7위";
+                    v = "7";
                 } else if (v == 5) {
-                    v = "6위";
+                    v = "6";
                 } else if (v == 6) {
-                    v = "5위";
+                    v = "5";
                 } else if (v == 7) {
-                    v = "4위";
+                    v = "4";
                 } else if (v == 8) {
-                    v = "3위";
+                    v = "3";
                 } else if (v == 9) {
-                    v = "2위";
+                    v = "2";
                 } else if (v == 10) {
-                    v = "1위";
+                    v = "1";
                 }
                 return v;
             },
