@@ -28,297 +28,299 @@
 		    <!-- page title, btn back -->
             <div class="page_title_wrap">
                 <div class="inner">
-                    <button type="button" class="btn_back blind">뒤로가기</button>
+                    <button type="button" class="btn_back usetap blind">뒤로가기</button>
                     <h2>일정</h2>
                 </div>
             </div>
             <!-- // page title, btn back -->
-            <div class="sec_wrapper schedule_tab_wrap">
-                <div class="tab_2depth" id="tab_2depth">
-                    <div class="tab_inner">
-                        <ul>
-                            <li class="tab_item active">팀별일정</li>
-                            <li class="tab_item">전체일정</li>
-                        </ul>
-                        <div class="active_fill"></div>
-                    </div>
-                </div>
-                <div class="inner">
-                    <div class="div_rel">
-                        <div class="month_wrap plus_week">
-                            <span class="month_arrow i_prev blind">이전</span>
-                            <span class="i_month"><b>5</b><span>월</span><b>4</b><span>주</span></span>
-                            <span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->                        
-                        </div>
-                        <button type="button" class="btn_gocalendar2 blind">달력</button>
-                        <div class="schedule_opt">
-                            <button type="button" class="btn_select">
-                                <span class="label">구장전체</span>
-                                <b class="i_arrow"></b>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="team_schedule_all">
+				<div class="sec_wrapper schedule_tab_wrap">
+					<div class="tab_2depth" id="tab_2depth">
+						<div class="tab_inner">
+							<ul>
+								<li class="tab_item active">팀별일정</li>
+								<li class="tab_item">전체일정</li>
+							</ul>
+							<div class="active_fill"></div>
+						</div>
+					</div>
+					<div class="inner">
+						<div class="div_rel">
+							<div class="month_wrap plus_week">
+								<span class="month_arrow i_prev usetap blind">이전</span>
+								<span class="i_month"><b>5</b><span>월</span><b>4</b><span>주</span></span>
+								<span class="month_arrow i_next usetap blind">다음</span> <!-- 다음월이 없을 경우 i_disabled 클래스 추가 -->                        
+							</div>
+							<button type="button" class="btn_gocalendar2 usetap blind">달력</button>
+							<div class="schedule_opt">
+								<button type="button" class="btn_select usetap">
+									<span class="label">구장전체</span>
+									<b class="i_arrow"></b>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
             
-            <div class="sec_wrapper schedule_box_wrap schedule_all_list">
-                <div class="inner">
-                    <div class="schedule_date">
-                        <b>5</b>
-                        <span>월</span> 
-                        <b class="i_day">27</b>
-                        <span>일</span>
-                        <i>(금)</i>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">LG</span>
-                            <span class="team_logo team_logo_LG"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_before">경기중</span>
-                                <!--
-                                <span class="info_today i_cancel">종료</span>                                
-                                <span class="info_today i_cancel">취소</span>                                
-                                -->                      
-                                <span class="info_round">19:00 사직</span>
-                            </div>
-                            <em class="text_left"></em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_LT"></span>
-                            <span class="team_name">롯데</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">한화</span>
-                            <span class="team_logo team_logo_HH"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_before">경기전</span>
-                                <!--
-                                <span class="info_today i_cancel">종료</span>                                
-                                <span class="info_today i_cancel">취소</span>                                
-                                -->                      
-                                <span class="info_round">18:30 마산</span>
-                            </div>
-                            <em class="text_left"></em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_SS"></span>
-                            <span class="team_name">삼성</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">두산</span>
-                            <span class="team_logo team_logo_OB"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_cancel">종료</span>
-                                <!--
-                                <span class="info_today i_before">경기전</span>
-                                <span class="info_today i_cancel">취소</span>                                
-                                -->                      
-                                <span class="info_round">18:30 잠실</span>
-                            </div>
-                            <em class="text_left">6</em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_KT"></span>
-                            <span class="team_name">KT</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">NC</span>
-                            <span class="team_logo team_logo_NC"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_cancel">취소</span>
-                                <!--
-                                <span class="info_today i_cancel">종료</span>
-                                <span class="info_today i_before">경기전</span>
-                                -->                      
-                                <span class="info_round">19:00 창원</span>
-                            </div>
-                            <em class="text_left"></em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_HT"></span>
-                            <span class="team_name">KIA</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">SK</span>
-                            <span class="team_logo team_logo_SK"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right">1</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_cancel">종료</span>
-                                <!--
-                                <span class="info_today i_before">경기전</span>
-                                <span class="info_today i_cancel">취소</span>
-                                -->                      
-                                <span class="info_round">19:00 문학</span>
-                            </div>
-                            <em class="text_left">1</em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_WO"></span>
-                            <span class="team_name">키움</span>
-                        </div>
-                    </div>
-                </div>
+				<div class="sec_wrapper schedule_box_wrap schedule_all_list">
+					<div class="inner">
+						<div class="schedule_date">
+							<b>5</b>
+							<span>월</span> 
+							<b class="i_day">27</b>
+							<span>일</span>
+							<i>(금)</i>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">LG</span>
+								<span class="team_logo team_logo_LG"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_before">경기중</span>
+									<!--
+									<span class="info_today i_cancel">종료</span>                                
+									<span class="info_today i_cancel">취소</span>                                
+									-->                      
+									<span class="info_round">19:00 사직</span>
+								</div>
+								<em class="text_left"></em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_LT"></span>
+								<span class="team_name">롯데</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">한화</span>
+								<span class="team_logo team_logo_HH"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_before">경기전</span>
+									<!--
+									<span class="info_today i_cancel">종료</span>                                
+									<span class="info_today i_cancel">취소</span>                                
+									-->                      
+									<span class="info_round">18:30 마산</span>
+								</div>
+								<em class="text_left"></em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_SS"></span>
+								<span class="team_name">삼성</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">두산</span>
+								<span class="team_logo team_logo_OB"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_cancel">종료</span>
+									<!--
+									<span class="info_today i_before">경기전</span>
+									<span class="info_today i_cancel">취소</span>                                
+									-->                      
+									<span class="info_round">18:30 잠실</span>
+								</div>
+								<em class="text_left">6</em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_KT"></span>
+								<span class="team_name">KT</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">NC</span>
+								<span class="team_logo team_logo_NC"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_cancel">취소</span>
+									<!--
+									<span class="info_today i_cancel">종료</span>
+									<span class="info_today i_before">경기전</span>
+									-->                      
+									<span class="info_round">19:00 창원</span>
+								</div>
+								<em class="text_left"></em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_HT"></span>
+								<span class="team_name">KIA</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">SK</span>
+								<span class="team_logo team_logo_SK"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right">1</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_cancel">종료</span>
+									<!--
+									<span class="info_today i_before">경기전</span>
+									<span class="info_today i_cancel">취소</span>
+									-->                      
+									<span class="info_round">19:00 문학</span>
+								</div>
+								<em class="text_left">1</em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_WO"></span>
+								<span class="team_name">키움</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sec_wrapper schedule_box_wrap schedule_all_list">
+					<div class="inner">
+						<div class="schedule_date">
+							<b>12</b>
+							<span>월</span> 
+							<b class="i_day">9</b>
+							<span>일</span>
+							<i>(토)</i>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">LG</span>
+								<span class="team_logo team_logo_LG"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right">5</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_before">경기중</span>
+									<!--
+									<span class="info_today i_cancel">종료</span>                                
+									<span class="info_today i_cancel">취소</span>                                
+									-->                      
+									<span class="info_round">19:00 사직</span>
+								</div>
+								<em class="text_left">3</em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_LT"></span>
+								<span class="team_name">롯데</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">한화</span>
+								<span class="team_logo team_logo_HH"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_before">경기전</span>
+									<!--
+									<span class="info_today i_cancel">종료</span>                                
+									<span class="info_today i_cancel">취소</span>                                
+									-->                      
+									<span class="info_round">18:30 마산</span>
+								</div>
+								<em class="text_left"></em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_SS"></span>
+								<span class="team_name">삼성</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">두산</span>
+								<span class="team_logo team_logo_OB"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_cancel">종료</span>
+									<!--
+									<span class="info_today i_before">경기전</span>
+									<span class="info_today i_cancel">취소</span>                                
+									-->                      
+									<span class="info_round">18:30 잠실</span>
+								</div>
+								<em class="text_left">6</em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_KT"></span>
+								<span class="team_name">KT</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">NC</span>
+								<span class="team_logo team_logo_NC"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_cancel">취소</span>
+									<!--
+									<span class="info_today i_cancel">종료</span>
+									<span class="info_today i_before">경기전</span>
+									-->                      
+									<span class="info_round">19:00 창원</span>
+								</div>
+								<em class="text_left"></em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_HT"></span>
+								<span class="team_name">KIA</span>
+							</div>
+						</div>
+						<div class="schedule_box">
+							<div class="team_box left_box">
+								<span class="team_name">SK</span>
+								<span class="team_logo team_logo_SK"></span>
+							</div>
+							<div class="middle_box">
+								<em class="text_right">1</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
+								<div class="info_today_wrap">
+									<span class="info_today i_cancel">종료</span>
+									<!--
+									<span class="info_today i_before">경기전</span>
+									<span class="info_today i_cancel">취소</span>
+									-->                      
+									<span class="info_round">19:00 문학</span>
+								</div>
+								<em class="text_left">1</em>
+							</div>
+							<div class="team_box right_box">
+								<span class="team_logo team_logo_WO"></span>
+								<span class="team_name">키움</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sec_wrapper schedule_box_wrap schedule_all_list">
+					<div class="inner">
+						<div class="schedule_date">
+							<b>12</b>
+							<span>월</span> 
+							<b class="i_day">27</b>
+							<span>일</span>
+							<i>(금)</i>
+						</div>
+						<!-- 경기가 없을 때 -->
+						<div class="game_none">
+							<p>해당 날짜에는 경기가 없습니다.</p>
+						</div>
+						<!-- // 경기가 없을 때 -->
+					</div>
+				</div>
             </div>
-            <div class="sec_wrapper schedule_box_wrap schedule_all_list">
-                <div class="inner">
-                    <div class="schedule_date">
-                        <b>12</b>
-                        <span>월</span> 
-                        <b class="i_day">9</b>
-                        <span>일</span>
-                        <i>(토)</i>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">LG</span>
-                            <span class="team_logo team_logo_LG"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right">5</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_before">경기중</span>
-                                <!--
-                                <span class="info_today i_cancel">종료</span>                                
-                                <span class="info_today i_cancel">취소</span>                                
-                                -->                      
-                                <span class="info_round">19:00 사직</span>
-                            </div>
-                            <em class="text_left">3</em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_LT"></span>
-                            <span class="team_name">롯데</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">한화</span>
-                            <span class="team_logo team_logo_HH"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_before">경기전</span>
-                                <!--
-                                <span class="info_today i_cancel">종료</span>                                
-                                <span class="info_today i_cancel">취소</span>                                
-                                -->                      
-                                <span class="info_round">18:30 마산</span>
-                            </div>
-                            <em class="text_left"></em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_SS"></span>
-                            <span class="team_name">삼성</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">두산</span>
-                            <span class="team_logo team_logo_OB"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_cancel">종료</span>
-                                <!--
-                                <span class="info_today i_before">경기전</span>
-                                <span class="info_today i_cancel">취소</span>                                
-                                -->                      
-                                <span class="info_round">18:30 잠실</span>
-                            </div>
-                            <em class="text_left">6</em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_KT"></span>
-                            <span class="team_name">KT</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">NC</span>
-                            <span class="team_logo team_logo_NC"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right"></em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_cancel">취소</span>
-                                <!--
-                                <span class="info_today i_cancel">종료</span>
-                                <span class="info_today i_before">경기전</span>
-                                -->                      
-                                <span class="info_round">19:00 창원</span>
-                            </div>
-                            <em class="text_left"></em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_HT"></span>
-                            <span class="team_name">KIA</span>
-                        </div>
-                    </div>
-                    <div class="schedule_box">
-                        <div class="team_box left_box">
-                            <span class="team_name">SK</span>
-                            <span class="team_logo team_logo_SK"></span>
-                        </div>
-                        <div class="middle_box">
-                            <em class="text_right">1</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-                            <div class="info_today_wrap">
-                                <span class="info_today i_cancel">종료</span>
-                                <!--
-                                <span class="info_today i_before">경기전</span>
-                                <span class="info_today i_cancel">취소</span>
-                                -->                      
-                                <span class="info_round">19:00 문학</span>
-                            </div>
-                            <em class="text_left">1</em>
-                        </div>
-                        <div class="team_box right_box">
-                            <span class="team_logo team_logo_WO"></span>
-                            <span class="team_name">키움</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sec_wrapper schedule_box_wrap schedule_all_list">
-                <div class="inner">
-                    <div class="schedule_date">
-                        <b>12</b>
-                        <span>월</span> 
-                        <b class="i_day">27</b>
-                        <span>일</span>
-                        <i>(금)</i>
-                    </div>
-                    <!-- 경기가 없을 때 -->
-                    <div class="game_none">
-                        <p>해당 날짜에는 경기가 없습니다.</p>
-                    </div>
-                    <!-- // 경기가 없을 때 -->
-                </div>
-            </div>            
 		</div>
 	</div>
 </div>

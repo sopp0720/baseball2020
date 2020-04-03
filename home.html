@@ -24,7 +24,7 @@
 <div id="wrap" data-theme="theme_LG" class="main">
 	<!--<div id="header"></div>-->
 	<div id="container">
-		<div class="content home">
+		<div class="content home home_main">
             <!-- 01_응원팀 경기 시작 전 : case마다 클래스 상이(case0n) -->
 		    <div class="top_phrase case01">
 		        <h1 class="ic_logo_lgu"><a href="#none" class="blind">U+프로야구</a></h1>		        
@@ -140,10 +140,12 @@
                 <div class="inner">
                     <div class="score_today usetap">
                         <div class="team_img_wrap left">
-                            <div class="team_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
-                                <span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
-                                    <span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
-                                </span>                                
+							<div class="player_xl">
+								<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"> <!-- 선수 이미지 -->
+									<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+										<span class="team_symbol_LG"></span> <!-- theme.css : symbol KBO -->
+									</span>                                
+								</div>
                             </div>
                             <span class="player_name"><!--<i class="result_val">패</i>-->하재훈</span>
                         </div>
@@ -163,11 +165,13 @@
                             <span class="info_round">2회초</span>
                         </div>
                         <div class="team_img_wrap right">
-                            <div class="team_img" style="background-image:url('res/images/player_img2.jpg')"> <!-- 선수 이미지 -->
-                                <span class="team_logo_xs team_color_NC"> <!-- theme.css : Team Color bg -->
-                                    <span class="team_symbol_NC"></span> <!-- theme.css : symbol KBO -->
-                                </span>                                
-                            </div>
+							<div class="player_xl">
+								<div class="player_img" style="background-image:url('res/images/player_img2.jpg')"> <!-- 선수 이미지 -->
+									<span class="team_logo_xs team_color_NC"> <!-- theme.css : Team Color bg -->
+										<span class="team_symbol_NC"></span> <!-- theme.css : symbol KBO -->
+									</span>                                
+								</div>
+							</div>
                             <span class="player_name"><!--<i class="result_val">승</i>-->김대륙</span>
                         </div>
                     </div>
@@ -461,7 +465,7 @@
             </div>
             <div class="sec_wrapper">
                 <div class="inner">
-                    <div class="bn_rel bn560 usetap">
+                    <div class="bn_rel bn560">
                         <img src="res/images/banner-img-02-01.png" alt="">
                     </div>
                 </div>
@@ -482,8 +486,8 @@
             </div>
             <div class="sec_wrapper">
                 <div class="inner">
-                    <a href="#none" class="usetap">
-                        <div class="bn_rel bn156">
+                    <a href="#none">
+                        <div class="bn_rel bn156 usetap">
                             <img src="res/images/banner-img-05-04.png" alt="">
                         </div>
                     </a>
@@ -491,8 +495,8 @@
             </div>
             <div class="sec_wrapper">
                 <div class="inner">
-                    <a href="#none" class="usetap">
-                        <div class="bn_rel bn120">
+                    <a href="#none">
+                        <div class="bn_rel bn120 usetap">
                             <img src="res/images/banner-img-06-01.png" alt="">                        
                         </div>
                     </a>
@@ -589,7 +593,7 @@
                         <span class="sec_title">뉴스</span>
                         <a href="#none" class="more blind usetap">자세히보기</a>
                     </div>
-                    <div class="news_main" style="background-image:url('res/images/news_main.jpg')">
+                    <div class="news_main usetap" style="background-image:url('res/images/news_main.jpg')">
                     	<div class="txt_inner_wrap"> <!-- 20200323 추가 -->
 							<div class="txt_inner">
 								<span class="agency">연합뉴스</span>
