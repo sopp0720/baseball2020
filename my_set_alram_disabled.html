@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<div id="wrap" data-theme="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content my">
+			<!-- page title, btn back -->
+			<div class="page_title_wrap">
+				<div class="inner">
+					<button type="button" class="btn_back blind">뒤로가기</button>
+					<h2>공지사항</h2>
+				</div>
+			</div>
+			<!-- // page title, btn back -->
+			<div class="sec_my alram">
+				<div class="set_list">
+					<div class="tit">새 소식 알림 받기</div>
+					<div class="check_wrap">
+						<input class="checkbox" checked type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">경기 상황 알림 받기</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+			</div>
+			<div class="sec_my alram_detail disabled">
+				<div class="sec_title">알림 상황을 설정해 주세요</div>
+				<div class="sec_title_sub">경기 진행 알림</div>
+				<div class="set_list">
+					<div class="tit">경기 취소</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">라인업</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">경기 시작</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">경기 종료</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="sec_title_sub">플레이 알림</div>
+				<div class="set_list">
+					<div class="tit">안타</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">홈런</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">스코어 (득/실점 시 모두 알림)</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">스코어 2 (점수 변동이 있는 이닝 종료 시 알림)</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">투수 교체</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="sec_title_sub">응원 타자 타석</div>
+				<div class="set_list">
+					<div class="tit">투수 교체</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+				<div class="set_list">
+					<div class="tit">응원 투수 등판</div>
+					<div class="check_wrap">
+						<input class="checkbox" type="checkbox">
+						<div class="check_bg" >
+							<div class="check_bg_theme" ></div>
+						</div>
+						<div class="check_dot"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+</body>
+</html>

@@ -1223,7 +1223,7 @@
 .my.content .sec_my .btn_login:after {content:'';position:absolute;top:50%;right:0;width:0.8rem;height:1.4rem;margin-top:-0.7rem;background-image:url(../images/ic-arrow-white.png);background-size:100%;}
 .my.content .sec_my .txt_login {height:3.4667rem;font-size:1.2rem;font-weight:normal;line-height:1.7333rem;margin-top:0.6rem;}
 .my.content .sec_my .my_info [class*="team_logo_"] {position:absolute;top:50%;right:1.8rem;margin-top:-2.8333rem;width:6.4rem;height:5.6667rem;}
-.my.content .sec_my .sec_title {height:2.4667rem;font-size:1.6667rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
+.my.content .sec_my .sec_title {font-size:1.6667rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
 .my.content .sec_my .my_player {position:relative;}
 .my.content .sec_my .edit_wrap {position:absolute;width:3.2rem;height:3.2rem;top:-0.3667rem;right:-0.8rem;}
 .my.content .sec_my .edit_wrap .edit {position:absolute;font-size:0;line-height:0;direction:ltr;text-indent:-999em;width:3.2rem;height:3.2rem;background-image:url(../images/ic-my-edit-team.png);background-size:100%;}
@@ -1260,7 +1260,7 @@
 .my.content .sec_my .card_none .tit + p {font-size:1.2rem;font-weight:normal;line-height:1.8rem;color:#b4b4b4;margin-top:0.6667rem;padding-bottom:2.6667rem;}
 .my.content .sec_my .sec_title + .set_list {margin-top:1.5333rem;}
 .my.content .sec_my .set_list {position:relative;margin:0 -1.5333rem;overflow:hidden;padding:1.5333rem 6.8rem 1.5333rem 1.5333rem;}
-.my.content .sec_my .set_list:last-of-type {padding-bottom:0;}
+.my.content .sec_my:not(.alram):not(.alram_detail) .set_list:last-of-type {padding-bottom:0;}
 .my.content .sec_my .set_list .tit {font-size:1.4rem;font-weight:normal;line-height:2.0667rem;color:#000000;}
 .my.content .sec_my .set_list .check_wrap {position:absolute;top:1.2333rem;right:1.1333rem;}
 .my.content .sec_my.link {position:relative;padding:1.5333rem 6.8rem 1.5333rem 1.5333rem;}
@@ -1275,6 +1275,15 @@
 .my.content .sec_my.list_wrap .link_list:after {content:'';position:absolute;top:50%;right:1.6667rem;width:0.8rem;height:1.4rem;margin-top:-0.7rem;background-image:url(../images/ic-arrow-gray.png);background-size:100%;}
 .my.content .sec_my.list_wrap .versoin_list {position:relative;font-size:1.6667rem;font-weight:bold;line-height:2.4667rem;color:#000000;padding:1.5333rem 6.8rem 1.5333rem 1.5333rem;}
 .my.content .sec_my.list_wrap .versoin_list .versoin {position:absolute;right:1.5333rem;top:50%;margin-top:-0.9333rem;height:1.8667rem;text-align:right;font-size:1.2667rem;font-weight:500;line-height:1.8667rem;color:#858585;}
+
+/* My - set_alram */
+.my.content .sec_my.alram {padding:0 1.5333rem;border-bottom:0 none;}
+.my.content .sec_my.alram_detail {position:relative;padding:1.5333rem 1.5333rem 3rem;border-bottom:0 none;background-color:#fbfbfb;}
+.my.content .sec_my.alram_detail .sec_title {padding-bottom:1.2rem;}
+.my.content .sec_my.alram_detail.disabled > div {opacity:0.3;}
+.my.content .sec_my.alram_detail.disabled:after {content:'';position:absolute;top:0;left:0;right:0;bottom:0;}
+.my.content .sec_my .sec_title_sub {margin-top:0.3333rem;height:3.7333rem;padding:1.5333rem 0 0.3333rem 0;font-size:1rem;font-weight:500;line-height:1.8667rem;color:#858585;border-top:0.0333rem solid #dee1e6;}
+
 
 /* My - event list */
 .my.content .event_list .bn_wrap {position:relative;margin-top:1.5333rem;}
