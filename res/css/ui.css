@@ -1354,7 +1354,8 @@
 
 /* My - my cheering team */
 .my_cheering_team {margin-top:1.5333rem;}
-.my_cheering_team ul {margin:0 -1.568627%;padding:0 1.5333rem;overflow:hidden;}
+.my_cheering_team ul {margin:0 -1.568627%;padding:0 1.5333rem;}
+.my_cheering_team ul:after {clear:both;content:'';display:block;}
 .my_cheering_team ul li {position:relative;float:left;margin:3.137254% 1.568627% 0;padding-bottom:30.196078%;width:30.196078%;height:0;border-radius:0.7333rem;box-shadow:0 10px 45px 0 rgba(0, 0, 0, 0.06);background-color:#ffffff;overflow:hidden;}
 .my_cheering_team ul li:nth-child(1),
 .my_cheering_team ul li:nth-child(2),
