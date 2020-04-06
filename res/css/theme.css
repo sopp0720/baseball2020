@@ -250,6 +250,19 @@
 [data-theme="theme_HT"] .chreer_color {background-color:#131230 !important;color:#ffffff !important;}
 [data-theme="theme_LT"] .chreer_color {background-color:#AC1020 !important;color:#ffffff !important;}
 
+/* theme radio_bg */
+[data-theme="theme_HH"] .radio_bg {background-position:0 0%;background-size:100%;}
+[data-theme="theme_HT"] .radio_bg {background-position:0 10%;background-size:100%;}
+[data-theme="theme_KT"] .radio_bg {background-position:0 20%;background-size:100%;}
+[data-theme="theme_LG"] .radio_bg {background-position:0 30%;background-size:100%;}
+[data-theme="theme_LT"] .radio_bg {background-position:0 40%;background-size:100%;}
+[data-theme="theme_NC"] .radio_bg {background-position:0 50%;background-size:100%;}
+[data-theme="theme_OB"] .radio_bg {background-position:0 60%;background-size:100%;}
+[data-theme="theme_SK"] .radio_bg {background-position:0 70%;background-size:100%;}
+[data-theme="theme_SS"] .radio_bg {background-position:0 80%;background-size:100%;}
+[data-theme="theme_WO"] .radio_bg {background-position:0 90%;background-size:100%;}
+[data-theme="theme_default"] .radio_bg {background-position:0 100%;background-size:100%;}
+
 /* Team Color bg*/
 .team_color_LG {background-color:#C10A3A;}
 .team_color_SS {background-color:#0063AB;}

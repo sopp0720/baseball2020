@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<select id="teamSelect" style="z-index:99999; position:fixed; top:50px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<button type="button" onclick="layerPopup.show('#popup_1');" style="border:1px solid #000;">Popup_Dropdown List_최소</button>
+<button type="button" onclick="layerPopup.show('#popup_2');" style="border:1px solid #000;">Popup_Dropdown List_최대</button>
+<div id="wrap" data-theme="theme_LG">
+
+	<div class="modal fadeInUp " id="popup_1">
+		<div class="dim" onclick="layerPopup.hide();"></div>
+		<div class="modal_inner">
+			<ul class="dropdown_list">
+				<li>
+					<input type="radio" checked name="dd_list1" />
+					<div class="radio_bg"></div>
+					<div class="tit">투수</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list1" />
+					<div class="radio_bg"></div>
+					<div class="tit">포수</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list1" />
+					<div class="radio_bg"></div>
+					<div class="tit">내야수</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list1" />
+					<div class="radio_bg"></div>
+					<div class="tit">외야수</div>
+				</li>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fadeInUp " id="popup_2">
+		<div class="dim" onclick="layerPopup.hide();"></div>
+		<div class="modal_inner">
+			<ul class="dropdown_list">
+				<li>
+					<input type="radio" checked name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">구장 전체</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">한화생명 이글스 파크</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">창원 NC파크</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">대구 삼성 라이온즈파크</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">고척 스카이돔</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">광주-기아 챔피언스 필드</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">인천 SK 행복드림구장</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">수원 KT 위즈 파크</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">사직 야구장</div>
+				</li>
+				<li>
+					<input type="radio" name="dd_list2" />
+					<div class="radio_bg"></div>
+					<div class="tit">잠실 야구장</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="res/js/common.js"></script>
+<script>
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+});
+</script>
+</body>
+</html>
