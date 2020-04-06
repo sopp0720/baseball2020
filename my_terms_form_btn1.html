@@ -8,7 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap">
+<select id="teamSelect" style="z-index:99999; position:fixed; bottom:150px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content my">
@@ -101,14 +114,14 @@
 5.정회원이라 함은 ‘회사’와 이용계약을 체결하고 ‘이용자’ 아이디
 (ID)를 부여 받은 사람을 말합니다.
 					</p>
-					<div class="btn_box">
+					<div class="bt_btn_box">
 						<div class="btn_box_inner">
 							<!-- 버튼 한 개 -->
-							<button type="button" class="btn_lg">이전버전 보기</button>
+							<button type="button" class="btn_lg btn_theme">이전버전 보기</button>
 							<!-- // 버튼 한 개 -->
 							<!-- 버튼 두 개
-							<button type="button" class="btn_sm">이전버전 보기</button>
-							<button type="button" class="btn_sm">이전버전 보기</button>
+							<button type="button" class="btn_sm btn_gray">이전버전 보기</button>
+							<button type="button" class="btn_sm btn_theme">이전버전 보기</button>
 							// 버튼 두 개 -->
 						</div>
 					</div>
@@ -117,5 +130,17 @@
 		</div>
 	</div>
 </div>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/team.js"></script>
+<script>
+teamUi.init();
+teamUi.initDepthTab(document.getElementById('tab_2depth'));
+
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+});
+</script>
 </body>
 </html>

@@ -510,5 +510,17 @@
 .current_team_LT .i_ratio span {background-color:#c30025;}
 .current_team_LT .info_tbl > div b {color:#c30025;}
 
+/* theme button (응원팀) */
+[data-theme="theme_default"] .btn_theme {background-color:#C10A3A;color:#ffffff;}
+[data-theme="theme_LG"] .btn_theme {background-color:#C10A3A;color:#ffffff;}
+[data-theme="theme_SS"] .btn_theme {background-color:#0063AB;color:#ffffff;}
+[data-theme="theme_HH"] .btn_theme {background-color:#DA5A17;color:#ffffff;}
+[data-theme="theme_OB"] .btn_theme {background-color:#131230;color:#ffffff;}
+[data-theme="theme_WO"] .btn_theme {background-color:#5B0016;color:#ffffff;}
+[data-theme="theme_SK"] .btn_theme {background-color:#C8132F;color:#ffffff;}
+[data-theme="theme_NC"] .btn_theme {background-color:#1F477B;color:#ffffff;}
+[data-theme="theme_KT"] .btn_theme {background-color:#000000;color:#ffffff;}
+[data-theme="theme_HT"] .btn_theme {background-color:#AC1020;color:#ffffff;}
+[data-theme="theme_LT"] .btn_theme {background-color:#C30025;color:#ffffff;}
 
 /*******************************************************************************************/

@@ -8,7 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<div id="wrap">
+<select id="teamSelect" style="z-index:99999; position:fixed; bottom:150px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG">
 	<!--<div id="header"></div>-->
 	<div id="container">
 		<div class="content my">
@@ -24,9 +37,9 @@
 				<div class="inner">
 					<div class="content">
 						<img src="res/images/event_03.png" alt="">
-						<div class="btn_box">
-							<button type="button" class="btn_default">참여하기</button>
-							<!-- <button type="button" class="btn_end">종료된 이벤트</button> -->
+						<div class="bt_btn_box">
+							<button type="button" class="btn_lg btn_theme">참여하기</button>
+							<!-- <button type="button" class="btn_lg btn_end">종료된 이벤트</button> -->
 						</div>
 					</div>
 				</div>
@@ -34,5 +47,17 @@
 		</div>
 	</div>
 </div>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/team.js"></script>
+<script>
+teamUi.init();
+teamUi.initDepthTab(document.getElementById('tab_2depth'));
+
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+});
+</script>
 </body>
 </html>
