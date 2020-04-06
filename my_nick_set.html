@@ -33,13 +33,16 @@
 				</div>
 			</div>
 			<!-- // page title, btn back -->
-			<div class="my_nick_edit">
+			<div class="my_nick_set">
 				<div class="inner">
 					<div class="edit_inner">
 						<div class="img_box"></div>
 						<div class="input_wrap">
 							<p>닉네임을 입력해 주세요.</p>
 							<input type="text" value="LG화이팅">
+							<!-- err msg -->
+							<span class="err_msg">띄어쓰기 없이 한글/영문/숫자만 입력할 수 있습니다.</span>
+							<!-- err msg -->
 						</div>
 					</div>
 					<div class="bt_btn_box">
@@ -50,6 +53,9 @@
 		</div>
 	</div>
 </div>
+<style>
+.err_msg {display:block;margin-top:0.6667rem;font-size:1.0667rem;line-height:1.75;color:#da0000;}
+</style>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/common.js"></script>
 <script src="res/js/team.js"></script>
