@@ -441,8 +441,7 @@
 .team.content .player_info_wrap .player_info dl dd {float:left;margin-top:0.6667rem;margin-left:8.088235%;width:67.40196%;font-size:1.3333rem;font-weight:500;color:#ffffff;}
 .team.content .player_info_wrap .player_info dl dt:first-child {margin-top:0;}
 .team.content .player_info_wrap .player_info dl dd:nth-child(2) {margin-top:0;}
-.team.content .player_info_table_wrap > .inner > div {margin-top:2rem;}
-.team.content .player_info_table_wrap > .inner > div:first-child {margin-top:0;}
+.team.content .player_info_table_wrap .table_responsive + .title_hd {margin-top:2rem;}
 .team.content .video_scroll {margin-top:1rem;}
 .team.content .video_scroll ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .team.content .video_scroll ul li {display:inline-block;margin-left:2.834008%;width:37.044534%;white-space:normal;vertical-align:top;}
@@ -1285,8 +1284,8 @@
 .my.content .sec_my.alram_detail.disabled:after {content:'';position:absolute;top:0;left:0;right:0;bottom:0;}
 .my.content .sec_my .sec_title_sub {margin-top:0.3333rem;height:3.7333rem;padding:1.5333rem 0 0.3333rem 0;font-size:1rem;font-weight:500;line-height:1.8667rem;color:#858585;border-top:0.0333rem solid #dee1e6;}
 
-
 /* My - event list */
+.my.content .event_list {padding-bottom:3rem;}
 .my.content .event_list .bn_wrap {position:relative;margin-top:1.5333rem;}
 .my.content .event_list .bn_wrap.i_end {opacity:0.55;}
 .my.content .event_list .bn_wrap .ic_state {display:block;position:absolute;top:1rem;left:1rem;padding:0 0.7667rem;height:1.8667rem;line-height:1.8667rem;font-size:1.0667rem;font-weight:500;text-align:center;color:#ffffff;border-radius:1.0333rem;background-color:rgba(0,0,0,.2);}
@@ -1322,7 +1321,6 @@
 .my.content .faq_box .faq_a .content {padding:1.5333rem 0;}
 .my.content .faq_box .faq_a .content p {position:relative;padding:0 1.7333rem 0 2.8667rem;font-size:1.2333rem;color:#2b2b2b;}
 .my.content .faq_box .faq_a .ic_a {display:block;position:absolute;top:0;left:0;width:1.8667rem;height:1.8667rem;background:url('../images/ic-my-tag-a.png') no-repeat;background-size:100% auto;}
-
 .my.content .faq_box.current:after {display:none;}
 .my.content .faq_box.current .faq_a {height:auto;}
 .my.content .faq_box.current .faq_q .i_arr {background-image:url('../images/ic-arrow-up-g.png');}
@@ -1375,6 +1373,9 @@
 .my_cheering_team ul li input[type="radio"]:checked + label .team_name {color:#ffffff;}
 .my_cheering_team ul li .team_logo {display:block;margin:0 auto;width:61.688311%;height:60.431654%;}
 .my_cheering_team ul li .team_name {display:block;margin-top:1.948051%;height:2.4667rem;height:24.025974%;font-size:1.6667rem;font-weight:bold;text-align:center;color:#000000;}
+
+/* err msg */
+.err_msg {display:block;margin-top:0.6667rem;font-size:1.0667rem;line-height:1.75;color:#da0000;}
 
 /* List none */
 .list_none {margin:2.6667rem 0 4rem;}
@@ -1847,6 +1848,7 @@ background-color:#e9eaeb;}
 .content .onair_fixed {position:fixed;left:0;right:0;top:0;background-color:#fff;}
 
 /* bottom btn common */
+.bt_btn_h {padding-bottom:9.6555rem;}
 .bt_btn_box {position:fixed;bottom:1.5333rem;left:0;padding:0 1.5333rem;width:100%;height:5rem;}
 .bt_btn_box button {display:block;width:100%;height:100%;font-size:1.5333rem;font-weight:bold;text-align:center;border-radius:1.2667rem;}
 .bt_btn_box button.btn_lg {width:100%;height:100%;}

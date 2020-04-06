@@ -8,6 +8,19 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
+<select id="teamSelect" style="z-index:99999; position:fixed; bottom:150px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
 <div id="wrap" data-theme="theme_default">
 	<!--<div id="header"></div>-->
 	<div id="container">
@@ -20,72 +33,72 @@
 				</div>
 			</div>
 			<!-- // page title, btn back -->
-			<div class="my_cheering_team">
+			<div class="my_cheering_team bt_btn_h">
 				<ul>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerOB" name="cheerTeam">
 						<label for="cheerOB">
 							<span class="team_logo team_logo_OB"></span>
 							<span class="team_name">두산</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerHH" name="cheerTeam">
 						<label for="cheerHH">
 							<span class="team_logo team_logo_HH"></span>
 							<span class="team_name">한화</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerHT" name="cheerTeam">
 						<label for="cheerHT">
 							<span class="team_logo team_logo_HT"></span>
 							<span class="team_name">KIA</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerLG" name="cheerTeam">
 						<label for="cheerLG">
 							<span class="team_logo team_logo_LG"></span>
 							<span class="team_name">LG</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerWO" name="cheerTeam">
 						<label for="cheerWO">
 							<span class="team_logo team_logo_WO"></span>
 							<span class="team_name">키움</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerKT" name="cheerTeam">
 						<label for="cheerKT">
 							<span class="team_logo team_logo_KT"></span>
 							<span class="team_name">KT</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerLT" name="cheerTeam">
 						<label for="cheerLT">
 							<span class="team_logo team_logo_LT"></span>
 							<span class="team_name">롯데</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerNC" name="cheerTeam">
 						<label for="cheerNC">
 							<span class="team_logo team_logo_NC"></span>
 							<span class="team_name">NC</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerSK" name="cheerTeam">
 						<label for="cheerSK">
 							<span class="team_logo team_logo_SK"></span>
 							<span class="team_name">SK</span>
 						</label>
 					</li>
-					<li class="usetap">
+					<li>
 						<input type="radio" id="cheerSS" name="cheerTeam">
 						<label for="cheerSS">
 							<span class="team_logo team_logo_SS"></span>
@@ -100,5 +113,17 @@
 		</div>
 	</div>
 </div>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/team.js"></script>
+<script>
+teamUi.init();
+teamUi.initDepthTab(document.getElementById('tab_2depth'));
+
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+});
+</script>
 </body>
 </html>
