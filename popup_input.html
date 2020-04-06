@@ -9,19 +9,19 @@
 </head>
 <body>
 
-<button type="button" onclick="layerPopup.show('#popup_1');" style="border:1px solid #000;">
-Popup_공지_이미지만 있는 경우</button>
-<button type="button" onclick="layerPopup.show('#popup_2');" style="border:1px solid #000;">Popup_공지_텍스트만 있는 경우</button>
+<button type="button" onclick="layerPopup.show('#popup_1');" style="border:1px solid #000;">팝업1</button>
 
 <div id="wrap" data-theme="theme_LG">
 	<div class="modal fadeIn" id="popup_1">
 		<div class="dim"></div>
 		<div class="modal_inner">
 			<div class="modal_content">
-				<div class="modal_hd">메이저리그 중계 기념 이벤트</div>
-				<div class="modal_bd_image">
-					
-
+				<div class="modal_hd">닉네임 변경</div>
+				<div class="modal_bd">
+					<div class="input_wrap">
+						<input type="text" placeholder="10자 이내의 한글/영문/숫자 입력">
+					</div>
+					<p class="red">* 사용할 수 없는 단어가 포함되어 있습니다.</p>
 				</div>
 				<div class="modal_ft">
 					<div class="btn_half usetap" onclick="layerPopup.hide();">취소</div><div class="btn_half usetap">확인</div>

@@ -1761,7 +1761,7 @@ background-color:#e9eaeb;}
 .fadeIn .modal_inner {position:absolute;bottom:8.7rem;left:0;right:0;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0;}
 .fadeIn.visible .modal_inner {opacity:1;}
 
-/* 텍스트 형 */
+/* layerPopup 텍스트 형 */
 .modal .modal_content {position:relative;overflow:hidden;width:32.9333rem;max-width:100%;border-radius:1.9333rem;background-color:#ffffff;margin:0 auto;}
 .modal .modal_hd {padding:2.3333rem 3rem 0;font-size:1.7333rem;font-weight:bold;line-height:2.5667rem;text-align:center;color:#000000;}
 .modal .modal_bd {padding:3.6667rem 3rem 2.7333rem;max-height:calc(100vh - 19.6667rem);overflow-x:hidden;overflow-y:auto;}
@@ -1776,6 +1776,23 @@ background-color:#e9eaeb;}
 .modal .modal_ft .btn {width:100%;padding:1.0667rem 8.4667rem;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
 .modal .modal_ft .btn_half {display:inline-block;width:50%;padding:1.0667rem 0 1.0667rem 3.3rem;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
 .modal .modal_ft .btn_half + .btn_half {padding:1.0667rem 3.3rem 1.0667rem 0;}
+
+/* layerPopup 이벤트 */
+.modal .image_wrap {margin:-1.3333rem -1.3333rem 0;border-radius:1.9333rem;overflow:hidden;}
+.modal .image_wrap + p {margin-top:1.3333rem;}
+.modal .control_wrap {text-align:center;margin-top:2.3333rem;}
+.modal .check_circle {position:relative;vertical-align:top;width:2rem;height:2rem;display:inline-block;}
+.modal .check_circle .checkbox {position:absolute;top:0;left:0;width:2rem;height:2rem;padding:0;margin:0;z-index:1;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;outline:none;background-color:transparent;}
+.modal .check_circle .check_bg {position:absolute;left:0;right:0;bottom:0;top:0;background-image:url(../images/ic-checkbox-off-s.png);background-size:100%;-webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;}
+.modal .check_circle .check_bg_on {display:none;position:absolute;left:0;right:0;bottom:0;top:0;background-image:url(../images/ic-checkbox-on-s.png);background-size:100%;}
+.modal .check_circle input[type="checkbox"]:checked.checkbox ~ .checkbox {display:none;}
+.modal .check_circle input[type="checkbox"]:checked.checkbox ~ .check_bg_on {display:block;}
+.modal .control_wrap label {vertical-align:top;display:inline-block;padding-left:0.6667rem;font-size:1.3333rem;font-weight:normal;line-height:2rem;color:#525252;}
+
+
+
+
+
 
 /* layerPopup 달력 */
 .modal .calendar_header {position:relative;background-color:#fff;height:12.6667rem;border-top-left-radius:0.7333rem;border-top-right-radius:0.7333rem;overflow:hidden;}
