@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+
+<button type="button" onclick="layerPopup.show('#popup_1');" style="border:1px solid #000;">팝업1</button>
+<button type="button" onclick="layerPopup.show('#popup_2');" style="border:1px solid #000;">팝업2</button>
+<button type="button" onclick="layerPopup.show('#popup_3');" style="border:1px solid #000;">팝업3</button>
+
+<div id="wrap" data-theme="theme_LG">
+	<div class="modal fadeIn" id="popup_1">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="modal_content">
+				<div class="modal_hd">팝업제목</div>
+				<div class="modal_bd">
+					<p>응원 선수 설정을 해제하시겠습니까?</p>
+				</div>
+				<div class="modal_ft">
+					<div class="btn usetap" onclick="layerPopup.hide();">확인</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fadeIn" id="popup_2">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="modal_content">
+				<div class="modal_hd">팝업제목</div>
+				<div class="modal_bd">
+					<p>경기 상황 알림을 받으시려면<br>
+					응원팀을 선정해야합니다.</p>
+				</div>
+				<div class="modal_ft">
+					<div class="btn_half usetap" onclick="layerPopup.hide();">취소</div><div class="btn_half usetap">확인</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fadeIn" id="popup_3">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="modal_content">
+				<div class="modal_hd">팝업제목</div>
+				<div class="modal_bd">
+					<p>경기 상황 알림을 받으시려면<br>
+					응원팀을 선정해야합니다.<br>
+					응원팀을 설정하시겠습니까?</p>
+				</div>
+				<div class="modal_ft">
+					<div class="btn_half usetap" onclick="layerPopup.hide();">취소</div><div class="btn_half usetap">확인</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="tab_container">
+			<!-- Active Tab Container -->
+			<div class="active_tab_container" id="active_tab_container">
+				<div class="tab tab_home">
+					<div class="circle">
+						<div class="img_box" id="circle1">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_team_info">
+					<div class="circle">
+						<div class="img_box" id="circle2">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_relay">
+					<div class="circle">
+						<div class="img_box" id="circle3">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_game">
+					<div class="circle">
+						<div class="img_box" id="circle4">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_my">
+					<div class="circle">
+						<div class="img_box" id="circle5">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Active Button Container -->
+			<!-- Active Label -->
+			<div class="active_label_container" id="active_label_container">
+				<div class="label label_home active">
+					 홈
+				</div>
+				<div class="label label_team_info">
+					 팀정보
+				</div>
+				<div class="label label_team_info">
+					 중계
+				</div>
+				<div class="label label_team_info">
+					 게임
+				</div>
+				<div class="label label_team_info">
+					 MY
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<div class="tab_bar" id="tab_bar">
+				<div class="left_side">
+				</div>
+				<div class="middle">
+					<div class="center_middle">
+					</div>
+				</div>
+				<div class="right_side" style="flex-grow:4;">
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<!-- Button Container -->
+			<div class="tab_button" id="tab_button">
+				<div class="tab tab_home hide">
+					 홈
+				</div>
+				<div class="tab tab_team_info">
+					 팀정보
+				</div>
+				<div class="tab tab_relay">
+					 중계
+				</div>
+				<div class="tab tab_game">
+					 게임
+				</div>
+				<div class="tab tab_my">
+					 MY
+				</div>
+			</div>
+			<!-- Button Container -->
+		</div>
+	</div>
+	<!-- Footer -->
+</div>
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+<script>
+bnbUi.init();
+bnbUi.initLottie();
+</script>
+</body>
+</html>
