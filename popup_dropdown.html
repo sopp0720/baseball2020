@@ -23,6 +23,7 @@
 </select>
 <button type="button" onclick="layerPopup.show('#popup_1');" style="border:1px solid #000;">Popup_Dropdown List_최소</button>
 <button type="button" onclick="layerPopup.show('#popup_2');" style="border:1px solid #000;">Popup_Dropdown List_최대</button>
+<button type="button" onclick="layerPopup.show('#popup_3');" style="border:1px solid #000;">Popup_Dropdown List_로고</button>
 <div id="wrap" data-theme="theme_LG">
 
 	<div class="modal fadeInUp " id="popup_1">
@@ -106,6 +107,28 @@
 					<input type="radio" name="dd_list2" />
 					<div class="radio_bg"></div>
 					<div class="tit">잠실 야구장</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal fadeInUp " id="popup_2">
+		<div class="dim" onclick="layerPopup.hide();"></div>
+		<div class="modal_inner">
+			<ul class="dropdown_list">
+				<li>
+					<input type="radio" checked name="dd_list3" />
+					<div class="radio_bg"></div>
+					<div class="team_logo team_logo_LG"></div>
+					<div class="tit">LG 트윈스</div>
+					<span class="my_team"></span>
+				</li>
+				<li>
+					<input type="radio" name="dd_list3" />
+					<div class="radio_bg"></div>
+					<div class="team_logo team_logo_NC"></div>
+					<div class="tit">NC 다이노스</div>
+					<span class="my_team"></span>
 				</li>
 			</ul>
 		</div>
