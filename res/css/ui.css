@@ -42,7 +42,7 @@
 .content .title_hd > span.sec_title {height:2.4667rem;line-height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
 .content .title_hd > .more {display:inline-block;position:absolute;top:-0.3667rem;right:-0.8rem;width:3.2rem;height:3.2rem;vertical-align:top;background:url("../images/ic-arrow-title.png") no-repeat 50% 50%;background-size:cover;}
 .content .title_hd > .more.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
-.content .title_hd.line2 {height:6rem;line-height:1;}
+.content .title_hd.line2 {height:5.4667rem;line-height:1;}
 .content .title_hd.line2 > span.sec_title {height:4.9333rem;}
 
 .content .oval {display:block;width:0.4rem;height:0.4rem;background-color:#c10a3a;border-radius:50%;}
