@@ -41,8 +41,10 @@ var bnbUi = (function() {
 
             setTimeout(function() {
                 document.getElementById('footer').classList.add('on');
-                active_tab_container.querySelectorAll('.tab')[0].classList.add('active');
             }, 0);
+            setTimeout(function() {
+                active_tab_container.querySelectorAll('.tab')[0].classList.add('active');
+            }, 300);
         },
         "initLottie": function() {
             team = document.getElementById('wrap').getAttribute('data-theme');
