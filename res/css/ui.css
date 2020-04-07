@@ -33,7 +33,7 @@
 .page_title_wrap {width:100%;height:5rem;background-color:rgba(255, 255, 255, 0.98);}
 .page_title_wrap .inner {position:relative;height:100%;}
 .page_title_wrap h2 {margin:0 auto;width:81.781376%;height:100%;line-height:5rem;font-size:1.6667rem;font-weight:bold;text-align:center;color:#000000;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
-.page_title_wrap .btn_back {display:block;position:absolute;top:1.5rem;left:1.5333rem;width:2rem;height:2.0333rem;background:url("../images/ic-title-back.png") no-repeat 50% 50%;background-size:cover;}
+.page_title_wrap .btn_back {display:block;position:absolute;top:0.9rem;left:0.7333rem;width:3.2rem;height:3.2rem;background:url("../images/ic-title-back.png") no-repeat;background-size:100% auto;}
 .page_title_wrap .btn_back.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 
 /* Sec title */
@@ -42,7 +42,7 @@
 .content .title_hd > span.sec_title {height:2.4667rem;line-height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
 .content .title_hd > .more {display:inline-block;position:absolute;top:-0.3667rem;right:-0.8rem;width:3.2rem;height:3.2rem;vertical-align:top;background:url("../images/ic-arrow-title.png") no-repeat 50% 50%;background-size:cover;}
 .content .title_hd > .more.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
-.content .title_hd.line2 {height:6rem;line-height:1;}
+.content .title_hd.line2 {height:5.4667rem;line-height:1;}
 .content .title_hd.line2 > span.sec_title {height:4.9333rem;}
 
 .content .oval {display:block;width:0.4rem;height:0.4rem;background-color:#c10a3a;border-radius:50%;}
@@ -94,6 +94,7 @@
 .live_video .video_wrap {display:block;}
 .btn_player_view_wrap {position:relative;width:100%;height:3.3333rem;font-size:0;}
 .btn_player_view_wrap .btn_player_view {z-index:5;position:fixed;width:100%;height:3.3333rem;padding:0;text-align:center;background-color:#fff;}
+.btn_player_view_wrap .btn_player_view:after {content:'';position:absolute;bottom:0;left:0;right:0;width:100%;height:1px;background-color:rgba(255,255,255,.98);}
 .btn_player_view_wrap .btn_player_view > span {display:none;width:7rem;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:right;color:#7a7a7a;vertical-align:top;}
 .btn_player_view_wrap .btn_player_view > span.txt_on {display:inline-block;}
 .live_video .btn_player_view_wrap .btn_player_view > span.txt_off {display:inline-block;}
@@ -162,10 +163,10 @@
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main {display:block;float:left;width:5.6667rem;height:4.0667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:1.4333rem 2.2rem;}
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_red {background-image:url("../images/ic-vs-main-red.png");}
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_gray {background-image:url("../images/ic-vs-main-gray.png");}
-.home.content .score_board_wrap .middle_box .info_today {display:inline-block;margin:1rem 0 1.2333rem;padding:0 0.9rem;height:1.9rem;line-height:1.8;font-size:1.1667rem;font-weight:500;color:#ffffff;border-radius:0.86665rem;vertical-align:top;}
-.middle_box .info_today.i_schedule {background-color:#c10a3a;}
-.middle_box .info_today.i_before {background-color:#c10a3a;}
-.middle_box .info_today.i_cancel {background-color:#c2c3c7;}
+.home.content .score_board_wrap .middle_box .info_today {display:inline-block;margin:1rem 0 1.2333rem;vertical-align:top;}
+.middle_box .info_today.i_schedule {width:5.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-main-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_before {background-color:#c10a3a;font-size:0;line-height:0;direction:ltr;text-indent:-999em;}
+.middle_box .info_today.i_cancel {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#525252;}
 .home.content .score_board_wrap .play_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;text-align:center;}
