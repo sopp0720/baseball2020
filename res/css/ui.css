@@ -165,8 +165,9 @@
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_gray {background-image:url("../images/ic-vs-main-gray.png");}
 .home.content .score_board_wrap .middle_box .info_today {display:inline-block;margin:1rem 0 1.2333rem;vertical-align:top;}
 .middle_box .info_today.i_schedule {width:5.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-main-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
-.middle_box .info_today.i_before {background-color:#c10a3a;font-size:0;line-height:0;direction:ltr;text-indent:-999em;}
+.middle_box .info_today.i_before {width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_cancel {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_end {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
 .home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#525252;}
 .home.content .score_board_wrap .play_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;text-align:center;}
@@ -554,7 +555,7 @@
 .team.content .schedule_box .middle_box {margin:0 auto;padding:1.5667rem 0 0;width:14.5333rem;text-align:center;overflow:hidden;}
 .team.content .schedule_box .middle_box .info_today_wrap {float:left;margin:0 0.7667rem;width:8.3333rem;}
 .team.content .schedule_box .middle_box em {display:block;float:left;margin-top:0.3333rem;width:2.3333rem;height:3.2rem;font-family:'bebas_neueregular';font-size:2.6667rem;font-weight:normal;font-style:normal;color:#000000;}
-.team.content .schedule_box .middle_box .info_today {display:inline-block;margin:0;padding:0 0.9rem;height:1.8333rem;line-height:1.8333rem;font-size:1.1rem;font-weight:500;color:#ffffff;border-radius:0.95rem;vertical-align:top;}
+.team.content .schedule_box .middle_box .info_today {display:inline-block;margin:0;padding:0 0.9rem;vertical-align:top;}
 .team.content .schedule_box .middle_box .info_round {display:block;margin:0.2667rem 0 0;height:1.8rem;font-size:1.2rem;font-weight:500;color:#2b2b2b;text-align:center;vertical-align:top;}
 .team.content .game_none {height:5.2rem;padding:1.3333rem 0 2rem;}
 .team.content .game_none p {font-size:1.2667rem;font-weight:500;text-align:center;color:#b4b4b4;}
