@@ -299,7 +299,7 @@
 .team.content .main_info .slogan {margin-top:2.6333rem;padding-right:0.8rem;text-align:right;}
 .team.content .main_info .slogan strong {height:2.4rem;text-shadow:0 0 0.5rem rgba(0, 0, 0, 0.24);font-family:'bebas_neueregular';font-size:2rem;font-weight:normal;font-style:normal;line-height:normal;letter-spacing:0.0833rem;color:#ffffff;}
 .team.content .main_info .slogan p {height:1.9667rem;text-shadow:0 0 0.5rem rgba(0, 0, 0, 0.24);font-size:1.3333rem;font-weight:500;letter-spacing:-0.0333rem;color:#ffffff;}
-.team.content .main_info .sub_desc {margin-top:0.8667rem;font-size:0;text-align:right;opacity:0.6;}
+.team.content .main_info .sub_desc {margin-top:0.8667rem;padding-right:0.8rem;font-size:0;text-align:right;opacity:0.6;}
 .team.content .main_info .sub_desc span {display:inline-block;height:1.6667rem;line-height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#ffffff;vertical-align:top;}
 .team.content .main_info .sub_desc .i_manager {position:relative;margin-left:0.5rem;padding-left:0.5rem;}
 .team.content .main_info .sub_desc .i_manager .bar {display:block;position:absolute;top:0.4rem;left:0;width:1px;height:0.8667rem;background-color:#ffffff;opacity:0.6;}
@@ -322,8 +322,8 @@
 .team.content .rank_date ul li:first-child {margin-left:0;}
 .team.content .i_date {display:block;height:1.9667rem;font-size:0;}
 .team.content .i_date span {display:inline-block;vertical-align:top;}
-.team.content .i_date span.date {height:1.9667rem;font-size:1.3333rem;font-weight:bold;letter-spacing:-0.0667rem;color:#000000;}
-.team.content .i_date span.day {margin-left:0.2rem;margin-top:0.5rem;height:1.2rem;line-height:1;font-size:0.8rem;font-weight:bold;color:#000000;}
+.team.content .i_date span.date {height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:bold;letter-spacing:-0.0667rem;color:#000000;}
+.team.content .i_date span.day {margin-left:0.2rem;height:1.9667rem;line-height:2.1133rem;font-size:0.8rem;font-weight:bold;color:#000000;}
 .team.content .i_date span.sat {color:#3563c0;}
 .team.content .i_date span.sun {color:#ec5f59;}
 .team.content .rank_date ul li .team_logo {display:block;margin:1.7333rem auto 0;width:4.0667rem;height:3.6rem;}
