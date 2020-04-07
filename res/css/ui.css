@@ -264,7 +264,7 @@
 .home.content .news_comments .news_scroll li:first-child {margin-left:0;}
 .home.content .news_comments .news_scroll li:before {content:'';position:absolute;display:block;width:100%;height:68%;bottom:0;left:0;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));overflow:hidden;border-radius:0.7333rem;}
 /*.home.content .news_comments .news_scroll li .ico_comm {z-index:1;position:relative;display:block;margin:3.2rem auto 0.5rem;width:8.4667rem;height:3.0667rem;background:#fff;}*/
-.home.content .news_comments .news_scroll li .subject {position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:500;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
+.home.content .news_comments .news_scroll li .subject {position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
 
 /* Home Details */
 .home.content .img_player_wrap {padding:0;}
