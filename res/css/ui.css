@@ -926,7 +926,7 @@
 .relay.content .vertical_pitcher_graph .graph_title span {font-size:1.2rem;font-weight:500;text-align:center;color:#858585;}
 .relay.content .key_player_wrap {padding-bottom:3rem;}
 .relay.content .key_player_wrap .vs_tbl {margin-bottom:1rem;}
-.relay.content .key_player_wrap .vs_player_info + .vs_tbl tr:last-child {border-bottom:0}
+/*.relay.content .key_player_wrap .vs_player_info + .vs_tbl tr:last-child {border-bottom:0}*/
 .relay.content .key_player_wrap .vs_record_tbl .tr_title td {padding-top:0.5333rem;padding-bottom:0.5rem;}
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .cell_left,
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .cell_right, {font-size:0;}
@@ -946,14 +946,13 @@
 .relay.content .starting_lineup .start_player .player_desc .desc2 b {display:inline-block;height:1.5667rem;line-height:1.5667rem;font-size:1rem;font-weight:500;color:#8d8d8d;vertical-align:top;}
 .relay.content .starting_lineup .start_player .player_desc .desc2 span {display:inline-block;height:1.5667rem;line-height:1.5667rem;font-size:1.0667rem;font-weight:500;color:#494d51;vertical-align:top;}
 .relay.content .starting_lineup .start_player .player_img_wrap {position:relative;float:left;width:34.792122%;}
-.relay.content .starting_lineup .start_player .player_img {display:block;position:relative;width:3.5rem;height:3.5rem;background-repeat:no-repeat;background-size:100% auto;border:1px solid #e8e8e8;border-radius:0.9333rem;background-color:#d8d8d8;}
 .relay.content .starting_lineup .start_player .player_img_wrap .oval {position:absolute;top:0;bottom:0;margin:auto 0;}
 .relay.content .starting_lineup .start_player.left {float:left;text-align:right;}
 .relay.content .starting_lineup .start_player.left .player_desc {padding-right:0.8333rem;}
 .relay.content .starting_lineup .start_player.left .player_desc .desc1 span {margin-left:0.5rem;}
 .relay.content .starting_lineup .start_player.left .player_desc .desc2 span {margin-left:0.3333rem;}
-.relay.content .starting_lineup .start_player.left .player_img {margin-right:auto;}
-.relay.content .starting_lineup .start_player.right .player_img {margin-left:auto;}
+.relay.content .starting_lineup .start_player.left .player_sm {margin-right:auto;}
+.relay.content .starting_lineup .start_player.right .player_sm {margin-left:auto;}
 .relay.content .starting_lineup .start_player.right .player_desc {padding-left:0.8333rem;}
 .relay.content .starting_lineup .start_player.right .player_desc .desc2 span {margin-right:0.3333rem;}
 .relay.content .starting_lineup .start_player.right .player_desc .desc1 span {margin-right:0.5rem;}
