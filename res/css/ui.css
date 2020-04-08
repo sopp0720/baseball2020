@@ -313,7 +313,7 @@
 .team.content .main_info .sub_desc span {display:inline-block;height:1.6667rem;line-height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#ffffff;vertical-align:top;}
 .team.content .main_info .sub_desc .i_manager {position:relative;margin-left:0.5rem;padding-left:0.5rem;}
 .team.content .main_info .sub_desc .i_manager .bar {display:block;position:absolute;top:0.4rem;left:0;width:1px;height:0.8667rem;background-color:#ffffff;opacity:0.6;}
-.team.content .main_info .sub_desc .i_manager span {padding-top:0.1rem;font-size:1rem;font-weight:normal;}
+.team.content .main_info .sub_desc .i_manager span {font-size:1rem;font-weight:normal;line-height:1.7333rem;}
 .team.content .main_info + .sec_wrapper {border-top:0;}
 .team.content .total_rank_info {position:absolute;bottom:0;right:1.5333rem;width:100%;text-align:right;}
 .team.content .total_rank_info .rank_num {padding-right:0.4rem;height:2.2667rem;font-size:0;text-align:right;}
@@ -324,7 +324,7 @@
 .team.content .total_rank_info .rank_num > div.i_win span {color:#3563c0;}
 .team.content .total_rank_info .rank_num > div.i_draw span {color:#999999;}
 .team.content .total_rank_info .rank_num > div.i_lose span {color:#ec5f59;}
-.team.content .total_rank_info .i_rate {display:inline-block;margin-top:0.6333rem;;padding:0 0.8rem;height:1.6667rem;line-height:1.6667rem;font-size:0.9333rem;color:#000000;border-radius:0.8333rem;background-color:#f0f0f0;vertical-align:top;}
+.team.content .total_rank_info .i_rate {display:inline-block;margin-top:0.6333rem;padding:0 0.8rem;height:1.6667rem;line-height:1.6667rem;font-size:0.9333rem;color:#000000;border-radius:0.8333rem;background-color:#f0f0f0;vertical-align:top;}
 .team.content .total_rank_info .i_rate b {font-size:1.0667rem;font-weight:bold;font-family:normal;color:#000000;}
 .team.content .rank_date {position:relative;margin-top:0.4333rem;padding:0.9rem 5.161943% 0;height:12.8333rem;border-radius:0.7333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);background-color:#ffffff;}
 .team.content .rank_date .horizon_line {display:block;position:absolute;top:30.64935%;left:5.161943%;width:89.676113%;height:1px;background-color:#f8f8f9;}
