@@ -1592,7 +1592,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 .table_data_style {width:100%;}
 .table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:1px solid #f0f1f6;border-bottom:1px solid #f8f8f9;}
-.table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;color:#2b2b2b;text-align:center;}
+.table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;font-weight:normal;color:#2b2b2b;text-align:center;}
 .table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:1px solid #f8f8f9;}
 .table_data_style tbody td .cell {height:2.2rem;font-family:'bebas_neueregular';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
 .title_tbl {padding:0.2rem 0 0.1667rem;font-size:0;}
