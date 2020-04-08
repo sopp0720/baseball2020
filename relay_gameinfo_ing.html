@@ -49,7 +49,7 @@
 				</div>
 			</div>
 			<div class="btn_player_view_wrap">
-				<button type="button" class="btn_player_view" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
+				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보이기</span>
 					<i></i>
@@ -173,24 +173,28 @@
 						</div>
 						<div class="vs_player_info vs_pitch_hit">
 							<div class="player_img_wrap left">
-							   <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
-									<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
-										<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+								<div class="player_xl">
+									<span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
+										<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+										</span>
 									</span>
-							   </span>
-							   <span class="i_name">이영하<span class="i_position">우투</span></span>
-							   <span class="i_ratio">방어율 : 3.64</span>
+							    </div>
+							    <span class="i_name">이영하<span class="i_position">우투</span></span>
+							    <span class="i_ratio">방어율 : 3.64</span>
 							</div>
 							<div class="vs_box">                          
 							</div>
 							<div class="player_img_wrap right">
-							   <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
-									<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
-										<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+								<div class="player_xl">
+									<span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
+										<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+										</span>
 									</span>
-							   </span>
-							   <span class="i_name">채은성<span class="i_position">우투</span></span>
-							   <span class="i_ratio">타율 : 0.315</span>
+								</div>
+							    <span class="i_name">채은성<span class="i_position">우투</span></span>
+							    <span class="i_ratio">타율 : 0.315</span>
 							</div>
 						</div>
 						<div class="table_data_wrap">
@@ -506,7 +510,9 @@
 											<tr>
 												<td>
 													<div class="cell">
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">함덕주</div>
 															<div class="player_position">우완우투</div>
@@ -517,7 +523,9 @@
 											<tr>
 												<td>
 													<div class="cell">
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">남궁우찬</div>
 															<div class="player_position">좌투</div>
@@ -685,7 +693,9 @@
 											<tr>
 												<td>
 													<div class="cell">  <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">이천웅<span class="oval"></span></div>
 															<div class="player_position">지명타자</div>
@@ -696,7 +706,9 @@
 											<tr>
 												<td>
 													<div class="cell">  <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">정주현<span class="oval"></span></div>
 															<div class="player_position">지명타자</div>
@@ -707,7 +719,9 @@
 											<tr>
 												<td>
 													<div class="cell hit300">  <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">독고용진<span class="oval"></span></div>
 															<div class="player_position">지명타자</div>
@@ -848,7 +862,7 @@
 					</div>
 				</div>
 				<div class="scroll_top_sec">
-					<a href="#none" class="totop blind">TOP</a>
+					<a href="#none" class="totop usetap blind">TOP</a>
 				</div>
 			</div>
 		</div>

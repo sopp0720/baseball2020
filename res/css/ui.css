@@ -781,6 +781,7 @@
 /* Relay - game info */
 .relay.content .video_wrap + .tab_1depth {margin-top:0;}
 .relay.content .relay_card_wrap + .tab_1depth {margin-top:0;}
+.relay.content .relay_card_wrap + .tab_1depth_wrap  +.sec_wrapper {padding-top:2.5333rem;}
 
 .relay.content .relay_video_thumb {position:fixed;top:0;left:0;right:0;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;z-index:10;}
 .relay.content .relay_video_thumb.active {padding-bottom:0;}
@@ -997,7 +998,7 @@
 .relay.content .vs_player_info.vs_pitch_hit .player_img_wrap {width:47.57085%;}
 .relay.content .vs_player_info.vs_pitch_hit .player_img_wrap.left {left:0;}
 .relay.content .vs_player_info.vs_pitch_hit .player_img_wrap.right {right:0;}
-.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap .i_position {display:inline-block;margin-left:0.3333rem;margin-top:0.1667rem;height:1.8667rem;font-size:1.2667rem;color:#858585;vertical-align:top;}
+.relay.content .vs_player_info.vs_pitch_hit .player_img_wrap .i_position {display:inline-block;margin-left:0.3333rem;margin-top:0.1667rem;height:1.8667rem;font-size:1.2667rem;font-weight:normal;color:#858585;vertical-align:top;}
 .relay.content .vs_player_info.vs_pitch_hit .player_img_wrap .i_ratio {display:block;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;text-align:center;color:#525252;}
 .relay.content .table_data_wrap {position:relative;margin-top:0.3333rem;overflow:hidden;}
 .relay.content .table_data_wrap .table_data_box {width:47.57085%;}
@@ -1566,7 +1567,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_hit300 .table_right .table tbody .cell {padding-top:1.5333rem;padding-bottom:1.5rem;}
 
 .table_hit300.no_num .table_left {width:10.9333rem;}
-.table_hit300.no_num .table_left .cell .player_img {margin-left:0.6667rem;}
+.table_hit300.no_num .table_left .cell .player_sm {margin-left:0.6667rem;}
 
 /* 3할 이상타자 */
 .table_hit300 .table_left .hit300 .num,
@@ -1590,9 +1591,9 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_style1 .table_left td {border-right:1px solid #dee1e6;}
 
 .table_data_style {width:100%;}
-.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:1px solid #7f7f7f;border-bottom:1px solid #dee1e6;}
+.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:1px solid #f0f1f6;border-bottom:1px solid #f8f8f9;}
 .table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;color:#2b2b2b;text-align:center;}
-.table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:1px solid #dee1e6;}
+.table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:1px solid #f8f8f9;}
 .table_data_style tbody td .cell {height:2.2rem;font-family:'bebas_neueregular';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
 .title_tbl {padding:0.2rem 0 0.1667rem;font-size:0;}
 .title_tbl span {display:inline-block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;vertical-align:top;}
