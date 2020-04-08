@@ -70,7 +70,7 @@
 /* Month slider  */
 .month_wrap {position:relative;margin:1.5rem auto 0;width:54.65587%;height:4.2667rem;text-align:center;font-size:0;}
 .month_wrap .i_month {display:block;text-align:center;font-size:0;}
-.month_wrap .i_month b {display:inline-block;margin:0.4rem 0 0;height:3.8rem;line-height:3.7rem;font-family:'bebas_neueregular';font-size:3.1667rem;letter-spacing:0.095rem;color:#000000;vertical-align:top;}
+.month_wrap .i_month b {display:inline-block;margin:0.4rem 0 0;height:3.8rem;line-height:3.7rem;font-family:'bebas_neueregular';font-size:3.1667rem;font-weight:normal;letter-spacing:0.095rem;color:#000000;vertical-align:top;}
 .month_wrap .i_month span {display:inline-block;margin:0.4rem 0 0 0.1667rem;height:3.8rem;line-height:4.0667rem;font-size:1.6rem;font-weight:500;letter-spacing:0.048rem;color:#000000;vertical-align:top;}
 .month_wrap .i_month b + span + b {margin-left:0.6667rem;}
 .month_wrap .month_arrow {display:block;position:absolute;top:0;width:4rem;height:4.2667rem;background-repeat:no-repeat;background-size:100% auto;}
@@ -550,7 +550,7 @@
 .team.content .schedule_box_wrap .schedule_date b,
 .team.content .schedule_box_wrap .schedule_date span,
 .team.content .schedule_box_wrap .schedule_date i {display:inline-block;vertical-align:top;}
-.team.content .schedule_box_wrap .schedule_date b {height:3.2rem;font-family:'bebas_neueregular';font-size:2.6667rem;font-weight:bold;color:#000000;}
+.team.content .schedule_box_wrap .schedule_date b {height:3.2rem;font-family:'bebas_neueregular';font-weight:normal;font-size:2.6667rem;color:#000000;}
 .team.content .schedule_box_wrap .schedule_date b.i_day {margin-left:0.4667rem;}
 .team.content .schedule_box_wrap .schedule_date span {margin-top:0.4rem;margin-left:0.1333rem;height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
 .team.content .schedule_box_wrap .schedule_date i {margin-top:0.6333rem;margin-left:0.3333rem;height:2.1667rem;line-height:2.1667rem;font-size:1.4667rem;font-weight:normal;color:#858585;font-style:normal;}
