@@ -49,7 +49,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="btn_player_view_wrap">
+			<div class="btn_player_view_wrap usetap">
 				<button type="button" class="btn_player_view" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보이기</span>
@@ -204,7 +204,7 @@
 							</li>
 							<li>
 								<div class="graph_info home">
-									<span class="i_ratio">0</span>
+									<span class="i_ratio i_gray">0</span> <!-- 0일 때 클래스 i_gray 추가 -->
 									<span class="graph_bg">
 										<span class="i_graph" style="width:0%;"></span>
 									</span>
@@ -229,7 +229,7 @@
 									<span class="graph_bg">
 										<span class="i_graph" style="width:0%;"></span>
 									</span>
-									<span class="i_ratio">0</span>
+									<span class="i_ratio i_gray">0</span> <!-- 0일 때 클래스 i_gray 추가 -->
 								</div>
 							</li>
 						</ul>
@@ -257,7 +257,7 @@
 							</li>
 							<li>
 								<div class="graph_info home">
-									<span class="i_ratio">0</span>
+									<span class="i_ratio i_gray">0</span> <!-- 0일 때 클래스 i_gray 추가 -->
 									<span class="graph_bg">
 										<span class="i_graph" style="width:0%;"></span>
 									</span>
@@ -282,7 +282,7 @@
 									<span class="graph_bg">
 										<span class="i_graph" style="width:0%;"></span>
 									</span>
-									<span class="i_ratio">0</span>
+									<span class="i_ratio i_gray">0</span> <!-- 0일 때 클래스 i_gray 추가 -->
 								</div>
 							</li>
 						</ul>
@@ -325,7 +325,9 @@
 												<td>
 													<div class="cell">
 														<div class="num">1</div>
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">함덕주</div>
 															<div class="player_position">우완우투</div>
@@ -337,7 +339,9 @@
 												<td>
 													<div class="cell">
 														<div class="num">2</div>
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">남궁우찬</div>
 															<div class="player_position">좌투</div>
@@ -506,7 +510,9 @@
 												<td>
 													<div class="cell"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
 														<div class="num">1</div>
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">김준완<span class="oval"></span></div>
 															<div class="player_position">중견수</div>
@@ -518,7 +524,9 @@
 												<td>
 													<div class="cell"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
 														<div class="num">2</div>
-														<div class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></div> <!-- default img -->
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/img-profile-default-105.png')"></div> <!-- default img -->
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">박민우<span class="oval"></span></div>
 															<div class="player_position">우익수</div>
@@ -530,7 +538,9 @@
 												<td>
 													<div class="cell hit300"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
 														<div class="num">3</div>
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">남궁민재<span class="oval"></span></div>
 															<div class="player_position">우익수</div>
@@ -542,7 +552,9 @@
 												<td>
 													<div class="cell hit300"> <!-- 3할 이상타자일 경우 hit300 클래스 추가 -->
 														<div class="num">4</div>
-														<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														<div class="player_sm">
+															<div class="player_img" style="background-image:url('res/images/player_img1.jpg')"></div>
+														</div>
 														<div class="player_wrap">
 															<div class="player_name">이형종<span class="oval"></span></div>
 															<div class="player_position">1루</div>
@@ -712,7 +724,7 @@
 					</div>
 				</div>		    
 				<div class="scroll_top_sec">
-					<a href="#none" class="totop blind">TOP</a>
+					<a href="#none" class="totop usetap blind">TOP</a>
 				</div>
 			</div>
 		</div>
