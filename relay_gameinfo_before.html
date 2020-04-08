@@ -49,7 +49,7 @@
 				</div>
 			</div>
 			<div class="btn_player_view_wrap">
-				<button type="button" class="btn_player_view" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
+				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보이기</span>
 					<i></i>
@@ -74,7 +74,7 @@
 								</div>
 							</li>
 							<li> <!-- 해당페이지 카드에서 on 클래스 추가 -->
-								<span class="ic_5g blind">5G</span>
+								<!--<span class="ic_5g blind">5G</span>-->
 								<span class="ic_info">경기종료</span>
 								<div class="card_box">
 									<div class="team_box top_box">
@@ -163,7 +163,7 @@
 						<div class="active_bar"></div>
 					</div>
 				</div>
-				<div class="sec_wrapper">
+				<div class="sec_wrapper sec_analysis">
 					<div class="inner">
 						<div class="title_hd">
 							<span class="sec_title">전력분석</span>
@@ -288,24 +288,28 @@
 						<!-- // 선발투수 미정 -->
 						<div class="vs_player_info">
 							<div class="player_img_wrap left">
-							   <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
-									<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
-										<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+						    	<div class="player_xl">
+									<span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
+										<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+										</span>
 									</span>
-							   </span>
-							   <span class="i_name">이영하</span>
-							   <span class="i_position">좌완투수</span>
+							    </div>
+							    <span class="i_name">이영하</span>
+							    <span class="i_position">좌완투수</span>
 							</div>
 							<div class="vs_box">                          
 							</div>
 							<div class="player_img_wrap right">
-							   <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
-									<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
-										<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+						    	<div class="player_xl">
+									<span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
+										<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+										</span>
 									</span>
-							   </span>
-							   <span class="i_name">채은성</span>
-							   <span class="i_position">우완투수</span>
+								</div>
+							    <span class="i_name">채은성</span>
+							    <span class="i_position">우완투수</span>
 							</div>
 						</div>                   
 						<table class="vs_tbl">
@@ -412,24 +416,28 @@
 						</div>
 						<div class="vs_player_info">
 							<div class="player_img_wrap left">
-							   <span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
-									<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
-										<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+						    	<div class="player_xl">
+									<span class="player_img" style="background-image:url('res/images/player_img1.jpg');">
+										<span class="team_logo_xs team_color_LG"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_LG_black"></span> <!-- theme.css : symbol KBO -->
+										</span>
 									</span>
-							   </span>
-							   <span class="i_name">이영하</span>
-							   <span class="i_position">좌타</span>
+							    </div>
+							    <span class="i_name">이영하</span>
+							    <span class="i_position">좌타</span>
 							</div>
 							<div class="vs_box">                          
 							</div>
 							<div class="player_img_wrap right">
-							   <span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
-									<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
-										<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+						    	<div class="player_xl">
+									<span class="player_img" style="background-image:url('res/images/player_img2.jpg');">
+										<span class="team_logo_xs team_color_OB"> <!-- theme.css : Team Color bg -->
+											<span class="team_symbol_OB"></span> <!-- theme.css : symbol KBO -->
+										</span>
 									</span>
-							   </span>
-							   <span class="i_name">채은성</span>
-							   <span class="i_position">우타</span>
+								</div>
+							    <span class="i_name">채은성</span>
+							    <span class="i_position">우타</span>
 							</div>
 						</div>
 						<table class="vs_tbl">
@@ -1210,7 +1218,7 @@
 					</div>
 				</div>
 				<div class="scroll_top_sec">
-					<a href="#none" class="totop blind">TOP</a>
+					<a href="#none" class="totop usetap blind">TOP</a>
 				</div>
 			</div>
 		</div>
