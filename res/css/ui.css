@@ -101,7 +101,7 @@
 .video_wrap {display:none;position:relative;width:100%;padding-top:56.25%;}
 .live_video .video_wrap {display:block;}
 .btn_player_view_wrap {position:relative;width:100%;height:3.3333rem;font-size:0;}
-.btn_player_view_wrap .btn_player_view {z-index:5;position:fixed;width:100%;height:3.3333rem;padding:0;text-align:center;background-color:#fff;}
+.btn_player_view_wrap .btn_player_view {z-index:5;position:fixed;width:100%;height:3.3333rem;padding:0;text-align:center;background-color:rgba(255,255,255,.98);}
 .btn_player_view_wrap .btn_player_view:after {content:'';position:absolute;bottom:0;left:0;right:0;width:100%;height:1px;background-color:rgba(255,255,255,.98);}
 .btn_player_view_wrap .btn_player_view > span {display:none;width:7rem;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:right;color:#7a7a7a;vertical-align:top;}
 .btn_player_view_wrap .btn_player_view > span.txt_on {display:inline-block;}
