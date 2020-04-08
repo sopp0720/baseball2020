@@ -251,7 +251,7 @@
 .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;overflow:hidden;}
 .highlight_box .thumb.i_default {background-image:url('../images/ic-play-defualt-b-02.png');background-position:50% 50%;background-size:3rem;background-color:#e9edf0;background-repeat:no-repeat;}
 .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
-.highlight_box p {margin-top:0.3333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.highlight_box p {margin-top:0.5333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .highlight_wrap.line1 .highlight_box p {height:1.9667rem;line-height: normal;-webkit-line-clamp: 1;}
 .home.content .highlight_box .view {position:relative;display:block;margin-top:0.4333rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
 .home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
