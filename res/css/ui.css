@@ -1352,8 +1352,8 @@
 .my.content .my_info .info_box .title {display:block;height:1.8667rem;font-size:1.2667rem;font-weight:500;line-height:1.47;color:#858585;}
 .my.content .my_info .info_box .i_nick {display:block;margin-top:0.4333rem;height:2.7667rem;font-size:1.8667rem;font-weight:bold;color:#000000;}
 .my.content .my_info .info_box .i_nick .btn_edit {display:inline-block;margin:0.1333rem 0 0.1333rem 0.6667rem;width:2.5rem;height:2.5rem;background:url('../images/ic-my-edit-name.png') no-repeat;background-size:100% auto;vertical-align:top;}
-.my.content .my_info .info_box .i_account {display:block;float:left;margin-top:0.6667rem;margin-right:11.666666%;width:72.916666%;font-size:1.4rem;font-weight:500;color:#000000;word-break:break-all;}
-.my.content .my_info .info_box .btn_logout {display:block;float:right;margin:0.7333rem 0 0.0333rem;width:15.416666%;font-size:1.3333rem;font-weight:normal;color:#b4b4b4;text-align:right;}
+.my.content .my_info .info_box .i_account {display:block;float:left;margin-top:0.6667rem;margin-right:10.666666%;width:72.916666%;font-size:1.4rem;font-weight:500;color:#000000;word-break:break-all;}
+.my.content .my_info .info_box .btn_logout {display:block;float:right;margin:0.7333rem 0 0.0333rem;width:16.416666%;font-size:1.3333rem;font-weight:normal;color:#b4b4b4;text-align:right;}
 
 /* My - my nick edit */
 .my.content .my_nick_set .edit_inner {padding:0 0.4667rem;}
