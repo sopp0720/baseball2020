@@ -50,8 +50,15 @@
 					-->
 				</div>
 			</div>
+			<!-- page title, btn back -->
+			<div class="page_title_wrap">
+				<div class="inner">
+					<button type="button" class="btn_back usetap blind">뒤로가기</button>
+					<h2>이벤트</h2>
+				</div>
+			</div>
 			<div class="btn_player_view_wrap">
-				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
+				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');videoUI.content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보기</span>
 					<i></i>
@@ -629,7 +636,7 @@
                         <div  class="btn_base_view2 usetap"></div>
                         <!-- // 문자중계 보기 -->
                     </div>
-                    <div class="tab_3depth" id="">
+                    <div class="tab_3depth" id="tab_3depth">
                         <ul class="tab_link">
                             <li class="tab_item active"><span>1회</span></li>
                             <li class="tab_item"><span>2회</span></li>
@@ -728,50 +735,19 @@
 	</div>
 </div>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
-<script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
-<script src="res/js/gnb.js"></script>
 <script src="res/js/relay.js"></script>
+<script src="res/js/floating.js"></script>
+<script src="res/js/video.js"></script>
 <script>
-bnbUi.init();
-bnbUi.initLottie();
-relayUi.initSubTab(document.getElementById('tab_1depth1'));
-relayUi.initSubTab(document.getElementById('tab_1depth2'));
-relayUi.initSubTab(document.getElementById('tab_1depth3'));
-relayUi.initSubTab(document.getElementById('tab_1depth4'));
-relayUi.initSubTab(document.getElementById('tab_1depth5'));
-relayUi.initSubTab(document.getElementById('tab_1depth6'));
-
-
-document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('wrap').setAttribute('data-theme','');
-	document.getElementById('wrap').setAttribute('data-theme',this.value);
-	bnbUi.teamLottie()
-});
+floatUI.init();
+videoUI.init();
 </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    var imgPlayerDefault = $(".relay_video_thumb"); // img영역    
-    var icShow = $(".relay_video_thumb .ic_show"); // img영역    
-    var btnPlayerView = $(".btn_player_view") // 화면 숨기기 버튼
-    var btnPlayerViewTextOff = $(".btn_player_view .txt_off") // 화면 숨기기 텍스트
-    var btnPlayerViewTextOn = $(".btn_player_view .txt_on") // 화면 보이기 텍스트
-    
-    $(btnPlayerView).on("click", function() {
-        $(this).toggleClass("active");
-        $(imgPlayerDefault).toggleClass("active");
-        if ($(imgPlayerDefault).hasClass("active")) {
-			$(btnPlayerViewTextOn).addClass("active");
-            $(btnPlayerViewTextOff).removeClass("active");
-            $(btnPlayerViewTextOff).removeClass("default");
-			$(icShow).hide();
-        } else {
-            $(btnPlayerViewTextOff).addClass("active");
-            $(btnPlayerViewTextOn).removeClass("active");
-			$(icShow).show();
-        }
-    });	
-});    
+<script>
+relayUi.initSubTab(document.getElementById('tab_1depth4'));
+relayUi.initscrollTab(document.getElementById('tab_3depth'));
+relayUi.initDepthTab(document.getElementById('tab_2depth'));
+</script>
 
 </script>
 </body>

@@ -61,10 +61,10 @@ var relayUi = (function() {
 			tabItem.forEach(function(item) {
 				item.addEventListener('click', function(e){
 					e.preventDefault();
-					if (!e.target.classList.contains('current')) {
+					if (!e.target.classList.contains('active')) {
 						let indexNum = webUI.getChildIndex(e.target.closest('li'));
-						subtab.querySelector('.current').classList.remove('current');
-						e.target.closest('li').classList.add('current');
+						subtab.querySelector('.active').classList.remove('active');
+						e.target.closest('li').classList.add('active');
 						webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
 					}
 				});

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<select id="teamSelect" style="z-index:99999; position:fixed; top:100px; left:15px; width:calc(100vw - 30px); height:30px;">
+<select id="teamSelect" style="z-index:99999; position:fixed; top:300px; left:15px; width:calc(100vw - 30px); height:30px;">
 	<option value="theme_default">팀선택 없음</option>
 	<option value="theme_LG">LG</option>
 	<option value="theme_HH">한화</option>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div class="btn_player_view_wrap">
-				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
+				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');videoUI.content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보기</span>
 					<i></i>
@@ -179,11 +179,11 @@
 				<div class="tab_1depth_wrap">
 					<div class="tab_1depth" id="tab_1depth4">
 						<ul class="tab_link">
-							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');content_scroll();"><span>경기정보</span></li>
-							<li class="tab_item active" onclick="this.closest('.content').classList.add('cheering');content_scroll();"><span>응원하기</span></li>
-							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');content_scroll();"><span>득점장면</span></li>
-							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');content_scroll();"><span>주요장면</span></li>
-							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');content_scroll();"><span>문자중계</span></li>
+							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>경기정보</span></li>
+							<li class="tab_item active" onclick="this.closest('.content').classList.add('cheering');videoUI.content_scroll();"><span>응원하기</span></li>
+							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>득점장면</span></li>
+							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>주요장면</span></li>
+							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>문자중계</span></li>
 						</ul>
 						<div class="active_bar"></div>
 					</div>
@@ -328,24 +328,16 @@ chatlayout(document.getElementById('origin'));*/
 <script src="res/js/relay.js"></script>
 <script src="res/js/chreer.js"></script>
 <script src="res/js/floating.js"></script>
+<script src="res/js/video.js"></script>
 <script>
 floatUI.init();
+videoUI.init();
 </script>
 <script>
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
 relayUi.activeBar(1,document.getElementById('tab_1depth4'));
 chreerUi.chatlayout(document.getElementById('origin'));
 document.getElementById('chreerScroll').addEventListener('scroll', chreerUi.ChreerScroll);
-
-function content_scroll(){
-	var scrollH = 
-    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - 1) + 'px';
-	document.querySelector('.content_scroll').style.height = scrollH;
-}
-content_scroll();
-window.addEventListener('resize', function(e) {
-	content_scroll();
-});
 </script>
 <script>
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
