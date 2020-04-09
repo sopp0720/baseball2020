@@ -300,28 +300,6 @@
 	</div>
 </div>
 
-<script>
-/*
-function chatlayout(obj){
-	let dummy = document.getElementById('dummy'),
-		t;
-	obj.onfocus = function(){
-		t = setInterval(function(){
-			dummy.value = obj.value;
-			obj.style.height = (dummy.scrollHeight) + 'px';
-			document.querySelector('.chat_inner').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
-			document.querySelector('.chreer_selection').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
-			document.querySelector('.ic_chat_down').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
-		}, 100);
-	}
-
-	obj.onblur = function(){
-		clearInterval(t);
-	}
-}
-chatlayout(document.getElementById('origin'));*/
-
-</script>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
@@ -332,8 +310,6 @@ chatlayout(document.getElementById('origin'));*/
 <script>
 floatUI.init();
 videoUI.init();
-</script>
-<script>
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
 relayUi.activeBar(1,document.getElementById('tab_1depth4'));
 chreerUi.chatlayout(document.getElementById('origin'));
@@ -344,8 +320,6 @@ document.getElementById('teamSelect').addEventListener('change', function(event)
 	document.getElementById('wrap').setAttribute('data-theme','');
 	document.getElementById('wrap').setAttribute('data-theme',this.value);
 });
-</script>
-
 </script>
 
 </body>

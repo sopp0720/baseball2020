@@ -63,8 +63,15 @@
 					-->
 				</div>
 			</div>
+			<!-- page title, btn back -->
+			<div class="page_title_wrap">
+				<div class="inner">
+					<button type="button" class="btn_back usetap blind">뒤로가기</button>
+					<h2>이벤트</h2>
+				</div>
+			</div>
 			<div class="btn_player_view_wrap">
-				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
+				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');videoUI.content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보기</span>
 					<i></i>
@@ -216,56 +223,26 @@
 	</div>
 </div>
 
-<script>
-/*
-function chatlayout(obj){
-	let dummy = document.getElementById('dummy'),
-		t;
-	obj.onfocus = function(){
-		t = setInterval(function(){
-			dummy.value = obj.value;
-			obj.style.height = (dummy.scrollHeight) + 'px';
-			document.querySelector('.chat_inner').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
-			document.querySelector('.chreer_selection').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
-			document.querySelector('.ic_chat_down').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
-		}, 100);
-	}
-
-	obj.onblur = function(){
-		clearInterval(t);
-	}
-}
-chatlayout(document.getElementById('origin'));*/
-
-</script>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>
 <script src="res/js/common.js"></script>
 <script src="res/js/relay.js"></script>
 <script src="res/js/chreer.js"></script>
+<script src="res/js/floating.js"></script>
+<script src="res/js/video.js"></script>
 <script>
+floatUI.init();
+videoUI.init();
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
 relayUi.activeBar(1,document.getElementById('tab_1depth4'));
 chreerUi.chatlayout(document.getElementById('origin'));
 document.getElementById('chreerScroll').addEventListener('scroll', chreerUi.ChreerScroll);
-
-function content_scroll(){
-	var scrollH = 
-    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - 1) + 'px';
-	document.querySelector('.content_scroll').style.height = scrollH;
-}
-content_scroll();
-window.addEventListener('resize', function(e) {
-	content_scroll();
-});
 </script>
 <script>
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');
 	document.getElementById('wrap').setAttribute('data-theme',this.value);
 });
-</script>
-
 </script>
 
 </body>

@@ -50,8 +50,15 @@
 					-->
 				</div>
 			</div>
+			<!-- page title, btn back -->
+			<div class="page_title_wrap">
+				<div class="inner">
+					<button type="button" class="btn_back usetap blind">뒤로가기</button>
+					<h2>이벤트</h2>
+				</div>
+			</div>
 			<div class="btn_player_view_wrap">
-				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');content_scroll();">
+				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');videoUI.content_scroll();">
 					<span class="txt_off default">화면 숨기기</span>
 					<span class="txt_on">화면 보기</span>
 					<i></i>
@@ -242,23 +249,16 @@
 		</div>
 	</div>
 </div>
-<script src="res/js/libs/jquery-2.2.4.min.js"></script>
-<script src="res/js/libs/lottie.min.js"></script>
+
 <script src="res/js/common.js"></script>
 <script src="res/js/relay.js"></script>
+<script src="res/js/floating.js"></script>
+<script src="res/js/video.js"></script>
 <script>
+floatUI.init();
+videoUI.init();
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
 relayUi.activeBar(2,document.getElementById('tab_1depth4'));
-
-function content_scroll(){
-	var scrollH = 
-    scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - 1) + 'px';
-	document.querySelector('.content_scroll').style.height = scrollH;
-}
-content_scroll();
-window.addEventListener('resize', function(e) {
-	content_scroll();
-});
 </script>
 
 </body>
