@@ -43,6 +43,19 @@
 .srh_is_back .btn_back.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 .srh_is_back .input_box {margin:0;margin-left:2.9333rem;width:auto;}
 
+/* page_title team vs */
+.page_title_wrap .team_box {position:absolute;top:0;padding:1.1333rem 0 0;width:15.5rem;height:100%;font-size:0;}
+.page_title_wrap .team_box.left {left:0;text-align:right;}
+.page_title_wrap .team_box.left .team_logo {margin-left:0.3333rem;margin-right:0.6667rem;}
+.page_title_wrap .team_box.right {right:0;text-align:left;}
+.page_title_wrap .team_box.right .team_logo {margin-right:0.3333rem;margin-left:0.6667rem;}
+.page_title_wrap .team_box span {display:inline-block;vertical-align:top;font-size:14px;}
+.page_title_wrap .team_box em {display:inline-block;font-style:normal;font-weight:bold;vertical-align:top;font-size:14px;}
+.page_title_wrap .team_box .team_name {min-width:2.6667rem;height:2.7667rem;line-height:2.7667rem;font-size:1.2667rem;font-weight:500;color:#000000;}
+.page_title_wrap .team_box .team_logo {width:3.1667rem;height:2.7667rem;}
+.page_title_wrap .team_box .i_score {height:2.7667rem;line-height:2.7667rem;font-size:1.8333rem;color:#000000;}
+.page_title_wrap .middle_box {position:absolute;top:50%;left:50%;margin-top:-0.9833rem;margin-left:-2.5rem;width:5rem;height:1.9667rem;background:url('../images/ic-vs-titie-gray.png') no-repeat 50% 50%;background-size:auto 1.9667rem;}
+
 /* Sec title */
 .content .title_hd {position:relative;padding:/*0.5333rem*/0 0 0.5rem;height:2.9667rem;font-size:0;}
 .content .title_hd > span {display:inline-block;vertical-align:top;}
