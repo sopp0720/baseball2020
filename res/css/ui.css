@@ -236,13 +236,13 @@
 .home.content .mlb .score_today > div.team_img_wrap .player_name {margin-top:0.8333rem;}
 
 .home.content .sec_wrapper .bn_rel  {position:relative;display:block;width:100%;}
-.home.content .sec_wrapper .bn_rel.bn700 {padding-bottom:70.850202%;}
+/*.home.content .sec_wrapper .bn_rel.bn700 {padding-bottom:70.850202%;}
 .home.content .sec_wrapper .bn_rel.bn560 {padding-bottom:56.680161%;}
 .home.content .sec_wrapper .bn_rel.bn300 {padding-bottom:30.364372%;}
 .home.content .sec_wrapper .bn_rel.bn180 {padding-bottom:18.218623%;}
 .home.content .sec_wrapper .bn_rel.bn156 {padding-bottom:15.789473%;}
 .home.content .sec_wrapper .bn_rel.bn120 {padding-bottom:12.145748%;}
-.home.content .sec_wrapper .bn_rel > img {position:absolute;top:0;left:0;width:100%;}
+.home.content .sec_wrapper .bn_rel > img {position:absolute;top:0;left:0;width:100%;}*/
 .home.content .bn_game a {display:block;}
 .home.content .bn_game .bg_box {margin-top:1rem;padding-bottom:30.364372%;width:100%;height:0;background-image:url("../images/banner-img-game.png");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .home.content .bn_game .bg_box > span {display:block;padding-top:1.6667rem;padding-left:2rem;height:4.1334rem;font-size:1.6667rem;font-weight:bold;color:#ffffff;}
