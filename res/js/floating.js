@@ -32,11 +32,16 @@ var floatUI = (function() {
         },
 		"onScroll": function(st) {
 			const ela = document.querySelectorAll('.fix');
+			if (!ela.length){
+				return;
+			}
 			const tit = document.querySelector('.page_title_wrap');
-			if (st > 0){
-				tit.classList.add('shadow');
-			} else {
-				tit.classList.remove('shadow');
+			if (tit != null){
+				if (st > 0){
+					tit.classList.add('shadow');
+				} else {
+					tit.classList.remove('shadow');
+				}
 			}
 			ela.forEach(function (el) {
 				if (pTop > el.getBoundingClientRect().top) {

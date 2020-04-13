@@ -1480,6 +1480,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_teamlist .my_team {position:absolute;top:2.6333rem;right:-0.6667rem;z-index:2;width:2rem;height:2rem;background:url("../images/icon_my.png") center center no-repeat;background-size:2rem;border-radius:100%;border:1px solid #fff;}
 .tab_teamlist .name {display:block;margin-top:0.4rem;height:1.6667rem;font-size:1.1333rem;text-align:center;}
 .tab_teamlist li.active .name {font-weight:bold;}
+.team.content .tab_teamlist + .tab_1depth_wrap {margin-top:1.6667rem;}
 
 /* tab_1depth */
 .tab_1depth {margin-top:1.6667rem;height:4.6rem;position:relative;overflow-x:auto;overflow-y:hidden;background:#fff;}
