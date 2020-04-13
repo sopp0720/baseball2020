@@ -1876,7 +1876,7 @@ background-color:#f2f3f4;}
 /* layerPopup 종료경기 분석 자세히보기 */
 .modal .morei_wrap {position:relative;height:100%;overflow-x:hidden;overflow-y:auto;}
 .modal .morei_hd {position:relative;overflow:hidden;width:100%;height:15.3667rem;background-color:#fff;border-top-left-radius:0.7333rem;border-top-right-radius:0.7333rem;}
-.modal .morei_hd:after {content:'';position:absolute;bottom:0;left:1.5333rem;right:1.5333rem;background-color:#b4b5b6;height:1px;}
+.modal .morei_hd:after {content:'';position:absolute;bottom:0;left:1.5333rem;right:1.5333rem;background-color:#e8e9ef;height:1px;}
 .modal .vs_rank_wrap {position:relative;height:4.5rem;margin-top:3.9667rem;}
 .modal .vs_rank_wrap .team_logo {position:absolute;top:0;width:5.1rem;height:4.5rem;}
 .modal .vs_rank_wrap .team_logo.left {left:8.7333rem;}
@@ -1885,7 +1885,7 @@ background-color:#f2f3f4;}
 .modal .final_ball {margin-top:1.9333rem;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:bold;text-align:center;color:#1f62c7;}
 .modal .final_player {margin-top:0.2rem;height:1.5667rem;line-height:1.5667rem;font-size:1.0667rem;font-weight:500;text-align:center;color:#2b2b2b;}
 .modal .morei_bd {max-height:calc(100vh - 20rem);padding:0 1.5333rem 0.8333rem;background-color:#fff;overflow-x:hidden;overflow-y:auto;}
-.modal .morei_list {display:table;width:100%;min-height:4rem;border-top:1px solid #b4b5b6;padding:0.4333rem 0;}
+.modal .morei_list {display:table;width:100%;min-height:4rem;border-top:1px solid rgba(0,0,0,.29);padding:0.4333rem 0;}
 .modal .morei_list:first-child {border-top:0 none;}
 .modal .morei_list_dt {display:table-cell;padding:0 0.5rem 0 1rem;width:5.9333rem;vertical-align:middle;font-size:1.2667rem;font-weight:500;line-height:1.8667rem;color:#1f62c7;}
 .modal .defence .morei_list_dt {color:#ec5f59;}
