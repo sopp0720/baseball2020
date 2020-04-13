@@ -32,9 +32,6 @@ var floatUI = (function() {
         },
 		"onScroll": function(st) {
 			const ela = document.querySelectorAll('.fix');
-			if (!ela.length){
-				return;
-			}
 			const tit = document.querySelector('.page_title_wrap');
 			if (tit != null){
 				if (st > 0){
@@ -43,17 +40,19 @@ var floatUI = (function() {
 					tit.classList.remove('shadow');
 				}
 			}
-			ela.forEach(function (el) {
-				if (pTop > el.getBoundingClientRect().top) {
-					el.children[0].style.position = 'fixed';
-					el.children[0].style.top = pTop + 'px';
-					el.children[0].style.zIndex = '10';
-				} else {
-					el.children[0].style.position = '';
-					el.children[0].style.top = '';
-					el.children[0].style.zIndex = '';
-				}
-			});
+			if (ela.length){
+				ela.forEach(function (el) {
+					if (pTop > el.getBoundingClientRect().top) {
+						el.children[0].style.position = 'fixed';
+						el.children[0].style.top = pTop + 'px';
+						el.children[0].style.zIndex = '10';
+					} else {
+						el.children[0].style.position = '';
+						el.children[0].style.top = '';
+						el.children[0].style.zIndex = '';
+					}
+				});
+			}
 		}
     }
 })();
