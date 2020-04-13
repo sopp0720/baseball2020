@@ -1859,11 +1859,13 @@ background-color:#f2f3f4;}
 
 /* layerPopup Dropdown */
 .modal .dropdown_list {overflow:hidden;padding:1rem 0 1.3333rem;background-color:#ffffff;border-top-left-radius:0.7333rem;border-top-right-radius:0.7333rem;}
-.modal .dropdown_list li {position:relative;width:100%;height:4.3333rem;}
+.modal .dropdown_list li {position:relative;margin-top:0.6667rem;width:100%;height:4.3333rem;}
+.modal .dropdown_list li:first-child {margin-top:0;}
+.modal .dropdown_list li.usetap.active {background-color:#fafafa;opacity:1;}
 .modal .dropdown_list li .team_logo {float:left;width:3.5rem;height:3.1rem;margin:0.6333rem 0 0 2.4667rem;}
 .modal .dropdown_list li .tit {float:left;margin-top:0.9667rem;padding-left:2.6667rem;font-size:1.5rem;font-weight:normal;line-height:2.4rem;color:#000000;}
 .modal .dropdown_list li .team_logo + .tit {padding-left:1.1667rem;}
-.modal .dropdown_list li input[type="radio"] {position:absolute;top:0;left:0;width:100%;height:100%;padding:0;margin:0;z-index:1;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;outline:none;background-color:transparent;}
+.modal .dropdown_list li input[type="radio"] {position:absolute;top:0;left:0;width:100%;height:100%;padding:0;margin:0;z-index:1;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;outline:none;background-color:transparent;border:0;outline:0;}
 .modal .dropdown_list li .radio_bg {position:absolute;top:1.4rem;right:2.3333rem;width:1.5333rem;height:1.5333rem;}
 .modal .dropdown_list li input[type="radio"]:checked ~ .radio_bg {background-image:url(../images/logo/dropdown.png);background-size:100%;}
 .modal .dropdown_list li input[type="radio"]:checked ~ .tit {font-weight:bold}
