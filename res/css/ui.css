@@ -1232,19 +1232,26 @@
 .my.content .sec_my {padding:1.5333rem;border-bottom:0.9333rem solid #f0f1f6;}
 .my.content .sec_my:first-of-type {padding-top:2rem;}
 .my.content .sec_my .my_info {position:relative;width:100%;border-radius:0.7333rem;padding:0 2rem;overflow:hidden;font-size:0;}
+.my.content .sec_my .my_info.none {height:13.3333rem;background-color:#f4f5f7;background-image:none !important;color:#000000;}
+.my.content .sec_my .my_info.none:after {content:'';position:absolute;top:1.9667rem;right:2.8667rem;width:6.4rem;height:6.4rem;background-image:url(../images/img-my-none-team.png);background-size:100%;}
 .my.content .sec_my .my_info.basic {height:11rem;}
 .my.content .sec_my .my_info.ios {height:13.3333rem;}
 .my.content .sec_my .my_info.guest {height:12rem;}
 .my.content .sec_my .btn_info {position:relative;display:inline-block;height:2.9667rem;font-size:2rem;font-weight:bold;line-height:2.9667rem;padding-right:1.4667rem;}
 .my.content .sec_my .btn_info.active {opacity:0.8;}
 .my.content .sec_my .btn_info:after {content:'';position:absolute;top:50%;right:0;width:0.8rem;height:1.4rem;margin-top:-0.7rem;background-image:url(../images/ic-arrow-white.png);background-size:100%;}
+.my.content .sec_my .none .btn_info:after {background-image:url(../images/ic-arrow-black.png);}
+.my.content .sec_my .none .btn_info {margin-top:2.3333rem;}
 .my.content .sec_my .basic .btn_info {margin-top:1.6rem;}
 .my.content .sec_my .ios .btn_info {margin-top:1.7333rem;}
 .my.content .sec_my .txt_cheer {font-size:1.3333rem;font-weight:normal;line-height:1.9667rem;}
+.my.content .sec_my .none .txt_cheer {margin-top:2rem;}
 .my.content .sec_my .basic .txt_cheer {margin-top:0.1667rem;}
 .my.content .sec_my .ios .txt_cheer {margin-top:0.4rem;}
 .my.content .sec_my .txt_email {opacity:0.6;font-size:1.1333rem;font-weight:normal;line-height:1.6667rem;margin-top:0.0667rem;}
-.my.content .sec_my .btn_cheer {width:6.1667rem;height:1.9667rem;font-size:1rem;font-weight:normal;line-height:1.9667rem;background-color:rgba(255,255,255,0.17);border-radius:0.9667rem;color:rgba(255,255,255,0.8);text-align:center;}
+.my.content .sec_my .none .txt_email {color:#000000;}
+.my.content .sec_my .btn_non_cheer {position:absolute;overflow:hidden;text-indent:-999em;bottom:1.9667rem;right:2rem;width:8.1667rem;height:2.0333rem;background-image:url(../images/btn-cheerteam-setting.png);background-size:100%;}
+.my.content .sec_my .btn_cheer {overflow:hidden;text-indent:-999em;width:6.1667rem;height:1.9667rem;background-image:url(../images/btn-cheerteam-setting-my.png);background-size:100%;}
 .my.content .sec_my .btn_cheer.active {opacity:0.8;}
 .my.content .sec_my .basic .btn_cheer {margin-top:0.7333rem;}
 .my.content .sec_my .ios .btn_cheer {margin-top:0.8rem;}
