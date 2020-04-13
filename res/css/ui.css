@@ -632,7 +632,7 @@
 .team.content .scroll_ranking li .rest_rank .team_name {display:inline-block;margin-left:0.2667rem;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:500;color:#2b2b2b;vertical-align:top;}
 .team.content .scroll_ranking li .rest_rank .my_team {display:inline-block;margin-top:0.1333rem;margin-left:0.5rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;vertical-align:top;}
 .team.content .scroll_ranking li .rest_rank .rank_rate {display:inline-block;float:right;width:44.303797%;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;text-align:right;color:#2b2b2b;vertical-align:top;}
-.team.content .sec_off_def {padding-top:0;}
+.team.content .sec_off_def {padding-top:0;padding-bottom:0;}
 .team.content .sec_off_def .tab_2depth {margin-top:2rem;}
 .team.content .sec_off_def .table_responsive {margin-top:2rem;}
 .team.content .sec_off_def .team_offense {}
@@ -1629,8 +1629,8 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_player .table_left .cell .player_name {font-size:1.2667rem;font-weight:500;line-height:normal;color:#2b2b2b;}
 .table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
 .table_player .table_left .cell .player_position {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
-
 .table_player .table_left .cell .player_team .my_team {position:absolute;top:0.1333rem;right:0;width:1.3333rem;height:1.3333rem;background-image:url("../images/icon_my.png");background-size:1.3333rem;border-radius:100%;}
+.table_responsive.table_team_rainking .table_right .cell:first-child {padding-left:1.0333rem !important;}
 
 .table_hit300 .table_left thead .cell {background-color:#f2f3f4;}
 .table_hit300 .table_left thead .cell {padding:0.5333rem 0 0.5333rem;}
