@@ -26,11 +26,11 @@
 			<div class="inner">
 				<div class="div_rel">
 					<div class="year_month_wrap month_wrap">
-                        <span class="month_arrow i_prev blind">이전</span>
+                        <span class="month_arrow i_prev usetap blind">이전</span>
                         <span class="i_month"><b class="year_num">2020</b><span>년</span><b class="month_num">5</b><span>월</span></span>
-                        <span class="month_arrow i_next blind">다음</span> <!-- 다음월이 없을 경우 클래스 추가 -->                        
+                        <span class="month_arrow i_next usetap blind">다음</span> <!-- 다음월이 없을 경우 클래스 추가 -->                        
                     </div>
-                    <button type="button" class="btn_gocalendar2 blind">달력</button>
+                    <button type="button" class="btn_gocalendar2 usetap blind">달력</button>
 				</div>
 				<div class="scroll_date">
 					<div class="scroll_inner" id="scroll_date">
@@ -121,7 +121,7 @@
                                 <div class="left_score">14</div>
                                 <div class="right_score">22</div>
 								<div class="info_tag_warp">
-									<span class="info_tag">중계중</span>
+									<span class="info_tag i_live">중계중</span>
 								</div>
 								<!-- base_0 : 0 , base_1 : 1루, base_2 : 2루, base_3 : 3루, base_12 : 1루, 2루, base_23 : 2루, 3루, base_13 : 1루, 3루, base_full : 만루 -->
 								<span class="ic_base base_13 blind">베이스 상황</span>
@@ -171,7 +171,10 @@
                                 <div class="left_score res_lose">14</div>
                                 <div class="right_score">10</div>
 								<div class="middle_inner">
-									<span class="info_result">종료</span>
+									<span class="i_end">종료</span>
+									<!--
+									<span class="i_cancel">취소</span>
+									-->
 								</div>
                             </div>
                             <div class="team_player right">
@@ -194,7 +197,10 @@
                                 <div class="left_score res_lose">2</div>
                                 <div class="right_score">5</div>
 								<div class="middle_inner">
-									<span class="info_result">종료</span>
+									<span class="i_end">종료</span>
+									<!--
+									<span class="i_cancel">취소</span>
+									-->
 								</div>
                             </div>
                             <div class="team_player right">
@@ -216,7 +222,10 @@
                                 <div class="left_score">5</div>
                                 <div class="right_score">5</div>
 								<div class="middle_inner">
-									<span class="info_result">종료</span>
+									<span class="i_end">종료</span>
+									<!--
+									<span class="i_cancel">취소</span>
+									-->
 								</div>
                             </div>
                             <div class="team_player right">
@@ -236,7 +245,10 @@
                             </div>
                             <div class="middle_box">
 								<div class="middle_inner">
-									<span class="info_result">취소</span>
+									<span class="i_cancel">취소</span>
+									<!--
+									<span class="i_end">종료</span>
+									-->
 									<span class="info_time">18:30</span>
 								</div>
                             </div>
