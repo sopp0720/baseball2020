@@ -349,7 +349,7 @@
 .team.content .total_rank_info .rank_num > div.i_draw span {color:#999999;}
 .team.content .total_rank_info .rank_num > div.i_lose span {color:#ec5f59;}
 .team.content .total_rank_info .i_rate {display:inline-block;margin-top:0.6333rem;padding:0 0.8rem;height:1.6667rem;line-height:1.6667rem;font-size:0.9333rem;color:#000000;border-radius:0.8333rem;background-color:#f0f0f0;vertical-align:top;}
-.team.content .total_rank_info .i_rate b {font-size:1.0667rem;font-weight:bold;font-family:normal;color:#000000;}
+.team.content .total_rank_info .i_rate b {font-size:1.0667rem;font-weight:bold;font-family:normal;color:#000000;vertical-align:-0.0333rem;}
 .team.content .rank_date {position:relative;margin-top:0.4333rem;padding:0.9rem 5.161943% 0;height:12.8333rem;border-radius:0.7333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);background-color:#ffffff;}
 .team.content .rank_date .horizon_line {display:block;position:absolute;top:30.64935%;left:5.161943%;width:89.676113%;height:1px;background-color:#f8f8f9;}
 .team.content .rank_date ul li {float:left;margin-left:1.015801%;width:19.187358%;text-align:center;}
@@ -369,6 +369,7 @@
 .team.content .game_schedule > div {position:relative;float:left;margin-left:2.024291%;padding-top:2.0667rem;width:23.481781%;text-align:center;}
 .team.content .game_schedule > div:first-child {margin-left:0;}
 .team.content .game_schedule > div .info_tm {position:absolute;display:block;top:0;left:50%;margin:0 auto 0 -1.56665rem;width:3.1333rem;height:1.6rem;line-height:1.6rem;font-size:0.9333rem;font-weight:bold;color:#ffffff;text-align:center;background-image:linear-gradient(to bottom, #c30137, #73052c 126%);border-radius:0.8rem;}
+.team.content .game_schedule > div .info_tm_cancle {position:absolute;display:block;top:0;left:50%;margin:0 auto 0 -1.56665rem;width:3.1333rem;height:1.6rem;line-height:1.6rem;font-size:0.9333rem;font-weight:bold;color:#ffffff;text-align:center;background-image:linear-gradient(to bottom, #a2a2a2, #858585 100%);border-radius:0.8rem;}
 .team.content .game_schedule > div .schedule_box {margin-top:0;padding-bottom:161.206896%;height:0;border-radius:0.7333rem;overflow:hidden;background-repeat:no-repeat;background-size:100% auto;}
 .team.content .game_schedule > div .schedule_box .i_date {padding-top:6.951871%;}
 .team.content .game_schedule > div .schedule_box .i_date > span {color:#ffffff;}
@@ -1517,7 +1518,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explor
 input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* tab_teamlist */
-.tab_teamlist {margin-top:1.6667rem;background-color:#fff;overflow-x:auto;overflow-y:hidden;padding:0 2.6667rem;}
+.tab_teamlist {margin-top:1.6667rem;background-color:#fff;overflow-x:auto;overflow-y:hidden;padding:0 2.2rem;}
 .tab_teamlist::-webkit-scrollbar {display:none;}
 .tab_teamlist ul {overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
 .tab_teamlist li {position:relative;margin-left:1.3333rem;}
@@ -1564,7 +1565,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_2depth .tab_item {position:relative;z-index:1;float:left;font-size:1.2rem;font-weight:500;min-width:8.3333rem;height:3rem;padding:0.6rem 0.8333rem;color:#858585;}
 .tab_2depth.four .tab_item {min-width:6.6667rem;}
 .tab_2depth .tab_item.active {font-weight:700;}
-.tab_2depth .active_fill {position:absolute;border-width:2px;border-style:solid;bottom:0;left:0;width:8.3333rem;top:0;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);border-radius:1.5rem;z-index:2;}
+.tab_2depth .active_fill {position:absolute;border-width:0.1333rem;border-style:solid;bottom:0;left:0;width:8.3333rem;top:0;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);border-radius:1.5rem;z-index:2;}
 
 /* tab_3depth */
 .tab_3depth {margin-top:2.3333rem;position:relative;padding:0 1.5333rem;width:100%;font-size:0;overflow-x:auto;overflow-y:hidden;background:#f7f8f9;border-top:1px solid #efeff0;border-bottom:0;}
