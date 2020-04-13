@@ -1560,7 +1560,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 /* tab_2depth */
 .tab_2depth {margin-top:2.5rem;position:relative;text-align:center;font-size:0;}
 .tab_2depth .tab_inner {position:relative;display:inline-block;height:3rem;}
-.tab_2depth ul:before {content:'';position:absolute;top:0;left:0;bottom:0;right:0;border-radius:1.5rem;border:1px solid #d9d9d9;}
+.tab_2depth ul:before {content:'';position:absolute;top:0;left:0;bottom:0;right:0;border-radius:1.5rem;border:1px solid #f0f1f6;}
 .tab_2depth ul:after {clear:both;content:'';display:block;}
 .tab_2depth .tab_item {position:relative;z-index:1;float:left;font-size:1.2rem;font-weight:500;min-width:8.3333rem;height:3rem;padding:0.6rem 0.8333rem;color:#858585;}
 .tab_2depth.four .tab_item {min-width:6.6667rem;}
