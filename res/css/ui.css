@@ -1846,7 +1846,7 @@ background-color:#f2f3f4;}
 .modal .modal_ft .btn_half.usetap.active span {background-color:#fafafa;opacity:1;}
 
 /* layerPopup 이벤트 */
-.modal .image_wrap {margin:-1.3333rem -1.3333rem 0;border-radius:1.9333rem;overflow:hidden;}
+.modal .image_wrap {margin:-1.3333rem -1.3333rem 0;border-radius:0.7333rem;overflow:hidden;}
 .modal .image_wrap + p {margin-top:1.3333rem;}
 .modal .control_wrap {text-align:center;margin-top:2.3333rem;}
 .modal .check_circle {position:relative;vertical-align:top;width:2rem;height:2rem;display:inline-block;}
