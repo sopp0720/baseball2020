@@ -132,7 +132,9 @@
 </div>
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/common.js"></script>
+<script src="res/js/floating.js"></script>
 <script>
+floatUI.init();
 document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
 	document.getElementById('wrap').setAttribute('data-theme','');
 	document.getElementById('wrap').setAttribute('data-theme',this.value);

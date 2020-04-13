@@ -1327,14 +1327,17 @@
 .my.content .sec_my .btn_group .dropdown + .dropdown {margin-left:0.6667rem;width:8.1333rem;}
 .my.content .sec_my .btn_group .button {float:right;width:7.1333rem;height:3.3333rem;border-radius:0.7333rem;background-color:#2b2b2b;font-size:1.2667rem;font-weight:bold;line-height:3.3333rem;text-align:center;color:#ffffff;opacity:0.2;}
 .my.content .sec_my .btn_group .button.on {opacity:1;}
+.my.content .sec_my .btn_group .button.on.active {opacity:0.8;}
 .my.content .sec_my .card_group {margin:2rem -0.3333rem 0;}
 .my.content .sec_my .card_group:after {clear:both;content:'';display:block;}
 .my.content .sec_my .card {float:left;width:33.3333%;padding:0 0.3333rem;}
 .my.content .sec_my .card .player {overflow:hidden;position:relative;text-align:center;width:100%;height:16.6667rem;border-radius:0.7333rem;box-shadow:0 0.2333rem 0.9333rem 0 rgba(0, 0, 0, 0.06);background-color:#ffffff;}
-.my.content .sec_my .card.edit .player :not(.card_close) {opacity:0.5;}
+.my.content .sec_my .card.edit .player > :not(.card_close) {opacity:0.5;}
 .my.content .sec_my .card .player .card_close {position:absolute;top:0.5333rem;right:0.5333rem;width:2rem;height:2rem;background-image:url(../images/ic-card-close.png);background-size:100%;}
 .my.content .sec_my .card .player_no {margin-top:1.2667rem;height:2.1667rem;font-family:'bebas_neueregular';font-size:1.8rem;font-weight:normal;line-height:normal;color:#c10a3a;}
 .my.content .sec_my .card .player_xl {margin:0.7rem auto 0;}
+.my.content .sec_my .card .player_xl .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
+.my.content .sec_my .card .player_xl .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
 .my.content .sec_my .card .player_name {margin-top:0.7333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;line-height:2.2rem;color:#000000;}
 .my.content .sec_my .card .player_avg {height:1.8rem;font-size:1.2rem;font-weight:normal;line-height:1.8rem;color:#858585;}
 .my.content .sec_my .card .player_none  {overflow:hidden;text-align:center;width:100%;height:16.6667rem;border-radius:0.7333rem;background-color:#fbfbfb;}
@@ -1575,7 +1578,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_3depth ul {min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
 .tab_3depth ul li:first-child {margin-left:0;}
 .tab_3depth ul li:last-child {margin-right:0;}
-.tab_3depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;width:auto;margin:0 1rem;padding:1.4rem 0;color:#cfd2d9;font-size:1.3333rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
+.tab_3depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;width:auto;margin:0 1rem;padding:1.4rem 0;color:#cfd2d9;font-size:1.4667rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
 .tab_3depth .tab_item.active {font-weight:700;}
 .rate_wrapper .tab_3depth ul li:first-child {margin-left:2.2rem;}
 .rate_wrapper .tab_3depth ul li:last-child {margin-right:2.2rem;}
