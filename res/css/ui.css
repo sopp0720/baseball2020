@@ -99,9 +99,10 @@
 .month_wrap.plus_week .month_arrow.i_next {right:0;}
 
 /* Year + Month */
+.year_month_wrap {margin-top:2rem;width:60.728744%;}
 .year_month_wrap .i_month {padding:0.6667rem 0 0.4rem;}
-.year_month_wrap .i_month b {margin:0;height:3.2rem;font-size:2.6667rem;font-weight:normal;letter-spacing:0;text-align:right;}
-.year_month_wrap .i_month span {margin:0.3667rem 0 0.4667rem 0.1667rem;font-weight:500;}
+.year_month_wrap .i_month b {margin:0;height:3.2rem;line-height:3.2rem;font-size:2.6667rem;font-weight:normal;letter-spacing:0;text-align:right;}
+.year_month_wrap .i_month span {margin:0 0 0 0.1667rem;height:3.2rem;line-height:3.5667rem;font-weight:500;}
 .year_month_wrap .i_month .year_num {width:5.2rem;}
 .year_month_wrap .i_month .month_num {margin-left:0;width:2.3333rem;}
 .year_month_wrap .month_arrow.i_prev {left:0;}
@@ -648,8 +649,8 @@
 .relay.content .scroll_date .scroll_inner {position:relative;width:100%;overflow-x:auto;overflow-y:hidden;font-size:0;}
 .relay.content .scroll_date:before {content:'';-webkit-user-select:none;user-select:none;;z-index:1;display:block;position:absolute;top:0;left:0;width:2.9333rem;height:6rem;background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.04));}
 .relay.content .scroll_date:after {content:'';-webkit-user-select:none;user-select:none;z-index:1;display:block;position:absolute;top:0;right:0;width:2.9333rem;height:6rem;background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.04));}
-.relay.content .scroll_date ul {min-width:100%;padding:0 1.6667rem;height:100%;overflow:visible;white-space:nowrap;display:inline-block;}
-.relay.content .scroll_date ul li {display:inline-block;margin-left:1.1rem;padding:0.9rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
+.relay.content .scroll_date ul {min-width:100%;margin:0.1667rem 0;padding:0 1.6667rem;height:100%;overflow:visible;white-space:nowrap;display:inline-block;}
+.relay.content .scroll_date ul li {display:inline-block;margin-left:0.9rem;padding:0.9rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
 .relay.content .scroll_date ul li:first-child {margin-left:0;}
 .relay.content .scroll_date ul li .date_num {display:block;height:2.3rem;font-family:'bebas_neueregular';font-size:1.9333rem;font-weight:normal;color:#000000;opacity:0.35;transition:opacity ease-out .3s;}
 .relay.content .scroll_date ul li .date_day {display:block;height:1.8rem;font-size:1.2rem;font-weight:bold;color:#000000;opacity:0.35;transition:opacity ease-out .3s;}
@@ -688,7 +689,7 @@
 .relay.content .play_list li .left_score {left:0;text-align:right;}
 .relay.content .play_list li .left_score.res_lose {color:#c2c3c7;}
 .relay.content .play_list li .right_score {right:0;text-align:left;}
-.relay.content .play_list li .ic_base {display:block;margin:2.9333rem auto 0;width:3.2667rem;height:2.3333rem;background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li .ic_base {display:block;margin:2.9333rem auto 0.5333rem;width:3.2667rem;height:2.3333rem;background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .play_list li .info_tag_warp ~ .ic_base {margin-top:2rem;}
 .relay.content .play_list li .tag_tooltip {z-index:2;display:block;position:absolute;bottom:2.3rem;left:0;right:0;text-align:center;font-size:0;}
 .relay.content .play_list li .tag_tooltip .tag_tooltiptext {position:relative;font-size:10px;padding:0 3.0333rem 0 1.5rem;display:inline-block;height:2.2rem;line-height:2.2rem;opacity:0.93;border-radius:1.1rem;;box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.09);background-color:#ffffff;}
@@ -711,12 +712,17 @@
 .base_13 {background-image:url('../images/ic-base-01-03.png');}
 .base_full {background-image:url('../images/ic-base-full.png');}
 .relay.content .play_list .info_tag_warp {position:absolute;bottom:0.7667rem;left:0;right:0;margin:0 auto;}
-.relay.content .play_list .info_tag_warp .info_tag {display:inline-block;margin:0 0.2rem;height:1.3333rem;line-height:1.3333rem;font-size:0.8rem;font-weight:bold;padding:0 0.6rem;background-color:#c10a3a;color:#fff;border-radius:0.6667rem;}
+.relay.content .play_list .info_tag_warp .info_tag {display:inline-block;margin:0 0.2rem;width:3.7333rem;height:1.3333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-repeat:no-repat;background-size:100% auto;}
+.relay.content .play_list .info_tag_warp .info_tag.i_ar {background-image:url('../images/tag-live-list-red-ar.png');}
+.relay.content .play_list .info_tag_warp .info_tag.i_5g {background-image:url('../images/tag-live-list-red-5g.png');}
 .relay.content .play_list li .info_time {margin-top:2.2667rem;display:block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;text-align:center;color:#ca0039;}
 .relay.content .play_list li .info_tag_warp ~ .info_time {margin-top:1.5667rem;}
 .relay.content .play_list li .info_channel {display:block;margin:1.5667rem auto 0;height:1.8rem;font-size:1.2rem;text-align:center;color:#c2c3c7;}
 .relay.content .play_list li .info_tag_warp ~ .info_channel {margin-top:0.9333rem;}
-.relay.content .play_list li .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;line-height:1.8333rem;border-radius:0.9167rem;font-size:1.1rem;font-weight:500;background-color:#c2c3c7;color:#ffffff;text-align:center;padding:0 0.8rem;}
+.relay.content .play_list li .middle_inner .i_schedule {display:block;margin:0 auto;width:5.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-main-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li .middle_inner .i_live {display:block;margin:0 auto;width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-main-red-02.png');background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li .middle_inner .i_cancel {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li .middle_inner .i_end {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .play_list .game_end .info_round {margin-top:0.5333rem;}
 .relay.content .play_list .game_end .left_score,
 .relay.content .play_list .game_end .right_score {top:3.6667rem;}
