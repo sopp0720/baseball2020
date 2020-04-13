@@ -936,7 +936,9 @@
 .relay.content .vs_tbl .col2 {width:20.242914%;}
 .relay.content .vs_tbl .col3 {width:39.878542%;}
 .relay.content .vs_tbl tr {border-bottom:1px solid #f8f8f9;}
-.relay.content .vs_tbl tr:first-child {border-top:1px solid #f0f1f6;}
+.relay.content .vs_tbl tr:first-child {border-top:1px solid #e8e9ef;}
+.relay.content .key_player_wrap .vs_tbl tr:last-child {border:0;}
+.relay.content .vs_tbl.vs_record_tbl tr:last-child {border-bottom:1px solid #f8f8f9;}
 .relay.content .vs_tbl tbody tr.tr_title {text-align:center;}
 .relay.content .vs_tbl tbody tr.tr_title td {padding-top:0.8rem;padding-bottom:0.7667rem;font-size:1.3333rem;font-weight:500;color:#2b2b2b;}
 .relay.content .vs_tbl tbody td {padding-top:0.9333rem;padding-bottom:0.8667rem;}
@@ -998,7 +1000,7 @@
 .relay.content .starting_lineup .start_player.right .player_img_wrap .oval {left:0.9rem;}
 .relay.content .starting_lineup .start_num {position:relative;float:none;width:7.489878%;overflow:hidden;}
 .relay.content .starting_lineup .start_num span {display:block;float:none;height:4.7667rem;line-height:4.7667rem;font-family:'bebas_neueregular';font-size:1.5333rem;color:rgba(43,43,43,.7);text-align:center;background-color:rgba(242, 243, 244, 0.4);border-bottom:1px solid #f8f8f9;}
-.relay.content .starting_lineup .i_team_wrap {margin-top:0.6667rem;padding:0.4rem 0 0.4333rem;height:3.8667rem;border-top:1px solid #f0f1f6;border-bottom:1px solid #f8f8f9;}
+.relay.content .starting_lineup .i_team_wrap {margin-top:0.6667rem;padding:0.4rem 0 0.4333rem;height:3.8667rem;border-top:1px solid #e8e9ef;border-bottom:1px solid #f8f8f9;}
 .relay.content .starting_lineup .i_team_wrap .i_team {position:relative;width:46.25506%;}
 .relay.content .starting_lineup .i_team_wrap .i_team .i_name {display:block;float:left;margin-top:0.5333rem;width:65.207877%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#474747;}
 .relay.content .starting_lineup .i_team_wrap .i_team .team_logo_wrap {display:block;position:relative;float:left;width:34.792122%;}
