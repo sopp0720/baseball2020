@@ -922,9 +922,9 @@
 .relay.content .vs_player_info {position:relative;margin-top:1rem;padding-top:2.3rem;padding-bottom:0.9rem;height:13.7rem;}
 .relay.content .vs_player_info .player_img_wrap {position:absolute;top:0.7667rem;width:8.1333rem;}
 .relay.content .vs_player_info .player_img_wrap.left {left:3.3333rem;}
-.relay.content .vs_player_info .player_img_wrap.left .player_img .team_logo_xs {right:-0.5333rem;}
+.relay.content .vs_player_info .player_img_wrap.left .player_img .team_logo_xs {left:auto;right:-0.5333rem;}
 .relay.content .vs_player_info .player_img_wrap.right {right:3.3333rem;}
-.relay.content .vs_player_info .player_img_wrap.right .player_img .team_logo_xs {left:-0.5333rem;}
+.relay.content .vs_player_info .player_img_wrap.right .player_img .team_logo_xs {left:auto;right:-0.5333rem;}
 .relay.content .vs_player_info .player_img_wrap .player_xl {margin:0 auto;}
 .relay.content .vs_player_info .player_img_wrap .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;width:2.3333rem;height:2.3333rem;border-radius:50%;}
 .relay.content .vs_player_info .player_img_wrap .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
@@ -1674,7 +1674,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_style1 .table_left td {border-right:1px solid #dee1e6;}
 
 .table_data_style {width:100%;}
-.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:1px solid #f0f1f6;border-bottom:1px solid #f8f8f9;}
+.table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:1px solid #e8e9ef;border-bottom:1px solid #f8f8f9;}
 .table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;font-weight:normal;color:#2b2b2b;text-align:center;}
 .table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:1px solid #f8f8f9;}
 .table_data_style tbody td .cell {height:2.2rem;font-family:'bebas_neueregular';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
