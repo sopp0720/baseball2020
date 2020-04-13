@@ -1525,7 +1525,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_teamlist li:first-child {margin-left:0;}
 .tab_teamlist .team-icon-box {position:relative;width:5.4667rem;height:6.8667rem;}
 .tab_teamlist .logo {position:relative;padding:0.7333rem;width:4.8rem;height:4.8rem;}
-.tab_teamlist .logo:before {content:'';position:absolute;left:0;top:0;width:100%;height:100%;border-radius:50%;border:solid 1px #e5e5e5;}
+.tab_teamlist .logo:before {content:'';position:absolute;left:0;top:0;width:100%;height:100%;border-radius:50%;border:solid 1px #f0f1f6;}
 .tab_teamlist .logo .circle {z-index:2;position:absolute;top:0;left:0;width:4.8rem;height:4.8rem;}
 .tab_teamlist .logo [class*="team_symbol_"]  {z-index:1;position:relative;display:block;width:3.3333rem;height:3.3333rem;}
 .tab_teamlist .my_team {position:absolute;top:2.6333rem;right:-0.6667rem;z-index:2;width:2rem;height:2rem;background:url("../images/icon_my.png") center center no-repeat;background-size:2rem;border-radius:100%;border:1px solid #fff;}
