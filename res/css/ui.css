@@ -26,6 +26,11 @@
 .check_wrap input[type="checkbox"]:checked.checkbox + .check_bg .check_bg_theme {width:100%;height:100%;}
 .check_wrap input[type="checkbox"]:checked.checkbox ~ .check_dot {left:2.2667rem;}
 
+/* loading */
+.ptr--ptr {z-index:100;position:fixed;left:50%;margin-left:-2.2833rem;width:4.5667rem !important;height:4.5667rem !important;transform:translate(0%, -100%) scale(1, 1);}
+.loading_wrap {display:none;position:fixed;top:0;left:0;bottom:0;right:0;}
+.loading {position:absolute;width:4.5667rem;height:4.5667rem;background-image:url(../images/ic_loading.gif);background-size:100%;}
+.loading_wrap .loading {left:50%;top:50%;margin-left:-2.2833rem;margin-top:-2.2833rem;}
 /* Press 공통 */
 .usetap.active {opacity:0.8;}
 

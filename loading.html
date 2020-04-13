@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<select id="teamSelect" style="z-index:99999; position:fixed; bottom:50px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG" class="main">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content team">
+			<div class="tab_teamlist" id="teamlistnav">
+				<ul>
+					<li class="team_LG active">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_LG"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">LG</span>
+						</div>
+					</li>
+					<!-- 롯데 -->
+					<li class="team_LT">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_LT"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">롯데</span>
+						</div>
+					</li>
+					<!-- KIA -->
+					<li class="team_HT">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_HT"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">KIA</span>
+						</div>
+					</li>
+					<!-- 두산 -->
+					<li class="team_OB">
+					<div class="team_icon_box">
+						<div class="logo">
+							<div class="circle">
+							</div>
+							<div class="team_symbol_OB"></div>
+						</div>
+						<span class="my_team"></span>
+						<span class="name">두산</span>
+					</div>
+					</li>
+					<!-- 삼성 -->
+					<li class="team_SS">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_SS"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">삼성</span>
+						</div>
+					</li>
+					<!-- 한화 -->
+					<li class="team_HH">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_HH_black"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">한화</span>
+						</div>
+					</li>
+					<!-- SK -->
+					<li class="team_SK">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_SK"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">SK</span>
+						</div>
+					</li>
+					<!-- 키움 -->
+					<li class="team_WO">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_WO"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">키움</span>
+						</div>
+					</li>
+					<!-- NC -->
+					<li class="team_NC">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_NC"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">NC</span>
+						</div>
+					</li>
+					<!-- KT -->
+					<li class="team_KT">
+						<div class="team_icon_box">
+							<div class="logo">
+								<div class="circle">
+								</div>
+								<div class="team_symbol_KT"></div>
+							</div>
+							<span class="my_team"></span>
+							<span class="name">KT</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tab_1depth_wrap fix">
+				<div class="tab_1depth three" id="tab_1depth">
+					<ul class="tab_link">
+						<li class="tab_item active"><span>요즘</span></li>
+						<li class="tab_item"><span>기록</span></li>
+						<li class="tab_item"><span>선수</span></li>
+					</ul>
+					<div class="active_bar" style="left: 54px; width: 59px;"></div>
+				</div>
+			</div>
+			
+			<div class="tab_2depth" id="tab_2depth">
+				<div class="tab_inner">
+					<ul>
+						<li class="tab_item active">정규리그</li>
+						<li class="tab_item">퓨처스리그</li>
+					</ul>
+					<div class="active_fill"></div>
+				</div>
+			</div>
+			
+			<!-- visual img class 
+                info_visual01
+                info_visual02
+                info_visual03
+			-->
+			<div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">1위</span>
+			            <strong class="name"><i class="bar"></i>LG트윈스</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>LG TWINS</strong>
+			            <p>서울은 LG, 승리는 트윈스!</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">잠실구장</span>
+			        	<span class="i_manager"><i class="bar"></i>류중열 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            <!-- 구단정보 : 두산
+            <div class="main_info info_visual02">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">2위</span>
+			            <strong class="name"><i class="bar"></i>두산베어스</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>DOOSAN BEARS</strong>
+			            <p>승리는 두산 베어스!</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">잠실구장</span>
+			        	<span class="i_manager"><i class="bar"></i>김태형 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : 한화
+            <div class="main_info info_visual03">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">3위</span>
+			            <strong class="name"><i class="bar"></i>한화이글스</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>HANWHA EAGLES</strong>
+			            <p>승리는 한화 이글스!</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">한화생명 Eagles Park</span>
+			        	<span class="i_manager"><i class="bar"></i>한용덕 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : SK
+            <div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">4위</span>
+			            <strong class="name"><i class="bar"></i>SK와이번스</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>SK WYVERNS</strong>
+			            <p>강한 기본, 투혼의 SK</p>
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">SK 행복드림구장</span>
+			        	<span class="i_manager"><i class="bar"></i>염경엽 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : 키움
+            <div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">5위</span>
+			            <strong class="name"><i class="bar"></i>키움히어로즈</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>KIWOOM HEROES</strong>
+			            <p>TIME TO WIN, V1 HEROES!</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">고척 스카이돔</span>
+			        	<span class="i_manager"><i class="bar"></i>손혁 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : 롯데
+            <div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">6위</span>
+			            <strong class="name"><i class="bar"></i>롯데자이언츠</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>LOTTE GIANTS</strong>
+			            <p>DRIVE TO WIN!</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">사직구장</span>
+			        	<span class="i_manager"><i class="bar"></i>허문회 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : KT
+            <div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">7위</span>
+			            <strong class="name"><i class="bar"></i>KT위즈</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>KT WIZ</strong>
+			            <p>飛上 2020, 승리의 KT WIZ!</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">KT Wiz Park</span>
+			        	<span class="i_manager"><i class="bar"></i>이강철 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : NC
+            <div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">8위</span>
+			            <strong class="name"><i class="bar"></i>NC다이노스</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>NC DINOS</strong>
+			            <p>STRONGER, TOGETHER</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">창원 NC파크</span>
+			        	<span class="i_manager"><i class="bar"></i>이동욱 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : 삼성
+            <div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">9위</span>
+			            <strong class="name"><i class="bar"></i>삼성라이온즈</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>SAMSUNG LIONS</strong>
+			            <p>승리는 삼성 라이온즈!</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">삼성 라이온즈파크</span>
+			        	<span class="i_manager"><i class="bar"></i>허삼영 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <!-- 구단정보 : KIA
+            <div class="main_info info_visual01">                
+			    <div class="inner">
+			        <div class="i_team">
+			            <span class="team_logo team_logo_LG"></span>
+			            <span class="ranking">10위</span>
+			            <strong class="name"><i class="bar"></i>KIA타이거즈</strong>
+			        </div>
+			        <div class="slogan">
+			            <strong>KIA TIGERS</strong>
+			            <p>DIFFERENT BEATS, ONE HEART</p>			            
+			        </div>
+			        <div class="sub_desc">
+			        	<span class="i_park">KIA 챔피언스필드</span>
+			        	<span class="i_manager"><i class="bar"></i>맷 윌리엄스 <span>감독</span></span>
+			        </div>
+			        <div class="total_rank_info">
+			            <div class="rank_num">
+			                <div class="i_win">
+			                    <span>승</span>
+			                    <b>33</b>
+			                </div>
+			                <div class="i_draw">
+                                <span>무</span>
+			                    <b>08</b>
+			                </div>
+			                <div class="i_lose">
+			                    <span>패</span>
+			                    <b>12</b>
+			                </div>
+			            </div>
+			            <span class="i_rate">승률 <b>0.552</b></span>
+			        </div>
+			    </div>
+			</div>
+            -->
+            <div class="sec_wrapper">
+                <div class="inner">
+                    <div class="rank_date">
+                        <span class="horizon_line"></span>
+                        <ul>
+                            <li>
+                                <span class="i_date">
+                                    <span class="date">09.15</span>
+                                    <span class="day">(수)</span>
+                                </span>
+                                <span class="team_logo team_logo_OB"></span>
+                                <!--
+                                클래스추가
+                                승 - i_win
+                                무 - i_draw
+                                패 - i_lose			            
+                                -->
+                                <span class="rank_info i_draw">무</span>
+                            </li>
+                            <li>
+                                <span class="i_date">
+                                    <span class="date">09.12</span>
+                                    <span class="day">(목)</span>
+                                </span>
+                                <span class="team_logo team_logo_WO"></span>
+                                <!--
+                                클래스추가
+                                승 - i_win
+                                무 - i_draw
+                                패 - i_lose			            
+                                -->
+                                <span class="rank_info i_win">승</span>
+                            </li>
+                            <li>
+                                <span class="i_date">
+                                    <span class="date">09.11</span>
+                                    <span class="day">(금)</span>
+                                </span>
+                                <span class="team_logo team_logo_NC"></span>
+                                <!--
+                                클래스추가
+                                승 - i_win
+                                무 - i_draw
+                                패 - i_lose			            
+                                -->
+                                <span class="rank_info i_lose">패</span>
+                            </li>
+                            <li>
+                                <span class="i_date">
+                                    <span class="date">09.10</span>
+                                    <span class="day sat">(토)</span> <!-- 토요일 class "sat" -->
+                                </span>
+                                <span class="team_logo team_logo_HH"></span>
+                                <!--
+                                클래스추가
+                                승 - i_win
+                                무 - i_draw
+                                패 - i_lose			            
+                                -->
+                                <span class="rank_info i_draw">무</span>
+                            </li>
+                            <li>
+                                <span class="i_date">
+                                    <span class="date">09.09</span>
+                                    <span class="day sun">(일)</span> <!-- 일요일 class "sun" -->
+                                </span>
+                                <span class="team_logo team_logo_KT"></span>
+                                <!--
+                                클래스추가
+                                승 - i_win
+                                무 - i_draw
+                                패 - i_lose			            
+                                -->
+                                <span class="rank_info i_draw">무</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+			<div class="sec_wrapper">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">앞으로의 경기 일정</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <div class="game_schedule">
+                        <div class="usetap">
+                            <span class="info_tm">내일</span>
+                            <div class="schedule_box team_schedule_bg_LT">
+                                <span class="i_date">
+                                    <span class="date">09.15</span>
+                                    <span class="day">(월)</span>
+                                </span>
+                                <span class="i_spot">사직</span>
+                            </div>
+                        </div>
+                        <div class="usetap">
+                            <!--<span class="info_tm">내일</span>-->
+                            <div class="schedule_box team_schedule_bg_OB">
+                                <span class="i_date">
+                                    <span class="date">09.15</span>
+                                    <span class="day">(월)</span>
+                                </span>
+                                <span class="i_spot">잠실</span>
+                            </div>
+                        </div>
+                        <div class="usetap">
+                            <div class="schedule_box team_schedule_bg_SS">
+                                <span class="i_date">
+                                    <span class="date">09.15</span>
+                                    <span class="day">(월)</span>
+                                </span>
+                                <span class="i_spot">대구</span>
+                            </div>
+                        </div>
+                        <div class="usetap">                            
+                            <div class="schedule_box team_schedule_bg_HT">
+                                <span class="i_date">
+                                    <span class="date">09.15</span>
+                                    <span class="day">(월)</span>
+                                </span>
+                                <span class="i_spot">광주</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_wrapper">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">LG Twins 하이라이트</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <div class="team_highlight_wrap">
+                        <div class="team_highlight usetap">
+                            <div class="thumb" style="background-image:url('res/images/team_highlight.jpg')">
+                                <span class="play_time">10:34</span>
+                            </div>
+                            <p>부상은 안돼... 무릎 위쪽을 맞아 털썩 쓰러지는 LG 선수</p>
+                        </div>
+                        <div class="team_highlight usetap">
+                            <div class="thumb" style="background-image:url('res/images/team_highlight.jpg')">
+                                <span class="play_time">10:34</span>
+                            </div>
+                            <p>유재신, 끝까지 집중력을 잃지 않는 적시타</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_wrapper last">
+		        <div class="inner">
+		            <div class="title_hd">
+                        <span class="sec_title">LG Twins 하이라이트</span>
+                        <a href="#none" class="more blind usetap">자세히보기</a>
+                    </div>
+                    <div class="team_news_wrap">
+                        <div class="team_news usetap">
+                            <div class="thumb" style="background-image:url('res/images/team_highlight.jpg')">
+                                <p class="subject">롯데 안치홍, 21일 부산에서 입단식... 에이전트 이예랑 대표도 참석에이전트 이예랑 대표도 참석에이전트 이예랑 대표도 참석</p>
+                            </div>
+                            <div class="desc">
+                                <p>연초 롯데 자이언츠 뉴스로 요동을 쳤던 KBO리그 스토브리그 FA 시장은 대어급들의 행선지가 결정되며 진정..</p>
+                            </div>
+                        </div>
+                        <div class="team_news usetap">
+                            <div class="thumb" style="background-image:url('res/images/team_highlight.jpg')">
+                                <p class="subject">LG 수호신 고우석, 오승환 넘어서려면? </p>
+                            </div>
+                            <div class="desc">
+                                <p>연초 롯데 자이언츠 뉴스로 요동을 쳤던 KBO리그 스토브리그 FA 시장은 대어급들의 행선지가 결정되며 진정..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="tab_container">
+			<!-- Active Tab Container -->
+			<div class="active_tab_container" id="active_tab_container">
+				<div class="tab tab_home">
+					<div class="circle">
+						<div class="img_box" id="circle1">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_team_info">
+					<div class="circle">
+						<div class="img_box" id="circle2">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_relay">
+					<div class="circle">
+						<div class="img_box" id="circle3">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_game">
+					<div class="circle">
+						<div class="img_box" id="circle4">
+						</div>
+					</div>
+				</div>
+				<div class="tab tab_my">
+					<div class="circle">
+						<div class="img_box" id="circle5">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Active Button Container -->
+			<!-- Active Label -->
+			<div class="active_label_container" id="active_label_container">
+				<div class="label label_home active">
+					 홈
+				</div>
+				<div class="label label_team_info">
+					 팀정보
+				</div>
+				<div class="label label_team_info">
+					 중계
+				</div>
+				<div class="label label_team_info">
+					 게임
+				</div>
+				<div class="label label_team_info">
+					 MY
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<div class="tab_bar" id="tab_bar">
+				<div class="left_side">
+				</div>
+				<div class="middle">
+					<div class="center_middle">
+					</div>
+				</div>
+				<div class="right_side" style="flex-grow:4;">
+				</div>
+			</div>
+			<!-- Tab Bar -->
+			<!-- Button Container -->
+			<div class="tab_button" id="tab_button">
+				<div class="tab tab_home hide">
+					 홈
+				</div>
+				<div class="tab tab_team_info">
+					 팀정보
+				</div>
+				<div class="tab tab_relay">
+					 중계
+				</div>
+				<div class="tab tab_game">
+					 게임
+				</div>
+				<div class="tab tab_my">
+					 MY
+				</div>
+			</div>
+			<!-- Button Container -->
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="loading_wrap" id="loading"><div class="loading"></div></div>
+</div>
+
+<script src="res/js/common.js"></script>
+<script src="res/js/floating.js"></script>
+<script>
+floatUI.init();
+layerPopup.show('#loading');
+setTimeout(function() {
+	layerPopup.hide('#loading');
+}, 3000);
+
+</script>
+
+</body>
+</html>
