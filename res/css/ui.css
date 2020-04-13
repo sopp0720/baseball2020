@@ -1234,20 +1234,48 @@
 .relay.content .change_sec ul li:nth-child(21):before {top:35.6667rem;}
 
 /* My - main */
-[data-theme="theme_default"] .my_info {}
-[data-theme="theme_LG"] .my_info {background-image: linear-gradient(251deg, #c30137, #73052c -40%);color:#fff;background-size:100%;}
-[data-theme="theme_HH"] .my_info {background-image: linear-gradient(247deg, #f37321 92%, #872706 -138%);color:#fff;background-size:100%;}
-[data-theme="theme_SS"] .my_info {background-image: linear-gradient(252deg, #0066b3 100%, #054373 1%);color:#fff;background-size:100%;}
-[data-theme="theme_KT"] .my_info {background-image: linear-gradient(252deg, #363435 100%, #252323 0%);color:#fff;background-size:100%;}
-[data-theme="theme_SK"] .my_info {background-image: linear-gradient(250deg, #f48025 100%, #dd4936 37%, #97001c -13%);color:#fff;background-size:100%;}
-[data-theme="theme_WO"] .my_info {background-image: linear-gradient(246deg, #93001c 82%, #5e0012 -10%);color:#fff;background-size:100%;}
-[data-theme="theme_NC"] .my_info {background-image: linear-gradient(247deg, #224e8c 80%, #0b2a55 -8%);color:#fff;background-size:100%;}
-[data-theme="theme_OB"] .my_info {background-image: linear-gradient(247deg, #1b335c 79%, #161b3f -7%);color:#fff;background-size:100%;}
-[data-theme="theme_HT"] .my_info {background-image: linear-gradient(252deg, #b22030 100%, #610912 0%);color:#fff;background-size:100%;}
-[data-theme="theme_LT"] .my_info {background-image: linear-gradient(245deg, #092e63 142%, #b70522 -41%);color:#fff;background-size:100%;}
+/* basic */
+[data-theme="theme_default"] .my_info.basic {}
+[data-theme="theme_LG"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-lg.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_HH"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-hanwha.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_SS"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-samsung.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_KT"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-kt.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_SK"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-sk.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_WO"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-kiwwom.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_NC"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-nc.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_OB"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-doosan.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_HT"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-kia.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_LT"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-lotte.png');background-repeat:no-repeat;background-size:100% auto;}
+
+/* ios */
+[data-theme="theme_default"] .my_info.ios {}
+[data-theme="theme_LG"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-lg.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_HH"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-hanwha.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_SS"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-samsung.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_KT"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-kt.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_SK"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-sk.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_WO"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-kiwwom.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_NC"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-nc.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_OB"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-doosan.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_HT"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-kia.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_LT"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-lotte.png');background-repeat:no-repeat;background-size:100% auto;}
+
+/* guest */
+[data-theme="theme_default"] .my_info.guest {}
+[data-theme="theme_LG"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-lg.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_HH"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-hanwha.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_SS"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-samsung.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_KT"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-kt.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_SK"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-sk.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_WO"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-kiwwom.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_NC"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-nc.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_OB"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-doosan.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_HT"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-kia.png');background-repeat:no-repeat;background-size:100% auto;}
+[data-theme="theme_LT"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-lotte.png');background-repeat:no-repeat;background-size:100% auto;}
+
 .my.content .sec_my {padding:1.5333rem;border-bottom:0.9333rem solid #f0f1f6;}
 .my.content .sec_my:first-of-type {padding-top:2rem;}
-.my.content .sec_my .my_info {position:relative;width:100%;border-radius:0.7333rem;padding:0 2rem;overflow:hidden;font-size:0;}
+.my.content .sec_my .my_info {position:relative;width:100%;border-radius:0.7333rem;padding:0 2rem;overflow:hidden;font-size:0;color:#fff;}
 .my.content .sec_my .my_info.none {height:13.3333rem;background-color:#f4f5f7;background-image:none !important;color:#000000;}
 .my.content .sec_my .my_info.none:after {content:'';position:absolute;top:1.9667rem;right:2.8667rem;width:6.4rem;height:6.4rem;background-image:url(../images/img-my-none-team.png);background-size:100%;}
 .my.content .sec_my .my_info.basic {height:11rem;}
