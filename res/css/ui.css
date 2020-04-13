@@ -90,7 +90,7 @@
 .month_wrap {position:relative;margin:1.5rem auto 0;width:54.65587%;height:4.2667rem;text-align:center;font-size:0;}
 .month_wrap .i_month {display:block;text-align:center;font-size:0;}
 .month_wrap .i_month b {display:inline-block;margin:0.4rem 0 0;height:3.8rem;line-height:3.7rem;font-family:'bebas_neueregular';font-size:3.1667rem;font-weight:normal;letter-spacing:0.095rem;color:#000000;vertical-align:top;}
-.month_wrap .i_month span {display:inline-block;margin:0.4rem 0 0 0.1667rem;height:3.8rem;line-height:4.3333rem;font-size:1.6rem;font-weight:500;letter-spacing:0.048rem;color:#000000;vertical-align:top;}
+.month_wrap .i_month span {display:inline-block;margin:0.4rem 0 0 0.1667rem;height:3.8rem;line-height:4.3467rem;font-size:1.6rem;font-weight:500;letter-spacing:0.048rem;color:#000000;vertical-align:top;}
 .month_wrap .i_month b + span + b {margin-left:0.6667rem;}
 .month_wrap .month_arrow {display:block;position:absolute;top:0;width:4rem;height:4.2667rem;background-repeat:no-repeat;background-size:100% auto;}
 .month_wrap .month_arrow.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
@@ -725,8 +725,8 @@
 .relay.content .play_list li .info_tag_warp ~ .info_time {margin-top:1.5667rem;}
 .relay.content .play_list li .info_channel {display:block;margin:1.5667rem auto 0;height:1.8rem;font-size:1.2rem;text-align:center;color:#c2c3c7;}
 .relay.content .play_list li .info_tag_warp ~ .info_channel {margin-top:0.9333rem;}
-.relay.content .play_list li .middle_inner .i_cancel {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
-.relay.content .play_list li .middle_inner .i_end {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li.game_cancel .middle_inner .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li.game_end .middle_inner .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .play_list .game_end .info_round {margin-top:0.5333rem;}
 .relay.content .play_list .game_end .left_score,
 .relay.content .play_list .game_end .right_score {top:3.6667rem;}
@@ -735,13 +735,17 @@
 .relay.content .play_list .game_cancel .info_time {margin-top:0.5333rem;color:#2b2b2b;}
 
 /* mlb */
-.relay.content .mlb .play_list li .info_tag_red {display:inline-block;margin:2.9rem auto 0;width:6rem;height:1.9rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-main-red-01_lg.png');background-repeat:no-repeat;background-size:100% auto;}
-
+.relay.content .play_list li .info_tag_red {display:inline-block;margin:2.9rem auto 0;height:1.9rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .mlb .play_list li .info_tag_red {width:6rem;background-image:url('../images/tag-main-red-01_lg.png');}
+.relay.content .mlb .play_list .info_tag_warp .info_tag {width:3.3667rem;background-image:url('../images/tag-live-list-red-01.png');}
 .relay.content .mlb .play_list .game_before .info_time {margin-top:0.9rem;color:#2b2b2b;}
+
 /* abl */
 .relay.content .abl .play_list li .left_score,
 .relay.content .abl .play_list li .right_score {top:3.6667rem;}
 .relay.content .abl .play_list li .info_tag_red {margin-top:3.3333rem;}
+.relay.content .abl .play_list li.game_before .info_tag_red {width:6rem;background-image:url('../images/tag-main-red-01_lg.png');}
+.relay.content .abl .play_list li.game_ing .info_tag_red {width:4.9667rem;background-image:url('../images/tag-main-red-02.png');}
 .relay.content .abl .play_list li .info_round {margin-top:0.4667rem;}
 .relay.content .abl .play_list .game_before .info_time {margin-top:0.4667rem;color:#2b2b2b;}
 .relay.content .play_list_none {position:relative;overflow:hidden;height:22.8333rem;font-size:0;text-align:center;}
