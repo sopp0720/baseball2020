@@ -1114,7 +1114,7 @@
 .relay.content .view_base .tag_box_sm {display:inline-block;padding:0 0.7667rem;height:1.8rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
 .relay.content .view_base .tag_box span,.view_base .tag_box_sm span {display:inline-block;vertical-align:top;color:#ffffff;}
 .relay.content .view_base .base_pitcher {position:absolute;top:28.500823%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
-.relay.content .view_base .base_pitcher .i_name {height:1.5333rem;font-size:1.2667rem;font-weight:500;line-height:1.21;}
+.relay.content .view_base .base_pitcher .i_name {height:1.5333rem;font-size:1.2667rem;font-weight:bold;line-height:1.21;}
 .relay.content .view_base .base_pitcher .bar {margin:0.3rem 0.6667rem 0.1667rem;width:1px;height:1.0667rem;background-color:rgba(255,255,255,.5);}
 .relay.content .view_base .base_pitcher .pitch_num {height:1.5333rem;font-size:1.1333rem;font-weight:500;line-height:1.35;}
 .relay.content .view_base .team_logo {display:inline-block;width:2.6rem;height:2.3333rem;vertical-align:top;}
