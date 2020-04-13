@@ -1834,10 +1834,16 @@ background-color:#f2f3f4;}
 .modal .modal_bd .input_wrap {margin:0 auto;padding:0.2667rem 0 0.7333rem;width:21.6667rem;border-bottom:1px solid #dee1e6;}
 .modal .modal_bd .input_wrap input {border:0 none;width:100%;height:2.4667rem;font-size:1.6667rem;font-weight:500;line-height:normal;text-align:center;color:#000000;}
 .modal .modal_bd .input_wrap input::-webkit-input-placeholder {font-size:1.3333rem;font-weight:normal;line-height:normal;text-align:center;color:#b4b4b4;}
-.modal .modal_ft {height:5.0667rem;padding-bottom:0.6667rem;}
-.modal .modal_ft .btn {width:100%;padding:1.0667rem 8.4667rem;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
-.modal .modal_ft .btn_half {display:inline-block;width:50%;padding:1.0667rem 0 1.0667rem 3.3rem;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
-.modal .modal_ft .btn_half + .btn_half {padding:1.0667rem 3.3rem 1.0667rem 0;}
+.modal .modal_ft {padding-left:3.3rem;padding-right:3.3rem;padding-bottom:0.6667rem;height:5.0667rem;text-align:center;}
+.modal .modal_ft .btn {display:inline-block;width:48.582995%;padding:1.0667rem 0;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
+.modal .modal_ft .btn.usetap.active {opacity:1;}
+.modal .modal_ft .btn span {border-radius:0.7333rem;}
+.modal .modal_ft .btn.usetap.active span {background-color:#fafafa;opacity:1;}
+.modal .modal_ft .btn_half {display:inline-block;margin-left:0;width:44.936708%;height:4.4rem;padding:1.0667rem 0 1.0667rem 0;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
+.modal .modal_ft .btn_half + .btn_half {margin-left:10.126582%;padding:1.0667rem 0 1.0667rem 0;}
+.modal .modal_ft .btn_half.usetap.active {opacity:1;}
+.modal .modal_ft .btn_half span {border-radius:0.7333rem;}
+.modal .modal_ft .btn_half.usetap.active span {background-color:#fafafa;opacity:1;}
 
 /* layerPopup 이벤트 */
 .modal .image_wrap {margin:-1.3333rem -1.3333rem 0;border-radius:1.9333rem;overflow:hidden;}
