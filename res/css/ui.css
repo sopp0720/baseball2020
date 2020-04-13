@@ -85,7 +85,7 @@
 .month_wrap {position:relative;margin:1.5rem auto 0;width:54.65587%;height:4.2667rem;text-align:center;font-size:0;}
 .month_wrap .i_month {display:block;text-align:center;font-size:0;}
 .month_wrap .i_month b {display:inline-block;margin:0.4rem 0 0;height:3.8rem;line-height:3.7rem;font-family:'bebas_neueregular';font-size:3.1667rem;font-weight:normal;letter-spacing:0.095rem;color:#000000;vertical-align:top;}
-.month_wrap .i_month span {display:inline-block;margin:0.4rem 0 0 0.1667rem;height:3.8rem;line-height:4.0667rem;font-size:1.6rem;font-weight:500;letter-spacing:0.048rem;color:#000000;vertical-align:top;}
+.month_wrap .i_month span {display:inline-block;margin:0.4rem 0 0 0.1667rem;height:3.8rem;line-height:4.3333rem;font-size:1.6rem;font-weight:500;letter-spacing:0.048rem;color:#000000;vertical-align:top;}
 .month_wrap .i_month b + span + b {margin-left:0.6667rem;}
 .month_wrap .month_arrow {display:block;position:absolute;top:0;width:4rem;height:4.2667rem;background-repeat:no-repeat;background-size:100% auto;}
 .month_wrap .month_arrow.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
