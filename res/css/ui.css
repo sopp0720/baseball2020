@@ -1312,7 +1312,7 @@
 .my.content .sec_my .card .player_none:before {content:'';margin-top:3.3333rem;display:block;width:100%;height:6.1rem;background-image:url(../images/img-my-player-empty.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat;}
 .my.content .sec_my .card_none {text-align:center;overflow:hidden;}
 .my.content .sec_my .card_none .tit {margin-top:1.6667rem;font-size:1.5rem;font-weight:bold;line-height:2.2rem;color:#b4b4b4;}
-.my.content .sec_my .card_none .tit:before {content:'';margin:2.3333rem auto 0;display:block;width:13.8333rem;height:7.6667rem;background-image:url(../images/img-player-empty-s.png);background-size:100%;}
+.my.content .sec_my .card_none .tit:before {content:'';margin:2.3333rem auto 1.6667rem;display:block;width:13.8333rem;height:7.6667rem;background-image:url(../images/img-player-empty-s.png);background-size:100%;}
 .my.content .sec_my .card_none .tit + p {font-size:1.2rem;font-weight:normal;line-height:1.8rem;color:#b4b4b4;margin-top:0.6667rem;padding-bottom:2.6667rem;}
 .my.content .sec_my .sec_title + .set_list {margin-top:1.5333rem;}
 .my.content .sec_my .set_list {position:relative;margin:0 -1.5333rem;height:5.1333rem;overflow:hidden;padding:1.5333rem 6.8rem 1.5333rem 1.5333rem;}
@@ -1339,7 +1339,7 @@
 /* My - set_alram */
 .my.content .sec_my.alram {padding:0 1.5333rem;border-bottom:0 none;}
 .my.content .sec_my.alram_detail {position:relative;padding:1.5333rem 1.5333rem 3rem;border-bottom:0 none;background-color:#fbfbfb;}
-.my.content .sec_my.alram_detail .sec_title {padding-bottom:1.2rem;}
+.my.content .sec_my.alram_detail .sec_title {padding-bottom:1.2rem;font-size:1.4rem;font-weight:500;}
 .my.content .sec_my.alram_detail.disabled > div {opacity:0.3;}
 .my.content .sec_my.alram_detail.disabled:after {content:'';position:absolute;top:0;left:0;right:0;bottom:0;}
 .my.content .sec_my .sec_title_sub {margin-top:0.3333rem;height:3.7333rem;padding:1.5333rem 0 0.3333rem 0;font-size:1rem;font-weight:500;line-height:1.8667rem;color:#858585;border-top:0.0333rem solid #dee1e6;}
