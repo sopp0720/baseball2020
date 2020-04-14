@@ -1830,10 +1830,10 @@ background-color:#f2f3f4;}
 .calendar_body .calendar_cell .num {position:absolute;top:0.2667rem;left:0.4667rem;width:1.6667rem;height:1.8rem;font-size:1.2rem;font-weight:500;line-height:normal;color:#000000;}
 .calendar_body .calendar_cell:nth-of-type(7n+1) .num {color:#ec5f59;}
 .calendar_body .calendar_cell:nth-of-type(7n) .num {color:#3563c0;}
-.calendar_body .calendar_cell [class*="res_"] {position:absolute;top:0.3333rem;right:0.3333rem;width:1.6rem;height:1.6rem;border-radius:50%;text-align:center;font-size:0.9333rem;line-height:1.6rem;color:#fff;}
-.calendar_body .calendar_cell .res_win {background-color:#3667C9;}
-.calendar_body .calendar_cell .res_draw {background-color:#6E7980;}
-.calendar_body .calendar_cell .res_lose {background-color:#EC5F59;}
+.calendar_body .calendar_cell [class*="res_"] {position:absolute;top:0.3333rem;right:0.3333rem;width:1.6rem;height:1.6rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-repeat:no-repeat;background-size:100% auto;}
+.calendar_body .calendar_cell .res_win {background-image:url('../images/ic-tag-win-s.png');}
+.calendar_body .calendar_cell .res_draw {background-image:url('../images/ic-tag-tie-s.png');}
+.calendar_body .calendar_cell .res_lose {background-image:url('../images/ic-tag-losw-s.png');}
 .calendar_body .calendar_cell .team_logo {position:absolute;left:0;right:0;bottom:0.1667rem;;top:0;width:2.6667rem;height:2.3667rem;margin:auto;}
 .calendar_body .calendar_cell .stadi {position:absolute;bottom:0.7333rem;left:0;right:0;margin:0 auto;width:3.4rem;height:1.5333rem;font-size:1.0667rem;font-weight:normal;line-height:normal;text-align:center;color:#525252;}
 .calendar_body .calendar_cell.dim .num,
