@@ -10,6 +10,11 @@ var chreerUi = (function() {
 					document.querySelector('.chat_inner').scrollTop = (document.querySelector('.chat_inner').scrollHeight - document.querySelector('.chat_inner').offsetHeight);
 				}, 100);
 				timer = setInterval(function(){
+					if (dummy.value == ''){
+						container.querySelector('.ic_chat_send').style.display = 'none';
+					} else {
+						container.querySelector('.ic_chat_send').style.display = 'block';
+					}
 					dummy.value = obj.value;
 					obj.style.height = (dummy.scrollHeight) + 'px';
 					container.querySelector('.chat_inner').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";

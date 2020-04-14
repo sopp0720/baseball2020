@@ -773,7 +773,7 @@
 .relay.content .textarea::-webkit-input-placeholder {color:#858585 !important;font-size:1.4667rem;line-height:2.1667rem;}
 .relay.content .dummy {position:absolute;left:0;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;-webkit-user-select:none;user-select:none;opacity:0;}
 .relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.6rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
-.relay.content .chat_wrap .ic_chat_send {position:absolute;bottom:1.0333rem;right:1.5333rem;width:3rem;height:3rem;}
+.relay.content .chat_wrap .ic_chat_send {display:none;position:absolute;bottom:1.0333rem;right:1.5333rem;width:3rem;height:3rem;}
 .relay.content .msg_wrap {position:relative;padding-bottom:1.4rem;text-align:center;font-size:0;}
 .relay.content .msg_wrap:last-of-type {padding-bottom:6.4rem;}
 .relay.content .msg_wrap.left {text-align:left;border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
@@ -1854,7 +1854,7 @@ background-color:#f2f3f4;}
 .modal.visible > .dim {opacity:1;}
 .modal:after {content:"";position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .modal .modal_inner {position:relative;text-align:left;display:inline-block;vertical-align:middle;white-space:normal;}
-.fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:calc(100% - 12.3333rem);-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
+.fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:calc(100% - 3.6rem);-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
 .fadeInUp.visible .modal_inner {-webkit-transform:translate(0, 0);transform:translate(0, 0);}
 .fadeIn .modal_inner {position:absolute;bottom:8.7rem;left:0;right:0;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0;}
 .fadeIn.visible .modal_inner {opacity:1;}
@@ -1934,8 +1934,8 @@ background-color:#f2f3f4;}
 .modal .vs_rank_wrap .vs_box {margin:0 auto;width:7rem;height:4rem;background:url('../images/ic-vs-score-b.png') no-repeat;background-size:100% auto;}
 .modal .final_ball {margin-top:1.9333rem;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:bold;text-align:center;color:#1f62c7;}
 .modal .final_player {margin-top:0.2rem;height:1.5667rem;line-height:1.5667rem;font-size:1.0667rem;font-weight:500;text-align:center;color:#2b2b2b;}
-.modal .morei_bd {max-height:calc(100vh - 20rem);padding:0 1.5333rem 0.8333rem;background-color:#fff;overflow-x:hidden;overflow-y:auto;}
-.modal .morei_list {display:table;width:100%;min-height:4rem;border-top:1px solid #f8f8f9;padding:0.4333rem 0;}
+.modal .morei_bd {max-height:calc(100vh - 18.9667rem);padding:0 1.5333rem 0.8333rem;background-color:#fff;overflow-x:hidden;overflow-y:auto;}
+.modal .morei_list {display:table;width:100%;min-height:4rem;border-top:1px solid #f0f1f6;padding:0.4333rem 0;}
 .modal .morei_list:first-child {border-top:0 none;}
 .modal .morei_list_dt {display:table-cell;padding:0 0.5rem 0 1rem;width:5.9333rem;vertical-align:middle;font-size:1.2667rem;font-weight:500;line-height:1.8667rem;color:#1f62c7;}
 .modal .defence .morei_list_dt {color:#ec5f59;}
