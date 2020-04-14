@@ -772,7 +772,7 @@
 .relay.content .textarea {position:relative;z-index:1;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;}
 .relay.content .textarea::-webkit-input-placeholder {color:#858585 !important;font-size:1.4667rem;line-height:2.1667rem;}
 .relay.content .dummy {position:absolute;left:0;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;-webkit-user-select:none;user-select:none;opacity:0;}
-.relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.6rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
+.relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.7rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
 .relay.content .chat_wrap .ic_chat_send {position:absolute;bottom:1.0333rem;right:1.5333rem;width:3rem;height:3rem;}
 .relay.content .msg_wrap {position:relative;padding-bottom:1.4rem;text-align:center;font-size:0;}
 .relay.content .msg_wrap:last-of-type {padding-bottom:6.4rem;}
@@ -798,7 +798,7 @@
 .relay.content .chreer_selection .chreer_team.active {opacity:0.8;}
 .relay.content .chreer_selection .chreer_team.left {display:inline-block;width:50%;height:100%;padding-left:2.9333rem;padding-top:0.7rem;text-align:left;}
 .relay.content .chreer_selection .chreer_team.right {display:inline-block;width:50%;height:100%;padding-right:2.9333rem;padding-top:0.7rem;text-align:right;}
-.relay.content .chreer_selection .team_name {display:inline-block;width:8.3333rem;height:2.4667rem;font-size:1.6rem;line-height:2.4667rem;color:#c2c3c7;font-weight:normal;}
+.relay.content .chreer_selection .team_name {display:inline-block;padding-top:0.05rem;width:8.3333rem;height:2.4667rem;font-size:1.6rem;line-height:2.4667rem;color:#c2c3c7;font-weight:normal;}
 .relay.content .chreer_selection .current .team_name {color:#000000;font-weight:bold;}
 .relay.content .chreer_selection .left .team_name {position:relative;text-align:right;padding-right:2.3333rem;}
 .relay.content .chreer_selection .left .ic_away {position:absolute;right:0;top:0.4rem;width:1.6667rem;height:1.6667rem;}
