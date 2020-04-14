@@ -283,7 +283,7 @@
 .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
 .highlight_box p {margin-top:0.5333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .highlight_wrap.line1 .highlight_box p {height:1.9667rem;line-height: normal;-webkit-line-clamp: 1;}
-.home.content .highlight_box .view {position:relative;display:block;margin-top:0;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
+.home.content .highlight_box .view {position:relative;display:block;margin-top:0.5rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
 .home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
 .home.content .news_wrap .news_main {position:relative;margin-top:1rem;padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;overflow:hidden;}
 .home.content .news_wrap .news_main .txt_inner_wrap {position:absolute;bottom:0;width:100%;height:11.6667rem;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
@@ -314,7 +314,7 @@
 .highlight_detail .highlight_box .thumb .overlay {z-index:1;display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(36,9,16,.6);background-image:url("../images/ic-play-foc-b.png");background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;border-radius:0.7333rem;}
 .highlight_detail .highlight_box > b {display:block;margin-top:0.6667rem;padding:0 3.125%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;}
 .highlight_detail .video_info {position:relative;margin-top:0;padding:0.5rem 0 0.3667rem;height:2.6667rem;}
-.highlight_detail .video_info .view {margin-top:0;}
+.highlight_detail .video_info .view {margin-top:0 !important;}
 .highlight_detail .video_info .ico_share {z-index:2;display:block;position:absolute;top:0;right:0;width:2.6667rem;height:2.6667rem;background:url("../images/ic-share-nor.png") no-repeat;background-size:100% auto;}
 .highlight_detail .video_info .ico_share.usetap.active {background-color:#ebebeb;border-radius:50%;}
 .highlight_detail.sp_vod .video_info .ico_share {right:auto;left:0;}
