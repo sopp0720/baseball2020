@@ -1538,7 +1538,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .team.content .tab_teamlist + .tab_1depth_wrap {margin-top:1.6667rem;}
 
 /* tab_1depth */
-.tab_1depth {margin-top:1.6667rem;height:4.6rem;position:relative;overflow-x:auto;overflow-y:hidden;background:#fff;}
+.tab_1depth {margin-top:1.6667rem;height:4.6rem;position:relative;overflow-x:auto;overflow-y:hidden;background-color:rgba(255, 255, 255, 0.98);}
 .tab_1depth.two ul {padding:0;}
 .tab_1depth.three ul {padding:0 3.2333rem;}
 .tab_logo .tab_1depth {height:6.4rem;}
@@ -1716,7 +1716,7 @@ background-color:#f2f3f4;}
 .table_responsive.table_abl_league .table_left {width:12.9333rem;}
 .table_responsive.table_abl_league .table_left .cell .num {float:left;margin-left:0.9rem;padding-top:1.4rem;padding-bottom:1.2rem;}
 .table_responsive.table_abl_league .table_left .cell [class*="team_logo_"] {float:left;margin:0;margin-top:0.3667rem;margin-left:0.2rem;width:4.0333rem;height:3.5667rem;}
-.table_responsive.table_abl_league .table_left .cell .team_name {float:left;margin-top:1.3667rem;margin-left:0.5rem;width:5.5rem;height:1.6667rem;}
+.table_responsive.table_abl_league .table_left .cell .team_name {float:left;margin-top:1.3667rem;margin-left:0.5rem;width:5.5rem;height:1.6667rem;text-align:left;}
 
 /* chart common */
 .bb svg {font:10px sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0);}
