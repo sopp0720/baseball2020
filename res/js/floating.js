@@ -1,7 +1,9 @@
 var floatUI = (function() {
 	let pTop;
+	let before_st;
     return {
         "init": function(prevTop) {
+			before_st = 0;
 			if (prevTop !== undefined){
 				pTop = prevTop.offsetHeight;
 			} else {
@@ -31,8 +33,10 @@ var floatUI = (function() {
 			});
         },
 		"onScroll": function(st) {
+			const elaTop = document.querySelector('.tab_teamlist_wrap');
 			const ela = document.querySelectorAll('.fix');
 			const tit = document.querySelector('.page_title_wrap');
+
 			if (tit != null){
 				if (st > 0){
 					tit.classList.add('shadow');
@@ -46,11 +50,25 @@ var floatUI = (function() {
 						el.children[0].style.position = 'fixed';
 						el.children[0].style.top = pTop + 'px';
 						el.children[0].style.zIndex = '10';
+						if (elaTop != null){
+							if (st > before_st){
+								elaTop.classList.remove('on');
+								elaTop.classList.add('off');
+							} else {
+								elaTop.classList.add('on');
+								elaTop.classList.remove('off');
+							}
+						}
 					} else {
 						el.children[0].style.position = '';
 						el.children[0].style.top = '';
 						el.children[0].style.zIndex = '';
+						if (elaTop != null){
+							elaTop.classList.remove('on');
+							elaTop.classList.remove('off');
+						}
 					}
+					before_st = st;
 				});
 			}
 		}
