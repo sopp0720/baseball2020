@@ -1189,7 +1189,7 @@
 .relay.content .hitter_info .info_top > span {display:inline-block;vertical-align:top;}
 .relay.content .hitter_info .info_top {font-size:0;}
 .relay.content .hitter_info .info_top .i_name {height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#2b2b2b;}
-.relay.content .hitter_info .info_top .i_num {margin-left:0.3667rem;padding:0.0467rem 0 0;height:2.4667rem;font-size:1.6667rem;font-weight:500;color:#2b2b2b;}
+.relay.content .hitter_info .info_top .i_num {margin-left:0.3667rem;height:2.4667rem;font-size:1.6667rem;font-weight:500;color:#2b2b2b;}
 .relay.content .hitter_info .info_top .i_average {margin:0.1rem 0 0.1rem 0.8333rem;height:2.2667rem;font-size:1.5333rem;color:#8d8d8d;}
 .relay.content .hitter_info .info_bottom {margin-top:0.2rem;font-size:0;}
 .relay.content .hitter_info .info_bottom span {display:inline-block;margin-left:1rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;vertical-align:top;}
