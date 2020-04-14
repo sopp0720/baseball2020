@@ -60,7 +60,13 @@
 .page_title_wrap .team_box .team_name {min-width:2.6667rem;height:2.7667rem;line-height:2.7667rem;font-size:1.2667rem;font-weight:500;color:#000000;}
 .page_title_wrap .team_box .team_logo {width:3.1667rem;height:2.7667rem;}
 .page_title_wrap .team_box .i_score {height:2.7667rem;line-height:2.7667rem;font-size:1.8333rem;color:#000000;}
-.page_title_wrap .middle_box {position:absolute;top:50%;left:50%;margin-top:-0.9833rem;margin-left:-2.5rem;width:5rem;height:1.9667rem;background:url('../images/ic-vs-titie-gray.png') no-repeat 50% 50%;background-size:auto 1.9667rem;}
+.page_title_wrap .middle_box {position:absolute;top:50%;left:50%;margin-top:-0.9833rem;margin-left:-2.5rem;width:5rem;height:1.9667rem;background-image:url('../images/ic-vs-titie-gray.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.9667rem;}
+
+/* 경기 전 */
+.before_title_wrap.page_title_wrap .middle_box {background-image:url('../images/ic-vs-titie-red.png');}
+.before_title_wrap.page_title_wrap .team_box.left .team_logo {margin-right:0;}
+.before_title_wrap.page_title_wrap .team_box.right .team_logo {margin-left:0;}
+
 
 /* Sec title */
 .content .title_hd {position:relative;padding:/*0.5333rem*/0 0 0.5rem;height:2.9667rem;font-size:0;}
