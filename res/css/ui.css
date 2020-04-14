@@ -277,6 +277,11 @@
 .home_main.content .highlight_wrap {padding-bottom:0;}
 .highlight_wrap {margin:1rem -1.417004% 0;padding-bottom:2rem;overflow:hidden;}
 .highlight_box {float:left;margin:2rem 1.377952% 0;width:47.244094%;}
+.highlight_box.usetap.active {opacity:1 !important;}
+.highlight_box.usetap.active .thumb,
+.highlight_box.usetap.active b,
+.highlight_box.usetap.active p,
+.highlight_box.usetap.active .view {opacity:0.8;}
 .highlight_box:nth-child(1),
 .highlight_box:nth-child(2) {margin-top:0;}
 .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;overflow:hidden;}
