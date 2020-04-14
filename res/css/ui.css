@@ -836,7 +836,7 @@
 .relay.content .relay_video_thumb .abs_wrap {z-index:1;}
 .relay.content .relay_video_thumb .ic_show {display:block;position:absolute;top:0.4rem;left:0.4rem;width:4rem;height:4rem;background:url('../images/ic-show.png') no-repeat;background-size:100% auto;}
 .relay.content .relay_video_thumb .game_info {text-align:center;}
-.relay.content .relay_video_thumb .game_info span {display:inline-block;padding:0.6rem 0.3333rem;height:3.1rem;border-top:0.1rem solid rgba(216,216,216,.1);border-bottom:0.1rem solid rgba(216,216,216,.1);font-size:1.1rem;text-align:center;color:rgba(255,255,255,.6);vertical-align:top;}
+.relay.content .relay_video_thumb .game_info span {display:inline-block;padding:0.6rem 0.3333rem;height:3.1rem;border-top:1px solid rgba(216,216,216,.1);border-bottom:1px solid rgba(216,216,216,.1);font-size:1.1rem;text-align:center;color:rgba(255,255,255,.6);vertical-align:top;}
 .relay.content .relay_video_thumb .relay_top_info {position:relative;margin-top:1.9rem;}
 .relay.content .relay_video_thumb .relay_top_info .team_info {position:absolute;top:0;width:8.9rem;}
 .relay.content .relay_video_thumb .relay_top_info .team_info.left {left:3.5667rem;}
@@ -1614,13 +1614,19 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 
 /* table common*/
-.table_responsive {/*margin-top:2rem;*/position:relative;z-index:2;margin-top:0.6667rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
+.table_responsive {/*margin-top:2rem;*/position:relative;z-index:2;margin-top:0.6667rem;/*border-radius:0.7333rem;border: 1px solid #dee1e6;*/overflow:hidden;}
+.table_responsive.scroll {margin-right:-1.5333rem;}
+.table_responsive.scroll .table_right {padding-right:1.5333rem;}
+.table_responsive.scroll .table_right_inner {display:inline-block;vertical-align:top;border-top-right-radius:0.7333rem;border-bottom-right-radius:0.7333rem;border-right:1px solid #dee1e6;border-top:1px solid #dee1e6;border-bottom:1px solid #dee1e6;overflow:hidden;}
 .table_responsive:after {content:'';display:block;clear:both;}
-.table_responsive .table_left {float:left;border-right:1px solid #dee1e6;}
+.table_responsive .table_left {float:left;border-right:1px solid #dee1e6;border-top:1px solid #dee1e6;border-left:1px solid #dee1e6;border-bottom:1px solid #dee1e6;border-top-left-radius:0.7333rem;border-bottom-left-radius:0.7333rem;overflow:hidden;}
 .table_responsive thead .cell {background-color:#f2f3f4;}
 .table_responsive .table_left tbody .cell {background-color:rgba(242, 243, 244, 0.4);}
 .table_responsive .table_left tfoot .cell {background-color:rgba(242, 243, 244, 0.4);font-size:1.2667rem;font-weight:500;color:#858585;}
-.table_responsive .table_right {position:relative;z-index:2;float:none;overflow-y:hidden;overflow-x:auto;}
+.table_responsive .table_right {position:relative;z-index:2;float:none;overflow-y:hidden;overflow-x:auto;border-top-right-radius:0.7333rem;border-bottom-right-radius:0.7333rem;border-right:1px solid #dee1e6;border-top:1px solid #dee1e6;border-bottom:1px solid #dee1e6;}
+.table_responsive.scroll .table_right {border-top-right-radius:0;border-bottom-right-radius:0;border-right:0 none;border-top:0 none;border-bottom:0 none;}
+.table_responsive .table_right::-webkit-scrollbar {display:none;}
+.table_responsive .table_right .table {}
 .table_responsive .table_right .cell {min-width:4.6667rem;}
 .table_responsive.width_reset .table_right .cell {min-width:100%;}
 .table {width:100%;}
