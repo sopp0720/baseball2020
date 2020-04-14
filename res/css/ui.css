@@ -486,7 +486,7 @@
 .team.content .video_scroll .thumb.i_default {background-image:url('../images/ic-play-defualt-s.png');background-position:50% 50%;background-size:22.023809% auto;}
 .team.content .video_scroll .thumb .play_time {position:absolute;bottom:0.7rem;right:0.6667rem;padding:0 0.6rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
 .team.content .video_scroll p {margin-top:0.5333rem;font-size:1.2667rem;font-weight:normal;color:#000000;line-height:1.26;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
-.team.content .video_scroll .date {display:block;margin-top:0.2rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
+.team.content .video_scroll .date {display:block;margin-top:0.5rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
 .team.content .term_desc {margin-top:1.5333rem;border:solid 0.1rem #e4e6eb;border-radius:0.7333rem;overflow:hidden;}
 .team.content .term_desc .btn_desc {display:block;padding:0.8333rem 0 0.9rem;width:100%;height:3.7rem;background-color:#ffffff;font-size:0;text-align:center;}
 .team.content .term_desc .btn_desc .label {font-size:1.3333rem;font-weight:500;color:#7a7a7a;}
