@@ -1812,6 +1812,12 @@ var chart2 = bb.generate({
     legend: {
         show: false
     },
+	tooltip: {
+		linked: true,
+		contents: (data) => {
+			return `<div class="bb-tooltip-container bullets" style="pointer-events:none;"><div class="bb-tooltip">${data[0].value}승 ${data[1].value}무 ${data[2].value}패 승률 0.654</div></div>`;
+		}
+	},
     data: {
         colors: {
             data1: "rgba(114,160,239,0.24)",
