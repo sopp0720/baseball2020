@@ -49,7 +49,7 @@
 .srh_is_back .input_box {margin:0;margin-left:2.9333rem;width:auto;}
 
 /* page_title team vs */
-.relay.content .page_title_wrap .inner:after {content:'';position:absolute;bottom:0;height:1px;left:1.5333rem;right:1.5333rem;background-color:rgba(222,225,230,.8);}
+.relay.content .page_title_wrap .inner:after {content:'';position:absolute;bottom:0;height:1px;left:1.5333rem;right:1.5333rem;background-color:#f8f8f9;}
 .page_title_wrap .team_box {position:absolute;top:0;padding:1.1333rem 0 0;width:15.5rem;height:100%;font-size:0;}
 .page_title_wrap .team_box.left {left:0;text-align:right;}
 .page_title_wrap .team_box.left .team_logo {margin-left:0.3333rem;margin-right:0.6667rem;}
