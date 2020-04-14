@@ -1673,6 +1673,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_total_record .table_left {width:12.4667rem;}
 .table_total_record .table_left .col1 {width:56.72043%;}
 .table_total_record .table_left .col2 {width:43.279569%;}
+.table_total_record .table_right tbody tr:first-child {background-color:rgba(242, 243, 244, 0.4);}
 
 /* table style1 */
 .table_style1 .table_left {border-right:0;}
