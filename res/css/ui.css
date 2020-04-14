@@ -1592,13 +1592,13 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 
 /* table common*/
-.table_responsive {/*margin-top:2rem;*/margin-top:0.6667rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
+.table_responsive {/*margin-top:2rem;*/position:relative;z-index:2;margin-top:0.6667rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
 .table_responsive:after {content:'';display:block;clear:both;}
 .table_responsive .table_left {float:left;border-right:1px solid #dee1e6;}
 .table_responsive thead .cell {background-color:#f2f3f4;}
 .table_responsive .table_left tbody .cell {background-color:rgba(242, 243, 244, 0.4);}
 .table_responsive .table_left tfoot .cell {background-color:rgba(242, 243, 244, 0.4);font-size:1.2667rem;font-weight:500;color:#858585;}
-.table_responsive .table_right {position:relative;float:none;overflow-y:hidden;overflow-x:auto;}
+.table_responsive .table_right {position:relative;z-index:2;float:none;overflow-y:hidden;overflow-x:auto;}
 .table_responsive .table_right .cell {min-width:4.6667rem;}
 .table_responsive.width_reset .table_right .cell {min-width:100%;}
 .table {width:100%;}
