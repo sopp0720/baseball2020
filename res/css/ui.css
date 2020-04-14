@@ -608,7 +608,7 @@
 .team.content .top_ranking_info .rank_num span {margin:0.8333rem 0 0;height:1.9667rem;font-size:1.3333rem;color:#000000;}
 .team.content .top_ranking_info .rank_num b {margin-left:0.3333rem;margin-right:0.1rem;height:3.1333rem;font-size:2.1333rem;font-weight:bold;color:#000000;}
 .team.content .top_ranking_info .game_record {margin-left:1.4667rem;padding-top:0.5667rem;}
-.team.content .top_ranking_info .game_record .ic_title {margin:0.2rem 0 0.2333rem 0.6rem;width:2.1333rem;height:2.1333rem;line-height:2.1333rem;font-size:1.2rem;font-weight:bold;color:#ffffff;border-radius:50%;text-align:center;}
+.team.content .top_ranking_info .game_record .ic_title {margin:0.1rem 0 0.2333rem 0.6rem;width:2.1333rem;height:2.1333rem;line-height:2.1333rem;font-size:1.2rem;font-weight:bold;color:#ffffff;border-radius:50%;text-align:center;}
 .team.content .top_ranking_info .game_record .ic_title.i_win {margin-left:0;background-color:#3563c0;}
 .team.content .top_ranking_info .game_record .ic_title.i_lose {background-color:#ec5f59;}
 .team.content .top_ranking_info .game_record .ic_title.i_draw {background-color:#919191;}
