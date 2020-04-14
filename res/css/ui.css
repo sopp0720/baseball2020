@@ -486,7 +486,7 @@
 .team.content .video_scroll .thumb.i_default {background-image:url('../images/ic-play-defualt-s.png');background-position:50% 50%;background-size:22.023809% auto;}
 .team.content .video_scroll .thumb .play_time {position:absolute;bottom:0.7rem;right:0.6667rem;padding:0 0.6rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
 .team.content .video_scroll p {margin-top:0.5333rem;font-size:1.2667rem;font-weight:normal;color:#000000;line-height:1.26;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
-.team.content .video_scroll .date {display:block;margin-top:0.2rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
+.team.content .video_scroll .date {display:block;margin-top:0.5rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
 .team.content .term_desc {margin-top:1.5333rem;border:solid 0.1rem #e4e6eb;border-radius:0.7333rem;overflow:hidden;}
 .team.content .term_desc .btn_desc {display:block;padding:0.8333rem 0 0.9rem;width:100%;height:3.7rem;background-color:#ffffff;font-size:0;text-align:center;}
 .team.content .term_desc .btn_desc .label {font-size:1.3333rem;font-weight:500;color:#7a7a7a;}
@@ -608,7 +608,7 @@
 .team.content .top_ranking_info .rank_num span {margin:0.8333rem 0 0;height:1.9667rem;font-size:1.3333rem;color:#000000;}
 .team.content .top_ranking_info .rank_num b {margin-left:0.3333rem;margin-right:0.1rem;height:3.1333rem;font-size:2.1333rem;font-weight:bold;color:#000000;}
 .team.content .top_ranking_info .game_record {margin-left:1.4667rem;padding-top:0.5667rem;}
-.team.content .top_ranking_info .game_record .ic_title {margin:0.2rem 0 0.2333rem 0.6rem;width:2.1333rem;height:2.1333rem;line-height:2.1333rem;font-size:1.2rem;font-weight:bold;color:#ffffff;border-radius:50%;text-align:center;}
+.team.content .top_ranking_info .game_record .ic_title {margin:0.1rem 0 0.2333rem 0.6rem;width:2.1333rem;height:2.1333rem;line-height:2.1333rem;font-size:1.2rem;font-weight:bold;color:#ffffff;border-radius:50%;text-align:center;}
 .team.content .top_ranking_info .game_record .ic_title.i_win {margin-left:0;background-color:#3563c0;}
 .team.content .top_ranking_info .game_record .ic_title.i_lose {background-color:#ec5f59;}
 .team.content .top_ranking_info .game_record .ic_title.i_draw {background-color:#919191;}
@@ -628,9 +628,9 @@
 .team.content .scroll_ranking li .rest_rank {padding:0.6667rem 1rem 0.7rem;border:solid 1px #dee1e6;border-top:0;border-radius:0 0 0.7333rem 0.7333rem;overflow:hidden;}
 .team.content .scroll_ranking li .rest_rank .rest_inner {position:relative;font-size:0;}
 .team.content .scroll_ranking li .rest_rank .rest_inner:last-child {margin-top:0.6667rem;padding-top:0.6333rem;border-top: solid 1px #dee1e6;}
-.team.content .scroll_ranking li .rest_rank .rank_num {display:inline-block;width:1rem;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
+.team.content .scroll_ranking li .rest_rank .rank_num {display:inline-block;width:1rem;height:1.8667rem;line-height:1.8rem;font-size:1.2667rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
 .team.content .scroll_ranking li .rest_rank .team_name {display:inline-block;margin-left:0.2667rem;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:500;color:#2b2b2b;vertical-align:top;}
-.team.content .scroll_ranking li .rest_rank .my_team {display:inline-block;margin-top:0.1333rem;margin-left:0.5rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;vertical-align:top;}
+.team.content .scroll_ranking li .rest_rank .my_team {display:inline-block;margin-top:0.1667rem;margin-left:0.5rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;vertical-align:top;}
 .team.content .scroll_ranking li .rest_rank .rank_rate {display:inline-block;float:right;width:44.303797%;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;text-align:right;color:#2b2b2b;vertical-align:top;}
 .team.content .sec_off_def {padding-top:0;padding-bottom:0;}
 .team.content .sec_off_def .tab_2depth {margin-top:2rem;}
@@ -1189,7 +1189,7 @@
 .relay.content .hitter_info .info_top > span {display:inline-block;vertical-align:top;}
 .relay.content .hitter_info .info_top {font-size:0;}
 .relay.content .hitter_info .info_top .i_name {height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#2b2b2b;}
-.relay.content .hitter_info .info_top .i_num {margin-left:0.3667rem;height:2.4667rem;font-size:1.6667rem;font-weight:500;color:#2b2b2b;}
+.relay.content .hitter_info .info_top .i_num {margin-left:0.3667rem;padding:0.0467rem 0 0;height:2.4667rem;font-size:1.6667rem;font-weight:500;color:#2b2b2b;}
 .relay.content .hitter_info .info_top .i_average {margin:0.1rem 0 0.1rem 0.8333rem;height:2.2667rem;font-size:1.5333rem;color:#8d8d8d;}
 .relay.content .hitter_info .info_bottom {margin-top:0.2rem;font-size:0;}
 .relay.content .hitter_info .info_bottom span {display:inline-block;margin-left:1rem;height:1.8rem;font-size:1.2rem;color:#8d8d8d;vertical-align:top;}
@@ -1592,13 +1592,13 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 
 /* table common*/
-.table_responsive {/*margin-top:2rem;*/margin-top:0.6667rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
+.table_responsive {/*margin-top:2rem;*/position:relative;z-index:2;margin-top:0.6667rem;border-radius:0.7333rem;border: 1px solid #dee1e6;overflow:hidden;}
 .table_responsive:after {content:'';display:block;clear:both;}
 .table_responsive .table_left {float:left;border-right:1px solid #dee1e6;}
 .table_responsive thead .cell {background-color:#f2f3f4;}
 .table_responsive .table_left tbody .cell {background-color:rgba(242, 243, 244, 0.4);}
 .table_responsive .table_left tfoot .cell {background-color:rgba(242, 243, 244, 0.4);font-size:1.2667rem;font-weight:500;color:#858585;}
-.table_responsive .table_right {position:relative;float:none;overflow-y:hidden;overflow-x:auto;}
+.table_responsive .table_right {position:relative;z-index:2;float:none;overflow-y:hidden;overflow-x:auto;}
 .table_responsive .table_right .cell {min-width:4.6667rem;}
 .table_responsive.width_reset .table_right .cell {min-width:100%;}
 .table {width:100%;}
@@ -1638,7 +1638,9 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
 .table_player .table_left .cell .player_position {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
 .table_player .table_left .cell .player_team .my_team {position:absolute;top:0.1333rem;right:0;width:1.3333rem;height:1.3333rem;background-image:url("../images/icon_my.png");background-size:1.3333rem;border-radius:100%;}
-.table_responsive.table_team_rainking .table_right .cell:first-child {padding-left:1.0333rem !important;}
+.table_responsive.table_team_rainking .table_right th:first-child .cell,
+.table_responsive.table_team_rainking .table_right td:first-child .cell {padding-left:1.0333rem !important;}
+.table_responsive.table_team_rainking .table_right {overflow-x:hidden;}
 
 .table_hit300 .table_left thead .cell {background-color:#f2f3f4;}
 .table_hit300 .table_left thead .cell {padding:0.5333rem 0 0.5333rem;}
@@ -1673,6 +1675,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_total_record .table_left {width:12.4667rem;}
 .table_total_record .table_left .col1 {width:56.72043%;}
 .table_total_record .table_left .col2 {width:43.279569%;}
+.table_total_record .table_right tbody tr:first-child {background-color:rgba(242, 243, 244, 0.4);}
 
 /* table style1 */
 .table_style1 .table_left {border-right:0;}
@@ -1692,7 +1695,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .relay.content .table_score_board {margin-top:0;}
 .relay.content .table_score_board.table_responsive {border-color:#e8e9ef;}
 .relay.content .table_score_board.table_responsive .table thead tr {border-color:#e8e9ef;}
-.relay.content .table_score_board .table_left {float:left;width:17.206477%;border-right:1px solid #e8e9ef;}
+.relay.content .table_score_board .table_left {position:relative;z-index:1;float:left;width:17.206477%;border-right:1px solid #e8e9ef;}
 .relay.content .table_score_board .table_left thead .cell {padding:0.6667rem 0;height:2.9rem;font-size:1.1333rem;font-weight:500;text-align:center;color:#2b2b2b;background-color:#f2f3f4;overflow:hidden;}
 /*.relay.content .table_score_board .table_left thead th:first-child .cell {border-radius:0.7333rem 0 0 0;}*/
 .relay.content .table_score_board .table_left tbody .cell {padding-top:0.5333rem;padding-left:0.5rem;font-size:0;text-align:left;}
@@ -1951,7 +1954,7 @@ background-color:#f2f3f4;}
 .popup_cheer .quo_marks:before {content:'';position:absolute;left:-1.6rem;top:0;width:1.3333rem;height:1.3667rem;background-image:url(../images/ic-home-top-text-m.png);background-size:100%;}
 .popup_cheer .quo_marks + p {margin:0.6rem 0 0 2.9333rem;height:1.6667rem;font-size:1.1333rem;line-height:1.6667rem;color:#000000;}
 .popup_cheer .btn_cheerteam_setting {position:absolute;bottom:1.7333rem;left:2.5333rem;border-radius:1.0333rem;width:8.1667rem;height:2.0333rem;font-size:0.9333rem;font-weight:bold;line-height:2.0333rem;text-align:center;color:#484848;padding:0 0.3333rem;background-color:#ededed;}
-.popup_cheer .btn_close {position:absolute;right:1rem;top:1rem;width:2rem;height:2rem;background:url(../images/ic-banner-close.png);background-size:100%;}
+.popup_cheer .btn_close {position:absolute;right:0.4rem;top:0.4rem;width:3.2rem;height:3.2rem;background:url(../images/ic-banner-close.png);background-size:100%;}
 .popup_cheer .btn_close.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 /*.popup_cheer .modal_inner {position:absolute;bottom:8.7rem;left:0;right:0;}*/
 /*
