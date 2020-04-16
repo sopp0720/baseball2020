@@ -1122,6 +1122,9 @@
 
 /* Relay - relay text */
 .relay.content .current_sec_wrap {border-bottom:0.9333rem solid #f0f1f6;}
+.relay.content .view_base + .tab_3depth .tab_item {min-width:2.8333rem;font-size:1.4667rem;}
+.relay.content .view_base + .tab_3depth .tab_item:first-child {margin-left:0.5333rem;}
+.relay.content .view_base + .tab_3depth .tab_item:last-child {margin-right:0.5333rem;}
 .relay.content .view_base {position:relative;margin-top:1.5333rem;height:0;padding-bottom:56.203703%;background:url('../images/img-broadcast-base.png') no-repeat;background-size:100% auto;text-align:center;}
 .relay.content .view_base .tag_box {display:inline-block;padding:0.4rem 0.9333rem;height:2.3333rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
 .relay.content .view_base .tag_box_sm {display:inline-block;padding:0 0.7667rem;height:1.8rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
@@ -1135,7 +1138,7 @@
 .relay.content .view_base .hitter_team_logo {position:absolute;bottom:16.803953%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
 .relay.content .view_base .base_hitter {position:absolute;bottom:1.812191%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
 .relay.content .view_base .base_hitter .player_num {height:1.53333rem;font-size:1.1333rem;line-height:1.35;}
-.relay.content .view_base .base_hitter .i_name {margin-left:0.2rem;height:1.53333rem;font-size:1.2667rem;line-height:1.21;}
+.relay.content .view_base .base_hitter .i_name {margin-left:0.2rem;height:1.53333rem;font-size:1.2667rem;font-weight:bold;line-height:1.21;}
 .relay.content .view_base .tag_box_sm .i_name {height:1.8rem;font-size:1.0667rem;font-weight:bold;line-height:1.8333rem;}
 .relay.content .view_base .base_first {position:absolute;top:47.116968%;right:17.87037%;}
 .relay.content .view_base .base_third {position:absolute;top:47.116968%;left:17.87037%;}
