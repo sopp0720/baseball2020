@@ -145,21 +145,24 @@
 
 
 /* player_common */
-.player_xl {position:relative;width:7.0667rem;height:7.0667rem;border-radius:2.2667rem;background-color:#d8d8d8;}
-.player_lg {position:relative;width:5.7333rem;height:5.7333rem;border-radius:1.3667rem;background-color:#d8d8d8;}
-.player_md {position:relative;width:4.3333rem;height:4.3333rem;border-radius:1.3667rem;background-color:#d8d8d8;}
-.player_sm {position:relative;width:3.5rem;height:3.5rem;border-radius:0.9333rem;background-color:#d8d8d8;}
-.player_circle {position:relative;width:7.0667rem;height:7.0667rem;border-radius:3.5333rem;background-color:#d8d8d8;}
-.player_xl .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:2.2667rem;background-size:100% auto;}
-.player_xl .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:2.2667rem;/*border:1px solid #e8e8e8;*/background-image:url(../images/img-profile-mask-border-212.png);background-size:100%;}
+.player_xl {position:relative;width:7.0667rem;height:7.0667rem;}
+.player_lg {position:relative;width:5.7333rem;height:5.7333rem;}
+.player_md {position:relative;width:4.3333rem;height:4.3333rem;}
+.player_sm {position:relative;width:3.5rem;height:3.5rem;}
+.player_circle {position:relative;width:7.0667rem;height:7.0667rem;}
+.player_circle_sm {position:relative;width:3.5rem;height:3.5rem;}
+.player_xl .player_img {position:absolute;width:100%;height:100%;left:0;top:0;background-size:100% auto;}
+.player_xl .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-212.png);background-size:100%;}
 .player_lg .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:1.3667rem;background-size:100% auto;}
-.player_lg .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:1.3667rem;/*border:1px solid #e8e8e8;*/background-image:url(../images/img-profile-mask-border-172.png);background-size:100%;}
+.player_lg .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-172.png);background-size:100%;}
 .player_md .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:1.3667rem;background-size:100% auto;}
-.player_md .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:1.3667rem;/*border:1px solid #e8e8e8;*/background-image:url(../images/img-profile-mask-border-130.png);background-size:100%;}
+.player_md .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-130.png);background-size:100%;}
 .player_sm .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:0.9333rem;background-size:100% auto;}
-.player_sm .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:0.9333rem;/*border:1px solid #e8e8e8;*/background-image:url(../images/img-profile-mask-border-105.png);background-size:100%;}
+.player_sm .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-105.png);background-size:100%;}
 .player_circle .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-size:100% auto;}
-.player_circle .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;border:1px solid #e8e8e8;}
+.player_circle .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-border-circle-212.png);background-size:100%;}
+.player_circle_sm .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-size:100% auto;}
+.player_circle_sm .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-border-circle-105.png);background-size:100%;}
 
 /* HOME */
 .home.content .top_phrase {padding:1rem 0 0 2.4rem;height:13.3333rem;background-repeat:no-repeat;background-position:100% 1.3333rem;background-size:auto 10.6667rem;background-color:#ffffff;}
