@@ -417,7 +417,7 @@
 .team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:normal;color:#000000;opacity:0.8;text-align:center;line-height:4.2833rem;}
 .team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.3333rem;font-weight:500;color:#000000;}
 .team.content .sec_rate .desc .position {margin-left:0.6rem;font-size:1.0667rem;font-weight:normal;color:#525252;}
-.team.content .sec_rate .desc .my_team {margin-top:1.5rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
+.team.content .sec_rate .desc .my_team {margin-top:1.4rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
 .team.content .sec_rate .desc .rate_num {font-family:'bebas_neueregular';font-size:1.5333rem;font-weight:normal;text-align:right;color:#000000;}
 .team.content .sec_team_position {padding:2.6667rem 0 0;}
 .team.content .sec_team_position .img_team_position {position:relative;margin-top:2.6667rem;width:100%;padding-bottom:59.537037%;height:0;background-repeat:no-repeat;background-size:100% auto;}
@@ -1601,7 +1601,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_3depth ul {min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
 .tab_3depth ul li:first-child {margin-left:0;}
 .tab_3depth ul li:last-child {margin-right:0;}
-.tab_3depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;width:auto;margin:0 1rem;padding:1.4rem 0;color:#cfd2d9;font-size:1.4667rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
+.tab_3depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;width:auto;margin:0 1rem;padding:1.4rem 0;color:#cfd2d9;font-size:1.3333rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
 .tab_3depth .tab_item.active {font-weight:700;}
 .rate_wrapper .tab_3depth ul li:first-child {margin-left:2.2rem;}
 .rate_wrapper .tab_3depth ul li:last-child {margin-right:2.2rem;}
