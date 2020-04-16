@@ -664,8 +664,9 @@
 
 /* relay_kbo */
 .relay.content .scroll_date {position:relative;margin:1rem -1.5333rem 0;height:6rem;}
-.relay.content .scroll_date .scroll_inner {position:relative;width:100%;overflow-x:auto;overflow-y:hidden;font-size:0;}
-.relay.content .scroll_date:before {content:'';-webkit-user-select:none;user-select:none;;z-index:1;display:block;position:absolute;top:0;left:0;width:2.9333rem;height:6rem;background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.04));}
+.relay.content .scroll_date .scroll_inner {position:relative;width:100%;overflow-x:auto;overflow-y:hidden;font-size:0;-ms-overflow-style:none;scrollbar-width:none;}
+.relay.content .scroll_date .scroll_inner::-webkit-scrollbar {display:none;}
+.relay.content .scroll_date:before {content:'';-webkit-user-select:none;user-select:none;z-index:1;display:block;position:absolute;top:0;left:0;width:2.9333rem;height:6rem;background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.04));}
 .relay.content .scroll_date:after {content:'';-webkit-user-select:none;user-select:none;z-index:1;display:block;position:absolute;top:0;right:0;width:2.9333rem;height:6rem;background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.04));}
 .relay.content .scroll_date ul {min-width:100%;margin:0.1667rem 0;padding:0 1.6667rem;height:100%;overflow:visible;white-space:nowrap;display:inline-block;}
 .relay.content .scroll_date ul li {display:inline-block;margin-left:0.9rem;padding:0.9rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
