@@ -1923,7 +1923,7 @@ background-color:#f2f3f4;}
 .modal .image_wrap + p {margin-top:1.3333rem;}
 .modal .control_wrap {text-align:center;margin-top:2.3333rem;}
 .modal .check_circle {position:relative;vertical-align:top;width:2rem;height:2rem;display:inline-block;}
-.modal .check_circle .checkbox {position:absolute;top:0;left:0;width:2rem;height:2rem;padding:0;margin:0;z-index:1;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;outline:none;background-color:transparent;}
+.modal .check_circle .checkbox {position:absolute;top:0;left:0;width:2rem;height:2rem;padding:0;margin:0;z-index:1;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;outline:none;background-color:transparent;border:0;}
 .modal .check_circle .check_bg {position:absolute;left:0;right:0;bottom:0;top:0;background-image:url(../images/ic-checkbox-off-s.png);background-size:100%;-webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;}
 .modal .check_circle .check_bg_on {display:none;position:absolute;left:0;right:0;bottom:0;top:0;background-image:url(../images/ic-checkbox-on-s.png);background-size:100%;}
 .modal .check_circle input[type="checkbox"]:checked.checkbox ~ .checkbox {display:none;}
@@ -1931,7 +1931,7 @@ background-color:#f2f3f4;}
 .modal .control_wrap label {vertical-align:top;display:inline-block;padding-left:0.6667rem;font-size:1.3333rem;font-weight:normal;line-height:2rem;color:#525252;}
 
 /* layerPopup Dropdown */
-.modal .dropdown_list {overflow:hidden;padding:1rem 0 1.3333rem;background-color:#ffffff;border-top-left-radius:0.7333rem;border-top-right-radius:0.7333rem;}
+.modal .dropdown_list {overflow:hidden;padding:1rem 0 1.3333rem;background-color:#ffffff;border-top-left-radius:1.5333rem;border-top-right-radius:1.5333rem;}
 .modal .dropdown_list li {position:relative;margin-top:0.6667rem;width:100%;height:4.3333rem;}
 .modal .dropdown_list li:first-child {margin-top:0;}
 .modal .dropdown_list li.usetap.active {background-color:#fafafa;opacity:1;}
