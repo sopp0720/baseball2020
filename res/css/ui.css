@@ -1472,17 +1472,17 @@
 .my_cheering_team ul li:nth-child(2),
 .my_cheering_team ul li:nth-child(3) {margin-top:0;}
 .my_cheering_team ul li input[type="radio"] {display:none;}
-.my_cheering_team ul li input[type="radio"] + label {display:block;position:absolute;top:0;left:0;padding-top:9.740259%;width:100%;height:100%;cursor:pointer;background-size:cover}
-.my_cheering_team ul li #cheerLG[type="radio"]:checked + label {background-image: linear-gradient(223deg, #c30137, #73052c 18%);}
-.my_cheering_team ul li #cheerOB[type="radio"]:checked + label {background-image: linear-gradient(225deg, #1b335c 79%, #161b3f 1%);}
-.my_cheering_team ul li #cheerSS[type="radio"]:checked + label {background-image: linear-gradient(225deg, #0066b3, #054373 1%);}
-.my_cheering_team ul li #cheerKT[type="radio"]:checked + label {background-image: linear-gradient(225deg, #363435, #252323 0%);}
-.my_cheering_team ul li #cheerSK[type="radio"]:checked + label {background-image: linear-gradient(225deg, #f48025, #dd4936 45%, #97001c 1%);}
-.my_cheering_team ul li #cheerWO[type="radio"]:checked + label {background-image: linear-gradient(224deg, #93001c 82%, #5e0012 0%);}
-.my_cheering_team ul li #cheerLT[type="radio"]:checked + label {background-image: linear-gradient(225deg, #092e63, #b70522 0%);}
-.my_cheering_team ul li #cheerNC[type="radio"]:checked + label {background-image: linear-gradient(224deg, #224e8c 81%, #0b2a55 1%);}
-.my_cheering_team ul li #cheerHT[type="radio"]:checked + label {background-image: linear-gradient(225deg, #b22030, #610912 0%);}
-.my_cheering_team ul li #cheerHH[type="radio"]:checked + label {background-image: linear-gradient(225deg, #f37321, #872706 0%);}
+.my_cheering_team ul li input[type="radio"] + label {display:block;position:absolute;top:0;left:0;padding-top:9.740259%;width:100%;height:100%;cursor:pointer;background-size:100% auto;}
+.my_cheering_team ul li #cheerLG[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-lg@2x.png');}
+.my_cheering_team ul li #cheerOB[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-doosan@2x.png');}
+.my_cheering_team ul li #cheerSS[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-samsung@2x.png');}
+.my_cheering_team ul li #cheerKT[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-kt@2x.png');}
+.my_cheering_team ul li #cheerSK[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-sk@2x.png');}
+.my_cheering_team ul li #cheerWO[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-kiwwom@2x.png');}
+.my_cheering_team ul li #cheerLT[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-lotte@2x.png');}
+.my_cheering_team ul li #cheerNC[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-nc@2x.png');}
+.my_cheering_team ul li #cheerHT[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-kia@2x.png');}
+.my_cheering_team ul li #cheerHH[type="radio"]:checked + label {background-image:url('../images/bg/img-my-team-hanwha@2x.png');}
 .my_cheering_team ul li input[type="radio"]:checked + label .team_name {color:#ffffff;}
 .my_cheering_team ul li .team_logo {display:block;margin:0 auto;width:61.688311%;height:60.431654%;}
 .my_cheering_team ul li .team_name {display:block;margin-top:1.948051%;height:2.4667rem;height:24.025974%;font-size:1.6667rem;font-weight:bold;text-align:center;color:#000000;}
