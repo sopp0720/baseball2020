@@ -810,7 +810,7 @@
 .relay.content .chat_wrap .time {position:absolute;width:6.0667rem;height:1.4667rem;font-size:1.2rem;line-height:1.4667rem;color: #b4b4b4;bottom:0;}
 .relay.content .msg_wrap.left .time {right:-6.4667rem;text-align:left;}
 .relay.content .msg_wrap.right .time {left:-6.4667rem;text-align:right;}
-.relay.content .chreer_selection {margin-bottom:1.1667rem;position:absolute;bottom:5.0667rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;transition:all 0.3s ease-in-out;}
+.relay.content .chreer_selection {margin-bottom:1.1667rem;position:absolute;bottom:5.0667rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;transition:all 0.2s ease-in-out;}
 .relay.content .chreer_selection:after {content:'';position:absolute;left:50%;width:1px;top:1.0333rem;bottom:1rem;background-color:#dee1e6;}
 .relay.content .chreer_selection .chreer_team.active {opacity:0.8;}
 .relay.content .chreer_selection .chreer_team.left {display:inline-block;width:50%;height:100%;padding-left:2.9333rem;padding-top:0.7rem;text-align:left;}
@@ -1538,10 +1538,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKi
 input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#b4b4b4 !important;}
 input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#b4b4b4 !important;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#b4b4b4 !important;}
-input::-webkit-input-placeholder {font-size:1.2667rem !important;line-height:normal !important;}
-input:-moz-placeholder {font-size:1.2667rem !important;line-height:normal !important;}
-input::-moz-placeholder {font-size:1.2667rem !important;line-height:normal !important;}
-input:-ms-input-placeholder {font-size:1.2667rem !important;line-height:normal !important;}
+input::-webkit-input-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
+input:-moz-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
+input::-moz-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
+input:-ms-input-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
 
 input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
@@ -1621,8 +1621,9 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 .team.content .sec_off_def .table_team .table_right.scroll {left:6.7333rem;}/* 테이블별 추가 필요 */
 /* table common*/
+.table_responsive.full {margin-right:-1.5333rem;}
 .table_responsive {/*margin-top:2rem;*/position:relative;z-index:2;margin-top:0.6667rem;/*border-radius:0.7333rem;border: 1px solid #dee1e6;*/}
-.table_responsive .table_right.scroll {position:absolute;overflow-y:hidden;overflow-x:auto;right:-1.5333rem;padding-right:1.5333rem;height:100%;}
+.table_responsive .table_right.scroll {position:absolute;right:0;overflow-y:hidden;overflow-x:auto;padding-right:1.5333rem;height:100%;}
 .table_responsive .table_right_inner {display:inline-block;}
 .table_responsive:after {content:'';display:block;clear:both;}
 .table_responsive .table_left {float:left;}
@@ -1745,7 +1746,6 @@ background-color:#f2f3f4;}
 .relay.content .table_score_board .table_right tbody .cell {padding:0.6667rem 0;}
 .relay.content .table_score_default .table_right {overflow:hidden;}
 .relay.content .table_score_default .table_right .cell {min-width:100%;}
-.relay.content .table_score_scroll .table_right thead .cell {background-color:#e9eaeb;}
 .relay.content .table_score_scroll .table_right {overflow-y:hidden;overflow-x:auto;}
 .relay.content .table_score_scroll .table_right .cell {min-width:2.1167rem;}
 .relay.content .table_score_board tbody .cell {padding:0;height:2.9rem;}
