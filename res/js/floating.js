@@ -36,6 +36,7 @@ var floatUI = (function() {
 			const elaTop = document.querySelector('.tab_teamlist_wrap');
 			const ela = document.querySelectorAll('.fix');
 			const tit = document.querySelector('.page_title_wrap');
+			const chat = document.querySelector('.chat_inner');
 
 			if (tit != null){
 				if (st > 0){
@@ -70,6 +71,10 @@ var floatUI = (function() {
 					}
 					before_st = st;
 				});
+			}
+			if (chat != null){
+				videoUI.content_scroll();
+				chreerUi.ChreerScroll();
 			}
 		}
     }

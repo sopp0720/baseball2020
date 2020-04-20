@@ -710,6 +710,7 @@
 .relay.content .play_list li .left_score {left:0;text-align:right;}
 .relay.content .play_list li .left_score.res_lose {color:#c2c3c7;}
 .relay.content .play_list li .right_score {right:0;text-align:left;}
+.relay.content .play_list li .right_score.res_lose {color:#c2c3c7;}
 .relay.content .play_list li .ic_base {display:block;margin:2.9333rem auto 0.5333rem;width:3.2667rem;height:2.3333rem;background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .play_list li .info_tag_warp ~ .ic_base {margin-top:2rem;}
 .relay.content .play_list li .tag_tooltip {z-index:2;display:block;position:absolute;bottom:2.3rem;left:0;right:0;text-align:center;font-size:0;}
@@ -774,15 +775,15 @@
 .relay.content .score_board_bottom .table_abl_league + .title_hd {margin-top:2rem;}
 
 /* Relay - chreer */
-.relay.content .chat_wrap {display:none;position:absolute;left:0;right:0;top:5.5333rem;bottom:0;}
+.relay.content .chat_wrap {display:none;/*position:absolute;left:0;right:0;top:5.5333rem;bottom:0;*/}
 .cheering.content .chat_wrap {display:block;}
-.relay.content .chat_inner {position:absolute;left:0;right:0;top:0;bottom:5.0667rem;overflow-x:hidden;overflow-y:auto;background-color:#f2f3f4;white-space:nowrap;}
+.relay.content .chat_inner {padding-bottom:5.0667rem;/*position:absolute;left:0;right:0;top:0;bottom:5.0667rem;overflow-x:hidden;overflow-y:auto;*/background-color:#f2f3f4;white-space:nowrap;}
 .relay.content .chat_inner:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .relay.content .scroll_bottom {width:100%;padding:0 1.5333rem;display:inline-block;vertical-align:bottom;white-space:normal;}
 .relay.content .desc_middle {width:100%;padding:0 1.5333rem 5rem;display:inline-block;vertical-align:middle;white-space:normal;text-align:center;}
 .relay.content .desc_middle .img_box {margin:0 auto;width:24.8333rem;height:10rem;background-image:url(../images/img-player-empty-chat.png);background-size:100%;}
 .relay.content .desc_middle p {margin-top:1.3333rem;font-size:1.3333rem;font-weight:500;line-height:1.9667rem;color:#c8c8c8;}
-.relay.content .chat_btm {position:absolute;bottom:0;left:0;right:0;background-color:#fff;border-top:1px solid #dee1e6;padding:0 7.1333rem 0 4.2rem;}
+.relay.content .chat_btm {position:fixed;bottom:0;left:0;right:0;background-color:#fff;border-top:1px solid #dee1e6;padding:0 7.1333rem 0 4.2rem;}
 .relay.content .chat_input {display:table;width:100%;max-height:10.4rem;height:5.0667rem;padding:1rem 0;}
 .relay.content .textarea_wrap {position:relative;width:100%;vertical-align:middle;display:table-cell;font-size:0;}
 .relay.content .textarea {position:relative;z-index:1;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;}
@@ -791,6 +792,7 @@
 .relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.7rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
 .relay.content .chat_wrap .ic_chat_send {display:none;position:absolute;bottom:1.0333rem;right:1.5333rem;width:3rem;height:3rem;}
 .relay.content .msg_wrap {position:relative;padding-bottom:1.4rem;text-align:center;font-size:0;}
+.relay.content .msg_wrap.same {margin-top:-0.6667rem;}
 .relay.content .msg_wrap:last-of-type {padding-bottom:6.4rem;}
 .relay.content .msg_wrap.left {text-align:left;border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
 .relay.content .msg_wrap.right {text-align:right;border-top-left-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
@@ -810,7 +812,7 @@
 .relay.content .chat_wrap .time {position:absolute;width:6.0667rem;height:1.4667rem;font-size:1.2rem;line-height:1.4667rem;color: #b4b4b4;bottom:0;}
 .relay.content .msg_wrap.left .time {right:-6.4667rem;text-align:left;}
 .relay.content .msg_wrap.right .time {left:-6.4667rem;text-align:right;}
-.relay.content .chreer_selection {margin-bottom:1.1667rem;position:absolute;bottom:5.0667rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;transition:all 0.2s ease-in-out;}
+.relay.content .chreer_selection {margin-bottom:1.1667rem;position:fixed;bottom:5.0667rem;left:1.5333rem;right:1.5333rem;height:3.8333rem;border-radius:2.1rem;background-color:#ffffff;font-size:0;overflow:hidden;transition:all 0.2s ease-in-out;}
 .relay.content .chreer_selection:after {content:'';position:absolute;left:50%;width:1px;top:1.0333rem;bottom:1rem;background-color:#dee1e6;}
 .relay.content .chreer_selection .chreer_team.active {opacity:0.8;}
 .relay.content .chreer_selection .chreer_team.left {display:inline-block;width:50%;height:100%;padding-left:2.9333rem;padding-top:0.7rem;text-align:left;}
@@ -826,7 +828,7 @@
 .relay.content .chreer_selection .current .ic_away,
 .relay.content .chreer_selection .current .ic_home {opacity:1;}
 .relay.content .down .chreer_selection {transform:translateY(5rem) translateZ(0);-webkit-transform:translateY(5rem) translateZ(0);opacity:0;}
-.relay.content .ic_chat_down {margin-bottom:0.7rem;position:absolute;bottom:5.0667rem;right:1rem;width:4.4rem;height:4.4rem;background-image:url(../images/ic-chat-down.png);background-size:100%;transform:scale(0) translateZ(0);-webkit-transform:scale(0) translateZ(0);opacity:0;transition:all 0.3s ease-in-out;}
+.relay.content .ic_chat_down {margin-bottom:0.7rem;position:fixed;bottom:5.0667rem;right:1rem;width:4.4rem;height:4.4rem;background-image:url(../images/ic-chat-down.png);background-size:100%;transform:scale(0) translateZ(0);-webkit-transform:scale(0) translateZ(0);opacity:0;transition:all 0.3s ease-in-out;}
 .relay.content .down .ic_chat_down {transform:scale(1) translateZ(0);-webkit-transform:scale(1) translateZ(0);opacity:1;}
 .relay.content .down .ic_chat_down.usetap.active {opacity:0.8;}
 
@@ -838,7 +840,7 @@
 .relay.content .relay_video_thumb {position:fixed;top:0;left:0;right:0;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;z-index:10;}
 .relay.content .relay_video_thumb.active {padding-bottom:0;}
 .relay.content .relay_video_thumb .abs_wrap {z-index:1;}
-.relay.content .relay_video_thumb .ic_show {display:block;position:absolute;top:0.4rem;left:0.4rem;width:4rem;height:4rem;background:url('../images/ic-show.png') no-repeat;background-size:100% auto;}
+.relay.content .relay_video_thumb .ic_show {display:block;position:absolute;top:0.4rem;left:0.4rem;width:4rem;height:4rem;background:url('../images/ic-show.png') no-repeat;background-size:100% auto;z-index:2;}
 .relay.content .relay_video_thumb .game_info {text-align:center;}
 .relay.content .relay_video_thumb .game_info span {display:inline-block;padding:0.6rem 0.3333rem;height:3.1rem;border-top:1px solid rgba(216,216,216,.1);border-bottom:1px solid rgba(216,216,216,.1);font-size:1.1rem;text-align:center;color:rgba(255,255,255,.6);vertical-align:top;}
 .relay.content .relay_video_thumb .relay_top_info {position:relative;margin-top:1.9rem;}
@@ -1587,7 +1589,8 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_1depth_wrap {position:relative;height:4.6rem;width:100%;}
 .tab_1depth_wrap.tab_logo {height:6.4rem;}
 .tab_1depth_wrap .tab_1depth {margin-top:0;position:absolute;left:0;right:0;transition:top ease-out .3s;}
-.cheering .tab_1depth_wrap .tab_1depth {position:fixed;z-index:2;}
+.cheering .tab_1depth_wrap {border-top:0 none;height:5.5333rem;}
+.cheering .tab_1depth_wrap .tab_1depth {position:fixed;z-index:2;height:5.5333rem;border-top:0.9333rem solid #f0f1f6;}
 .cheering .relay_card_wrap {display:none;}
 .content .content_scroll .tab_1depth_wrap + .sec_wrapper {border-top:0;}
 .content .content_scroll .tab_3depth + .sec_wrapper {border-top:0;}
