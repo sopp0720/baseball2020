@@ -1545,10 +1545,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKi
 input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#b4b4b4 !important;}
 input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#b4b4b4 !important;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#b4b4b4 !important;}
-input::-webkit-input-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
-input:-moz-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
-input::-moz-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
-input:-ms-input-placeholder {font-size:1.2667rem !important;line-height:2.3667rem !important;}
+input::-webkit-input-placeholder {font-size:1.2667rem !important;font-weight:normal !important;line-height:2.3667rem !important;}
+input:-moz-placeholder {font-size:1.2667rem !important;font-weight:normal !important;line-height:2.3667rem !important;}
+input::-moz-placeholder {font-size:1.2667rem !important;font-weight:normal !important;line-height:2.3667rem !important;}
+input:-ms-input-placeholder {font-size:1.2667rem !important;font-weight:normal !important;line-height:2.3667rem !important;}
 
 input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
