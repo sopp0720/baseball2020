@@ -653,6 +653,7 @@
 .team.content .sec_off_def .table_responsive {margin-top:2rem;}
 .team.content .sec_off_def .team_offense {}
 .team.content .sec_off_def .table_team .table_left {width:6.7333rem;}
+.team.content .sec_off_def .table_team .table_right.scroll {left:6.7333rem;}
 .tab_2depth + .table_responsive {margin-top:2.0667rem;}
 
 
@@ -1618,9 +1619,6 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tabs {overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
 .tabs li {font-size:0.852rem;line-height:2.250rem;margin:0 1.000rem;cursor:pointer;color:rgba(255,255,255,0.3);}
 
-
-
-.team.content .sec_off_def .table_team .table_right.scroll {left:6.7333rem;}/* 테이블별 추가 필요 */
 /* table common*/
 .table_responsive.full {margin-right:-1.5333rem;}
 .table_responsive {/*margin-top:2rem;*/position:relative;z-index:2;margin-top:0.6667rem;/*border-radius:0.7333rem;border: 1px solid #dee1e6;*/}
@@ -1673,6 +1671,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
 .table_player .table_left .cell .player_position {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
 .table_player .table_left .cell .player_team .my_team {position:absolute;top:0.0667rem;right:0;width:1.3333rem;height:1.3333rem;background-image:url("../images/icon_my.png");background-size:1.3333rem;border-radius:100%;}
+.table_player .table_right.scroll {left:11.6rem;}
 .table_responsive.table_team_rainking .table_right th:first-child .cell,
 .table_responsive.table_team_rainking .table_right td:first-child .cell {padding-left:1.0333rem !important;}
 .table_responsive.table_team_rainking .table_right {overflow-x:hidden;}
@@ -1694,6 +1693,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 .table_hit300.no_num .table_left {width:10.9333rem;}
 .table_hit300.no_num .table_left .cell .player_sm {margin-left:0.6667rem;}
+.table_hit300.no_num .table_right.scroll {left:10.9333rem;}
 
 /* 3할 이상타자 */
 .table_hit300 .table_left .hit300 .num,
@@ -1729,10 +1729,10 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .title_tbl span + span {display:inline-block;margin:0.2rem 0 0.2rem 0.5rem;height:1.5667rem;font-size:1.0667rem;font-weight:bold;color:#858585;vertical-align:top;}
 
 /* Relay table score board */
-.relay.content .table_score_board {margin-top:0;}
+.relay.content .table_score_board {margin-top:0;border-radius:0.7333rem;border:1px solid #e8e9ef;overflow:hidden;}
 .relay.content .table_score_board.table_responsive {border-color:#e8e9ef;}
 .relay.content .table_score_board.table_responsive .table thead tr {border-color:#e8e9ef;}
-.relay.content .table_score_board .table_left {position:relative;z-index:1;float:left;width:17.206477%;border-right:1px solid #e8e9ef;}
+.relay.content .table_score_board .table_left {position:relative;z-index:1;float:left;width:17.206477%;border:0;border-radius:0;border-right:1px solid #e8e9ef;}
 .relay.content .table_score_board .table_left thead .cell {padding:0.6667rem 0;height:2.9rem;font-size:1.1333rem;font-weight:500;text-align:center;color:#2b2b2b;background-color:#f2f3f4;overflow:hidden;}
 /*.relay.content .table_score_board .table_left thead th:first-child .cell {border-radius:0.7333rem 0 0 0;}*/
 .relay.content .table_score_board .table_left tbody .cell {padding-top:0.5333rem;padding-left:0.5rem;font-size:0;text-align:left;}
@@ -1742,7 +1742,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .relay.content .table_score_board .table_rheb thead .cell {padding:0.6667rem 0;height:2.9rem;font-size:1.1333rem;font-weight:500;text-align:center;color:#2b2b2b;background-color:#f2f3f4;}
 .relay.content .table_score_board .table_rheb tbody .cell {padding:0.6667rem 0;}
 .relay.content .table_score_board .table_rheb .cell.run {color:#ec5f59;}
-.relay.content .table_score_board .table_right {position:relative;float:none;width:58.704453%;}
+.relay.content .table_score_board .table_right {position:relative;float:none;width:58.704453%;border-radius:0;border:0;}
 .relay.content .table_score_board .table_right thead .cell {padding:0.6667rem 0;height:2.9rem;font-size:1.1333rem;font-weight:500;text-align:center;color:#2b2b2b;
 background-color:#f2f3f4;}
 .relay.content .table_score_board .table_right tbody .cell {padding:0.6667rem 0;}
