@@ -39,7 +39,7 @@
 .page_title_wrap .inner {position:fixed;height:5rem;left:0;right:0;background-color:rgba(255, 255, 255, 0.98);z-index:5;}
 .page_title_wrap.shadow .inner {box-shadow: 0 0.3667rem 0.4667rem 0 rgba(0, 0, 0, 0.06);}
 .page_title_wrap h2 {margin:0 auto;width:81.781376%;height:100%;line-height:5rem;font-size:1.6667rem;font-weight:bold;text-align:center;color:#000000;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
-.page_title_wrap .btn_back {display:block;position:absolute;top:0.9rem;left:0.7333rem;width:3.2rem;height:3.2rem;background:url("../images/ic-title-back.png") no-repeat;background-size:100% auto;}
+.page_title_wrap .btn_back {display:block;position:absolute;top:0.9rem;left:0.7333rem;width:3.2rem;height:3.2rem;background:url("../images/ic-title-back.png") no-repeat;background-size:100% auto;z-index:2;}
 .page_title_wrap .btn_back.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 
 /* btn back + srh */
