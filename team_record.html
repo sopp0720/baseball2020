@@ -1689,29 +1689,29 @@ var chart1 = bb.generate({
 		},
         type: "area",
         columns: [
-            ["data1", 3, 1, 2, 3, 10, 4, 9, 6]
+            ["data1", 7, 9, 8, 7, 0, 6, 1, 4]
         ],
         labels: {
             format: function(v, id, i, j) {
-                if (v == 1) {
+                if (v == 0) {
                     v = "10";
-                } else if (v == 2) {
+                } else if (v == 1) {
                     v = "9";
-                } else if (v == 3) {
+                } else if (v == 2) {
                     v = "8";
-                } else if (v == 4) {
+                } else if (v == 3) {
                     v = "7";
-                } else if (v == 5) {
+                } else if (v == 4) {
                     v = "6";
-                } else if (v == 6) {
+                } else if (v == 5) {
                     v = "5";
-                } else if (v == 7) {
+                } else if (v == 6) {
                     v = "4";
-                } else if (v == 8) {
+                } else if (v == 7) {
                     v = "3";
-                } else if (v == 9) {
+                } else if (v == 8) {
                     v = "2";
-                } else if (v == 10) {
+                } else if (v == 9) {
                     v = "1";
                 }
                 return v;
@@ -1865,15 +1865,15 @@ var chart2 = bb.generate({
                 },
                 {
                     value: 7,
-                    class: "grid_dotted"
+                    class: "grid_solid"
                 },
                 {
                     value: 14,
-                    class: "grid_dotted"
+                    class: "grid_solid"
                 },
                 {
                     value: 21,
-                    class: "grid_dotted"
+                    class: "grid_solid"
                 }
             ]
         }
