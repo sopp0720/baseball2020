@@ -492,6 +492,7 @@
 .team.content .player_info_wrap .player_info dl dd {float:left;margin-top:0.6667rem;margin-left:8.088235%;width:67.40196%;font-size:1.3333rem;font-weight:500;color:#ffffff;}
 .team.content .player_info_wrap .player_info dl dt:first-child {margin-top:0;}
 .team.content .player_info_wrap .player_info dl dd:nth-child(2) {margin-top:0;}
+
 .team.content .player_info_table_wrap .table_responsive + .title_hd {margin-top:2rem;}
 .team.content .video_scroll {margin-top:1rem;}
 .team.content .video_scroll ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
@@ -1705,11 +1706,13 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_5day .table_left .col1 {width:40.190476%;}
 .table_5day .table_left .col2 {width:30.666666%;}
 .table_5day .table_left .col3 {width:29.142857%;}
+.table_5day .table_right.scroll {left:17.5rem;}
 
 .table_total_record .table_left {width:12.4667rem;}
 .table_total_record .table_left .col1 {width:56.72043%;}
 .table_total_record .table_left .col2 {width:43.279569%;}
 .table_total_record .table_right tbody tr:first-child {background-color:rgba(242, 243, 244, 0.4);}
+.table_total_record .table_right.scroll {left:12.4667rem;}
 
 /* table style1 */
 .table_style1 .table_left {border-right:0;}
