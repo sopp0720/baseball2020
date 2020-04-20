@@ -27,11 +27,6 @@ var videoUI = (function() {
 			} else {
 				document.querySelector('.chat_inner').style.height = '';
 			}
-//			var scrollH = 
-//			scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - document.querySelector('.page_title_wrap').clientHeight - document.querySelector('.tab_1depth_wrap').clientHeight - 1) + 'px';
-//			document.getElementById('chreerScroll').style.minHeight = scrollH;
-//			document.querySelector('.chreerScroll').style.height = scrollH;
-
         },
 		"onScroll": function(st) {
 			const tit = document.querySelector('.page_title_wrap');
