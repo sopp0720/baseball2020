@@ -21,10 +21,12 @@ var videoUI = (function() {
 			videoUI.content_scroll();
 		},
         "content_scroll": function() {
-			var scrollH = 
-			scrollH = (window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - document.querySelector('.page_title_wrap').clientHeight - 1) + 'px';
-			document.querySelector('.content_scroll').style.height = scrollH;
-
+			let scMh = window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - document.querySelector('.page_title_wrap').clientHeight - document.querySelector('.tab_1depth_wrap').clientHeight - 1;
+			if (document.querySelector('.scroll_bottom').clientHeight < scMh){
+				document.querySelector('.chat_inner').style.height = scMh + 'px';
+			} else {
+				document.querySelector('.chat_inner').style.height = '';
+			}
         },
 		"onScroll": function(st) {
 			const tit = document.querySelector('.page_title_wrap');

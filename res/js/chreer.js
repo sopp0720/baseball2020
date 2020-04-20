@@ -17,7 +17,7 @@ var chreerUi = (function() {
 					}
 					dummy.value = obj.value;
 					obj.style.height = (dummy.scrollHeight) + 'px';
-					container.querySelector('.chat_inner').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
+					container.querySelector('.chat_inner').style.paddingBottom = (document.querySelector('.chat_input').scrollHeight)+"px";
 					container.querySelector('.chreer_selection').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
 					container.querySelector('.ic_chat_down').style.bottom = (document.querySelector('.chat_input').scrollHeight)+"px";
 				}, 100);
@@ -29,7 +29,7 @@ var chreerUi = (function() {
 		"ChreerScroll" : function() {
 			let container = document.getElementById('chat_wrap');
 			webUI.debounce(function() {
-				let st = document.getElementById('chreerScroll').scrollTop;
+				let st = window.scrollY;
 				if (st > lastScrollTop && Math.abs(st - lastScrollTop) > 5){
 					container.classList.remove('down');
 				} else if (st < lastScrollTop && Math.abs(st - lastScrollTop) > 5){
