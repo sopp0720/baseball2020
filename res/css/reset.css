@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* webfont rules */
+/*@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');*/
 @font-face {
 	font-family: 'Noto Sans KR';
 	src: url("../fonts/noto_sans_kr/NotoSansKR-Black.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Black.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Black.woff") format("woff");

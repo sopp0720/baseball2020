@@ -1609,6 +1609,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_2depth.four .tab_item {min-width:6.6667rem;}
 .tab_2depth .tab_item.active {font-weight:700;}
 .tab_2depth .active_fill {position:absolute;border-width:0.1333rem;border-style:solid;bottom:0;left:0;width:8.3333rem;top:0;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);border-radius:1.5rem;z-index:2;}
+.relay.content .tab_2depth .tab_item {font-size:1.4667rem;}
 
 /* tab_3depth */
 .tab_3depth {margin-top:2.3333rem;position:relative;padding:0 1.5333rem;width:100%;font-size:0;overflow-x:auto;overflow-y:hidden;background:#f7f8f9;border-top:1px solid #efeff0;border-bottom:0;}
