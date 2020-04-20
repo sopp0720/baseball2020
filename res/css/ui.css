@@ -1883,7 +1883,7 @@ background-color:#f2f3f4;}
 .tab_button .tab.hide,
 .active_tab_container .tab.hide {opacity:0;transform:scale(0.4) translateY(30px);}
 .active_tab_container {z-index:1;filter:drop-shadow(0 0 0.3rem #bbb);}
-.active_tab_container .tab {display:flex;position:relative;top:3.4rem;justify-content:center;padding:0;background:none !important;transition:transform .2s, top .2s, left .2s, right .2s, opacity .2s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
+.active_tab_container .tab {display:flex;position:relative;top:3.4rem;justify-content:center;padding:0;background:none !important;transition:transform .1s, top .2s, left .2s, right .2s, opacity .2s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
 .active_tab_container .tab.active {transform: translate(0, -5.7rem) translateZ(0px);flex-grow:0;}
 .active_tab_container .tab.active .circle {opacity:1;}
 .active_tab_container .tab .circle {width:4.7333rem;height:4.7333rem;border-radius:50%;background:none;background-color:#fff;line-height:4.7333rem;}
