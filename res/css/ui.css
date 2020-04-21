@@ -587,6 +587,7 @@
 /* TEAM - schedule by team */
 .team.content .schedule_tab_wrap {padding-top:0;border-top:0;border-bottom:0.9333rem solid #f0f1f6;}
 .team.content .schedule_tab_wrap .tab_2depth {margin-top:2rem;}
+.team.content .page_title_wrap + .tab_2depth {margin-top:2rem;}
 .team.content .schedule_tab_wrap .tab_teamlist {margin-top:2.3333rem;}
 .team.content .schedule_box_wrap {padding-top:0;padding-bottom:0.5rem;}
 .team.content .inner + .schedule_box_wrap {border-top:0;}
