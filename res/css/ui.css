@@ -616,7 +616,7 @@
 .team.content .game_none p {font-size:1.2667rem;font-weight:500;text-align:center;color:#b4b4b4;}
 
 /* TEAM - schedule all (list type) */
-.team.content .team_schedule_all .schedule_tab_wrap {padding-bottom:0;border-bottom:0;}
+.team.content .team_schedule_all .nonborder {padding-bottom:0;border-bottom:0;}
 .team.content .schedule_all_list .schedule_box {margin-top:0;border-top:1px solid #f8f8f9;}
 .team.content .schedule_all_list .schedule_box:nth-child(2) {border-top:0;}
 
