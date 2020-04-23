@@ -2,19 +2,16 @@ var relayUi = (function() {
     return {
 		"initSubTab": function(container) {
 			let subtab = container;
-			let tabItem = container.querySelectorAll('.tab_item');
 			relayUi.activeBar(0,subtab);
-			tabItem.forEach(function(item) {
-				item.addEventListener('click', function(e){
-					e.preventDefault();
-					if (!e.target.classList.contains('active')) {
-						let indexNum = webUI.getChildIndex(e.target.closest('li'));
-						subtab.querySelector('.active').classList.remove('active');
-						e.target.closest('li').classList.add('active');
-						relayUi.activeBar(indexNum,subtab);
-						webUI.animatedScrollTo(subtab, subtab.querySelectorAll('li')[indexNum].offsetLeft - (subtab.clientWidth * 0.5), 300);
-					}
-				});
+			webUI.addDelegate(subtab, "click", ".tab_item", function(e) {
+				e.preventDefault();
+				if (!this.classList.contains('active')) {
+					let indexNum = webUI.getChildIndex(this);
+					subtab.querySelector('.active').classList.remove('active');
+					this.classList.add('active');
+					relayUi.activeBar(indexNum,subtab);
+					webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
+				}
 			});
 			window.addEventListener('resize', function(e) {
 				let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
@@ -30,18 +27,15 @@ var relayUi = (function() {
 		},
 		"initDepthTab": function(container) {
 			let subtab = container;
-			let tabItem = container.querySelectorAll('.tab_item');
 			relayUi.activeFill(0,subtab);
-			tabItem.forEach(function(item) {
-				item.addEventListener('click', function(e){
-					e.preventDefault();
-					if (!e.target.classList.contains('active')) {
-						let indexNum = webUI.getChildIndex(e.target);
-						subtab.querySelector('.active').classList.remove('active');
-						e.target.classList.add('active');
-						relayUi.activeFill(indexNum,subtab);
-					}
-				});
+			webUI.addDelegate(subtab, "click", ".tab_item", function(e) {
+				e.preventDefault();
+				if (!this.classList.contains('active')) {
+					let indexNum = webUI.getChildIndex(this);
+					subtab.querySelector('.active').classList.remove('active');
+					this.classList.add('active');
+					relayUi.activeFill(indexNum,subtab);
+				}
 			});
 			window.addEventListener('resize', function(e) {
 				let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
@@ -57,17 +51,14 @@ var relayUi = (function() {
 		},
 		"initscrollTab": function(container) {
 			let subtab = container;
-			let tabItem = container.querySelectorAll('li');
-			tabItem.forEach(function(item) {
-				item.addEventListener('click', function(e){
-					e.preventDefault();
-					if (!e.target.classList.contains('active')) {
-						let indexNum = webUI.getChildIndex(e.target.closest('li'));
-						subtab.querySelector('.active').classList.remove('active');
-						e.target.closest('li').classList.add('active');
-						webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
-					}
-				});
+			webUI.addDelegate(subtab, "click", "li", function(e) {
+				e.preventDefault();
+				if (!this.classList.contains('active')) {
+					let indexNum = webUI.getChildIndex(this);
+					subtab.querySelector('.active').classList.remove('active');
+					this.classList.add('active');
+					webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
+				}
 			});
         }
     }

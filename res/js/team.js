@@ -47,19 +47,16 @@ var teamUi = (function() {
         },
 		"initSubTab": function(container) {
 			let subtab = container;
-			let tabItem = container.querySelectorAll('.tab_item');
 			teamUi.activeBar(0,subtab);
-			tabItem.forEach(function(item) {
-				item.addEventListener('click', function(e){
-					e.preventDefault();
-					if (!e.target.classList.contains('active')) {
-						let indexNum = webUI.getChildIndex(e.target.closest('li'));
-						subtab.querySelector('.active').classList.remove('active');
-						e.target.closest('li').classList.add('active');
-						teamUi.activeBar(indexNum,subtab);
-						webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
-					}
-				});
+			webUI.addDelegate(subtab, "click", ".tab_item", function(e) {
+				e.preventDefault();
+				if (!this.classList.contains('active')) {
+					let indexNum = webUI.getChildIndex(this);
+					subtab.querySelector('.active').classList.remove('active');
+					this.classList.add('active');
+					teamUi.activeBar(indexNum,subtab);
+					webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
+				}
 			});
 			window.addEventListener('resize', function(e) {
 				let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
@@ -75,18 +72,15 @@ var teamUi = (function() {
 		},
 		"initDepthTab": function(container) {
 			let subtab = container;
-			let tabItem = container.querySelectorAll('.tab_item');
 			teamUi.activeFill(0,subtab);
-			tabItem.forEach(function(item) {
-				item.addEventListener('click', function(e){
-					e.preventDefault();
-					if (!e.target.classList.contains('active')) {
-						let indexNum = webUI.getChildIndex(e.target);
-						subtab.querySelector('.active').classList.remove('active');
-						e.target.classList.add('active');
-						teamUi.activeFill(indexNum,subtab);
-					}
-				});
+			webUI.addDelegate(subtab, "click", ".tab_item", function(e) {
+				e.preventDefault();
+				if (!this.classList.contains('active')) {
+					let indexNum = webUI.getChildIndex(this);
+					subtab.querySelector('.active').classList.remove('active');
+					this.classList.add('active');
+					teamUi.activeFill(indexNum,subtab);
+				}
 			});
 			window.addEventListener('resize', function(e) {
 				let indexNum = webUI.getChildIndex(subtab.querySelector('.active'));
@@ -102,17 +96,14 @@ var teamUi = (function() {
 		},
 		"init3DepthTab": function(container) {
 			let subtab = container;
-			let tabItem = container.querySelectorAll('.tab_item');
-			tabItem.forEach(function(item) {
-				item.addEventListener('click', function(e){
-					e.preventDefault();
-					if (!e.target.classList.contains('active')) {
-						let indexNum = webUI.getChildIndex(e.target);
-						subtab.querySelector('.active').classList.remove('active');
-						e.target.classList.add('active');
-						webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
-					}
-				});
+			webUI.addDelegate(subtab, "click", ".tab_item", function(e) {
+				e.preventDefault();
+				if (!this.classList.contains('active')) {
+					let indexNum = webUI.getChildIndex(this);
+					subtab.querySelector('.active').classList.remove('active');
+					this.classList.add('active');
+					webUI.animatedScrollTo(subtab, (subtab.querySelectorAll('li')[indexNum].offsetLeft + subtab.querySelectorAll('li')[indexNum].clientWidth * 0.5) - (subtab.clientWidth * 0.5), 300);
+				}
 			});
         }
     }
