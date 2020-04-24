@@ -321,7 +321,7 @@
 .home.content .video_wrap .img_player_default {position:fixed;top:0;left:0;right:0;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;z-index:10;}
 .content .video_wrap .ico_play {display:block;position:absolute;top:50%;left:50%;margin-top:-4.15rem;margin-left:-4.15rem;width:8.3rem;height:8.3rem;background-image:url("../images/ic-player-play.png");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .highlight_detail .highlight_box .thumb .overlay {z-index:1;display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(36,9,16,.6);background-image:url("../images/ic-play-foc-b.png");background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;border-radius:0.7333rem;}
-.highlight_detail .highlight_box b {display:block;margin-top:0.6667rem;padding:0 3.125%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;}
+.highlight_detail .highlight_box b {display:block;margin-top:0.6667rem;padding:0 3.125%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .highlight_detail .video_info {position:relative;margin-top:0;padding:0.5rem 0 0.3667rem;height:2.6667rem;}
 .highlight_detail .video_info .view {margin-top:0 !important;}
 .highlight_detail .video_info .ico_share {z-index:2;display:block;position:absolute;top:0;right:0;width:2.6667rem;height:2.6667rem;background:url("../images/ic-share-nor.png") no-repeat;background-size:100% auto;}
@@ -1782,8 +1782,8 @@ background-color:#f2f3f4;}
 .bb-line {stroke-width:1px;}
 .bb-circle._expanded_ {stroke-width:1px;stroke:white;}
 .bb-selected-circle {fill:white;stroke-width:2px;}
-.bb-bar {stroke-width:0;}
-.bb-bar._expanded_ {fill-opacity:0.75;}
+.bb-bar {stroke-width:0;fill-opacity:0.25;}
+.bb-bar._expanded_ {fill-opacity:1;}
 .bb-target.bb-focused {opacity:1;}
 .bb-target.bb-focused path.bb-line,.bb-target.bb-focused path.bb-step {stroke-width:2px;}
 .bb-target.bb-defocused {opacity:0.3 !important;}
@@ -1823,11 +1823,12 @@ background-color:#f2f3f4;}
 .bb-ygrid-line.grid_solid line {stroke: #f7f7f7;}
 .bb-ygrid-line.grid_bottom line {stroke: #c9ced6;}
 .bb-ygrid-line.grid_dotted line {stroke: #eaeaea;stroke-dasharray:4;}
+.bb-xgrid-focus line {display:none;}
 .bb-axis-x .tick line {display:none;}
 .domain {display:none;}
 .bb-line {stroke-width:2px;}
 .area_chart_wrap {position:relative;}
-.area_chart_legend {position:absolute;top:0;right:0;height:1.5rem;padding-left:2.1667rem;font-size:1rem;font-weight:normal;line-height:normal;text-align:right;color:#444444;z-index:1;}
+.area_chart_legend {position:absolute;top:-1.3333rem;right:0;height:1.5rem;padding-left:2.1667rem;font-size:1rem;font-weight:normal;line-height:normal;text-align:right;color:#444444;z-index:1;}
 .area_chart_legend:before {content:'';position:absolute;left:0;top:0.0667rem;width:1.6667rem;height:1.3667rem;background-image:url(../images/ic-team-top-legend.png);background-size:100%;}
 .bb-chart text {font-size:1.2rem;font-weight:500;}
 .bb-axis text {font-size:1.0667rem;color:#858585;}
@@ -1921,15 +1922,15 @@ background-color:#f2f3f4;}
 .modal .modal_bd .input_wrap {margin:0 auto;padding:0.2667rem 0 0.7333rem;width:21.6667rem;border-bottom:1px solid #dee1e6;}
 .modal .modal_bd .input_wrap input {border:0 none;width:100%;height:2.4667rem;font-size:1.6667rem;font-weight:500;line-height:normal;text-align:center;color:#000000;}
 .modal .modal_bd .input_wrap input::-webkit-input-placeholder {font-size:1.3333rem;font-weight:normal;line-height:normal;text-align:center;color:#b4b4b4;}
-.modal .modal_ft {padding-left:3.3rem;padding-right:3.3rem;padding-bottom:0.6667rem;height:5.0667rem;text-align:center;}
+.modal .modal_ft {padding-left:2.4rem;padding-right:2.4rem;padding-bottom:0.6667rem;height:5.0667rem;text-align:center;}
 .modal .modal_ft .btn {display:inline-block;width:48.582995%;padding:1.0667rem 0;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
 .modal .modal_ft .btn.usetap.active {opacity:1;}
-.modal .modal_ft .btn span {padding:1.0667rem 3.6667rem;border-radius:0.7333rem;}
+.modal .modal_ft .btn span {padding:1.0667rem 3.6667rem;border-radius:2.2rem;}
 .modal .modal_ft .btn.usetap.active span {background-color:#fafafa;opacity:1;}
-.modal .modal_ft .btn_half {display:inline-block;margin-left:0;width:44.936708%;height:4.4rem;padding:1.0667rem 0 1.0667rem 0;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
-.modal .modal_ft .btn_half + .btn_half {margin-left:10.126582%;padding:1.0667rem 0 1.0667rem 0;}
+.modal .modal_ft .btn_half {display:inline-block;margin-left:0;width:50%;height:4.4rem;padding:0 0.7333rem 0 0;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
+.modal .modal_ft .btn_half + .btn_half {padding:0 0 0 0.7333rem;}
 .modal .modal_ft .btn_half.usetap.active {opacity:1;}
-.modal .modal_ft .btn_half span {padding:1.0667rem 3.6667rem;border-radius:2.2rem;}
+.modal .modal_ft .btn_half span {margin:0 auto;display:block;height:4.4rem;padding:1.0667rem 3.6667rem;border-radius:2.2rem;}
 .modal .modal_ft .btn_half.usetap.active span {background-color:#fafafa;opacity:1;}
 
 /* layerPopup 이벤트 */
