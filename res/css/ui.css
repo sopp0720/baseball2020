@@ -102,6 +102,7 @@
 .month_wrap .i_month b + span + b {margin-left:0.6667rem;}
 .month_wrap .month_arrow {display:block;position:absolute;top:0;width:4rem;height:4.2667rem;background-repeat:no-repeat;background-size:100% auto;}
 .month_wrap .month_arrow.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
+.bg_gradient .month_wrap .month_arrow.usetap.active {background-color:rgba(0,0,0,0.08);border-radius:50%;opacity:1;}
 .month_wrap .month_arrow.i_prev {left:0;background-image:url('../images/ic-previous-b.png');}
 .month_wrap .month_arrow.i_next {right:0;background-image:url('../images/ic-next-b.png');}
 .month_wrap .month_arrow.i_next.i_disabled {right:0;background-image:url('../images/ic-next-b-dim.png');}
