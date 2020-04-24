@@ -1237,7 +1237,7 @@
 .relay.content .replace_list {padding:1.5333rem 0;font-size:1.4667rem;color:#000000;border-top:1px solid #f8f8f9;border-bottom:1px solid #f8f8f9;}
 .relay.content .replace_list .i_out {font-weight:bold;color:#e42f37;}
 .relay.content .replace_list .i_in {font-weight:bold;color:#159b14;}
-.relay.content .change_position {padding:1.5333rem 0;border-top:1px solid #f8f8f9;border-bottom:1px solid #f8f8f9;overflow:hidden;}
+.relay.content .change_position {padding:1.5333rem 0;border-bottom:1px solid #f8f8f9;overflow:hidden;}
 .relay.content .change_position .team_logo {display:block;float:left;width:4rem;height:3.5333rem;}
 .relay.content .change_position p {float:left;margin-left:1rem;margin-top:0.7rem;font-size:1.4667rem;font-weight:bold;color:3000000;}
 
