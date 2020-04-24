@@ -36,6 +36,7 @@ var floatUI = (function() {
 			const elaTop = document.querySelector('.tab_teamlist_wrap');
 			const ela = document.querySelectorAll('.fix');
 			const tit = document.querySelector('.page_title_wrap');
+			const srh = document.querySelector('.srh_empty_box');			
 			const chat = document.querySelector('.chat_inner');
 
 			if (tit != null){
@@ -43,6 +44,13 @@ var floatUI = (function() {
 					tit.classList.add('shadow');
 				} else {
 					tit.classList.remove('shadow');
+				}
+			}
+			if (srh != null){
+				if (st > 0){
+					srh.classList.add('shadow');
+				} else {
+					srh.classList.remove('shadow');
 				}
 			}
 			if (ela.length){
