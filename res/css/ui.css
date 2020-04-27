@@ -44,7 +44,7 @@
 
 /* btn back + srh */
 .srh_empty_box {position:relative;z-index:10;margin:0 -1.5333rem;height:7.5rem;}
-.srh_is_back {position:fixed;left:0;right:0;height:6.3333rem;background-color:#fff;padding:1.1667rem 1.5333rem 0 1.5333rem;}
+.srh_is_back {position:fixed;left:0;right:0;height:6.3333rem;background-color:rgba(255,255,255,0.98);padding:1.1667rem 1.5333rem 0 1.5333rem;}
 .srh_empty_box.shadow .srh_is_back {box-shadow: 0 0.3667rem 0.4667rem 0 rgba(0, 0, 0, 0.06);}
 .srh_is_back .btn_back {display:block;position:absolute;top:1.5667rem;left:0.7333rem;width:3.2rem;height:3.2rem;background:url("../images/ic-title-back.png") no-repeat;background-size:100% auto;}
 .srh_is_back .btn_back.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
@@ -1560,7 +1560,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 /* tab_teamlist */
 .tab_teamlist_wrap {position:relative;height:8.5334rem;}
 .tab_teamlist_wrap .tab_teamlist {position:absolute;padding-top:1.6667rem;width:100%;left:0;right:0;margin-top:0;z-index:5;background-color:#fff;transition:top ease-out .3s;}
-.tab_teamlist_wrap.off .tab_teamlist {position:fixed;top:-6.8667rem !important;}
+.tab_teamlist_wrap.off .tab_teamlist {position:fixed;top:-8.5334rem !important;}
 .tab_teamlist_wrap.on .tab_teamlist {position:fixed;top:0 !important;}
 .tab_teamlist_wrap.on + .tab_1depth_wrap .tab_1depth {top:8.5334rem !important;}
 .tab_teamlist {margin-top:1.6667rem;background-color:#fff;overflow-x:auto;overflow-y:hidden;padding:0 2.2rem;}
@@ -1635,6 +1635,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_responsive.full {margin-right:-1.5333rem;}
 .table_responsive {/*margin-top:2rem;*/position:relative;z-index:2;margin-top:0.6667rem;/*border-radius:0.7333rem;border: 1px solid #dee1e6;*/}
 .table_responsive .table_right.scroll {position:absolute;right:0;overflow-y:hidden;overflow-x:auto;padding-right:1.5333rem;height:100%;border-top-right-radius:0;border-bottom-right-radius:0;border-right:0 none;border-top:0 none;border-bottom:0 none;}
+.table_responsive .table_right.scroll:after {content:'';display:block;position:absolute;}
 .table_responsive .table_right_inner {display:inline-block;border-top-right-radius:0.7333rem;border-bottom-right-radius:0.7333rem;border-right:1px solid #dee1e6;border-top:1px solid #dee1e6;border-bottom:1px solid #dee1e6;overflow:hidden;}
 .table_responsive:after {content:'';display:block;clear:both;}
 .table_responsive .table_left {float:left;border-top-left-radius:0.7333rem;border-bottom-left-radius:0.7333rem;overflow:hidden;border-right:1px solid #dee1e6;border-top:1px solid #dee1e6;border-left:1px solid #dee1e6;border-bottom:1px solid #dee1e6;}
@@ -1672,6 +1673,10 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_team .table_left .cell [class*="team_logo_"] {display:block;margin:0.3333rem auto 0;width:2.2667rem;height:2rem;}
 .table_team .table_left .cell .team_name {margin-top:0.0333rem;font-weight:500;}
 .table_team .row_my .cell .num {color:#c10a3a;}
+.table_responsive.table_vs .table_right th:first-of-type .cell,
+.table_responsive.table_vs .table_right td:first-of-type .cell {padding-left:1rem;padding-right:0.3333rem;min-width:4.6667rem;}
+.table_responsive.table_vs .table_right th:last-of-type .cell,
+.table_responsive.table_vs .table_right td:last-of-type .cell {padding-right:1rem;padding-left:0.3333rem;min-width:4.6667rem;}
 
 .table_player .table_left {width:11.6rem;}
 .table_player .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
@@ -1769,6 +1774,10 @@ background-color:#f2f3f4;}
 .table_responsive.table_abl_league .table_left .cell .num {float:left;margin-left:0.9rem;padding-top:1.4rem;padding-bottom:1.2rem;}
 .table_responsive.table_abl_league .table_left .cell [class*="team_logo_"] {float:left;margin:0;margin-top:0.3667rem;margin-left:0.2rem;width:4.0333rem;height:3.5667rem;}
 .table_responsive.table_abl_league .table_left .cell .team_name {float:left;margin-top:1.3667rem;margin-left:0.5rem;width:5.5rem;height:1.6667rem;text-align:left;}
+.table_responsive.table_abl_league .table_right th:first-of-type .cell,
+.table_responsive.table_abl_league .table_right td:first-of-type .cell {padding-left:1rem;padding-right:0.3333rem;min-width:4.6667rem;}
+.table_responsive.table_abl_league .table_right th:last-of-type .cell,
+.table_responsive.table_abl_league .table_right td:last-of-type .cell {padding-right:1rem;padding-left:0.3333rem;min-width:4.6667rem;}
 
 /* chart common */
 .bb svg {font:10px sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0);}
@@ -1797,7 +1806,7 @@ background-color:#f2f3f4;}
 .bb-legend-item-hidden {opacity:0.15;}
 .bb-legend-background {opacity:0.75;fill:white;stroke:lightgray;stroke-width:1;}
 .bb-title {font:14px sans-serif;}
-.bb-tooltip-container {z-index:10;}
+.bb-tooltip-container {z-index:10;top:2rem !important;}
 .bb-tooltip {border-collapse:collapse;border-spacing:0;background-color:#fff;empty-cells:show;opacity:0.9;-webkit-box-shadow:7px 7px 12px -9px #777777;-moz-box-shadow:7px 7px 12px -9px #777777;box-shadow:7px 7px 12px -9px #777777;}
 .bb-tooltip tr {border:1px solid #CCC;}
 .bb-tooltip th {background-color:#aaa;font-size:14px;padding:2px 5px;text-align:left;color:#FFF;}
@@ -1949,7 +1958,8 @@ background-color:#f2f3f4;}
 .modal .control_wrap label {vertical-align:top;display:inline-block;padding-left:0.6667rem;font-size:1.3333rem;font-weight:normal;line-height:2rem;color:#525252;}
 
 /* layerPopup Dropdown */
-.modal .dropdown_list {overflow:hidden;padding:1rem 0 1.3333rem;background-color:#ffffff;border-top-left-radius:1.5333rem;border-top-right-radius:1.5333rem;}
+.modal .modal_inner.dropdown {max-height:calc(100% - 9.8333rem);border-top-left-radius:1.5333rem;background-color:#ffffff;border-top-right-radius:1.5333rem;}
+.modal .dropdown_list {max-height:calc(100vh - 9.8333rem);overflow-x:hidden;overflow-y:auto;padding:1rem 0 1.3333rem;}
 .modal .dropdown_list li {position:relative;margin-top:0.6667rem;width:100%;height:4.3333rem;}
 .modal .dropdown_list li:first-child {margin-top:0;}
 .modal .dropdown_list li.usetap.active {background-color:#fafafa;opacity:1;}

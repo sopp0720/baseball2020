@@ -403,7 +403,7 @@
                     	<p>아직 순위가 없습니다.</p>
                     </div>
                     <!-- // list none -->
-                    <div class="table_responsive table_team">
+                    <div class="table_responsive table_team table_vs">
 						<div class="table_left ">
 							<table class="table">
 								<thead>
@@ -1807,7 +1807,7 @@ var chart1 = bb.generate({
         }
     }
 });
-d3.select('.bb-grid-lines').lower(); // 그리드 레이어 위치 수정
+
 </script>
 <script>
 var chart2 = bb.generate({
@@ -1823,9 +1823,9 @@ var chart2 = bb.generate({
 	},
     data: {
         colors: {
-            data1: "rgba(114,160,239,0.24)",
-            data2: "rgba(242,161,141,0.24)",
-            data3: "rgba(212,213,217,0.24)"
+            data1: "rgba(114,160,239,1)",
+            data2: "rgba(242,161,141,1)",
+            data3: "rgba(212,213,217,1)"
         },
         type: "bar",
         columns: [
@@ -1878,6 +1878,7 @@ var chart2 = bb.generate({
         }
     }
 });
+d3.selectAll('.bb-grid-lines').lower(); // 그리드 레이어 위치 수정
 </script>
 
 <script>
