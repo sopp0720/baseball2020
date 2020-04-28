@@ -805,7 +805,8 @@
 .relay.content .msg_wrap.left {text-align:left;border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
 .relay.content .msg_wrap.right {text-align:right;border-top-left-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
 .relay.content .msg_wrap .welcome {display:inline-block;margin-top:1.4rem;width:14.1667rem;height:3.1333rem;border-radius:1.5667rem;background-color:rgba(43,43,43,0.07);font-size:1.2rem;font-weight:bold;line-height:3.1333rem;text-align:center;color:#484848;}
-.relay.content .msg_wrap .i_date {display:inline-block;margin:0.9333rem 0;height:1.5667rem;font-size:1.0667rem;font-weight:500;color:#858585;}
+.relay.content .msg_wrap .i_date {display:inline-block;margin:0.9333rem 0;min-width:13.7667rem;height:2.2rem;border-radius:1.5667rem;background-color:rgba(43,43,43,0.05);font-size:1.0667rem;line-height:2.2rem;font-weight:500;text-align:center;color:#858585;padding:0 1rem;}
+
 .relay.content .msg_wrap .msg {position:relative;background-color:#fff;min-width:9.0333rem;max-width:25.4rem;display:inline-block;color:#000000;padding:0.7333rem 1.1333rem 1.1333rem;}
 .relay.content .msg_wrap.same .msg {padding-top:1.1333rem;}
 .relay.content .msg_wrap.left .msg {border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
@@ -1143,18 +1144,19 @@
 .relay.content .view_base .tag_box {display:inline-block;padding:0.4rem 0.9333rem;height:2.3333rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
 .relay.content .view_base .tag_box_sm {display:inline-block;padding:0 0.7667rem;height:1.8rem;font-size:0;background-color:rgba(37,54,47,.75);border-radius:1.1667rem;vertical-align:top;font-size:0;}
 .relay.content .view_base .tag_box span,.view_base .tag_box_sm span {display:inline-block;vertical-align:top;color:#ffffff;}
-.relay.content .view_base .base_pitcher {position:absolute;top:28.500823%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.relay.content .view_base .base_pitcher {position:absolute;top:28.500823%;left:50%;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);}
 .relay.content .view_base .base_pitcher .i_name {height:1.5333rem;font-size:1.2667rem;font-weight:bold;line-height:1.21;}
 .relay.content .view_base .base_pitcher .bar {margin:0.3rem 0.6667rem 0.1667rem;width:1px;height:1.0667rem;background-color:rgba(255,255,255,.5);}
 .relay.content .view_base .base_pitcher .pitch_num {height:1.5333rem;font-size:1.1333rem;font-weight:500;line-height:1.35;}
 .relay.content .view_base .team_logo {display:inline-block;width:2.6rem;height:2.3333rem;vertical-align:top;}
-.relay.content .view_base .pitcher_team_logo {position:absolute;top:43.657331%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
-.relay.content .view_base .hitter_team_logo {position:absolute;bottom:16.803953%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
-.relay.content .view_base .base_hitter {position:absolute;bottom:1.812191%;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);-moz-transform:translate(-50%, 0);-o-transform: translate(-50%, 0);}
+.relay.content .view_base .pitcher_team_logo {position:absolute;top:43.657331%;left:50%;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);}
+.relay.content .view_base .hitter_team_logo {position:absolute;bottom:16.803953%;left:50%;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);}
+.relay.content .view_base .base_hitter {position:absolute;bottom:1.812191%;left:50%;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);}
 .relay.content .view_base .base_hitter .player_num {height:1.53333rem;font-size:1.1333rem;line-height:1.35;}
 .relay.content .view_base .base_hitter .i_name {margin-left:0.2rem;height:1.53333rem;font-size:1.2667rem;font-weight:bold;line-height:1.21;}
 .relay.content .view_base .tag_box_sm .i_name {height:1.8rem;font-size:1.0667rem;font-weight:bold;line-height:1.8333rem;}
 .relay.content .view_base .base_first {position:absolute;top:47.116968%;right:17.87037%;}
+.relay.content .view_base .base_second {position:absolute;top:11%;left:50%;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);}
 .relay.content .view_base .base_third {position:absolute;top:47.116968%;left:17.87037%;}
 .relay.content .view_base .ball_count {position:absolute;bottom:3.294892%;left:1.851851%;width:5.3333rem;height:7.3333rem;background-color:rgba(89,110,100,.85);}
 .relay.content .view_base .ball_count .info_round {display:block;height:1.9333rem;line-height:2.0333rem;font-size:1rem;font-weight:500;text-align:center;color:#ffffff;background-color:rgba(60,82,73,.5);}
@@ -1559,6 +1561,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* tab_teamlist */
 .tab_teamlist_wrap {position:relative;height:8.5334rem;}
+.tab_teamlist_wrap:first-of-type {height:10.2rem;}
 .tab_teamlist_wrap .tab_teamlist {position:absolute;padding-top:1.6667rem;width:100%;left:0;right:0;margin-top:0;z-index:5;background-color:#fff;transition:top ease-out .3s;}
 .tab_teamlist_wrap.off .tab_teamlist {position:fixed;top:-8.5334rem !important;}
 .tab_teamlist_wrap.on .tab_teamlist {position:fixed;top:0 !important;}
@@ -1619,7 +1622,8 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 /* tab_3depth */
 .tab_3depth {margin-top:2.3333rem;position:relative;padding:0 1.5333rem;width:100%;font-size:0;overflow-x:auto;overflow-y:hidden;background:#f7f8f9;border-top:1px solid #efeff0;border-bottom:0;}
 .tab_3depth::-webkit-scrollbar {display:none;}
-.tab_3depth ul {min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;height:4rem;}
+.tab_3depth ul {position:relative;min-width:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;height:4rem;}
+.tab_3depth ul:after {content:'';display:block;position:absolute;width:1.5333rem;right:-1.5333rem;height:1px;}
 .tab_3depth ul li:first-child {margin-left:0;}
 .tab_3depth ul li:last-child {margin-right:0;}
 .tab_3depth .tab_item {-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;width:auto;margin:0 1rem;color:#cfd2d9;font-size:1.3333rem;line-height:4rem;font-weight:400;text-align:center;transition:color ease-out .3s;}
@@ -1794,7 +1798,7 @@ background-color:#f2f3f4;}
 .bb-line {stroke-width:1px;}
 .bb-circle._expanded_ {stroke-width:1px;stroke:white;}
 .bb-selected-circle {fill:white;stroke-width:2px;}
-.bb-bar {stroke-width:0;fill-opacity:0.25;}
+.bb-bar {stroke-width:0;fill-opacity:0.8;}
 .bb-bar._expanded_ {fill-opacity:1;}
 .bb-target.bb-focused {opacity:1;}
 .bb-target.bb-focused path.bb-line,.bb-target.bb-focused path.bb-step {stroke-width:2px;}
@@ -1806,7 +1810,7 @@ background-color:#f2f3f4;}
 .bb-legend-item-hidden {opacity:0.15;}
 .bb-legend-background {opacity:0.75;fill:white;stroke:lightgray;stroke-width:1;}
 .bb-title {font:14px sans-serif;}
-.bb-tooltip-container {z-index:10;top:2rem !important;}
+.bb-tooltip-container {z-index:10;top:4rem !important;}
 .bb-tooltip {border-collapse:collapse;border-spacing:0;background-color:#fff;empty-cells:show;opacity:0.9;-webkit-box-shadow:7px 7px 12px -9px #777777;-moz-box-shadow:7px 7px 12px -9px #777777;box-shadow:7px 7px 12px -9px #777777;}
 .bb-tooltip tr {border:1px solid #CCC;}
 .bb-tooltip th {background-color:#aaa;font-size:14px;padding:2px 5px;text-align:left;color:#FFF;}

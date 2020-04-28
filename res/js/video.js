@@ -23,10 +23,15 @@ var videoUI = (function() {
         "content_scroll": function() {
 			if (document.querySelector('.chat_inner') != null){
 				let scMh = window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - document.querySelector('.page_title_wrap').clientHeight - document.querySelector('.tab_1depth_wrap').clientHeight - 1;
-				if (document.querySelector('.scroll_bottom').clientHeight < scMh){
-					document.querySelector('.chat_inner').style.height = scMh + 'px';
+				let scBm = document.querySelector('.scroll_bottom');
+				if (scBm != null){
+					if (scBm.clientHeight < scMh){
+						document.querySelector('.chat_inner').style.height = scMh + 'px';
+					} else {
+						document.querySelector('.chat_inner').style.height = '';
+					}
 				} else {
-					document.querySelector('.chat_inner').style.height = '';
+					document.querySelector('.chat_inner').style.height = scMh + 'px';
 				}
 			}
         },

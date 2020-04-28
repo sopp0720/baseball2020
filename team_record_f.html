@@ -1688,11 +1688,11 @@ var chart1 = bb.generate({
 		},
         type: "area",
         columns: [
-            ["data1", 7, 9, 8, 7, 0, 6, 1, 4]
+            ["data1", 7, 9, 8, 7, 0.2, 6, 1, 4]
         ],
         labels: {
             format: function(v, id, i, j) {
-                if (v == 0) {
+                if (v == 0.2) {
                     v = "10";
                 } else if (v == 1) {
                     v = "9";
