@@ -807,7 +807,7 @@
 .relay.content .msg_wrap .welcome {display:inline-block;margin-top:1.4rem;width:14.1667rem;height:3.1333rem;border-radius:1.5667rem;background-color:rgba(43,43,43,0.07);font-size:1.2rem;font-weight:bold;line-height:3.1333rem;text-align:center;color:#484848;}
 .relay.content .msg_wrap .i_date {display:inline-block;margin:0.9333rem 0;min-width:13.7667rem;height:2.2rem;border-radius:1.5667rem;background-color:rgba(43,43,43,0.05);font-size:1.0667rem;line-height:2.2rem;font-weight:500;text-align:center;color:#858585;padding:0 1rem;}
 
-.relay.content .msg_wrap .msg {position:relative;background-color:#fff;min-width:9.0333rem;max-width:25.4rem;display:inline-block;color:#000000;padding:0.7333rem 1.1333rem 1.1333rem;}
+.relay.content .msg_wrap .msg {position:relative;background-color:#fff;min-width:7.6667rem;max-width:25.4rem;display:inline-block;color:#000000;padding:0.7333rem 1.1333rem 1.1333rem;}
 .relay.content .msg_wrap.same .msg {padding-top:1.1333rem;}
 .relay.content .msg_wrap.left .msg {border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
 .relay.content .msg_wrap.right .msg {border-top-left-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
