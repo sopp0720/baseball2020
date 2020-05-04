@@ -1478,7 +1478,9 @@
 .my.content .my_nick_set .img_box {margin:4.6667rem auto 0;width:16.6667rem;height:13.5rem;background-image:url('../images/img-illust-my-edit.png');background-repeat:no-repeat;background-size:100% auto;}
 .my.content .my_nick_set .input_wrap {margin-top:3.3333rem;padding:2.3333rem 0 0;}
 .my.content .my_nick_set .input_wrap p {height:1.8667rem;font-size:1.2667rem;font-weight:500;line-height:1.47;color:#858585;}
-.my.content .my_nick_set .input_wrap > input {display:block;margin-top:0.4333rem;padding-bottom:0.7rem;width:100%;height:3.5667rem;font-size:1.8667rem;font-weight:bold;color:#000000;border:0;border-bottom:0.1rem solid #dee1e6;background-color:#ffffff;border-radius:0;}
+.my.content .my_nick_set .input_inner {position:relative;border-bottom:1px solid #dee1e6;overflow:hidden;padding-right:8.6667rem;}
+.my.content .my_nick_set .input_inner > input {display:block;margin-top:0.4333rem;padding-bottom:0.7rem;width:100%;height:3.5667rem;font-size:1.8667rem;font-weight:bold;color:#000000;border:0;background-color:#ffffff;border-radius:0;}
+.my.content .my_nick_set .input_inner > .btn_theme {position:absolute;right:0;bottom:0.4333rem;width:7.1333rem;height:3.3333rem;border-radius:0.7333rem;font-size: 1.2667rem;font-weight: bold;line-height: 3.3333rem;text-align: center;color: #ffffff;}
 
 /* My - my cheering team */
 .my_cheering_team {margin-top:1.5333rem;}
