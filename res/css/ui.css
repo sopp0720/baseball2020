@@ -1408,7 +1408,6 @@
 .my.content .sec_my.alram_detail {position:relative;padding:1.5333rem 1.5333rem 3rem;border-bottom:0 none;background-color:#fbfbfb;}
 .my.content .sec_my.alram_detail .sec_title {padding-bottom:1.2rem;font-size:1.4rem;font-weight:500;}
 .my.content .sec_my.alram_detail.disabled > div {opacity:0.3;}
-.my.content .sec_my.alram_detail.disabled:after {content:'';position:absolute;top:0;left:0;right:0;bottom:0;}
 .my.content .sec_my .sec_title_sub {margin-top:0.3333rem;height:3.7333rem;padding:1.5333rem 0 0.3333rem 0;font-size:1rem;font-weight:500;line-height:1.8667rem;color:#858585;border-top:0.0333rem solid #dee1e6;}
 
 /* My - event list */
