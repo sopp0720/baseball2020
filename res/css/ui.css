@@ -1194,8 +1194,8 @@
 .relay.content .current_sec .current_player .info_top .player_name .i_name {display:block;margin-top:0.3333rem;height:2.4667rem;font-size:1.6667rem;font-weight:normal;color:#2b2b2b;}
 .relay.content .current_sec .current_player .info_top .player_name .i_name b {font-weight:bold;}
 .relay.content .current_sec .current_player .info_top .team_logo {display:block;position:absolute;top:0;right:0;width:5.2rem;height:4.6rem;}
-.relay.content .current_sec .current_player .info_tbl {margin-top:1.9rem;height:3.0667rem;border:1px solid #e8e9ef;border-radius:0.7333rem;overflow:hidden;}
-.relay.content .current_sec .current_player .info_tbl > div {position:relative;float:left;padding:0 0.8667rem 0 0.9rem;height:100%;line-height:3rem;width:25%;border-right:1px solid #e8e9ef;}
+.relay.content .current_sec .current_player .info_tbl {margin-top:1.9rem;height:3.0667rem;border:1px solid #e8e9ef;border-radius:0.7333rem;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:flex;}
+.relay.content .current_sec .current_player .info_tbl > div {position:relative;-webkit-box-flex:1;-webkit-flex:1;flex:1;padding:0 0.8667rem 0 0.9rem;height:100%;line-height:3rem;width:25%;border-right:1px solid #e8e9ef;}
 .relay.content .current_sec .current_player .info_tbl > div:nth-child(odd) {background-color:#f5f6f9;}
 .relay.content .current_sec .current_player .info_tbl > div:nth-child(even) {background-color:#fbfcfd;}
 .relay.content .current_sec .current_player .info_tbl > div:last-child {border-right:0;}
@@ -1203,6 +1203,7 @@
 .relay.content .current_sec .current_player .info_tbl > div b {display:block;position:absolute;top:0;right:0.8667rem;width:3rem;height:auto;font-size:1.2667rem;font-weight:bold;text-align:right;}
 .relay.content .current_sec .current_player .count_desc {margin-top:1.3333rem;}
 .relay.content .count_desc {margin:1.6667rem 0 0;}
+.relay.content .count_desc + .count_desc {margin-top: 0.3333rem;}
 .relay.content .count_desc li {position:relative;margin-top:0.3333rem;height:2.3333rem;overflow:hidden;}
 .relay.content .count_desc li:first-child {margin-top:0;}
 .relay.content .count_desc li span,.count_desc li b {float:left;}
