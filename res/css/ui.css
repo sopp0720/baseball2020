@@ -896,10 +896,10 @@
 .relay.content .relay_card_wrap ul li .card_box .team_box.top_box .team_name {margin-top:0.8667rem;}
 .relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box .team_name {margin-top:0.5333rem;}
 .relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box {padding-top:1rem;border-top:1px solid #e8e9ef;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {display:block;float:left;width:3.4333rem;height:3.0333rem;opacity:0.5;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {display:block;float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'bebas_neueregular';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {float:left;width:3.4333rem;height:3.0333rem;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'bebas_neueregular';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.5;}
 .relay.content .relay_card_wrap ul li .card_box .team_box .i_score.i_gray {color:#737787 !important;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .team_name {display:block;float:left;width:3.6667rem;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-align:center;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_name {float:left;width:3.6rem;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-align:center;opacity:0.5;}
 .relay.content .sec_analysis {padding-top:2.5333rem;}
 .relay.content .analysis_wrap {margin-top:1rem;}
 .relay.content .vs_rank_wrap {position:relative;padding:1.8667rem 2.1333rem 0.8333rem;height:12.1333rem;}
@@ -1202,6 +1202,7 @@
 .relay.content .current_sec .current_player .info_tbl > div span {display:block;width:2.3333rem;height:auto;font-size:1.2667rem;color:#2b2b2b;}
 .relay.content .current_sec .current_player .info_tbl > div b {display:block;position:absolute;top:0;right:0.8667rem;width:3rem;height:auto;font-size:1.2667rem;font-weight:bold;text-align:right;}
 .relay.content .current_sec .current_player .count_desc {margin-top:1.3333rem;}
+.relay.content .current_sec .current_player .count_desc + .count_desc {margin-top: 0.3333rem;}
 .relay.content .count_desc {margin:1.6667rem 0 0;}
 .relay.content .count_desc + .count_desc {margin-top: 0.3333rem;}
 .relay.content .count_desc li {position:relative;margin-top:0.3333rem;height:2.3333rem;overflow:hidden;}
