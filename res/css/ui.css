@@ -104,6 +104,7 @@
 .month_wrap .month_arrow.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 .bg_gradient .month_wrap .month_arrow.usetap.active {background-color:rgba(0,0,0,0.08);border-radius:50%;opacity:1;}
 .month_wrap .month_arrow.i_prev {left:0;background-image:url('../images/ic-previous-b.png');}
+.month_wrap .month_arrow.i_prev.i_disabled {right:0;background-image:url('../images/ic-previous-b-dim.png');}
 .month_wrap .month_arrow.i_next {right:0;background-image:url('../images/ic-next-b.png');}
 .month_wrap .month_arrow.i_next.i_disabled {right:0;background-image:url('../images/ic-next-b-dim.png');}
 .btn_gocalendar2 {display:block;position:absolute;top:0.4333rem;right:0;width:3.4667rem;height:3.4667rem;line-height:3.4667rem;font-size:1.2rem;font-weight:500;color:#494949;text-align:center;border-radius:50%;background-color:#eeeeee;background-image:url('../images/ic-calendar.png');background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;}
