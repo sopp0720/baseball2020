@@ -28,6 +28,9 @@ var bnbUi = (function() {
             tab_button.addEventListener("click", function(e) {
                 e.preventDefault();
                 if (e.target.classList.contains('tab')) {
+					if (e.target.classList.contains('hide')) {
+						return;
+					}
 					if (bStartEvent) {
 						return;
 					}
