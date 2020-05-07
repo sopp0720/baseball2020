@@ -81,7 +81,25 @@ fieldset,img {border:0;}
   }
 }
 /* REM rules */
-html {font-size:8px;}
+html {font-size:5px;}
+@media screen and (min-width: 216px){
+	html {font-size:6px;}
+}
+@media screen and (min-width: 229px){
+	html {font-size:6.3611px;}
+}
+@media screen and (min-width: 250px){
+	html {font-size:6.9444px;}
+}
+@media screen and (min-width: 252px){
+	html {font-size:7px;}
+}
+@media screen and (min-width: 288px){
+	html {font-size:8px;}
+}
+@media screen and (min-width: 292px){
+	html {font-size:8.1111px;}
+}
 /* iphone 5 */
 @media screen and (min-width: 320px){
 	html {font-size:8.8888px;}

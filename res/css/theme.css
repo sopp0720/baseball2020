@@ -291,6 +291,7 @@
 .team_logo_SS {background-position:0 81.818182%;background-size:100%;}
 .team_logo_WE {background-position:0 90.909091%;background-size:100%;}
 .team_logo_WO {background-position:0 100%;background-size:100%;}
+.futures .team_logo_WO {background-image:url(../images/logo/team_logo_WO_f.png);background-position:0 0;background-size:100%;}
 
 /* logo MLB */
 .team_logo_AL, .team_logo_AN, .team_logo_AT, .team_logo_AZ, .team_logo_BA, 
