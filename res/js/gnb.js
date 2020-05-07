@@ -13,6 +13,7 @@ var bnbUi = (function() {
     let active_tab;
     let tab_length;
     let activeIndex;
+	let bStartEvent;
     return {
         "init": function() {
             tabbar = document.getElementById('tab_bar');
@@ -22,9 +23,15 @@ var bnbUi = (function() {
             active_tab = 0;
             tab_length = tab_button.querySelectorAll('.tab').length
             activeIndex = 0;
+			bStartEvent = false;
+			tabbar.querySelector('.left_side').addEventListener('transitionend', bnbUi.resetTransitionEndHandler);
             tab_button.addEventListener("click", function(e) {
                 e.preventDefault();
                 if (e.target.classList.contains('tab')) {
+					if (bStartEvent) {
+						return;
+					}
+					bStartEvent = true;
                     const index = webUI.getChildIndex(e.target);
                     if (active_tab == index) {
                         return false;
@@ -139,6 +146,9 @@ var bnbUi = (function() {
             tabbar.querySelector('.left_side').style.cssText = '-webkit-box-flex:' + left_flex_grow + ';flex-grow:' + left_flex_grow + ';';
             tabbar.querySelector('.right_side').style.cssText = '-webkit-box-flex:' + right_flex_grow + ';flex-grow:' + right_flex_grow + ';';
             active_tab = index;
-        }
+        },
+        "resetTransitionEndHandler": function() {
+	        bStartEvent = false;
+		}
     }
 })();
