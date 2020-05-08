@@ -274,6 +274,7 @@
 .team_color_KT {background-color:#000000;}
 .team_color_HT {background-color:#AC1020;}
 .team_color_LT {background-color:#C30025;}
+.team_color_SM {background-color:#000000;}
 
 /* logo KBO */
 .team_logo_EA, .team_logo_HH, .team_logo_HT, .team_logo_KT, .team_logo_LG, 
@@ -292,6 +293,7 @@
 .team_logo_WE {background-position:0 90.909091%;background-size:100%;}
 .team_logo_WO {background-position:0 100%;background-size:100%;}
 .futures .team_logo_WO {background-image:url(../images/logo/team_logo_WO_f.png);background-position:0 0;background-size:100%;}
+.team_logo_SM {background-image:url(../images/logo/team_logo_SM.png);background-position:0 0;background-size:100%;}
 
 /* logo MLB */
 .team_logo_AL, .team_logo_AN, .team_logo_AT, .team_logo_AZ, .team_logo_BA, 
@@ -369,6 +371,7 @@
 .team_symbol_SS {background-position:0 91.666667%;background-size:100%;}
 .team_symbol_WO {background-position:0 100%;background-size:100%;}
 .futures .team_symbol_WO {background-image:url(../images/logo/team_symbol_WO_f.png);background-position:0 0;}
+.team_symbol_SM {background-image:url(../images/logo/team_symbol_SM.png);background-position:0 0;background-size:100%;}
 
 /* tab_teamlist Color */
 .tab_teamlist .team_LG svg path[fill-opacity="1"] {fill:#C10A3A;}
@@ -432,6 +435,7 @@
 .team_schedule_bg_HT {background-image:url('../images/bg/team_schedule_bg_HT.png');}
 .team_schedule_bg_LT {background-image:url('../images/bg/team_schedule_bg_LT.png');}
 .team_schedule_bg_GY {background-image:url('../images/bg/team_schedule_bg_GY.png');}
+.team_schedule_bg_SM {background-image:url('../images/bg/team_schedule_bg_SM.png');}
 
 /* Team record ranking bg */
 .team_ranking_bg_LG {background-image:url('../images/bg/bg-team-rangking-lg.png');}
@@ -445,6 +449,7 @@
 .team_ranking_bg_HT {background-image:url('../images/bg/bg-team-rangking-kia.png');}
 .team_ranking_bg_LT {background-image:url('../images/bg/bg-team-rangking-lotte.png');}
 .team_ranking_bg_GY {background-image:url('../images/bg/bg-team-rangking-goyang.png');}
+.team_ranking_bg_SM {background-image:url('../images/bg/bg-team-rangking-sangmu.png');}
 
 /* Team 1순위 piching type color */
 .pitching_color_DEFAULT .i_ratio {background-color:#c10a3a;}

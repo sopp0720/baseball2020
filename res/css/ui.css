@@ -384,6 +384,7 @@
 .team.content .rank_date ul li .rank_info.i_draw {color:#000000;}
 .team.content .rank_date ul li .rank_info.i_win {color:#3563c0;}
 .team.content .rank_date ul li .rank_info.i_lose {color:#ec5f59;}
+.team.content .none_rank_date {margin-top:0.4rem;padding:1.4667rem 0;height:4.8rem;font-size:1.2667rem;font-weight:500;color:#b4b4b4;text-align:center;background:#f2f3f5 url("../images/banner-score-empty.png") no-repeat 50% 50%;background-size:cover;border-radius:0.7667rem;}
 .team.content .game_schedule {margin-top:0.6667rem;overflow:hidden;}
 .team.content .game_schedule > div {position:relative;float:left;margin-left:2.024291%;padding-top:2.0667rem;width:23.481781%;text-align:center;}
 .team.content .game_schedule > div:first-child {margin-left:0;}
@@ -393,6 +394,10 @@
 .team.content .game_schedule > div .schedule_box .i_date {padding-top:6.951871%;}
 .team.content .game_schedule > div .schedule_box .i_date > span {color:#ffffff;}
 .team.content .game_schedule > div .schedule_box .i_spot {display:block;position:absolute;bottom:11.229946%;left:0;right:0;margin-left:auto;margin-right:auto;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#ffffff;}
+.team.content .non_game_schedule {margin-top:4.3333rem;padding-bottom:2.8rem;}
+.team.content .non_game_schedule .img_box {width:13.8333rem;height:7.6667rem;margin:0 auto;background-image:url('../images/img-player-empty-s.png');background-size:100%;}
+.team.content .non_game_schedule > p {font-size:1.2667rem;font-weight:500;line-height:1.8667rem;text-align:center;color:#b4b4b4;margin-top:1rem;}
+
 .team.content .team_highlight_wrap {margin-top:1rem;}
 .team.content .team_highlight {margin-top:2rem;}
 .team.content .team_highlight:first-child {margin-top:0;}
@@ -1471,6 +1476,7 @@
 .my.content .faq_box.current .faq_q .i_arr {background-image:url('../images/ic-arrow-up-g.png');}
 
 /* My - terms form */
+.terms_form {padding-bottom:8.9333rem;}
 .terms_form .bt_btn_box {bottom:0;padding:0;height:13.9333rem;background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.99) 52%, #ffffff);}
 .terms_form .bt_btn_box .btn_box_inner {position:absolute;bottom:1.5333rem;left:1.5333rem;right:1.5333rem;}
 .terms_form .bt_btn_box .btn_box_inner button {height:5rem;}
@@ -1946,6 +1952,10 @@ background-color:#f2f3f4;}
 .fadeIn.visible .modal_inner {opacity:1;}
 .noscroll .btn_player_view_wrap,
 .noscroll .tab_1depth_wrap {transform:translateZ(0);}
+
+/* layerPopup 선수상세 */
+.modal .modal_inner.player_info {border-top-left-radius:1.5333rem;background-color:#ffffff;border-top-right-radius:1.5333rem;max-height:calc(100% - 6.8333rem);}
+.modal .team.content .player_info_wrap {padding-top:1.5333rem;}
 
 /* layerPopup 텍스트 형 */
 .modal .modal_content {position:relative;overflow:hidden;width:32.9333rem;max-width:100%;border-radius:1.9333rem;background-color:#ffffff;margin:0 auto;}
