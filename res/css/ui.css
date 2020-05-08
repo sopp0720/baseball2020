@@ -1944,6 +1944,8 @@ background-color:#f2f3f4;}
 .fadeInUp.visible .modal_inner {-webkit-transform:translate(0, 0);transform:translate(0, 0);}
 .fadeIn .modal_inner {position:absolute;bottom:8.7rem;left:0;right:0;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0;}
 .fadeIn.visible .modal_inner {opacity:1;}
+.noscroll .btn_player_view_wrap,
+.noscroll .tab_1depth_wrap {transform:translateZ(0);}
 
 /* layerPopup 텍스트 형 */
 .modal .modal_content {position:relative;overflow:hidden;width:32.9333rem;max-width:100%;border-radius:1.9333rem;background-color:#ffffff;margin:0 auto;}
