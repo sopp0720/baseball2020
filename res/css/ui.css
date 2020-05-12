@@ -297,7 +297,7 @@
 .highlight_box p {margin-top:0.5333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .highlight_wrap.line1 .highlight_box p {height:1.9667rem;line-height: normal;-webkit-line-clamp: 1;}
 .home.content .highlight_box .view {position:relative;display:block;margin-top:0.5rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
-.home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
+.home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;line-height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
 .home.content .news_wrap .news_main {position:relative;margin-top:1rem;padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;overflow:hidden;}
 .home.content .news_wrap .news_main .txt_inner_wrap {position:absolute;bottom:0;width:100%;height:11.6667rem;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
 .home.content .news_wrap .news_main .txt_inner {position:absolute;left:0;bottom:0;padding:0 1.6667em 1.6667rem;}
@@ -989,6 +989,8 @@
 .relay.content .vertical_pitcher_graph .pitcher_type_wrap {width:33.805668%;vertical-align:middle;}
 .relay.content .vertical_pitcher_graph .pitcher_type_wrap.left .i_name {padding-right:1rem;text-align:right;}
 .relay.content .vertical_pitcher_graph .pitcher_type_wrap.right .i_name {padding-left:1rem;text-align:left;}
+.relay.content .vertical_pitcher_graph .pitcher_type_wrap .graph_none:before {content:'';display:block;margin:0 auto;width:100%;height:6rem;background-image: url('../images/img-player-empty-s.png');background-repeat:no-repeat;background-size:auto 100%;background-position:50% 50%;}
+.relay.content .vertical_pitcher_graph .pitcher_type_wrap .graph_none > p {margin-top:0.6rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:500;text-align:center;color:#b4b4b4;}
 .relay.content .vertical_pitcher_graph .pitcher_type {display:table;width:100%;table-layout:fixed;}
 .relay.content .vertical_pitcher_graph .pitcher_type > span {display:table-cell;vertical-align:middle;}
 .relay.content .vertical_pitcher_graph .pitcher_type .i_name {width:7.4667rem;font-size:1.2667rem;font-weight:500;line-height:1.32;}
@@ -1822,7 +1824,7 @@ background-color:#f2f3f4;}
 .bb-line {stroke-width:1px;}
 .bb-circle._expanded_ {stroke-width:1px;stroke:white;}
 .bb-selected-circle {fill:white;stroke-width:2px;}
-.bb-bar {stroke-width:0;fill-opacity:0.8;}
+.bb-bar {stroke-width:0;fill-opacity:0.45;}
 .bb-bar._expanded_ {fill-opacity:1;}
 .bb-target.bb-focused {opacity:1;}
 .bb-target.bb-focused path.bb-line,.bb-target.bb-focused path.bb-step {stroke-width:2px;}
@@ -1871,18 +1873,18 @@ background-color:#f2f3f4;}
 .area_chart_legend {position:absolute;top:-1.3333rem;right:0;height:1.5rem;padding-left:2.1667rem;font-size:1rem;font-weight:normal;line-height:normal;text-align:right;color:#444444;z-index:1;}
 .area_chart_legend:before {content:'';position:absolute;left:0;top:0.0667rem;width:1.6667rem;height:1.3667rem;background-image:url(../images/ic-team-top-legend.png);background-size:100%;}
 .bb-chart text {font-size:1.2rem;font-weight:500;}
-.bb-axis text {font-size:1.0667rem;color:#858585;}
+.bb-axis text {font-size:1.0667rem;fill:#858585;}
 
 .bar_chart_wrap {position:relative;}
 .bar_chart_legend {position:absolute;top:0;right:0;z-index:1;}
 .bar_chart_legend:after {clear:both;content:'';display:block;}
 .chart_legend_win {float:left;position:relative;height:1.5rem;font-size:1rem;font-weight:normal;line-height:normal;color:#444444;padding-left:1.3333rem;}
-.chart_legend_win:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#72a0ef;}
+.chart_legend_win:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#84b9ff;}
 .chart_legend_lose {float:left;position:relative;height:1.5rem;font-size:1rem;font-weight:normal;line-height:normal;color:#444444;padding-left:1.3333rem;margin-left:1.0667rem;}
-.chart_legend_lose:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#f2a18d;}
+.chart_legend_lose:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#ffbeac;}
 .chart_legend_draw {float:left;position:relative;height:1.5rem;font-size:1rem;font-weight:normal;line-height:normal;color:#444444;padding-left:1.3333rem;margin-left:1.0667rem;}
-.chart_legend_draw:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#d4d5d9;}
-.bb-tooltip {display:inline-block;white-space:nowrap;min-width:11.1333rem;height:2.1333rem;padding:0.2667rem 0.7rem 0.3667rem;border-radius:1.0667rem;border:solid 1px #525252;background-color:rgba(255,255,255,0.7);text-align:center;font-size:1rem;font-weight:500;line-height:1.5rem;color:#525252;}
+.chart_legend_draw:before {content:'';position:absolute;top:0.3333rem;left:0;width:0.9667rem;height:0.9667rem;border-radius:0.2rem;background-color:#dfdfdf;}
+.bb-tooltip {display:inline-block;white-space:nowrap;min-width:11.1333rem;height:2.1333rem;padding:0.2667rem 0.7rem 0.3667rem;border-radius:1.0667rem;border:solid 1px #525252;background-color:rgba(255,255,255,0.7);text-align:center;font-size:1rem;font-weight:500;line-height:1.5rem;color:#525252;-webkit-box-shadow:none;box-shadow:none;}
 
 
 
