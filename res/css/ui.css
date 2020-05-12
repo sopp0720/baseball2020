@@ -544,7 +544,7 @@
 .team.content .pitching_type .type_wrap > div.type3 .i_ratio {background-color:#98a2b4;}
 .team.content .pitching_type .type_wrap > div.type4 .i_ratio {background-color:#b5bfcc;}
 .team.content .pitching_type .type_wrap > div .i_name,
-.team.content .pitching_type .type_wrap > div .i_speed {margin-top:0.3333rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;line-height:1.47;}
+.team.content .pitching_type .type_wrap > div .i_speed {margin-top:0.3333rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;line-height:1.47;white-space:nowrap;}
 .team.content .pitching_type .type_wrap > div .i_speed {margin-top:0;}
 .team.content .pitching_type .type_wrap > div.type2 .i_name,
 .team.content .pitching_type .type_wrap > div.type3 .i_name,
