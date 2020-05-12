@@ -986,12 +986,13 @@
 .relay.content .vs_tbl .cell_center {padding-left:0;padding-right:0;font-size:1.2rem;font-weight:500;color:#858585;text-align:center;}
 .relay.content .vertical_pitcher_graph {display:table;margin-top:2rem;margin-bottom:0.4667rem;width:100%;table-layout:fixed;}
 .relay.content .vertical_pitcher_graph > div {display:table-cell;height:22.2333rem;}
-.relay.content .vertical_pitcher_graph .pitcher_type_wrap {width:33.805668%;vertical-align:middle;}
+.relay.content .vertical_pitcher_graph .pitcher_type_wrap_inner {height:22.2333rem;display:table;}
+.relay.content .vertical_pitcher_graph .pitcher_type_wrap {width:33.805668%;vertical-align:middle;height:22.2333rem;}
 .relay.content .vertical_pitcher_graph .pitcher_type_wrap.left .i_name {padding-right:1rem;text-align:right;}
 .relay.content .vertical_pitcher_graph .pitcher_type_wrap.right .i_name {padding-left:1rem;text-align:left;}
 .relay.content .vertical_pitcher_graph .pitcher_type_wrap .graph_none:before {content:'';display:block;margin:0 auto;width:100%;height:6rem;background-image: url('../images/img-player-empty-s.png');background-repeat:no-repeat;background-size:auto 100%;background-position:50% 50%;}
 .relay.content .vertical_pitcher_graph .pitcher_type_wrap .graph_none > p {margin-top:0.6rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:500;text-align:center;color:#b4b4b4;}
-.relay.content .vertical_pitcher_graph .pitcher_type {display:table;width:100%;table-layout:fixed;}
+.relay.content .vertical_pitcher_graph .pitcher_type {display:table-row;width:100%;table-layout:fixed;}
 .relay.content .vertical_pitcher_graph .pitcher_type > span {display:table-cell;vertical-align:middle;}
 .relay.content .vertical_pitcher_graph .pitcher_type .i_name {width:7.4667rem;font-size:1.2667rem;font-weight:500;line-height:1.32;}
 .relay.content .vertical_pitcher_graph .pitcher_type .i_name .i_speed {color:#858585;}
