@@ -803,7 +803,7 @@
 .relay.content .chat_btm {position:fixed;bottom:0;left:0;right:0;background-color:#fff;border-top:1px solid #dee1e6;padding:0 7.1333rem 0 4.2rem;}
 .relay.content .chat_input {display:table;width:100%;max-height:10.4rem;height:5.0667rem;padding:1rem 0;}
 .relay.content .textarea_wrap {position:relative;width:100%;vertical-align:middle;display:table-cell;font-size:0;}
-.relay.content .textarea {position:relative;z-index:1;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;background-color:transparent;}
+.relay.content .textarea {position:relative;z-index:1;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;background-color:transparent;font-weight:500;}
 .relay.content .textarea::-webkit-input-placeholder {color:#858585 !important;font-size:1.4667rem;line-height:2.1667rem;}
 .relay.content .dummy {position:absolute;left:0;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;-webkit-user-select:none;user-select:none;opacity:0;}
 .relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.7rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
@@ -1211,7 +1211,7 @@
 .relay.content .current_sec .current_player .info_tbl > div:nth-child(odd) {background-color:#f5f6f9;}
 .relay.content .current_sec .current_player .info_tbl > div:nth-child(even) {background-color:#fbfcfd;}
 .relay.content .current_sec .current_player .info_tbl > div:last-child {border-right:0;}
-.relay.content .current_sec .current_player .info_tbl > div span {display:block;width:2.3333rem;height:auto;font-size:1.2667rem;color:#2b2b2b;}
+.relay.content .current_sec .current_player .info_tbl > div span {display:block;height:auto;font-size:1.2667rem;color:#2b2b2b;}
 .relay.content .current_sec .current_player .info_tbl > div b {display:block;position:absolute;top:0;right:0.8667rem;width:3rem;height:auto;font-size:1.2667rem;font-weight:bold;text-align:right;}
 .relay.content .current_sec .current_player .count_desc {margin-top:1.3333rem;}
 .relay.content .current_sec .current_player .count_desc + .count_desc {margin-top: 0.3333rem;}
@@ -1588,7 +1588,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 /* tab_teamlist */
 .tab_teamlist_wrap {position:relative;height:8.5334rem;}
-.tab_teamlist_wrap:first-of-type {height:10.2rem;}
+.tab_teamlist_wrap:first-of-type {height:10.5333rem;}
 .tab_teamlist_wrap .tab_teamlist {position:absolute;padding-top:1.6667rem;width:100%;left:0;right:0;margin-top:0;z-index:5;background-color:#fff;transition:top ease-out .3s;}
 .tab_teamlist_wrap.off .tab_teamlist {position:fixed;top:-8.5334rem !important;}
 .tab_teamlist_wrap.on .tab_teamlist {position:fixed;top:0 !important;}
@@ -1709,17 +1709,17 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_responsive.table_vs .table_right th:last-of-type .cell,
 .table_responsive.table_vs .table_right td:last-of-type .cell {padding-right:1rem;padding-left:0.3333rem;min-width:4.6667rem;}
 
-.table_player .table_left {width:11.6rem;}
+.table_player .table_left {width:12.6rem;}
 .table_player .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
 .table_player .table_left .cell .num {float:left;width:1.1333rem;height:1.7333rem;font-family:'bebas_neueregular';font-size:1.4rem;font-weight:normal;text-align:center;color:#2b2b2b;margin:1.3rem 0 0 0.4667rem;}
 .table_player .table_left .cell .player_sm {float:left;margin:0.4rem 0 0 0.4rem;}
 .table_player .table_left .cell .player_circle_sm {float:left;margin:0.4rem 0 0 0.4rem;}
-.table_player .table_left .cell .player_wrap {float:left;width:5rem;margin:0.4rem 0 0 0.5rem;text-align:left;font-size:0;}
+.table_player .table_left .cell .player_wrap {float:left;width:6rem;margin:0.4rem 0 0 0.5rem;text-align:left;font-size:0;}
 .table_player .table_left .cell .player_name {font-size:1.2667rem;font-weight:500;line-height:normal;color:#2b2b2b;}
 .table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
 .table_player .table_left .cell .player_position {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#525252;}
 .table_player .table_left .cell .player_team .my_team {position:absolute;top:0.0667rem;right:0;width:1.3333rem;height:1.3333rem;background-image:url("../images/icon_my.png");background-size:1.3333rem;border-radius:100%;}
-.table_player .table_right.scroll {left:11.6rem;}
+.table_player .table_right.scroll {left:12.6rem;}
 .table_responsive.table_team_rainking .table_right th:first-child .cell,
 .table_responsive.table_team_rainking .table_right td:first-child .cell {padding-left:1.0333rem !important;}
 .table_responsive.table_team_rainking .table_right {overflow-x:hidden;}
@@ -1739,9 +1739,9 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_hit300 .table_right .cell {min-width:3.7333rem;}
 .table_hit300 .table_right .table tbody .cell {padding-top:1.5333rem;padding-bottom:1.5rem;}
 
-.table_hit300.no_num .table_left {width:10.9333rem;}
+.table_hit300.no_num .table_left {width:11.9333rem;}
 .table_hit300.no_num .table_left .cell .player_sm {margin-left:0.6667rem;}
-.table_hit300.no_num .table_right.scroll {left:10.9333rem;}
+.table_hit300.no_num .table_right.scroll {left:11.9333rem;}
 
 /* 3할 이상타자 */
 .table_hit300 .table_left .hit300 .num,
