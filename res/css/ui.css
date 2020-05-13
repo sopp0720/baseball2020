@@ -856,25 +856,25 @@
 .relay.content .relay_card_wrap + .tab_1depth {margin-top:0;}
 .relay.content .relay_card_wrap + .tab_1depth_wrap  +.sec_wrapper {padding-top:2.5333rem;}
 
-.relay.content .relay_video_thumb {position:fixed;top:0;left:0;right:0;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;z-index:10;}
-.relay.content .relay_video_thumb.active {padding-bottom:0;}
-.relay.content .relay_video_thumb .abs_wrap {z-index:1;}
-.relay.content .relay_video_thumb .ic_show {display:block;position:absolute;top:0.4rem;left:0.4rem;width:4rem;height:4rem;background:url('../images/ic-show.png') no-repeat;background-size:100% auto;z-index:2;}
-.relay.content .relay_video_thumb .game_info {text-align:center;}
-.relay.content .relay_video_thumb .game_info span {display:inline-block;padding:0.6rem 0.3333rem;height:3.1rem;border-top:1px solid rgba(216,216,216,.1);border-bottom:1px solid rgba(216,216,216,.1);font-size:1.1rem;text-align:center;color:rgba(255,255,255,.6);vertical-align:top;}
-.relay.content .relay_video_thumb .relay_top_info {position:relative;margin-top:1.9rem;}
-.relay.content .relay_video_thumb .relay_top_info .team_info {position:absolute;top:0;width:8.9rem;}
-.relay.content .relay_video_thumb .relay_top_info .team_info.left {left:3.5667rem;}
-.relay.content .relay_video_thumb .relay_top_info .team_info.right {right:3.5667rem;}
-.relay.content .relay_video_thumb .relay_top_info .team_info .team_logo {display:block;margin:0 auto;width:4.9rem;height:4.3rem;}
-.relay.content .relay_video_thumb .relay_top_info .team_info .team_name {display:block;margin-top:0.6rem;width:100%;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;color:#ffffff;}
-.relay.content .relay_video_thumb .relay_top_info .vs_box {margin:0 auto;padding-top:0.3rem;width:7.6rem;}
-.relay.content .relay_video_thumb .relay_top_info .vs_box .vs_img {display:block;width:7.6rem;height:3.8rem;background:url('../images/ic-vs.png') no-repeat;background-size:100% auto;}
-.relay.content .relay_video_thumb .relay_top_info .vs_box .time_spot {display:block;margin-top:0.9rem;height:2.1rem;font-size:1.4rem;font-weight:500;text-align:center;color:#ffffff;}
-.relay.content .relay_video_thumb .relay_top_info .tag_info {margin-top:0.9rem;font-size:0;text-align:center;}
-.relay.content .relay_video_thumb .relay_top_info .tag_info .ic_tag {display:inline-block;margin-left:0.4rem;padding:0 0.5rem;height:1.4rem;line-height:1.4rem;font-size:0.8rem;font-weight:bold;color:#ffffff;background-color:#c10a3a;border-radius:1.2233rem;}
-.relay.content .relay_video_thumb .relay_top_info .tag_info .ic_tag:first-child {margin-left:0;}
-.relay.content .relay_video_thumb .relay_top_info .relay_channel {display:block;margin-top:1rem;height:1.8rem;font-size:1.2rem;text-align:center;color:rgba(255,255,255,.6);text-align:center;}
+.content .relay_video_thumb {position:fixed;top:0;left:0;right:0;height:0;padding-bottom:56.25%;background-repeat:no-repeat;background-size:100% auto;z-index:10;}
+.content .relay_video_thumb.active {padding-bottom:0;}
+.content .relay_video_thumb .abs_wrap {z-index:1;}
+.content .video_wrap .ic_show {display:block;position:absolute;top:0.4rem;left:0.4rem;width:4rem;height:4rem;background:url('../images/ic-show.png') no-repeat;background-size:100% auto;z-index:11;}
+.content .video_wrap .game_info {text-align:center;}
+.content .video_wrap .game_info span {display:inline-block;padding:0.6rem 0.3333rem;height:3.1rem;border-top:1px solid rgba(216,216,216,.1);border-bottom:1px solid rgba(216,216,216,.1);font-size:1.1rem;text-align:center;color:rgba(255,255,255,.6);vertical-align:top;}
+.content .video_wrap .relay_top_info {position:relative;margin-top:1.9rem;}
+.content .video_wrap .relay_top_info .team_info {position:absolute;top:0;width:8.9rem;}
+.content .video_wrap .relay_top_info .team_info.left {left:3.5667rem;}
+.content .video_wrap .relay_top_info .team_info.right {right:3.5667rem;}
+.content .video_wrap .relay_top_info .team_info .team_logo {display:block;margin:0 auto;width:4.9rem;height:4.3rem;}
+.content .video_wrap .relay_top_info .team_info .team_name {display:block;margin-top:0.6rem;width:100%;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;color:#ffffff;}
+.content .video_wrap .relay_top_info .vs_box {margin:0 auto;padding-top:0.3rem;width:7.6rem;}
+.content .video_wrap .relay_top_info .vs_box .vs_img {display:block;width:7.6rem;height:3.8rem;background:url('../images/ic-vs.png') no-repeat;background-size:100% auto;}
+.content .video_wrap .relay_top_info .vs_box .time_spot {display:block;margin-top:0.9rem;height:2.1rem;font-size:1.4rem;font-weight:500;text-align:center;color:#ffffff;}
+.content .video_wrap .relay_top_info .tag_info {margin-top:0.9rem;font-size:0;text-align:center;}
+.content .video_wrap .relay_top_info .tag_info .ic_tag {display:inline-block;margin-left:0.4rem;padding:0 0.5rem;height:1.4rem;line-height:1.4rem;font-size:0.8rem;font-weight:bold;color:#ffffff;background-color:#c10a3a;border-radius:1.2233rem;}
+.content .video_wrap .relay_top_info .tag_info .ic_tag:first-child {margin-left:0;}
+.content .video_wrap .relay_top_info .relay_channel {display:block;margin-top:1rem;height:1.8rem;font-size:1.2rem;text-align:center;color:rgba(255,255,255,.6);text-align:center;}
 
 /* game end */
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info {width:6.5rem;}
@@ -1809,6 +1809,30 @@ background-color:#f2f3f4;}
 .table_responsive.table_abl_league .table_right td:first-of-type .cell {padding-left:1rem;padding-right:0.3333rem;min-width:4.6667rem;}
 .table_responsive.table_abl_league .table_right th:last-of-type .cell,
 .table_responsive.table_abl_league .table_right td:last-of-type .cell {padding-right:1rem;padding-left:0.3333rem;min-width:4.6667rem;}
+
+/* agreement */
+.agree_wrap {padding:0 1.5667rem 8.9333rem;}
+.agree_wrap .agree_txt {overflow:hidden;}
+.agree_wrap .agree_txt p {margin-top:1rem;font-size:1.3333rem;font-weight:normal;line-height:1.9667rem;text-align:center;color:#000000;}
+.agree_wrap .agree_txt .desc {margin-top:1rem;font-size:1.2rem;font-weight:normal;line-height:1.8rem;text-align:center;color:#858585;}
+.agree_wrap .agree_list {margin-top:2rem;border-radius:0.7333rem;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);background-color:#ffffff;padding:0.1667rem 1.7rem 1.1667rem 1.6333rem;}
+.agree_wrap .agree_list:after {clear:both;content:'';display:block;}
+.agree_wrap .agree_list li {float:left;width:100%;position:relative;margin-top:1rem;padding:0.6667rem 0.8rem 0.6667rem 0;}
+.agree_wrap .agree_list li .agree_link {position:absolute;top:50%;right:0;margin-top:-0.7rem;width:0.8rem;height:1.4rem;}
+.agree_wrap .agree_list li .agree_link:after {content:'';position:absolute;z-index:1;left:0;top:0;width:0.8rem;height:1.4rem;background:url('../images/ic-arrow-gray.png') no-repeat;background-size:100%;}
+.agree_wrap .agree_list li .agree_link:before {content:'';border-radius:50%;position:absolute;left:-0.7rem;top:-0.4rem;width:2.2rem;height:2.2rem;}
+.agree_wrap .agree_list li.all {margin-top:1.1667rem;padding-top:1.8333rem;border-top:1px solid #f8f8f9;}
+.agree_wrap .control_wrap {font-size:0;}
+.agree_wrap .check_circle {position:relative;vertical-align:top;width:2.4rem;height:2.4rem;display:inline-block;}
+.agree_wrap .check_circle .checkbox {position:absolute;top:0;left:0;width:2.4rem;height:2.4rem;padding:0;margin:0;z-index:1;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;outline:none;background-color:transparent;border:0;}
+.agree_wrap .check_circle .check_bg {position:absolute;left:0;right:0;bottom:0;top:0;background-image:url(../images/ic-checkbox-off-s.png);background-size:100%;-webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;}
+.agree_wrap .check_circle .check_bg_on {display:none;position:absolute;left:0;right:0;bottom:0;top:0;background-image:url(../images/ic-checkbox-on-s.png);background-size:100%;}
+.agree_wrap .check_circle input[type="checkbox"]:checked.checkbox ~ .checkbox {display:none;}
+.agree_wrap .check_circle input[type="checkbox"]:checked.checkbox ~ .check_bg_on {display:block;}
+.agree_wrap .control_wrap label {vertical-align:top;display:inline-block;padding-left:1rem;font-size:1.4667rem;font-weight:500;line-height:2.4rem;color:#000000;}
+.agree_wrap .control_wrap label span {font-size:1.2rem;font-weight:normal;color:#b4b4b4;vertical-align:top;padding-left:0.3333rem;line-height:2.4rem;}
+.agree_wrap .check_desc {margin-top:0.1667rem;padding:0 4.5rem 0 3.4rem;font-size:1.1333rem;font-weight:normal;line-height:1.6rem;color:#858585;}
+.agree_wrap .agree_txt_btm {margin-top:1.6667rem;font-size:1.0667rem;font-weight:normal;line-height:1.5667rem;text-align:center;color:#b4b4b4;}
 
 /* chart common */
 .bb svg {font:10px sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0);}

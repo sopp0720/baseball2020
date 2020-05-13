@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<div id="wrap" data-theme="theme_default">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content">
+			<!-- page title, btn back -->
+			<div class="page_title_wrap">
+				<div class="inner">
+					<h2>약관 동의</h2>
+				</div>
+			</div>
+			<!-- // page title, btn back -->
+			<div class="agree_wrap terms_form">
+				<div class="agree_txt">
+					<p>고객님을 더 잘 알고, 마음에 쏙 드는 컨텐츠를<br>
+					보여드리기 위해 서비스가 새롭게 개편되며<br>
+					일부 약관이 개정되었습니다.</p>
+					<p class="desc">한번의 동의 후 즐겁게 이용해 주세요.</p>
+				</div>
+				<ul class="agree_list">
+					<li>
+						<div class="control_wrap">
+							<div class="check_circle">
+								<input class="checkbox" type="checkbox" id="check_circle1">
+								<div class="check_bg"></div>
+								<div class="check_bg_on"></div>
+							</div>
+							<label for="check_circle1">이용 약관 동의<span>(필수)</span></label>
+						</div>
+						<div class="agree_link usetap"></div>
+					</li>
+					<li>
+						<div class="control_wrap">
+							<div class="check_circle">
+								<input class="checkbox" type="checkbox" id="check_circle2">
+								<div class="check_bg"></div>
+								<div class="check_bg_on"></div>
+							</div>
+							<label for="check_circle2">개인 정보 처리 위탁 동의<span>(필수)</span></label>
+						</div>
+						<div class="agree_link usetap"></div>
+					</li>
+					<li>
+						<div class="control_wrap">
+							<div class="check_circle">
+								<input class="checkbox" type="checkbox" id="check_circle3">
+								<div class="check_bg"></div>
+								<div class="check_bg_on"></div>
+							</div>
+							<label for="check_circle3">마케팅 수신 동의<span>(선택)</span></label>
+						</div>
+						<div class="check_desc">이벤트 프로모션 등 광고/정보를 문자, 이메일 등으로 받아 봅니다.</div>
+						<div class="agree_link usetap"></div>
+					</li>
+					<li class="all">
+						<div class="control_wrap">
+							<div class="check_circle">
+								<input class="checkbox" type="checkbox" id="check_circle4">
+								<div class="check_bg"></div>
+								<div class="check_bg_on"></div>
+							</div>
+							<label for="check_circle4">전체동의</label>
+						</div>
+					</li>
+				</ul>
+				<div class="agree_txt_btm">고객님께서는 위 사항에 대해 거부하실 권리가 있습니다.<br>
+				단, 미 동의 시 서비스 이용에 제한이 있을 수 있는 점 양해 부탁 드립니다.</div>
+				<div class="bt_btn_box">
+					<div class="btn_box_inner">
+						<!-- 버튼 한 개 
+						<button type="button" class="btn_lg btn_theme usetap">이전버전 보기</button>
+						 // 버튼 한 개 -->
+						<!-- 버튼 두 개 -->
+						<button type="button" class="btn_sm btn_gray usetap">동의하지 않습니다</button>
+						<button type="button" class="btn_sm btn_theme usetap">동의합니다</button>
+						<!-- // 버튼 두 개 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="res/js/common.js"></script>
+<script src="res/js/floating.js"></script>
+<script>
+floatUI.init();
+</script>
+</body>
+</html>
