@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* webfont rules */
-/*@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');*/
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+/*
 @font-face {
 	font-family: 'Noto Sans KR';
 	src: url("../fonts/noto_sans_kr/NotoSansKR-Black.otf?#iefix") format("embedded-opentype"), url("../fonts/noto_sans_kr/NotoSansKR-Black.woff2") format("woff2"), url("../fonts/noto_sans_kr/NotoSansKR-Black.woff") format("woff");
@@ -37,6 +38,7 @@
 	font-style: normal;
 	font-weight: 100;
 }
+*/
 @font-face {
     font-family: 'bebas_neueregular';
     src: url('../fonts/bebas_neue/bebasneue-regular-webfont.eot');
