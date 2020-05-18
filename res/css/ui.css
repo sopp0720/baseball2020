@@ -504,8 +504,8 @@
 .team.content .player_info_wrap .player_info dl dd:nth-child(2) {margin-top:0;}
 
 .team.content .player_info_table_wrap .table_responsive + .title_hd {margin-top:2rem;}
-.team.content .player_info_table_wrap .title_hd + .table_responsive:not(.table_style1) {height:7.3rem;}
-.team.content .player_info_table_wrap .title_hd + .table_responsive:not(.table_style1) .table_right.scroll {left:0;}
+.team.content .player_info_table_wrap .title_hd + .table_responsive:not(.table_style1) {height:7.3rem;margin-left:-1.5333rem;}
+.team.content .player_info_table_wrap .title_hd + .table_responsive:not(.table_style1) .table_right.scroll {left:0;padding-left:1.5333rem;}
 .team.content .player_info_table_wrap .title_hd + .table_responsive:not(.table_style1) .table_right_inner {border-left:1px solid #dee1e6;border-top-left-radius:0.7333rem;border-bottom-left-radius:0.7333rem;}
 .team.content .video_scroll {margin-top:1rem;}
 .team.content .video_scroll ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;overflow-y:hidden;font-size:0;}
@@ -1441,7 +1441,7 @@
 
 /* My - event detail */
 .my.content .event_detail .content {position:relative;padding:1.53333rem 0;}
-.my.content .event_detail .content img {display:block;max-width:100%;height:auto;}
+.my.content .event_detail .content img {display:block;max-width:100%;height:auto;border-radius:0.7333rem;}
 .my.content .event_detail .control_wrap {position:relative;margin-top:1.6667rem;padding-right:7.2rem;}
 .my.content .event_detail .check_circle {position:relative;vertical-align:top;width:2rem;height:2rem;display:inline-block;}
 .my.content .event_detail .check_circle .checkbox {position:absolute;top:0;left:0;width:2rem;height:2rem;padding:0;margin:0;z-index:1;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;outline:none;background-color:transparent;border:0;}
