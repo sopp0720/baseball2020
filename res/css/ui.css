@@ -87,7 +87,7 @@
 
 /* Year slider  */
 .year_wrap {position:relative;margin:3.3333rem auto 2.3333rem;width:55.5%;height:4.2667rem;text-align:center;font-size:0;}
-.year_wrap .i_year {display:inline-block;font-family:'bebas_neueregular';font-size:3rem;font-weight:normal;letter-spacing:0.09rem;color:#000000;line-height:4.2667rem;vertical-align:top;}
+.year_wrap .i_year {display:inline-block;font-family:'Bebas Neue';font-size:3rem;font-weight:normal;letter-spacing:0.09rem;color:#000000;line-height:4.2667rem;vertical-align:top;}
 .year_wrap .year_arrow {display:block;position:absolute;top:0;width:4rem;height:4.2667rem;background-repeat:no-repeat;background-size:100% auto;}
 .year_wrap .year_arrow.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 .year_wrap .year_arrow.i_prev {left:0;background-image:url('../images/ic-previous-b.png');}
@@ -98,7 +98,7 @@
 /* Month slider  */
 .month_wrap {position:relative;margin:1.5rem auto 0;width:54.65587%;height:4.2667rem;text-align:center;font-size:0;}
 .month_wrap .i_month {display:block;text-align:center;font-size:0;}
-.month_wrap .i_month b {display:inline-block;margin:0.4rem 0 0;height:3.8rem;line-height:3.7rem;font-family:'bebas_neueregular';font-size:3.1667rem;font-weight:normal;letter-spacing:0.095rem;color:#000000;vertical-align:top;}
+.month_wrap .i_month b {display:inline-block;margin:0.4rem 0 0;height:3.8rem;line-height:3.7rem;font-family:'Bebas Neue';font-size:3.1667rem;font-weight:normal;letter-spacing:0.095rem;color:#000000;vertical-align:top;}
 .month_wrap .i_month span {display:inline-block;margin:0.4rem 0 0 0.1667rem;height:3.8rem;line-height:4.3467rem;font-size:1.6rem;font-weight:500;letter-spacing:0.048rem;color:#000000;vertical-align:top;}
 .month_wrap .i_month b + span + b {margin-left:0.6667rem;}
 .month_wrap .month_arrow {display:block;position:absolute;top:0;width:4rem;height:4.2667rem;background-repeat:no-repeat;background-size:100% auto;}
@@ -204,7 +204,7 @@
 .home.content .score_today > div.middle_box .logo_na.mlb {background-image:url("../images/ic-logo-mlb-navy.png");} /* KBO logo */
 .home.content .score_today > div.middle_box .title {display:block;height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#2b2b2b;text-align:center;}
 .home.content .score_today > div.middle_box .play_score {overflow:hidden;}
-.home.content .score_today > div.middle_box .play_score em {display:block;float:left;width:3.5rem;height:4.0667rem;font-family:'bebas_neueregular';font-weight:normal;font-size:4rem;line-height:4.8rem;font-style:normal;color:#000000;}
+.home.content .score_today > div.middle_box .play_score em {display:block;float:left;width:3.5rem;height:4.0667rem;font-family:'Bebas Neue';font-weight:normal;font-size:4rem;line-height:4.8rem;font-style:normal;color:#000000;}
 .home.content .score_board_wrap.kbo {border-top:0;}
 .home.content .score_board_wrap .result_val {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#c2c3c7;}
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main {display:block;float:left;width:5.6667rem;height:4.0667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:1.4333rem 2.2rem;}
@@ -231,7 +231,7 @@
 .home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:14rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .play_score {padding-top:0.2667rem;overflow:hidden;}
-.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:3.1333rem;height:3.1rem;font-family:'bebas_neueregular';font-size:3.3333rem;line-height:3.6667rem;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:3.1333rem;height:3.1rem;font-family:'Bebas Neue';font-size:3.3333rem;line-height:3.6667rem;font-style:normal;color:#000000;}
 .home.content .score_board_wrap .play_list li > div.middle_box .ic_vs_main {width:7.7333rem;height:3.1rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .info_today {margin:0.7rem 0 0.7667rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:1.6667rem;line-height:1.8667rem;font-size:1.2667rem;color:#2b2b2b;}
@@ -248,8 +248,8 @@
 .home.content .score_moment li .logo_kbo.left {margin-right:0.2333rem;}
 .home.content .score_moment li .logo_kbo.right {margin-left:0.2333rem;}
 .home.content .score_moment li .logo_kbo > span {margin:0.2667rem 0.1667rem;width:2.5333rem;height:2rem;}
-.home.content .score_moment li > em {float:left;margin:0;width:1.6667rem;height:100%;line-height:2.5333rem;font-family:'bebas_neueregular';font-size:2.1rem;font-style:normal;color:#000000;}
-.home.content .score_moment li > .i_colon {float:left;margin:0 0.6rem;width:0.4rem;height:100%;font-family:'bebas_neueregular';font-size:2.1rem;font-weight:bold;color:#000000;text-align:center;}
+.home.content .score_moment li > em {float:left;margin:0;width:1.6667rem;height:100%;line-height:2.5333rem;font-family:'Bebas Neue';font-size:2.1rem;font-style:normal;color:#000000;}
+.home.content .score_moment li > .i_colon {float:left;margin:0 0.6rem;width:0.4rem;height:100%;font-family:'Bebas Neue';font-size:2.1rem;font-weight:bold;color:#000000;text-align:center;}
 
 /* home mlb */
 .home.content .mlb .score_today > div.team_img_wrap {padding-top:0.4rem;}
@@ -351,7 +351,7 @@
 .team.content .main_info .i_team .name {display:block;position:relative;float:left;margin-left:0.7667rem;padding-left:0.9rem;height:3.6333rem;line-height:3.6333rem;font-size:1.6667rem;font-weight:bold;font-style:normal;color:#000000;}
 .team.content .main_info .i_team .name i {display:inline-block;position:absolute;top:1.2333rem;left:0;width:0.1333rem;height:1.2667rem;opacity:0.4;background-color:#c2c3c7;}
 .team.content .main_info .slogan {margin-top:2.6333rem;padding-right:0.8rem;text-align:right;}
-.team.content .main_info .slogan strong {height:2.4rem;text-shadow:0 0 0.5rem rgba(0, 0, 0, 0.24);font-family:'bebas_neueregular';font-size:2rem;font-weight:normal;font-style:normal;line-height:normal;letter-spacing:0.0833rem;color:#ffffff;}
+.team.content .main_info .slogan strong {height:2.4rem;text-shadow:0 0 0.5rem rgba(0, 0, 0, 0.24);font-family:'Bebas Neue';font-size:2rem;font-weight:normal;font-style:normal;line-height:normal;letter-spacing:0.0833rem;color:#ffffff;}
 .team.content .main_info .slogan p {height:1.9667rem;text-shadow:0 0 0.5rem rgba(0, 0, 0, 0.24);font-size:1.3333rem;font-weight:500;letter-spacing:-0.0333rem;color:#ffffff;}
 .team.content .main_info .sub_desc {margin-top:0.8667rem;padding-right:0.8rem;font-size:0;text-align:right;opacity:0.6;}
 .team.content .main_info .sub_desc span {display:inline-block;height:1.6667rem;line-height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#ffffff;vertical-align:top;}
@@ -427,18 +427,18 @@
 .team.content .sec_rate .desc {margin-left:5.6rem;padding-left:0.1333rem;height:5rem;font-size:0;border-bottom:1px solid #f8f8f9;}
 .team.content .sec_rate .desc > span {display:inline-block;line-height:4.3333rem;vertical-align:top;}
 .team.content .sec_rate .desc > strong {float:right;display:inline-block;line-height:4.3333rem;vertical-align:top;}
-.team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'bebas_neueregular';font-size:1.8667rem;font-weight:normal;color:#000000;opacity:0.8;text-align:center;line-height:4.2833rem;}
+.team.content .sec_rate .desc .num {min-width:1.6667rem;font-family:'Bebas Neue';font-size:1.8667rem;font-weight:normal;color:#000000;opacity:0.8;text-align:center;line-height:4.2833rem;}
 .team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.3333rem;font-weight:500;color:#000000;}
 .team.content .sec_rate .desc .position {margin-left:0.6rem;font-size:1.0667rem;font-weight:normal;color:#525252;}
 .team.content .sec_rate .desc .my_team {margin-top:1.4rem;margin-left:0.2667rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
-.team.content .sec_rate .desc .rate_num {font-family:'bebas_neueregular';font-size:1.5333rem;font-weight:normal;text-align:right;color:#000000;}
+.team.content .sec_rate .desc .rate_num {font-family:'Bebas Neue';font-size:1.5333rem;font-weight:normal;text-align:right;color:#000000;}
 .team.content .sec_team_position {padding:2.6667rem 0 0;}
 .team.content .sec_team_position .img_team_position {position:relative;margin-top:2.6667rem;width:100%;padding-bottom:59.537037%;height:0;background-repeat:no-repeat;background-size:100% auto;}
 .team.content .sec_team_position .img_team_position.team_pitcher {background-image:url('../images/position_pitcher.png');}
 .team.content .sec_team_position .img_team_position.team_catcher {background-image:url('../images/position_catcher.png');}
 .team.content .sec_team_position .img_team_position.team_infielder {background-image:url('../images/position_infielder.png');}
 .team.content .sec_team_position .img_team_position.team_outfielder {background-image:url('../images/position_outfielder.png');}
-.team.content .sec_team_position .img_team_position .team_name {display:block;position:absolute;bottom:7.153965%;right:4.259259%;height:2.0333rem;font-family:'bebas_neueregular';font-size:1.6667rem;font-weight:normal;text-align:right;color:#b8b8c0;}
+.team.content .sec_team_position .img_team_position .team_name {display:block;position:absolute;bottom:7.153965%;right:4.259259%;height:2.0333rem;font-family:'Bebas Neue';font-size:1.6667rem;font-weight:normal;text-align:right;color:#b8b8c0;}
 .team.content .sec_team_position .team_position_all {margin-top:3.3333rem;}
 .team.content .sec_team_position .team_position_all ul {margin-bottom:1.6667rem;overflow:hidden;}
 .team.content .sec_team_position .team_position_all li {float:left;margin-top:6.578947%;margin-left:5.263157%;width:21.052631%;}
@@ -540,7 +540,7 @@
 .team.content .pitching_type .type_wrap {margin-top:1rem;overflow:hidden;display:table;width:100%;}
 .team.content .pitching_type .type_wrap > div {display:table-cell;text-align:center;}
 .team.content .pitching_type .type_wrap > div > span {display:block;}
-.team.content .pitching_type .type_wrap > div .i_ratio {height:3rem;line-height:3rem;font-family:'bebas_neueregular';font-size:1.6667rem;color:#ffffff;}
+.team.content .pitching_type .type_wrap > div .i_ratio {height:3rem;line-height:3rem;font-family:'Bebas Neue';font-size:1.6667rem;color:#ffffff;}
 .team.content .pitching_type .type_wrap > div.type2 .i_ratio {background-color:#828ca2;}
 .team.content .pitching_type .type_wrap > div.type3 .i_ratio {background-color:#98a2b4;}
 .team.content .pitching_type .type_wrap > div.type4 .i_ratio {background-color:#b5bfcc;}
@@ -613,7 +613,7 @@
 .team.content .schedule_box_wrap .schedule_date b,
 .team.content .schedule_box_wrap .schedule_date span,
 .team.content .schedule_box_wrap .schedule_date i {display:inline-block;vertical-align:top;}
-.team.content .schedule_box_wrap .schedule_date b {height:3.2rem;font-family:'bebas_neueregular';font-weight:normal;font-size:2.6667rem;color:#000000;}
+.team.content .schedule_box_wrap .schedule_date b {height:3.2rem;font-family:'Bebas Neue';font-weight:normal;font-size:2.6667rem;color:#000000;}
 .team.content .schedule_box_wrap .schedule_date b.i_day {margin-left:0.4667rem;}
 .team.content .schedule_box_wrap .schedule_date span {margin-top:0.4rem;margin-left:0.1333rem;height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
 .team.content .schedule_box_wrap .schedule_date i {margin-top:0.6333rem;margin-left:0.3333rem;height:2.1667rem;line-height:2.1667rem;font-size:1.4667rem;font-weight:normal;color:#858585;font-style:normal;}
@@ -627,7 +627,7 @@
 .team.content .schedule_box .right_box .team_name {margin-left:0.8333rem;}
 .team.content .schedule_box .middle_box {margin:0 auto;padding:1.5667rem 0 0;width:14.5333rem;text-align:center;overflow:hidden;}
 .team.content .schedule_box .middle_box .info_today_wrap {float:left;margin:0 0.7667rem;width:8.3333rem;}
-.team.content .schedule_box .middle_box em {display:block;float:left;margin-top:0.3333rem;width:2.3333rem;height:3.2rem;font-family:'bebas_neueregular';font-size:2.6667rem;font-weight:normal;font-style:normal;color:#000000;}
+.team.content .schedule_box .middle_box em {display:block;float:left;margin-top:0.3333rem;width:2.3333rem;height:3.2rem;font-family:'Bebas Neue';font-size:2.6667rem;font-weight:normal;font-style:normal;color:#000000;}
 .team.content .schedule_box .middle_box .info_today {display:inline-block;margin:0;padding:0 0.9rem;vertical-align:top;}
 .team.content .schedule_box .middle_box .info_round {display:block;margin:0.2667rem 0 0;height:1.8rem;font-size:1.2rem;font-weight:500;color:#2b2b2b;text-align:center;vertical-align:top;}
 .team.content .game_none {height:5.2rem;padding:1.3333rem 0 2rem;}
@@ -659,7 +659,7 @@
 .team.content .scroll_ranking li {display:inline-block;margin-left:0.6667rem;width:12.6rem;/*width:38.259109%;*/border-radius:0.7333rem 0.7333rem 0 0;overflow:hidden;vertical-align:top;}
 .team.content .scroll_ranking li:first-child {margin-left:0;}
 .team.content .scroll_ranking li .team_bg {position:relative;padding-bottom:121.164021%;height:0;background-repeat:no-repeat;background-size:100% auto;}
-.team.content .scroll_ranking li .team_bg .rank_num {display:block;position:absolute;top:6.986899%;left:7.936507%;height:2.4rem;font-family:'bebas_neueregular';font-size:2rem;color:#ffffff;}
+.team.content .scroll_ranking li .team_bg .rank_num {display:block;position:absolute;top:6.986899%;left:7.936507%;height:2.4rem;font-family:'Bebas Neue';font-size:2rem;color:#ffffff;}
 .team.content .scroll_ranking li .team_bg .title {display:block;padding-top:9.259259%;height:2.2rem;font-size:1.5rem;font-weight:bold;color:#ffffff;letter-spacing:-0.075rem;text-align:center;}
 .team.content .scroll_ranking li .team_bg .my_team {display:block;position:absolute;top:6.613756%;right:6.613756%;width:1.6667rem;height:1.6667rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.4667rem;background-color:rgba(0,0,0,.3);}
 .team.content .scroll_ranking li .team_bg .rank_rate {display:block;position:absolute;bottom:1.9667rem;left:0;right:0;height:1.8667rem;line-height:1.8667rem;font-size:1.2667rem;font-weight:bold;text-align:center;color:#ffffff;}
@@ -698,7 +698,7 @@
 .relay.content .scroll_date ul {min-width:100%;margin:0.1667rem 0;padding:0 1.6667rem;height:100%;overflow:visible;white-space:nowrap;display:inline-block;}
 .relay.content .scroll_date ul li {position:relative;display:inline-block;margin-left:0.9rem;padding:0.9rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
 .relay.content .scroll_date ul li:first-child {margin-left:0;}
-.relay.content .scroll_date ul li .date_num {display:block;height:2.3rem;font-family:'bebas_neueregular';font-size:1.9333rem;font-weight:normal;color:#000000;opacity:0.35;transition:opacity ease-out .3s;}
+.relay.content .scroll_date ul li .date_num {display:block;height:2.3rem;font-family:'Bebas Neue';font-size:1.9333rem;font-weight:normal;color:#000000;opacity:0.35;transition:opacity ease-out .3s;}
 .relay.content .scroll_date ul li .date_day {display:block;height:1.8rem;font-size:1.2rem;font-weight:bold;color:#000000;opacity:0.35;transition:opacity ease-out .3s;}
 .relay.content .scroll_date ul li.i_sat .date_num,
 .relay.content .scroll_date ul li.i_sat .date_day {color:#3563c0}
@@ -730,7 +730,7 @@
 .relay.content .play_list li .middle_box .middle_inner {width:100%;display:inline-block;vertical-align:middle;white-space:normal;}
 .relay.content .play_list li .middle_box:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .relay.content .play_list li .left_score,
-.relay.content .play_list li .right_score {position:absolute;top:2.4333rem;width:3.3333rem;height:3.3333rem;font-family:'bebas_neueregular';font-size:3.6667rem;font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;color:#000000;}
+.relay.content .play_list li .right_score {position:absolute;top:2.4333rem;width:3.3333rem;height:3.3333rem;font-family:'Bebas Neue';font-size:3.6667rem;font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;color:#000000;}
 .relay.content .play_list li .left_score {left:0;text-align:right;}
 .relay.content .play_list li .left_score.res_lose {color:#c2c3c7;}
 .relay.content .play_list li .right_score {right:0;text-align:left;}
@@ -888,7 +888,7 @@
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info.left {left:4.3rem;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info.right {right:4.3rem;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box {position:relative;padding-top:1.2rem;width:14.4rem;}
-.relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .i_score {position:absolute;top:1.1rem;width:2.5rem;height:4.4rem;font-family:'bebas_neueregular';font-size:3.6rem;font-style:normal;font-weight:normal;color:#ffffff;}
+.relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .i_score {position:absolute;top:1.1rem;width:2.5rem;height:4.4rem;font-family:'Bebas Neue';font-size:3.6rem;font-style:normal;font-weight:normal;color:#ffffff;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .i_score.left {left:0;text-align:right;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .i_score.right {right:0;text-align:left;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .vs_img {margin:0 auto;}
@@ -913,7 +913,7 @@
 .relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box .team_name {margin-top:0.5333rem;}
 .relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box {padding-top:1rem;border-top:1px solid #e8e9ef;}
 .relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {float:left;width:48.3568%;height:3.0333rem;opacity:0.5;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'bebas_neueregular';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'Bebas Neue';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.5;}
 .relay.content .relay_card_wrap ul li .card_box .team_box .i_score.i_gray {color:#737787 !important;}
 .relay.content .relay_card_wrap ul li .card_box .team_box .team_name {float:left;width:51.6431%;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-align:center;opacity:0.5;}
 .relay.content .sec_analysis {padding-top:2.5333rem;}
@@ -1003,7 +1003,7 @@
 .relay.content .vertical_pitcher_graph .pitcher_type > span {display:table-cell;vertical-align:middle;}
 .relay.content .vertical_pitcher_graph .pitcher_type .i_name {width:7.4667rem;font-size:1.2667rem;font-weight:500;line-height:1.32;}
 .relay.content .vertical_pitcher_graph .pitcher_type .i_name .i_speed {color:#858585;}
-.relay.content .vertical_pitcher_graph .pitcher_type .i_ratio {width:3.6667rem;font-family:'bebas_neueregular';font-size:1.6667rem;color:#ffffff;text-align:center;}
+.relay.content .vertical_pitcher_graph .pitcher_type .i_ratio {width:3.6667rem;font-family:'Bebas Neue';font-size:1.6667rem;color:#ffffff;text-align:center;}
 .relay.content .vertical_pitcher_graph .pitcher_type.type1 .i_name .i_speed {color:inherit;}
 .relay.content .vertical_pitcher_graph .pitcher_type.type2 .i_ratio {background-color:#828ca2;}
 .relay.content .vertical_pitcher_graph .pitcher_type.type3 .i_ratio {background-color:#98a2b4;}
@@ -1046,7 +1046,7 @@
 .relay.content .starting_lineup .start_player.left .player_img_wrap .oval {right:0.9rem;}
 .relay.content .starting_lineup .start_player.right .player_img_wrap .oval {left:0.9rem;}
 .relay.content .starting_lineup .start_num {position:relative;float:none;width:7.489878%;overflow:hidden;}
-.relay.content .starting_lineup .start_num span {display:block;float:none;height:4.7667rem;line-height:4.7667rem;font-family:'bebas_neueregular';font-size:1.5333rem;color:rgba(43,43,43,.7);text-align:center;background-color:rgba(242, 243, 244, 0.4);border-bottom:1px solid #f8f8f9;}
+.relay.content .starting_lineup .start_num span {display:block;float:none;height:4.7667rem;line-height:4.7667rem;font-family:'Bebas Neue';font-size:1.5333rem;color:rgba(43,43,43,.7);text-align:center;background-color:rgba(242, 243, 244, 0.4);border-bottom:1px solid #f8f8f9;}
 .relay.content .starting_lineup .i_team_wrap {margin-top:0.6667rem;padding:0.4rem 0 0.4333rem;height:3.8667rem;border-top:1px solid #e8e9ef;border-bottom:1px solid #f8f8f9;}
 .relay.content .starting_lineup .i_team_wrap .i_team {position:relative;width:46.25506%;}
 .relay.content .starting_lineup .i_team_wrap .i_team .i_name {display:block;float:left;margin-top:0.5333rem;width:65.207877%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#474747;}
@@ -1139,7 +1139,7 @@
 .relay.content .score_scene_sec li .team_info .team_logo {display:block;float:left;width:4.3333rem;height:3.8rem;}
 .relay.content .score_scene_sec li .vs_middle_box {position:relative;margin:0.4rem auto 0;width:12.9333rem;}
 .relay.content .score_scene_sec li .vs_middle_box .vs_img {display:block;margin:0 auto;width:5.0667rem;height:2.9rem;background:url('../images/ic-vs-score-s.png') no-repeat;background-size:100% auto;}
-.relay.content .score_scene_sec li .vs_middle_box .i_score {display:block;position:absolute;top:-0.1333rem;width:2.6667rem;height:3.4333rem;font-family:'bebas_neueregular';font-weight:normal;font-style:normal;font-size:2.8667rem;color:#000000;}
+.relay.content .score_scene_sec li .vs_middle_box .i_score {display:block;position:absolute;top:-0.1333rem;width:2.6667rem;height:3.4333rem;font-family:'Bebas Neue';font-weight:normal;font-style:normal;font-size:2.8667rem;color:#000000;}
 .relay.content .score_scene_sec li .vs_middle_box .i_score.left {left:0;text-align:right;}
 .relay.content .score_scene_sec li .vs_middle_box .i_score.right {right:0;text-align:left;}
 .relay.content .score_scene_sec li .score_desc {display:block;margin-top:1.3rem;height:1.5667rem;font-size:1.0667rem;font-weight:bold;text-align:center;color:#3563c0;}
@@ -1389,7 +1389,7 @@
 .my.content .sec_my .card .player {overflow:hidden;position:relative;text-align:center;width:100%;height:16.6667rem;border-radius:0.7333rem;box-shadow:0 0.2333rem 0.9333rem 0 rgba(0, 0, 0, 0.06);background-color:#ffffff;}
 .my.content .sec_my .card.edit .player > :not(.card_close) {opacity:0.5;}
 .my.content .sec_my .card .player .card_close {position:absolute;top:0.5333rem;right:0.5333rem;width:2rem;height:2rem;background-image:url(../images/ic-card-close.png);background-size:100%;}
-.my.content .sec_my .card .player_no {margin-top:1.2667rem;height:2.1667rem;font-family:'bebas_neueregular';font-size:1.8rem;font-weight:normal;line-height:normal;color:#c10a3a;}
+.my.content .sec_my .card .player_no {margin-top:1.2667rem;height:2.1667rem;font-family:'Bebas Neue';font-size:1.8rem;font-weight:normal;line-height:normal;color:#c10a3a;}
 .my.content .sec_my .card .player_xl {margin:0.7rem auto 0;}
 .my.content .sec_my .card .player_xl .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
 .my.content .sec_my .card .player_xl .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
@@ -1706,7 +1706,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 /* team table */
 .table_team .table_left {width:7.0667rem;}
 .table_team .table_left tbody .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
-.table_team .table_left .cell .num {width:1.1333rem;height:4.3rem;margin-left:1.2rem;padding:1.3rem 0 1.2667rem;font-family:'bebas_neueregular';font-size:1.4rem;font-weight:normal;color:#2b2b2b;float:left;}
+.table_team .table_left .cell .num {width:1.1333rem;height:4.3rem;margin-left:1.2rem;padding:1.3rem 0 1.2667rem;font-family:'Bebas Neue';font-size:1.4rem;font-weight:normal;color:#2b2b2b;float:left;}
 .table_team .table_left .cell .vs {float:left;width:1.0667rem;height:1.6rem;margin:1.3667rem 0 0 1.0667rem;background-image:url(../images/table-vs.png);background-size:100%;}
 .table_team .table_left .cell .team_wrap {width:2.8333rem;height:4.3rem;text-align:center;float:right;margin-right:1rem;}
 .table_team .table_left .cell [class*="team_logo_"] {display:block;margin:0.3333rem auto 0;width:2.2667rem;height:2rem;}
@@ -1719,7 +1719,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 
 .table_player .table_left {width:12.6rem;}
 .table_player .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
-.table_player .table_left .cell .num {float:left;width:1.1333rem;height:1.7333rem;font-family:'bebas_neueregular';font-size:1.4rem;font-weight:normal;text-align:center;color:#2b2b2b;margin:1.3rem 0 0 0.4667rem;}
+.table_player .table_left .cell .num {float:left;width:1.1333rem;height:1.7333rem;font-family:'Bebas Neue';font-size:1.4rem;font-weight:normal;text-align:center;color:#2b2b2b;margin:1.3rem 0 0 0.4667rem;}
 .table_player .table_left .cell .player_sm {float:left;margin:0.4rem 0 0 0.4rem;}
 .table_player .table_left .cell .player_circle_sm {float:left;margin:0.4rem 0 0 0.4rem;}
 .table_player .table_left .cell .player_wrap {float:left;width:6rem;margin:0.4rem 0 0 0.5rem;text-align:left;font-size:0;}
@@ -1779,7 +1779,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_data_style thead th {padding:0.3rem 0 0.3667rem;border-top:1px solid #e8e9ef;border-bottom:1px solid #f8f8f9;}
 .table_data_style thead th .cell {height:1.5667rem;font-size:1.0667rem;font-weight:normal;color:#2b2b2b;text-align:center;}
 .table_data_style tbody td {padding:0.2333rem 0 0.1667rem;border-bottom:1px solid #f8f8f9;}
-.table_data_style tbody td .cell {height:2.2rem;font-family:'bebas_neueregular';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
+.table_data_style tbody td .cell {height:2.2rem;font-family:'Bebas Neue';font-size:1.8333rem;color:#2b2b2b;text-align:center;}
 .title_tbl {padding:0.2rem 0 0.1667rem;font-size:0;}
 .title_tbl span {display:inline-block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;vertical-align:top;}
 .title_tbl span + span {display:inline-block;margin:0.2rem 0 0.2rem 0.5rem;height:1.5667rem;font-size:1.0667rem;font-weight:bold;color:#858585;vertical-align:top;}
@@ -2046,7 +2046,7 @@ background-color:#f2f3f4;}
 /* layerPopup 달력 */
 .modal .calendar_header {position:relative;background-color:#fff;height:12.6667rem;border-top-left-radius:0.7333rem;border-top-right-radius:0.7333rem;overflow:hidden;}
 .modal .calendar_header .team_logo {position:absolute;width:4.1rem;height:3.6333rem;top:1.1333rem;left:1.5333rem;}
-.modal .calendar_header .year_wrap {margin:1.6667rem auto 0;width:18rem;height:1.8rem;opacity:0.5;font-family:'bebas_neueregular';font-size:1.5rem;font-weight:normal;line-height:normal;text-align:center;color:#000000;}
+.modal .calendar_header .year_wrap {margin:1.6667rem auto 0;width:18rem;height:1.8rem;opacity:0.5;font-family:'Bebas Neue';font-size:1.5rem;font-weight:normal;line-height:normal;text-align:center;color:#000000;}
 .modal .calendar_header .month_wrap {margin-top:0.4667rem;}
 .modal .calendar_header .btn_gotoday {position:absolute;top:0.8333rem; right:1.5333rem;}
 .modal .calendar_header.bg_gradient .year_wrap {color:#fff;}
