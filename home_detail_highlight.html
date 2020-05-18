@@ -12,8 +12,17 @@
 	<div id="container">
 		<div class="content home live_video">
             <div class="video_wrap">
-                <div class="img_player_default" style="background-image:url('res/images/img-player-default.jpg')">
-                    <span class="ico_play"></span>
+                <div class="img_player_default" style="background-image:url('res/images/img-player-default.jpg')"></div>
+				<div class="video_ctrl_wrap on">
+					<span class="ic_auto usetap" onclick="this.closest('.video_ctrl_wrap').classList.toggle('on');"></span>
+                    <span class="ico_play usetap"></span>
+					<span class="ic_show usetap"></span>
+					<div class="auto_ctrl">
+						<span class="ic_always usetap" onclick="this.classList.toggle('on');"></span>
+						<span class="ic_wifi usetap" onclick="this.classList.toggle('on');"></span>
+						<span class="ic_off usetap" onclick="this.classList.toggle('on');"></span>
+						<p>실시간 중계가 자동 재생되도록 허용할 경우를 선택하세요.</p>
+					</div>
                 </div>
             </div>
 			<!-- page title, btn back -->
