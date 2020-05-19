@@ -451,6 +451,18 @@
 .team_ranking_bg_GY {background-image:url('../images/bg/bg-team-rangking-goyang.png');}
 .team_ranking_bg_SM {background-image:url('../images/bg/bg-team-rangking-sangmu.png');}
 
+/* Team player number color */
+.player_no_LG {color:#c10a3a;}
+.player_no_OB {color:#141132;}
+.player_no_WO {color:#660014;}
+.player_no_HH {color:#ee4f00;}
+.player_no_HT {color:#be0014;}
+.player_no_KT {color:#000000;}
+.player_no_LT {color:#d80018;}
+.player_no_NC {color:#04477f;}
+.player_no_SS {color:#0063b1;}
+.player_no_SK {color:#dd0025;}
+
 /* Team 1순위 piching type color */
 .pitching_color_DEFAULT .i_ratio {background-color:#c10a3a;}
 .pitching_color_DEFAULT .i_name,

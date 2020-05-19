@@ -477,7 +477,7 @@
 .team.content .sec_team_position .team_position_all li .i_position {margin-top:0.1333rem;height:1.5rem;text-align:center;font-size:0;}
 .team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;line-height:1.5rem;font-size:1rem;font-weight:normal;color:#858585;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.3rem 0.4rem 0.2rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#dee1e6;}
-.team.content .sec_team_position .team_position_all .position_desc_bg {margin:0 -1.5333rem;padding:0 1.5333rem 8rem;background-color:#fafafb;}
+.team.content .sec_team_position .team_position_all .position_desc_bg {margin:0 -1.5333rem -9.6667rem;padding:0 1.5333rem 8rem;background-color:#fafafb;}
 .team.content .sec_team_position .team_position_all .all_position_desc {height:4.7rem;font-size:0;text-align:center;}
 .team.content .sec_team_position .team_position_all .all_position_desc p {display:inline-block;font-size:1.2333rem;font-weight:300;color:#858585;line-height:4.7rem;text-align:center;}
 .team.content .sec_team_position .team_position_all .all_position_desc span {display:inline-block;position:relative;width:0.9333rem;height:0.9333rem;}
@@ -1409,7 +1409,7 @@
 .my.content .sec_my .card .player {overflow:hidden;position:relative;text-align:center;width:100%;height:16.6667rem;border-radius:0.7333rem;box-shadow:0 0.2333rem 0.9333rem 0 rgba(0, 0, 0, 0.06);background-color:#ffffff;}
 .my.content .sec_my .card.edit .player > :not(.card_close) {opacity:0.5;}
 .my.content .sec_my .card .player .card_close {position:absolute;top:0.5333rem;right:0.5333rem;width:2rem;height:2rem;background-image:url(../images/ic-card-close.png);background-size:100%;}
-.my.content .sec_my .card .player_no {margin-top:1.2667rem;height:2.1667rem;font-family:'Bebas Neue';font-size:1.8rem;font-weight:normal;line-height:normal;color:#c10a3a;}
+.my.content .sec_my .card [class*="player_no_"] {margin-top:1.2667rem;height:2.1667rem;font-family:'Bebas Neue';font-size:1.8rem;font-weight:normal;line-height:normal;}
 .my.content .sec_my .card .player_xl {margin:0.7rem auto 0;}
 .my.content .sec_my .card .player_xl .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
 .my.content .sec_my .card .player_xl .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
@@ -1645,7 +1645,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_1depth::-webkit-scrollbar {display:none;}
 .tab_1depth ul {padding:0 0.3333rem;min-width:100%;height:100%;overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;border-bottom:1px solid #f0f1f6;}
 .tab_1depth .tab_item {padding:0 0.9167rem;-webkit-flex:1;flex:1;-webkit-flex-basis:auto;flex-basis:auto;text-align:center;}
-.tab_1depth .tab_item span {position:relative;color:#b4b4b4;min-width:5.8333rem;display:inline-block;height:100%;padding:1.1rem 0 1.1667rem;font-size:1.5333rem;font-weight:500;transition:color .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
+.tab_1depth .tab_item span {position:relative;color:#b4b4b4;min-width:5.8333rem;display:inline-block;height:100%;padding:1.1rem 0 1.1667rem;font-size:1.4rem;font-weight:500;transition:color .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
 .tab_1depth .tab_item.active span {font-weight:bold;}
 .tab_1depth .tab_item .tab_logo_ABL,
 .tab_1depth .tab_item .tab_logo_MLB,
