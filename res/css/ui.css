@@ -1394,7 +1394,7 @@
 .my.content .sec_my .edit_wrap.on .complete {display:block;width:3.2rem;height:3.2rem;font-size:1.2rem;font-weight:bold;line-height:3.2rem;text-align:center;color:#5b6067;}
 .my.content .sec_my .btn_group {margin-top:1.5rem;}
 .my.content .sec_my .btn_group:after {clear:both;content:'';display:block;}
-.my.content .sec_my .btn_group .dropdown {position:relative;float:left;padding:0 2.0333rem 0 1.3333rem;width:6.7333rem;height:3.3333rem;border-radius:0.7333rem;border:2px solid #eeeeee;background-color:#eeeeee;font-size:1.2667rem;font-weight:normal;line-height:2.9662rem;color:#2b2b2b;}
+.my.content .sec_my .btn_group .dropdown {overflow:hidden;position:relative;float:left;padding:0 1.5rem 0 1.3333rem;width:6.7333rem;height:3.3333rem;border-radius:0.7333rem;border:2px solid #eeeeee;background-color:#eeeeee;font-size:1.2667rem;font-weight:normal;line-height:2.9662rem;color:#2b2b2b;}
 .my.content .sec_my .btn_group .dropdown.on {border-radius:0.7333rem;border:2px solid #2b2b2b;background-color:#ffffff;font-weight:bold;}
 .my.content .sec_my .btn_group .dropdown:after {content:'';position:absolute;width:1.3333rem;height:1.3333rem;top:1rem;margin-top:-1px;right:0.6667rem;background-image:url(../images/ic-arrow-down-g.png);background-size:100%;}
 .my.content .sec_my .btn_group .dropdown:before {display:none;content:'';position:absolute;width:1.3333rem;height:1.3333rem;top:1rem;margin-top:-1px;right:0.6667rem;background-image:url(../images/ic-arrow-down-b.png);background-size:100%;}
