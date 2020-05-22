@@ -305,8 +305,8 @@
 .home.content .bn_txt_wrap.bn_event a {display:block;}
 .home.content .bn_txt_wrap.bn_event .bg_box {padding-bottom:18.218623%;background-image:url("../images/banner-img-event.png");} /* Event bn */
 .home_main.content .highlight_wrap {padding-bottom:0;}
-.highlight_wrap {margin:1rem -1.417004% 0;padding-bottom:2rem;overflow:hidden;}
-.highlight_box {float:left;margin:2rem 1.377952% 0;width:47.244094%;}
+.highlight_wrap {margin:1rem -1.417004% 0;padding-bottom:2.6667rem;overflow:hidden;}
+.highlight_box {float:left;margin:1.6667rem 1.377952% 0;width:47.244094%;}
 .highlight_box.usetap.active {opacity:1 !important;}
 .highlight_box.usetap.active .thumb,
 .highlight_box.usetap.active b,
