@@ -177,17 +177,23 @@
 .player_circle {position:relative;width:7.0667rem;height:7.0667rem;}
 .player_circle_sm {position:relative;width:3.5rem;height:3.5rem;}
 .player_xl .player_img {position:absolute;width:100%;height:100%;left:0;top:0;background-size:100% auto;}
-.player_xl .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-212.png);background-size:100%;}
+.player_xl:before {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-default-105.png);background-size:100%;}
+.player_xl:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-212.png);background-size:100%;}
 .player_lg .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:1.3667rem;background-size:100% auto;}
-.player_lg .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-172.png);background-size:100%;}
+.player_lg:before {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-default-105.png);background-size:100%;}
+.player_lg:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-172.png);background-size:100%;}
 .player_md .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:1.3667rem;background-size:100% auto;}
-.player_md .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-130.png);background-size:100%;}
+.player_md:before {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-default-105.png);background-size:100%;}
+.player_md:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-130.png);background-size:100%;}
 .player_sm .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:0.9333rem;background-size:100% auto;}
-.player_sm .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-105.png);background-size:100%;}
+.player_sm:before {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-default-105.png);background-size:100%;}
+.player_sm:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;background-image:url(../images/img-profile-mask-105.png);background-size:100%;}
 .player_circle .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-size:100% auto;}
-.player_circle .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-border-circle-212.png);background-size:100%;}
+.player_circle:before {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-default-105.png);background-size:100%;}
+.player_circle:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-border-circle-212.png);background-size:100%;}
 .player_circle_sm .player_img {position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-size:100% auto;}
-.player_circle_sm .player_img:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-border-circle-105.png);background-size:100%;}
+.player_circle_sm:before {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-default-105.png);background-size:100%;}
+.player_circle_sm:after {content:'';position:absolute;width:100%;height:100%;left:0;top:0;border-radius:3.5333rem;background-image:url(../images/img-profile-border-circle-105.png);background-size:100%;}
 
 /* HOME */
 .home.content .top_phrase {padding:1rem 0 0 2.4rem;height:13.3333rem;background-repeat:no-repeat;background-position:100% 1.3333rem;background-size:auto 10.6667rem;background-color:#ffffff;}
