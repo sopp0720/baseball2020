@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+
+<div id="wrap" data-theme="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content kakao">
+		    <!-- page title, btn back -->
+            <div class="page_title_wrap">
+                <div class="inner">
+                    <button type="button" class="btn_back usetap blind">뒤로가기</button>
+					<button type="button" class="btn_home usetap blind">카카오홈</button>
+					<button type="button" class="btn_share usetap blind">공유하기</button>
+                    <h2>야구 뉴스</h2>
+                </div>
+            </div>
+			<div class="news_detail">
+				<img src="res/images/img_temp_01.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+<script src="res/js/team.js"></script>
+<script src="res/js/floating.js"></script>
+<script>
+floatUI.init();
+teamUi.init();
+</script>
+</body>
+</html>

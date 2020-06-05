@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+
+<div id="wrap" data-theme="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content kakao">
+		    <!-- page title, btn back -->
+            <div class="page_title_wrap">
+                <div class="inner">
+                    <button type="button" class="btn_back usetap blind">뒤로가기</button>
+					<button type="button" class="btn_home usetap blind">카카오홈</button>
+					<button type="button" class="btn_share usetap blind">공유하기</button>
+                    <h2>최신 소식</h2>
+                </div>
+            </div>
+			<div class="sec_wrapper news_latest">
+				<ul class="list_type_kakao">
+					<li>
+						<div class="list_inner usetap">
+							<div class="cover"><div class="thumb" style="background-image:url('res/images/news_main.jpg')"></div></div>
+							<div class="detail">
+								<p>삼성 원태인, 3일 평가전 출격.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="list_inner usetap">
+							<div class="cover"><div class="thumb" style="background-image:url('res/images/news_main1111.jpg')"></div></div>
+							<div class="detail">
+								<p>삼성 원태인, 3일 평가전 출격. 첫 등판의 아쉬움을 씻어낼 수 있을까아쉬움을 씻어낼 수 있을까아쉬움을 씻어낼 수 있을까</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="list_inner usetap">
+							<div class="cover"><div class="thumb" style="background-image:url('res/images/news_main.jpg')"></div></div>
+							<div class="detail">
+								<p>삼성 원태인, 3일 평가전 출격. 첫 등판의 아쉬움을 씻어낼 수 있을까</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="list_inner usetap">
+							<div class="cover"><div class="thumb" style="background-image:url('res/images/news_main.jpg')"></div></div>
+							<div class="detail">
+								<p>삼성 원태인, 3일 평가전 출격. 첫 등판의 아쉬움을 씻어낼 수 있을까</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="list_inner usetap">
+							<div class="cover"><div class="thumb" style="background-image:url('res/images/news_main.jpg')"></div></div>
+							<div class="detail">
+								<p>삼성 원태인, 3일 평가전 출격. 첫 등판의 아쉬움을 씻어낼 수 있을까</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/gnb.js"></script>
+<script src="res/js/team.js"></script>
+<script src="res/js/floating.js"></script>
+<script>
+floatUI.init();
+teamUi.init();
+teamUi.initDepthTab(document.getElementById('tab_2depth'));
+
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+	bnbUi.teamLottie()
+});
+</script>
+</body>
+</html>

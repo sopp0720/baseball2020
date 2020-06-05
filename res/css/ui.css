@@ -1569,6 +1569,53 @@
 .my_cheering_team ul li .team_logo {display:block;margin:0 auto;width:61.688311%;height:60.431654%;}
 .my_cheering_team ul li .team_name {display:block;margin-top:1.948051%;height:2.4667rem;height:24.025974%;font-size:1.6667rem;font-weight:bold;text-align:center;color:#000000;}
 
+/* kakao */
+.kakao.content .popular_wrap {border-top:0 none;padding:1.5333rem;}
+.kakao.content .popular_scroll {padding-bottom:1.5333rem;margin:1.5333rem -1.5333rem 0;overflow-y:hidden;overflow-x:auto;transform:translateZ(0);font-size:0;}
+.kakao.content .popular_scroll::-webkit-scrollbar {display:none;}
+.kakao.content .popular_scroll ul {padding:0 1.5333rem;overflow:visible;white-space:nowrap;display:inline-block;}
+.kakao.content .popular_scroll li {overflow:hidden;vertical-align:top;margin-left:0.9333rem;display:inline-block;width:32.4rem;border-radius:0.7333rem;box-shadow: 0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);background-color:#ffffff;}
+.kakao.content .popular_scroll li:first-child {margin-left:0;}
+.kakao.content .popular_scroll .cover {position:relative;width:100%;padding-top:56.25%;background-image:url(../images/ic-play-defualt-b-01.png);background-position:50% 50%;background-size:5rem 5rem;background-color:#e5e7e8;background-repeat:no-repeat;}
+.kakao.content .popular_scroll .thumb {position:absolute;left:0;right:0;bottom:0;top:0;background-size:100% auto;background-position:0 0;}
+.kakao.content .popular_scroll .thumb:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
+.kakao.content .popular_scroll .thumb:before {content:'';position:absolute;bottom:0;left:0;right:0;height:11.4667rem;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
+.kakao.content .popular_scroll .desc {position:relative;width:100%;padding:1.6667rem;display:inline-block;vertical-align:bottom;white-space:normal;}
+.kakao.content .popular_scroll .broad {font-size:1.2rem;line-height:1.8rem;font-weight:500;color:#ffffff;}
+.kakao.content .popular_scroll .title {margin-top:0.1rem;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;color:#ffffff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .popular_scroll .detail {height:5.6333rem;padding:0.7667rem 1.6667rem 1.1333rem;}
+.kakao.content .popular_scroll .detail > p {font-size:1.2667rem;font-weight:normal;line-height:1.8667rem;color:#000000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .popular_list {margin-top:-1.3333rem;}
+.kakao.content .popular_list li {padding:1.3333rem 0 1.4333rem;border-bottom:1px solid #f8f8f9;}
+.kakao.content .popular_list li > p {font-size:1.3333rem;font-weight:bold;line-height:1.9667rem;color:#000000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .latest_wrap {padding:1.5333rem;}
+.kakao.content .latest_wrap .list_type_kakao {margin-top:-0.3333rem;}
+.kakao.content .list_type_kakao li {position:relative;border-bottom:1px solid #f8f8f9;}
+.kakao.content .list_type_kakao .list_inner {position:relative;width:100%;height:8.5333rem;white-space:nowrap;font-size:0;padding-left:8.3333rem;}
+.kakao.content .list_type_kakao .list_inner:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
+.kakao.content .list_type_kakao .cover {position:absolute;left:0;top:0;bottom:0;margin:auto 0;width:8.3333rem;height:5.8667rem;border-radius:0.7333rem;background-image:url(../images/ic-play-defualt-s.png);background-position:50% 50%;background-size:2.4667rem 2.4667rem;background-color:#e5e7e8;background-repeat:no-repeat;}
+.kakao.content .list_type_kakao .thumb {position:absolute;left:0;top:0;width:100%;height:100%;border-radius:0.7333rem;background-size:cover;background-repeat:no-repeat;background-position:50% 50%;}
+.kakao.content .list_type_kakao .detail {vertical-align:middle;white-space:normal;display:inline-block;position:relative;width:100%;padding-left:1.2667rem;}
+.kakao.content .list_type_kakao .detail > p {font-size:1.4rem;font-weight:bold;line-height:2.0667rem;color:#000000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .club_wrap {padding:1.5333rem 1.5333rem 0;}
+.kakao.content .club_wrap .tab_teamlist {margin:2rem -1.5333rem 0;}
+.kakao.content .club_wrap .list_type_kakao {margin-top:2rem;}
+
+.page_title_wrap .btn_home {display:block;position:absolute;top:0.9rem;right:4.9333rem;width:3.2rem;height:3.2rem;background:url("../images/ic-title-share.png") no-repeat;background-size:100% auto;z-index:2;}
+.page_title_wrap .btn_home.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
+.page_title_wrap .btn_share {display:block;position:absolute;top:0.9rem;right:0.7333rem;width:3.2rem;height:3.2rem;background:url("../images/ic-title-newshome.png") no-repeat;background-size:100% auto;z-index:2;}
+.page_title_wrap .btn_share.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
+
+.kakao.content .page_title_wrap + .tab_teamlist {margin-top:2rem;}
+.kakao.content .news_popular,
+.kakao.content .news_latest {padding:0.2rem 1.5333rem 1.5333rem;border-top:0 none;}
+.kakao.content .news_club {margin-top:1.6667rem;overflow:hidden;padding:0 1.5333rem;}
+.kakao.content .news_club .tab_teamlist {margin:2rem -1.5333rem 0;}
+.kakao.content .news_club .list_type_kakao {padding-top:0.6667rem;}
+.kakao.content .news_club .more {width:100%;height:5.5333rem;padding:1.8rem 0 1.7667rem;text-align:center;font-size:0;}
+.kakao.content .news_club .more > span {position:relative;padding-right:2rem;display:inline-block;font-size:1.3333rem;font-weight:500;line-height:1.9667rem;color:#7a7a7a;}
+.kakao.content .news_club .more > span:after {content:'';position:absolute;right:0;top:0.4rem;width:1.3333rem;height:1.3333rem;background-image:url(../images/ic-arrow-down-g.png);background-size:100%;}
+
 /* err msg */
 .err_msg {display:block;margin-top:0.6667rem;font-size:1.0667rem;line-height:1.75;color:#da0000;}
 
