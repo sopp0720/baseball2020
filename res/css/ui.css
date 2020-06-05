@@ -683,6 +683,7 @@
 .team.content .top_ranking_info .win_rate {margin-left:1.0333rem;padding-top:0.8rem;}
 .team.content .top_ranking_info .win_rate span {height:2.0667rem;line-height:2.0667rem;font-size:1.2667rem;color:#666666;}
 .team.content .top_ranking_info .win_rate b {margin-left:0.3333rem;height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:bold;color:#666666;}
+.team.content .top_ranking_bottom {border-top:0 none;padding-top:3.2rem;}
 .team.content .scroll_ranking {margin-top:1rem;}
 .team.content .scroll_ranking ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;transform:translateZ(0)}
 .team.content .scroll_ranking li {display:inline-block;margin-left:0.6667rem;width:12.6rem;/*width:38.259109%;*/border-radius:0.7333rem 0.7333rem 0 0;overflow:hidden;vertical-align:top;}
@@ -719,13 +720,13 @@
 .team.content .schedule_opt button.btn_select.active .i_arrow {transform:rotate(180deg);-webkt-transform:rotate(180deg);}
 
 /* relay_kbo */
-.relay.content .scroll_date {position:relative;margin:1rem -1.5333rem 0;height:6rem;}
+.relay.content .scroll_date {position:relative;margin:1.2333rem -1.5333rem 0;height:6rem;}
 .relay.content .scroll_date .scroll_inner {position:relative;width:100%;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;-ms-overflow-style:none;scrollbar-width:none;}
 .relay.content .scroll_date .scroll_inner::-webkit-scrollbar {display:none;}
 .relay.content .scroll_date:before {content:'';pointer-events:none;touch-action:none;z-index:1;display:block;position:absolute;top:0;left:0;width:2.9333rem;height:6rem;background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.04));}
 .relay.content .scroll_date:after {content:'';pointer-events:none;touch-action:none;z-index:1;display:block;position:absolute;top:0;right:0;width:2.9333rem;height:6rem;background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.04));}
 .relay.content .scroll_date ul {min-width:100%;margin:0.1667rem 0;padding:0 1.6667rem;height:100%;overflow:visible;white-space:nowrap;display:inline-block;}
-.relay.content .scroll_date ul li {position:relative;display:inline-block;margin-left:0.9rem;padding:0.9rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
+.relay.content .scroll_date ul li {position:relative;display:inline-block;margin-left:0.9rem;padding:1.8333rem 0.5rem 0;width:3.6667rem;height:5.6667rem;vertical-align:top;text-align:center;}
 .relay.content .scroll_date ul li:first-child {margin-left:0;}
 .relay.content .scroll_date ul li .date_num {display:block;height:2.3rem;font-family:'Bebas Neue';font-size:1.9333rem;font-weight:normal;color:#000000;opacity:0.35;transition:opacity ease-out .3s;}
 .relay.content .scroll_date ul li .date_day {display:block;height:1.8rem;font-size:1.2rem;font-weight:bold;color:#000000;opacity:0.35;transition:opacity ease-out .3s;}
@@ -735,6 +736,7 @@
 .relay.content .scroll_date ul li.i_sun .date_day {color:#ec5f59}
 .relay.content .scroll_date ul li.active .date_num,
 .relay.content .scroll_date ul li.active .date_day {opacity:1;}
+.relay.content .scroll_date ul li.today:before {content:'today';position:absolute;top:0;left:0;right:0;margin:0 auto;width:2.6667rem;height:1.3667rem;background-image:url('../images/ic-tag-today-s.png');background-size:100%;text-indent:-999em;overflow:hidden;}
 .relay.content .score_board_wrap {margin-top:0.8333rem;}
 .relay.content .play_list {box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .relay.content .play_list li {position:relative;height:10.6667rem;margin-top:1px;}
@@ -923,7 +925,7 @@
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .vs_img {margin:0 auto;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .time_spot {margin-top:1.2rem;}
 .relay.content .relay_game_end .relay_video_thumb .relay_top_info .tag_info {margin-top:2rem;}
-.relay.content .relay_card_wrap ul {margin:0 -1.5333rem;padding:0 1.5333rem;height:10.1333rem;white-space:nowrap;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;}
+.relay.content .relay_card_wrap ul {margin:0 -1.5333rem;padding:0 1.5333rem;height:10.2rem;white-space:nowrap;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;}
 .relay.content .relay_card_wrap ul li {display:inline-block;position:relative;margin-left:0.7667rem;padding-top:0.4rem;width:8.6667rem;height:100%;vertical-align:top;}
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .team_logo,
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .i_score,
