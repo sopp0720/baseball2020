@@ -865,7 +865,7 @@
 .relay.content .left .team_logo_xs {right:0;}
 .relay.content .right .team_logo_xs {left:0;}
 .relay.content .user .team_logo_xs span {position:absolute;width:1.2667rem;height:1.2667rem;margin:auto;left:0;right:0;bottom:0;top:0;}
-.relay.content .chat_wrap .comment {font-size:1.4667rem;font-weight:normal;line-height:2.1667rem;}
+.relay.content .chat_wrap .comment {word-break:break-all;font-size:1.4667rem;font-weight:normal;line-height:2.1667rem;}
 .relay.content .chat_wrap .time {position:absolute;width:6.0667rem;height:1.4667rem;font-size:1.2rem;line-height:1.4667rem;color: #b4b4b4;bottom:0;}
 .relay.content .msg_wrap.left .time {right:-6.4667rem;text-align:left;}
 .relay.content .msg_wrap.right .time {left:-6.4667rem;text-align:right;}
