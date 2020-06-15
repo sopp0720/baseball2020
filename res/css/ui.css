@@ -109,7 +109,7 @@
 .month_wrap .month_arrow.i_next {right:0;background-image:url('../images/ic-next-b.png');}
 .month_wrap .month_arrow.i_next.i_disabled {right:0;background-image:url('../images/ic-next-b-dim.png');}
 .btn_gocalendar2 {display:block;position:absolute;top:0.4333rem;right:0;width:3.4667rem;height:3.4667rem;line-height:3.4667rem;font-size:1.2rem;font-weight:500;color:#494949;text-align:center;border-radius:50%;background-color:#eeeeee;background-image:url('../images/ic-calendar.png');background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;}
-.btn_today {display:block;position:absolute;top:0.4333rem;left:0;width:3.4667rem;height:3.4667rem;line-height:3.4667rem;font-size:1.2rem;font-weight:500;color:#494949;text-align:center;border-radius:50%;background-color:#eeeeee;background-image:url('../images/btn-calendar-today-light-s.png');background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;}
+.btn_today {display:block;position:absolute;top:0.4333rem;left:1.0667rem;width:3.4667rem;height:3.4667rem;line-height:3.4667rem;font-size:1.2rem;font-weight:500;color:#494949;text-align:center;border-radius:50%;background-color:#eeeeee;background-image:url('../images/btn-calendar-today-light-s.png');background-repeat:no-repeat;background-position:50% 50%;background-size:3rem;}
 
 /* Month + week */
 .month_wrap.plus_week .month_arrow.i_prev {left:0;}
