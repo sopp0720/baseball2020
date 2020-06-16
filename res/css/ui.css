@@ -1616,9 +1616,9 @@
 .kakao.content .news_club {margin-top:1.6667rem;overflow:hidden;padding:0 1.5333rem;}
 .kakao.content .news_club .tab_teamlist {margin:2rem -1.5333rem 0;}
 .kakao.content .news_club .list_type_kakao {padding-top:0.6667rem;}
-.kakao.content .news_club .more {width:100%;height:5.5333rem;padding:1.8rem 0 1.7667rem;text-align:center;font-size:0;}
-.kakao.content .news_club .more > span {position:relative;padding-right:2rem;display:inline-block;font-size:1.3333rem;font-weight:500;line-height:1.9667rem;color:#7a7a7a;}
-.kakao.content .news_club .more > span:after {content:'';position:absolute;right:0;top:0.4rem;width:1.3333rem;height:1.3333rem;background-image:url(../images/ic-arrow-down-g.png);background-size:100%;}
+.kakao.content .list_type_kakao ~ .more {width:100%;height:5.5333rem;padding:1.8rem 0 1.7667rem;text-align:center;font-size:0;}
+.kakao.content .list_type_kakao ~ .more > span {position:relative;padding-right:2rem;display:inline-block;font-size:1.3333rem;font-weight:500;line-height:1.9667rem;color:#7a7a7a;}
+.kakao.content .list_type_kakao ~ .more > span:after {content:'';position:absolute;right:0;top:0.4rem;width:1.3333rem;height:1.3333rem;background-image:url(../images/ic-arrow-down-g.png);background-size:100%;}
 
 /* err msg */
 .err_msg {display:block;margin-top:0.6667rem;font-size:1.0667rem;line-height:1.75;color:#da0000;}
