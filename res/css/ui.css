@@ -756,7 +756,8 @@
 .relay.content .play_list .game_before .team_player .player_name {margin-top:0.3333em;}
 .relay.content .play_list .game_end .team_player .player_name {margin-top:0.5rem;}
 .relay.content .play_list .game_end .team_player .player_name + .player_name {margin-top:0;}
-.relay.content .play_list .game_cancel .team_player .player_name {margin-top:0.3333em;}
+.relay.content .play_list .game_cancel .team_player .player_name,
+.relay.content .play_list .game_suspended .team_player .player_name {margin-top:0.3333em;}
 .relay.content .play_list li .middle_box {position:relative;height:100%;margin:0 auto;width:13.8rem;white-space:nowrap;overflow:hidden;text-align:center;font-size:0;}
 .relay.content .play_list li .middle_box .middle_inner {width:100%;display:inline-block;vertical-align:middle;white-space:normal;}
 .relay.content .play_list li .middle_box:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
@@ -797,14 +798,17 @@
 .relay.content .play_list li .info_tag_warp ~ .info_time {margin-top:1.5667rem;}
 .relay.content .play_list li .info_channel {display:block;margin:1.5667rem auto 0;height:1.8rem;font-size:1.2rem;text-align:center;color:#c2c3c7;}
 .relay.content .play_list li .info_tag_warp ~ .info_channel {margin-top:0.9333rem;}
-.relay.content .play_list li.game_cancel .middle_inner .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li.game_cancel .middle_inner .info_result,
+.relay.content .play_list li.game_suspended .middle_inner .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .play_list li.game_end .middle_inner .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li.game_suspended .middle_inner .info_result {display:block;margin:0 auto;width:6.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-03.png');background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .play_list .game_end .info_round {margin-top:0.5333rem;}
 .relay.content .play_list .game_end .left_score,
 .relay.content .play_list .game_end .right_score {top:3.6667rem;}
 .relay.content .play_list .game_end .info_tag_warp ~ .left_score,
 .relay.content .play_list .game_end .info_tag_warp ~ .right_score {top:3.1rem;}
-.relay.content .play_list .game_cancel .info_time {margin-top:0.5333rem;color:#2b2b2b;}
+.relay.content .play_list .game_cancel .info_time,
+.relay.content .play_list .game_suspended .info_time {margin-top:0.5333rem;color:#2b2b2b;}
 
 /* mlb */
 .relay.content .play_list li .info_tag_red {display:inline-block;margin:2.9rem auto 0;height:1.9rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-repeat:no-repeat;background-size:100% auto;}
