@@ -745,10 +745,11 @@
 .relay.content .play_list li:first-child:after {display:none;}
 .relay.content .play_list li .team_player {position:absolute;top:0;bottom:0;width:7.2333rem;white-space:nowrap;text-align:center;font-size:0;}
 .relay.content .play_list li .team_player:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
-.relay.content .play_list li .team_player .middle_inner {position:relative;display:inline-block;vertical-align:middle;white-space:normal;}
+.relay.content .play_list li .team_player .middle_inner {position:relative;max-width:100%;display:inline-block;vertical-align:middle;white-space:normal;}
 .relay.content .play_list li .team_player.left {left:2.3333rem;}
 .relay.content .play_list li .team_player.right {right:2.3333rem;}
-.relay.content .play_list li .team_player .middle_inner > i {display:block;margin:0 auto;width:5rem;height:4.4333rem;}
+.relay.content .play_list li .team_player .middle_inner > i {position:relative;display:block;margin:0 auto;width:5rem;height:4.4333rem;}
+.relay.content .play_list li .team_player.right .middle_inner > i:before {content:'';position:absolute;top:0.8333rem;right:-3.5rem;width:2.8rem;height:2.8rem;background:url(../images/ic-relay-list-arrow.png);background-size:100%;}
 .relay.content .play_list li .player_name {display:block;white-space:nowrap;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;text-align:center;}
 .relay.content .play_list li .player_name .result {color:#c2c3c7;}
 .relay.content .play_list li .player_info {display:block;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:center;color:#525252;white-space:nowrap;}
