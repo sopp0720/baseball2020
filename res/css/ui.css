@@ -946,23 +946,43 @@
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .team_logo,
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .i_score,
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .team_name {opacity:1;}
-.relay.content .relay_card_wrap ul li.on .ic_info {background-color:#c10a3a;}
+.relay.content .relay_card_wrap ul li.on.game_before .ic_info,
+.relay.content .relay_card_wrap ul li.on.game_ing .ic_info {background-color:#c10a3a;}
 .relay.content .relay_card_wrap ul li.on .card_box {background-color:#ffffff;}
 .relay.content .relay_card_wrap ul li:first-child {margin-left:0;}
 .relay.content .relay_card_wrap ul li .ic_5g {display:block;position:absolute;top:0;right:1.1rem;width:2.2667rem;height:1.3333rem;background:url('../images/ic-tag-5-g.png') no-repeat 50% 50%;background-size:100% auto;}
-.relay.content .relay_card_wrap ul li .ic_info {display:inline-block;position:absolute;top:4.5333rem;right:0.6333rem;padding:0 0.5333rem;height:1.4667rem;line-height:1.5rem;font-size:0.8333rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:0.7333rem;background-color:#c2c3c7;}
-.relay.content .relay_card_wrap ul li .card_box {padding:0 0.6333rem 0 0.7333rem;width:100%;height:9.7333rem;border:1px solid #e5e5e5;border-radius:0.7333rem;background-color:#f7f7f7;}
-.relay.content .relay_card_wrap ul li .card_box .team_box {height:4.8rem;}
+.relay.content .relay_card_wrap ul li .ic_info {display:inline-block;position:absolute;top:4.5333rem;right:0.6333rem;padding:0 0.5333rem;height:1.4667rem;line-height:1.5rem;font-size:0.8333rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:0.7333rem;background-color:#000;}
+.relay.content .relay_card_wrap ul li .card_box {padding:0 0.7333rem;width:100%;height:9.7333rem;border:1px solid #e5e5e5;border-radius:0.7333rem;background-color:#f7f7f7;}
+.relay.content .relay_card_wrap ul li .card_box .team_box {position: relative; height: 4.8333rem;}
 .relay.content .relay_card_wrap ul li .card_box .team_box:after {display:block;visibility:hidden;clear:both;content:""}
-.relay.content .relay_card_wrap ul li .card_box .team_box.top_box {padding-top:0.5rem;padding-bottom:1.0333rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.top_box .team_logo {margin-top:0.2333rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.top_box .team_name {margin-top:0.8667rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box .team_name {margin-top:0.5333rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box {padding-top:1rem;border-top:1px solid #e8e9ef;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {float:left;width:48.3568%;height:3.0333rem;opacity:0.5;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'Bebas Neue';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box.top_box {}
+.relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box { border-top:1px solid #e8e9ef;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {position:absolute; left: 0.0667rem; width: 3.3333rem; height: 2.9333rem; opacity:0.7; }
+.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {position:absolute;top:0.5rem;right:0.3rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'Bebas Neue';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.7;}
 .relay.content .relay_card_wrap ul li .card_box .team_box .i_score.i_gray {color:#737787 !important;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .team_name {float:left;width:51.6431%;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-align:center;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_name {position:absolute;text-align:center;color:#000;opacity:0.7;}
+.relay.content .relay_card_wrap ul li.game_before .top_box .team_name,
+.relay.content .relay_card_wrap ul li.game_cancel .top_box .team_name,
+.relay.content .relay_card_wrap ul li.game_suspended .top_box .team_name {position: absolute; top: 1.3333rem; right: 0.0333rem; width:3.6667rem; height:1.9667rem; font-size: 1.3333rem; line-height:1.9667rem; font-weight: 500; }
+.relay.content .relay_card_wrap ul li.game_before .bottom_box .team_name,
+.relay.content .relay_card_wrap ul li.game_cancel .bottom_box .team_name,
+.relay.content .relay_card_wrap ul li.game_suspended .bottom_box .team_name {position: absolute; top: 1.5333rem; right: 0.0333rem; width:3.6667rem; height:1.9667rem; font-size: 1.3333rem; line-height:1.9667rem; font-weight: 500; }
+
+.relay.content .relay_card_wrap ul li.game_ing .team_box .team_name,
+.relay.content .relay_card_wrap ul li.game_end .team_box .team_name { position: absolute; top: 2.7333rem; left: 0.0667rem; width: 3.3333rem; height: 1.8rem; font-size: 1.2rem; line-height: 1.8rem; font-weight: 500;  }
+
+
+.relay.content .relay_card_wrap ul li.game_before .top_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_cancel .top_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_suspended .top_box .team_logo { top: 0.8667rem; }
+.relay.content .relay_card_wrap ul li.game_before .bottom_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_cancel .bottom_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_suspended .bottom_box .team_logo { top: 1.0667rem; }
+
+.relay.content .relay_card_wrap ul li.game_ing .team_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_end .team_box .team_logo { top: 0.2667rem; }
+
+
 .relay.content .sec_analysis {padding-top:2.5333rem;}
 .relay.content .analysis_wrap {margin-top:1rem;}
 .relay.content .vs_rank_wrap {position:relative;padding:1.8667rem 2.1333rem 0.8333rem;height:12.1333rem;}
