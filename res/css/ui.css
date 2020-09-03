@@ -225,16 +225,18 @@
 .home.content .score_today > div.team_img_wrap .player_xl {margin:0 auto;}
 .home.content .score_today > div.team_img_wrap .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
 .home.content .score_today > div.team_img_wrap .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
-.home.content .score_today > div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .score_today > div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
 .home.content .score_today > div.middle_box {position:relative;z-index:1;margin:0 auto;width:12.6667rem;}
 .home.content .score_today > div.middle_box .logo_na {display:block;margin:0 auto;width:3.8333rem;height:1.6667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .home.content .score_today > div.middle_box .logo_na.kbo {background-image:url("../images/ic-logo-kbo-lg.png");} /* KBO logo */
 .home.content .score_today > div.middle_box .logo_na.mlb {background-image:url("../images/ic-logo-mlb-navy.png");} /* KBO logo */
-.home.content .score_today > div.middle_box .title {display:block;height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#2b2b2b;text-align:center;}
+.home.content .score_today > div.middle_box .title {display:block;height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000;text-align:center;}
 .home.content .score_today > div.middle_box .play_score {overflow:hidden;}
 .home.content .score_today > div.middle_box .play_score em {display:block;float:left;width:3.5rem;height:4.0667rem;font-family:'Bebas Neue';font-weight:normal;font-size:4rem;line-height:4.8rem;font-style:normal;color:#000000;}
 .home.content .score_board_wrap.kbo {border-top:0;}
 .home.content .score_board_wrap .result_val {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#c2c3c7;}
+.home.content .score_board_wrap .result_val_win {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#3563c0;}
+.home.content .score_board_wrap .result_val_lose {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#ec5f59;}
 .home.content .score_board_wrap .team_name {margin-right:0.2667rem;font-size:inherit;font-weight:bold;font-style:normal;}
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main {display:block;float:left;width:5.6667rem;height:4.0667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:1.4333rem 2.2rem;}
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_red {background-image:url("../images/ic-vs-main-red.png");}
@@ -244,8 +246,10 @@
 .middle_box .info_today.i_before {width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_ing {width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-red-02.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_cancel {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_suspended {width:6.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-03.png');background-repeat:no-repeat;background-size:100% auto;}
+
 .middle_box .info_today.i_end {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
-.home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#525252;}
+.home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#000;}
 .home.content .score_board_wrap .play_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;text-align:center;}
 .home.content .score_board_wrap .play_list li:first-child {margin-top:0;}
@@ -263,7 +267,7 @@
 .home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:3.1333rem;height:3.1rem;font-family:'Bebas Neue';font-size:3.3333rem;line-height:3.6667rem;font-style:normal;color:#000000;}
 .home.content .score_board_wrap .play_list li > div.middle_box .ic_vs_main {width:7.7333rem;height:3.1rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .info_today {margin:0.7rem 0 0.7667rem;}
-.home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:1.6667rem;line-height:1.8667rem;font-size:1.2667rem;color:#2b2b2b;}
+.home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:1.6667rem;line-height:1.8667rem;font-size:1.2667rem;color:#000;}
 .home.content .score_scroll {margin-top:1.5333rem;}
 .home.content .score_scroll .title_hd {padding-top:0.5333rem;height:3.5rem;}
 .home.content .score_scroll .title_hd > .more {top:0.1667rem;}
@@ -756,8 +760,10 @@
 .relay.content .play_list li .team_name {margin-top:0.3333rem;display:block;white-space:nowrap;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;text-align:center;}
 .relay.content .play_list li .team_name + .player_name {margin-top:0 !important;}
 .relay.content .play_list li .player_name .result {color:#c2c3c7;}
+.relay.content .play_list li .player_name .result_win {color:#3563c0;}
+.relay.content .play_list li .player_name .result_lose {color:#ec5f59;}
 .relay.content .play_list li .player_name .team {font-size:inherit;font-weight:bold;font-style:normal;}
-.relay.content .play_list li .player_info {display:block;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:center;color:#525252;white-space:nowrap;}
+.relay.content .play_list li .player_info {display:block;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:center;color:#000;white-space:nowrap;}
 .relay.content .play_list .game_before .team_player .player_name {margin-top:0.3333em;}
 .relay.content .play_list .game_end .team_player .player_name {margin-top:0.5rem;}
 .relay.content .kbo .play_list .game_end .team_player .player_name {text-align:right;overflow:hidden;white-space:normal;}
@@ -770,7 +776,7 @@
 .relay.content .play_list li .left_score,
 .relay.content .play_list li .right_score {position:absolute;top:2.4333rem;width:3.3333rem;height:3.3333rem;font-family:'Bebas Neue';font-size:3.6667rem;font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;color:#000000;}
 .relay.content .play_list li .left_score {left:0;text-align:right;}
-.relay.content .play_list li .left_score.res_lose {color:#c2c3c7;}
+.relay.content .play_list li .left_score.res_lose {color:#000;}
 .relay.content .play_list li .right_score {right:0;text-align:left;}
 .relay.content .play_list li .right_score.res_lose {color:#c2c3c7;}
 .relay.content .play_list li .ic_base {display:block;margin:2.9333rem auto 0.5333rem;width:3.2667rem;height:2.3333rem;background-repeat:no-repeat;background-size:100% auto;}
@@ -802,7 +808,7 @@
 .relay.content .play_list .info_tag_warp .info_tag.i_live {width:3.3667rem;background-image:url('../images/tag-live-list-red-01.png');}
 .relay.content .play_list li .info_time {margin-top:2.2667rem;display:block;height:1.9667rem;font-size:1.3333rem;font-weight:bold;text-align:center;color:#ca0039;}
 .relay.content .play_list li .info_tag_warp ~ .info_time {margin-top:1.5667rem;}
-.relay.content .play_list li .info_channel {display:block;margin:1.5667rem auto 0;height:1.8rem;font-size:1.2rem;text-align:center;color:#c2c3c7;}
+.relay.content .play_list li .info_channel {display:block;margin:1.5667rem auto 0;height:1.8rem;font-size:1.2rem;text-align:center;color:#000;}
 .relay.content .play_list li .info_tag_warp ~ .info_channel {margin-top:0.9333rem;}
 .relay.content .play_list li.game_cancel .middle_inner .info_result,
 .relay.content .play_list li.game_suspended .middle_inner .info_result {display:block;margin:0 auto;width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
@@ -940,23 +946,43 @@
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .team_logo,
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .i_score,
 .relay.content .relay_card_wrap ul li.on .card_box .team_box .team_name {opacity:1;}
-.relay.content .relay_card_wrap ul li.on .ic_info {background-color:#c10a3a;}
+.relay.content .relay_card_wrap ul li.on.game_before .ic_info,
+.relay.content .relay_card_wrap ul li.on.game_ing .ic_info {background-color:#c10a3a;}
 .relay.content .relay_card_wrap ul li.on .card_box {background-color:#ffffff;}
 .relay.content .relay_card_wrap ul li:first-child {margin-left:0;}
 .relay.content .relay_card_wrap ul li .ic_5g {display:block;position:absolute;top:0;right:1.1rem;width:2.2667rem;height:1.3333rem;background:url('../images/ic-tag-5-g.png') no-repeat 50% 50%;background-size:100% auto;}
-.relay.content .relay_card_wrap ul li .ic_info {display:inline-block;position:absolute;top:4.5333rem;right:0.6333rem;padding:0 0.5333rem;height:1.4667rem;line-height:1.5rem;font-size:0.8333rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:0.7333rem;background-color:#c2c3c7;}
-.relay.content .relay_card_wrap ul li .card_box {padding:0 0.6333rem 0 0.7333rem;width:100%;height:9.7333rem;border:1px solid #e5e5e5;border-radius:0.7333rem;background-color:#f7f7f7;}
-.relay.content .relay_card_wrap ul li .card_box .team_box {height:4.8rem;}
+.relay.content .relay_card_wrap ul li .ic_info {display:inline-block;position:absolute;top:4.5333rem;right:0.6333rem;padding:0 0.5333rem;height:1.4667rem;line-height:1.5rem;font-size:0.8333rem;font-weight:bold;text-align:center;color:#ffffff;border-radius:0.7333rem;background-color:#000;}
+.relay.content .relay_card_wrap ul li .card_box {padding:0 0.7333rem;width:100%;height:9.7333rem;border:1px solid #e5e5e5;border-radius:0.7333rem;background-color:#f7f7f7;}
+.relay.content .relay_card_wrap ul li .card_box .team_box {position: relative; height: 4.8333rem;}
 .relay.content .relay_card_wrap ul li .card_box .team_box:after {display:block;visibility:hidden;clear:both;content:""}
-.relay.content .relay_card_wrap ul li .card_box .team_box.top_box {padding-top:0.5rem;padding-bottom:1.0333rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.top_box .team_logo {margin-top:0.2333rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.top_box .team_name {margin-top:0.8667rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box .team_name {margin-top:0.5333rem;}
-.relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box {padding-top:1rem;border-top:1px solid #e8e9ef;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {float:left;width:48.3568%;height:3.0333rem;opacity:0.5;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {float:left;margin-left:1.0667rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'Bebas Neue';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box.top_box {}
+.relay.content .relay_card_wrap ul li .card_box .team_box.bottom_box { border-top:1px solid #e8e9ef;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_logo {position:absolute; left: 0.0667rem; width: 3.3333rem; height: 2.9333rem; opacity:0.7; }
+.relay.content .relay_card_wrap ul li .card_box .team_box .i_score {position:absolute;top:0.5rem;right:0.3rem;width:2.3333rem;height:3.3333rem;line-height:3.3333rem;font-family:'Bebas Neue';font-weight:normal;font-style:normal;font-size:2.2667rem;text-align:center;color:#000000;opacity:0.7;}
 .relay.content .relay_card_wrap ul li .card_box .team_box .i_score.i_gray {color:#737787 !important;}
-.relay.content .relay_card_wrap ul li .card_box .team_box .team_name {float:left;width:51.6431%;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;text-align:center;opacity:0.5;}
+.relay.content .relay_card_wrap ul li .card_box .team_box .team_name {position:absolute;text-align:center;color:#000;opacity:0.7;}
+.relay.content .relay_card_wrap ul li.game_before .top_box .team_name,
+.relay.content .relay_card_wrap ul li.game_cancel .top_box .team_name,
+.relay.content .relay_card_wrap ul li.game_suspended .top_box .team_name {position: absolute; top: 1.3333rem; right: 0.0333rem; width:3.6667rem; height:1.9667rem; font-size: 1.3333rem; line-height:1.9667rem; font-weight: 500; }
+.relay.content .relay_card_wrap ul li.game_before .bottom_box .team_name,
+.relay.content .relay_card_wrap ul li.game_cancel .bottom_box .team_name,
+.relay.content .relay_card_wrap ul li.game_suspended .bottom_box .team_name {position: absolute; top: 1.5333rem; right: 0.0333rem; width:3.6667rem; height:1.9667rem; font-size: 1.3333rem; line-height:1.9667rem; font-weight: 500; }
+
+.relay.content .relay_card_wrap ul li.game_ing .team_box .team_name,
+.relay.content .relay_card_wrap ul li.game_end .team_box .team_name { position: absolute; top: 2.7333rem; left: 0.0667rem; width: 3.3333rem; height: 1.8rem; font-size: 1.2rem; line-height: 1.8rem; font-weight: 500;  }
+
+
+.relay.content .relay_card_wrap ul li.game_before .top_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_cancel .top_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_suspended .top_box .team_logo { top: 0.8667rem; }
+.relay.content .relay_card_wrap ul li.game_before .bottom_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_cancel .bottom_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_suspended .bottom_box .team_logo { top: 1.0667rem; }
+
+.relay.content .relay_card_wrap ul li.game_ing .team_box .team_logo,
+.relay.content .relay_card_wrap ul li.game_end .team_box .team_logo { top: 0.2667rem; }
+
+
 .relay.content .sec_analysis {padding-top:2.5333rem;}
 .relay.content .analysis_wrap {margin-top:1rem;}
 .relay.content .vs_rank_wrap {position:relative;padding:1.8667rem 2.1333rem 0.8333rem;height:12.1333rem;}

@@ -74,102 +74,95 @@
 			</div>
 			<div class="content_scroll">
 				<div class="sec_wrapper relay_card_wrap">
-					<div class="inner">
-						<ul>
-							<li class="on"> <!-- 해당페이지 카드에서 on 클래스 추가 -->
-								<span class="ic_5g blind">5G</span>
-								<span class="ic_info">9회말</span>
-								<div class="card_box">
-									<div class="team_box top_box">
-										<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
-										<em class="i_score">5</em>
-									</div>
-									<div class="team_box bottom_box">
-										<span class="team_logo team_logo_OB"></span>
-										<em class="i_score">2</em>
-									</div>
-								</div>
-							</li>
-							<li> <!-- 해당페이지 카드에서 on 클래스 추가 -->
-								<span class="ic_5g blind">5G</span>
-								<span class="ic_info">경기종료</span>
-								<div class="card_box">
-									<div class="team_box top_box">
-										<span class="team_logo team_logo_LG"></span>
-										<em class="i_score">5</em>
-									</div>
-									<div class="team_box bottom_box">
-										<span class="team_logo team_logo_OB"></span>
-										<em class="i_score i_gray">2</em> <!-- "패"인 팀 스코어에 i_gray 클래스 추가 -->
-									</div>
-								</div>
-							</li>
-							<li> <!-- on클래스 없으면 불투명 -->
-								<!--<span class="ic_5g blind">5G</span>-->
-								<span class="ic_info">경기전</span>
-								<div class="card_box">
-									<div class="team_box top_box">
-										<span class="team_logo team_logo_LT"></span>
-										<!--<em class="i_score">5</em>-->
+                    <div class="inner">
+                        <ul>
+                            <li class="on game_before"> <!-- 해당페이지 카드에서 on 클래스 추가 --><!-- 경기전 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+                                    </div>
+                                </div>
+                                <span class="ic_5g blind">5G</span>
+                                <span class="ic_info">경기전</span>
+                            </li>
+                            <li class="on game_ing"> <!-- 해당페이지 카드에서 on 클래스 추가 --><!-- 경기중 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LT"></span>
 										<span class="team_name">롯데</span>
-									</div>
-									<div class="team_box bottom_box">
-										<span class="team_logo team_logo_SK"></span>
-										<!--<em class="i_score">2</em>-->
+										<em class="i_score">23</em>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_SK"></span>
 										<span class="team_name">SK</span>
-									</div>
-								</div>
-							</li>
-							<li> <!-- on클래스 없으면 불투명 -->
-								<!--<span class="ic_5g blind">5G</span>-->
-								<span class="ic_info">경기취소</span>
-								<div class="card_box">
-									<div class="team_box top_box">
-										<span class="team_logo team_logo_WO"></span>
-										<!--<em class="i_score">5</em>-->
+										<em class="i_score">16</em>
+                                    </div>
+                                </div>
+                                <span class="ic_info">9회말</span>
+                            </li>
+                            <li class="on game_end"> <!-- on클래스 없으면 불투명 --><!-- 경기종료 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_WO"></span>
 										<span class="team_name">키움</span>
-									</div>
-									<div class="team_box bottom_box">
-										<span class="team_logo team_logo_SK"></span>
-										<!--<em class="i_score">2</em>-->
+										<em class="i_score">5</em>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_SS"></span>
 										<span class="team_name">삼성</span>
-									</div>
-								</div>
-							</li>
-							<li> <!-- on클래스 없으면 불투명 -->
-								<!--<span class="ic_5g blind">5G</span>-->
-								<span class="ic_info">경기종료</span>
-								<div class="card_box">
-									<div class="team_box top_box">
-										<span class="team_logo team_logo_LT"></span>
-										<!--<em class="i_score">5</em>-->
-										<span class="team_name">롯데</span>
-									</div>
-									<div class="team_box bottom_box">
-										<span class="team_logo team_logo_KT"></span>
-										<!--<em class="i_score">2</em>-->
-										<span class="team_name">KT</span>
-									</div>
-								</div>
-							</li>
-							<li> <!-- on클래스 없으면 불투명 -->
-								<!--<span class="ic_5g blind">5G</span>-->
-								<span class="ic_info">경기종료</span>
-								<div class="card_box">
-									<div class="team_box top_box">
-										<span class="team_logo team_logo_LT"></span>
-										<!--<em class="i_score">5</em>-->
-										<span class="team_name">롯데</span>
-									</div>
-									<div class="team_box bottom_box">
-										<span class="team_logo team_logo_KT"></span>
-										<!--<em class="i_score">2</em>-->
-										<span class="team_name">KT</span>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+										<em class="i_score">2</em>
+                                    </div>
+                                </div>
+                                <span class="ic_info">경기종료</span>
+                            </li>
+                            <li class="game_end"> <!-- on클래스 없으면 불투명 --><!-- 경기종료 동점일 경우 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+										<em class="i_score">5</em>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+										<em class="i_score">5</em>
+                                    </div>
+                                </div>
+                                <span class="ic_info">경기종료</span>
+                            </li>
+                            <li class="game_cancel"> <!-- on클래스 없으면 불투명 --><!-- 경기취소 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+                                    </div>
+                                </div>
+                                <span class="ic_info">경기취소</span>
+                            </li>
+                            <li class="game_suspended"> <!-- on클래스 없으면 불투명 --><!-- 서스펜디드 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+                                    </div>
+                                </div>
+                                <span class="ic_info">서스펜디드</span>
+                            </li>
+                        </ul>
+                    </div>
 				</div>
 				<div class="tab_1depth_wrap">
 					<div class="tab_1depth" id="tab_1depth4">
