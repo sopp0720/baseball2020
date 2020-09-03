@@ -760,7 +760,7 @@
 .relay.content .play_list li .player_info {display:block;height:1.8rem;font-size:1.2rem;font-weight:500;text-align:center;color:#525252;white-space:nowrap;}
 .relay.content .play_list .game_before .team_player .player_name {margin-top:0.3333em;}
 .relay.content .play_list .game_end .team_player .player_name {margin-top:0.5rem;}
-.relay.content .kbo .play_list .game_end .team_player .player_name {text-align:right;}
+.relay.content .kbo .play_list .game_end .team_player .player_name {text-align:right;overflow:hidden;white-space:normal;}
 .relay.content .play_list .game_end .team_player .player_name + .player_name {margin-top:0;}
 .relay.content .play_list .game_cancel .team_player .player_name,
 .relay.content .play_list .game_suspended .team_player .player_name {margin-top:0.3333em;}
