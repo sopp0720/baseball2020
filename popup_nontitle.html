@@ -15,6 +15,8 @@
 <button type="button" onclick="layerPopup.show('#popup_4');" style="border:1px solid #000;">팝업4</button>
 <button type="button" onclick="layerPopup.show('#popup_5');" style="border:1px solid #000;">팝업5</button>
 <button type="button" onclick="layerPopup.show('#popup_6');" style="border:1px solid #000;">팝업6</button>
+<button type="button" onclick="layerPopup.show('#popup_7');" style="border:1px solid #000;">팝업7(응원하기_차단 확인)</button>
+<button type="button" onclick="layerPopup.show('#popup_8');" style="border:1px solid #000;">팝업8(응원하기_도배 금지)</button>
 
 <div id="wrap" data-theme="theme_LG">
 	<div class="modal fadeIn" id="popup_1">
@@ -104,6 +106,39 @@
 				<div class="modal_ft">
 					<div class="btn_half usetap"><span>예</span></div>
 					<div class="btn_half usetap" onclick="layerPopup.hide();"><span>아니오</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fadeIn" id="popup_7">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="modal_content">
+				<div class="modal_bd">
+					<div class="img_box"></div>
+					<p><em>닉네임</em> 님을 차단하시겠습니까?<br>
+						차단하면 해당 사용자가 작성한 글이<br>
+						보이지 않습니다.</p>
+				</div>
+				<div class="modal_ft">
+					<div class="btn_half usetap" onclick="layerPopup.hide();"><span>취소</span></div>
+					<div class="btn_half usetap"><span>차단하기</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fadeIn" id="popup_8">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="modal_content">
+				<div class="modal_bd">
+					<div class="img_box"></div>
+					<p>연속적으로 메시지를 작성하여<br>
+						이용이 제한되었습니다.<br>
+						잠시 후 다시 이용해주세요.</p>
+				</div>
+				<div class="modal_ft">
+					<div class="btn usetap" onclick="layerPopup.hide();"><span>확인</span></div>
 				</div>
 			</div>
 		</div>
