@@ -2227,6 +2227,12 @@ background-color:#f2f3f4;}
 .bt_btn_box button.btn_end {font-weight:500;color:#858585;background-color:#eeeeee;cursor:default;}
 .bt_btn_box button.btn_gray {font-weight:500;color:#858585;background-color:#eeeeee;}
 
+/* header hidden */
+.content.old .page_title_wrap { display: block; }
+.content.old.live_video .page_title_wrap { display: none; }
+.content.old .video_wrap .img_player_default { top: 0; }
+.content.old .relay_video_thumb { top: 0; }
+
 /* iPhone XR */
 @media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) and (orientation : portrait) {
 	.tab_container {height:calc(5.6rem + 28px);}
