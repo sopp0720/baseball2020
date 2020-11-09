@@ -145,10 +145,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-/* 장과장님은 아래로 작성 부탁드립니다. */
-
-
+/* 더미 스크립트 */
+document.addEventListener("DOMContentLoaded", function() {
+    var orientation = window.orientation;
+    var liveArea = document.getElementsByClassName('live_video').length;
+    if (orientation == 90 && liveArea == 1){
+        document.documentElement.classList.add('horizontal_ui');
+    }
+});
 
 
 
