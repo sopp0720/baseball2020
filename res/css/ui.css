@@ -2251,6 +2251,30 @@ background-color:#f2f3f4;}
 	.horizontal_ui .relay.content .chat_btm {left:56.25%;}
 	.horizontal_ui .modal { left: 56.25%; }
 	.horizontal_ui .modal > .dim { left: 56.25%; }
+
+	.horizontal_ui .content .video_wrap .ic_show { width: 5.2286rem; height: 5.2286rem; left: 0.4714rem; top: 0.4714rem; }
+	.horizontal_ui .content .video_wrap .game_info span { padding: 0.7714rem 0; height: 3.8143rem; font-size: 1.4143rem; line-height: 2.1857rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info { margin-top: 2.4429rem; }
+	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info { width: 11.4429rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .team_info.left { left: 6.5571rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .team_info.right { right: 6.5571rem; }
+	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info.left { left: 3.9857rem; }
+	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info.right { right: 3.9857rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .team_info .team_logo {width:6.3rem;height:5.5286rem;}
+	.horizontal_ui .content .video_wrap .relay_top_info .team_info .team_name { margin-top: 0.7714rem; height: 2.8286rem; font-size: 1.9286rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .vs_box { padding-top: 0.3857rem; width: 9.7714rem;}
+	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box { width: 18.5143rem; padding-top:0; }
+	.horizontal_ui .content .video_wrap .relay_top_info .vs_box .vs_img { width: 9.7714rem; height: 4.8857rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .vs_box .time_spot {  margin-top: 1.1571rem; line-height: 2.7rem; height: 2.7rem; font-size: 1.8429rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .tag_info { margin-top: 1.1571rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .tag_info .ic_tag {padding: 0 0.5rem; height: 1.8rem; line-height: 1.8rem; font-size: 0.8rem; border-radius: 0.9rem; }
+	.horizontal_ui .content .video_wrap .relay_top_info .tag_info .ic_tag:first-child {margin-left:0;}
+	.horizontal_ui .content .video_wrap .relay_top_info .relay_channel { margin-top: 1.2857rem; height: 2.3143rem; font-size: 1.5429rem; }
+	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .i_score { top: 0; width: 3.2143rem; height: 5.6571rem; line-height: 5.6571rem; font-size: 4.6286rem; }
+	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .time_spot { margin-top: 1.5429rem; }
+	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .tag_info { margin-top: 2.5714rem; }
+
+
 }
 
 
