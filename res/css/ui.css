@@ -75,8 +75,7 @@
 .content .title_hd {position:relative;padding:/*0.5333rem*/0 0 0.5rem;height:2.9667rem;font-size:0;}
 .content .title_hd > span {display:inline-block;vertical-align:top;}
 .content .title_hd > span.sec_title {height:2.4667rem;line-height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
-.content .title_hd > .more {display:inline-block;position:absolute;top:-0.3667rem;right:-0.8rem;width:3.2rem;height:3.2rem;vertical-align:top;background:url("../images/ic-arrow-title.png") no-repeat 50% 50%;background-size:cover;}
-.content .title_hd > .more.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
+.content .title_hd > .more {position:absolute;top:-0.3667rem;right:-0.8rem;width: 6.7rem; height: 3.2rem;background:url("../images/ic-arrow-title-2.png") no-repeat;background-size:100%;}
 .content .title_hd.line2 {height:5.4667rem;line-height:1;}
 .content .title_hd.line2 > span.sec_title {height:4.9333rem;}
 .content .table_responsive + .title_hd {margin-top:2rem;}
@@ -142,7 +141,7 @@
 .live_video .btn_player_view_wrap .btn_player_view > span.txt_off {display:inline-block;}
 .live_video .btn_player_view_wrap .btn_player_view > span.txt_on {display:none;}
 .btn_player_view_wrap .btn_player_view > i {display:inline-block;margin-top:0.2333rem;margin-left:0.3333rem;width:1.3333rem;height:1.3333rem;background:url("../images/ic-arrow-up-g.png") no-repeat 50% 50%;background-size:cover;vertical-align:top;transform:rotate(180deg);}
-.live_video .btn_player_view_wrap .btn_player_view {top:auto;}
+.live_video .btn_player_view_wrap .btn_player_view {top:calc(100vw * 0.5625 + 5rem);}
 .live_video .btn_player_view_wrap .btn_player_view > i {transform:rotate(0deg);}
 .content_scroll {position:relative;}
 .content .content_scroll .sec_wrapper {border-top:0.9333rem solid #f0f1f6;border-bottom:0 none;}
@@ -2273,8 +2272,6 @@ background-color:#f2f3f4;}
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .i_score { top: 0; width: 3.2143rem; height: 5.6571rem; line-height: 5.6571rem; font-size: 4.6286rem; }
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .time_spot { margin-top: 1.5429rem; }
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .tag_info { margin-top: 2.5714rem; }
-
-
 }
 
 
@@ -2287,6 +2284,27 @@ background-color:#f2f3f4;}
 }
 /* iPhone X, iPhone XS */
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+	.tab_container {height:calc(5.6rem + 28px);transform: translate(0, 100%) translateZ(0px);}
+	.tab_bar {height:calc(5.6rem + 28px);}
+	.tab_bar .middle .center_middle {height:calc(5.6rem + 28px);background-image:url(../images/gnb/tabbar_middle_2_notch.png);background-size:auto 100%;}
+	.active_label_container {bottom:28px;}
+}
+/* iPhone 12 Mini */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.tab_container {height:calc(5.6rem + 28px);transform: translate(0, 100%) translateZ(0px);}
+	.tab_bar {height:calc(5.6rem + 28px);}
+	.tab_bar .middle .center_middle {height:calc(5.6rem + 28px);background-image:url(../images/gnb/tabbar_middle_2_notch.png);background-size:auto 100%;}
+	.active_label_container {bottom:28px;}
+}
+/* iPhone 12 and iPhone 12 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+	.tab_container {height:calc(5.6rem + 28px);transform: translate(0, 100%) translateZ(0px);}
+	.tab_bar {height:calc(5.6rem + 28px);}
+	.tab_bar .middle .center_middle {height:calc(5.6rem + 28px);background-image:url(../images/gnb/tabbar_middle_2_notch.png);background-size:auto 100%;}
+	.active_label_container {bottom:28px;}
+}
+/* iPhone 12 Pro Max */
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
 	.tab_container {height:calc(5.6rem + 28px);transform: translate(0, 100%) translateZ(0px);}
 	.tab_bar {height:calc(5.6rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(5.6rem + 28px);background-image:url(../images/gnb/tabbar_middle_2_notch.png);background-size:auto 100%;}
