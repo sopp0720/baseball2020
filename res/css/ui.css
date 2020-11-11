@@ -141,7 +141,7 @@
 .live_video .btn_player_view_wrap .btn_player_view > span.txt_off {display:inline-block;}
 .live_video .btn_player_view_wrap .btn_player_view > span.txt_on {display:none;}
 .btn_player_view_wrap .btn_player_view > i {display:inline-block;margin-top:0.2333rem;margin-left:0.3333rem;width:1.3333rem;height:1.3333rem;background:url("../images/ic-arrow-up-g.png") no-repeat 50% 50%;background-size:cover;vertical-align:top;transform:rotate(180deg);}
-.live_video .btn_player_view_wrap .btn_player_view {top:calc(100vw * 0.5625 + 5rem);}
+.live_video .btn_player_view_wrap .btn_player_view {top:-webkit-calc(100vw * 0.5625 + 5rem);top:calc(100vw * 0.5625 + 5rem);}
 .live_video .btn_player_view_wrap .btn_player_view > i {transform:rotate(0deg);}
 .content_scroll {position:relative;}
 .content .content_scroll .sec_wrapper {border-top:0.9333rem solid #f0f1f6;border-bottom:0 none;}
