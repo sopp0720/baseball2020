@@ -38,6 +38,8 @@ var floatUI = (function() {
 			const tit = document.querySelector('.page_title_wrap');
 			const srh = document.querySelector('.srh_empty_box');			
 			const chat = document.querySelector('.chat_inner');
+			const iptvArea = document.getElementsByClassName('iptv');
+			console.log(iptvArea.length);
 
 			if (tit != null){
 				if (st > 0){
@@ -54,31 +56,63 @@ var floatUI = (function() {
 				}
 			}
 			if (ela.length){
-				ela.forEach(function (el) {
-					if (pTop > el.getBoundingClientRect().top) {
-						el.children[0].style.position = 'fixed';
-						el.children[0].style.top = pTop + 'px';
-						el.children[0].style.zIndex = '10';
-						if (elaTop != null){
-							if (st > before_st){
+				if (iptvArea.length){
+					ela.forEach(function (el) {
+						if (pTop > el.getBoundingClientRect().top) {
+							el.children[0].style.position = 'fixed';
+							el.children[0].style.top = pTop + 'px';
+							el.children[0].style.zIndex = '10';
+							el.children[0].style.left = '20%';
+							el.children[0].style.right = '20%';
+							if (elaTop != null){
+								if (st > before_st){
+									elaTop.classList.remove('on');
+									elaTop.classList.add('off');
+								} else {
+									elaTop.classList.add('on');
+									elaTop.classList.remove('off');
+								}
+							}
+						} else {
+							el.children[0].style.position = '';
+							el.children[0].style.top = '';
+							el.children[0].style.zIndex = '';
+							el.children[0].style.left = '';
+							el.children[0].style.right = '';
+							if (elaTop != null){
 								elaTop.classList.remove('on');
-								elaTop.classList.add('off');
-							} else {
-								elaTop.classList.add('on');
 								elaTop.classList.remove('off');
 							}
 						}
-					} else {
-						el.children[0].style.position = '';
-						el.children[0].style.top = '';
-						el.children[0].style.zIndex = '';
-						if (elaTop != null){
-							elaTop.classList.remove('on');
-							elaTop.classList.remove('off');
+						before_st = st;
+					});					
+				} else {
+					ela.forEach(function (el) {
+						if (pTop > el.getBoundingClientRect().top) {
+							el.children[0].style.position = 'fixed';
+							el.children[0].style.top = pTop + 'px';
+							el.children[0].style.zIndex = '10';
+							if (elaTop != null){
+								if (st > before_st){
+									elaTop.classList.remove('on');
+									elaTop.classList.add('off');
+								} else {
+									elaTop.classList.add('on');
+									elaTop.classList.remove('off');
+								}
+							}
+						} else {
+							el.children[0].style.position = '';
+							el.children[0].style.top = '';
+							el.children[0].style.zIndex = '';
+							if (elaTop != null){
+								elaTop.classList.remove('on');
+								elaTop.classList.remove('off');
+							}
 						}
-					}
-					before_st = st;
-				});
+						before_st = st;
+					});					
+				}
 			}
 			if (chat != null){
 				videoUI.content_scroll();

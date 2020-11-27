@@ -152,6 +152,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (orientation == 90 && liveArea == 1){
         document.documentElement.classList.add('horizontal_ui');
     }
+    if (orientation == 90) {
+        document.getElementById('container').classList.add('iptv');
+    }
 });
 
 

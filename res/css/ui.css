@@ -6,6 +6,7 @@
 #wrap.main {background-color:#ffffff;padding-bottom:9.6667rem;}
 #wrap.sub {background-color:#F7F7F7;}
 #container {position:relative;width:100%;}
+#container.iptv { width: 60% !important; margin: 0 auto;}
 
 /* 여기서 부터 작업 부탁드려요 */
 /* Common */
@@ -1715,6 +1716,11 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_teamlist_wrap.off .tab_teamlist {position:fixed;top:-8.5334rem !important;}
 .tab_teamlist_wrap.on .tab_teamlist {position:fixed;top:0 !important;}
 .tab_teamlist_wrap.on + .tab_1depth_wrap .tab_1depth {top:8.5334rem !important;}
+.iptv .tab_teamlist_wrap.off .tab_teamlist {left:20%;right:20%;}
+.iptv .tab_teamlist_wrap.on .tab_teamlist {left:20%;right:20%;}
+.iptv .tab_teamlist_wrap.on + .tab_1depth_wrap .tab_1depth {left:20%;right:20%;}
+
+
 .tab_teamlist {margin-top:1.6667rem;background-color:#fff;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;padding:0 2.2rem;}
 .tab_teamlist::-webkit-scrollbar {display:none;}
 .tab_teamlist ul {overflow:visible;white-space:nowrap;display:inline-block;display:-webkit-inline-flex;display:inline-flex;flex-direction:row;}
