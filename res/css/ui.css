@@ -29,7 +29,7 @@
 
 /* loading */
 .ptr--ptr {z-index:100;position:fixed;left:50%;margin-left:-2.2833rem;width:4.5667rem !important;height:4.5667rem !important;transform:translate(0%, -100%) scale(1, 1);}
-.loading_wrap {display:none;position:fixed;top:0;left:0;bottom:0;right:0;}
+.loading_wrap {display:none;position:fixed;top:0;left:0;bottom:0;right:0;z-index:2;}
 .loading {position:absolute;width:4.5667rem;height:4.5667rem;background-image:url(../images/ic_loading.gif);background-size:100%;}
 .loading_wrap .loading {left:50%;top:50%;margin-left:-2.2833rem;margin-top:-2.2833rem;}
 /* Press 공통 */
@@ -2257,6 +2257,8 @@ background-color:#f2f3f4;}
 	.horizontal_ui .relay.content .chat_btm {left:56.25%;}
 	.horizontal_ui .modal { left: 56.25%; }
 	.horizontal_ui .modal > .dim { left: 56.25%; }
+	.horizontal_ui .modal > .dim { left: 56.25%; }
+	.horizontal_ui .loading_wrap { left: 56.25%; }
 
 	.horizontal_ui .content .video_wrap .ic_show { width: 5.2286rem; height: 5.2286rem; left: 0.4714rem; top: 0.4714rem; }
 	.horizontal_ui .content .video_wrap .game_info span { padding: 0.7714rem 0; height: 3.8143rem; font-size: 1.4143rem; line-height: 2.1857rem; }
