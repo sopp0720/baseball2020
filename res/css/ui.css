@@ -76,6 +76,7 @@
 .content .title_hd {position:relative;padding:/*0.5333rem*/0 0 0.5rem;height:2.9667rem;font-size:0;}
 .content .title_hd > span {display:inline-block;vertical-align:top;}
 .content .title_hd > span.sec_title {height:2.4667rem;line-height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
+.content .title_hd > span.sec_title.more_ellpsis {width:calc(100% - 7.1rem);text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 .content .title_hd > .more {position:absolute;top:-0.3667rem;right:-0.8rem;width: 6.7rem; height: 3.2rem;background:url("../images/ic-arrow-title-2.png") no-repeat;background-size:100%;}
 .content .title_hd.line2 {height:5.4667rem;line-height:1;}
 .content .title_hd.line2 > span.sec_title {height:4.9333rem;}
@@ -211,9 +212,12 @@
 .home.content .top_phrase.case10 {background-image:url("../images/img-home-illust-10.png");}
 .home.content .top_phrase.case11 {background-image:url("../images/img-home-illust-11.png");}
 .home.content .btn_uplustv {position:absolute;top:0.3rem;left:1.7333rem;width:3.0667rem;height:3.0667rem;background-image:url(../images/ic-logo-mobile-tv.png);background-size:100%;overflow:hidden;font-size:0;line-height:0;direction:ltr;text-indent:-999em;}
+.home.content .top_logo h1.ic_logo_lgu {width:9.2667rem;height:2.1rem;margin:1rem 0 0 1.7rem;background:url("../images/02-1-icon-u-logo-ic-logo-lgu.png") no-repeat;background-size:100% auto;}
+.home.content .top_logo h1.ic_logo_lgu a {display:block;width:100%;height:100%;}
 .home.content .top_phrase h1.ic_logo_lgu {width:7.2rem;height:1.6333rem;background:url("../images/ic-logo-lgu.png") no-repeat;background-size:100% auto;}
 .home.content .top_phrase h1.ic_logo_lgu > a {display:block;width:100%;height:100%;}
 .home.content .btn_uplustv + h1.ic_logo_lgu {margin-left:3.1333rem;}
+.home.content .top_bn {margin-top:1.5333rem;}
 .home.content .top_phrase .quo_marks {display:block;margin-bottom:0.5667rem;width:1.8333rem;height:1.8333rem;background:url("../images/ic-home-top-text-b.png") no-repeat;background-size:cover;}
 .home.content .top_phrase > p {margin-top:2.7333rem;width:22rem;height:4.5333rem;font-size:1.6667rem;font-weight:300;line-height:1.36;color:#000000;}
 .home.content .score_board_wrap {padding-top:2.5333rem;}
@@ -330,8 +334,12 @@
 .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
 .highlight_box p {margin-top:0.5333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .highlight_wrap.line1 .highlight_box p {height:1.9667rem;line-height: normal;-webkit-line-clamp: 1;}
+
 .home.content .highlight_box .view {position:relative;display:block;margin-top:0.5rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
 .home.content .highlight_box .view .ico_play {position:absolute;top:0.2333rem;left:0.3333rem;display:block;width:1.3333rem;height:1.3333rem;line-height:1.3333rem;background:url("../images/ic-play-gray.png") no-repeat 50% 50%;background-size:cover;}
+.home.content .highlight_box .video_info2 {position:relative;margin-top:0.4rem;padding:0;height:1.8rem;}
+.home.content .highlight_box .video_info2 .i_date {display:block;position:absolute;top:0;right:0;width:6.9rem;height:1.8rem;line-height:1.8rem;font-size:1.2rem;color:#858585;text-align:right;}
+.home.content .highlight_box .video_info2 .view {margin-top:0 !important;}
 .home.content .news_wrap .news_main {position:relative;margin-top:1rem;padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;overflow:hidden;}
 .home.content .news_wrap .news_main .txt_inner_wrap {position:absolute;bottom:0;width:100%;height:11.6667rem;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
 .home.content .news_wrap .news_main .txt_inner {position:absolute;left:0;bottom:0;padding:0 1.6667em 1.6667rem;}
