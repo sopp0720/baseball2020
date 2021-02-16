@@ -75,9 +75,9 @@
 /* Sec title */
 .content .title_hd {position:relative;padding:/*0.5333rem*/0 0 0.5rem;height:2.9667rem;font-size:0;}
 .content .title_hd > span {display:inline-block;vertical-align:top;}
-.content .title_hd > span.sec_title {height:2.4667rem;line-height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000000;}
+.content .title_hd > span.sec_title {height:2.5rem;line-height:2.5rem;font-size:1.7rem;font-weight:bold;color:#000000;}
 .content .title_hd > span.sec_title.more_ellpsis {width:calc(100% - 7.1rem);text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
-.content .title_hd > .more {position:absolute;top:-0.3667rem;right:-0.8rem;width: 6.7rem; height: 3.2rem;background:url("../images/ic-arrow-title-2.png") no-repeat;background-size:100%;}
+.content .title_hd > .more {position:absolute;top:-0.3333rem;right:-0.8rem;width:7.1rem; height:3.2rem;background:url("../images/02-1-icon-arrow-ic-arrow-title-2.png") no-repeat;background-size:100%;}
 .content .title_hd.line2 {height:5.4667rem;line-height:1;}
 .content .title_hd.line2 > span.sec_title {height:4.9333rem;}
 .content .table_responsive + .title_hd {margin-top:2rem;}
@@ -231,11 +231,11 @@
 .home.content .score_today > div.team_img_wrap .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
 .home.content .score_today > div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
 .home.content .score_today > div.middle_box {position:relative;z-index:1;margin:0 auto;width:12.6667rem;}
-.home.content .score_today > div.middle_box .logo_na {display:block;margin:0 auto;width:3.8333rem;height:1.6667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.home.content .score_today > div.middle_box .logo_na {display:block;margin:0.1333rem auto 0;width:3.8333rem;height:1.6667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .home.content .score_today > div.middle_box .logo_na.kbo {background-image:url("../images/ic-logo-kbo-lg.png");} /* KBO logo */
 .home.content .score_today > div.middle_box .logo_na.mlb {background-image:url("../images/ic-logo-mlb-navy.png");} /* KBO logo */
-.home.content .score_today > div.middle_box .title {display:block;height:2.4667rem;font-size:1.6667rem;font-weight:bold;color:#000;text-align:center;}
-.home.content .score_today > div.middle_box .play_score {overflow:hidden;}
+.home.content .score_today > div.middle_box .title {display:block;height:2.5rem;font-size:1.7rem;font-weight:bold;color:#000;text-align:center;}
+.home.content .score_today > div.middle_box .play_score {margin:0.0667rem 0 0;overflow:hidden;}
 .home.content .score_today > div.middle_box .play_score em {display:block;float:left;width:3.5rem;height:4.0667rem;font-family:'Bebas Neue';font-weight:normal;font-size:4rem;line-height:4.8rem;font-style:normal;color:#000000;}
 .home.content .score_board_wrap.kbo {border-top:0;}
 .home.content .score_board_wrap .result_val {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#c2c3c7;}
@@ -245,48 +245,94 @@
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main {display:block;float:left;width:5.6667rem;height:4.0667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:1.4333rem 2.2rem;}
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_red {background-image:url("../images/ic-vs-main-red.png");}
 .home.content .score_board_wrap .middle_box .play_score .ic_vs_main.vs_gray {background-image:url("../images/ic-vs-main-gray.png");}
+/*
 .home.content .score_board_wrap .middle_box .info_today {display:inline-block;margin:1rem 0 1.2333rem;vertical-align:top;}
 .middle_box .info_today.i_schedule {width:5.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-main-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_before {width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_ing {width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-red-02.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_cancel {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_suspended {width:6.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-03.png');background-repeat:no-repeat;background-size:100% auto;}
+*/
+.home.content .score_board_wrap .middle_box .info_today {display:inline-block;margin:0.9rem 0 1.1667rem;vertical-align:top;}
+.middle_box .info_today.i_schedule {width:6.0667rem;height:2.0333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/02-1-icon-tag-main-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_before {width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-red-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_ing {width:4.6667rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-red-02.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_cancel {width:3.8333rem;height:2.0333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/02-1-icon-tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_suspended {width:7.1333rem;height:2.0333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/02-1-icon-tag-team-gray-03.png');background-repeat:no-repeat;background-size:100% auto;}
 
 .middle_box .info_today.i_end {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
 .home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#000;}
 .home.content .score_board_wrap .play_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
-.home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.7333rem 0 0.9rem;width:100%;height:6.8333rem;text-align:center;}
+.home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.8rem 0 0.8333rem;width:100%;height:6.8333rem;text-align:center;}
 .home.content .score_board_wrap .play_list li:first-child {margin-top:0;}
 .home.content .score_board_wrap .play_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#f8f8f9;}
 .home.content .score_board_wrap .play_list li:first-child:after {display:none;}
 .home.content .score_board_wrap .play_list li.active {opacity:0.8;}
 
-.home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:8.3333rem;}
-.home.content .score_board_wrap .play_list li > div.team_player.left {left:2.3333rem;}
-.home.content .score_board_wrap .play_list li > div.team_player.right {right:2.3333rem;}
+.home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:9.0333rem;}
+.home.content .score_board_wrap .play_list li > div.team_player.left {left:1.4rem;}
+.home.content .score_board_wrap .play_list li > div.team_player.right {right:1.4rem;}
 .home.content .score_board_wrap .play_list li > div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
-.home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.3333rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;}
-.home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:14rem;}
-.home.content .score_board_wrap .play_list li > div.middle_box .play_score {padding-top:0.2667rem;overflow:hidden;}
-.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:3.1333rem;height:3.1rem;font-family:'Bebas Neue';font-size:3.3333rem;line-height:3.6667rem;font-style:normal;color:#000000;}
-.home.content .score_board_wrap .play_list li > div.middle_box .ic_vs_main {width:7.7333rem;height:3.1rem;}
-.home.content .score_board_wrap .play_list li > div.middle_box .info_today {margin:0.7rem 0 0.7667rem;}
-.home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:1.6667rem;line-height:1.8667rem;font-size:1.2667rem;color:#000;}
+.home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.4rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;}
+.home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:12.9rem;}
+.home.content .score_board_wrap .play_list li > div.middle_box .play_score {padding-top:0.5rem;overflow:hidden;}
+.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:2.6667rem;height:2.7rem;font-family:'Bebas Neue';font-size:3.3333rem;line-height:1;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .play_list li > div.middle_box .ic_vs_main {width:7.5667rem;height:2.7rem;}
+.home.content .score_board_wrap .play_list li > div.middle_box .info_today {margin:0.5rem 0 0.3rem;}
+.home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000;}
+
+.home.content .score_board_wrap .mini_kbo_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
+.home.content .score_board_wrap .mini_kbo_list li {position:relative;margin-top:1px;padding:0.7333rem 0 0.8rem;width:100%;height:5.6rem;text-align:center;}
+.home.content .score_board_wrap .mini_kbo_list li:first-child {margin-top:0;}
+.home.content .score_board_wrap .cheer_team {background-color: rgba(241, 23, 85, 0.03);}
+.home.content .score_board_wrap .mini_kbo_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#f8f8f9;}
+.home.content .score_board_wrap .mini_kbo_list li:first-child:after {display:none;}
+.home.content .score_board_wrap .mini_kbo_list li.active {opacity:0.8;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player {position:absolute;top:1.2667rem;width:8.4333rem;font-size:0;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player .team_name {display:inline-block;margin:0.6333rem 0;width:4.2rem;height:1.9667rem;line-height:1.9667rem;font-size: 1.4rem;font-weight: bold;font-style:normal;color:#000000;vertical-align:top;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player .team_logo {display:inline-block;width:3.6333rem;height:3.2333rem;vertical-align:top;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.left {left:0.4rem}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.left .team_name {text-align:right;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.left .team_logo {margin-left:0.6rem;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.right {right:0.4rem;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.right .team_name {text-align:left;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.right .team_logo {margin-right:0.6rem;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box {z-index:1;position:relative;margin:0 auto;width:15.2667rem;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box {overflow:hidden;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box em {display:block;float:left;margin-top:0.0667rem;width:3.8333rem;height:4rem;font-family:'Bebas Neue';font-size:3.3333rem;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state {display:block;float:left;margin:1.0333rem 0.9667rem;width:5.6667rem;height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000000;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.ing {color:#ca0039;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.before {margin-top:0;margin-bottom:0;height:auto;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.before span {display:block;height:2rem;}
+.home.content .separate_league {margin-top:1.5333rem;}
+.home.content .separate_league .title_hd {padding-top:0.5333rem;height:3.5rem;}
+.home.content .separate_league .play_list {margin-top:0.3333rem;}
+.home.content .special_game {margin-top:2.2rem;}
+.home.content .special_game .title_hd {padding-top:0.5333rem;height:3.5rem;}
+.home.content .score_board_wrap .special_game .play_list li {position:relative;padding:1.3rem 2.9rem 1.1333rem 2.3rem;}
+.home.content .score_board_wrap .special_game .play_list li .sp_wrap {position:relative;height:4.2667rem;}
+.home.content .score_board_wrap .special_game .play_list li .sp_logo {position:absolute;top:0;left:0;width:4.2667rem;height:4.2667rem;}
+.home.content .score_board_wrap .special_game .play_list li .sp_explain {margin-top:0.0333rem;margin-left:5.1rem;width:calc(100% - 12.1667rem);min-width:14.9333rem;}
+.home.content .score_board_wrap .special_game .play_list li .sp_explain span {display:block;text-align:left;}
+.home.content .score_board_wrap .special_game .play_list li .sp_explain span.sp_title {height:2.0667rem;font-size:1.4rem;font-weight:bold;}
+.home.content .score_board_wrap .special_game .play_list li .sp_explain span.sp_full {height:2.0667rem;font-size:1.4rem;font-weight:500;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .score_board_wrap .special_game .play_list li .middle_box {position:absolute;top:1.3rem;right:2.9rem;width:6.0667rem;}
+.home.content .score_board_wrap .special_game .play_list li .middle_box .info_today {margin:0 0 0.3rem;}
 .home.content .score_scroll {margin-top:1.5333rem;}
 .home.content .score_scroll .title_hd {padding-top:0.5333rem;height:3.5rem;}
 .home.content .score_scroll .title_hd > .more {top:0.1667rem;}
-.home.content .score_scroll .title_hd > span.vs {margin:0.2333rem 0.6667rem 0;width:1.6667rem;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#ca0039;text-align:center;}
-.content .none_score {padding:1.4667rem 0;height:4.8rem;font-size:1.2667rem;font-weight:500;color:#b4b4b4;text-align:center;background:#f2f3f5 url("../images/banner-score-empty.png") no-repeat 50% 50%;background-size:cover;border-radius:0.7667rem;}
+.home.content .score_scroll .title_hd > span.vs {margin:0.2rem 0.7rem 0;width:1.7rem;height:2.0333rem;font-size:1.3667rem;font-weight:bold;color:#ca0039;text-align:center;}
+.content .none_score {padding:1.4333rem 0;height:4.7333rem;font-size:1.2667rem;font-weight:500;color:#b4b4b4;text-align:center;background:#f2f3f5 url("../images/02-2-source-home-banner-score-empty.png") no-repeat 50% 50%;background-size:cover;border-radius:0.7667rem;}
 .home.content .score_moment {margin:0.3333rem -1.5333rem 0;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;}
-.home.content .score_moment li {display:inline-block;margin-left:0.7667rem;padding:1.1rem 0.4833rem;width:12.1rem;height:4.7333rem;border-radius:0.7333rem;background-color:#f2f3f5;overflow:hidden;font-size:0;}
+.home.content .score_moment li {display:inline-block;margin-left:0.7667rem;padding:1.0667rem 0.4667rem 1.1rem 0.5rem;width:12.1rem;height:4.7333rem;border-radius:0.7333rem;background-color:#f2f3f5;overflow:hidden;font-size:0;}
 .home.content .score_moment li:first-child {margin-left:0;}
 .home.content .score_moment li span,.score_moment li em {display:inline-block;vertical-align:top;}
-.home.content .score_moment li .logo_kbo {float:left;width:2.8667rem;height:100%}
-.home.content .score_moment li .logo_kbo.left {margin-right:0.2333rem;}
-.home.content .score_moment li .logo_kbo.right {margin-left:0.2333rem;}
-.home.content .score_moment li .logo_kbo > span {margin:0.2667rem 0.1667rem;width:2.5333rem;height:2rem;}
-.home.content .score_moment li > em {float:left;margin:0;width:1.6667rem;height:100%;line-height:2.5333rem;font-family:'Bebas Neue';font-size:2.1rem;font-style:normal;color:#000000;}
-.home.content .score_moment li > .i_colon {float:left;margin:0 0.6rem;width:0.4rem;height:100%;font-family:'Bebas Neue';font-size:2.1rem;font-weight:bold;color:#000000;text-align:center;}
+.home.content .score_moment li .logo_kbo {float:left;margin-top:0.0333rem;width:2.8667rem;height:100%}
+.home.content .score_moment li .logo_kbo.left {margin-right:0.0667rem;}
+.home.content .score_moment li .logo_kbo.right {margin-left:0.0667rem;}
+.home.content .score_moment li .logo_kbo > span {margin:0;width:2.8667rem;height:2.5333rem;}
+.home.content .score_moment li > em {float:left;margin:0.1333rem 0 0;width:1.8333rem;height:100%;line-height:2.5333rem;font-family:'Bebas Neue';font-size:2.1rem;font-style:normal;color:#000000;}
+.home.content .score_moment li > .i_colon {float:left;margin:0 0.6rem;width:0.4rem;height:100%;line-height:2.5333rem;font-family:'Bebas Neue';font-size:2.1rem;font-weight:bold;color:#000000;text-align:center;}
 
 /* home mlb */
 .home.content .mlb .score_today > div.team_img_wrap {padding-top:0.4rem;}
@@ -305,9 +351,9 @@
 .home.content .bn_game a {display:block;}
 .home.content .bn_game .bg_box {margin-top:1rem;padding-bottom:30.364372%;width:100%;height:0;background-image:url("../images/banner-img-game.png");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .home.content .bn_game .bg_box > span {display:block;padding-top:1.6667rem;padding-left:2rem;height:4.1334rem;font-size:1.6667rem;font-weight:bold;color:#ffffff;}
-.home.content .bn_game .bg_box > p  {margin-top:0.4667rem;padding-left:2rem;font-size:1.2667rem;font-weight:500d;color:#ffffff;}
+.home.content .bn_game .bg_box > p  {margin-top:0.4667rem;padding-left:2rem;font-size:1.2667rem;font-weight:500;color:#ffffff;}
 .home.content .bn_ranking {width:100%;min-height:16.8667rem /* box height + border-width */;background-image:url("../images/bg-rangking.png");background-repeat:no-repeat;background-size:cover;}
-.home.content .bn_ranking .my_nick {margin:0.3333rem 0 0.3333rem 0.6667rem;height:1.8rem;font-size:1.2rem;font-weight:bold;color:#ca0039;}
+.home.content .bn_ranking .my_nick {margin:0.1333rem 0 0 0.7rem;height:2.0667rem;font-size:1.4rem;font-weight:bold;color:#ca0039;}
 .home.content .bn_ranking .bg_box {margin-top:0.2rem;padding:0 0 29.554655% 2.6667rem;width:100%;height:0;background-image:url("../images/banner-img-rangking.png");background-repeat:no-repeat;background-size:cover;overflow:hidden;}
 .home.content .bn_ranking .bg_box .rank_num {float:left;margin-left:1rem;padding-top:12.7%;width:8.3333rem;white-space:nowrap;text-align:center;}
 .home.content .bn_ranking .bg_box .rank_num:first-child {margin-left:0;}
@@ -319,9 +365,16 @@
 .home.content .bn_txt_wrap.bn_event {border-bottom:0.9333rem solid #f0f1f6;}
 .home.content .bn_txt_wrap.bn_event a {display:block;}
 .home.content .bn_txt_wrap.bn_event .bg_box {padding-bottom:18.218623%;background-image:url("../images/banner-img-event.png");} /* Event bn */
+
+.home.content .bn_txt_wrap.bn_share {margin-top:1.5333rem;}
+.home.content .bn_txt_wrap.bn_share .bg_box {position:relative;padding-bottom:18.218623%;background-image:url('../images/02-2-source-banner-event-banner-img-event.png');}
+.home.content .bn_txt_wrap.bn_share .bg_box .ab_box {position:absolute;top:0;left:0;padding:2.530364% 4.2667rem 0 2rem;width:100%;height:100%;background:url("../images/ic-arrow-white.png") no-repeat;background-position:right 3rem bottom 50%;background-size:auto 1.4rem;}
+.home.content .bn_txt_wrap.bn_share .bg_box .ab_box .title {display:block;height:2.3667rem;font-size:1.6rem;font-weight:bold;color:#ffffff;}
+.home.content .bn_txt_wrap.bn_share .bg_box .ab_box p {height:1.8667rem;font-size:1.2667rem;font-weight:500;color:#ffffff;}
+
 .home_main.content .highlight_wrap {padding-bottom:0;}
 .highlight_wrap {margin:1rem -1.417004% 0;padding-bottom:2.6667rem;overflow:hidden;}
-.highlight_box {float:left;margin:1.6667rem 1.377952% 0;width:47.244094%;}
+.highlight_box {float:left;margin:2rem 1.377952% 0;width:47.244094%;}
 .highlight_box.usetap.active {opacity:1 !important;}
 .highlight_box.usetap.active .thumb,
 .highlight_box.usetap.active b,
@@ -332,7 +385,7 @@
 .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;overflow:hidden;}
 .highlight_box .thumb.i_default {background-image:url('../images/ic-play-defualt-b-02.png');background-position:50% 50%;background-size:3rem;background-color:#e9edf0;background-repeat:no-repeat;}
 .highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
-.highlight_box p {margin-top:0.5333rem;padding:0 3.125%;height:3.9333rem;line-height:1.966665rem;font-size:1.3333rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.highlight_box p {margin-top:0.4333rem;padding:0 3.125%;height:4.1333rem;line-height:2.06665rem;font-size:1.4rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .highlight_wrap.line1 .highlight_box p {height:1.9667rem;line-height: normal;-webkit-line-clamp: 1;}
 
 .home.content .highlight_box .view {position:relative;display:block;margin-top:0.5rem;padding-left:2rem;height:1.8rem;font-size:1.2rem;color:#858585;}
@@ -343,24 +396,24 @@
 .home.content .news_wrap .news_main {position:relative;margin-top:1rem;padding-bottom:56.680161%;height:0;background-repeat:no-repeat;background-size:100% auto;background-color:#d8d8d8;border-radius:0.7333em;overflow:hidden;}
 .home.content .news_wrap .news_main .txt_inner_wrap {position:absolute;bottom:0;width:100%;height:11.6667rem;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
 .home.content .news_wrap .news_main .txt_inner {position:absolute;left:0;bottom:0;padding:0 1.6667em 1.6667rem;}
-.home.content .news_wrap .news_main .agency {height:1.8rem;font-size:1.2rem;font-weight:500;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
-.home.content .news_wrap .news_main p {font-size:1.5333em;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
-.home.content .news_wrap .news_list {margin-top:2.0333em;}
-.home.content .news_wrap .news_list li {padding:1rem 0.5rem 1rem 0;border-top:1px solid #f8f8f9;overflow:hidden;}
+.home.content .news_wrap .news_main .agency {height:2.0667rem;font-size:1.4rem;font-weight:500;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .news_wrap .news_main p {margin-top:0.1rem;height:4.7333rem;line-height:2.36665rem;font-size:1.6rem;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.home.content .news_wrap .news_list {margin-top:2.0333rem;}
+.home.content .news_wrap .news_list li {padding:1rem 0;border-top:1px solid #f8f8f9;overflow:hidden;}
 .home.content .news_wrap .news_list li:first-child {padding-top:0;border-top:0;}
 .home.content .news_wrap .news_list li:last-child {padding-bottom:0;}
 .home.content .news_wrap .news_list .thumb {float:left;padding-bottom:20.850202%;width:29.757085%;height:0;background-repeat:no-repeat;background-size:100% 100%;background-color:#d8d8d8;border-radius:0.7333rem}
-.home.content .news_wrap .news_list .desc {float:left;margin-left:3.846153%;padding-top:0.5rem;width:66.396761%;}
-.home.content .news_wrap .news_list .desc .agency {height:1.8rem;font-size:1.2rem;color:#858585;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
-.home.content .news_wrap .news_list .desc .subject {margin-top:0.1rem;height:2.1667rem;line-height:2.1667rem;font-size:1.4667rem;font-weight:bold;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
-.home.content .news_wrap .news_list .desc .content {height:1.8rem;line-height:1.8rem;font-size:1.2rem;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .news_wrap .news_list .desc {float:left;margin-left:3.846153%;width:66.396761%;}
+.home.content .news_wrap .news_list .desc .agency {height:2.0667rem;font-size:1.4rem;color:#2b2b2b;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .news_wrap .news_list .desc .subject {margin-top:0.2rem;height:2.3667rem;line-height:2.3667rem;font-size:1.6rem;font-weight:bold;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.home.content .news_wrap .news_list .desc .content {height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;color:#000000;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .news_comments .news_scroll {margin-top:1rem;}
 .home.content .news_comments .news_scroll ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;}
 .home.content .news_comments .news_scroll li {position:relative;display:inline-block;margin-left:0.7667rem;padding:0 0.8333rem;width:15.2rem;height:15.2rem;border-radius:0.7333rem;box-shadow: 0 15px 51px 0 rgba(0, 0, 0, 0.09);background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;}
 .home.content .news_comments .news_scroll li:first-child {margin-left:0;}
 .home.content .news_comments .news_scroll li:before {content:'';position:absolute;display:block;width:100%;height:68%;bottom:0;left:0;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));overflow:hidden;border-radius:0.7333rem;}
 /*.home.content .news_comments .news_scroll li .ico_comm {z-index:1;position:relative;display:block;margin:3.2rem auto 0.5rem;width:8.4667rem;height:3.0667rem;background:#fff;}*/
-.home.content .news_comments .news_scroll li .subject {position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
+.home.content .news_comments .news_scroll li .subject {position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:bold;color:#ffffff;line-height:2.26665rem;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
 
 /* Home Details */
 .home.content .img_player_wrap {padding:0;}
@@ -2230,6 +2283,11 @@ background-color:#f2f3f4;}
 .content.close {padding-top:8.8667rem;}
 .content.open {}
 .content .onair_fixed {position:fixed;left:0;right:0;top:0;background-color:#fff;}
+
+/* 응원팀 있는 경우 팝업 */
+.popup_cheer.is_cheer .quo_marks {width:22.6rem;height:4.9333rem;}
+.popup_cheer.is_cheer .btn_cheerteam_setting {width:7.3rem;}
+.popup_cheer.is_cheer .btn_cheerteam_setting + .btn_cheerteam_setting {left:10.5333rem;width:9.1333rem;}
 
 /* bottom btn common */
 .bt_btn_h {padding-bottom:9.6555rem;}
