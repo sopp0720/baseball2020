@@ -71,7 +71,6 @@
 .before_title_wrap.page_title_wrap .team_box.left .team_logo {margin-right:0;}
 .before_title_wrap.page_title_wrap .team_box.right .team_logo {margin-left:0;}
 
-
 /* Sec title */
 .content .title_hd {position:relative;padding:/*0.5333rem*/0 0 0.5rem;height:2.9667rem;font-size:0;}
 .content .title_hd > span {display:inline-block;vertical-align:top;}
@@ -984,8 +983,8 @@
 .content .video_wrap .game_info span {display:inline-block;padding:0.6rem 0.3333rem;height:3.1rem;border-top:1px solid rgba(216,216,216,.1);border-bottom:1px solid rgba(216,216,216,.1);font-size:1.1rem;text-align:center;color:rgba(255,255,255,.6);vertical-align:top;}
 .content .video_wrap .relay_top_info {position:relative;margin-top:1.9rem;}
 .content .video_wrap .relay_top_info .team_info {position:absolute;top:0;width:8.9rem;}
-.content .video_wrap .relay_top_info .team_info.left {left:3.5667rem;}
-.content .video_wrap .relay_top_info .team_info.right {right:3.5667rem;}
+.content .video_wrap .relay_top_info .team_info.left {left:5.1rem;}
+.content .video_wrap .relay_top_info .team_info.right {right:5.1rem;}
 .content .video_wrap .relay_top_info .team_info .team_logo {display:block;margin:0 auto;width:4.9rem;height:4.3rem;}
 .content .video_wrap .relay_top_info .team_info .team_name {display:block;margin-top:0.6rem;width:100%;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;color:#ffffff;}
 .content .video_wrap .relay_top_info .vs_box {margin:0 auto;padding-top:0.3rem;width:7.6rem;}
@@ -1036,7 +1035,6 @@
 
 .relay.content .relay_card_wrap ul li.game_ing .team_box .team_name,
 .relay.content .relay_card_wrap ul li.game_end .team_box .team_name { position: absolute; top: 2.7333rem; left: 0.0667rem; width: 3.3333rem; height: 1.8rem; font-size: 1.2rem; line-height: 1.8rem; font-weight: 500;  }
-
 
 .relay.content .relay_card_wrap ul li.game_before .top_box .team_logo,
 .relay.content .relay_card_wrap ul li.game_cancel .top_box .team_logo,
@@ -1421,6 +1419,31 @@
 .relay.content .change_sec ul li:nth-child(13):before {top:21.4rem;}
 .relay.content .change_sec ul li:nth-child(17):before {top:28.5333rem;}
 .relay.content .change_sec ul li:nth-child(21):before {top:35.6667rem;}
+
+/* Relay - 특별 중계 - 별도 리그 */
+.relay_separate.content .video_wrap .abs_wrap .full_h {height:auto;}
+.relay_separate.content .video_wrap .abs_wrap .tb_box,
+.relay_separate.content .video_wrap .abs_wrap .tb_cell_box {display:block;}
+.relay_separate.content .video_wrap .game_info {margin-top:1.8rem;}
+.relay_separate.content .chat_wrap .chreer_selection .chreer_team.left {padding-left:0;}
+.relay_separate.content .chat_wrap .chreer_selection .chreer_team.right {padding-right:0;}
+.relay_separate.content .chat_wrap .chreer_selection .chreer_team .team_name {padding:0;width:100%;text-align:center;}
+
+/* Relay - 특별 중계 - 특별 경기*/
+.relay_special.content .page_title_wrap .sp_wrap {padding:0.8333rem 0 1.1667rem;height:100%;font-size:0;text-align:center;}
+.relay_special.content .page_title_wrap .sp_wrap .sp_logo {display:inline-block;width:3.2667rem;height:3rem;vertical-align:top;}
+.relay_special.content .page_title_wrap .sp_wrap .sp_title {display:inline-block;margin-top:0.7333rem;margin-left:0.6rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;vertical-align:top;}
+.relay_special.content .video_wrap .abs_wrap .full_h {height:auto;}
+.relay_special.content .video_wrap .abs_wrap .tb_box,
+.relay_special.content .video_wrap .abs_wrap .tb_cell_box {display:block;}
+.relay_special.content .video_wrap .game_info {margin-top:1.8rem;}
+.relay_special.content .video_wrap .relay_top_info {margin-top:1.6667rem;text-align:center;}
+.relay_special.content .video_wrap .relay_top_info span {display:block;}
+.relay_special.content .video_wrap .relay_top_info .sp_logo {margin:1.6667rem auto 0;width:5.7rem;height:5.7333rem;}
+.relay_special.content .video_wrap .relay_top_info .sp_title {margin-top:0.3667rem;font-size:1.5rem;font-weight:bold;color:#ffffff;}
+.relay_special.content .video_wrap .relay_top_info .sp_time {margin-top:0.4rem;font-size:1.4rem;font-weight:500;color:#ffffff;}
+.relay_special.content .chat_wrap .chreer_selection:after {display:none;}
+.relay_special.content .chat_wrap .chreer_selection .sp_title {display:block;font-size:1.6rem;text-align:center;color:#646464;line-height:3.8333rem;}
 
 /* My - main */
 /* basic */

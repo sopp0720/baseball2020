@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>프로야구</title>
+	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
+</head>
+<body>
+<select id="teamSelect" style="z-index:99999; position:fixed; top:300px; left:15px; width:calc(100vw - 30px); height:30px;">
+	<option value="theme_default">팀선택 없음</option>
+	<option value="theme_LG">LG</option>
+	<option value="theme_HH">한화</option>
+	<option value="theme_SS">삼성</option>
+	<option value="theme_KT">KT</option>
+	<option value="theme_SK">SK</option>
+	<option value="theme_WO">키움</option>
+	<option value="theme_NC">NC</option>
+	<option value="theme_LT">롯데</option>
+	<option value="theme_OB">두산</option>
+	<option value="theme_HT">KIA</option>
+</select>
+<div id="wrap" data-theme="theme_LG">
+	<!--<div id="header"></div>-->
+	<div id="container">
+		<div class="content relay live_video cheering futures relay_separate"> <!-- 202102 relay_separate 클래스 추가 -->
+			<!-- vs team, btn back -->
+			<div class="page_title_wrap">
+				<div class="inner">
+					<button type="button" class="btn_back usetap blind">뒤로가기</button>
+					<div class="team_box left">
+						<span class="team_name">LG</span>
+						<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+						<em class="i_score">5</em>
+					</div>
+					<div class="middle_box blind">vs</div>
+					<div class="team_box right">
+						<em class="i_score">5</em>
+						<span class="team_logo team_logo_OB"></span>
+						<span class="team_name">두산</span>
+					</div>
+				</div>
+			</div>
+			<div class="video_wrap">
+				<div class="relay_video_thumb" style="background-image:url('res/images/bg-half-player-img-stadium.png')">
+					<span class="ic_show"></span>
+					<div class="inner">
+						<div class="abs_wrap">
+							<div class="full_h">
+								<div class="tb_box">
+									<div class="tb_cell_box">
+										<div class="game_info">
+											<span>경기가 종료되었습니다.</span>
+										</div>
+										<div class="relay_top_info">
+											<div class="team_info left">
+												<span class="team_logo team_logo_LG"></span> <!-- theme.css : /* logo KBO */ -->
+												<span class="team_name">LG</span>
+											</div>
+											<div class="vs_box">
+												<span class="vs_img blind">VS</span>
+												<span class="time_spot">19:00 잠실</span>								
+											</div>
+											<div class="team_info right">
+												<span class="team_logo team_logo_OB"></span>
+												<span class="team_name">두산</span>
+											</div>
+											<!-- 
+											<div class="tag_info">
+												<span class="ic_tag">5G중계</span>
+											</div>
+											<span class="relay_channel">SKY Sport+</span>
+											-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn_player_view_wrap">
+				<button type="button" class="btn_player_view usetap" onclick="this.closest('.content').classList.toggle('live_video');videoUI.content_scroll();">
+					<span class="txt_off default">화면 숨기기</span>
+					<span class="txt_on">화면 보기</span>
+					<i></i>
+				</button>
+			</div>
+			<div class="content_scroll">
+				<div class="sec_wrapper relay_card_wrap">
+                    <div class="inner">
+                        <ul>
+                            <li class="on game_before"> <!-- 해당페이지 카드에서 on 클래스 추가 --><!-- 경기전 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+                                    </div>
+                                </div>
+                                <span class="ic_5g blind">5G</span>
+                                <span class="ic_info">경기전</span>
+                            </li>
+                            <li class="on game_ing"> <!-- 해당페이지 카드에서 on 클래스 추가 --><!-- 경기중 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LT"></span>
+										<span class="team_name">롯데</span>
+										<em class="i_score">23</em>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_SK"></span>
+										<span class="team_name">SK</span>
+										<em class="i_score">16</em>
+                                    </div>
+                                </div>
+                                <span class="ic_info">9회말</span>
+                            </li>
+                            <li class="on game_end"> <!-- on클래스 없으면 불투명 --><!-- 경기종료 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_WO"></span>
+										<span class="team_name">키움</span>
+										<em class="i_score">5</em>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_SS"></span>
+										<span class="team_name">삼성</span>
+										<em class="i_score">2</em>
+                                    </div>
+                                </div>
+                                <span class="ic_info">경기종료</span>
+                            </li>
+                            <li class="game_end"> <!-- on클래스 없으면 불투명 --><!-- 경기종료 동점일 경우 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+										<em class="i_score">5</em>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+										<em class="i_score">5</em>
+                                    </div>
+                                </div>
+                                <span class="ic_info">경기종료</span>
+                            </li>
+                            <li class="game_cancel"> <!-- on클래스 없으면 불투명 --><!-- 경기취소 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+                                    </div>
+                                </div>
+                                <span class="ic_info">경기취소</span>
+                            </li>
+                            <li class="game_suspended"> <!-- on클래스 없으면 불투명 --><!-- 서스펜디드 -->
+                                <div class="card_box">
+                                    <div class="team_box top_box">
+                                        <span class="team_logo team_logo_LG"></span>
+										<span class="team_name">LG</span>
+                                    </div>
+                                    <div class="team_box bottom_box">
+                                        <span class="team_logo team_logo_OB"></span>
+										<span class="team_name">두산</span>
+                                    </div>
+                                </div>
+                                <span class="ic_info">서스펜디드</span>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<div class="tab_1depth_wrap">
+					<div class="tab_1depth" id="tab_1depth4">
+						<ul class="tab_link">
+							<li class="tab_item active" onclick="this.closest('.content').classList.add('cheering');videoUI.content_scroll();"><span>응원하기</span></li>
+						</ul>
+						<div class="active_bar"></div>
+					</div>
+				</div>
+				<div class="chat_wrap" data-away="theme_default" data-home="theme_OB" id="chat_wrap">
+					<div class="chat_inner" id="chreerScroll">
+						<div class="scroll_bottom">
+							<div class="msg_wrap">
+								<div class="welcome">채팅에 참여하셨습니다</div>
+							</div>
+							<div class="msg_wrap left">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">최소</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<div class="msg_wrap right">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">최소</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<div class="msg_wrap left">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<div class="msg_wrap left">
+								<div class="msg chreer_color">
+									<div class="user">
+										1893
+									</div>
+									<div class="comment">응원팀 없을때 away my 채팅</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<div class="msg_wrap right">
+								<div class="msg chreer_color">
+									<div class="user">
+										1893
+									</div>
+									<div class="comment">응원팀 없을때 home my 채팅</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<div class="msg_wrap left">
+								<div class="msg chreer_color">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<div class="msg_wrap right">
+								<div class="msg chreer_color">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+									</div>
+									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+									<div class="time">오후 9:26</div>
+								</div>
+							</div>
+							<div class="msg_wrap">
+								<div class="i_date">2020년 5월 13일 일요일</div>
+							</div>
+							<!-- 같은 시간/ 같은 사람 -->
+							<div class="msg_wrap right">
+								<div class="msg">
+									<div class="user">
+										1893<span class="team_logo_xs team_color_OB"><span class="team_symbol_OB"></span></span>
+									</div>
+									<div class="comment">정규시즌우승이다!!!!!</div>
+								</div>
+							</div>
+							<div class="msg_wrap right same">
+								<div class="msg">
+									<div class="comment">거참 우승하기 딱 좋은 날씨네</div>
+									<div class="time">오후 9:29</div>
+								</div>
+							</div>
+							<!-- 같은 시간/ 같은 사람 -->
+						</div>
+					</div>
+					<div class="chreer_selection" id="chreer_selection">
+						<div class="chreer_team current left usetap" onclick="$(this).addClass('current').siblings().removeClass('current');">
+							<span class="team_name">LG<!-- <span class="ic_away team_symbol_sq_LG"></span> --></span>
+						</div>
+						<div class="chreer_team right usetap" onclick="$(this).addClass('current').siblings().removeClass('current');">
+							<span class="team_name">두산<!-- <span class="ic_home team_symbol_sq_OB"></span> --></span>
+						</div>
+					</div>
+					<div class="ic_chat_down usetap" onclick="document.querySelector('.chat_inner').scrollTop = (document.querySelector('.chat_inner').scrollHeight - document.querySelector('.chat_inner').offsetHeight);"></div>
+					<div class="chat_btm">
+						<span class="ic_chat_input"></span>
+						<div class="chat_input">
+							<div class="textarea_wrap">
+								<textarea rows="4" id="origin" class="textarea" placeholder="응원 댓글을 남겨주세요"></textarea>
+								<textarea id="dummy" class="dummy" disabled></textarea>
+							</div>
+						</div>
+						<span class="ic_chat_send usetap"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
+<script src="res/js/libs/lottie.min.js"></script>
+<script src="res/js/common.js"></script>
+<script src="res/js/relay.js"></script>
+<script src="res/js/chreer.js"></script>
+<script src="res/js/floating.js"></script>
+<script src="res/js/video.js"></script>
+<script>
+floatUI.init();
+videoUI.init();
+relayUi.initSubTab(document.getElementById('tab_1depth4'));
+relayUi.activeBar(1,document.getElementById('tab_1depth4'));
+chreerUi.chatlayout(document.getElementById('origin'));
+</script>
+<script>
+document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
+	document.getElementById('wrap').setAttribute('data-theme','');
+	document.getElementById('wrap').setAttribute('data-theme',this.value);
+});
+</script>
+
+</body>
+</html>
