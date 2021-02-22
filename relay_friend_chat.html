@@ -183,116 +183,117 @@
 					<div class="tab_1depth" id="tab_1depth4">
 						<ul class="tab_link">
 							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>경기정보</span></li>
-							<li class="tab_item active" onclick="this.closest('.content').classList.add('cheering');videoUI.content_scroll();"><span>응원하기</span></li>
+							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>응원하기</span></li>
 							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>득점장면</span></li>
 							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>주요장면</span></li>
 							<li class="tab_item" onclick="this.closest('.content').classList.remove('cheering');videoUI.content_scroll();"><span>문자중계</span></li>
+							<li class="tab_item active" onclick="this.closest('.content').classList.add('cheering');videoUI.content_scroll();"><span>친구채팅</span></li>
 						</ul>
 						<div class="active_bar"></div>
 					</div>
 				</div>
-				<div class="chat_wrap" data-away="theme_default" data-home="theme_OB" id="chat_wrap">
+				<div class="chat_wrap chat_f" data-away="theme_default" data-home="theme_OB" id="chat_wrap">
 					<div class="chat_inner" id="chreerScroll">
-                        <!-- 202102 운영자표시, 공지등록 추가 -->
-					    <div class="chat_noti">
-                            <button type="button" class="btn_fold blind" onclick="this.closest('.chat_noti').classList.toggle('noti_fold');">닫기</button>
-					        <span class="title_wrap">
-					            <span class="i_cate">[공지]</span>
-					            <span class="ico_writer" style="background-image:url('');"></span>
-					            <span class="i_writer">U+프로야구</span>
-					        </span>
-					        <p class="cont">안녕하세요 유플러스 프로야구입니다.</p>
-					        <span class="i_date">2021.01.20 수요일</span>
-					    </div>
-					    <!-- // 202102 운영자표시, 공지등록 추가 -->
-						<div class="scroll_bottom">
-							<div class="msg_wrap">
-								<div class="welcome">채팅에 참여하셨습니다</div>
-							</div>
-							<div class="msg_wrap left">
-								<div class="msg">
-									<div class="user">
-										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
-									</div>
-									<div class="comment">최소</div>
-									<div class="time">오후 9:26</div>
-								</div>
-							</div>
-							<div class="msg_wrap right">
-								<div class="msg">
-									<div class="user">
-										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
-									</div>
-									<div class="comment">최소</div>
-									<div class="time">오후 9:26</div>
-								</div>
-							</div>
-							<div class="msg_wrap left">
-								<div class="msg">
-									<div class="user">
-										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
-									</div>
-									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
-									<div class="time">오후 9:26</div>
-								</div>
-							</div>
-							<div class="msg_wrap left">
-								<div class="msg chreer_color">
-									<div class="user">
-										1893
-									</div>
-									<div class="comment">응원팀 없을때 away my 채팅</div>
-									<div class="time">오후 9:26</div>
-								</div>
-							</div>
-							<div class="msg_wrap right">
-								<div class="msg chreer_color">
-									<div class="user">
-										1893
-									</div>
-									<div class="comment">응원팀 없을때 home my 채팅</div>
-									<div class="time">오후 9:26</div>
-								</div>
-							</div>
-							<div class="msg_wrap left">
-								<div class="msg chreer_color">
-									<div class="user">
-										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
-									</div>
-									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
-									<div class="time">오후 9:26</div>
-								</div>
-							</div>
-							<div class="msg_wrap right">
-								<div class="msg chreer_color">
-									<div class="user">
-										1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
-									</div>
-									<div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
-									<div class="time">오후 9:26</div>
-								</div>
-							</div>
-							<div class="msg_wrap">
-								<div class="i_date">2020년 5월 13일 일요일</div>
-							</div>
-							<!-- 같은 시간/ 같은 사람 -->
-							<div class="msg_wrap right">
-								<div class="msg">
-									<div class="user">
-										1893<span class="team_logo_xs team_color_OB"><span class="team_symbol_OB"></span></span>
-									</div>
-									<div class="comment">정규시즌우승이다!!!!!</div>
-								</div>
-							</div>
-							<div class="msg_wrap right same">
-								<div class="msg">
-									<div class="comment">거참 우승하기 딱 좋은 날씨네</div>
-									<div class="time">오후 9:29</div>
-								</div>
-							</div>
-							<!-- 같은 시간/ 같은 사람 -->
-						</div>
+					    <div class="chat_f_opt"> <!-- 202102 div 추가 -->
+					        <!-- 202102 친구, 나가기 버튼 추가 -->
+						    <div class="btn_fwrap">
+						        <button type="button" class="btn_f_invite blind">친구 목록</button>
+						        <button type="button" class="btn_f_out blind">나가기</button>
+						    </div>
+						    <!-- // 202102 친구, 나가기 버튼 추가 -->
+                            <div class="scroll_bottom">
+                                <div class="msg_wrap">
+                                    <div class="welcome">닉네임님이 채팅에 참여하셨습니다.</div>
+                                </div>
+                                <div class="msg_wrap left">
+                                    <div class="msg">
+                                        <div class="user">
+                                            1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+                                        </div>
+                                        <div class="comment">최소</div>
+                                        <div class="time">오후 9:26</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap right">
+                                    <div class="msg chreer_color">
+                                        <div class="user">
+                                            1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+                                        </div>
+                                        <div class="comment">최소</div>
+                                        <div class="time">오후 9:26</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap left">
+                                    <div class="msg">
+                                        <div class="user">
+                                            1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+                                        </div>
+                                        <div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+                                        <div class="time">오후 9:26</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap">
+                                    <div class="welcome">닉네임님이 채팅방을 나갔습니다.</div>
+                                </div>
+                                <div class="msg_wrap left">
+                                    <div class="msg">
+                                        <div class="user">
+                                            1893
+                                        </div>
+                                        <div class="comment">좌측은 친구의 채팅</div>
+                                        <div class="time">오후 9:26</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap right">
+                                    <div class="msg chreer_color">
+                                        <div class="user">
+                                            1893
+                                        </div>
+                                        <div class="comment">우측은 자신의 채팅</div>
+                                        <div class="time">오후 9:26</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap left">
+                                    <div class="msg">
+                                        <div class="user">
+                                            1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+                                        </div>
+                                        <div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+                                        <div class="time">오후 9:26</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap left">
+                                    <div class="msg">
+                                        <div class="user">
+                                            1893<span class="team_logo_xs team_color_LG"><span class="team_symbol_LG"></span></span>
+                                        </div>
+                                        <div class="comment">응~ 두산이 우승이야~ 엘지 응 아니야~ 백만번 죽었다 깨도 두산이 우승이야</div>
+                                        <div class="time">오후 9:26</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap">
+                                    <div class="i_date">2020년 5월 13일 일요일</div>
+                                </div>
+                                <!-- 같은 시간/ 같은 사람 -->
+                                <div class="msg_wrap right">
+                                    <div class="msg chreer_color">
+                                        <div class="user">
+                                            1893<span class="team_logo_xs team_color_OB"><span class="team_symbol_OB"></span></span>
+                                        </div>
+                                        <div class="comment">정규시즌우승이다!!!!!</div>
+                                    </div>
+                                </div>
+                                <div class="msg_wrap right same">
+                                    <div class="msg chreer_color">
+                                        <div class="comment">거참 우승하기 딱 좋은 날씨네</div>
+                                        <div class="time">오후 9:29</div>
+                                    </div>
+                                </div>
+                                <!-- 같은 시간/ 같은 사람 -->
+                            </div>
+                        </div>
 					</div>
+					<!--
 					<div class="chreer_selection" id="chreer_selection">
 						<div class="chreer_team current left usetap" onclick="$(this).addClass('current').siblings().removeClass('current');">
 							<span class="team_name">LG<span class="ic_away team_symbol_sq_LG"></span></span>
@@ -301,12 +302,13 @@
 							<span class="team_name">두산<span class="ic_home team_symbol_sq_OB"></span></span>
 						</div>
 					</div>
+					-->
 					<div class="ic_chat_down usetap" onclick="document.querySelector('.chat_inner').scrollTop = (document.querySelector('.chat_inner').scrollHeight - document.querySelector('.chat_inner').offsetHeight);"></div>
 					<div class="chat_btm">
 						<span class="ic_chat_input"></span>
 						<div class="chat_input">
 							<div class="textarea_wrap">
-								<textarea rows="4" id="origin" class="textarea" placeholder="응원 댓글을 남겨주세요"></textarea>
+								<textarea rows="4" id="origin" class="textarea" placeholder="친구와 채팅해보세요."></textarea>
 								<textarea id="dummy" class="dummy" disabled></textarea>
 							</div>
 						</div>
@@ -329,7 +331,7 @@
 floatUI.init();
 videoUI.init();
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
-relayUi.activeBar(1,document.getElementById('tab_1depth4'));
+relayUi.activeBar(5,document.getElementById('tab_1depth4'));
 chreerUi.chatlayout(document.getElementById('origin'));
 </script>
 <script>
