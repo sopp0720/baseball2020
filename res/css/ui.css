@@ -422,6 +422,7 @@
 .highlight_detail .highlight_box b {display:block;margin-top:0.6667rem;padding:0 3.125%;height:1.9667rem;font-size:1.3333rem;font-weight:bold;color:#000000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .highlight_detail .video_info {position:relative;margin-top:0;padding:0.5rem 0 0.3667rem;height:2.6667rem;}
 .highlight_detail .video_info .view {margin-top:0 !important;}
+.highlight_detail .video_info .i_date {display:block;position:absolute;top:0.5rem;right:2.6667rem;width:6.9rem;height:1.8rem;font-size:1.2rem;text-align:right;color:#858585;}
 .highlight_detail .video_info .ico_share {z-index:2;display:block;position:absolute;top:0;right:0;width:2.6667rem;height:2.6667rem;background:url("../images/ic-share-nor.png") no-repeat;background-size:100% auto;}
 .highlight_detail .video_info .ico_share.usetap.active {background-color:#ebebeb;border-radius:50%;}
 .highlight_detail.sp_vod .video_info .ico_share {right:auto;left:0;}
@@ -1430,6 +1431,14 @@
 .relay_separate.content .chat_wrap .chreer_selection .chreer_team .team_name {padding:0;width:100%;text-align:center;}
 
 /* Relay - 특별 중계 - 특별 경기*/
+.relay.content .special_game {margin-top:1.5333rem;}
+.relay.content .special_game .play_list {}
+.relay.content .special_game .play_list li .middle_box {width:100%;}
+.relay.content .special_game .play_list li .sp_logo {display:block;float:left;width:5rem;height:5rem;}
+.relay.content .special_game .play_list li .sp_explain {float:left;}
+.relay.content .special_game .play_list li .sp_explain span {text-align:left;}
+.relay.content .special_game .play_list li .info_time {margin-top:0;}
+
 .relay_special.content .page_title_wrap .sp_wrap {padding:0.8333rem 0 1.1667rem;height:100%;font-size:0;text-align:center;}
 .relay_special.content .page_title_wrap .sp_wrap .sp_logo {display:inline-block;width:3.2667rem;height:3rem;vertical-align:top;}
 .relay_special.content .page_title_wrap .sp_wrap .sp_title {display:inline-block;margin-top:0.7333rem;margin-left:0.6rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;vertical-align:top;}
