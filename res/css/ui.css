@@ -974,8 +974,9 @@
 /* Relay - 친구 채팅 */
 .relay.content .chat_wrap.chat_f .chat_inner,
 .relay.content .chat_wrap.chat_f .desc_middle {padding-bottom:0;}
-.relay.content .chat_wrap.chat_f .chat_inner .chat_f_opt {position:relative;padding-top:1.4rem;}
-.relay.content .chat_wrap.chat_f .chat_inner .scroll_bottom {position:relative;padding-top:0;}
+.relay.content .chat_wrap.chat_f .desc_middle {margin-top:-1.5667rem;}
+.relay.content .chat_wrap.chat_f .chat_inner {padding-top:1.5667rem;padding-bottom:0 !important;}
+.relay.content .chat_wrap.chat_f .chat_inner .scroll_bottom {position:relative;padding-top:4.6667rem;}
 .relay.content .chat_wrap.chat_f .desc_middle .btn_friend {display:block;margin:0.9667rem auto 0;width:8.9rem;height:3.3333rem;background:url('../images/friendchat-invitation.png') no-repeat 0/cover;}
 .relay.content .chat_wrap.chat_f .msg_wrap .welcome {padding:0 1.4333rem;width:auto;}
 .relay.content .chat_wrap.chat_f .btn_fwrap {z-index:1;position:fixed;top:auto;right:0;padding:0 1.5333rem;width:100%;font-size:0;text-align:right;}
@@ -983,7 +984,6 @@
 .relay.content .chat_wrap.chat_f .btn_fwrap button:first-child {margin-left:0;}
 .relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_invite {background-image:url('../images/friendchat-list.png');}
 .relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_out {background-image:url('../images/friendchat-out.png');}
-.relay.content .chat_wrap.chat_f .btn_fwrap + .scroll_bottom .msg_wrap:first-child {padding-top:4.6667rem;}
 
 /* Relay - Chat 운영자 공지사항 */
 .relay.content .chat_inner {position:relative;}
