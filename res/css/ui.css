@@ -272,6 +272,7 @@
 .home.content .score_board_wrap .play_list li > div.team_player.left {left:1.4rem;}
 .home.content .score_board_wrap .play_list li > div.team_player.right {right:1.4rem;}
 .home.content .score_board_wrap .play_list li > div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
+.home.content .score_board_wrap .play_list li > div.team_player i.sp_logo {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
 .home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.4rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;}
 .home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:12.9rem;}
 .home.content .score_board_wrap .play_list li > div.middle_box .play_score {padding-top:0.5rem;overflow:hidden;}
@@ -290,6 +291,9 @@
 .home.content .score_board_wrap .mini_kbo_list li .team_player {position:absolute;top:1.2667rem;width:8.4333rem;font-size:0;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player .team_name {display:inline-block;margin:0.6333rem 0;width:4.2rem;height:1.9667rem;line-height:1.9667rem;font-size: 1.4rem;font-weight: bold;font-style:normal;color:#000000;vertical-align:top;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player .team_logo {display:inline-block;width:3.6333rem;height:3.2333rem;vertical-align:top;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player .sp_logo {display:inline-block;width:3.6333rem;height:3.2333rem;vertical-align:top;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.left .sp_logo {margin-left:0.6rem;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player.right .sp_logo {margin-right:0.6rem;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player.left {left:0.4rem}
 .home.content .score_board_wrap .mini_kbo_list li .team_player.left .team_name {text-align:right;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player.left .team_logo {margin-left:0.6rem;}
@@ -817,6 +821,7 @@
 .relay.content .play_list li .team_player.left {left:1.5667rem;}
 .relay.content .play_list li .team_player.right {right:1.5667rem;}
 .relay.content .play_list li .team_player .middle_inner > i {position:relative;display:block;margin:0 auto;width:5rem;height:4.4333rem;}
+.relay.content .play_list li .team_player .middle_inner > i.sp_logo {background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
 .relay.content .play_list li .team_player.right .middle_inner > i:before {content:'';position:absolute;top:0.8333rem;right:-3.5rem;width:2.8rem;height:2.8rem;background:url(../images/ic-relay-list-arrow.png);background-size:100%;}
 .relay.content .play_list li .player_name {display:block;white-space:nowrap;height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000000;text-align:center;}
 .relay.content .play_list li .team_name {margin-top:0;display:block;white-space:nowrap;height:2.0667rem;font-size:1.4rem;font-weight:bold;color:#000000;text-align:center;}
@@ -984,23 +989,28 @@
 .relay.content .chat_wrap.chat_f .btn_fwrap button:first-child {margin-left:0;}
 .relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_invite {background-image:url('../images/friendchat-list.png');}
 .relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_out {background-image:url('../images/friendchat-out.png');}
+/*
+.relay.content .chat_wrap.chat_f .in_modal {top:auto;bottom:auto;margin-top:-1.5667rem;height:100%;}
+.relay.content .chat_wrap.chat_f .in_modal > .dim {top:auto;bottom:auto;height:100%;}
+*/
 
 /* Relay - Chat 운영자 공지사항 */
-.relay.content .chat_inner {position:relative;}
-.relay.content .chat_inner .chat_noti {z-index:1;position:fixed;top:auto;width:100%;padding:1.4rem 1.5333rem;background:#ffffff;}
-.relay.content .chat_inner .chat_noti .btn_fold {display:block;position:absolute;top:1.4rem;right:1.5333rem;width:2rem;height:2rem;background:url('../images/02-1-icon-arrow-ic-arrow-up-chat.png') no-repeat 50% 50%/100% auto;}
-.relay.content .chat_inner .chat_noti .title_wrap {display:block;font-size:0;}
-.relay.content .chat_inner .chat_noti .title_wrap span {display:inline-block;vertical-align:top;}
-.relay.content .chat_inner .chat_noti .title_wrap .i_cate {height:2.1667rem;font-size:1.4667rem;font-weight:500;color:#000000;}
-.relay.content .chat_inner .chat_noti .title_wrap .ico_writer {margin-top:0.1667rem;margin-left:0.6rem;width:1.8rem;height:1.8rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
-.relay.content .chat_inner .chat_noti .title_wrap .i_writer {margin-left:0.3333rem;height:2.166rem;font-size:1.466rem;font-weight:bold;color:#000000;}
-.relay.content .chat_inner .chat_noti p.cont {padding:0.1333rem 0;width:90.688259%;min-height:1.9rem;font-size:1.4667rem;line-height:1.3;color:#000000;white-space:normal;}
-.relay.content .chat_inner .chat_noti .i_date {display:block;margin-top:0.7rem;height:1.8rem;font-size:1.2rem;font-weight:500;color:#858585;}
-.relay.content .chat_inner .chat_noti.noti_fold .title_wrap,
-.relay.content .chat_inner .chat_noti.noti_fold .i_date {display:none;}
-.relay.content .chat_inner .chat_noti.noti_fold .btn_fold {transform:rotate(180deg);}
-.relay.content .chat_inner .chat_noti.noti_fold p.cont {text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
-.relay.content .chat_inner .chat_noti + .scroll_bottom {padding-top:8.1333rem;}
+.relay.content .chat_wrap .chat_inner {position:relative;}
+.relay.content .chat_wrap .chat_noti {z-index:1;position:fixed;top:auto;width:100%;padding:1.4rem 1.5333rem;background:#ffffff;}
+.relay.content .chat_wrap .chat_noti .btn_fold {display:block;position:absolute;top:1.4rem;right:1.5333rem;width:2rem;height:2rem;background:url('../images/02-1-icon-arrow-ic-arrow-up-chat.png') no-repeat 50% 50%/100% auto;}
+.relay.content .chat_wrap .i_manager {display:block;font-size:0;}
+.relay.content .chat_wrap .i_manager span {display:inline-block;vertical-align:top;}
+.relay.content .chat_wrap .i_manager .i_cate {margin-right:0.6rem;height:2.1667rem;font-size:1.4667rem;font-weight:500;color:#000000;}
+.relay.content .chat_wrap .i_manager .ico_writer {margin-top:0.1667rem;margin-right:0.3333rem;width:1.8rem;height:1.8rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
+.relay.content .chat_wrap .i_manager .i_writer {height:2.166rem;font-size:1.466rem;font-weight:bold;color:#000000;}
+.relay.content .chat_wrap .chat_noti p.cont {padding:0.1333rem 0;width:90.688259%;min-height:1.9rem;font-size:1.4667rem;line-height:1.3;color:#000000;white-space:normal;}
+.relay.content .chat_wrap .chat_noti .i_date {display:block;margin-top:0.7rem;height:1.8rem;font-size:1.2rem;font-weight:500;color:#858585;}
+.relay.content .chat_wrap .chat_noti.noti_fold .title_wrap,
+.relay.content .chat_wrap .chat_noti.noti_fold .i_date {display:none;}
+.relay.content .chat_wrap .chat_noti.noti_fold .btn_fold {transform:rotate(180deg);}
+.relay.content .chat_wrap .chat_noti.noti_fold p.cont {text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
+.relay.content .chat_wrap .chat_noti + .scroll_bottom {padding-top:6.7333rem;}
+.relay.content .chat_wrap .msg_wrap .i_manager .ico_writer {margin-right:0.5rem;}
 
 /* Relay - game info */
 .relay.content .video_wrap + .tab_1depth {margin-top:0;}
