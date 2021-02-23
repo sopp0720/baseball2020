@@ -351,146 +351,436 @@
 									</tr>
 								</tbody>
 							</table>
-							<div class="block_graph_wrap">
-								<div class="devide_box">
-									<span class="title">투구 분포도 VS 우타자</span>
-									<div class="block_graph">
-										<span class="hori_line"></span>
-										<span class="verti_line"></span>
-										<!-- class에 따른 박스 색상 (제플린 순서에 따름)
-										/* RED계열 */
-										bg1 {background-color:#e55852;}
-										bg2 {background-color:#f16d64;}
-										bg3 {background-color:#fe8377;}
-										bg4 {background-color:#fe968b;}
-										bg5 {background-color:#ffa9a0;}
+							<!-- 202102 그래프 카드 좌우 플리킹 추가 -->
+							<div class="block_graph_wrap block_graph_rolling">
+							    <div class="rolling_wrap">
+                                    <div class="rolling_slide">
+                                        <div class="devide_box">
+                                            <span class="title">코스별 피안타율<i>(vs 좌타자)</i></span>
+                                            <div class="block_graph">
+                                                <span class="hori_line"></span>
+                                                <span class="verti_line"></span>
+                                                <!-- class에 따른 박스 색상 (제플린 순서에 따름)
+                                                /* RED계열 */
+                                                bg1 {background-color:#e55852;}
+                                                bg2 {background-color:#f16d64;}
+                                                bg3 {background-color:#fe8377;}
+                                                bg4 {background-color:#fe968b;}
+                                                bg5 {background-color:#ffa9a0;}
 
-										/* BLUE계열 */
-										bg6 {background-color:#90c3fd;}
-										bg7 {background-color:#75b4fb;}
-										bg8 {background-color:#5ba5f9;}
-										bg9 {background-color:#4e8de0;}
-										bg10 {background-color:#3976da;}
-										-->
-										<!-- 큰 블럭 -->
-										<div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
-											<span class="i_value">12</span>
-										</div>
-										<div class="lg_block_unit top_right bg6"> <!-- 우위 -->
-											<span class="i_value">5.7</span>
-										</div>
-										<div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
-											<span class="i_value">18.4</span>
-										</div>
-										<div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
-											<span class="i_value">21.5</span>
-										</div>
-										<!-- 큰 블럭 -->
-										<!-- 작은 블럭 -->
-										<div class="sm_block_wrap">
-											<div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
-												<span class="i_value">19.5</span>
-											</div>
-											<div class="sm_block_unit bg10">
-												<span class="i_value">1.9</span>
-											</div>
-											<div class="sm_block_unit bg8">
-												<span class="i_value">3.3</span>
-											</div>
-											<div class="sm_block_unit bg8">
-												<span class="i_value">4.4</span>
-											</div>
-											<div class="sm_block_unit bg6">
-												<span class="i_value">0.0</span>
-											</div>
-											<div class="sm_block_unit bg5">
-												<span class="i_value">7.5</span>
-											</div>
-											<div class="sm_block_unit bg5">
-												<span class="i_value">8.9</span>
-											</div>
-											<div class="sm_block_unit bg8">
-												<span class="i_value">3.8</span>
-											</div>
-											<div class="sm_block_unit bg6">
-												<span class="i_value">7.0</span>
-											</div>
-										</div>
-										<!-- //작은 블럭 -->
-									</div>
-								</div>
-								<div class="devide_box">
-									<span class="title">타격 분포도 VS 우투수</span>
-									<div class="block_graph">
-										<span class="hori_line"></span>
-										<span class="verti_line"></span>
-										<!-- class에 따른 박스 색상 (제플린 순서에 따름)
-										/* RED계열 */
-										bg1 {background-color:#e55852;}
-										bg2 {background-color:#f16d64;}
-										bg3 {background-color:#fe8377;}
-										bg4 {background-color:#fe968b;}
-										bg5 {background-color:#ffa9a0;}
+                                                /* BLUE계열 */
+                                                bg6 {background-color:#90c3fd;}
+                                                bg7 {background-color:#75b4fb;}
+                                                bg8 {background-color:#5ba5f9;}
+                                                bg9 {background-color:#4e8de0;}
+                                                bg10 {background-color:#3976da;}
+                                                -->
+                                                <!-- 큰 블럭 -->
+                                                <div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
+                                                    <span class="i_value">0.182</span>
+                                                </div>
+                                                <div class="lg_block_unit top_right bg6"> <!-- 우위 -->
+                                                    <span class="i_value">0.125</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
+                                                    <span class="i_value">0.167</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
+                                                    <span class="i_value">0.143</span>
+                                                </div>
+                                                <!-- 큰 블럭 -->
+                                                <!-- 작은 블럭 -->
+                                                <div class="sm_block_wrap">
+                                                    <div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
+                                                        <span class="i_value">0.333</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg10">
+                                                        <span class="i_value">0.563</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">0.125</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">0.385</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">0.267</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">0.158</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">0.185</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">0.300</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">0.207</span>
+                                                    </div>
+                                                </div>
+                                                <!-- //작은 블럭 -->
+                                            </div>
+                                        </div>
+                                        <div class="devide_box">
+                                            <span class="title">코스별 타율<i>(vs 좌투수)</i></span>
+                                            <div class="block_graph">
+                                                <span class="hori_line"></span>
+                                                <span class="verti_line"></span>
+                                                <!-- class에 따른 박스 색상 (제플린 순서에 따름)
+                                                /* RED계열 */
+                                                bg1 {background-color:#e55852;}
+                                                bg2 {background-color:#f16d64;}
+                                                bg3 {background-color:#fe8377;}
+                                                bg4 {background-color:#fe968b;}
+                                                bg5 {background-color:#ffa9a0;}
 
-										/* BLUE계열 */
-										bg6 {background-color:#90c3fd;}
-										bg7 {background-color:#75b4fb;}
-										bg8 {background-color:#5ba5f9;}
-										bg9 {background-color:#4e8de0;}
-										bg10 {background-color:#3976da;}
-										-->
-										<!-- 큰 블럭 -->
-										<div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
-											<span class="i_value">12</span>
-										</div>
-										<div class="lg_block_unit top_right bg6"> <!-- 우위 -->
-											<span class="i_value">5.7</span>
-										</div>
-										<div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
-											<span class="i_value">18.4</span>
-										</div>
-										<div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
-											<span class="i_value">21.5</span>
-										</div>
-										<!-- 큰 블럭 -->
-										<!-- 작은 블럭 -->
-										<div class="sm_block_wrap">
-											<div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
-												<span class="i_value">19.5</span>
-											</div>
-											<div class="sm_block_unit bg10">
-												<span class="i_value">1.9</span>
-											</div>
-											<div class="sm_block_unit bg8">
-												<span class="i_value">3.3</span>
-											</div>
-											<div class="sm_block_unit bg8">
-												<span class="i_value">4.4</span>
-											</div>
-											<div class="sm_block_unit bg6">
-												<span class="i_value">0.0</span>
-											</div>
-											<div class="sm_block_unit bg5">
-												<span class="i_value">7.5</span>
-											</div>
-											<div class="sm_block_unit bg5">
-												<span class="i_value">8.9</span>
-											</div>
-											<div class="sm_block_unit bg8">
-												<span class="i_value">3.8</span>
-											</div>
-											<div class="sm_block_unit bg6">
-												<span class="i_value">7.0</span>
-											</div>
-										</div>
-										<!-- //작은 블럭 -->
-									</div>
+                                                /* BLUE계열 */
+                                                bg6 {background-color:#90c3fd;}
+                                                bg7 {background-color:#75b4fb;}
+                                                bg8 {background-color:#5ba5f9;}
+                                                bg9 {background-color:#4e8de0;}
+                                                bg10 {background-color:#3976da;}
+                                                -->
+                                                <!-- 큰 블럭 -->
+                                                <div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
+                                                    <span class="i_value">0.182</span>
+                                                </div>
+                                                <div class="lg_block_unit top_right bg6"> <!-- 우위 -->
+                                                    <span class="i_value">0.125</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
+                                                    <span class="i_value">0.167</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
+                                                    <span class="i_value">0.143</span>
+                                                </div>
+                                                <!-- 큰 블럭 -->
+                                                <!-- 작은 블럭 -->
+                                                <div class="sm_block_wrap">
+                                                    <div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
+                                                        <span class="i_value">0.333</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg10">
+                                                        <span class="i_value">0.563</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">0.125</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">0.385</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">0.267</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">0.158</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">0.185</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">0.300</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">0.207</span>
+                                                    </div>
+                                                </div>
+                                                <!-- //작은 블럭 -->
+                                            </div>
+                                        </div>
+                                        <ul class="block_desc">
+                                            <li>코스별 피안타율은 투수가 던진 코스별 피안타율입니다.</li>
+                                            <li>코스별 타율은 타자가 안타를 친 코스별 타율입니다.</li>
+                                            <li>투수가 홈 플레이트를 바라보는 시점 기준입니다.</li>
+                                            <li>안쪽 작은 사각형은 스트라이크존, 바깥쪽 큰 사각형은 볼입니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="rolling_slide">
+                                        <div class="devide_box">
+                                            <span class="title">시즌 투구 분포도</span>
+                                            <div class="block_graph">
+                                                <span class="hori_line"></span>
+                                                <span class="verti_line"></span>
+                                                <!-- class에 따른 박스 색상 (제플린 순서에 따름)
+                                                /* RED계열 */
+                                                bg1 {background-color:#e55852;}
+                                                bg2 {background-color:#f16d64;}
+                                                bg3 {background-color:#fe8377;}
+                                                bg4 {background-color:#fe968b;}
+                                                bg5 {background-color:#ffa9a0;}
+
+                                                /* BLUE계열 */
+                                                bg6 {background-color:#90c3fd;}
+                                                bg7 {background-color:#75b4fb;}
+                                                bg8 {background-color:#5ba5f9;}
+                                                bg9 {background-color:#4e8de0;}
+                                                bg10 {background-color:#3976da;}
+                                                -->
+                                                <!-- 큰 블럭 -->
+                                                <div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
+                                                    <span class="i_value">6</span>
+                                                </div>
+                                                <div class="lg_block_unit top_right bg6"> <!-- 우위 -->
+                                                    <span class="i_value">7</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
+                                                    <span class="i_value">24</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
+                                                    <span class="i_value">11</span>
+                                                </div>
+                                                <!-- 큰 블럭 -->
+                                                <!-- 작은 블럭 -->
+                                                <div class="sm_block_wrap">
+                                                    <div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
+                                                        <span class="i_value">0</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg10">
+                                                        <span class="i_value">4</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">6</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">1</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">12</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">5</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                </div>
+                                                <!-- //작은 블럭 -->
+                                            </div>
+                                        </div>
+                                        <div class="devide_box">
+                                            <span class="title">시즌 타격 분포도</span>
+                                            <div class="block_graph">
+                                                <span class="hori_line"></span>
+                                                <span class="verti_line"></span>
+                                                <!-- class에 따른 박스 색상 (제플린 순서에 따름)
+                                                /* RED계열 */
+                                                bg1 {background-color:#e55852;}
+                                                bg2 {background-color:#f16d64;}
+                                                bg3 {background-color:#fe8377;}
+                                                bg4 {background-color:#fe968b;}
+                                                bg5 {background-color:#ffa9a0;}
+
+                                                /* BLUE계열 */
+                                                bg6 {background-color:#90c3fd;}
+                                                bg7 {background-color:#75b4fb;}
+                                                bg8 {background-color:#5ba5f9;}
+                                                bg9 {background-color:#4e8de0;}
+                                                bg10 {background-color:#3976da;}
+                                                -->
+                                                <!-- 큰 블럭 -->
+                                                <div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
+                                                    <span class="i_value">6</span>
+                                                </div>
+                                                <div class="lg_block_unit top_right bg6"> <!-- 우위 -->
+                                                    <span class="i_value">7</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
+                                                    <span class="i_value">24</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
+                                                    <span class="i_value">11</span>
+                                                </div>
+                                                <!-- 큰 블럭 -->
+                                                <!-- 작은 블럭 -->
+                                                <div class="sm_block_wrap">
+                                                    <div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
+                                                        <span class="i_value">0</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg10">
+                                                        <span class="i_value">4</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">6</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">1</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">12</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">5</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                </div>
+                                                <!-- //작은 블럭 -->
+                                            </div>
+                                        </div>
+                                        <ul class="block_desc">
+                                            <li>투구 분포도 : 투수가 던진 공의 코스별 비율입니다.</li>
+                                            <li>타격 분포도 : 타자가 스윙을 한 코스별 비율입니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="rolling_slide">
+                                        <div class="devide_box">
+                                            <span class="title">탈삼진 분포도</span>
+                                            <div class="block_graph">
+                                                <span class="hori_line"></span>
+                                                <span class="verti_line"></span>
+                                                <!-- class에 따른 박스 색상 (제플린 순서에 따름)
+                                                /* RED계열 */
+                                                bg1 {background-color:#e55852;}
+                                                bg2 {background-color:#f16d64;}
+                                                bg3 {background-color:#fe8377;}
+                                                bg4 {background-color:#fe968b;}
+                                                bg5 {background-color:#ffa9a0;}
+
+                                                /* BLUE계열 */
+                                                bg6 {background-color:#90c3fd;}
+                                                bg7 {background-color:#75b4fb;}
+                                                bg8 {background-color:#5ba5f9;}
+                                                bg9 {background-color:#4e8de0;}
+                                                bg10 {background-color:#3976da;}
+                                                -->
+                                                <!-- 큰 블럭 -->
+                                                <div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
+                                                    <span class="i_value">9.8</span>
+                                                </div>
+                                                <div class="lg_block_unit top_right bg6"> <!-- 우위 -->
+                                                    <span class="i_value">4.9</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
+                                                    <span class="i_value">7.3</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
+                                                    <span class="i_value">17.1</span>
+                                                </div>
+                                                <!-- 큰 블럭 -->
+                                                <!-- 작은 블럭 -->
+                                                <div class="sm_block_wrap">
+                                                    <div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
+                                                        <span class="i_value">12.2</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg10">
+                                                        <span class="i_value">0</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">2.4</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">2.4</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">0</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">12.2</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">12.2</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">12.2</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">7.3</span>
+                                                    </div>
+                                                </div>
+                                                <!-- //작은 블럭 -->
+                                            </div>
+                                        </div>
+                                        <div class="devide_box">
+                                            <span class="title">삼진 분포도</span>
+                                            <div class="block_graph">
+                                                <span class="hori_line"></span>
+                                                <span class="verti_line"></span>
+                                                <!-- class에 따른 박스 색상 (제플린 순서에 따름)
+                                                /* RED계열 */
+                                                bg1 {background-color:#e55852;}
+                                                bg2 {background-color:#f16d64;}
+                                                bg3 {background-color:#fe8377;}
+                                                bg4 {background-color:#fe968b;}
+                                                bg5 {background-color:#ffa9a0;}
+
+                                                /* BLUE계열 */
+                                                bg6 {background-color:#90c3fd;}
+                                                bg7 {background-color:#75b4fb;}
+                                                bg8 {background-color:#5ba5f9;}
+                                                bg9 {background-color:#4e8de0;}
+                                                bg10 {background-color:#3976da;}
+                                                -->
+                                                <!-- 큰 블럭 -->
+                                                <div class="lg_block_unit top_left bg3"> <!-- 왼위 -->
+                                                    <span class="i_value">8</span>
+                                                </div>
+                                                <div class="lg_block_unit top_right bg6"> <!-- 우위 -->
+                                                    <span class="i_value">4</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_left bg1"> <!-- 좌아래 -->
+                                                    <span class="i_value">28</span>
+                                                </div>
+                                                <div class="lg_block_unit bottom_right bg1"> <!-- 우아래 -->
+                                                    <span class="i_value">8</span>
+                                                </div>
+                                                <!-- 큰 블럭 -->
+                                                <!-- 작은 블럭 -->
+                                                <div class="sm_block_wrap">
+                                                    <div class="sm_block_unit bg6"> <!-- 내부 3x3 사각 -->
+                                                        <span class="i_value">4</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg10">
+                                                        <span class="i_value">0</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">0</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">0</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">8</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg5">
+                                                        <span class="i_value">12</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg8">
+                                                        <span class="i_value">4</span>
+                                                    </div>
+                                                    <div class="sm_block_unit bg6">
+                                                        <span class="i_value">16</span>
+                                                    </div>
+                                                </div>
+                                                <!-- //작은 블럭 -->
+                                            </div>
+                                        </div>
+                                        <ul class="block_desc">
+                                            <li>탈삼진분포도 : 투수가 타자를 상대로 삼진을 빼앗을 코스별 비율입니다.</li>
+                                            <li>삼진분포도 : 타자가 삼진을 당할 코스별 비율입니다.</li>
+                                        </ul>
+                                    </div>
 								</div>
+								<!-- Pagination -->
+                                <div class="i_pagination"></div>
 							</div>
-							<p class="block_graph_desc">・투수가 홈 플레이트를 바라보는 시점 기준입니다.</p>
-							<p class="block_graph_desc">・안쪽 작은 사각형은 스트라이크존, 바깥쪽 큰 사각형은 볼입니다.</p>
-							<p class="block_graph_desc">・투구 분포도 : 투수가 던진 공의 코스별 비율입니다.</p>
-							<p class="block_graph_desc">・타격 분포도 : 타자가 스윙을 한 코스별 비율입니다.</p>
+							<!-- 202102 그래프 카드 좌우 플리킹 추가 -->
 						</div>
 					</div>
 				</div>
@@ -890,6 +1180,7 @@
 <script src="res/js/relay.js"></script>
 <script src="res/js/floating.js"></script>
 <script src="res/js/video.js"></script>
+<script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/swiper.min.js"></script> <!-- 202102 그래프카드 스크립트 추가 -->
 <script>
 floatUI.init();
@@ -897,6 +1188,19 @@ videoUI.init();
 relayUi.initSubTab(document.getElementById('tab_1depth4'));
 relayUi.initDepthTab(document.getElementById('tab_2depth'));
 </script>
-
+<script>
+$(document).ready(function() {
+ /* News Rolling */
+	if($('.block_graph_rolling').length > 0){
+		var blockGraph = new Swiper('.block_graph_rolling', {
+            wrapperClass : 'rolling_wrap',
+            slideClass : 'rolling_slide',
+            pagination: {
+                el: '.i_pagination',
+              },
+		});
+	};
+});
+</script>
 </body>
 </html>
