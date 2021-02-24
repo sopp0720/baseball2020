@@ -63,6 +63,9 @@
 .page_title_wrap .team_box em {display:inline-block;font-style:normal;font-weight:bold;vertical-align:top;font-size:14px;}
 .page_title_wrap .team_box .team_name {min-width:2.6667rem;height:2.7667rem;line-height:2.7667rem;font-size:1.2667rem;font-weight:500;color:#000000;}
 .page_title_wrap .team_box .team_logo {width:3.1667rem;height:2.7667rem;}
+.page_title_wrap .team_box .sp_logo {width:3.1667rem;height:2.7667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
+.page_title_wrap .team_box.left .sp_logo {margin-left:0.3333rem;margin-right:0.6667rem;}
+.page_title_wrap .team_box.right .sp_logo {margin-right:0.3333rem;margin-left:0.6667rem;}
 .page_title_wrap .team_box .i_score {height:2.7667rem;line-height:2.7667rem;font-size:1.8333rem;color:#000000;}
 .page_title_wrap .middle_box {position:absolute;top:50%;left:50%;margin-top:-0.9833rem;margin-left:-2.5rem;width:5rem;height:1.9667rem;background-image:url('../images/ic-vs-titie-gray.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.9667rem;}
 
@@ -1039,6 +1042,7 @@
 .content .video_wrap .relay_top_info .team_info.left {left:5.1rem;}
 .content .video_wrap .relay_top_info .team_info.right {right:5.1rem;}
 .content .video_wrap .relay_top_info .team_info .team_logo {display:block;margin:0 auto;width:4.9rem;height:4.3rem;}
+.content .video_wrap .relay_top_info .team_info .sp_logo {display:block;margin:0 auto;width:4.9rem;height:4.3rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
 .content .video_wrap .relay_top_info .team_info .team_name {display:block;margin-top:0.6rem;width:100%;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;color:#ffffff;}
 .content .video_wrap .relay_top_info .vs_box {margin:0 auto;padding-top:0.3rem;width:7.6rem;}
 .content .video_wrap .relay_top_info .vs_box .vs_img {display:block;width:7.6rem;height:3.8rem;background:url('../images/ic-vs.png') no-repeat;background-size:100% auto;}
@@ -2424,6 +2428,7 @@ background-color:#f2f3f4;}
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info.left { left: 3.9857rem; }
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .team_info.right { right: 3.9857rem; }
 	.horizontal_ui .content .video_wrap .relay_top_info .team_info .team_logo {width:6.3rem;height:5.5286rem;}
+	.horizontal_ui .content .video_wrap .relay_top_info .team_info .sp_logo {width:6.3rem;height:5.5286rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
 	.horizontal_ui .content .video_wrap .relay_top_info .team_info .team_name { margin-top: 0.7714rem; height: 2.8286rem; font-size: 1.9286rem; }
 	.horizontal_ui .content .video_wrap .relay_top_info .vs_box { padding-top: 0.3857rem; width: 9.7714rem;}
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box { width: 18.5143rem; padding-top:0; }
