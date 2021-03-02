@@ -772,7 +772,7 @@
 					 중계
 				</div>
 				<div class="label label_team_info">
-					 초대
+					 게임
 				</div>
 				<div class="label label_team_info">
 					 MY
@@ -801,8 +801,8 @@
 				<div class="tab tab_relay">
 					 중계
 				</div>
-				<div class="tab tab_invite">
-					 초대
+				<div class="tab tab_game">
+					 게임
 				</div>
 				<div class="tab tab_my">
 					 MY
@@ -812,6 +812,20 @@
 		</div>
 	</div>
 	<!-- Footer -->
+	
+	<!-- 202103 알림 설정 유도 팝업 -->
+	<div class="modal fadeInUp popup_cheer is_cheer" id="popup_cheer">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="bg_cheer">
+				<p class="quo_marks">응원팀의 인기・최신 야구소식과<br>주요영상 안내를 받아보세요!</p>
+				<a href="#" class="btn_cheerteam_setting usetap">알림 설정하기</a>
+				<a href="#" class="btn_cheerteam_setting usetap">2주 동안 보지 않기</a>
+				<button type="button" class="btn_close usetap" onclick="layerPopup.hide();"></button>
+			</div>
+		</div>
+	</div>
+	<!-- // 202103 알림 설정 유도 팝업 -->
 </div>
 
 <script src="res/js/libs/lottie.min.js"></script>
@@ -832,6 +846,7 @@ document.getElementById('teamSelect').addEventListener('change', function(event)
 	document.getElementById('wrap').setAttribute('data-theme',this.value);
 	bnbUi.teamLottie()
 });
+layerPopup.show('#popup_cheer');
 </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="res/css/ui.css">
 </head>
 <body>
-<select id="teamSelect" style="z-index:99999; position:fixed; top:100px; left:15px; width:calc(100vw - 30px); height:30px;">
+<select id="teamSelect" style="z-index:99999; position:fixed; top:50px; left:15px; width:calc(100vw - 30px); height:30px;">
 	<option value="theme_default">팀선택 없음</option>
 	<option value="theme_LG">LG</option>
 	<option value="theme_HH">한화</option>
@@ -310,22 +310,93 @@
 	</div>
 </div>
 
-<!-- 친구 초대하기 팝업 -->
-<div class="modal fadeInUp " id="popup_friend">
+<!-- 202103 친구 초대하기 팝업 -->
+<div class="modal fadeInUp f_invite" id="popup_friend">
 	<div class="dim" onclick="layerPopup.hide();"></div>
 	<div class="modal_inner dropdown">
-		<ul class="dropdown_list">
-			<li class="usetap">
-				<input type="radio" checked name="friend_list" />
-				<div class="radio_bg"></div>
-				<div class="team_logo team_logo_LG"></div>
-				<div class="tit">LG 트윈스</div>
-				<span class="my_team"></span>
-			</li>
-		</ul>
+		<div class="dropdown_list">
+			<div class="fix_title">
+				<span class="pop_title">대화상대</span>
+				<button type="button" class="btn_f_invite2 usetap">친구 초대하기</button>
+			</div>
+			<ul>
+				<li>
+					<div class="team_logo team_symbol_OB"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_SK"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_LG"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_OB"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_SK"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_LG"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_OB"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_SK"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_LG"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_OB"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_SK"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_LG"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_OB"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_SK"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_LG"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_OB"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_SK"></div>
+					<div class="tit">닉네임</div>
+				</li>
+				<li>
+					<div class="team_logo team_symbol_LG"></div>
+					<div class="tit">닉네임</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
-<!-- // 친구 초대하기 팝업 -->
+<!-- // 202103 친구 초대하기 팝업 -->
 	
 <script src="res/js/libs/jquery-2.2.4.min.js"></script>
 <script src="res/js/libs/lottie.min.js"></script>

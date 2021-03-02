@@ -316,9 +316,10 @@
 .home.content .special_game {margin-top:2.2rem;}
 .home.content .special_game .title_hd {padding-top:0.5333rem;height:3.5rem;}
 .home.content .score_board_wrap .special_game .play_list li {position:relative;padding:1.3rem 2.9rem 1.1333rem 2.3rem;}
-.home.content .score_board_wrap .special_game .play_list li .sp_wrap {position:relative;height:4.2667rem;}
+.home.content .score_board_wrap .special_game .play_list li .sp_wrap {position:relative;height:4.2667rem;text-align:left;}
+.home.content .score_board_wrap .special_game .play_list li .sp_wrap:after {content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .home.content .score_board_wrap .special_game .play_list li .sp_logo {position:absolute;top:0;left:0;width:4.2667rem;height:4.2667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
-.home.content .score_board_wrap .special_game .play_list li .sp_explain {margin-top:0.0333rem;margin-left:5.1rem;width:calc(100% - 12.1667rem);min-width:14.9333rem;}
+.home.content .score_board_wrap .special_game .play_list li .sp_explain {display:inline-block;margin-left:5.1rem;width:calc(100% - 12.1667rem);min-width:14.9333rem;vertical-align:middle;}
 .home.content .score_board_wrap .special_game .play_list li .sp_explain span {display:block;text-align:left;}
 .home.content .score_board_wrap .special_game .play_list li .sp_explain span.sp_title {height:2.0667rem;font-size:1.4rem;font-weight:bold;}
 .home.content .score_board_wrap .special_game .play_list li .sp_explain span.sp_full {height:2.0667rem;font-size:1.4rem;font-weight:500;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
@@ -390,7 +391,7 @@
 .highlight_box:nth-child(2) {margin-top:0;}
 .highlight_box .thumb {position:relative;padding-bottom:56.25%;height:0;background-repeat:no-repeat;background-size:100% auto;border-radius:0.7333rem;overflow:hidden;}
 .highlight_box .thumb.i_default {background-image:url('../images/ic-play-defualt-b-02.png');background-position:50% 50%;background-size:3rem;background-color:#e9edf0;background-repeat:no-repeat;}
-.highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;width:4.2rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
+.highlight_box .thumb .play_time {position:absolute;bottom:0.8333rem;right:0.8333rem;padding:0 0.5333rem;width:auto;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
 .highlight_box p {margin-top:0.4333rem;padding:0 3.125%;height:4.1333rem;line-height:2.06665rem;font-size:1.4rem;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .highlight_wrap.line1 .highlight_box p {height:1.9667rem;line-height: normal;-webkit-line-clamp: 1;}
 
@@ -2326,6 +2327,16 @@ background-color:#f2f3f4;}
 .modal .dropdown_list li input[type="radio"]:checked ~ .radio_bg {background-image:url(../images/logo/dropdown.png);background-size:100%;}
 .modal .dropdown_list li input[type="radio"]:checked ~ .tit {font-weight:bold}
 .modal .dropdown_list li .my_team {float:left;width:2rem;height:2rem;margin:1.1667rem 0 0 0.4333rem;background-image:url(../images/icon_my.png);background-position:center center;background-repeat:no-repeat;background-size:2rem;border-radius:100%;border:1px solid #fff;}
+
+/* layerPopup 친구초대 */
+.modal.f_invite .fix_title {z-index:1;position:absolute;top:0;left:0;width:100%;height:6rem;background:#ffffff;}
+.modal.f_invite .pop_title {display:block;margin:2rem 2.6rem 0;font-size:1.5rem;font-weight:bold;line-height:1.6;color:#000000;}
+.modal.f_invite .btn_f_invite2 {display:inline-block;position:absolute;top:1.5333rem;right:1.5333rem;padding:0 0.8rem;height:3.3333rem;font-size:1.2667rem;font-weight:bold;color:#ffffff;border-radius:0.7333rem;background-color:#2b2b2b;}
+.modal.f_invite .modal_inner.dropdown {max-height:25.3333rem;}
+.modal.f_invite .dropdown_list {max-height:25.3333rem;}
+.modal.f_invite .dropdown_list ul {padding:5rem 0 0;}
+.modal.f_invite .dropdown_list li .team_logo {margin-top:0.9667rem;width:2.4rem;height:2.4rem;}
+.modal.f_invite .dropdown_list li .team_logo + .tit {margin-top:0.9667rem;padding-left:0.3rem;height:2.4rem;line-height:1.6;}
 
 /* layerPopup 달력 */
 .modal .calendar_header {position:relative;background-color:#fff;height:12.6667rem;border-top-left-radius:0.7333rem;border-top-right-radius:0.7333rem;overflow:hidden;}
