@@ -810,6 +810,7 @@
 .team.content .schedule_opt button.btn_select.active .i_arrow {transform:rotate(180deg);-webkt-transform:rotate(180deg);}
 
 /* relay_kbo */
+.relay.content .inner:first-of-type {padding-top:0.6667rem;}
 .relay.content .scroll_date {position:relative;margin:1.2333rem -1.5333rem 0;height:6rem;}
 .relay.content .scroll_date .scroll_inner {position:relative;width:100%;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;-ms-overflow-style:none;scrollbar-width:none;}
 .relay.content .scroll_date .scroll_inner::-webkit-scrollbar {display:none;}
@@ -1000,17 +1001,15 @@
 .relay.content .chat_wrap.chat_f .desc_middle {margin-top:-1.5667rem;}
 .relay.content .chat_wrap.chat_f .chat_inner {padding-top:1.5667rem;padding-bottom:0 !important;}
 .relay.content .chat_wrap.chat_f .chat_inner .scroll_bottom {position:relative;padding-top:4.6667rem;}
-.relay.content .chat_wrap.chat_f .desc_middle .btn_friend {display:block;margin:0.9667rem auto 0;width:8.9rem;height:3.3333rem;background:url('../images/friendchat-invitation.png') no-repeat 0/cover;}
+.relay.content .chat_wrap.chat_f .desc_middle .btn_friend {display:block;margin:1.7rem auto 0;padding:0.6333rem 1.8333rem 0.8333rem;height:3.3333rem;font-size:1.2667rem;font-weight:700;color:#ffffff;text-align:center;border-radius:0.7333rem;background-color:#2b2b2b;}
 .relay.content .chat_wrap.chat_f .msg_wrap .welcome {padding:0 1.4333rem;width:auto;}
 .relay.content .chat_wrap.chat_f .btn_fwrap {z-index:1;position:fixed;top:auto;right:0;padding:0 1.5333rem;width:100%;font-size:0;text-align:right;}
-.relay.content .chat_wrap.chat_f .btn_fwrap button {display:inline-block;margin-left:0.9rem;width:8.3667rem;height:3.2667rem;vertical-align:top;background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .chat_wrap.chat_f .btn_fwrap button {display:inline-block;margin-left:1rem;height:3.2667rem;vertical-align:top;background-repeat:no-repeat;background-size:100% auto;}
 .relay.content .chat_wrap.chat_f .btn_fwrap button:first-child {margin-left:0;}
-.relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_invite {background-image:url('../images/friendchat-list.png');}
-.relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_out {background-image:url('../images/friendchat-out.png');}
-/*
-.relay.content .chat_wrap.chat_f .in_modal {top:auto;bottom:auto;margin-top:-1.5667rem;height:100%;}
-.relay.content .chat_wrap.chat_f .in_modal > .dim {top:auto;bottom:auto;height:100%;}
-*/
+.relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_invite {width:10rem;background-image:url('../images/01-btn-chat-ic-friend.png');}
+.relay.content .chat_wrap.chat_f .btn_fwrap button.btn_f_out {width:8.3667rem;background-image:url('../images/friendchat-out.png');}
+.relay.content .chat_wrap.chat_f .tooltip_capacity {display:block;position:relative;width:100%;height:10.7rem;background:url('../images/img-friendchat-tooltip.png') no-repeat 50% 50%/100% auto;}
+.relay.content .chat_wrap.chat_f .tooltip_capacity .tooltip_close {display:block;position:absolute;top:2.6rem;right:2.8667rem;width:1.6rem;height:1.6rem;background:url('../images/02-1-icon-ic-tooltip-closer.png') no-repeat 50% 50%/100% auto;}
 
 /* Relay - Chat 운영자 공지사항 */
 .relay.content .chat_wrap .chat_inner {position:relative;}
@@ -1019,8 +1018,8 @@
 .relay.content .chat_wrap .i_manager {display:block;font-size:0;}
 .relay.content .chat_wrap .i_manager span {display:inline-block;vertical-align:top;}
 .relay.content .chat_wrap .i_manager .i_cate {margin-right:0.6rem;height:2.1667rem;font-size:1.4667rem;font-weight:500;color:#000000;}
-.relay.content .chat_wrap .i_manager .ico_writer {margin-top:0.1667rem;margin-right:0.3333rem;width:1.8rem;height:1.8rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
-.relay.content .chat_wrap .i_manager .i_writer {height:2.166rem;font-size:1.466rem;font-weight:bold;color:#000000;}
+.relay.content .chat_wrap .i_manager .ico_writer {margin-right:0.2rem;width:2.0667rem;height:2.1667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;background-image:url('../images/02-1-icon-chat-ic-crown.png');}
+.relay.content .chat_wrap .i_manager .i_writer {height:2.1667rem;font-size:1.4667rem;font-weight:bold;color:#c10a3a;}
 .relay.content .chat_wrap .chat_noti p.cont {padding:0.1333rem 0;width:90.688259%;min-height:1.9rem;font-size:1.4667rem;line-height:1.3;color:#000000;white-space:normal;}
 .relay.content .chat_wrap .chat_noti .i_date {display:block;margin-top:0.7rem;height:1.8rem;font-size:1.2rem;font-weight:500;color:#858585;}
 .relay.content .chat_wrap .chat_noti.noti_fold .title_wrap,
@@ -1028,7 +1027,6 @@
 .relay.content .chat_wrap .chat_noti.noti_fold .btn_fold {transform:rotate(180deg);}
 .relay.content .chat_wrap .chat_noti.noti_fold p.cont {text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
 .relay.content .chat_wrap .chat_noti + .scroll_bottom {padding-top:6.7333rem;}
-.relay.content .chat_wrap .msg_wrap .i_manager .ico_writer {margin-right:0.5rem;}
 
 /* Relay - game info */
 .relay.content .video_wrap + .tab_1depth {margin-top:0;}
@@ -1591,12 +1589,16 @@
 .my.content .sec_my .sec_title {font-size:1.6667rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
 .my.content .sec_my .my_player {position:relative;}
 .my.content .sec_my .edit_wrap {position:absolute;width:3.2rem;height:3.2rem;top:-0.3667rem;right:-0.8rem;}
+.my.content .sec_my .edit_wrap span {display:block;position:absolute;top:0;right:0;width:100%;line-height:3.2rem;font-size:1.2rem;font-weight:700;color:#5b6067;text-align:center;}
+/*
 .my.content .sec_my .edit_wrap .edit {position:absolute;font-size:0;line-height:0;direction:ltr;text-indent:-999em;width:3.2rem;height:3.2rem;background-image:url(../images/ic-my-edit-team.png);background-size:100%;}
+.my.content .sec_my .edit_wrap.on .complete {display:block;width:3.2rem;height:3.2rem;font-size:1.2rem;font-weight:bold;line-height:3.2rem;text-align:center;color:#5b6067;}
+*/
 .my.content .sec_my .edit_wrap .edit.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 .my.content .sec_my .edit_wrap .complete {display:none;}
 .my.content .sec_my .edit_wrap .complete.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 .my.content .sec_my .edit_wrap.on .edit {display:none;}
-.my.content .sec_my .edit_wrap.on .complete {display:block;width:3.2rem;height:3.2rem;font-size:1.2rem;font-weight:bold;line-height:3.2rem;text-align:center;color:#5b6067;}
+.my.content .sec_my .edit_wrap.on .complete {display:block;}
 .my.content .sec_my .btn_group {margin-top:1.5rem;}
 .my.content .sec_my .btn_group:after {clear:both;content:'';display:block;}
 .my.content .sec_my .btn_group .dropdown {overflow:hidden;position:relative;float:left;padding:0 1.5rem 0 1.3333rem;width:6.7333rem;height:3.3333rem;border-radius:0.7333rem;border:2px solid #eeeeee;background-color:#eeeeee;font-size:1.2667rem;font-weight:normal;line-height:2.9662rem;color:#2b2b2b;}
@@ -2334,7 +2336,7 @@ background-color:#f2f3f4;}
 /* layerPopup 친구초대 */
 .modal.f_invite .fix_title {z-index:1;position:absolute;top:0;left:0;width:100%;height:6rem;background:#ffffff;}
 .modal.f_invite .pop_title {display:block;margin:2rem 2.6rem 0;font-size:1.5rem;font-weight:bold;line-height:1.6;color:#000000;}
-.modal.f_invite .btn_f_invite2 {display:inline-block;position:absolute;top:1.5333rem;right:1.5333rem;padding:0 0.8rem;height:3.3333rem;font-size:1.2667rem;font-weight:bold;color:#ffffff;border-radius:0.7333rem;background-color:#2b2b2b;}
+.modal.f_invite .btn_f_invite2 {display:inline-block;position:absolute;top:1.5333rem;right:1.5333rem;padding:0.6333rem 1.8333rem 0.8333rem;font-size:1.2667rem;font-weight:700;color:#ffffff;border-radius:0.7333rem;background-color:#2b2b2b;}
 .modal.f_invite .modal_inner.dropdown {max-height:25.3333rem;}
 .modal.f_invite .dropdown_list {max-height:25.3333rem;}
 .modal.f_invite .dropdown_list ul {padding:5rem 0 0;}
