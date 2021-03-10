@@ -2301,7 +2301,7 @@ background-color:#f2f3f4;}
 .modal .modal_ft .btn_half {display:inline-block;margin-left:0;width:50%;height:4.4rem;padding:0 0.7333rem 0 0;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;text-align:center;color:#000000;}
 .modal .modal_ft .btn_half + .btn_half {padding:0 0 0 0.7333rem;}
 .modal .modal_ft .btn_half.usetap.active {opacity:1;}
-.modal .modal_ft .btn_half span {margin:0 auto;display:block;height:4.4rem;padding:1.0667rem 3.6667rem;border-radius:2.2rem;}
+.modal .modal_ft .btn_half span {margin:0 auto;display:block;height:4.4rem;padding:1.0667rem 0/*3.6667rem*/;border-radius:2.2rem;}
 .modal .modal_ft .btn_half.usetap.active span {background-color:#fafafa;opacity:1;}
 
 /* layerPopup 이벤트 */
