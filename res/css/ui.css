@@ -1928,6 +1928,10 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .cheering .relay_card_wrap {display:none;}
 .content .content_scroll .tab_1depth_wrap + .sec_wrapper {border-top:0;}
 .content .content_scroll .tab_3depth + .sec_wrapper {border-top:0;}
+/* menu1 dim */
+.tab_1depth.i_dim .tab_item {pointer-events:none;touch-action:none;}
+.tab_1depth.i_dim .tab_item span, 
+.tab_1depth.i_dim .active_bar {opacity:0.5;}
 
 /* tab_2depth */
 .tab_2depth {margin-top:2.5rem;position:relative;text-align:center;font-size:0;}
