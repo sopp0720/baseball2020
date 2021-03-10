@@ -263,7 +263,7 @@
 .middle_box .info_today.i_cancel {width:3.8333rem;height:2.0333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/02-1-icon-tag-team-gray-01.png');background-repeat:no-repeat;background-size:100% auto;}
 .middle_box .info_today.i_suspended {width:7.1333rem;height:2.0333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/02-1-icon-tag-team-gray-03.png');background-repeat:no-repeat;background-size:100% auto;}
 
-.middle_box .info_today.i_end {width:3.6333rem;height:1.8333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
+.middle_box .info_today.i_end {width:3.8333rem;height:2.0333rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-image:url('../images/02-1-icon-tag-team-gray-02.png');background-repeat:no-repeat;background-size:100% auto;}
 .home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#000;}
 .home.content .score_board_wrap .play_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.8rem 0 0.8333rem;width:100%;height:6.8333rem;text-align:center;}
@@ -286,13 +286,13 @@
 .home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000;}
 
 .home.content .score_board_wrap .mini_kbo_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
-.home.content .score_board_wrap .mini_kbo_list li {position:relative;margin-top:1px;padding:0.7333rem 0 0.8rem;width:100%;height:5.6rem;text-align:center;}
+.home.content .score_board_wrap .mini_kbo_list li {position:relative;margin-top:1px;padding:0.8rem 0 0.6667rem;width:100%;height:5.6rem;text-align:center;}
 .home.content .score_board_wrap .mini_kbo_list li:first-child {margin-top:0;}
 .home.content .score_board_wrap .cheer_team {background-color: rgba(241, 23, 85, 0.03);}
 .home.content .score_board_wrap .mini_kbo_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#f8f8f9;}
 .home.content .score_board_wrap .mini_kbo_list li:first-child:after {display:none;}
 .home.content .score_board_wrap .mini_kbo_list li.active {opacity:0.8;}
-.home.content .score_board_wrap .mini_kbo_list li .team_player {position:absolute;top:1.2667rem;width:8.4333rem;font-size:0;}
+.home.content .score_board_wrap .mini_kbo_list li .team_player {position:absolute;top:1.2rem;width:8.4333rem;font-size:0;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player .team_name {display:inline-block;margin:0.6333rem 0;width:4.2rem;height:1.9667rem;line-height:1.9667rem;font-size: 1.4rem;font-weight: bold;font-style:normal;color:#000000;vertical-align:top;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player .team_logo {display:inline-block;width:3.6333rem;height:3.2333rem;vertical-align:top;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player .sp_logo {display:inline-block;width:3.6333rem;height:3.2333rem;vertical-align:top;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
@@ -304,13 +304,15 @@
 .home.content .score_board_wrap .mini_kbo_list li .team_player.right {right:0.4rem;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player.right .team_name {text-align:left;}
 .home.content .score_board_wrap .mini_kbo_list li .team_player.right .team_logo {margin-right:0.6rem;}
-.home.content .score_board_wrap .mini_kbo_list li .middle_box {z-index:1;position:relative;margin:0 auto;width:15.2667rem;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box {z-index:1;position:relative;margin:0 auto;width:15.2667rem;height:4rem;}
 .home.content .score_board_wrap .mini_kbo_list li .middle_box {overflow:hidden;}
-.home.content .score_board_wrap .mini_kbo_list li .middle_box em {display:block;float:left;margin-top:0.0667rem;width:3.8333rem;height:4rem;font-family:'Bebas Neue';font-size:3.3333rem;font-style:normal;color:#000000;}
-.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state {display:block;float:left;margin:1.0333rem 0.9667rem;width:5.6667rem;height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000000;}
-.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.ing {color:#ca0039;}
-.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.before {margin-top:0;margin-bottom:0;height:auto;}
-.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.before span {display:block;height:2rem;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box em {display:block;float:left;width:3.8333rem;height:4rem;line-height:4rem;font-family:'Bebas Neue';font-size:3.3333rem;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state {display:block;float:left;margin:0 0.3rem;width:7rem;height:4rem;font-size:1.4rem;font-weight:500;color:#000000;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state .info_time {display:block;width:100%;font-size:1.4rem;font-weight:500;height:2.0667rem;color:#000000;}
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.is_time .info_today {margin:0.0333rem auto 0;} /* 중계예정, 취소, 서스펜디드 */
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.ing {line-height:4rem;color:#ca0039;} /* 경기중 */
+.home.content .score_board_wrap .mini_kbo_list li .middle_box .play_state.end .info_today.i_end {margin:1rem 0 0.9667rem;} /* 종료 */
+
 .home.content .separate_league {margin-top:1.5333rem;}
 .home.content .separate_league:first-of-type {margin-top:0;}
 .home.content .separate_league .title_hd {padding-top:0.5333rem;height:3.5rem;}
@@ -960,7 +962,6 @@
 .relay.content .msg_wrap.right {text-align:right;border-top-left-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
 .relay.content .msg_wrap .welcome {display:inline-block;margin-top:0;width:14.1667rem;height:3.1333rem;border-radius:1.5667rem;background-color:rgba(43,43,43,0.07);font-size:1.2rem;font-weight:bold;line-height:3.1333rem;text-align:center;color:#484848;}
 .relay.content .msg_wrap .i_date {display:inline-block;margin:0.9333rem 0;min-width:13.7667rem;height:2.2rem;border-radius:1.5667rem;background-color:rgba(43,43,43,0.05);font-size:1.0667rem;line-height:2.2rem;font-weight:500;text-align:center;color:#858585;padding:0 1rem;}
-
 .relay.content .msg_wrap .msg {position:relative;background-color:#fff;min-width:7.6667rem;max-width:25.4rem;display:inline-block;color:#000000;padding:0.7333rem 1.1333rem 1.1333rem;}
 .relay.content .msg_wrap.same .msg {padding-top:1.1333rem;}
 .relay.content .msg_wrap.left .msg {border-top-right-radius:1.9333rem;border-bottom-left-radius:1.9333rem;border-bottom-right-radius:1.9333rem;}
@@ -995,6 +996,10 @@
 .relay.content .ic_chat_down {margin-bottom:0.7rem;position:fixed;bottom:5.0667rem;right:1rem;width:4.4rem;height:4.4rem;background-image:url(../images/ic-chat-down.png);background-size:100%;transform:scale(0) translateZ(0);-webkit-transform:scale(0) translateZ(0);opacity:0;transition:all 0.3s ease-in-out;}
 .relay.content .down .ic_chat_down {transform:scale(1) translateZ(0);-webkit-transform:scale(1) translateZ(0);opacity:1;}
 .relay.content .down .ic_chat_down.usetap.active {opacity:0.8;}
+
+/* 채팅 미운영 */
+.relay.content .chat_wrap.chat_none .chat_inner,
+.relay.content .chat_wrap.chat_none .chat_inner .desc_middle {padding-bottom:0;}
 
 /* Relay - 친구 채팅 */
 .relay.content .chat_wrap.chat_f .chat_inner,
