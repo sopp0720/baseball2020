@@ -214,6 +214,7 @@
 .home.content .top_phrase.case10 {background-image:url("../images/img-home-illust-10.png");}
 .home.content .top_phrase.case11 {background-image:url("../images/img-home-illust-11.png");}
 .home.content .btn_uplustv {position:absolute;top:0.3rem;left:1.7333rem;width:3.0667rem;height:3.0667rem;background-image:url(../images/ic-logo-mobile-tv.png);background-size:100%;overflow:hidden;font-size:0;line-height:0;direction:ltr;text-indent:-999em;}
+.home.content .top_logo {overflow:hidden;}
 .home.content .top_logo h1.ic_logo_lgu {width:9.2667rem;height:2.1rem;margin:1rem 0 0 1.7rem;background:url("../images/02-1-icon-u-logo-ic-logo-lgu.png") no-repeat;background-size:100% auto;}
 .home.content .top_logo h1.ic_logo_lgu a {display:block;width:100%;height:100%;}
 .home.content .top_phrase h1.ic_logo_lgu {width:7.2rem;height:1.6333rem;background:url("../images/ic-logo-lgu.png") no-repeat;background-size:100% auto;}
