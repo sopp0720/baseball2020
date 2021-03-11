@@ -22,7 +22,12 @@ var videoUI = (function() {
 		},
         "content_scroll": function() {
 			if (document.querySelector('.chat_inner') != null){
-				let scMh = window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - document.querySelector('.page_title_wrap').clientHeight - document.querySelector('.tab_1depth_wrap').clientHeight - 1;
+				let scTb = document.querySelector('.tab_1depth_wrap');
+				let scTh = 0;
+				if (scTb != null) {
+					scTh = scTh.clientHeight;
+				}
+				let scMh = window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - document.querySelector('.page_title_wrap').clientHeight - scTh - 1;
 				let scBm = document.querySelector('.scroll_bottom');
 				if (scBm != null){
 					if (scBm.clientHeight < scMh){
