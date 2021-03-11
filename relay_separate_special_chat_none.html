@@ -172,14 +172,16 @@
                         </ul>
                     </div>
 				</div>
+				<!--
 				<div class="tab_1depth_wrap">
-					<div class="tab_1depth i_dim" id="tab_1depth4"> <!-- 202103 1개 메뉴 dim 처리 시 i_dim 클래스 추가 -->
+					<div class="tab_1depth i_dim" id="tab_1depth4"> <!-- 202103 1개 메뉴 dim 처리 시 i_dim 클래스 추가 --> <!--
 						<ul class="tab_link">
 							<li class="tab_item active" onclick="this.closest('.content').classList.add('cheering');videoUI.content_scroll();"><span>응원하기</span></li>
 						</ul>
 						<div class="active_bar"></div>
 					</div>
 				</div>
+				-->
 				<!-- 202103 채팅 미제공 영역 추가 -->
 				<div class="chat_wrap chat_none" data-away="theme_default" data-home="theme_OB" id="chat_wrap"> <!-- 202103 채팅 미제공 시 chat_none 클래스 추가 -->
 					<div class="chat_inner" id="chreerScroll">
@@ -205,16 +207,9 @@
 <script>
 floatUI.init();
 videoUI.init();
-relayUi.initSubTab(document.getElementById('tab_1depth4'));
-relayUi.activeBar(1,document.getElementById('tab_1depth4'));
+//relayUi.initSubTab(document.getElementById('tab_1depth4'));
+//relayUi.activeBar(1,document.getElementById('tab_1depth4'));
 chreerUi.chatlayout(document.getElementById('origin'));
 </script>
-<script>
-document.getElementById('teamSelect').addEventListener('change', function(event){ // Selectbox 삭제 후 개발
-	document.getElementById('wrap').setAttribute('data-theme','');
-	document.getElementById('wrap').setAttribute('data-theme',this.value);
-});
-</script>
-
 </body>
 </html>
