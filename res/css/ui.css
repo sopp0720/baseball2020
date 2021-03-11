@@ -3,7 +3,7 @@
 @import url('theme.css');
 
 #wrap {position:absolute;width:100%;min-height:100%;overflow:hidden;}
-#wrap.main {background-color:#ffffff;padding-bottom:9.6667rem;}
+#wrap.main {background-color:#ffffff;padding-bottom:11.0667rem;}
 #wrap.sub {background-color:#F7F7F7;}
 #container {position:relative;width:100%;}
 #container.iptv { width: 60% !important; margin: 0 auto;}
@@ -569,9 +569,9 @@
 .team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.4rem 0.2333rem 0.2333rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#f0f1f6;}
 .team.content .sec_team_position .team_position_all .position_desc_bg {margin:0 -1.5333rem -9.6667rem;padding:0 1.5333rem 8rem;background-color:#fafafb;}
 .team.content .sec_team_position .team_position_all .all_position_desc {height:4.7rem;font-size:0;text-align:center;}
-.team.content .sec_team_position .team_position_all .all_position_desc p {display:inline-block;font-size:1.2333rem;font-weight:300;color:#858585;line-height:4.7rem;text-align:center;}
+.team.content .sec_team_position .team_position_all .all_position_desc p {display:inline-block;font-size:1.4rem;font-weight:normal;color:#858585;line-height:4.7rem;text-align:center;}
 .team.content .sec_team_position .team_position_all .all_position_desc span {display:inline-block;position:relative;width:0.9333rem;height:0.9333rem;}
-.team.content .sec_team_position .team_position_all .all_position_desc span i {display:inline-block;position:absolute;top:-0.4667rem;left:0;width:100%;height:100%;background:url('../images/ic-team-text-s.png') no-repeat 50% 50%;background-size:cover;}
+.team.content .sec_team_position .team_position_all .all_position_desc span i {display:inline-block;position:absolute;top:-0.6333rem;left:-0.1667rem;width:100%;height:100%;background:url('../images/ic-team-text-s.png') no-repeat 50% 50%;background-size:cover;}
 .team.content .sec_team_position.tbl_player_wrap .input_box {margin-bottom:3.3333rem;}
 
 /* TEAM - player srh result */
@@ -624,8 +624,8 @@
 .team.content .video_scroll .thumb {position:relative;padding-bottom:56.284153%;height:0;border-radius:0.7333rem;background-repeat:no-repeat;background-size:100% auto;background-color:#e9edf0;}
 .team.content .video_scroll .thumb.i_default {background-image:url('../images/ic-play-defualt-s.png');background-position:50% 50%;background-size:22.023809% auto;}
 .team.content .video_scroll .thumb .play_time {position:absolute;bottom:0.7rem;right:0.6667rem;padding:0 0.6rem;height:1.8333rem;line-height:1.8333rem;font-size:1.2333rem;font-style:normal;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.65);border-radius:0.3333rem;}
-.team.content .video_scroll p {margin-top:0.5333rem;font-size:1.2667rem;font-weight:normal;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
-.team.content .video_scroll .date {display:block;margin-top:0.5rem;height:1.6667rem;font-size:1.1333rem;font-weight:500;color:#858585;}
+.team.content .video_scroll p {margin-top:0.4333rem;font-size:1.4rem;font-weight:normal;color:#000000;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;line-height:2.0667rem;}
+.team.content .video_scroll .date {display:block;margin-top:0.2667rem;height:1.8rem;font-size:1.2rem;font-weight:500;color:#858585;}
 .team.content .term_desc {margin-top:1.5333rem;border:solid 0.1rem #e4e6eb;border-radius:0.7333rem;overflow:hidden;}
 .team.content .term_desc .btn_desc {display:block;padding:0.8333rem 0 0.9rem;width:100%;height:3.7rem;background-color:#ffffff;font-size:0;text-align:center;}
 .team.content .term_desc .btn_desc .label {font-size:1.3333rem;font-weight:500;color:#7a7a7a;}
@@ -673,6 +673,7 @@
 .content .block_graph_wrap .rolling_slide {padding:0 2.834008%;flex-shrink:0;width:100% !important;height:100%;position:relative;transition-property:transform;}
 .content .block_graph_wrap .rolling_slide .devide_box ~ .devide_box {margin-left:6.008583%;}
 .content .block_graph_wrap .devide_box {float:left;width:46.995708%;}
+.content .block_graph_wrap .devide_box ~ .devide_box {margin-left:6.008583%;}
 .content .block_graph_wrap .devide_box .title {display:block;height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;text-align:center;}
 .content .block_graph_wrap .devide_box .title i {font-size:1.2rem;font-style:normal;font-weight:bold;color:#858585;}
 .content .block_graph_wrap .block_graph {position:relative;margin-top:1.4rem;border-radius:0.7333rem;overflow:hidden;}
@@ -683,6 +684,17 @@
 .content .block_graph_wrap .i_pagination .swiper-pagination-bullet {display:inline-block;margin-left:1.5rem;margin-top:0.1rem;width:0.8rem;height:0.8rem;background-color:#d8d8d8;vertical-align:top;border-radius:50%;}
 .content .block_graph_wrap .i_pagination .swiper-pagination-bullet:first-child {margin-left:0;}
 .content .block_graph_wrap .i_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {margin-top:0;width:1rem;height:1rem;background-color:#5b6067;}
+
+.content.team .block_graph_wrap {padding:0 3.947368%;}
+.content.team .block_graph_wrap .devide_box {width:45.604395%;}
+.content.team .block_graph_wrap .devide_box ~ .devide_box {margin-left:8.791208%;}
+.content.team .block_graph_wrap .devide_box .title {font-size:1.3333rem;}
+.content.team .block_graph_wrap .block_graph {margin-top:1.3333rem;}
+.content.team .block_graph .lg_block_unit .i_value {height:1.6667rem;font-size:1.1333rem;}
+.content.team .block_graph .lg_block_unit.top_left .i_value {top:0.2667rem;left:0.6667rem;}
+.content.team .block_graph .lg_block_unit.top_right .i_value {top:0.2667rem;right:0.6667rem;}
+.content.team .block_graph .lg_block_unit.bottom_left .i_value {bottom:0.3rem;left:0.6667rem;}
+.content.team .block_graph .lg_block_unit.bottom_right .i_value {bottom:0.3rem;right:0.6667rem;}
 
 /* RED계열 5단계 */
 .content .block_graph .bg1 {background-color:#e55852;}
@@ -1986,8 +1998,8 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table tbody tr,.table tfoot tr {border-bottom:1px solid #dee1e6;}
 .table tbody tr:last-of-type,.table tfoot tr:last-of-type {border-bottom:0 none;}
 .table tfoot tr:last-of-type {border-top:1px solid #dee1e6;}
-.table thead .cell {position:relative;height:2.7rem;padding:0.4333rem 0 0.4rem;font-size:1.3rem;font-weight:500;text-align:center;white-space:nowrap;color:#000;}
-.table tbody .cell {position:relative;height:4.3rem;padding:1.1667rem 0.3333rem 1.2333rem;font-size:1.3rem;text-align:center;white-space:nowrap;color:#000;}
+.table thead .cell {position:relative;height:2.7rem;padding:0.4333rem 0 0.3667rem;font-size:1.3rem;font-weight:500;text-align:center;white-space:nowrap;color:#000;}
+.table tbody .cell {position:relative;height:4.3667rem;padding:1.2333rem 0.3333rem;font-size:1.3rem;text-align:center;white-space:nowrap;color:#000;}
 .table tfoot .cell {position:relative;height:3.1667rem;padding:0.6667rem 0.3333rem 0.6333rem;font-size:1.3rem;text-align:center;white-space:nowrap;color:#000;}
 .table thead .cell.selected {color:#2b2b2b;background-color:#ebebeb;}
 .table tbody .cell.selected {color:#c10a3a;background-color:#FBF2F2;}/* 수정 예정 */
@@ -2013,17 +2025,17 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table_responsive.table_vs .table_right th:last-of-type .cell,
 .table_responsive.table_vs .table_right td:last-of-type .cell {padding-right:1rem;padding-left:0.3333rem;min-width:4.6667rem;}
 
-.table_player .table_left {width:12.6rem;}
+.table_player .table_left {width:calc(11.5333rem + 2px);}
 .table_player .table_left .cell {padding:0;background-color:rgba(242, 243, 244, 0.4);}
-.table_player .table_left .cell .num {float:left;width:1.1333rem;height:1.7333rem;font-family:'Bebas Neue';font-size:1.4rem;font-weight:normal;text-align:center;color:#000;margin:1.3rem 0 0 0.4667rem;}
+.table_player .table_left .cell .num {float:left;width:1.7667rem;height:1.9rem;font-family:'Bebas Neue';font-size:1.6rem;font-weight:normal;text-align:center;color:#000;margin:1.2333rem 0 0 0;}
 .table_player .table_left .cell .player_sm {float:left;margin:0.4rem 0 0 0.4rem;}
-.table_player .table_left .cell .player_circle_sm {float:left;margin:0.4rem 0 0 0.4rem;}
-.table_player .table_left .cell .player_wrap {float:left;width:6rem;margin:0.4rem 0 0 0.5rem;text-align:left;font-size:0;}
-.table_player .table_left .cell .player_name {font-size:1.2667rem;font-weight:500;line-height:normal;color:#000;}
-.table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#000;}
-.table_player .table_left .cell .player_position {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.0667rem;font-weight:normal;line-height:normal;color:#000;}
-.table_player .table_left .cell .player_team .my_team {position:absolute;top:0.0667rem;right:0;width:1.3333rem;height:1.3333rem;background-image:url("../images/icon_my.png");background-size:1.3333rem;border-radius:100%;}
-.table_player .table_right.scroll {left:12.6rem;}
+.table_player .table_left .cell .player_circle_sm {float:left;margin:0.4rem 0 0 0;}
+.table_player .table_left .cell .player_wrap {float:left;width:5.5667rem;margin:0.3667rem 0 0 0.5rem;text-align:left;font-size:0;}
+.table_player .table_left .cell .player_name {font-size:1.3rem;font-weight:500;line-height:normal;color:#000;}
+.table_player .table_left .cell .player_team {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.2rem;font-weight:normal;line-height:normal;color:#000;}
+.table_player .table_left .cell .player_position {position:relative;display:inline-block;height:1.5667rem;padding-right:1.6rem;font-size:1.2rem;font-weight:normal;line-height:normal;color:#000;}
+.table_player .table_left .cell .player_team .my_team {position:absolute;top:0.2333rem;right:0;width:1.3333rem;height:1.3333rem;background-image:url("../images/icon_my.png");background-size:1.3333rem;border-radius:100%;}
+.table_player .table_right.scroll {left:calc(11.5333rem + 2px);;}
 .table_responsive.table_team_rainking .table_right th:first-child .cell,
 .table_responsive.table_team_rainking .table_right td:first-child .cell {padding-left:1.0333rem !important;}
 .table_responsive.table_team_rainking .table_right {overflow-x:hidden;}
