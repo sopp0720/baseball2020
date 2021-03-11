@@ -562,11 +562,11 @@
 .team.content .sec_team_position .team_position_all li .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.4667rem;width:2rem;height:2rem;border-radius:50%;}
 .team.content .sec_team_position .team_position_all li .player_img .team_logo_xs > span {display:block;margin:0.3333rem auto;width:1.3333rem;height:1.3333rem;background-repeat:no-repeat;}
 .team.content .sec_team_position .team_position_all li .i_name {margin-top:0.5667rem;height:1.9rem;text-align:center;font-size:0;}
-.team.content .sec_team_position .team_position_all li .i_name > b {display:inline-block;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;vertical-align:top;}
-.team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;margin-top:0.0333rem;margin-left:0.4667rem;height:1.8rem;line-height:1.8rem;font-size:1.2rem;font-weight:normal;color:#2b2b2b;vertical-align:top;}
-.team.content .sec_team_position .team_position_all li .i_position {margin-top:0.1333rem;height:1.5rem;text-align:center;font-size:0;}
-.team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;line-height:1.5rem;font-size:1.1rem;font-weight:normal;color:#858585;vertical-align:top;}
-.team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.3rem 0.4rem 0.2rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#dee1e6;}
+.team.content .sec_team_position .team_position_all li .i_name > b {display:inline-block;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;padding-top:0.0333rem;margin-left:0.4667rem;height:1.9rem;line-height:1.9rem;font-size:1.2rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_position {margin-top:0.0667rem;height:1.6333rem;text-align:center;font-size:0;}
+.team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;height:1.6333rem;line-height:1.6333rem;font-size:1.1rem;font-weight:normal;color:#646464;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.4rem 0.2333rem 0.2333rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#f0f1f6;}
 .team.content .sec_team_position .team_position_all .position_desc_bg {margin:0 -1.5333rem -9.6667rem;padding:0 1.5333rem 8rem;background-color:#fafafb;}
 .team.content .sec_team_position .team_position_all .all_position_desc {height:4.7rem;font-size:0;text-align:center;}
 .team.content .sec_team_position .team_position_all .all_position_desc p {display:inline-block;font-size:1.2333rem;font-weight:300;color:#858585;line-height:4.7rem;text-align:center;}
