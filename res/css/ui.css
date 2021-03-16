@@ -1613,7 +1613,7 @@
 .my.content .sec_my .btn_login:after {content:'';position:absolute;top:50%;right:0;width:0.8rem;height:1.4rem;margin-top:-0.7rem;background-image:url(../images/ic-arrow-white.png);background-size:100%;}
 .my.content .sec_my .txt_login {height:3.4667rem;font-size:1.2rem;font-weight:normal;line-height:1.7333rem;margin-top:0.6rem;}
 .my.content .sec_my .my_info [class*="team_logo_"] {position:absolute;top:50%;right:1.8rem;margin-top:-2.8333rem;width:6.4rem;height:5.6667rem;}
-.my.content .sec_my .sec_title {font-size:1.6667rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
+.my.content .sec_my .sec_title {font-size:1.7rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
 .my.content .sec_my .my_player {position:relative;}
 .my.content .sec_my .edit_wrap {position:absolute;width:3.2rem;height:3.2rem;top:-0.3667rem;right:-0.8rem;}
 .my.content .sec_my .edit_wrap span {display:block;position:absolute;top:0;right:0;width:100%;line-height:3.2rem;font-size:1.2rem;font-weight:700;color:#5b6067;text-align:center;}
@@ -1667,8 +1667,8 @@
 .my.content .sec_my.link {position:relative;padding:1.5333rem 6.8rem 1.5333rem 1.5333rem;}
 .my.content .sec_my.link:after {content:'';position:absolute;top:50%;right:1.6667rem;width:0.8rem;height:1.4rem;margin-top:-0.7rem;background-image:url(../images/ic-arrow-gray.png);background-size:100%;}
 .my.content .sec_my.link.usetap.active {background-color:#fafafa;opacity:1;}
-.my.content .sec_my .sec_exp {font-size:1.2667rem;font-weight:normal;line-height:1.8667rem;color:#858585;margin-top:0.5rem;}
-.my.content .sec_my.check {position:relative;padding:1.5333rem 6.8rem 1.5333rem 1.5333rem;}
+.my.content .sec_my .sec_exp {font-size:1.3rem;font-weight:normal;line-height:1.9rem;color:#858585;margin-top:0.4667rem;}
+.my.content .sec_my.check {position:relative;padding:1.5rem 6.8rem 1.5rem 1.5333rem;}
 .my.content .sec_my.check.usetap.active {background-color:#fafafa;opacity:1;}
 .my.content .sec_my.check .check_wrap {position:absolute;top:50%;right:1.6667rem;margin-top:-1.3333rem;}
 .my.content .sec_my.list_wrap {padding:0;}
@@ -2106,19 +2106,19 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .relay.content .table_score_board.table_responsive {border-color:#e8e9ef;}
 .relay.content .table_score_board.table_responsive .table thead tr {border-color:#e8e9ef;}
 .relay.content .table_score_board .table_left {position:relative;z-index:1;float:left;width:17.206477%;border:0;border-radius:0;border-right:1px solid #e8e9ef;}
-.relay.content .table_score_board .table_left thead .cell {padding:0.6667rem 0;height:2.9rem;font-size:1.1333rem;font-weight:500;text-align:center;color:#2b2b2b;background-color:#f2f3f4;overflow:hidden;}
+.relay.content .table_score_board .table_left thead .cell {padding:0.5667rem 0;height:2.9rem;font-size:1.2rem;font-weight:500;text-align:center;color:#2b2b2b;background-color:#f2f3f4;overflow:hidden;}
 /*.relay.content .table_score_board .table_left thead th:first-child .cell {border-radius:0.7333rem 0 0 0;}*/
 .relay.content .table_score_board .table_left tbody .cell {padding-top:0.5333rem;padding-left:0.5rem;font-size:0;text-align:left;}
 .relay.content .table_score_board .table_left tbody .cell .team_logo {display:inline-block;width:2.0333rem;height:1.8rem;vertical-align:top;}
-.relay.content .table_score_board .table_left tbody .cell .team_name {display:inline-block;margin-left:0.3333rem;padding-top:0.1rem;padding-bottom:0.1rem;height:1.8rem;font-size:1.1333rem;font-weight:500;color:#2b2b2b;vertical-align:top;}
+.relay.content .table_score_board .table_left tbody .cell .team_name {display:inline-block;margin-left:0.3333rem;height:1.8rem;font-size:1.2rem;font-weight:500;color:#2b2b2b;vertical-align:top;line-height:1.8rem;}
 .relay.content .table_score_board .table_rheb {float:right;width:24.089068%;border-left:1px solid #e8e9ef;}
-.relay.content .table_score_board .table_rheb thead .cell {padding:0.6667rem 0;height:2.9rem;font-size:1.1333rem;font-weight:500;text-align:center;color:#2b2b2b;background-color:#f2f3f4;}
-.relay.content .table_score_board .table_rheb tbody .cell {padding:0.6667rem 0;}
+.relay.content .table_score_board .table_rheb thead .cell {padding:0.5667rem 0;height:2.9rem;font-size:1.2rem;font-weight:500;text-align:center;color:#2b2b2b;background-color:#f2f3f4;}
+.relay.content .table_score_board .table_rheb tbody .cell {padding:0.5667rem 0;font-size:1.2rem;}
 .relay.content .table_score_board .table_rheb .cell.run {color:#ec5f59;}
 .relay.content .table_score_board .table_right {position:relative;float:none;width:58.704453%;border-radius:0;border:0;}
-.relay.content .table_score_board .table_right thead .cell {padding:0.6667rem 0;height:2.9rem;font-size:1.1333rem;font-weight:500;text-align:center;color:#2b2b2b;
+.relay.content .table_score_board .table_right thead .cell {padding:0.5667rem 0;height:2.9rem;font-size:1.2rem;font-weight:500;text-align:center;color:#2b2b2b;
 background-color:#f2f3f4;}
-.relay.content .table_score_board .table_right tbody .cell {padding:0.6667rem 0;}
+.relay.content .table_score_board .table_right tbody .cell {padding:0.5667rem 0;font-size:1.2rem;}
 .relay.content .table_score_default .table_right {overflow:hidden;}
 .relay.content .table_score_default .table_right .cell {min-width:100%;}
 .relay.content .table_score_scroll .table_right {overflow-y:hidden;overflow-x:auto;transform:translateZ(0);}

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 1.LG[LG], 2.삼성[SS], 3.한화[HH], 4.두산[OB], 5.키움[WO],
-6.SK[SK], 7.NC[NC], 8.KT[KT], 9.기아[HT], 10.롯데[LT] */
+6.SK[SK], 7.NC[NC], 8.KT[KT], 9.기아[HT], 10.롯데[LT], 11.신세계랜더스[SSG] */
 /* theme bg(응원팀) */
 [data-theme="theme_LG"] .bg_theme {background-color:#C10A3A;}
 [data-theme="theme_SS"] .bg_theme {background-color:#0063AB;}
@@ -13,6 +13,7 @@
 [data-theme="theme_KT"] .bg_theme {background-color:#000000;}
 [data-theme="theme_HT"] .bg_theme {background-color:#AC1020;}
 [data-theme="theme_LT"] .bg_theme {background-color:#C30025;}
+[data-theme="theme_SSG"] .bg_theme {background-color:#c8132f;}
 
 /* theme bnb(응원팀) */
 [data-theme="theme_LG"] .tab_container .active_label_container .label {color:#C10A3A;}
@@ -25,6 +26,7 @@
 [data-theme="theme_LT"] .tab_container .active_label_container .label {color:#C30025;}
 [data-theme="theme_OB"] .tab_container .active_label_container .label {color:#131230;}
 [data-theme="theme_HT"] .tab_container .active_label_container .label {color:#AC1020;}
+[data-theme="theme_SSG"] .tab_container .active_label_container .label {color:#c8132f;}
 
 [data-theme="theme_default"] svg > g path[fill-opacity="0"] {stroke:#C10A3A;}
 [data-theme="theme_default"] svg > g path[fill-opacity="1"] {fill:#C10A3A;}
@@ -48,6 +50,8 @@
 [data-theme="theme_SS"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#0063AB;}
 [data-theme="theme_SK"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#C8132F;}
 [data-theme="theme_SK"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#C8132F;}
+[data-theme="theme_SSG"] .tab:not(.tab-team-info) svg > g path[fill-opacity="0"] {stroke:#c8132f;}
+[data-theme="theme_SSG"] .tab:not(.tab-team-info) svg > g path[fill-opacity="1"] {fill:#c8132f;}
 
 [data-theme="theme_default"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-none.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
 [data-theme="theme_LG"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-lg.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
@@ -78,6 +82,7 @@
 [data-theme="theme_OB"] .tab_link .tab_item.active span {color:#131230;}
 [data-theme="theme_HT"] .tab_link .tab_item.active span {color:#AC1020;}
 [data-theme="theme_LT"] .tab_link .tab_item.active span {color:#C30025;}
+[data-theme="theme_SSG"] .tab_link .tab_item.active span {color:#C8132F;}
 
 [data-theme="theme_default"] .active_bar {background-color:#c10a3a;}
 [data-theme="theme_LG"] .active_bar {background-color:#c10a3a;}
@@ -90,6 +95,7 @@
 [data-theme="theme_OB"] .active_bar {background-color:#131230;}
 [data-theme="theme_HT"] .active_bar {background-color:#AC1020;}
 [data-theme="theme_LT"] .active_bar {background-color:#C30025;}
+[data-theme="theme_SSG"] .active_bar {background-color:#C8132F;}
 
 [data-theme="theme_default"] .active_bar {background-color:#c10a3a;}
 [data-theme="theme_LG"] .active_bar {background-color:#c10a3a;}
@@ -102,6 +108,7 @@
 [data-theme="theme_OB"] .active_bar {background-color:#131230;}
 [data-theme="theme_HT"] .active_bar {background-color:#AC1020;}
 [data-theme="theme_LT"] .active_bar {background-color:#C30025;}
+[data-theme="theme_SSG"] .active_bar {background-color:#C8132F;}
 
 [data-theme="theme_default"] .tab_item.active {color:#c10a3a;}
 [data-theme="theme_LG"] .tab_item.active {color:#c10a3a;}
@@ -114,6 +121,7 @@
 [data-theme="theme_OB"] .tab_item.active {color:#131230;}
 [data-theme="theme_HT"] .tab_item.active {color:#AC1020;}
 [data-theme="theme_LT"] .tab_item.active {color:#C30025;}
+[data-theme="theme_SSG"] .tab_item.active {color:#C8132F;}
 
 [data-theme="theme_default"] .active_fill {color:#c10a3a;border-color:#c10a3a;background-color:rgba(193,10,58,0.07);}
 [data-theme="theme_LG"] .active_fill {color:#c10a3a;border-color:#c10a3a;background-color:rgba(193,10,58,0.07);}
@@ -126,6 +134,7 @@
 [data-theme="theme_OB"] .active_fill {color:#131230;border-color:#131230;background-color:rgba(19,18,48,0.07);}
 [data-theme="theme_HT"] .active_fill {color:#AC1020;border-color:#AC1020;background-color:rgba(171,16,32,0.07);}
 [data-theme="theme_LT"] .active_fill {color:#C30025;border-color:#C30025;background-color:rgba(195,0,37,0.07);}
+[data-theme="theme_SSG"] .active_fill {color:#C8132F;border-color:#C8132F;background-color:rgba(200,19,47,0.07);}
 
 /* tab_logo_KBO */
 .tab_item .tab_logo_KBO:before {background-position: 0 10%;background-size: 100%;}
@@ -181,6 +190,7 @@
 [data-theme="theme_OB"] .my_team {background-color:#131230;}
 [data-theme="theme_HT"] .my_team {background-color:#C30025;}
 [data-theme="theme_LT"] .my_team {background-color:#AC1020;}
+[data-theme="theme_SSG"] .my_team {background-color:#C8132F;}
 
 /* theme 달력 */
 [data-theme="theme_default"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #c30137 -39%, #a7003b 122%);}
@@ -194,23 +204,25 @@
 [data-theme="theme_OB"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #1b335c -15%, #192a57 116%);}
 [data-theme="theme_HT"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #b22030 -44%, #921925 122%);}
 [data-theme="theme_LT"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #092e63 -866%, #b70522 172%, #a30a29 172%);}
+[data-theme="theme_SSG"] .modal .bg_gradient {background-image: linear-gradient(to bottom, #f45b25 -249%, #dd4936 -74%, #97001c 340%);}
 .modal .bg_gradient.mlb {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 .modal .bg_gradient.abl {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 
 .team_symbol_sq_HH, .team_symbol_sq_HT, .team_symbol_sq_KT, .team_symbol_sq_LG, 
 .team_symbol_sq_LT, .team_symbol_sq_NC, .team_symbol_sq_OB, .team_symbol_sq_SK, .team_symbol_sq_SS, 
-.team_symbol_sq_WO {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
-.team_symbol_sq_LG {background-position:0 40%;}
-.team_symbol_sq_HH {background-position:0 10%;}
-.team_symbol_sq_SS {background-position:0 90%;}
-.team_symbol_sq_KT {background-position:0 30%;}
-.team_symbol_sq_SK {background-position:0 80%;}
-.team_symbol_sq_WO {background-position:0 100%;}
+.team_symbol_sq_WO, .team_symbol_sq_SSG, {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
+.team_symbol_sq_HH {background-position:0 9.090909%;}
+.team_symbol_sq_HT {background-position:0 18.181818%;}
+.team_symbol_sq_KT {background-position:0 27.272727%;}
+.team_symbol_sq_LG {background-position:0 36.363636%;}
+.team_symbol_sq_LT {background-position:0 45.454545%;}
+.team_symbol_sq_NC {background-position:0 54.545454%;}
+.team_symbol_sq_OB {background-position:0 63.636363%;}
+.team_symbol_sq_SK {background-position:0 72.727272%;}
+.team_symbol_sq_SS {background-position:0 81.818181%;}
+.team_symbol_sq_WO {background-position:0 90.90909%;}
+.team_symbol_sq_SSG {background-position:0 100%;}
 .futures .team_symbol_sq_WO {background-image:url(../images/logo/team_symbol_sq_WO_f.png);background-position:0 0;}
-.team_symbol_sq_NC {background-position:0 60%;}
-.team_symbol_sq_OB {background-position:0 70%;}
-.team_symbol_sq_HT {background-position:0 20%;}
-.team_symbol_sq_LT {background-position:0 50%;}
 
 .ic_chat_input {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
 [data-theme="theme_default"] .ic_chat_input {background-position:0 0%;}
@@ -250,6 +262,7 @@
 [data-theme="theme_OB"] .chreer_color {background-color:#131230 !important;color:#ffffff !important;}
 [data-theme="theme_HT"] .chreer_color {background-color:#ac1020 !important;color:#ffffff !important;}
 [data-theme="theme_LT"] .chreer_color {background-color:#c30025 !important;color:#ffffff !important;}
+[data-theme="theme_SSG"] .chreer_color {background-color:#c8132f !important;color:#ffffff !important;}
 
 /* theme radio_bg */
 [data-theme="theme_HH"] .radio_bg {background-position:0 0%;background-size:100%;}
@@ -276,23 +289,25 @@
 .team_color_HT {background-color:#AC1020;}
 .team_color_LT {background-color:#C30025;}
 .team_color_SM {background-color:#000000;}
+.team_color_SSG {background-color:#C8132F;}
 
 /* logo KBO */
 .team_logo_EA, .team_logo_HH, .team_logo_HT, .team_logo_KT, .team_logo_LG, 
 .team_logo_LT, .team_logo_NC, .team_logo_OB, .team_logo_SK, .team_logo_SS, 
-.team_logo_WE, .team_logo_WO {max-width:100%;background-size:100%;background-image:url(../images/logo/logo_kbo.png);}
+.team_logo_WE, .team_logo_WO, .team_logo_SSG {max-width:100%;background-size:100%;background-image:url(../images/logo/logo_kbo.png);}
 .team_logo_EA {background-position:0 0%;background-size:100%;}
-.team_logo_HH {background-position:0 9.090909%;background-size:100%;}
-.team_logo_HT {background-position:0 18.181818%;background-size:100%;}
-.team_logo_KT {background-position:0 27.272727%;background-size:100%;}
-.team_logo_LG {background-position:0 36.363636%;background-size:100%;}
-.team_logo_LT {background-position:0 45.454545%;background-size:100%;}
-.team_logo_NC {background-position:0 54.545455%;background-size:100%;}
-.team_logo_OB {background-position:0 63.636364%;background-size:100%;}
-.team_logo_SK {background-position:0 72.727273%;background-size:100%;}
-.team_logo_SS {background-position:0 81.818182%;background-size:100%;}
-.team_logo_WE {background-position:0 90.909091%;background-size:100%;}
-.team_logo_WO {background-position:0 100%;background-size:100%;}
+.team_logo_HH {background-position:0 8.333%;background-size:100%;}
+.team_logo_HT {background-position:0 16.666%;background-size:100%;}
+.team_logo_KT {background-position:0 24.999%;background-size:100%;}
+.team_logo_LG {background-position:0 33.332%;background-size:100%;}
+.team_logo_LT {background-position:0 41.665%;background-size:100%;}
+.team_logo_NC {background-position:0 49.998%;background-size:100%;}
+.team_logo_OB {background-position:0 58.331%;background-size:100%;}
+.team_logo_SK {background-position:0 66.664%;background-size:100%;}
+.team_logo_SS {background-position:0 74.997%;background-size:100%;}
+.team_logo_WE {background-position:0 83.33%;background-size:100%;}
+.team_logo_WO {background-position:0 91.663%;background-size:100%;}
+.team_logo_SSG {background-position:0 100%;background-size:100%;}
 .futures .team_logo_WO {background-image:url(../images/logo/team_logo_WO_f.png);background-position:0 0;background-size:100%;}
 .team_logo_SM {background-image:url(../images/logo/team_logo_SM.png);background-position:0 0;background-size:100%;}
 
@@ -356,21 +371,23 @@
 /* symbol KBO */
 .team_symbol_HH, .team_symbol_HH_black, .team_symbol_HT, .team_symbol_KT, .team_symbol_LG, 
 .team_symbol_LG_black, .team_symbol_LT, .team_symbol_NC, .team_symbol_OB, .team_symbol_SK, 
-.team_symbol_SK_black, .team_symbol_SS, .team_symbol_WO
+.team_symbol_SK_black, .team_symbol_SS, .team_symbol_WO, .team_symbol_SSG, .team_symbol_SSG_black
 {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo.png);}
 .team_symbol_HH {background-position:0 0%;background-size:100%;}
-.team_symbol_HH_black {background-position:0 8.333333%;background-size:100%;}
-.team_symbol_HT {background-position:0 16.666667%;background-size:100%;}
-.team_symbol_KT {background-position:0 25%;background-size:100%;}
-.team_symbol_LG {background-position:0 33.333333%;background-size:100%;}
-.team_symbol_LG_black {background-position:0 41.666667%;background-size:100%;}
-.team_symbol_LT {background-position:0 50%;background-size:100%;}
-.team_symbol_NC {background-position:0 58.333333%;background-size:100%;}
-.team_symbol_OB {background-position:0 66.666667%;background-size:100%;}
-.team_symbol_SK {background-position:0 75%;background-size:100%;}
-.team_symbol_SK_black {background-position:0 83.333333%;background-size:100%;}
-.team_symbol_SS {background-position:0 91.666667%;background-size:100%;}
-.team_symbol_WO {background-position:0 100%;background-size:100%;}
+.team_symbol_HH_black {background-position:0 7.142857%;background-size:100%;}
+.team_symbol_HT {background-position:0 14.285714%;background-size:100%;}
+.team_symbol_KT {background-position:0 21.428571%;background-size:100%;}
+.team_symbol_LG {background-position:0 28.571428%;background-size:100%;}
+.team_symbol_LG_black {background-position:0 35.714285%;background-size:100%;}
+.team_symbol_LT {background-position:0 42.857142%;background-size:100%;}
+.team_symbol_NC {background-position:0 49.999999%;background-size:100%;}
+.team_symbol_OB {background-position:0 57.142856%;background-size:100%;}
+.team_symbol_SK {background-position:0 64.285713%;background-size:100%;}
+.team_symbol_SK_black {background-position:0 71.42857%;background-size:100%;}
+.team_symbol_SS {background-position:0 78.571427%;background-size:100%;}
+.team_symbol_WO {background-position:0 85.714284%;background-size:100%;}
+.team_symbol_SSG {background-position:0 92.857141%;background-size:100%;}
+.team_symbol_SSG_black {background-position:0 100%;background-size:100%;}
 .futures .team_symbol_WO {background-image:url(../images/logo/team_symbol_WO_f.png);background-position:0 0;}
 .team_symbol_SM {background-image:url(../images/logo/team_symbol_SM.png);background-position:0 0;background-size:100%;}
 
@@ -395,9 +412,11 @@
 .tab_teamlist .team_OB .my_team {background-color:#131230;}
 .tab_teamlist .team_HT svg path[fill-opacity="1"] {fill:#AC1020;}
 .tab_teamlist .team_HT .my_team {background-color:#AC1020;}
+.tab_teamlist .team_SSG svg path[fill-opacity="1"] {fill:#C8132F;}
+.tab_teamlist .team_SSG .my_team {background-color:#C8132F;}
 
 /* 1.LG[LG], 2.삼성[SS], 3.한화[HH], 4.두산[OB], 5.키움[WO],
-6.SK[SK], 7.NC[NC], 8.KT[KT], 9.기아[HT], 10.롯데[LT] */
+6.SK[SK], 7.NC[NC], 8.KT[KT], 9.기아[HT], 10.롯데[LT], 11.신세계랜더스[SSG] */
 
 /* Team player info bg*/
 .player_info_bg_LG {background-image:url('../images/bg/bg-team-player-lg.png');}
@@ -498,6 +517,9 @@
 .pitching_color_LT .i_ratio {background-color:#c30025;}
 .pitching_color_LT .i_name,
 .pitching_color_LT .i_speed {color:#c30025;}
+.pitching_color_SSG .i_ratio {background-color:#c8132f;}
+.pitching_color_SSG .i_name,
+.pitching_color_SSG .i_speed {color:#c8132f;}
 
 /* Relay analysis color&bg */
 .analysis_color_LG.graph_info .i_graph {background-color:#c10a3a;}
@@ -520,6 +542,8 @@
 .analysis_color_HT.graph_info .i_ratio,.analysis_color_HT.graph_info .total_record {color:#ac1020;}
 .analysis_color_LT.graph_info .i_graph {background-color:#c30025;}
 .analysis_color_LT.graph_info .i_ratio,.analysis_color_LT.graph_info .total_record {color:#c30025;}
+.analysis_color_SSG.graph_info .i_graph {background-color:#c8132f;}
+.analysis_color_SSG.graph_info .i_ratio,.analysis_color_SK.graph_info .total_record {color:#c8132f;}
 
 /* Current team color&bg */
 .current_team_LG .i_ratio span {background-color:#c10a3a;}
@@ -542,6 +566,8 @@
 .current_team_HT .info_tbl > div b {color:#ac1020;}
 .current_team_LT .i_ratio span {background-color:#c30025;}
 .current_team_LT .info_tbl > div b {color:#c30025;}
+.current_team_SSG .i_ratio span {background-color:#c8132f;}
+.current_team_SSG .info_tbl > div b {color:#c8132f;}
 
 /* theme button (응원팀) */
 [data-theme="theme_default"] .btn_theme {background-color:#C10A3A;color:#ffffff;}
@@ -555,5 +581,6 @@
 [data-theme="theme_KT"] .btn_theme {background-color:#000000;color:#ffffff;}
 [data-theme="theme_HT"] .btn_theme {background-color:#AC1020;color:#ffffff;}
 [data-theme="theme_LT"] .btn_theme {background-color:#C30025;color:#ffffff;}
+[data-theme="theme_SSG"] .btn_theme {background-color:#C8132F;color:#ffffff;}
 
 /*******************************************************************************************/
