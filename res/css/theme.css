@@ -149,6 +149,7 @@
 [data-theme="theme_OB"] .tab_item.active .tab_logo_KBO:before {background-position: 0 0%;background-size: 100%;}
 [data-theme="theme_HT"] .tab_item.active .tab_logo_KBO:before {background-position: 0 30%;background-size: 100%;}
 [data-theme="theme_LT"] .tab_item.active .tab_logo_KBO:before {background-position: 0 70%;background-size: 100%;}
+[data-theme="theme_SSG"] .tab_item.active .tab_logo_KBO:before {background-position: 0 100%;background-size: 100%;}
 
 /* tab_logo_MLB */
 .tab_item .tab_logo_MLB:before {background-position: 0 10%;background-size: 100%;}
@@ -163,6 +164,7 @@
 [data-theme="theme_OB"] .tab_item.active .tab_logo_MLB:before {background-position: 0 0%;background-size: 100%;}
 [data-theme="theme_HT"] .tab_item.active .tab_logo_MLB:before {background-position: 0 30%;background-size: 100%;}
 [data-theme="theme_LT"] .tab_item.active .tab_logo_MLB:before {background-position: 0 70%;background-size: 100%;}
+[data-theme="theme_SSG"] .tab_item.active .tab_logo_MLB:before {background-position: 0 100%;background-size: 100%;}
 
 /* tab_logo_ABL */
 .tab_item .tab_logo_ABL:before {background-position: 0 10%;background-size: 100%;}
@@ -177,6 +179,7 @@
 [data-theme="theme_OB"] .tab_item.active .tab_logo_ABL:before {background-position: 0 0%;background-size: 100%;}
 [data-theme="theme_HT"] .tab_item.active .tab_logo_ABL:before {background-position: 0 30%;background-size: 100%;}
 [data-theme="theme_LT"] .tab_item.active .tab_logo_ABL:before {background-position: 0 70%;background-size: 100%;}
+[data-theme="theme_SSG"] .tab_item.active .tab_logo_ABL:before {background-position: 0 100%;background-size: 100%;}
 
 /* My Team Bg */
 [data-theme="theme_default"] .my_team {background-color:#C10A3A;}
