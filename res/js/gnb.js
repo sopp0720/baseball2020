@@ -1,14 +1,6 @@
 var bnbUi = (function() {
-    let home;
     let team;
-    let relay;
-    let invite;
-    let my;
-    let homePath;
     let teamPath;
-    let relayPath;
-    let invitePath;
-    let myPath;
     let animation1;
     let animation2;
     let animation3;
@@ -65,22 +57,14 @@ var bnbUi = (function() {
             }, 300);
         },
         "initLottie": function() {
-            home = document.getElementById('wrap').getAttribute('data-theme');
             team = document.getElementById('wrap').getAttribute('data-theme');
-            relay = document.getElementById('wrap').getAttribute('data-theme');
-            invite = document.getElementById('wrap').getAttribute('data-theme');
-            my = document.getElementById('wrap').getAttribute('data-theme');
-            homePath = 'res/json/2021_GNB_json/home/home_' + home + '.json';
-            teamPath = 'res/json/2021_GNB_json/team/team_' + team + '.json';
-            relayPath = 'res/json/2021_GNB_json/relay/relay_' + relay + '.json';
-            invitePath = 'res/json/2021_GNB_json/invite/invite_' + invite + '.json';
-            myPath = 'res/json/2021_GNB_json/my/my_' + my + '.json';
+            teamPath = 'res/json/team/team_' + team + '.json';
             animation1 = bodymovin.loadAnimation({
                 container: document.getElementById('circle1'),
                 renderer: 'svg',
                 loop: false,
                 autoplay: true,
-                path: homePath
+                path: 'res/json/home.json'
             });
             animation2 = bodymovin.loadAnimation({
                 container: document.getElementById('circle2'),
@@ -94,81 +78,33 @@ var bnbUi = (function() {
                 renderer: 'svg',
                 loop: false,
                 autoplay: true,
-                path: relayPath
+                path: 'res/json/broadcast.json'
             });
             animation4 = bodymovin.loadAnimation({
                 container: document.getElementById('circle4'),
                 renderer: 'svg',
                 loop: false,
                 autoplay: true,
-                path: invitePath
+                path: 'res/json/invite.json'
             });
             animation5 = bodymovin.loadAnimation({
                 container: document.getElementById('circle5'),
                 renderer: 'svg',
                 loop: false,
                 autoplay: true,
-                path: myPath
-            });
-        },
-		"homeLottie": function() { //홈 변경시 실행
-            document.querySelector('.tab_home svg').remove();
-            home = document.getElementById('wrap').getAttribute('data-theme');
-            teamPath = 'res/json/2021_GNB_json/home/home_' + home + '.json';
-            animation2 = bodymovin.loadAnimation({
-                container: document.getElementById('circle1'),
-                renderer: 'svg',
-                loop: false,
-                autoplay: true,
-                path: homePath
+                path: 'res/json/my.json'
             });
         },
         "teamLottie": function() { //팀 변경시 실행
             document.querySelector('.tab_team_info svg').remove();
             team = document.getElementById('wrap').getAttribute('data-theme');
-            teamPath = 'res/json/2021_GNB_json/team/team_' + team + '.json';
+            teamPath = 'res/json/team/team_' + team + '.json';
             animation2 = bodymovin.loadAnimation({
                 container: document.getElementById('circle2'),
                 renderer: 'svg',
                 loop: false,
                 autoplay: true,
                 path: teamPath
-            });
-        },
-		"teamLottie": function() { //중계 변경시 실행
-            document.querySelector('.tab_relay svg').remove();
-            team = document.getElementById('wrap').getAttribute('data-theme');
-            teamPath = 'res/json/2021_GNB_json/relay/relay_' + relay + '.json';
-            animation2 = bodymovin.loadAnimation({
-                container: document.getElementById('circle3'),
-                renderer: 'svg',
-                loop: false,
-                autoplay: true,
-                path: relayPath
-            });
-        },
-		"teamLottie": function() { //초대 변경시 실행
-            document.querySelector('.tab_invite svg').remove();
-            team = document.getElementById('wrap').getAttribute('data-theme');
-            teamPath = 'res/json/2021_GNB_json/invite/invite_' + invite + '.json';
-            animation2 = bodymovin.loadAnimation({
-                container: document.getElementById('circle4'),
-                renderer: 'svg',
-                loop: false,
-                autoplay: true,
-                path: invitePath
-            });
-        },
-		"teamLottie": function() { //마이 변경시 실행
-            document.querySelector('.tab_my svg').remove();
-            team = document.getElementById('wrap').getAttribute('data-theme');
-            teamPath = 'res/json/2021_GNB_json/my/my_' + my + '.json';
-            animation2 = bodymovin.loadAnimation({
-                container: document.getElementById('circle5'),
-                renderer: 'svg',
-                loop: false,
-                autoplay: true,
-                path: myPath
             });
         },
         "fadeInOut": function(begin, end, delay) {
