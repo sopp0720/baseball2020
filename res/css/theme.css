@@ -254,6 +254,7 @@
 [data-theme="theme_OB"] .ic_chat_send {background-position:0 10%;}
 [data-theme="theme_HT"] .ic_chat_send {background-position:0 30%;}
 [data-theme="theme_LT"] .ic_chat_send {background-position:0 70%;}
+[data-theme="theme_SSG"] .ic_chat_send {background-position:0 100%;}
 
 [data-theme="theme_default"] .chreer_color {background-color:#c10a3a !important;color:#ffffff !important;}
 [data-theme="theme_LG"] .chreer_color {background-color:#c10a3a !important;color:#ffffff !important;}
@@ -279,6 +280,7 @@
 [data-theme="theme_SK"] .radio_bg {background-position:0 70%;background-size:100%;}
 [data-theme="theme_SS"] .radio_bg {background-position:0 80%;background-size:100%;}
 [data-theme="theme_WO"] .radio_bg {background-position:0 90%;background-size:100%;}
+[data-theme="theme_SSG"] .radio_bg {background-position:0 70%;background-size:100%;}
 [data-theme="theme_default"] .radio_bg {background-position:0 100%;background-size:100%;}
 
 /* Team Color bg*/
@@ -422,7 +424,7 @@
 /* 1.LG[LG], 2.삼성[SS], 3.한화[HH], 4.두산[OB], 5.키움[WO],
 6.SK[SK], 7.NC[NC], 8.KT[KT], 9.기아[HT], 10.롯데[LT], 11.신세계랜더스[SSG] */
 
-/* Team player info bg*/
+/* Team player info bg */
 .player_info_bg_LG {background-image:url('../images/bg/bg-team-player-lg.png');}
 .player_info_bg_SS {background-image:url('../images/bg/bg-team-player-samsung.png');}
 .player_info_bg_HH {background-image:url('../images/bg/bg-team-player-hanwha.png');}
@@ -486,6 +488,7 @@
 .player_no_NC {color:#04477f;}
 .player_no_SS {color:#0063b1;}
 .player_no_SK {color:#dd0025;}
+.player_no_SSG {color:#dd0025;}
 
 /* Team 1순위 piching type color */
 .pitching_color_DEFAULT .i_ratio {background-color:#c10a3a;}

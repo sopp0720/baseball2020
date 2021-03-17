@@ -410,7 +410,7 @@
 .home.content .news_wrap .news_main .txt_inner_wrap {position:absolute;bottom:0;width:100%;height:11.6667rem;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
 .home.content .news_wrap .news_main .txt_inner {position:absolute;left:0;bottom:0;padding:0 1.6667em 1.6667rem;}
 .home.content .news_wrap .news_main .agency {height:2.0667rem;font-size:1.4rem;font-weight:500;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
-.home.content .news_wrap .news_main p {margin-top:0.1rem;height:4.7333rem;line-height:2.36665rem;font-size:1.6rem;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
+.home.content .news_wrap .news_main p {margin-top:0.1rem;line-height: 2.3667rem;font-size:1.6rem;font-weight:bold;color:#ffffff;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;}
 .home.content .news_wrap .news_list {margin-top:2.0333rem;}
 .home.content .news_wrap .news_list li {padding:1rem 0;border-top:1px solid #f8f8f9;overflow:hidden;}
 .home.content .news_wrap .news_list li:first-child {padding-top:0;border-top:0;}
@@ -426,7 +426,7 @@
 .home.content .news_comments .news_scroll li:first-child {margin-left:0;}
 .home.content .news_comments .news_scroll li:before {content:'';position:absolute;display:block;width:100%;height:68%;bottom:0;left:0;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));overflow:hidden;border-radius:0.7333rem;}
 /*.home.content .news_comments .news_scroll li .ico_comm {z-index:1;position:relative;display:block;margin:3.2rem auto 0.5rem;width:8.4667rem;height:3.0667rem;background:#fff;}*/
-.home.content .news_comments .news_scroll li .subject {position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:bold;color:#ffffff;line-height:2.26665rem;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;}
+.home.content .news_comments .news_scroll li .subject {position:absolute;left:5.482456%;bottom:5.482456%;width:89.035087%;font-size:1.5333rem;font-weight:bold;color:#ffffff;line-height:2.26665rem;overflow:hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;white-space:normal;letter-spacing:-0.01rem;}
 
 /* Home Details */
 .home.content .img_player_wrap {padding:0;}
@@ -535,11 +535,11 @@
 .team.content .sec_rate .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.4rem;width:1.6667rem;height:1.6667rem;border-radius:50%;}
 .team.content .sec_rate .player_img .team_logo_xs > span {display:block;margin:0.3rem auto 0.2667rem;width:1.1rem;height:1.1rem;background-repeat:no-repeat;}
 .team.content .sec_rate .desc {margin-left:5.6rem;padding-left:0.1333rem;height:5rem;font-size:0;border-bottom:1px solid #f8f8f9;}
-.team.content .sec_rate .desc > span {display:inline-block;line-height:4.3333rem;vertical-align:top;}
+.team.content .sec_rate .desc > span {display:inline-block;vertical-align:top;}
 .team.content .sec_rate .desc > strong {float:right;display:inline-block;line-height:4.3333rem;vertical-align:top;}
-.team.content .sec_rate .desc .num {min-width:1.8333rem;font-family:'Bebas Neue';font-size:1.8667rem;font-weight:normal;color:#000000;opacity:0.8;text-align:center;line-height:4.3333rem;}
-.team.content .sec_rate .desc .name {margin-left:0.5333rem;font-size:1.6rem;font-weight:500;color:#000000;}
-.team.content .sec_rate .desc .position {margin-left:0.5333rem;font-size:1.4rem;font-weight:normal;color:#525252;}
+.team.content .sec_rate .desc .num {min-width:1.8333rem;font-family:'Bebas Neue';margin-top:0.7rem;height:2.9333rem;line-height:2.9333rem;font-size:1.8667rem;font-weight:normal;color:#000000;opacity:0.8;text-align:center;}
+.team.content .sec_rate .desc .name {margin-left:0.5333rem;margin-top:0.8667rem;height:2.3667rem;line-height:2.3667rem;font-size:1.6rem;font-weight:500;color:#000000;}
+.team.content .sec_rate .desc .position {margin-left:0.5333rem;margin-top:1.0333rem;height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:normal;color:#525252;}
 .team.content .sec_rate .desc .my_team {margin-top:1.4rem;margin-left:0.5333rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
 .team.content .sec_rate .desc .rate_num {font-family:'Bebas Neue';font-size:1.8667rem;font-weight:normal;text-align:right;color:#000000;}
 .team.content .sec_team_position {padding:2.6667rem 0 0;}
@@ -564,7 +564,7 @@
 .team.content .sec_team_position .team_position_all li .player_img .team_logo_xs > span {display:block;margin:0.3333rem auto;width:1.3333rem;height:1.3333rem;background-repeat:no-repeat;}
 .team.content .sec_team_position .team_position_all li .i_name {margin-top:0.5667rem;height:1.9rem;text-align:center;font-size:0;}
 .team.content .sec_team_position .team_position_all li .i_name > b {display:inline-block;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;vertical-align:top;}
-.team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;padding-top:0.0333rem;margin-left:0.4667rem;height:1.9rem;line-height:1.9rem;font-size:1.2rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;padding-top:0;margin-left:0.4667rem;height:1.9rem;line-height:1.8rem;font-size:1.2rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_position {margin-top:0.0667rem;height:1.6333rem;text-align:center;font-size:0;}
 .team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;height:1.6333rem;line-height:1.6333rem;font-size:1.1rem;font-weight:normal;color:#646464;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.4rem 0.2333rem 0.2333rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#f0f1f6;}
@@ -681,7 +681,7 @@
 .content .block_graph_wrap .block_desc {clear:both;padding-top:0.8333rem;}
 .content .block_graph_wrap .block_desc li {position:relative;padding-left:1.2rem;font-size:1.2rem;color:#646464;}
 .content .block_graph_wrap .block_desc li:before {content:'';display:block;position:absolute;top:0.7667rem;left:0.4333rem;width:0.2667rem;height:0.2667rem;background-color:#646464;border-radius:50%;}
-.content .block_graph_wrap .i_pagination {margin-top:2.1rem;font-size:0;text-align:center;}
+.content .block_graph_wrap .i_pagination {margin-top:2.1rem;height:1rem;font-size:0;text-align:center;}
 .content .block_graph_wrap .i_pagination .swiper-pagination-bullet {display:inline-block;margin-left:1.5rem;margin-top:0.1rem;width:0.8rem;height:0.8rem;background-color:#d8d8d8;vertical-align:top;border-radius:50%;}
 .content .block_graph_wrap .i_pagination .swiper-pagination-bullet:first-child {margin-left:0;}
 .content .block_graph_wrap .i_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {margin-top:0;width:1rem;height:1rem;background-color:#5b6067;}
@@ -924,10 +924,22 @@
 .relay.content .play_list .game_end .info_tag_warp ~ .right_score {top:3.1rem;}
 .relay.content .play_list .game_cancel .info_time,
 .relay.content .play_list .game_suspended .info_time {margin-top:0.5333rem;color:#2b2b2b;}
+/* 경기예정 */
+.relay.content .play_list li.game_before .middle_box .info_today.i_schedule {display:inline-block;margin-top:2.6333rem;}
+.relay.content .play_list li.game_before .middle_box .info_time {margin-top:0.1rem;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;}
+.relay.content .play_list li.game_before .middle_box .info_channel {margin-top:0.7667rem;}
+.relay.content .play_list li.game_before .middle_box .info_channel.more_channel {margin-top:0.4667rem;height:2.0667rem;font-size:1rem;line-height:1.03;letter-spacing:-0.01rem;}
+.relay.content .play_list li.game_before .middle_box .info_tag_warp {position:static;margin-top:0.3rem;}
+.relay.content .play_list li.game_before.has_tag .middle_box .info_channel {margin-top:0.2333rem;}
+.relay.content .play_list li.game_before.has_tag .middle_box .info_today.i_schedule {margin-top:1.8333rem;}
+.relay.content .play_list li.game_before.has_tag .middle_box .info_channel.more_channel {margin-top:0.2rem;}
+
 /* 별도리그 */
 .relay.content .separate_league {margin-top:1.5333rem;}
+.relay.content .separate_league .play_list li .info_today {display:inline-block;}
 .relay.content .separate_league .play_list li .team_name {margin-top:0.2333rem;}
-.relay.content .separate_league .play_list li .info_time {margin-top:0;}
+.relay.content .separate_league .play_list li .info_time {margin-top:0.1rem;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;}
+.relay.content .separate_league .play_list li .info_round {margin-top:0.1rem;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#2b2b2b;}
 
 /* mlb */
 .relay.content .play_list li .info_tag_red {display:inline-block;margin:2.9rem auto 0;height:1.9rem;font-size:0;line-height:0;direction:ltr;text-indent:-999em;background-repeat:no-repeat;background-size:100% auto;}
@@ -1521,13 +1533,14 @@
 .relay.content .special_game .play_list li .sp_logo {display:block;float:left;width:5rem;height:5rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
 .relay.content .special_game .play_list li .middle_inner {padding-left:3.2333rem;padding-right:3.2333rem;}
 .relay.content .special_game .play_list li .middle_inner:before {content:'';position:absolute;top:50%;right:0;margin-top:-1.4rem;width:2.8rem;height:2.8rem;background:url(../images/ic-relay-list-arrow.png);background-size:100%;}
-.relay.content .special_game .play_list li .sp_explain {float:left;padding-top:0.6333rem;margin-left:2.8rem;width:18.6667rem;}
+.relay.content .special_game .play_list li .sp_explain {float:left;padding-top:0.6333rem;margin-left:2.8rem;width:18.6667rem;text-align:left;}
 .relay.content .special_game .play_list li .sp_explain span {text-align:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 .relay.content .special_game .play_list li .sp_explain span.info_round {margin-top:0.4rem;}
-.relay.content .special_game .play_list li .info_time {margin-top:0;}
-.relay_special.content .page_title_wrap .sp_wrap {padding:0.8333rem 0 1.1667rem;height:100%;font-size:0;text-align:center;}
-.relay_special.content .page_title_wrap .sp_wrap .sp_logo {display:inline-block;width:3.2667rem;height:3rem;vertical-align:top;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
-.relay_special.content .page_title_wrap .sp_wrap .sp_title {display:inline-block;margin-top:0.7333rem;margin-left:0.6rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;vertical-align:top;}
+.relay.content .special_game .play_list li .info_time {display:inline-block;margin-top:0;margin-left:0.4rem;height:2.0333rem;line-height:2.0333rem;font-size:1.3rem;font-weight:bold;color:#000000;}
+.relay.content .special_game .play_list li .info_today {display:inline-block;}
+.relay_special.content .page_title_wrap .sp_wrap {margin-top:-0.6667rem;padding:0.3667rem 0 0.7rem;height:5rem;font-size:0;text-align:center;}
+.relay_special.content .page_title_wrap .sp_wrap .sp_logo {display:inline-block;width:3.9333rem;height:3.9333rem;vertical-align:top;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
+.relay_special.content .page_title_wrap .sp_wrap .sp_title {display:inline-block;margin-top:1.2rem;margin-left:0.2667rem;height:1.8667rem;font-size:1.2667rem;font-weight:500;vertical-align:top;}
 .relay_special.content .video_wrap .abs_wrap .full_h {height:auto;}
 .relay_special.content .video_wrap .abs_wrap .tb_box,
 .relay_special.content .video_wrap .abs_wrap .tb_cell_box {display:block;}
@@ -1628,10 +1641,10 @@
 .my.content .sec_my .edit_wrap.on .complete {display:block;}
 .my.content .sec_my .btn_group {margin-top:1.5rem;}
 .my.content .sec_my .btn_group:after {clear:both;content:'';display:block;}
-.my.content .sec_my .btn_group .dropdown {overflow:hidden;position:relative;float:left;padding:0 1.5rem 0 1.3333rem;width:6.7333rem;height:3.3333rem;border-radius:0.7333rem;border:2px solid #eeeeee;background-color:#eeeeee;font-size:1.2667rem;font-weight:normal;line-height:2.9662rem;color:#2b2b2b;}
-.my.content .sec_my .btn_group .dropdown.on {border-radius:0.7333rem;border:2px solid #2b2b2b;background-color:#ffffff;font-weight:bold;}
-.my.content .sec_my .btn_group .dropdown:after {content:'';position:absolute;width:1.3333rem;height:1.3333rem;top:1rem;margin-top:-1px;right:0.6667rem;background-image:url(../images/ic-arrow-down-g.png);background-size:100%;}
-.my.content .sec_my .btn_group .dropdown:before {display:none;content:'';position:absolute;width:1.3333rem;height:1.3333rem;top:1rem;margin-top:-1px;right:0.6667rem;background-image:url(../images/ic-arrow-down-b.png);background-size:100%;}
+.my.content .sec_my .btn_group .dropdown {overflow:hidden;position:relative;float:left;padding:0 1.5rem 0 1.3333rem;width:6.7333rem;height:3.3333rem;border-radius:0.7333rem;border:2px solid #2b2b2b;background-color:#2b2b2b;font-size:1.2667rem;font-weight:normal;line-height:2.9662rem;color:#ffffff;opacity:0.2;}
+.my.content .sec_my .btn_group .dropdown.on {border-radius:0.7333rem;border:2px solid #2b2b2b;background-color:#ffffff;font-weight:bold;color:#2b2b2b;opacity:1;}
+.my.content .sec_my .btn_group .dropdown:after {content:'';position:absolute;width:1.3333rem;height:1.3333rem;top:1rem;margin-top:-1px;right:0.6667rem;background-image:url(../images/02-1-icon-arrow-ic-arrow-down-g.png);background-size:100%;}
+.my.content .sec_my .btn_group .dropdown:before {display:none;content:'';position:absolute;width:1.3333rem;height:1.3333rem;top:1rem;margin-top:-1px;right:0.6667rem;background-image:url(../images/02-1-icon-arrow-ic-arrow-down-b.png);background-size:100%;}
 .my.content .sec_my .btn_group .dropdown.on:after {display:none;}
 .my.content .sec_my .btn_group .dropdown.on:before {display:block;}
 .my.content .sec_my .btn_group .dropdown + .dropdown {margin-left:0.6667rem;width:8.1333rem;}
@@ -1808,13 +1821,13 @@
 .kakao.content .popular_scroll .thumb:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .kakao.content .popular_scroll .thumb:before {content:'';position:absolute;bottom:0;left:0;right:0;height:11.4667rem;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.57) 55%, rgba(0, 0, 0, 0.91));}
 .kakao.content .popular_scroll .desc {position:relative;width:100%;padding:1.6667rem;display:inline-block;vertical-align:bottom;white-space:normal;}
-.kakao.content .popular_scroll .broad {font-size:1.2rem;line-height:1.8rem;font-weight:500;color:#ffffff;}
-.kakao.content .popular_scroll .title {margin-top:0.1rem;font-size:1.5333rem;font-weight:bold;line-height:2.2667rem;color:#ffffff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
-.kakao.content .popular_scroll .detail {height:5.6333rem;padding:0.7667rem 1.6667rem 1.1333rem;}
-.kakao.content .popular_scroll .detail > p {font-size:1.2667rem;font-weight:normal;line-height:1.8667rem;color:#000000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .popular_scroll .broad {font-size:1.4rem;line-height:2.0667rem;font-weight:500;color:#ffffff;}
+.kakao.content .popular_scroll .title {margin-top:0.1rem;font-size:1.6rem;font-weight:bold;line-height:2.2667rem;color:#ffffff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .popular_scroll .detail {height:5.6333rem;padding:0.6rem 1.6667rem 0.9rem;}
+.kakao.content .popular_scroll .detail > p {font-size:1.4rem;font-weight:normal;line-height:2.0667rem;color:#000000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
 .kakao.content .popular_list {margin-top:-1.3333rem;}
-.kakao.content .popular_list li {padding:1.3333rem 0 1.4333rem;border-bottom:1px solid #f8f8f9;}
-.kakao.content .popular_list li > p {font-size:1.3333rem;font-weight:bold;line-height:1.9667rem;color:#000000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .popular_list li {padding:1.3333rem 0 1.1333rem;border-bottom:1px solid #f8f8f9;}
+.kakao.content .popular_list li > p {font-size:1.6rem;font-weight:bold;line-height:2.3667rem;color:#000000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .kakao.content .latest_wrap {padding:1.5333rem;}
 .kakao.content .latest_wrap .list_type_kakao {margin-top:-0.3333rem;}
 .kakao.content .list_type_kakao li {position:relative;border-bottom:1px solid #f8f8f9;}
@@ -1823,7 +1836,7 @@
 .kakao.content .list_type_kakao .cover {position:absolute;left:0;top:0;bottom:0;margin:auto 0;width:8.3333rem;height:5.8667rem;border-radius:0.7333rem;background-image:url(../images/ic-play-defualt-s.png);background-position:50% 50%;background-size:2.4667rem 2.4667rem;background-color:#e5e7e8;background-repeat:no-repeat;}
 .kakao.content .list_type_kakao .thumb {position:absolute;left:0;top:0;width:100%;height:100%;border-radius:0.7333rem;background-size:cover;background-repeat:no-repeat;background-position:50% 50%;}
 .kakao.content .list_type_kakao .detail {vertical-align:middle;white-space:normal;display:inline-block;position:relative;width:100%;padding-left:1.2667rem;}
-.kakao.content .list_type_kakao .detail > p {font-size:1.4rem;font-weight:bold;line-height:2.0667rem;color:#000000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
+.kakao.content .list_type_kakao .detail > p {font-size:1.6rem;font-weight:bold;line-height:2.3667rem;color:#000000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;overflow:hidden;text-overflow:ellipsis;}
 .kakao.content .club_wrap {padding:1.5333rem 1.5333rem 0;}
 .kakao.content .club_wrap .tab_teamlist {margin:2rem -1.5333rem 0;}
 .kakao.content .club_wrap .list_type_kakao {margin-top:2rem;}
@@ -1947,6 +1960,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_1depth .active_bar {z-index:1;position:absolute;bottom:0;width:6rem;height:0.2rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
 .tab_1depth_wrap {position:relative;height:4.6rem;width:100%;}
 .tab_1depth_wrap.tab_logo {height:6.4rem;}
+.tab_1depth_wrap.tab_logo .tab_1depth .tab_item span {font-size:1.7rem;}
 .tab_1depth_wrap .tab_1depth {margin-top:0;position:absolute;left:0;right:0;transition:top ease-out .3s;}
 .cheering .tab_1depth_wrap {border-top:0 none;height:5.5333rem;}
 .cheering .tab_1depth_wrap .tab_1depth {position:fixed;z-index:2;height:5.5333rem;border-top:0.9333rem solid #f0f1f6;top:8.3333rem;}
@@ -2279,7 +2293,7 @@ background-color:#f2f3f4;}
 .tab_button .tab {position:relative;}
 .tab_button .tab .alarm_num {display:block;position:absolute;top:-1rem;right:0.6667rem;padding:0 0.5rem;min-width:2rem;height:2rem;line-height:2rem;font-size:1.2rem;font-weight:700;color:#ffffff;background-color:#c10a3a;border-radius:1rem;}
 .tab_button .tab,
-.active_tab_container .tab {flex-grow:1;width:20%;height:7rem;padding-top:3.4667rem;font-size:1.5rem;text-align:center;line-height:1.6333rem;opacity:1;-webkit-tap-highlight-color:transparent;transition:opacity ease-out 0.24s, transform ease-out 0.24s;transform:scale(1) translateY(0);transition-timing-function:cubic-bezier(0, 0, 0, 0.79);color:#646464;}
+.active_tab_container .tab {flex-grow:1;width:20%;height:7rem;padding-top:3.4667rem;font-size:1.5rem;font-weight:500;text-align:center;line-height:1.6333rem;opacity:1;-webkit-tap-highlight-color:transparent;transition:opacity ease-out 0.24s, transform ease-out 0.24s;transform:scale(1) translateY(0);transition-timing-function:cubic-bezier(0, 0, 0, 0.79);color:#40444c;}
 .tab_button .tab.active,
 .active_tab_container .tab.active {background:none !important;color:#C10A3A;font-weight:700;}
 .tab_button .tab.hide,
@@ -2292,7 +2306,7 @@ background-color:#f2f3f4;}
 .active_tab_container .tab .circle {width:4.7333rem;height:4.7333rem;border-radius:50%;background:none;background-color:#fff;line-height:4.7333rem;}
 .active_tab_container .tab .circle .img_box {padding:0.5667rem 0.6667rem;}
 .active_label_container {display:flex;position:absolute;bottom:1.9rem;left:1.5rem;right:1.5rem;z-index:3;}
-.active_label_container .label {flex-grow:1;width:20%;height:1.6333rem;font-size:1.5rem;font-weight:bold;color:#C10A3A;text-align:center;line-height:1.6333rem;opacity:0;transition:opacity ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
+.active_label_container .label {flex-grow:1;width:20%;height:1.6333rem;font-size:1.5rem;font-weight:500;color:#C10A3A;text-align:center;line-height:1.6333rem;opacity:0;transition:opacity ease-out .5s;transition-timing-function:cubic-bezier(0, 0, 0, 0.79);}
 .active_label_container .label.active {flex-grow:0;opacity:1;}
 
 /* layerPopup */
