@@ -213,7 +213,7 @@
 
 .team_symbol_sq_HH, .team_symbol_sq_HT, .team_symbol_sq_KT, .team_symbol_sq_LG, 
 .team_symbol_sq_LT, .team_symbol_sq_NC, .team_symbol_sq_OB, .team_symbol_sq_SK, .team_symbol_sq_SS, 
-.team_symbol_sq_WO, .team_symbol_sq_SSG, {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
+.team_symbol_sq_WO, .team_symbol_sq_SSG {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
 .team_symbol_sq_HH {background-position:0 9.090909%;}
 .team_symbol_sq_HT {background-position:0 18.181818%;}
 .team_symbol_sq_KT {background-position:0 27.272727%;}
