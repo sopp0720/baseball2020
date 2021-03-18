@@ -979,7 +979,7 @@
 .relay.content .textarea {position:relative;z-index:1;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;background-color:transparent;font-weight:500;}
 .relay.content .textarea::-webkit-input-placeholder {color:#646464 !important;font-size:1.4667rem;line-height:2.1667rem;font-weight:normal;}
 .relay.content .dummy {position:absolute;left:0;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;-webkit-user-select:none;user-select:none;opacity:0;}
-.relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.7rem;left:1.5333rem;width:1.8333rem;height:1.8333rem;}
+.relay.content .chat_wrap .ic_chat_input {position:absolute;bottom:1.4333rem;left:1.3333rem;width:2.2667rem;height:2.2667rem;}
 .relay.content .chat_wrap .ic_chat_send {display:none;position:absolute;bottom:1.0333rem;right:1.5333rem;width:3rem;height:3rem;}
 .relay.content .msg_wrap {position:relative;padding-bottom:1.4rem;text-align:center;font-size:0;}
 .relay.content .msg_wrap.same {margin-top:-0.6667rem;}
@@ -995,7 +995,7 @@
 .relay.content .chat_wrap .user {position:relative;display:inline-block;height:2.1667rem;font-size:1.4667rem;font-weight:bold;line-height:2.1667rem;}
 .relay.content .left .user {padding-right:1.9333rem;}
 .relay.content .right .user {padding-left:1.9333rem;}
-.relay.content .user .team_logo_xs {position:absolute;width:1.6667rem;height:1.6667rem;top:0.2333rem;border-radius:50%;}
+.relay.content .user .team_logo_xs {position:absolute;width:1.8rem;height:1.8rem;top:0.2rem;border-radius:50%;}
 .relay.content .left .team_logo_xs {right:0;}
 .relay.content .right .team_logo_xs {left:0;}
 .relay.content .user .team_logo_xs span {position:absolute;width:1.2667rem;height:1.2667rem;margin:auto;left:0;right:0;bottom:0;top:0;}
@@ -1008,12 +1008,12 @@
 .relay.content .chreer_selection .chreer_team.active {opacity:0.8;}
 .relay.content .chreer_selection .chreer_team.left {display:inline-block;width:50%;height:100%;padding-left:2.9333rem;padding-top:0.7rem;text-align:left;}
 .relay.content .chreer_selection .chreer_team.right {display:inline-block;width:50%;height:100%;padding-right:2.9333rem;padding-top:0.7rem;text-align:right;}
-.relay.content .chreer_selection .team_name {display:inline-block;padding-top:0.05rem;width:8.3333rem;height:2.4667rem;font-size:1.6rem;line-height:2.4667rem;color:#c2c3c7;font-weight:normal;}
+.relay.content .chreer_selection .team_name {display:inline-block;width:8.3333rem;height:2.4667rem;font-size:1.6rem;line-height:2.4667rem;color:#c2c3c7;font-weight:normal;}
 .relay.content .chreer_selection .current .team_name {color:#000000;font-weight:bold;}
-.relay.content .chreer_selection .left .team_name {position:relative;text-align:right;padding-right:2.3333rem;}
-.relay.content .chreer_selection .left .ic_away {position:absolute;right:0;top:0.4rem;width:1.6667rem;height:1.6667rem;}
-.relay.content .chreer_selection .right .team_name {position:relative;text-align:left;padding-left:2.3333rem;}
-.relay.content .chreer_selection .right .ic_home {position:absolute;left:0;top:0.4rem;width:1.6667rem;height:1.6667rem;}
+.relay.content .chreer_selection .left .team_name {position:relative;text-align:right;padding-right:2.4333rem;}
+.relay.content .chreer_selection .left .ic_away {position:absolute;right:0;top:0.2rem;width:2rem;height:2rem;}
+.relay.content .chreer_selection .right .team_name {position:relative;text-align:left;padding-left:2.4333rem;}
+.relay.content .chreer_selection .right .ic_home {position:absolute;left:0;top:0.2rem;width:2rem;height:2rem;}
 .relay.content .chreer_selection .ic_away,
 .relay.content .chreer_selection .ic_home {opacity:0.5;}
 .relay.content .chreer_selection .current .ic_away,
@@ -1553,8 +1553,8 @@
 .relay_special.content .chat_wrap .chreer_selection:after {display:none;}
 .relay_special.content .chat_wrap .chreer_selection .sp_title {display:block;font-size:1.6rem;text-align:center;color:#646464;line-height:3.8333rem;}
 
-/* My - main */
-/* basic */
+/* My - main
+basic
 [data-theme="theme_default"] .my_info.basic {}
 [data-theme="theme_LG"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-lg.png');background-repeat:no-repeat;background-size:100% auto;}
 [data-theme="theme_HH"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-hanwha.png');background-repeat:no-repeat;background-size:100% auto;}
@@ -1567,7 +1567,7 @@
 [data-theme="theme_HT"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-kia.png');background-repeat:no-repeat;background-size:100% auto;}
 [data-theme="theme_LT"] .my_info.basic {background-image:url('../images/bg/img-my-top-330-lotte.png');background-repeat:no-repeat;background-size:100% auto;}
 
-/* ios */
+ios
 [data-theme="theme_default"] .my_info.ios {}
 [data-theme="theme_LG"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-lg.png');background-repeat:no-repeat;background-size:100% auto;}
 [data-theme="theme_HH"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-hanwha.png');background-repeat:no-repeat;background-size:100% auto;}
@@ -1580,7 +1580,7 @@
 [data-theme="theme_HT"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-kia.png');background-repeat:no-repeat;background-size:100% auto;}
 [data-theme="theme_LT"] .my_info.ios {background-image:url('../images/bg/img-my-top-400-lotte.png');background-repeat:no-repeat;background-size:100% auto;}
 
-/* guest */
+guest
 [data-theme="theme_default"] .my_info.guest {}
 [data-theme="theme_LG"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-lg.png');background-repeat:no-repeat;background-size:100% auto;}
 [data-theme="theme_HH"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-hanwha.png');background-repeat:no-repeat;background-size:100% auto;}
@@ -1592,6 +1592,7 @@
 [data-theme="theme_OB"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-doosan.png');background-repeat:no-repeat;background-size:100% auto;}
 [data-theme="theme_HT"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-kia.png');background-repeat:no-repeat;background-size:100% auto;}
 [data-theme="theme_LT"] .my_info.guest {background-image:url('../images/bg/img-my-top-360-lotte.png');background-repeat:no-repeat;background-size:100% auto;}
+*/
 
 .my.content .sec_my {padding:1.5333rem;border-bottom:0.9333rem solid #f0f1f6;}
 .my.content .sec_my:first-of-type {padding-top:2rem;}

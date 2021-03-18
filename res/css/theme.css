@@ -211,35 +211,44 @@
 .modal .bg_gradient.mlb {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 .modal .bg_gradient.abl {background-image: linear-gradient(to bottom, #013578 -28%, #00326e 118%);}
 
-.team_symbol_sq_HH, .team_symbol_sq_HT, .team_symbol_sq_KT, .team_symbol_sq_LG, 
-.team_symbol_sq_LT, .team_symbol_sq_NC, .team_symbol_sq_OB, .team_symbol_sq_SK, .team_symbol_sq_SS, 
-.team_symbol_sq_WO, .team_symbol_sq_SSG {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
-.team_symbol_sq_HH {background-position:0 9.090909%;}
-.team_symbol_sq_HT {background-position:0 18.181818%;}
-.team_symbol_sq_KT {background-position:0 27.272727%;}
-.team_symbol_sq_LG {background-position:0 36.363636%;}
-.team_symbol_sq_LT {background-position:0 45.454545%;}
-.team_symbol_sq_NC {background-position:0 54.545454%;}
-.team_symbol_sq_OB {background-position:0 63.636363%;}
-.team_symbol_sq_SK {background-position:0 72.727272%;}
-.team_symbol_sq_SS {background-position:0 81.818181%;}
-.team_symbol_sq_WO {background-position:0 90.90909%;}
-.team_symbol_sq_SSG {background-position:0 100%;}
-.futures .team_symbol_sq_WO {background-image:url(../images/logo/team_symbol_sq_WO_f.png);background-position:0 0;}
+.chreer_selection .team_symbol_sq_HH, 
+.chreer_selection .team_symbol_sq_HT, 
+.chreer_selection .team_symbol_sq_KT, 
+.chreer_selection .team_symbol_sq_LG, 
+.chreer_selection .team_symbol_sq_LT, 
+.chreer_selection .team_symbol_sq_NC, 
+.chreer_selection .team_symbol_sq_OB, 
+.chreer_selection .team_symbol_sq_SK, 
+.chreer_selection .team_symbol_sq_SS, 
+.chreer_selection .team_symbol_sq_WO, 
+.chreer_selection .team_symbol_sq_SSG {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo.png);}
+.chreer_selection .team_symbol_sq_HH {background-position:0 7.142857%;}
+.chreer_selection .team_symbol_sq_HT {background-position:0 14.285714%;}
+.chreer_selection .team_symbol_sq_KT {background-position:0 21.428571%;}
+.chreer_selection .team_symbol_sq_LG {background-position:0 35.714285%;}
+.chreer_selection .team_symbol_sq_LT {background-position:0 42.857142%;}
+.chreer_selection .team_symbol_sq_NC {background-position:0 49.999999%;}
+.chreer_selection .team_symbol_sq_OB {background-position:0 57.142856%;}
+.chreer_selection .team_symbol_sq_SK {background-position:0 64.285713%;}
+.chreer_selection .team_symbol_sq_SS {background-position:0 78.571427%;}
+.chreer_selection .team_symbol_sq_WO {background-position:0 85.714284%;}
+.futures .chreer_selection .team_symbol_sq_WO {background-image:url(../images/logo/team_symbol_WO_f.png);background-position:0 0;}
+.chreer_selection .team_symbol_sq_SSG {background-position:0 100%;}
 
-.ic_chat_input {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo_sq.png);}
+/* symbol KBO */
+.ic_chat_input {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo.png);}
 [data-theme="theme_default"] .ic_chat_input {background-position:0 0%;}
-[data-theme="theme_LG"] .ic_chat_input {background-position:0 36.363636%;}
-[data-theme="theme_HH"] .ic_chat_input {background-position:0 9.090909%;}
-[data-theme="theme_SS"] .ic_chat_input {background-position:0 81.818182%;}
-[data-theme="theme_KT"] .ic_chat_input {background-position:0 27.272727%;}
-[data-theme="theme_SK"] .ic_chat_input {background-position:0 72.727273%;}
-[data-theme="theme_WO"] .ic_chat_input {background-position:0 90.909091%;}
-[data-theme="theme_WO"] .futures .ic_chat_input {background-image:url(../images/logo/team_symbol_sq_WO_f.png);background-position:0 0;}
-[data-theme="theme_NC"] .ic_chat_input {background-position:0 54.545455%;}
-[data-theme="theme_OB"] .ic_chat_input {background-position:0 63.636364%;}
-[data-theme="theme_HT"] .ic_chat_input {background-position:0 18.181818%;}
-[data-theme="theme_LT"] .ic_chat_input {background-position:0 45.454545%;}
+[data-theme="theme_HH"] .ic_chat_input {background-position:0 7.142857%;}
+[data-theme="theme_HT"] .ic_chat_input {background-position:0 14.285714%;}
+[data-theme="theme_KT"] .ic_chat_input {background-position:0 21.428571%;}
+[data-theme="theme_LG"] .ic_chat_input {background-position:0 35.714285%;}
+[data-theme="theme_LT"] .ic_chat_input {background-position:0 42.857142%;}
+[data-theme="theme_NC"] .ic_chat_input {background-position:0 49.999999%;}
+[data-theme="theme_OB"] .ic_chat_input {background-position:0 57.142856%;}
+[data-theme="theme_SK"] .ic_chat_input {background-position:0 64.285713%;}
+[data-theme="theme_SS"] .ic_chat_input {background-position:0 78.571427%;}
+[data-theme="theme_WO"] .ic_chat_input {background-position:0 85.714284%;}
+[data-theme="theme_WO"] .futures .ic_chat_input {background-image:url(../images/logo/team_symbol_WO_f.png);background-position:0 0;}
 [data-theme="theme_SSG"] .ic_chat_input {background-position:0 100%;}
 
 .ic_chat_send {max-width:100%;background-size:100%;background-image:url(../images/logo/ic_send.png);}
