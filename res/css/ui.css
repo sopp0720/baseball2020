@@ -2518,42 +2518,42 @@ background-color:#f2f3f4;}
 	.tab_container {height:calc(7rem + 28px);}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
-	.active_label_container {bottom:28px;}
+	.active_label_container {bottom:calc(1.9rem + 28px);}
 }
 /* iPhone X, iPhone XS */
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 	.tab_container {height:calc(7rem + 28px);transform: translate(0, 100%) translateZ(0px);}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
-	.active_label_container {bottom:28px;}
+	.active_label_container {bottom:calc(1.9rem + 28px);}
 }
 /* iPhone 12 Mini */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
 	.tab_container {height:calc(7rem + 28px);transform: translate(0, 100%) translateZ(0px);}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
-	.active_label_container {bottom:28px;}
+	.active_label_container {bottom:calc(1.9rem + 28px);}
 }
 /* iPhone 12 and iPhone 12 Pro */
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 	.tab_container {height:calc(7rem + 28px);transform: translate(0, 100%) translateZ(0px);}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
-	.active_label_container {bottom:28px;}
+	.active_label_container {bottom:calc(1.9rem + 28px);}
 }
 /* iPhone 12 Pro Max */
 @media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
 	.tab_container {height:calc(7rem + 28px);transform: translate(0, 100%) translateZ(0px);}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
-	.active_label_container {bottom:28px;}
+	.active_label_container {bottom:calc(1.9rem + 28px);}
 }
 /* iPhone XS Max */
 @media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 	.tab_container {height:calc(7rem + 28px);}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
-	.active_label_container {bottom:28px;}
+	.active_label_container {bottom:calc(1.9rem + 28px);}
 }
 /* iPad Pro */
 @media only screen
@@ -2563,7 +2563,7 @@ background-color:#f2f3f4;}
 	.tab_container {height:calc(7rem + 28px);}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
-	.active_label_container {bottom:28px;}
+	.active_label_container {bottom:calc(1.9rem + 28px);}
 }
 
 
