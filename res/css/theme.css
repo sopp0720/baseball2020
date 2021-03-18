@@ -64,6 +64,7 @@
 [data-theme="theme_NC"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-nc.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
 [data-theme="theme_SS"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-samsung.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
 [data-theme="theme_SK"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-sk.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
+[data-theme="theme_SSG"] .tab_button .tab.tab_team_info {background:url(../images/gnb/ic-gnb-nor-team-ssg.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
 .tab_button .tab.tab_home {background:url(../images/gnb/ic-gnb-nor-home.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
 .tab_button .tab.tab_relay {background:url(../images/gnb/ic-gnb-nor-live.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
 .tab_button .tab.tab_game {background:url(../images/gnb/ic-gnb-nor-game.png) center 0.7333rem no-repeat;background-size:2.7333rem;}
