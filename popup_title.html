@@ -13,6 +13,7 @@
 <button type="button" onclick="layerPopup.show('#popup_2');" style="border:1px solid #000;">팝업2</button>
 <button type="button" onclick="layerPopup.show('#popup_3');" style="border:1px solid #000;">팝업3</button>
 <button type="button" onclick="layerPopup.show('#popup_4');" style="border:1px solid #000;">친구포인트적립안내 팝업</button>
+<button type="button" onclick="layerPopup.show('#popup_5');" style="border:1px solid #000;">보안 인증번호 팝업</button>
 
 <div id="wrap" data-theme="theme_LG">
 	<div class="modal fadeIn" id="popup_1">
@@ -75,6 +76,33 @@
 				</div>
 				<div class="modal_ft">
 					<div class="btn_half usetap" onclick="layerPopup.hide();"><span>닫기</span></div><div class="btn_half usetap"><span>포인트 확인</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<style>
+/* 보안인증 팝업 */
+.modal .modal_content.security_content {}
+.modal .modal_content.security_content .modal_hd {line-height:1.48;}
+.modal .modal_content.security_content .security_num {display:block;margin-top:1.7333rem;padding:0 3rem;font-size:2.3333rem;font-weight:bold;line-height:0.97;color:#000000;text-align:center;}
+.modal .modal_content.security_content .modal_bd {padding-top:1.7333rem;padding-bottom:2.6667rem;}
+.modal .modal_content.security_content .modal_bd > p {font-size:1.3333rem;line-height:1.7;color:#525252;}
+</style>
+	<div class="modal fadeIn" id="popup_5">
+		<div class="dim"></div>
+		<div class="modal_inner">
+			<div class="modal_content security_content">
+				<div class="modal_hd">보안 인증번호</div>
+				<span class="security_num">5679</span>
+				<div class="modal_bd">
+					<p>
+						U+tv 화면에 나타난 연결 요청 팝업에 <br>
+                        위 보안 인증번호 4자리를 <br>
+                        30초 내 입력해주세요.
+					</p>
+				</div>
+				<div class="modal_ft">
+					<div class="btn_half usetap"><span>인증번호 다시 받기</span></div><div class="btn_half usetap" onclick="layerPopup.hide();"><span>연결 취소</span></div>
 				</div>
 			</div>
 		</div>
