@@ -2353,8 +2353,10 @@ background-color:#f2f3f4;}
 .modal .modal_ft .btn_half span {margin:0 auto;display:block;height:4.4rem;padding:1.0667rem 0/*3.6667rem*/;border-radius:2.2rem;}
 .modal .modal_ft .btn_half.usetap.active span {background-color:#fafafa;opacity:1;}
 /* 보안인증 팝업 */
-.modal .modal_content.security_content {}
-
+.modal .modal_content.security_content .modal_hd {line-height:1.48;}
+.modal .modal_content.security_content .security_num {display:block;margin-top:1.7333rem;padding:0 3rem;font-size:2.3333rem;font-weight:bold;line-height:0.97;color:#000000;text-align:center;}
+.modal .modal_content.security_content .modal_bd {padding-top:1.7333rem;padding-bottom:2.6667rem;}
+.modal .modal_content.security_content .modal_bd > p {font-size:1.3333rem;line-height:1.7;color:#525252;}
 /* layerPopup 이벤트 */
 .modal .image_wrap {margin:-1.3333rem -1.3333rem 0;border-radius:0.7333rem;overflow:hidden;}
 .modal .image_wrap + p {margin-top:1.3333rem;}
