@@ -973,7 +973,7 @@
 .relay.content .desc_middle {width:100%;padding:0 1.5333rem 5rem;display:inline-block;vertical-align:middle;white-space:normal;text-align:center;}
 .relay.content .desc_middle .img_box {margin:0 auto;width:24.8333rem;height:10rem;background-image:url(../images/img-player-empty-chat.png);background-size:100%;}
 .relay.content .desc_middle p {margin-top:1.3333rem;font-size:1.3333rem;font-weight:500;line-height:1.9667rem;color:#c8c8c8;}
-.relay.content .chat_btm {position:fixed;bottom:0;left:0;right:0;background-color:#fff;border-top:1px solid #dee1e6;padding:0 7.1333rem 0 4.2rem;}
+.relay.content .chat_btm {position:fixed;bottom:0;left:0;right:0;background-color:#fff;border-top:1px solid #dee1e6;padding:0 7.1333rem 0 4.2rem;z-index:5;}
 .relay.content .chat_input {display:table;width:100%;max-height:10.4rem;height:5.0667rem;padding:1rem 0;}
 .relay.content .textarea_wrap {position:relative;width:100%;vertical-align:middle;display:table-cell;font-size:0;}
 .relay.content .textarea {position:relative;z-index:1;width:100%;overflow:hidden;max-height:8.4rem;-webkit-appearance:none;-webkit-border-radius:0;border:0 none;overflow:auto;outline:none;-webkit-box-shadow:none;box-shadow:none;resize:none;padding:0;margin:0;font-family:"Noto Sans KR";font-size:1.4667rem;line-height:2.1667rem;height:2.1667rem;min-height:2.1667rem;color:#000;background-color:transparent;font-weight:500;}
