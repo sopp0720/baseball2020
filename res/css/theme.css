@@ -238,7 +238,7 @@
 
 /* symbol KBO */
 .ic_chat_input {max-width:100%;background-size:100%;background-image:url(../images/logo/symbol_kbo.png);}
-[data-theme="theme_default"] .ic_chat_input {background-position:0 0%;}
+[data-theme="theme_default"] .ic_chat_input { background-image:url(../images/logo/ic-chat-input.png); background-size: 1.8333rem 1.8333rem; background-position: 50% 50%; background-repeat: no-repeat;}
 [data-theme="theme_HH"] .ic_chat_input {background-position:0 7.142857%;}
 [data-theme="theme_HT"] .ic_chat_input {background-position:0 14.285714%;}
 [data-theme="theme_KT"] .ic_chat_input {background-position:0 21.428571%;}
