@@ -2435,7 +2435,7 @@ background-color:#f2f3f4;}
 /* 응원팀 없는 경우 팝업 */
 .popup_cheer {z-index:9;}
 .popup_cheer .dim {background-color:rgba(0,0,0,0.04);}
-.popup_cheer .bg_cheer {position:relative;overflow:hidden;margin:0 auto 8.7rem;width:34rem;height:13.3333rem;background-image:url(../images/bg-team-banner-none.png);background-size:100%;}
+.popup_cheer .bg_cheer {position:relative;overflow:hidden;margin:0 auto 9.7rem;width:34rem;height:13.3333rem;background-image:url(../images/bg-team-banner-none.png);background-size:100%;}
 .popup_cheer .quo_marks {position:relative;margin:2.1rem 0 0 2.9333rem;width:18.6667rem;height:2.4667rem;font-size:1.6667rem;font-weight:bold;line-height:2.4667rem;color:#000000;}
 .popup_cheer .quo_marks:before {content:'';position:absolute;left:-1.6rem;top:0;width:1.3333rem;height:1.3667rem;background-image:url(../images/ic-home-top-text-m.png);background-size:100%;}
 .popup_cheer .quo_marks + p {margin:0.6rem 0 0 2.9333rem;height:1.6667rem;font-size:1.1333rem;line-height:1.6667rem;color:#000000;}
@@ -2523,6 +2523,7 @@ background-color:#f2f3f4;}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
 	.active_label_container {bottom:calc(1.9rem + 28px);}
+    .popup_cheer .bg_cheer {margin-bottom:calc(9.7rem + 28px);}
 }
 /* iPhone X, iPhone XS */
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
@@ -2530,6 +2531,7 @@ background-color:#f2f3f4;}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
 	.active_label_container {bottom:calc(1.9rem + 28px);}
+    .popup_cheer .bg_cheer {margin-bottom:calc(9.7rem + 28px);}
 }
 /* iPhone 12 Mini */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -2537,6 +2539,7 @@ background-color:#f2f3f4;}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
 	.active_label_container {bottom:calc(1.9rem + 28px);}
+    .popup_cheer .bg_cheer {margin-bottom:calc(9.7rem + 28px);}
 }
 /* iPhone 12 and iPhone 12 Pro */
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
@@ -2544,6 +2547,7 @@ background-color:#f2f3f4;}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
 	.active_label_container {bottom:calc(1.9rem + 28px);}
+    .popup_cheer .bg_cheer {margin-bottom:calc(9.7rem + 28px);}
 }
 /* iPhone 12 Pro Max */
 @media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
@@ -2551,6 +2555,7 @@ background-color:#f2f3f4;}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
 	.active_label_container {bottom:calc(1.9rem + 28px);}
+    .popup_cheer .bg_cheer {margin-bottom:calc(9.7rem + 28px);}
 }
 /* iPhone XS Max */
 @media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
@@ -2558,6 +2563,7 @@ background-color:#f2f3f4;}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
 	.active_label_container {bottom:calc(1.9rem + 28px);}
+    .popup_cheer .bg_cheer {margin-bottom:calc(9.7rem + 28px);}
 }
 /* iPad Pro */
 @media only screen
@@ -2568,6 +2574,7 @@ background-color:#f2f3f4;}
 	.tab_bar {height:calc(7rem + 28px);}
 	.tab_bar .middle .center_middle {height:calc(7rem + 28px);background-image:url(../images/gnb/tabbar_middle_3_notch.png);background-size:auto 100%;}
 	.active_label_container {bottom:calc(1.9rem + 28px);}
+    .popup_cheer .bg_cheer {margin-bottom:calc(9.7rem + 28px);}
 }
 
 
