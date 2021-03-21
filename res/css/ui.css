@@ -562,7 +562,7 @@
 .team.content .sec_team_position .team_position_all li .player_lg {margin:0 auto;}
 .team.content .sec_team_position .team_position_all li .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.4667rem;width:2rem;height:2rem;border-radius:50%;}
 .team.content .sec_team_position .team_position_all li .player_img .team_logo_xs > span {display:block;margin:0.3333rem auto;width:1.3333rem;height:1.3333rem;background-repeat:no-repeat;}
-.team.content .sec_team_position .team_position_all li .i_name {margin-top:0.5667rem;height:1.9rem;text-align:center;font-size:0;}
+.team.content .sec_team_position .team_position_all li .i_name {margin-top:0.5667rem;height:1.9rem;text-align:center;font-size:0;white-space:nowrap;}
 .team.content .sec_team_position .team_position_all li .i_name > b {display:inline-block;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;padding-top:0;margin-left:0.4667rem;height:1.9rem;line-height:1.8rem;font-size:1.2rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_position {margin-top:0.0667rem;height:1.6333rem;text-align:center;font-size:0;}
