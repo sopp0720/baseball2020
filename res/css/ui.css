@@ -999,6 +999,8 @@
 .relay.content .left .team_logo_xs {right:0;}
 .relay.content .right .team_logo_xs {left:0;}
 .relay.content .user .team_logo_xs span {position:absolute;width:1.2667rem;height:1.2667rem;margin:auto;left:0;right:0;bottom:0;top:0;}
+.relay.content .msg .user .ico_host {display:inline-block;vertical-align:top;margin-right:0.1rem;width:2.1667rem;height:2.1667rem;background-repeat:no-repeat;background-size:100% auto;background-image:url('../images/02-1-icon-chat-ic-crown2.png');}
+.relay.content .msg.chreer_color .user .ico_host {background-image:url('../images/02-1-icon-chat-ic-crown-white.png');}
 .relay.content .chat_wrap .comment {word-break:break-all;font-size:1.4667rem;font-weight:normal;line-height:2.1667rem;}
 .relay.content .chat_wrap .time {position:absolute;width:6.0667rem;height:1.4667rem;font-size:1.2rem;line-height:1.4667rem;color: #b4b4b4;bottom:0;}
 .relay.content .msg_wrap.left .time {right:-6.4667rem;text-align:left;}
@@ -2022,7 +2024,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .table tbody tr,.table tfoot tr {border-bottom:1px solid #dee1e6;}
 .table tbody tr:last-of-type,.table tfoot tr:last-of-type {border-bottom:0 none;}
 .table tfoot tr:last-of-type {border-top:1px solid #dee1e6;}
-.table thead .cell {position:relative;height:2.7rem;padding:0.4333rem 0 0.3667rem;font-size:1.3rem;font-weight:500;text-align:center;white-space:nowrap;color:#000;}
+.table thead .cell {position:relative;height:2.7rem;padding:0.4rem 0;font-size:1.3rem;font-weight:500;text-align:center;white-space:nowrap;color:#000;}
 .table tbody .cell {position:relative;height:4.3667rem;padding:1.2333rem 0.3333rem;font-size:1.3rem;text-align:center;white-space:nowrap;color:#000;}
 .table tfoot .cell {position:relative;height:3.1667rem;padding:0.6667rem 0.3333rem 0.6333rem;font-size:1.3rem;text-align:center;white-space:nowrap;color:#000;}
 .table thead .cell.selected {color:#2b2b2b;background-color:#ebebeb;}
