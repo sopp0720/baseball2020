@@ -1245,7 +1245,7 @@
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .cell_left {padding-right:1.6667rem;}
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .cell_right {padding-left:1.6667rem;}
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .cell_left,
-.relay.content .key_player_wrap .vs_record_tbl .tr_title .cell_right, {font-size:0;}
+.relay.content .key_player_wrap .vs_record_tbl .tr_title .cell_right {font-size:0;}
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .player_name {display:inline-block;margin:0.1rem 0 0;width:4.9333rem;height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000000;vertical-align:top;}
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .ic_vs {display:inline-block;margin:0.4333rem 0.6667rem 0.4667rem;width:1.0667rem;height:1.6rem;background:url('../images/ic-vs-red.png') no-repeat;background-size:100% auto;vertical-align:top;}
 .relay.content .key_player_wrap .vs_record_tbl .tr_title .team_logo {display:inline-block;width:2.8rem;height:2.5rem;vertical-align:top;}
