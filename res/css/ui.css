@@ -1256,7 +1256,7 @@
 .relay.content .starting_lineup .start_player .player_desc {float:left;width:65.207877%;}
 .relay.content .starting_lineup .start_player .player_desc > span {display:block;font-size:0;}
 .relay.content .starting_lineup .start_player .player_desc > span > span {max-width:5.1667rem;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
-.relay.content .starting_lineup .start_player .player_desc .desc1 {height:2.0667rem;font-size:0;}
+.relay.content .starting_lineup .start_player .player_desc .desc1 {height:2.0667rem;font-size:0;white-space:nowrap;}
 .relay.content .starting_lineup .start_player .player_desc .desc1 b {display:inline-block;font-size:1.2rem;height:2.0667rem;line-height:2.0667rem;font-weight:bold;color:#646464;vertical-align:top;}
 .relay.content .starting_lineup .start_player .player_desc .desc1 span {display:inline-block;height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000000;vertical-align:top;}
 .relay.content .starting_lineup .start_player .player_desc .desc2 b {display:inline-block;height:1.7667rem;line-height:1.7667rem;font-size:1.2rem;font-weight:500;color:#646464;vertical-align:top;}
