@@ -643,8 +643,8 @@
 .team.content .term_desc.on .btn_desc .i_arrow {transform:rotate(180deg);}
 .team.content .term_desc .term_content {height:0;}
 .team.content .term_desc.on .term_content {height:auto;}
-.team.content .term_desc .term_content ul {padding:1.2333rem 1.8667rem;overflow:hidden;border-top:solid 0.1rem #e4e6eb;}
-.team.content .term_desc .term_content li {margin-top:0.6rem;float:left;width:50%;font-size:1rem;color:#858585;}
+.team.content .term_desc .term_content ul {padding:1.2333rem 1.8667rem;overflow:hidden;display:flex;flex-wrap:wrap;border-top:solid 0.1rem #e4e6eb;}
+.team.content .term_desc .term_content li {margin-top:0.6rem;width:50%;font-size:1rem;color:#858585;}
 .team.content .term_desc .term_content li:nth-child(1),
 .team.content .term_desc .term_content li:nth-child(2) {margin-top:0;}
 .team.content .term_desc .term_content li:nth-child(odd) {padding-right:1rem;}
