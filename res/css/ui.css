@@ -43,6 +43,9 @@
 .page_title_wrap .btn_back {display:block;position:absolute;top:0.9rem;left:0.7333rem;width:3.2rem;height:3.2rem;background:url("../images/ic-title-back.png") no-repeat;background-size:100% auto;z-index:2;}
 .page_title_wrap .btn_back.usetap.active {background-color:#ebebeb;border-radius:50%;opacity:1;}
 
+/* Horizon title */
+.horizon_title_wrap {display:none;}
+
 /* btn back + srh */
 .srh_empty_box {position:relative;z-index:10;margin:0 -1.5333rem;height:7.5rem;}
 .srh_is_back {position:fixed;left:0;right:0;height:6.3333rem;background-color:rgba(255,255,255,0.98);padding:1.1667rem 1.5333rem 0 1.5333rem;}
@@ -2516,8 +2519,11 @@ background-color:#f2f3f4;}
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .i_score { top: 0; width: 3.2143rem; height: 5.6571rem; line-height: 5.6571rem; font-size: 4.6286rem; }
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .vs_box .time_spot { margin-top: 1.5429rem; }
 	.horizontal_ui .relay.content .relay_game_end .relay_video_thumb .relay_top_info .tag_info { margin-top: 2.5714rem; }
+    
+    .horizontal_ui .horizon_title_wrap {z-index:1;display:block;position:absolute;top:0;left:0;font-size:0;}
+    .horizontal_ui .horizon_title_wrap .btn_back {display:inline-block;width:3.2rem;height:3.2rem;background:url(../images/02-1-icon-top-ic-title-white.png) no-repeat 50% 50%/100% auto;vertical-align:top;}
+    .horizontal_ui .horizon_title_wrap .page_title {display:inline-block;margin:0.4333rem 0 0 0.4rem;height:2.2rem;font-size:1.5rem;font-weight:500;color:#ffffff;vertical-align:top;}
 }
-
 
 /* iPhone XR */
 @media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) and (orientation : portrait) {
