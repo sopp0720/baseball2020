@@ -2524,6 +2524,7 @@ background-color:#f2f3f4;}
     .horizontal_ui .horizon_title_wrap {z-index:1;display:block;position:absolute;top:0;left:0;font-size:0;}
     .horizontal_ui .horizon_title_wrap .btn_back {display:inline-block;width:3.2rem;height:3.2rem;background:url(../images/02-1-icon-top-ic-title-white.png) no-repeat 50% 50%/100% auto;vertical-align:top;}
     .horizontal_ui .horizon_title_wrap .page_title {display:inline-block;margin:0.4333rem 0 0 0.4rem;height:2.2rem;font-size:1.5rem;font-weight:500;color:#ffffff;vertical-align:top;}
+	.horizontal_ui .relay.content .chat_wrap .chat_noti { left: 56.25%; width: 43.75%; }
 }
 
 /* iPhone XR */
