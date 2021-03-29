@@ -28,6 +28,12 @@ var videoUI = (function() {
 					scTh = scTb.clientHeight;
 				}
 				let scMh = window.innerHeight - document.querySelector('.video_wrap').clientHeight - document.querySelector('.btn_player_view').clientHeight - document.querySelector('.page_title_wrap').clientHeight - scTh - 1;
+				let vdCk = document.querySelector('.horizontal_ui');
+				if (vdCk != null) {
+					scMh = window.innerHeight - document.querySelector('.page_title_wrap').clientHeight - scTh - 1;
+				}
+
+
 				let scBm = document.querySelector('.scroll_bottom');
 				if (scBm != null){
 					if (scBm.clientHeight < scMh){
