@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /* 더미 스크립트 */
-window.onload = function() {
+function horCk() {
     var orientation = window.orientation;
     var liveArea = document.getElementsByClassName('live_video').length;
     if (orientation == 90 && liveArea == 1){
@@ -156,6 +156,7 @@ window.onload = function() {
         document.getElementById('container').classList.add('iptv');
     }
 }
+horCk();
 
 
 
