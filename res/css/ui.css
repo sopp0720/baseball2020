@@ -2331,7 +2331,7 @@ background-color:#f2f3f4;}
 .modal .modal_inner {position:relative;text-align:left;display:inline-block;vertical-align:middle;white-space:normal;}
 .fadeInUp .modal_inner {position:absolute;bottom:0;left:0;right:0;height:auto;overflow-y:auto;overflow-x:hidden;max-height:calc(100% - 3.6rem);-webkit-transition:transform 0.3s;transition:transform 0.3s;-webkit-transform:translate(0, 100%);transform:translate(0, 100%);}
 .fadeInUp.visible .modal_inner {-webkit-transform:translate(0, 0) translateZ(0);transform:translate(0, 0) translateZ(0);}
-.fadeIn .modal_inner {position:absolute;bottom:9.6667rem;left:0;right:0;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0;}
+.fadeIn .modal_inner {position:absolute;bottom:8.7rem;left:0;right:0;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;opacity:0;}
 .fadeIn.visible .modal_inner {opacity:1;}
 /*.noscroll .btn_player_view_wrap,
 .noscroll .tab_1depth_wrap {transform:translateZ(0);}*/
