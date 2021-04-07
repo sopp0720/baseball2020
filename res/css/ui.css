@@ -338,7 +338,7 @@
 .home.content .score_board_wrap .special_game .play_list li .sp_explain span.sp_full {height:2.0667rem;font-size:1.4rem;font-weight:500;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
 .home.content .score_board_wrap .special_game .play_list li .middle_box {position:absolute;top:1.3rem;right:2.9rem;width:6.0667rem;}
 .home.content .score_board_wrap .special_game .play_list li .middle_box .info_today {margin:0 0 0.3rem;}
-.home.content .score_board_wrap .special_game .play_list li .middle_box .info_today .i_schedule {background-image:url('../images/02-1-icon-tag-main-red-01-beforelive.png');}
+.home.content .score_board_wrap .special_game .play_list li .middle_box .info_today.i_schedule {background-image:url('../images/02-1-icon-tag-main-red-01-beforelive.png');}
 .home.content .score_board_wrap .special_game .play_list li .middle_box .info_today.i_ing {background-image:url('../images/02-1-icon-tag-main-red-02-inglive.png');}
 .home.content .score_scroll {margin-top:1.5333rem;}
 .home.content .score_scroll .title_hd {padding-top:0.5333rem;height:3.5rem;}
