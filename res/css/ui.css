@@ -1546,7 +1546,7 @@
 .relay.content .special_game .play_list li .sp_logo {display:block;float:left;width:5rem;height:5rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
 .relay.content .special_game .play_list li .middle_inner {padding-left:3.2333rem;padding-right:3.2333rem;}
 .relay.content .special_game .play_list li .middle_inner:before {content:'';position:absolute;top:50%;right:0;margin-top:-1.4rem;width:2.8rem;height:2.8rem;background:url(../images/ic-relay-list-arrow.png);background-size:100%;}
-.relay.content .special_game .play_list li .sp_explain {float:left;padding-top:0.6333rem;margin-left:2.8rem;width:18.6667rem;text-align:left;}
+.relay.content .special_game .play_list li .sp_explain {float:left;padding-top:0.6333rem;margin-left:2.8rem;width:calc(100% - 7.9rem);text-align:left;}
 .relay.content .special_game .play_list li .sp_explain span {text-align:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 .relay.content .special_game .play_list li .sp_explain span.info_round {margin-top:0.4rem;}
 .relay.content .special_game .play_list li .info_time {display:inline-block;margin-top:0;margin-left:0.4rem;height:2.0333rem;line-height:2.0333rem;font-size:1.3rem;font-weight:bold;color:#000000;}
