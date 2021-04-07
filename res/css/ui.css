@@ -280,9 +280,9 @@
 .home.content .score_board_wrap .play_list li:first-child:after {display:none;}
 .home.content .score_board_wrap .play_list li.active {opacity:0.8;}
 
-.home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:9.0333rem;}
-.home.content .score_board_wrap .play_list li > div.team_player.left {left:1.4rem;}
-.home.content .score_board_wrap .play_list li > div.team_player.right {right:1.4rem;}
+.home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:10.9667rem;}
+.home.content .score_board_wrap .play_list li > div.team_player.left {left:0.4333rem;}
+.home.content .score_board_wrap .play_list li > div.team_player.right {right:0.4333rem;}
 .home.content .score_board_wrap .play_list li > div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
 .home.content .score_board_wrap .play_list li > div.team_player i.sp_logo {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
 .home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.4rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;}
