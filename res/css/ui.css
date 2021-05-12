@@ -803,7 +803,7 @@
 .team.content .top_ranking_info .win_rate b {margin-left:0.3333rem;height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:bold;color:#666666;}
 .team.content .top_ranking_bottom {border-top:0 none;padding-top:3.2rem;}
 .team.content .scroll_ranking {margin-top:1rem;}
-.team.content .scroll_ranking ul {margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;transform:translateZ(0)}
+.team.content .scroll_ranking ul {height:22rem;margin:0 -1.5333rem;padding:0 1.5333rem;white-space:nowrap;overflow-x:auto;transform:translateZ(0);overflow-y:hidden;font-size:0;transform:translateZ(0)}
 .team.content .scroll_ranking li {display:inline-block;margin-left:0.6667rem;width:12.6rem;/*width:38.259109%;*/border-radius:0.7333rem 0.7333rem 0 0;overflow:hidden;vertical-align:top;}
 .team.content .scroll_ranking li:first-child {margin-left:0;}
 .team.content .scroll_ranking li .team_bg {position:relative;padding-bottom:121.164021%;height:0;background-repeat:no-repeat;background-size:100% auto;}
