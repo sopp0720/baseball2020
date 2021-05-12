@@ -1974,7 +1974,7 @@ input[readonly]:focus {border:1px solid #f7f8f9 !important;cursor:default;}
 .tab_1depth .tab_item .tab_logo_KBO:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_kbo.png);}
 .tab_1depth .tab_item .tab_logo_MLB:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_mlb.png);}
 .tab_1depth .tab_item .tab_logo_ABL:before {content:'';position:absolute;top:0.9667rem;left:0;right:0;margin:0 auto;width:3.8333rem;height:1.6667rem;background-size:100%;background-image:url(../images/logo/tab_abl.png);}
-.tab_1depth .active_bar {z-index:1;position:absolute;bottom:0;width:6rem;height:0.2rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);}
+.tab_1depth .active_bar {z-index:1;position:absolute;bottom:0;width:6rem;height:0.2rem;transition:width .3s,left .3s;animation-timing-function:cubic-bezier(0.1,0.8,0.4,1);-webkit-transform:translateZ(0);transform:translateZ(0);}
 .tab_1depth_wrap {position:relative;height:4.6rem;width:100%;}
 .tab_1depth_wrap.tab_logo {height:6.4rem;}
 .tab_1depth_wrap.tab_logo .tab_1depth .tab_item span {font-size:1.7rem;}
