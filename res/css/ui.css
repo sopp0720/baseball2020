@@ -2497,7 +2497,7 @@ background-color:#f2f3f4;}
 	.horizontal_ui .content_scroll .sec_wrapper:first-of-type { border-top:0 none;}
 	.horizontal_ui .live_video .video_wrap {position:fixed; top:0; width: 56.25%; height: 100vh; padding:0;font-size:0;white-space:nowrap;overflow:hidden; background-color:#000000;}
 	.horizontal_ui .live_video .video_wrap:after {content:"";position:relative;display:inline-block;height:100%;vertical-align:middle;}
-	.horizontal_ui .live_video .relay_video_thumb { position:relative;width:100%;top:auto;left:auto;right:auto;display:inline-block;vertical-align:middle;white-space:normal;}
+	.horizontal_ui .live_video .relay_video_thumb { position:relative;width:100%;top:auto;left:auto;right:auto;display:inline-block;vertical-align:top;white-space:normal;}
 	.horizontal_ui .home.content .video_wrap .img_player_default {position:relative;width:100%;top:auto;left:auto;right:auto;display:inline-block;vertical-align:middle;white-space:normal;}
 	.horizontal_ui .cheering .tab_1depth_wrap .tab_1depth { left: 56.25%; }
 	.horizontal_ui .relay.content .chreer_selection {left:calc(56.25% + 1.5333rem);}
