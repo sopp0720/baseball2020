@@ -363,6 +363,7 @@
 .home.content .mlb .score_today > div.team_img_wrap .player_name {margin-top:0.8333rem;}
 
 .home.content .sec_wrapper .bn_rel  {position:relative;display:block;width:100%;}
+.home.content .sec_wrapper .bn_rel img  {width:100%;}
 /*.home.content .sec_wrapper .bn_rel.bn700 {padding-bottom:70.850202%;}
 .home.content .sec_wrapper .bn_rel.bn560 {padding-bottom:56.680161%;}
 .home.content .sec_wrapper .bn_rel.bn300 {padding-bottom:30.364372%;}
