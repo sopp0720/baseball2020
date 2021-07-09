@@ -407,6 +407,8 @@
 .team_symbol_SSG_black {background-position:0 100%;background-size:100%;}
 .futures .team_symbol_WO {background-image:url(../images/logo/team_symbol_WO_f.png);background-position:0 0;}
 .team_symbol_SM {background-image:url(../images/logo/team_symbol_SM.png);background-position:0 0;background-size:100%;}
+.team_symbol_EA {background-image:url(../images/logo/team_symbol_EA.png);background-position:0 0;background-size:100%;}
+.team_symbol_WE {background-image:url(../images/logo/team_symbol_WE.png);background-position:0 0;background-size:100%;}
 
 /* tab_teamlist Color */
 .tab_teamlist .team_LG svg path[fill-opacity="1"] {fill:#C10A3A;}
