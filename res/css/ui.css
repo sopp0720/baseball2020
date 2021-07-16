@@ -326,10 +326,12 @@
 .home.content .separate_league .title_hd {padding-top:0.5333rem;height:3.5rem;}
 .home.content .separate_league .play_list {margin-top:0.3333rem;}
 .home.content .separate_league + .title_hd { margin-top:1.5333rem; }
+.home.content .separate_league + .score_today { margin-top:1.5333rem; }
 .home.content .special_game {margin-top:2.2rem;}
 .home.content .special_game:first-of-type {margin-top:0;}
 .home.content .special_game .title_hd {padding-top:0.5333rem;height:3.5rem;}
 .home.content .special_game + .title_hd { margin-top:1.5333rem; }
+.home.content .special_game + .score_today { margin-top:1.5333rem; }
 .home.content .score_board_wrap .special_game .play_list li {position:relative;padding:1.3rem 2.9rem 1.1333rem 2.3rem;}
 .home.content .score_board_wrap .special_game .play_list li .sp_wrap {position:relative;height:4.2667rem;text-align:left;}
 .home.content .score_board_wrap .special_game .play_list li .sp_wrap:after {content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
