@@ -232,22 +232,23 @@
 .home.content .top_phrase .quo_marks {display:block;margin-bottom:0.5667rem;width:1.8333rem;height:1.8333rem;background:url("../images/ic-home-top-text-b.png") no-repeat;background-size:cover;}
 .home.content .top_phrase > p {margin-top:2.7333rem;width:22rem;height:4.5333rem;font-size:1.6667rem;font-weight:300;line-height:1.36;color:#000000;}
 .home.content .score_board_wrap {padding-top:2.5333rem;}
-.home.content .score_today {position:relative;margin:0 -1.5333rem;padding:0 1.5333rem;height:10.8333rem;text-align:center;}
-.home.content .score_today > div {font-size:24px;height:100%;}
-.home.content .score_today > div.team_img_wrap {position:absolute;top:0.7667rem;width:10.1333rem;}
-.home.content .score_today > div.team_img_wrap.left {left:1.5333rem;}
-.home.content .score_today > div.team_img_wrap.right {right:1.5333rem;}
-.home.content .score_today > div.team_img_wrap .player_xl {margin:0 auto;}
-.home.content .score_today > div.team_img_wrap .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
-.home.content .score_today > div.team_img_wrap .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
-.home.content .score_today > div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
-.home.content .score_today > div.middle_box {position:relative;z-index:1;margin:0 auto;width:12.6667rem;}
-.home.content .score_today > div.middle_box .logo_na {display:block;margin:0.1333rem auto 0;width:3.8333rem;height:1.6667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
-.home.content .score_today > div.middle_box .logo_na.kbo {background-image:url("../images/ic-logo-kbo-lg.png");} /* KBO logo */
-.home.content .score_today > div.middle_box .logo_na.mlb {background-image:url("../images/ic-logo-mlb-navy.png");} /* KBO logo */
-.home.content .score_today > div.middle_box .title {display:block;height:2.5rem;font-size:1.7rem;font-weight:bold;color:#000;text-align:center;}
-.home.content .score_today > div.middle_box .play_score {margin:0.0667rem 0 0;overflow:hidden;}
-.home.content .score_today > div.middle_box .play_score em {display:block;float:left;width:3.5rem;height:4.0667rem;font-family:'Bebas Neue';font-weight:normal;font-size:4rem;line-height:4.8rem;font-style:normal;color:#000000;}
+.home.content .score_today {position:relative;margin:0 -1.5333rem;height:10.8333rem;text-align:center;}
+.home.content .score_today .play_list_inner { position: relative; width: 32.9333rem; margin: 0 auto; padding:0 1.5333rem; }
+.home.content .score_today .play_list_inner > div {font-size:24px;height:100%;}
+.home.content .score_today div.team_img_wrap {position:absolute;top:0.7667rem;width:10.1333rem;}
+.home.content .score_today div.team_img_wrap.left {left:1.5333rem;}
+.home.content .score_today div.team_img_wrap.right {right:1.5333rem;}
+.home.content .score_today div.team_img_wrap .player_xl {margin:0 auto;}
+.home.content .score_today div.team_img_wrap .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
+.home.content .score_today div.team_img_wrap .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
+.home.content .score_today div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
+.home.content .score_today div.middle_box {position:relative;z-index:1;margin:0 auto;width:12.6667rem;}
+.home.content .score_today div.middle_box .logo_na {display:block;margin:0.1333rem auto 0;width:3.8333rem;height:1.6667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.home.content .score_today div.middle_box .logo_na.kbo {background-image:url("../images/ic-logo-kbo-lg.png");} /* KBO logo */
+.home.content .score_today div.middle_box .logo_na.mlb {background-image:url("../images/ic-logo-mlb-navy.png");} /* KBO logo */
+.home.content .score_today div.middle_box .title {display:block;height:2.5rem;font-size:1.7rem;font-weight:bold;color:#000;text-align:center;}
+.home.content .score_today div.middle_box .play_score {margin:0.0667rem 0 0;overflow:hidden;}
+.home.content .score_today div.middle_box .play_score em {display:block;float:left;width:3.5rem;height:4.0667rem;font-family:'Bebas Neue';font-weight:normal;font-size:4rem;line-height:4.8rem;font-style:normal;color:#000000;}
 /* .home.content .score_board_wrap.kbo {border-top:0;} */
 .home.content .score_board_wrap .result_val {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#c2c3c7;}
 .home.content .score_board_wrap .result_val_win {margin-right:0.2667rem;font-size:inherit;font-weight:inherit;font-style:normal;color:#1F63C7;}
@@ -274,27 +275,29 @@
 
 .home.content .score_board_wrap .middle_box .info_round {clear:both;display:block;height:2.2rem;line-height:2.2rem;font-size:1.5rem;font-weight:500;color:#000;}
 .home.content .score_board_wrap .play_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
-.home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;padding:0.8rem 0 0.8333rem;width:100%;height:6.8333rem;text-align:center;}
+.home.content .score_board_wrap .play_list li {position:relative;margin-top:1px;width:100%;height:6.8333rem;text-align:center;}
+.home.content .score_board_wrap .play_list li .play_list_inner { position: relative; width: 32.9333rem; margin: 0 auto; padding: 0.8rem 0 0.8333rem;}
 .home.content .score_board_wrap .play_list li:first-child {margin-top:0;}
 .home.content .score_board_wrap .play_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#f8f8f9;}
 .home.content .score_board_wrap .play_list li:first-child:after {display:none;}
 .home.content .score_board_wrap .play_list li.active {opacity:0.8;}
 
-.home.content .score_board_wrap .play_list li > div.team_player {position:absolute;top:0.7333rem;width:9.0333rem;}
-.home.content .score_board_wrap .play_list li > div.team_player.left {left:1.4rem;}
-.home.content .score_board_wrap .play_list li > div.team_player.right {right:1.4rem;}
-.home.content .score_board_wrap .play_list li > div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
-.home.content .score_board_wrap .play_list li > div.team_player i.sp_logo {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
-.home.content .score_board_wrap .play_list li > div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.4rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;}
-.home.content .score_board_wrap .play_list li > div.middle_box {z-index:1;position:relative;margin:0 auto;width:12.9rem;}
-.home.content .score_board_wrap .play_list li > div.middle_box .play_score {padding-top:0.5rem;overflow:hidden;}
-.home.content .score_board_wrap .play_list li > div.middle_box .play_score em {display:block;float:left;width:2.6667rem;height:2.7rem;font-family:'Bebas Neue';font-size:3.3333rem;line-height:1;font-style:normal;color:#000000;}
-.home.content .score_board_wrap .play_list li > div.middle_box .ic_vs_main {width:7.5667rem;height:2.7rem;}
-.home.content .score_board_wrap .play_list li > div.middle_box .info_today {margin:0.5rem 0 0.3rem;}
-.home.content .score_board_wrap .play_list li > div.middle_box .info_round {height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000;}
+.home.content .score_board_wrap .play_list li div.team_player {position:absolute;top:0.7333rem;width:9.0333rem;}
+.home.content .score_board_wrap .play_list li div.team_player.left {left:1.4rem;}
+.home.content .score_board_wrap .play_list li div.team_player.right {right:1.4rem;}
+.home.content .score_board_wrap .play_list li div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
+.home.content .score_board_wrap .play_list li div.team_player i.sp_logo {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
+.home.content .score_board_wrap .play_list li div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.4rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;}
+.home.content .score_board_wrap .play_list li div.middle_box {z-index:1;position:relative;margin:0 auto;width:12.9rem;}
+.home.content .score_board_wrap .play_list li div.middle_box .play_score {padding-top:0.5rem;overflow:hidden;}
+.home.content .score_board_wrap .play_list li div.middle_box .play_score em {display:block;float:left;width:2.6667rem;height:2.7rem;font-family:'Bebas Neue';font-size:3.3333rem;line-height:1;font-style:normal;color:#000000;}
+.home.content .score_board_wrap .play_list li div.middle_box .ic_vs_main {width:7.5667rem;height:2.7rem;}
+.home.content .score_board_wrap .play_list li div.middle_box .info_today {margin:0.5rem 0 0.3rem;}
+.home.content .score_board_wrap .play_list li div.middle_box .info_round {height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:500;color:#000;}
 
 .home.content .score_board_wrap .mini_kbo_list {margin-top:1rem;padding:0;box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
-.home.content .score_board_wrap .mini_kbo_list li {position:relative;margin-top:1px;padding:0.8rem 0 0.6667rem;width:100%;height:5.6rem;text-align:center;}
+.home.content .score_board_wrap .mini_kbo_list li {position:relative;margin-top:1px;width:100%;height:5.6rem;text-align:center;}
+.home.content .score_board_wrap .mini_kbo_list li .play_list_inner { position: relative; width: 32.9333rem; margin: 0 auto; padding:0.8rem 0 0.6667rem;}
 .home.content .score_board_wrap .mini_kbo_list li:first-child {margin-top:0;}
 .home.content .score_board_wrap .cheer_team {background-color: rgba(241, 23, 85, 0.03);}
 .home.content .score_board_wrap .mini_kbo_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#f8f8f9;}
@@ -332,7 +335,8 @@
 .home.content .special_game .title_hd {padding-top:0.5333rem;height:3.5rem;}
 .home.content .special_game + .title_hd { margin-top:1.5333rem; }
 .home.content .special_game + .score_today { margin-top:1.5333rem; }
-.home.content .score_board_wrap .special_game .play_list li {position:relative;padding:1.3rem 2.9rem 1.1333rem 2.3rem;}
+.home.content .score_board_wrap .special_game .play_list li {position:relative;}
+.home.content .score_board_wrap .special_game .play_list li .play_list_inner { position: relative; width: 32.9333rem; margin: 0 auto; padding:1.3rem 2.9rem 1.1333rem 2.3rem;}
 .home.content .score_board_wrap .special_game .play_list li .sp_wrap {position:relative;height:4.2667rem;text-align:left;}
 .home.content .score_board_wrap .special_game .play_list li .sp_wrap:after {content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .home.content .score_board_wrap .special_game .play_list li .sp_logo {position:absolute;top:0;left:0;width:4.2667rem;height:4.2667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
@@ -864,6 +868,7 @@
 .relay.content .score_board_wrap {margin-top:0.8333rem;}
 .relay.content .play_list {box-shadow:0 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.09);border-radius:0.7333rem;overflow:hidden;}
 .relay.content .play_list li {position:relative;height:10.6667rem;margin-top:1px;}
+.relay.content .play_list li .play_list_inner { position: relative; width: 32.9333rem; height: 100%; margin: 0 auto; }
 .relay.content .play_list li:first-child {margin-top:0;}
 .relay.content .play_list li:after {content:'';position:absolute;top:-1px;height:1px;left:2.3333rem;right:2.3333rem;background-color:#f8f8f9;}
 .relay.content .play_list li:first-child:after {display:none;}
