@@ -282,12 +282,12 @@
 .home.content .score_board_wrap .play_list li:first-child:after {display:none;}
 .home.content .score_board_wrap .play_list li.active {opacity:0.8;}
 
-.home.content .score_board_wrap .play_list li div.team_player {position:absolute;top:0.7333rem;width:9.0333rem;}
-.home.content .score_board_wrap .play_list li div.team_player.left {left:1.4rem;}
-.home.content .score_board_wrap .play_list li div.team_player.right {right:1.4rem;}
+.home.content .score_board_wrap .play_list li div.team_player {position:absolute;top:0.7333rem;width:10.9667rem;}
+.home.content .score_board_wrap .play_list li div.team_player.left {left:0.4333rem;}
+.home.content .score_board_wrap .play_list li div.team_player.right {right:0.4333rem;}
 .home.content .score_board_wrap .play_list li div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;}
 .home.content .score_board_wrap .play_list li div.team_player i.sp_logo {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
-.home.content .score_board_wrap .play_list li div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.4rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;}
+.home.content .score_board_wrap .play_list li div.team_player > span {display:block;height:1.9667rem;line-height:1.9667rem;font-size:1.4rem;font-weight:500;color:#000000;white-space:nowrap;word-wrap:normal;text-overflow:ellipsis;overflow:hidden;}
 .home.content .score_board_wrap .play_list li div.middle_box {z-index:1;position:relative;margin:0 auto;width:12.9rem;}
 .home.content .score_board_wrap .play_list li div.middle_box .play_score {padding-top:0.5rem;overflow:hidden;}
 .home.content .score_board_wrap .play_list li div.middle_box .play_score em {display:block;float:left;width:2.6667rem;height:2.7rem;font-family:'Bebas Neue';font-size:3.3333rem;line-height:1;font-style:normal;color:#000000;}
@@ -556,7 +556,7 @@
 .team.content .sec_rate .desc > span {display:inline-block;vertical-align:top;}
 .team.content .sec_rate .desc > strong {float:right;display:inline-block;line-height:4.3333rem;vertical-align:top;}
 .team.content .sec_rate .desc .num {min-width:1.8333rem;font-family:'Bebas Neue';margin-top:0.7rem;height:2.9333rem;line-height:2.9333rem;font-size:1.8667rem;font-weight:normal;color:#000000;opacity:0.8;text-align:center;}
-.team.content .sec_rate .desc .name {margin-left:0.5333rem;margin-top:0.8667rem;height:2.3667rem;line-height:2.3667rem;font-size:1.6rem;font-weight:500;color:#000000;}
+.team.content .sec_rate .desc .name {margin-left:0.5333rem;margin-top:0.8667rem;height:2.3667rem;line-height:2.3667rem;font-size:1.6rem;font-weight:500;color:#000000;max-width:11.9333rem;display:inline-block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .team.content .sec_rate .desc .position {margin-left:0.5333rem;margin-top:1.0333rem;height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:normal;color:#525252;}
 .team.content .sec_rate .desc .my_team {margin-top:1.4rem;margin-left:0.5333rem;width:1.3333rem;height:1.3333rem;line-height:1;border-radius:50%;background-image:url('../images/icon_my.png');background-repeat:no-repeat;background-position:50% 50%;background-size:auto 1.3rem;}
 .team.content .sec_rate .desc .rate_num {font-family:'Bebas Neue';font-size:1.8667rem;font-weight:normal;text-align:right;color:#000000;}
@@ -582,7 +582,7 @@
 .team.content .sec_team_position .team_position_all li .player_img .team_logo_xs > span {display:block;margin:0.3333rem auto;width:1.3333rem;height:1.3333rem;background-repeat:no-repeat;}
 .team.content .sec_team_position .team_position_all li .i_name {margin-top:0.5667rem;height:1.9rem;text-align:center;font-size:0;white-space:nowrap;}
 .team.content .sec_team_position .team_position_all li .i_name > b {display:inline-block;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;vertical-align:top;}
-.team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;padding-top:0;margin-left:0.4667rem;height:1.9rem;line-height:1.8rem;font-size:1.2rem;font-weight:bold;color:#2b2b2b;vertical-align:top;}
+.team.content .sec_team_position .team_position_all li .i_name > span {display:inline-block;padding-top:0;margin-left:0.4667rem;height:1.9rem;line-height:1.8rem;font-size:1.2rem;font-weight:bold;color:#2b2b2b;vertical-align:top;max-width:5.6333rem;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .team.content .sec_team_position .team_position_all li .i_position {margin-top:0.0667rem;height:1.6333rem;text-align:center;font-size:0;}
 .team.content .sec_team_position .team_position_all li .i_position > span {display:inline-block;height:1.6333rem;line-height:1.6333rem;font-size:1.1rem;font-weight:normal;color:#646464;vertical-align:top;}
 .team.content .sec_team_position .team_position_all li .i_position > i {display:inline-block;margin:0.4rem 0.2333rem 0.2333rem;width:0.0667rem;height:1rem;vertical-align:top;background-color:#f0f1f6;}
@@ -604,7 +604,7 @@
 .team.content .srh_result li .player_info {margin-left:8.0667rem;}
 .team.content .srh_result li .player_info .player_name {height:2.0667rem;font-size:0;}
 .team.content .srh_result li .player_info .player_name span {display:inline-block;height:100%;font-size:1.4rem;vertical-align:top;}
-.team.content .srh_result li .player_info .player_name span.i_name {font-weight:bold;color:#000000;}
+.team.content .srh_result li .player_info .player_name span.i_name {font-weight:bold;color:#000000;max-width:17.0333rem;display:inline-block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .team.content .srh_result li .player_info .player_name span.i_num {margin-left:0.6rem;font-weight:500;color:#525252;}
 .team.content .srh_result li .player_info dl {margin-top:0.4667rem;overflow:hidden;}
 .team.content .srh_result li .player_info dt {clear:both;float:left;margin-top:0.1667rem;width:4.6667rem;height:1.8rem;font-size:1.2rem;color:#525252;}
