@@ -233,15 +233,15 @@
 .home.content .top_phrase > p {margin-top:2.7333rem;width:22rem;height:4.5333rem;font-size:1.6667rem;font-weight:300;line-height:1.36;color:#000000;}
 .home.content .score_board_wrap {padding-top:2.5333rem;}
 .home.content .score_today {position:relative;margin:0 -1.5333rem;height:10.8333rem;text-align:center;}
-.home.content .score_today .play_list_inner { position: relative; width: 32.9333rem; margin: 0 auto; padding:0 1.5333rem; }
+.home.content .score_today .play_list_inner { position: relative; width: 34.5333rem; margin: 0 auto; }
 .home.content .score_today .play_list_inner > div {font-size:24px;height:100%;}
-.home.content .score_today div.team_img_wrap {position:absolute;top:0.7667rem;width:10.1333rem;}
-.home.content .score_today div.team_img_wrap.left {left:1.5333rem;}
-.home.content .score_today div.team_img_wrap.right {right:1.5333rem;}
+.home.content .score_today div.team_img_wrap {position:absolute;top:0.7667rem;width:11.7333rem;}
+.home.content .score_today div.team_img_wrap.left {left:0;}
+.home.content .score_today div.team_img_wrap.right {right:0;}
 .home.content .score_today div.team_img_wrap .player_xl {margin:0 auto;}
 .home.content .score_today div.team_img_wrap .player_img .team_logo_xs {z-index:2;display:block;position:absolute;bottom:0;right:-0.5333rem;width:2.3333rem;height:2.3333rem;border-radius:50%;}
 .home.content .score_today div.team_img_wrap .player_img .team_logo_xs > span {display:block;margin:0.4rem auto;width:1.5333rem;height:1.5333rem;background-repeat:no-repeat;}
-.home.content .score_today div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
+.home.content .score_today div.team_img_wrap .player_name {display:block;margin-top:0.4333rem;height:2.2rem;font-size:1.5rem;font-weight:bold;text-align:center;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 .home.content .score_today div.middle_box {position:relative;z-index:1;margin:0 auto;width:12.6667rem;}
 .home.content .score_today div.middle_box .logo_na {display:block;margin:0.1333rem auto 0;width:3.8333rem;height:1.6667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .home.content .score_today div.middle_box .logo_na.kbo {background-image:url("../images/ic-logo-kbo-lg.png");} /* KBO logo */
@@ -336,7 +336,12 @@
 .home.content .special_game + .title_hd { margin-top:1.5333rem; }
 .home.content .special_game + .score_today { margin-top:1.5333rem; }
 .home.content .score_board_wrap .special_game .play_list li {position:relative;}
-.home.content .score_board_wrap .special_game .play_list li .play_list_inner { position: relative; width: 32.9333rem; margin: 0 auto; padding:1.3rem 2.9rem 1.1333rem 2.3rem;}
+.home.content .score_board_wrap .special_game .play_list li .play_list_inner { position: relative; width: 32.9333rem; margin: 0 auto; }
+
+.home.content .score_board_wrap .special_game .play_list li div.team_player {position:absolute;top:0.7333rem;width:10.9667rem;}
+.home.content .score_board_wrap .special_game .play_list li div.team_player.left {left:0.4333rem;}
+.home.content .score_board_wrap .special_game .play_list li div.team_player.right {right:0.4333rem;}
+.home.content .score_board_wrap .special_game .play_list li div.team_player > i {display:block;margin:0 auto;width:3.6333rem;height:3.2333rem;background-size:100%;background-position:50% 50%;background-repeat:no-repeat;}
 .home.content .score_board_wrap .special_game .play_list li .sp_wrap {position:relative;height:4.2667rem;text-align:left;}
 .home.content .score_board_wrap .special_game .play_list li .sp_wrap:after {content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
 .home.content .score_board_wrap .special_game .play_list li .sp_logo {position:absolute;top:0;left:0;width:4.2667rem;height:4.2667rem;background-repeat:no-repeat;background-position:50% 50%;background-size:100% auto;}
@@ -348,6 +353,10 @@
 .home.content .score_board_wrap .special_game .play_list li .middle_box .info_today {margin:0 0 0.3rem;}
 .home.content .score_board_wrap .special_game .play_list li .middle_box .info_today.i_schedule {background-image:url('../images/02-1-icon-tag-main-red-01-beforelive.png');}
 .home.content .score_board_wrap .special_game .play_list li .middle_box .info_today.i_ing {background-image:url('../images/02-1-icon-tag-main-red-02-inglive.png');}
+.home.content .score_board_wrap .special_game .play_list li .middle_box_wrap {z-index:1;position:relative;top:auto;right:auto;margin:0 auto;width:12.9rem;height:5.2rem;white-space:nowrap;text-align:center;font-size:0;}
+.home.content .score_board_wrap .special_game .play_list li .middle_box_wrap:after{content:'';position:relative;display:inline-block;height:100%;vertical-align:middle;}
+.home.content .score_board_wrap .special_game .play_list li .middle_box_wrap .middle_inner {position:relative;max-width:100%;display:inline-block;vertical-align:middle;white-space:normal;}
+
 .home.content .score_scroll {margin-top:1.5333rem;}
 .home.content .score_scroll .title_hd {padding-top:0.5333rem;height:3.5rem;}
 .home.content .score_scroll .title_hd > .more {top:0.1667rem;}
