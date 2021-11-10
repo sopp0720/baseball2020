@@ -912,8 +912,8 @@
 .relay.content .play_list li .left_score.res_lose {color:#000;}
 .relay.content .play_list li .right_score {right:0;text-align:left;}
 .relay.content .play_list li .right_score.res_lose {color:#c2c3c7;}
-.relay.content .play_list li .ic_base {display:block;margin:2.9333rem auto 0.5rem;width:3.2667rem;height:2.3333rem;background-repeat:no-repeat;background-size:100% auto;}
-.relay.content .play_list li .info_tag_warp ~ .ic_base {margin-top:2rem;margin-bottom:0.3333rem;}
+.relay.content .play_list li .ic_base {display:block;margin:2.9333rem auto 0.2rem;width:3.2667rem;height:2.3333rem;background-repeat:no-repeat;background-size:100% auto;}
+.relay.content .play_list li .info_tag_warp ~ .ic_base {margin-top:2rem;margin-bottom:0.1333rem;}
 .relay.content .play_list li .tag_tooltip {z-index:2;display:block;position:absolute;bottom:2.3rem;left:0;right:0;text-align:center;font-size:0;}
 .relay.content .play_list li .tag_tooltip .tag_tooltiptext {position:relative;font-size:10px;padding:0 3.0333rem 0 1.5rem;display:inline-block;height:2.2rem;line-height:2.2rem;opacity:0.93;border-radius:1.1rem;;box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.09);background-color:#ffffff;}
 .relay.content .play_list li .tag_tooltip .tag_tooltiptext:after {content:'';position:absolute;top:100%;left:50%;margin-left:-0.5333rem;border-width:0.5333rem;border-style:solid;border-color: #fff transparent transparent transparent;}
@@ -922,10 +922,11 @@
 .relay.content .play_list li .tag_tooltip .tag_tooltiptext .close:after {position:absolute;left:0.3333rem;content:'';height: 0.7333rem;width:1px;background-color:#333;}
 .relay.content .play_list li .tag_tooltip .tag_tooltiptext .close:before {transform:rotate(45deg);}
 .relay.content .play_list li .tag_tooltip .tag_tooltiptext .close:after {transform: rotate(-45deg);}
-.relay.content .play_list li .info_round {display:block;height:1.6667rem;line-height:1.6667rem;font-size:1.4rem;font-weight:bold;text-align:center;color:#000;}
+.relay.content .play_list li .info_round {display:block;height:2.0667rem;line-height:2.0667rem;font-size:1.4rem;font-weight:bold;text-align:center;color:#000;}
 .relay.content .play_list li .info_bso {display:block;padding-top:0;height:1.8rem;font-size:0;text-align:center;}
 .relay.content .play_list li .info_bso > span {display:inline-block;margin-left:0.6rem;font-size:1.3rem;font-weight:500;color:#000;vertical-align:top;}
 .relay.content .play_list li .info_bso > span:first-child {margin-left:0;}
+.relay.content .play_list .info_tag_warp ~ .info_bso > span {font-size:1.2rem;}
 .base_0 {background-image:url('../images/ic-base-00.png');}
 .base_1 {background-image:url('../images/ic-base-03.png');}
 .base_2 {background-image:url('../images/ic-base-02.png');}
@@ -958,7 +959,7 @@
 .relay.content .play_list li.game_before .middle_box .info_today.i_schedule {display:inline-block;margin-top:2.6333rem;}
 .relay.content .play_list li.game_before .middle_box .info_time {margin-top:0.1rem;height:1.9rem;line-height:1.9rem;font-size:1.3rem;font-weight:bold;color:#000000;}
 .relay.content .play_list li.game_before .middle_box .info_channel {margin-top:0.7667rem;}
-.relay.content .play_list li.game_before .middle_box .info_channel.more_channel {margin-top:0.4667rem;height:2.0667rem;font-size:1rem;line-height:1.03;letter-spacing:-0.01rem;}
+.relay.content .play_list li.game_before .middle_box .info_channel.more_channel {width:9.3333rem;margin-top:0.4667rem;height:2.0667rem;font-size:1rem;line-height:1.03;letter-spacing:-0.01rem;white-space:normal;}
 .relay.content .play_list li.game_before .middle_box .info_tag_warp {position:static;margin-top:0.3rem;}
 .relay.content .play_list li.game_before.has_tag .middle_box .info_channel {margin-top:0.2333rem;}
 .relay.content .play_list li.game_before.has_tag .middle_box .info_today.i_schedule {margin-top:1.8333rem;}
